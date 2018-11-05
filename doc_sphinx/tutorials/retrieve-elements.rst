@@ -1,0 +1,163 @@
+================================
+Retrieve elements of your model
+================================
+.. topic:: This tutorial is about
+
+    How-to retrieve elements of your model through the API
+
+.. highlight:: python
+   :linenothreshold: 5
+
+The bimdata Platform allows you to get any information on your model. In this tutorial, you learn how to retrieve elements of your model.
+In this tutorial, we use the *client_credential* type of authentication, that is available when you have an application.
+Follow the steps and learn how to query your model through our API.
+
+Step 1. Get your token
+========================
+
+To get an Access Token, you first `create an application <https://documentation.bimdata.io/v1.0/docs/create-your-application>`_ named "Windows retriever".
+Then follow `the procedure described on the dedicated page to get your Access Token <https://documentation.bimdata.io/v1.0/docs/authentication-by-client_credential>`_.
+You are now ready to use the API.
+
+Step 2. Set up your project
+===============================
+
+Once your app exists and you have your Access Token, you are able to use the API.
+Begin with the creation of a Cloud (`What's a cloud? <https://documentation.bimdata.io/v1.0/docs/cloud-1>`_), in which you create a Project (`What's a project? <https://documentation.bimdata.io/v1.0/docs/project-1>`_).
+In the script below, there is an example of the creation of a project in your Cloud through API, so you can have a `projectId`.
+First, define a name to create your first Cloud. Post this `name` on https://api-beta.bimdata.io/cloud using your Access Token. Then use the `cloudId` to create your first Project.
+
+.. code:: python
+
+    import requests
+
+    #previous step gave you an access_token
+    #prepare headers and cloud_name for POST request
+    headers = {
+        'authorization': 'Bearer '+ access_token,
+    }
+    cloud_name = {
+        'name': 'Windows retrieval'
+    }
+    response = requests.post(f'https://api-staging.bimdata.io/cloud', data=cloud_name, headers=headers)
+    assert response.status_code == 201
+
+    cloud_id = response.json().get('id')
+    response = requests.post(f'https://api-staging.bimdata.io/cloud/{cloud_id}/project',  headers=headers)
+    assert response.status_code == 201
+
+    project_id = response.json().get('id')
+
+Let's upload your IFC model!
+
+Step 3. Upload your IFC"
+============================
+
+The API let you upload your IFC file. In this tutorial, you can use this IFC file: `Download Cassiopea.ifc <https://drive.google.com/file/d/1njhweVCFvDNl8Gy3B1HxAolcfExt0Tg-/view?usp=sharing>`_
+
+Use the API to upload
+-------------------------
+
+Use the `/cloud/{cloud_pk}/project/{project_pk}/document` route to upload your file.
+The `documentation for this route <https://api-beta.bimdata.io/doc#/project/createDocument>`_ is available on our API Reference page.
+
+.. code:: python
+
+    import requests
+
+    #prepare headers and payload for POST request
+    headers = {
+        'authorization': 'Bearer '+ access_token,
+    }
+    payload = {
+        'name': 'My lovely IFC'
+    }
+    my_ifc_to_upload = {'file': open('/path/to/XXX.ifc', 'rb')}
+
+    #previous script gives you the cloud_id and the project_id
+    url = f'https://api-staging.bimdata.io/cloud/{cloud_id}/project/{project_id}/document'
+    response = requests.post(url, data=payload, files=my_ifc_to_upload, headers=headers)
+    assert response.status_code == 201
+
+    my_ifc_id = response.json().get('ifc_id')
+
+
+Follow the upload process
+---------------------------
+
+During the upload, you must query the server to get information about the upload process, see `the IFC documentation page <https://documentation.bimdata.io/v1.0/docs/ifc-1>`_ about the available information.
+The server detects IFC format and you can get information about your file using the API: `https://api-staging.bimdata.io/doc#/ifc/getIfc <https://api-staging.bimdata.io/doc#/ifc/getIfc>`_
+
+.. note::
+    The IFC document provided in this tutorial takes approximatively 10 seconds to be processed.\nUsually, the processing time could be very different depending on the IFC file.
+
+
+.. code:: python
+
+    import time
+    import requests
+
+    ready = False
+
+    while not ready:
+        url = f'https://api-staging.bimdata.io/cloud/{cloud_id}/project/{project_id}/ifc/{my_ifc_id}'
+        response = requests.get(url, headers=headers)
+        assert response.status_code == 200
+
+        status = response.json().get('status')
+
+        if('C' == status):
+            ready = True
+            #your IFC is ready to query
+        else:
+            #print('not ready yet')
+            time.sleep(1)
+
+
+When the status is *C* meaning Complete, your IFC document is uploaded and processed.
+Let's use the bimdata API to query your model!
+
+Step 4. Retrieve windows
+===========================
+
+In this tutorial, you want *all the windows of the building* described in your IFC.
+
+Retrieve elements
+------------------
+
+The route is: `/cloud/{cloud_pk}/project/{project_pk}/ifc/{ifc_pk}/element`
+
+As listed `on the documentation page for this route <https://api-beta.bimdata.io/doc#/ifc/getElements>`_:
+the mandatory parameters are:
+
+ * *cloud_pk* string
+ * *ifc_pk* string
+ * *project_pk* string
+
+Use filters
+-------------
+
+In addition, you can filter by:
+ * *type* string
+ * *classification* string
+ * *classification__notation* string
+
+To retrieve only windows, the accurate filter is *type*: **IfcWindow**.
+You get a list of windows, all the windows of your model.
+
+.. code:: python
+
+    import requests
+    # This script requires an IFC document uploaded
+
+    my_filter = {
+        'type': 'IfcWindow'
+    }
+    url = f'https://api-staging.bimdata.io/cloud/{cloud_id}/project/{project_id}/document/{my_ifc_id}'
+    response = requests.get(url, data=my_filter, headers=headers)
+    assert response.status_code == 200
+
+    all_windows = response.json()
+    #all_windows are available in this var for your next scripts
+
+With the filters, every IFC element can be retrieved. You can retrieve any element in the collection provided in the API.
