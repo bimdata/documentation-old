@@ -16,6 +16,7 @@ Contents:
     core_resources/index
     tutorials/index
     visionneuse/index
+    API Doc<../redoc/index.html#://>
 
 
 
