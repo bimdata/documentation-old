@@ -37,7 +37,6 @@ jobs:
   deploy:
     <<: *container_config
     steps:
-      - *restore_repo
       - setup_remote_docker
       - run:
           name: push to docker hub
