@@ -1,7 +1,6 @@
 .. index::
    single: filters
-   module: __topics__
-   module: topic
+   module: topics
 
 
 =========
@@ -9,12 +8,25 @@ Filters
 =========
 
 Many API end-points allow filtering.
-You can find information about available filters in the Swagger doc.
+See available filters in the `Swagger doc`_.
 
-Exemples
+Examples
 =========
 
-``/cloud/{cloud_pk}/project/{project_pk}/ifc``
+Let use the resource IFC: ``/cloud/{cloud_pk}/project/{project_pk}/ifc``
+
+The response list will only include completed IFCs (see `IFC`_).
+You can combine several filters. Elements matching all combined filters will be returned. 
+
+
+.. IMPORTANT::
+    Filtering is an AND operation.
+
+
+.. note::
+
+    No OR operation is supported in this version.
+
 
 cURL
 =========
@@ -69,11 +81,10 @@ Javascript
     console.log(body);
     });
 
-The response list will only include completed IFCs (see `IFC <core_ressources/ifc>`_)
-
-You can combine several filters. Elements matching all combined filters will be returned. (Filtering is an AND operation.)
 
 
-.. note::
 
-    No OR operation is supported in this version.
+
+
+.. _Swagger doc: https://api-beta.bimdata.io/doc
+.. _IFC: core_ressources/ifc
