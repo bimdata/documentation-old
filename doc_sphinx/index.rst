@@ -14,7 +14,9 @@ Contents:
 
     topics/index
     core_resources/index
+    cookbook/index
     tutorials/index
+
     visionneuse/index
     API Doc<../redoc/index.html#://>
 
