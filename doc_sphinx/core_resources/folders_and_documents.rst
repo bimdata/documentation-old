@@ -1,5 +1,4 @@
 .. index::
-   single: documents; folders; 
    single: folder
    single: project
    module: core
@@ -9,10 +8,6 @@ Folders & Documents
 ================================
 
 The API exposes a complete set of methods to upload and manage documents.
-
-* Folders
-* Documents
-
 
 Folders
 =========
@@ -43,20 +38,22 @@ JSON
 References
 ------------
 
-* GET /cloud/{cloud_pk}/project/{project_pk}/folder
-* POST /cloud/{cloud_pk}/project/{project_pk}/folder
-* GET /cloud/{cloud_pk}/project/{id}/tree
+* GET `/cloud/{cloud_pk}/project/{project_pk}/folder`
+* POST `/cloud/{cloud_pk}/project/{project_pk}/folder`
+* GET `/cloud/{cloud_pk}/project/{id}/tree`
 
 Documents
 ===========
 
 
-Bimdata API allows you to upload any kind of file (IFC, office, images, binaries, ...). Those files are named "documents".
-You can define in which folder you want to put the file using a parent_id.
-Upload a document
+BIMData API allows you to upload any kind of file (IFC, Office, images, binaries, etc.). Those files are named `documents`.
+You can define in which folder you want to put the file using a ``parent_id``.
 
-File upload is one of the few API calls which does not use the application/json content-type. This call uses x-www-urlencoded with form-data.
-The name of the file field must be "file", meaning you have to fire multiple calls if you want to upload many files.
+Upload a document
+------------------
+
+File upload is one of the few API calls which does not use the ``application/json`` Content Type. This call uses ``x-www-urlencoded`` with ``form-data``.
+The name of the file field must be "``file``", this means that you have to fire multiple calls if you want to upload many files.
 
 cURL
 ^^^^^^^^^
@@ -145,7 +142,7 @@ Response
 Download a document
 -----------------------
 
-Files are stored on OVH OpenStack Swift. You can download them using the URL returned. The URL is valid for 1 hour.
+You can download files using the URL returned by the API. The URL is valid for 1 hour.
 
 cURL
 ^^^^^^^^^
@@ -191,5 +188,5 @@ Python
 References
 --------------
 
-* GET /cloud/{cloud_pk}/project/{project_pk}/document
-* POST /cloud/{cloud_pk}/project/{project_pk}/document
+* GET ``/cloud/{cloud_pk}/project/{project_pk}/document``
+* POST ``/cloud/{cloud_pk}/project/{project_pk}/document``

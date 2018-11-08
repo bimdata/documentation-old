@@ -1,16 +1,17 @@
+.. index::
+   single: execution
+   single: context
+   single: projects
+   module: core
+
 ==========
 Projects
 ==========
 
-.. index::
-   single: execution; context; projects
-   module: core
-
-
 Concept
 =========
 
-A project is a place where IFCs and documents are stored. IFCs and documents can be uploaded and organized, checkplans are defined.
+A project is a place where IFC files and documents are stored. IFC files and documents can be uploaded and organized, checkplans are defined.
 
 A project is attached to a cloud and a cloud can host an infinite number of projects.
 
@@ -19,6 +20,6 @@ A project member can see all other members, and admin member can add a user to t
 References
 ================
 
-* GET /user/projects
-* GET /cloud/{cloud_pk}/project
-* POST /cloud/{cloud_pk}/project
+* GET ``/user/projects``
+* GET ``/cloud/{cloud_pk}/project``
+* POST ``/cloud/{cloud_pk}/project``
