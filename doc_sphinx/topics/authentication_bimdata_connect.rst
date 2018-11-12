@@ -38,7 +38,6 @@ or use a user-behavior authentication.
 When use an app auth?
 =====================
 
-------------
 The benefits
 ------------
 
@@ -61,7 +60,7 @@ Use it when you need to have a scheduled response to an event and launch a scrip
 When use a user impersonation?
 ==============================
 
--------------
+
 The benefits
 -------------
 
@@ -97,15 +96,16 @@ Type of user auth detailed
 The three types serve different purposes.
 
 
+
 Authorization code flow
-^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 Behave as a user even without the user actually using the application.
 Example: Useful when you try to enrich the data of your app with your own dataset.
 
 
 Implicit flow
-^^^^^^^^^^^^^^
+-------------
 
 Usage of the access enabled by the user currently connected into the application.
 Example: get the Access Token by the browser to use it directly after getting it.
@@ -113,7 +113,7 @@ Example2: reporting into the application of the user's actions
 
 
 Hybrid flow
-^^^^^^^^^^^^
+-----------
 
 This option combines the previous two options: you can make some reporting and actions as a user.
 Example: The BIMData platform uses this auth option.

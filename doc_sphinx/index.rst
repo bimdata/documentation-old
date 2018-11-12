@@ -9,7 +9,7 @@ Welcome to Bimdata essai Sphinx's documentation!
 Versions
 ---------
 
-.. raw:: html
+.. include:
    :file: ../_templates/versions.html
 
 
@@ -22,7 +22,7 @@ Contents
     topics/index
     core_resources/index
     tutorials/index
-
+    cookbook/index
     visionneuse/index
     API Doc<../redoc/index.html#://>
 
