@@ -14,6 +14,9 @@ Folders
 
 Every project is created with a root folder. It is the starting point to create a new folder or upload documents.
 
+Code example
+--------------
+
 JSON
 ^^^^^
 
