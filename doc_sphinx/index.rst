@@ -6,11 +6,6 @@
 Welcome to Bimdata essai Sphinx's documentation!
 ================================================
 
-Versions
----------
-
-.. include:
-   :file: ../_templates/versions.html
 
 
 Contents
