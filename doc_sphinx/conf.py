@@ -132,8 +132,9 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
-
+import sphinx_rtd_theme
+html_theme = "sphinx_rtd_theme"
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 #html_theme_path = guzzle_sphinx_theme.html_theme_path()
 #html_theme = 'guzzle_sphinx_theme'
 #html_theme = "classic"
@@ -149,18 +150,16 @@ html_theme_options = {
 
 
 html_theme_options = {
-    'canonical_url': '',
-    'analytics_id': '',
     'logo_only': False,
-    'display_version': False,
+    'display_version': True,
     'prev_next_buttons_location': 'bottom',
-    'style_external_links': True,
+    'style_external_links': False,
     # Toc options
-    'collapse_navigation': False,
+    'collapse_navigation': True,
     'sticky_navigation': True,
     'navigation_depth': 4,
     'includehidden': False,
-    'titles_only': True
+    'titles_only': False
 }
 
 
@@ -221,7 +220,7 @@ html_use_smartypants = True
 #
 # html_sidebars = {}
 html_sidebars = {
-   '**': ['globaltoc.html','sourcelink.html', 'searchbox.html',  'searchbox.html'],
+   '**': ['globaltoc.html','sourcelink.html', 'searchbox.html',  'searchbox.html', 'versions.html'],
 
 }
 

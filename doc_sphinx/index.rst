@@ -6,19 +6,26 @@
 Welcome to Bimdata essai Sphinx's documentation!
 ================================================
 
+Versions
+---------
 
-Contents:
+.. raw:: html
+   :file: ../_templates/versions.html
+
+
+Contents
+----------
 
 .. toctree::
     :maxdepth: 4
 
     topics/index
     core_resources/index
-    cookbook/index
     tutorials/index
 
     visionneuse/index
     API Doc<../redoc/index.html#://>
+
 
 
 
