@@ -1,3 +1,30 @@
-{% if vhasdoc('1.0') %}
-    This doc is available in <a href="../master/index.html">master</a>.
-{% endif %}
+
+
+
+{# Add rst-badge after rst-versions for small badge style. #}
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> BIMData.io</span>
+      v: {{ version }}
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>{{ _('Versions') }}</dt>
+        {% for slug, version in versions %}
+          <dd><a href="{{ url }}">{{ version }}</a></dd>
+        {% endfor %}
+      </dl>
+      <dl>
+        <dt>On Github</dt>
+          <dd>
+            <a href="https://github.com/bimdata/documentation">{{ _('Project Home') }}</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/bimdata/documentation/releases">{{ _('Builds') }}</a>
+          </dd>
+      </dl>
+      <hr/>
+
+    </div>
+  </div>
