@@ -32,7 +32,7 @@ jobs:
           name: push to docker hub
           command: |
             docker login -u $DOCKER_USER -p $DOCKER_PASS
-            docker build -t bimdata/documentation:latest . --build-arg SSH_KEY="$(cat ~/.ssh/id_rsa)"
+            docker build -t bimdata/documentation:latest . --build-arg SSH_KEY="$(cat ~/.ssh/id_rsa_6fd5afef4aa2ba7f4fb9673e65e74e71)"
             docker push bimdata/documentation:latest
 
   deploy:
