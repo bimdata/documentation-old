@@ -1,4 +1,4 @@
 Pygments==2.2.0
 Sphinx==1.8.1
 sphinx-rtd-theme==0.4.2
-git+git://https://github.com/RasaHQ/sphinxcontrib-versioning@3bbcb826165faea670e8e7a83706c9d611b90d6f#egg=sphinxcontrib-versioning
+git+git://github.com/RasaHQ/sphinxcontrib-versioning@3bbcb826165faea670e8e7a83706c9d611b90d6f#egg=sphinxcontrib-versioning
