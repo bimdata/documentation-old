@@ -26,12 +26,13 @@ jobs:
     <<: *container_config
     steps:
       - *restore_repo
+      - add_ssh_keys
       - setup_remote_docker
       - run:
           name: push to docker hub
           command: |
             docker login -u $DOCKER_USER -p $DOCKER_PASS
-            docker build -t bimdata/documentation:latest .
+            docker build -t bimdata/documentation:latest . --build-arg SSH_KEY="$(cat ~/.ssh/id_rsa)"
             docker push bimdata/documentation:latest
 
   deploy:
