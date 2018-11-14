@@ -1,0 +1,30 @@
+@import url("theme.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+	font-family: "Roboto", sans-serif;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+a{
+    color: #30374b;
+}
+.wy-side-nav-search,
+.wy-nav-side{
+    background: none;
+    background-color: #30374b;
+}
+
+.wy-side-nav-search input[type="text"]
+{
+    border-color: #fac92c;
+}
+
+.rst-versions,
+.rst-current-version{
+    color: #fac92c;
+}

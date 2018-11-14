@@ -163,6 +163,13 @@ html_theme_options = {
 }
 
 
+html_style = 'css/my_theme.css' 
+
+
+# The name of an image file (relative to this directory) to place at the top
+# of the sidebar.
+#
+html_logo = "_static/_images/logo-bimdata-carre.svg"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -182,10 +189,7 @@ html_theme_options = {
 #
 # html_short_title = None
 
-# The name of an image file (relative to this directory) to place at the top
-# of the sidebar.
-#
-# html_logo = None
+
 
 # The name of an image file (relative to this directory) to use as a favicon of
 # the docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
