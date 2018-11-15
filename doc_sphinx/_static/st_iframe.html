@@ -1,4 +1,58 @@
-<iframe height="500" scrolling="yes" title='BIMData iFrame request properties' src='//codepen.io/bimdata/embed/vrdMmo/?height=500&theme-id=0&default-tab=js,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 90%;'>
-  See the Pen <a href='https://codepen.io/bimdata/pen/vrdMmo/'>BIMData iFrame request properties</a>
-   by BIMData.io (<a href='https://codepen.io/bimdata'>@bimdata</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+<div id="embed" style="width: 100%; height: 100vh;" ></div>
+
+  <script src="https://cdn-beta.bimdata.io/js/bimdata-viewer-embed.js" ><!--the viewer itself --></script>
+  <script type="text/javascript" src="https://unpkg.com/@bimdata/bimdata-api-client/dist/javascript-api-client.min.js"><!-- API call --></script>
+  <script>
+      var accessToken = 'DEMO_TOKEN';
+      var cloudId = 88;
+      var projectId = 100;
+      var ifcId = 175;
+      var defaultClient = bimdata.ApiClient.instance;
+      
+      defaultClient.basePath = 'https://api-beta.bimdata.io';
+      // Configure API key authorization: Bearer
+      var Bearer = defaultClient.authentications['Bearer'];
+      Bearer.apiKey = 'Bearer ' + accessToken;
+      
+      var viewer = new BIMDataViewer('embed', {
+        accessToken: accessToken,
+        cloudId: cloudId,
+        projectId: projectId,
+        ifcId: ifcId
+      });
+      
+      // Wait the viewer to finish loading
+      viewer.on('viewer-load', function(e) {
+        // Hide all elements of the model
+        var ifcApi = new bimdata.IfcApi();
+        // Get all doors by filtering with specifying a type
+        ifcApi.getElements(cloudId, ifcId, projectId, {type: 'IfcDoor'}).then(function(doors) {
+          // Ghost all elements
+          viewer.ghost();
+          viewer.setUnpickable();
+          // Get all doors that have a width greater or equal to 0.83m
+          let adaptedDoors = doors.filter(door => {
+            let propertySet = door.property_sets.find(pset => pset.name == 'BaseQuantities');
+            let widthProperty = propertySet.properties.find(prop => prop.definition.name == 'Width');
+            return widthProperty.value >= 0.83;
+          });
+          // Get all doors thats have a width under 0.83m
+          let unadaptedDoors = doors.filter(door => {
+            let propertySet = door.property_sets.find(pset => pset.name == 'BaseQuantities');
+            let widthProperty = propertySet.properties.find(prop => prop.definition.name == 'Width');
+            return widthProperty.value < 0.83;
+          });
+      
+          let doorsUuidList = doors.map(door => `${ifcId}#${door.uuid}`);
+          let adaptedDoorsUuidList = adaptedDoors.map(door => `${ifcId}#${door.uuid}`);
+          let unadaptedDoorsUuidList = unadaptedDoors.map(door => `${ifcId}#${door.uuid}`);
+      
+          viewer.unghost(doorsUuidList);
+          viewer.setPickable(doorsUuidList);
+          // Color in green doors that are adapted to disabled persons and unghost doors
+          viewer.setColor(adaptedDoorsUuidList, [0, 1, 0]);
+          // Color in red doors that are not adapted to disabled persons and unghost doors
+          viewer.setColor(unadaptedDoorsUuidList, [1, 0, 0]);
+        }, console.error);
+      });
+      </script>
