@@ -20,6 +20,7 @@ Contents
     cookbook/index
     visionneuse/index
     API Doc<../redoc/index.html#://>
+    License <license>
 
 
 
