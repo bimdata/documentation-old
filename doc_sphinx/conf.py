@@ -61,7 +61,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Bimdata essai Sphinx'
+project = u'Bimdata Documentation (dev)'
 copyright = u'2018, BIMData'
 author = u'BIMData'
 
