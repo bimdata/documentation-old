@@ -41,12 +41,17 @@ When use an app auth?
 The benefits
 ------------
 
-    Simple to use
+    **Simple to use**
+
     No user means no credentials to manage nor complex workflow, it's simpler to access via the application.
-    Pluggable
+
+    **Pluggable**
+
     You can subscribe to events and use webhooks.
-    Cloud by cloud
-    Your Access Token will let you access to one cloud information and data at the time.
+
+    **Cloud by cloud**
+
+    `Your Access Token`_ will let you access to one cloud information and data at the time.
 
 Use it when you need to have a scheduled response to an event and launch a script depending on this response.
 
@@ -120,5 +125,6 @@ Example: The BIMData platform uses this auth option.
 
 
 
-.. _Create an application process: cookbook/create_an_application
-.. _Authentication by client credential: cookbook/get_access_token
+.. _Create an application process: ../cookbook/create_an_application
+.. _Authentication by client credential: ../cookbook/get_access_token
+.. _Your Access Token: ../cookbook/get_access_token
