@@ -8,7 +8,8 @@
     </span>
     <div class="rst-other-versions">
       <dl>
-        <dt>{{ _('Versions') }}</dt>
+        <dt>{{ _('Versions') }}</dt> 
+        {{versions}}
         {% for slug, version in versions %}
           <dd><a href="{{ slug }}">{{ version }}</a></dd>
         {% endfor %}
