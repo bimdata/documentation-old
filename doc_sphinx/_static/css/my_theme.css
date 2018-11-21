@@ -10,10 +10,6 @@ body{
     color: #1B1B1B;
 }
 
-a{
-    color: #30374b;
-    background-color: inherit;
-}
 .wy-side-nav-search,
 .wy-nav-side{
     background: none;
@@ -31,6 +27,16 @@ a{
 
 .wy-nav-content{
     max-width: 1100px;
+}
+
+.wy-nav-content a{
+    color: #0366d6;
+    background-color: inherit;
+    font-weight:bolder;
+}
+
+.wy-nav-content a:hover{
+    text-decoration: underline;
 }
 
 .wy-menu-vertical li.toctree-l2.current > a{
