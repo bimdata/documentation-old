@@ -1,21 +1,22 @@
-.. Bimdata essai Sphinx documentation master file, created by
-   sphinx-quickstart on Mon Oct  8 14:24:02 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to Bimdata essai Sphinx's documentation!
+================================================
+Welcome to BIMData documentation!
 ================================================
 
+BIMData provides you:
+* `BIMData Connect`_: authenticate and manage your applications
+* `an API`_ to request data from your IFC files
+* `a Viewer`_ for your IFC file in the brower
 
+After reading about the concepts in our `Concepts Guide`_, take a look at our `guide by topics`_, our `cookbook`_ and our `tutorials`_.
 
 Contents
-----------
+=========
 
 .. toctree::
-    :maxdepth: 4
+    :maxdepth: 1
 
-    topics/index
-    core_resources/index
+    Guide by topics <topics/index>
+    Concepts Guide <core_resources/index>
     tutorials/index
     cookbook/index
     visionneuse/index
@@ -23,10 +24,11 @@ Contents
     License <license>
 
 
+.. _an API: ../redoc/index.html
+.. _a Viewer: visionneuse/index
+.. _BIMData Connect: topics/authentication_bimdata_connect
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
+.. _Concepts Guide: core_resources/index
+.. _guide by topics:
+.. _cookbook: cookbook/index
+.. _tutorials: tutorials/index
