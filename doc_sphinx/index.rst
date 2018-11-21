@@ -26,10 +26,10 @@ Contents
 
 
 .. _an API: ../redoc/index.html
-.. _a Viewer: visionneuse/index
-.. _BIMData Connect: topics/authentication_bimdata_connect
+.. _a Viewer: visionneuse/
+.. _BIMData Connect: topics/authentication_bimdata_connect.html
 
-.. _Concepts Guide: core_resources/index
-.. _guide by topics:
-.. _cookbook: cookbook/index
-.. _tutorials: tutorials/index
+.. _Concepts Guide: core_resources/
+.. _guide by topics: topics/
+.. _cookbook: cookbook/
+.. _tutorials: tutorials/
