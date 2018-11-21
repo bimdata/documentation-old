@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Bimdata essai Sphinx documentation build configuration file, created by
+# BIMData Sphinx documentation build configuration file, created by
 # sphinx-quickstart on Mon Oct  8 14:24:02 2018.
 #
 # This file is execfile()d with the current directory set to its
@@ -139,19 +139,7 @@ todo_include_todos = False
 import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-#html_theme_path = guzzle_sphinx_theme.html_theme_path()
-#html_theme = 'guzzle_sphinx_theme'
 #html_theme = "classic"
-
-# Register the theme as an extension to generate a sitemap.xml
-#extensions.append("guzzle_sphinx_theme")
-
-# Guzzle theme options (see theme.conf for more information)
-html_theme_options = {
-    # Set the name of the project to appear in the sidebar
-    #"project_nav_name": "Project Name",
-}
-
 
 html_theme_options = {
     'logo_only': False,
@@ -187,7 +175,7 @@ html_logo = "_static/_images/logo-bimdata-carre.svg"
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = u'Bimdata essai Sphinx v1.0'
+# html_title = u'BIMData Doc v1.0'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -290,7 +278,7 @@ html_search_language = 'en'
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'BimdataessaiSphinxdoc'
+htmlhelp_basename = 'BimdataSphinxdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -316,7 +304,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'BimdataessaiSphinx.tex', u'Bimdata essai Sphinx Documentation',
+    (master_doc, 'BimdataSphinx.tex', u'BIMData Sphinx Documentation',
      u'bimdata', 'manual'),
 ]
 
@@ -358,7 +346,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'bimdataessaisphinx', u'Bimdata essai Sphinx Documentation',
+    (master_doc, 'bimdatasphinx', u'BIMData Sphinx Documentation',
      [author], 1)
 ]
 
@@ -373,7 +361,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'BimdataessaiSphinx', u'Bimdata essai Sphinx Documentation',
+    (master_doc, 'BimdataessaiSphinx', u'BIMData essai Sphinx Documentation',
      author, 'BimdataessaiSphinx', 'One line description of project.',
      'Miscellaneous'),
 ]
