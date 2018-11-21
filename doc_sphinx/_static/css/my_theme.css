@@ -10,11 +10,6 @@ body{
     color: #1B1B1B;
 }
 
-a{
-    color: #30374b;
-    background-color: inherit;
-}
-
 .wy-side-nav-search,
 .wy-nav-side{
     background: none;
@@ -37,20 +32,11 @@ a{
 .wy-nav-content a{
     color: #0366d6;
     background-color: inherit;
-    text-decoration: underline;
     font-weight:bolder;
 }
 
 .wy-nav-content a:hover{
-    color: inherit;
-    text-decoration: #fac92c ;
-}
-
-.wy-nav-content a:visited{
-    color: #30374b;
-    background-color: inherit;
     text-decoration: underline;
-    font-weight:bold;
 }
 
 .wy-menu-vertical li.toctree-l2.current > a{
