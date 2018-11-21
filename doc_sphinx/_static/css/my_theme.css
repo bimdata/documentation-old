@@ -12,9 +12,9 @@ body{
 
 a{
     color: #30374b;
-    text-decoration: dotted;
-    background-color: #fac92c;
+    background-color: inherit;
 }
+
 .wy-side-nav-search,
 .wy-nav-side{
     background: none;
@@ -32,6 +32,25 @@ a{
 
 .wy-nav-content{
     max-width: 1100px;
+}
+
+.wy-nav-content a{
+    color: #30374b;
+    background-color: inherit;
+    text-decoration: underline;
+    font-weight:bolder;
+}
+
+.wy-nav-content a:hover{
+    color: #30374b;
+    background-color: #fac92c;
+}
+
+.wy-nav-content a:visited{
+    color: #30374b;
+    background-color: inherit;
+    text-decoration: underline;
+    font-weight:bold;
 }
 
 .wy-menu-vertical li.toctree-l2.current > a{
