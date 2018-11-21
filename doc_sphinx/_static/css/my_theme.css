@@ -35,15 +35,15 @@ a{
 }
 
 .wy-nav-content a{
-    color: #30374b;
+    color: #0366d6;
     background-color: inherit;
     text-decoration: underline;
     font-weight:bolder;
 }
 
 .wy-nav-content a:hover{
-    color: #30374b;
-    background-color: #fac92c;
+    color: inherit;
+    text-decoration: #fac92c ;
 }
 
 .wy-nav-content a:visited{
