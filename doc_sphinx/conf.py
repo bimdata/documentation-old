@@ -192,6 +192,7 @@ html_logo = "_static/_images/logo-bimdata-carre.svg"
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
 # html_short_title = None
+html_link_suffix = '/'
 
 
 
