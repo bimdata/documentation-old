@@ -3,9 +3,10 @@ Welcome to BIMData documentation!
 ================================================
 
 BIMData provides you:
-* `BIMData Connect`_: authenticate and manage your applications
-* `an API`_ to request data from your IFC files
-* `a Viewer`_ for your IFC file in the brower
+
+ * `BIMData Connect`_: authenticate and manage your applications
+ * `an API`_ to request data from your IFC files
+ * `a Viewer`_ for your IFC file in the brower
 
 After reading about the concepts in our `Concepts Guide`_, take a look at our `guide by topics`_, our `cookbook`_ and our `tutorials`_.
 

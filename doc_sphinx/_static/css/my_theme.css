@@ -12,7 +12,8 @@ body{
 
 a{
     color: #30374b;
-    background-color: inherit;
+    text-decoration: dotted;
+    background-color: #fac92c;
 }
 .wy-side-nav-search,
 .wy-nav-side{
