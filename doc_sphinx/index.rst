@@ -11,7 +11,7 @@ BIMData provides you:
 After reading about the concepts in our `Concepts Guide`_, take a look at our `guide by topics`_, our `cookbook`_ and our `tutorials`_.
 
 Chapters
-=========
+=======
 
 .. toctree::
     :maxdepth: 1

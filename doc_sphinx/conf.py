@@ -61,7 +61,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Bimdata Documentation (dev)'
+project = u'BIMData Documentation (dev)'
 copyright = u'2018, BIMData'
 author = u'BIMData'
 
