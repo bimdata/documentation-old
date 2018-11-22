@@ -2,7 +2,7 @@
 Welcome to BIMData documentation!
 ================================================
 
-`BIMData`_ provides you:
+BIMData provides you:
 
  * `BIMData Connect`_: authenticate and manage your applications
  * `an API`_ to request data from your IFC files
@@ -10,72 +10,21 @@ Welcome to BIMData documentation!
 
 After reading about the concepts in our `Concepts Guide`_, take a look at our `guide by topics`_, our `cookbook`_ and our `tutorials`_.
 
-
-Concepts Guide
-================
-
-.. toctree::
-    :maxdepth: 2
-    :titlesonly:
-
-    core_resources/cloud
-    core_resources/folders_and_documents
-    core_resources/ifc 
-    core_resources/projects
-    core_resources/users
-
-
-Guide by topics
-================
+Chapters
+=========
 
 .. toctree::
-    :maxdepth: 2
-    :titlesonly:
+    :maxdepth: 1
 
-    topics/introduction
-    topics/authentication_bimdata_connect
-    topics/errors
-    topics/filters
-    topics/error_codes
+    Concepts Guide <core_resources/index>
+    Guide by topics <topics/index>
+    tutorials/index
+    cookbook/index
     visionneuse/index
-
-Tutorials
-===========
-
-.. toctree::
-    :maxdepth: 3
-
-    tutorials/retrieve-elements
-
-Cookbook
-===========
+    API Doc<../redoc/index.html#://>
+    License <license>
 
 
-.. toctree::
-    :maxdepth: 2
-
-    cookbook/create_an_application
-    cookbook/get_access_token
-
-API
-===
-
-.. toctree::
-
-    Documentation API<../redoc/index.html#://>
-    Authentication<../redoc/index.html#section/Authentication://>
-    Cloud<../redoc/index.html#tag/cloud://>
-    Project<../redoc/index.html#tag/project://>
-    IFC<../redoc/index.html#tag/ifc://>
-    User Management<../redoc/index.html#tag/user://>
-    Checkplan<../redoc/index.html#tag/checkplan://>
-
-
-
-← Back to `BIMData.io website`_
-
-.. _BIMData: https://www.bimdata.io
-.. _BIMData.io website:  https://www.bimdata.io
 .. _an API: ../redoc/index.html
 .. _a Viewer: visionneuse/
 .. _BIMData Connect: topics/authentication_bimdata_connect.html
