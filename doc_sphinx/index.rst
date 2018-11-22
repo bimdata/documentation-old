@@ -10,14 +10,14 @@ BIMData provides you:
 
 After reading about the concepts in our `Concepts Guide`_, take a look at our `guide by topics`_, our `cookbook`_ and our `tutorials`_.
 
-Contents
+Chapters
 =========
 
 .. toctree::
     :maxdepth: 1
 
-    Guide by topics <topics/index>
     Concepts Guide <core_resources/index>
+    Guide by topics <topics/index>
     tutorials/index
     cookbook/index
     visionneuse/index
