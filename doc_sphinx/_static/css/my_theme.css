@@ -16,6 +16,16 @@ body{
     background-color: #30374b;
 }
 
+img.logo{
+    display: block;
+    height: 130px;
+    width: auto;
+    margin: 23px;
+    border-radius: 0;
+    max-width: 100%;
+    background: transparent;
+}
+
 .wy-side-nav-search a{
     font-size: 1.5em;
 }
