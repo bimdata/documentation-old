@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Bimdata essai Sphinx documentation build configuration file, created by
+# BIMData Sphinx documentation build configuration file, created by
 # sphinx-quickstart on Mon Oct  8 14:24:02 2018.
 #
 # This file is execfile()d with the current directory set to its
@@ -61,7 +61,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Bimdata Documentation (dev)'
+project = u'Bimdata essai Sphinx'
 copyright = u'2018, BIMData'
 author = u'BIMData'
 
@@ -139,19 +139,8 @@ todo_include_todos = False
 import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-#html_theme_path = guzzle_sphinx_theme.html_theme_path()
-#html_theme = 'guzzle_sphinx_theme'
+
 #html_theme = "classic"
-
-# Register the theme as an extension to generate a sitemap.xml
-#extensions.append("guzzle_sphinx_theme")
-
-# Guzzle theme options (see theme.conf for more information)
-html_theme_options = {
-    # Set the name of the project to appear in the sidebar
-    #"project_nav_name": "Project Name",
-}
-
 
 html_theme_options = {
     'logo_only': False,
@@ -192,7 +181,6 @@ html_logo = "_static/_images/logo-bimdata-carre.svg"
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
 # html_short_title = None
-html_link_suffix = '/'
 
 
 
@@ -249,7 +237,7 @@ html_use_index = True
 
 # If true, the index is split into individual pages for each letter.
 #
-html_split_index = False
+html_split_index = True
 
 # If true, links to the reST sources are added to the pages.
 #
@@ -261,7 +249,7 @@ html_show_sphinx = True
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
 #
-# html_show_copyright = False
+# html_show_copyright = True
 
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
@@ -270,7 +258,7 @@ html_show_sphinx = True
 # html_use_opensearch = ''
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
-html_file_suffix = None
+# html_file_suffix = None
 
 # Language to be used for generating the HTML full-text search index.
 # Sphinx supports the following languages:
@@ -291,7 +279,7 @@ html_search_language = 'en'
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'BimdataessaiSphinxdoc'
+htmlhelp_basename = 'BimdataSphinxdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -317,7 +305,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'BimdataessaiSphinx.tex', u'Bimdata essai Sphinx Documentation',
+    (master_doc, 'BimdataSphinx.tex', u'Bimdata essai Sphinx Documentation',
      u'bimdata', 'manual'),
 ]
 
@@ -359,7 +347,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'bimdataessaisphinx', u'Bimdata essai Sphinx Documentation',
+    (master_doc, 'bimdatasphinx', u'Bimdata essai Sphinx Documentation',
      [author], 1)
 ]
 
@@ -484,7 +472,7 @@ epub_exclude_files = ['search.html']
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'https://docs.python.org/': None}
 
-#swagger2sphinx_swagger_location = "api/swagger.json"
+swagger2sphinx_swagger_location = "api/swagger.json"
 # swagger2sphinx_swagger_location = "http://example.com/swagger.json"
 
 # Autosummary issue resolver
