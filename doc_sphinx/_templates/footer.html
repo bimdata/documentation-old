@@ -1,4 +1,12 @@
 <footer>
+
+{% if vhasdoc('master') %}
+This doc is available in <a href="{{ vpathto('master') }}">master</a>.
+{% else %}
+Go to <a href="{{ vpathto('master') }}">master</a> for the latest docs.
+{% endif %}
+
+
     {% if (theme_prev_next_buttons_location == 'bottom' or theme_prev_next_buttons_location == 'both') and (next or prev) %}
       <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         {% if next %}
@@ -15,9 +23,9 @@
     <div role="contentinfo">
       <p>
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-            <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />nbsp;
+            <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
           </a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-            Creative Commons Attribution 4.0 International license
+            &nbsp;Creative Commons Attribution 4.0 International license
           </a>.
       
         {%- if build_id and build_url %}
@@ -38,7 +46,6 @@
       {%- endif %}
   
       </p>
-      <p></p>
     </div>
   
     {%- if show_sphinx %}

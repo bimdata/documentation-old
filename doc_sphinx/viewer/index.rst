@@ -2,6 +2,9 @@
 Viewer
 =======================
 
+BIMData provides a 3D Viewer with which you can interact with Javascript.
+
+
 Example of the Viewer:
 -------------------------
 
