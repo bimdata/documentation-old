@@ -22,6 +22,7 @@ You `<div>` is simply styled by taking the whole screen width and height.
 An ID will ensure the easy access in Javascript scripts.
 
   .. code-block:: html
+
     <div id="embed" style="width: 100%; height: 100vh;" ></div>
 
 JS Viewer script
