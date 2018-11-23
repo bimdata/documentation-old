@@ -22,7 +22,8 @@ body{
 
 .wy-side-nav-search input[type="text"]
 {
-    border-color: #fac92c;
+    border-color: #8E97AE;
+    border-radius: 3px;
 }
 
 .wy-nav-content{

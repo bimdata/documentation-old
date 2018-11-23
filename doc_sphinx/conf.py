@@ -61,7 +61,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'BIMData Sphinx'
+project = u'BIMData Documentation (dev)'
 copyright = u'2018, BIMData'
 author = u'BIMData'
 
@@ -70,9 +70,9 @@ author = u'BIMData'
 # built documents.
 #
 # The short X.Y version.
-version = '1.0'
+version = 'dev'
 # The full version, including alpha/beta/rc tags.
-release = '1.0'
+release = '1.0-dev'
 
 #sphinx-contrib
 #scv_whitelist_branches = ('master', '1.0', 'dev', 'testing_new_features')

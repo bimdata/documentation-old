@@ -1,6 +1,4 @@
 
-
-
 {# Add rst-badge after rst-versions for small badge style. #}
   <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
@@ -12,7 +10,8 @@
       <dl>
         <dt>{{ _('Versions') }}</dt>
         {% for slug, version in versions %}
-          <dd><a href="{{ url }}">{{ version }}</a></dd>
+          <dd><a href="{{ slug }}">{{ version }}</a>
+          </dd>
         {% endfor %}
       </dl>
       <dl>
