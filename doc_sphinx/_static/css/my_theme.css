@@ -16,6 +16,7 @@ body{
     background-color: #30374b;
 }
 
+.wy-side-nav-search > a img.logo,
 img.logo{
     display: block;
     height: 130px;
