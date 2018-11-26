@@ -17,7 +17,7 @@ body{
 }
 
 .wy-side-nav-search > a img.logo,
-img.logo{
+.wy-side-nav-search .wy-dropdown > a img.logo{
     display: block;
     height: 130px;
     width: auto;
@@ -48,9 +48,6 @@ img.logo{
 
 .wy-nav-content a:hover{
     text-decoration: underline;
-}
-
-.wy-menu-vertical li.toctree-l2.current > a{
 }
 
 .rst-versions,
