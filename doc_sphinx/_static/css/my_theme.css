@@ -47,3 +47,8 @@ body{
 .rst-current-version{
     color: #fac92c;
 }
+
+.wy-menu-vertical li a span.toctree-expand{
+    color:#ffffff;
+    background-color: inherit;
+}
