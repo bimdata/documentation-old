@@ -33,7 +33,8 @@ body{
 
 .wy-side-nav-search input[type="text"]
 {
-    border-color: #fac92c;
+    border-color: #8E97AE;
+    border-radius: 3px;
 }
 
 .wy-nav-content{
@@ -53,4 +54,9 @@ body{
 .rst-versions,
 .rst-current-version{
     color: #fac92c;
+}
+
+.wy-menu-vertical li a span.toctree-expand{
+    color:#ffffff;
+    background-color: inherit;
 }
