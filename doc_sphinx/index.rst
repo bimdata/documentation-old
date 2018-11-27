@@ -21,7 +21,7 @@ Chapters
     tutorials/index
     cookbook/index
     visionneuse/index
-    API Doc<../redoc/index.html#://>
+    API Doc<../apidoc/index.html#://>
     License <license>
 
 
