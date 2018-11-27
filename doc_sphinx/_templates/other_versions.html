@@ -1,0 +1,5 @@
+{% if vhasdoc('master') %}
+This doc is available in <a href="{{ vpathto('master') }}">master</a>.
+{% else %}
+Go to <a href="{{ vpathto('master') }}">master</a> for the latest docs.
+{% endif %}
