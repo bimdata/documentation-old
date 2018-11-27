@@ -70,9 +70,9 @@ author = u'BIMData'
 # built documents.
 #
 # The short X.Y version.
-version = 'dev'
+version = '1.0'
 # The full version, including alpha/beta/rc tags.
-release = '1.0-dev'
+release = '1.0 - latest'
 
 #sphinx-contrib
 #scv_whitelist_branches = ('master', '1.0', 'dev', 'testing_new_features')
