@@ -21,6 +21,17 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend{
     background-color: #30374b;
 }
 
+.wy-side-nav-search > a img.logo,
+.wy-side-nav-search .wy-dropdown > a img.logo{
+    display: block;
+    height: 130px;
+    width: auto;
+    margin: 23px;
+    border-radius: 0;
+    max-width: 100%;
+    background: transparent;
+}
+
 .wy-side-nav-search a{
     font-size: 1.5em;
 }
@@ -43,9 +54,6 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend{
 
 .wy-nav-content a:hover{
     text-decoration: underline;
-}
-
-.wy-menu-vertical li.toctree-l2.current > a{
 }
 
 .rst-versions,

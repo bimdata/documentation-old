@@ -162,7 +162,7 @@ html_style = 'css/my_theme.css'
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 #
-html_logo = "_static/_images/logo-bimdata-carre.svg"
+html_logo = "_static/_images/logo-bimdata-darkbg.svg"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

@@ -1,12 +1,4 @@
 <footer>
-
-{% if vhasdoc('master') %}
-This doc is available in <a href="{{ vpathto('master') }}">master</a>.
-{% else %}
-Go to <a href="{{ vpathto('master') }}">master</a> for the latest docs.
-{% endif %}
-
-
     {% if (theme_prev_next_buttons_location == 'bottom' or theme_prev_next_buttons_location == 'both') and (next or prev) %}
       <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         {% if next %}
