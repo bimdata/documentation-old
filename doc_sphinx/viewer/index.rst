@@ -41,7 +41,7 @@ Usage
 Examples
 ------------
 
- * `How-to: doors filtering`_
+ * How-to: `doors filtering`_
 
 
 
