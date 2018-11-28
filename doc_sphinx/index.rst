@@ -20,9 +20,8 @@ Chapters
     Guide by topics <topics/index>
     tutorials/index
     cookbook/index
-    visionneuse/index
+    viewer/index
     API Doc<../apidoc/index.html#://>
-    License <license>
 
 
 .. _an API: ../redoc/index.html
