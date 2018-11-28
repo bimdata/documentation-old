@@ -41,9 +41,9 @@ Usage
 Examples
 ------------
 
- * `Doors filtering`_
+ * `How-to: doors filtering`_
 
 
 
 .. _Including the Viewer in your app: include_viewer
- .. _Doors filtering: example_doors
+.. _doors filtering: example_doors
