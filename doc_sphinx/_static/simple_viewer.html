@@ -1,15 +1,8 @@
-=======================
-Viewer
-=======================
+<div id="embed" style="width: 100%; height: 100vh;" ></div>
 
-BIMData provides a 3D Viewer with which you can interact with Javascript.
-
-
-Example of the Viewer:
--------------------------
-
-.. code-block:: javascript
-
+  <script src="https://cdn-beta.bimdata.io/js/bimdata-viewer-embed.js" ><!--the viewer itself --></script>
+  <script type="text/javascript" src="https://unpkg.com/@bimdata/bimdata-api-client/dist/javascript-api-client.min.js"><!-- API call --></script>
+  <script>
       var accessToken = 'DEMO_TOKEN';
       var cloudId = 88;
       var projectId = 100;
@@ -27,23 +20,4 @@ Example of the Viewer:
         projectId: projectId,
         ifcId: ifcId
       });
-
-.. raw:: html
-   :file: ../_static/simple_viewer.html
-
-
-Usage
------------
-
-* `Including the Viewer in your app`_
-
-
-Examples
-------------
-
- * `Doors filtering`_
-
-
-
-.. _Including the Viewer in your app: include_viewer
- .. _Doors filtering: example_doors
+      </script>
