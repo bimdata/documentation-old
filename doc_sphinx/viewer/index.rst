@@ -4,6 +4,18 @@ Viewer
 
 BIMData provides a 3D Viewer with which you can interact with Javascript.
 
+Usage
+-----------
+
+* `Including the Viewer in your app`_
+
+
+Examples
+------------
+
+ * How-to: `doors filtering`_
+
+
 
 Example of the Viewer:
 -------------------------
@@ -32,18 +44,13 @@ Example of the Viewer:
    :file: ../_static/simple_viewer.html
 
 
-Usage
------------
+.. toctree::
+    :hidden:
 
-* `Including the Viewer in your app`_
-
-
-Examples
-------------
-
- * How-to: `doors filtering`_
+    include_viewer
+    example_doors
+    parameters
 
 
-
-.. _Including the Viewer in your app: include_viewer
-.. _doors filtering: example_doors
+.. _Including the Viewer in your app: include_viewer.html
+.. _doors filtering: example_doors.html
