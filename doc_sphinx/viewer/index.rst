@@ -8,6 +8,7 @@ Usage
 -----------
 
 * `Including the Viewer in your app`_
+* Javascript API: `get your model into the Viewer`_
 
 
 Examples
@@ -50,3 +51,4 @@ Example of the Viewer:
 
 .. _Including the Viewer in your app: include_viewer.html
 .. _doors filtering: example_doors.html
+.. _get your model into the Viewer: get_model_from_cloud.html

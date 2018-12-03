@@ -80,5 +80,5 @@ Example of the Viewer:
    :file: ../_static/st_iframe.html
 
 
-
-.. _How-to get the model from the cloud: get_model_from_cloud
+.. _How-to get the model from the cloud: ../viewer/get_model_from_cloud.html
+.. _our Codepen: https://codepen.io/bimdata
