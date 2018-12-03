@@ -147,6 +147,7 @@ html_theme_options = {
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
+    'vcs_pageview_mode': 'edit',
     # Toc options
     'collapse_navigation': False,
     'sticky_navigation': True,
@@ -157,6 +158,8 @@ html_theme_options = {
 
 
 html_style = 'css/my_theme.css' 
+html_file_suffix = None
+display_github = True
 
 
 # The name of an image file (relative to this directory) to place at the top
