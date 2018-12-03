@@ -49,6 +49,8 @@ Example of the Viewer:
 
     include_viewer
     example_doors
+    get_model_from_cloud
+    viewfit_focus
     parameters
 
 
