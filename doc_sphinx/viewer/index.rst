@@ -26,12 +26,6 @@ Example of the Viewer:
       var cloudId = 88;
       var projectId = 100;
       var ifcId = 175;
-      var defaultClient = bimdata.ApiClient.instance;
-      
-      defaultClient.basePath = 'https://api-beta.bimdata.io';
-      // Configure API key authorization: Bearer
-      var Bearer = defaultClient.authentications['Bearer'];
-      Bearer.apiKey = 'Bearer ' + accessToken;
       
       var viewer = new BIMDataViewer('embed', {
         accessToken: accessToken,
