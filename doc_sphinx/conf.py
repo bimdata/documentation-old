@@ -147,7 +147,10 @@ html_theme_options = {
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
-    'vcs_pageview_mode': 'edit',
+    'display_github': True,
+    'github_user': 'bimdata',
+    'github_repo': 'documentation',
+    'github_version': 'branch/dev/',
     # Toc options
     'collapse_navigation': False,
     'sticky_navigation': True,
@@ -155,6 +158,8 @@ html_theme_options = {
     'includehidden': False,
     'titles_only': False
 }
+
+
 
 
 html_style = 'css/my_theme.css' 
