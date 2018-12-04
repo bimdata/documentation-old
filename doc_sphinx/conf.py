@@ -164,7 +164,7 @@ html_context = {
   'display_github': True,
   'github_user': 'bimdata',
   'github_repo': 'documentation',
-  'github_version': 'dev/doc_sphinx/'
+  'github_version': '/master/doc_sphinx/'
 }
 
 
