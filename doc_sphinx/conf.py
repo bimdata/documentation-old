@@ -147,6 +147,10 @@ html_theme_options = {
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
+    'display_github': True,
+    'github_user': 'bimdata',
+    'github_repo': 'documentation',
+    'github_version': 'branch/dev/',
     # Toc options
     'collapse_navigation': False,
     'sticky_navigation': True,
@@ -156,7 +160,11 @@ html_theme_options = {
 }
 
 
+
+
 html_style = 'css/my_theme.css' 
+html_file_suffix = None
+display_github = True
 
 
 # The name of an image file (relative to this directory) to place at the top
@@ -258,7 +266,7 @@ html_show_sphinx = True
 # html_use_opensearch = ''
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
-# html_file_suffix = None
+html_file_suffix = None
 
 # Language to be used for generating the HTML full-text search index.
 # Sphinx supports the following languages:

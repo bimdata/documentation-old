@@ -9,10 +9,12 @@
     <div class="rst-other-versions">
       <dl>
         <dt>{{ _('Versions') }}</dt>
-        {% for slug, version in versions %}
-          <dd><a href="{{ slug }}">{{ version }}</a>
+          <dd><a href="{{ slug }}">1.0</a>
           </dd>
-        {% endfor %}
+          <dd><a href="{{ slug }}">master</a>
+          </dd>
+          <dd><a href="{{ slug }}">dev</a>
+          </dd>
       </dl>
       <dl>
         <dt>On Github</dt>

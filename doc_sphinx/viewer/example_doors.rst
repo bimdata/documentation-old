@@ -4,6 +4,34 @@ Example: usage of the Viewer
 
 BIMData provides a 3D Viewer with which you can interact with Javascript.
 
+In this example, you want to check if your doors let the disabled person access to the building.
+To evaluate the number of doors that are ok or not ok, you will display all the doors of the model with a color-code according to the minimal width.
+
+The script has 3 parts:
+ * you get the model from the cloud
+ * the Viewer load the model and you get all doors
+ * you hide everything, first then you set a color and show only the doors.
+
+Get the model from the cloud
+------------------------------
+
+This part is covered by the Recipe "`How-to get the model from the cloud`_"
+
+Get all the doors
+------------------
+
+Using the `ifcApi` you retrieve the doors the element `IfcDoor`, the getElements() methods could take an argument to filter by IFC element.
+Then you enlist the doors in two separate lists, based on their width: 
+
+Retrieve the whole script on `our Codepen`_.
+
+
+Color doors
+--------------------------------------------
+
+In this example, you first set all elements as *unpickable*, and you `ghost()` them. Then you `unghost()` and set *pickable* again only the doors elements.
+Since you have the doors list, you set the color of the elements related to their width.
+
 
 Example of the Viewer:
 -------------------------
@@ -50,3 +78,7 @@ Example of the Viewer:
 
 .. raw:: html
    :file: ../_static/st_iframe.html
+
+
+.. _How-to get the model from the cloud: ../viewer/get_model_from_cloud.html
+.. _our Codepen: https://codepen.io/bimdata
