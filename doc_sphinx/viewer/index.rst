@@ -1,3 +1,6 @@
+.. meta::
+   :github: https://github.com/bimdata/documentation/blob/dev/doc_sphinx/viewer/index.rst
+
 =======================
 Viewer
 =======================

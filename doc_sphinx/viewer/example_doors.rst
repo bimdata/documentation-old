@@ -1,3 +1,6 @@
+.. meta::
+   :github: https://github.com/bimdata/documentation/blob/dev/doc_sphinx/viewer/example_doors.rst
+
 ===============================
 Example: usage of the Viewer
 ===============================
