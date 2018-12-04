@@ -147,10 +147,6 @@ html_theme_options = {
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
-    'display_github': True,
-    'github_user': 'bimdata',
-    'github_repo': 'documentation',
-    'github_version': 'branch/dev/',
     # Toc options
     'collapse_navigation': False,
     'sticky_navigation': True,
@@ -168,7 +164,7 @@ html_context = {
   'display_github': True,
   'github_user': 'bimdata',
   'github_repo': 'documentation',
-  'github_version': 'dev/doc_sphinx/'
+  'github_branch': 'dev'
 }
 
 
