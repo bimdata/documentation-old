@@ -164,7 +164,13 @@ html_theme_options = {
 
 html_style = 'css/my_theme.css' 
 html_file_suffix = None
-display_github = True
+html_context = {
+  'display_github': True,
+  'github_user': 'bimdata',
+  'github_repo': 'documentation',
+  'github_version': 'dev/doc_sphinx/'
+}
+
 
 
 # The name of an image file (relative to this directory) to place at the top
