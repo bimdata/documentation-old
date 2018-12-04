@@ -156,13 +156,23 @@ html_theme_options = {
 }
 
 
+
+
 html_style = 'css/my_theme.css' 
+html_file_suffix = None
+html_context = {
+  'display_github': True,
+  'github_user': 'bimdata',
+  'github_repo': 'documentation',
+  'github_version': 'dev/doc_sphinx/'
+}
+
 
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 #
-html_logo = "_static/_images/logo-bimdata-carre.svg"
+html_logo = "_static/_images/logo-bimdata-darkbg.svg"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
