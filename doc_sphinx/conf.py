@@ -162,12 +162,13 @@ scv_whitelist_branches = ('master','dev', 'tech-writing')
 html_style = 'css/my_theme.css' 
 html_file_suffix = None
 html_context = {
-  'display_github': True,
-  'github_user': 'bimdata',
-  'github_repo': 'documentation',
-  'github_branch': 'dev/doc_sphinx/'
+    'github_user': 'bimdata',
+    'github_repo': 'documentation',
+    'github_version': 'dev/',
+    'display_github': True,
+    'conf_py_path': 'doc_sphinx/',
+    'source_suffix': '.rst',
 }
-
 
 
 # The name of an image file (relative to this directory) to place at the top
