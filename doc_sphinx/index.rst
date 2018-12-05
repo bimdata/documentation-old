@@ -25,7 +25,7 @@ Chapters
     tutorials/index
     cookbook/index
     viewer/index
-    API Doc<../apidoc/index.html#://>
+    API Doc<../redoc/index.html#://>
 
 
 .. _an API: ../redoc/index.html
