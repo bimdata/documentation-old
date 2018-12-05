@@ -61,7 +61,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'BIMData Documentation (dev)'
+project = u'BIMData Documentation'
 copyright = u'2018, BIMData'
 author = u'BIMData'
 
@@ -157,6 +157,8 @@ html_theme_options = {
 
 
 
+scv_priority = 'branches'
+scv_whitelist_branches = ('master','dev', 'tech-writing')
 
 html_style = 'css/my_theme.css' 
 html_file_suffix = None
@@ -270,7 +272,7 @@ html_show_sphinx = True
 # html_use_opensearch = ''
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
-# html_file_suffix = None
+html_file_suffix = '.html'
 
 # Language to be used for generating the HTML full-text search index.
 # Sphinx supports the following languages:

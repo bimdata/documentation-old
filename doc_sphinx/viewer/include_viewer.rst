@@ -1,3 +1,6 @@
+.. meta::
+   :github: https://github.com/bimdata/documentation/blob/dev/doc_sphinx/viewer/include_viewer.rst
+
 ================================
 Include the Viewer in your app
 ================================
@@ -11,7 +14,6 @@ To support the Viewer you will need a `<div>` element, with an id attribute, and
   .. code-block:: html
 
     <script src="https://cdn-beta.bimdata.io/js/bimdata-viewer-embed.js" ><!--the viewer itself --></script>
-    <script type="text/javascript" src="https://unpkg.com/@bimdata/bimdata-api-client/dist/javascript-api-client.min.js"><!-- API call --></script>
     <script>
 
 
@@ -28,30 +30,16 @@ An ID will ensure the easy access in Javascript scripts.
 JS Viewer script
 =================
 
-The Viewer is based on XeoGL Engine and... @TODO
+The Viewer is based on `XeoGL Engine`_, see the `list of the methods of the Viewer`_ to interact with the Viewer.
 
-.. http://xeogl.org/
+The Viewer is the object BIMDataViewer. The construction of a new BIMDataViewer expects an HTMLElement or a string (ID of this HTMLElement). 
+You will use the <div> ID.
 
-Object BIMDataViewer
-
-
-JS API client script
-====================
-
-This client will help you making API calls to get your data. 
-You will need your Access Token (see the Cookbook Recipe How-to get your Access Token) to get your authentication.
-
-.. code-block:: javascript
-
-      defaultClient.basePath = 'https://api-beta.bimdata.io';
-      // Configure API key authorization: Bearer
-      var Bearer = defaultClient.authentications['Bearer'];
-      Bearer.apiKey = 'Bearer ' + accessToken;
 
 Your own Javascript script
 ==========================
 
-You will use the bimdata namespace
+You can now interact with the Viewer in your script. 
 
-bimdata.ApiClient
-bimdata.IfcApi
+.. _XeoGL Engine: http://xeogl.org/
+.. _list of the methods of the Viewer: ../viewer/parameters.html
