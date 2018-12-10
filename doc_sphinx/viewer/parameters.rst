@@ -2,26 +2,26 @@
 Parameters and methods
 =========================
 
-You can change the display of the Viewer using parameters, and using the methods.
+You can change the display of the Viewer using value of attributes, and using the methods.
 
 
-Parameters
+Attributes
 ============
 
 List of attributes and parameters for the methods.
 
-*	helper: ViewerHelper;
-*	iframe: HTMLElement;
-*	readonly elementHovered : string;
-*	readonly elementsHovered: string[];
-*	elementHighlighted : string;
-*	elementSelected    : string;
-*	elementsHighlighted: string[];
-*	elementsSelected   : string[];
-*	elementsHided      : string[];
-*	elementsGhosted    : string[];
-*	readonly buttonsMenuActivated: { [id: string]: boolean };
-*	readonly buttonsMenuShowed: { [id: string]: boolean };
+*	helper: *ViewerHelper*
+*	iframe: *HTMLElement*
+*	readonly elementHovered : *string*
+*	readonly elementsHovered: *string[]*
+*	elementHighlighted : *string*
+*	elementSelected    : *string*
+*	elementsHighlighted: *string[]*
+*	elementsSelected   : *string[]*
+*	elementsHided      : *string[]*
+*	elementsGhosted    : *string[]*
+*	readonly buttonsMenuActivated: { [ id ]: boolean }
+*	readonly buttonsMenuShowed: { [ id ]: boolean }
 
 
 Methods
@@ -32,29 +32,29 @@ The interface BIMDataViewerInterface let you have actions on the Viewer via many
 Delete
 --------
 
-*	drop(): void;
+*	``drop( )`` - returns *void*
 
 Window
 -------
 
-*	addCustomWindow(id: string, options?: BIMViewerParamsCustomWindowOptions): void;
-*	removeCustomWindow(id: string): void;
-*	openCustomWindow(id: string): void;
-*	closeCustomWindow(id: string): void;
-*	setCustomWindowTemplate(id: string, template: string): void;
-*	onCustomWindow(idWindow: string, event: string, selector: string, callback: Function, preventDefault?: boolean): number;
-*	offCustomWindow(id: number): void;
+*	``addCustomWindow`` ( id, ``options``?: ``BIMViewerParamsCustomWindowOptions``) - returns *void*
+*	``removeCustomWindow`` ( id) - returns *void*
+*	``openCustomWindow`` ( id) - returns *void*
+*	``closeCustomWindow`` (  id ) - returns *void*
+*	``setCustomWindowTemplate`` (  id , *template* ) - returns *void*
+*	``onCustomWindow`` ( ``idWindow``, event, selector, callback, preventDefault? ) - returns *number*
+*	``offCustomWindow`` (  id ) - returns *void*
 
 Button
 ----------
 
 Methods to interact with buttons:
 
-*	activateButtonMenu(target: string, value?: boolean): void;
-*	showButtonMenu(target: string, value?: boolean): void;
-*	showSelectModeMenu(target: string, value?: boolean): void;
-*	addCustomButtonMenu(id: string, options?: BIMViewerCustomButtonOptionsMenu): void;
-*	removeCustomButtonMenu(id: string): void;
+*	``activateButtonMenu`` ( target, visibility: *boolean* ) - returns *void*
+*	``showButtonMenu`` ( target, visibility: *boolean* ) - returns *void*
+*	``showSelectModeMenu`` ( target, visibility: *boolean* ) - returns *void*
+*	``addCustomButtonMenu`` (  id , options: *BIMViewerCustomButtonOptionsMenu* ) - returns *void*
+*	``removeCustomButtonMenu`` (  id ) - returns *void*
 
 
 Reach the Viewer
@@ -62,8 +62,8 @@ Reach the Viewer
 
 More generic methods to reach the Viewer and set it:
 
-*	on(event: string, callback: Function): number;
-*	off(id: number): void;
+*	``on`` ( eventName, callback) - returns *number*
+*	``off`` (  id ) - returns *void*
 
 
 Elements & IFC
@@ -71,11 +71,11 @@ Elements & IFC
 
 Methods to interact with elements of your model:
 
-*	setPickable(selector: any):void;
-*	setUnpickable(selector: any):void;
-*	getElementsInfo(ifcId?: number): { [id: string]: any };
-*	getModel(uuid: string): string;
-*	getStructure(uuid: string): Promise<any>;
+*	``setPickable`` ( selector )- returns *void*
+*	``setUnpickable`` ( selector )- returns *void*
+*	``getElementsInfo`` ( ``ifcId`` ) { [ id ] }
+*	``getModel`` ( id ) - returns *string*
+*	``getStructure`` ( id ) - returns *Promise*
 
 
 Colors
@@ -83,8 +83,8 @@ Colors
 
 Methods to modify colors:
 
-*	getColor(id: string): Promise<[ number, number, number ]>;
-*	setColor(selector: any, color: [ number, number, number ]): void;
+*	``getColor`` (  id ) - returns Promise<[ *number*, *number*, *number* ]>
+*	``setColor`` ( selector, color: [ *number*, *number*, *number* ]) - returns *void*
 
 
 Display and viewing
@@ -92,17 +92,17 @@ Display and viewing
 
 Methods to modify display, view and point of view:
 
-*	getSnapshot(): Promise<any>;
-*	getSnapshot(options?: { width?: number, height?: number, format?: "png|jpg" }): Promise<string>;
-*	getViewpoint(): Promise<ViewPoint>;
-*	setViewPoint(viewPoint?: ViewPoint): void;
-*	viewFit(selector?: string|string[]): void;
-*	select(selector?: any): void;
-*	deselect(selector?: any): void;
-*	highlight(selector?: any): void;
-*	dehighlight(selector?: any): void;
-*	show(selector?: any): void;
-*	hide(selector?: any): void;
-*	unghost(selector?: any): void;
-*	ghost(selector?: any): void;
+*	``getSnapshot`` ( ) 
+*	``getSnapshot`` ( options: { width?, height?, format: "png|jpg" }) returns *<string>*
+*	``getViewpoint`` ( ) - returns *object <ViewPoint>*
+*	``setViewPoint`` ( ViewPoint instance) - returns *void*
+*	``viewFit`` ( selector: *string|string[]* ) - returns *void*
+*	``select`` ( selector ) - returns *void*
+*	``deselect`` ( selector ) - returns *void*
+*	``highlight`` ( selector ) - returns *void*
+*	``dehighlight`` ( selector ) - returns *void*
+*	``show`` ( selector ) - returns *void*
+*	``hide`` ( selector ) - returns *void*
+*	``unghost`` ( selector ) - returns *void*
+*	``ghost`` ( selector ) - returns *void*
 
