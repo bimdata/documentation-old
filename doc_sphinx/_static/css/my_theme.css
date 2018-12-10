@@ -66,8 +66,10 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend{
     color:#ffffff;
     background-color: inherit;
 }
-.rst-content code.literal, code, .rst-content code{
+.rst-content code.literal, code, .rst-content code,
+{
     font-family: "Roboto Mono", monospace; 
     background-color: #f5f5f5;
     color: #1B1B1B;
+    border: none;
 }
