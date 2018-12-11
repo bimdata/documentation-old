@@ -12,18 +12,18 @@ Attributes
 
 List of attributes of the ````BIMDataViewer````.
 
-*	``.helper``: instance of *ViewerHelper* (Type: *object*)
-*	``.iframe``: the *HTMLElement* <iframe>
-*	``.elementHovered``: name of the element (Type: *string*), read-only
-*	``.elementsHovered``: list of names of the elements, read-only
-*	``.elementHighlighted``: name of the element (Type: *string*)
-*	``.elementSelected``: name of the element (Type: *string*)
-*	``.elementsHighlighted``: list of names of the elements (Type: *array*)
-*	``.elementsSelected``: list of names of the elements (Type: *array*)
-*	``.elementsHided``: list of names of the elements (Type: *array*)
-*	``.elementsGhosted``: list of names of the elements (Type: *array*)
-*   ``.buttonsMenuActivated``: { [ buttonId ]: *boolean* isActivated?  } (Type: *Object*), read-only 
-*   ``.buttonsMenuShowed``: { [ buttonId ]: *boolean* isVisible } (Type: *Object*), read-only
+*	`` .helper``: instance of *ViewerHelper* (Type: *object*)
+*	`` .iframe``: the *HTMLElement* <iframe>
+*	`` .elementHovered``: name of the element (Type: *string*), read-only
+*	`` .elementsHovered``: list of names of the elements, read-only
+*	`` .elementHighlighted``: name of the element (Type: *string*)
+*	`` .elementSelected``: name of the element (Type: *string*)
+*	`` .elementsHighlighted``: list of names of the elements (Type: *array*)
+*	`` .elementsSelected``: list of names of the elements (Type: *array*)
+*	`` .elementsHided``: list of names of the elements (Type: *array*)
+*	`` .elementsGhosted``: list of names of the elements (Type: *array*)
+*	`` .buttonsMenuActivated``: { [ buttonId ]: *boolean* isActivated?  } (Type: *Object*), read-only 
+*	`` .buttonsMenuShowed``: { [ buttonId ]: *boolean* isVisible } (Type: *Object*), read-only
 
 Methods
 ==========
@@ -33,100 +33,121 @@ The interface BIMDataViewerInterface let you have actions on the Viewer via many
 Delete
 --------
 
-*	``BIMDataViewer.drop( )``: deletes the BIMViewer - returns *void*
+
+.. js:method:: BIMDataViewer.drop()
+    deletes the BIMViewer
+    
+    :returns: void
 
 Window
 -------
 
 All these methods return *void*, except ``onCustomWindow`` (see above).
 
+
 .. js:method:: BIMDataViewer.addCustomWindow(id, options)
+
+    Creation of a custom window, initialization with the parameters given in the ``options`` Object
 
    :param string id: ID of the Window
    :param object options: Instance of BIMViewerParamsCustomWindowOptions
    :returns: void
 
-*	``BIMDataViewer.addCustomWindow()``: creation of a custom window, initialization with the parameters given in the ``options`` Object
-        
-        **Parameters:**
-            * *string* id: ID of the Window  
-            * ``options``: *Object* ``BIMViewerParamsCustomWindowOptions`` 
-        **Usage**
-            ```.. code-block:: javascript
+   ```.. code-block:: javascript
 
                     viewer1.addCustomWindow('first-window', {
                         open: true,
                         template: 'awesome'
                     })
-            
-*   ``BIMDataViewer.addCustomButtonMenu()``:
+                
+
+.. js:method:: BIMDataViewer.addCustomButtonMenu(id, options)
+
+    :param string id: ID of the Menu,
+    :param object options: *Object* BIMViewerCustomButtonOptionsMenu
+    :returns: void
+
+
+
+.. js:method:: BIMDataViewer.removeCustomWindow(id)
+
+    :param string id: ID of the custom Window  
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.openCustomWindow(id)
+
+    :param string id: ID of the custom Window 
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.closeCustomWindow(id)
+
+    :param string id: ID of the custom Window 
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.setCustomWindowTemplate(id, template)
+
+    :param string id: ID of the custom Window 
+    :param string template: name of the template
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.onCustomWindow(idWindow, event, selector, callback, preventDefault)
+
+    :param integer idWindow: ID of the custom Window    
+    :param integer event: name of the event 
+    :param integer selector: CSS-style selector
+    :param function callback:
+    :param boolean preventDefault:
+    
+    :returns integer windowNumber: auto-increment numeration of the custom Windows
         
-        **Parameters:**
-            * id: *string* ID of the Menu,
-            * options: *Object* BIMViewerCustomButtonOptionsMenu
-*	``BIMDataViewer.removeCustomWindow()``:
-        
-        **Parameters:**
-            * id: *string* ID of the custom Window
-*	``BIMDataViewer.openCustomWindow()``:
-        
-        **Parameters:**
-            * id: *string* ID of the custom Window
-*	``BIMDataViewer.closeCustomWindow()``:
-        
-        **Parameters:**
-            * id: *string* ID of the custom Window
-*	``BIMDataViewer.setCustomWindowTemplate()``:
-        
-        **Parameters:**
-            * id: *string* ID of the custom Window
-            * template: *string* name of the template
-*	``BIMDataViewer.onCustomWindow()``:
-        
-        **Parameters:**
-            * idWindow: *integer* ID of the custom Window
-            * event: *string* name of the event 
-            * selector: *string* CSS-style selector
-            * callback: *Function* [callback]
-            * preventDefault: *boolean*
-        
-        **Returns:**
-            * windowNumber: *integer* auto-increment numeration of the custom Windows
-*	``BIMDataViewer.offCustomWindow()``:
-        
-        **Parameters:**
-            * id: *string* ID of the custom Window
+
+.. js:method:: BIMDataViewer.offCustomWindow()
+
+    :param string id: ID of the custom Window
+    :returns: void
 
 Buttons
 ----------
 
-Methods to interact with buttons.
+Methods to interact with the buttons of the Viewer's menus.
 All these methods return *void*.
 
-*	``BIMDataViewer.activateButtonMenu()``:
+
+.. js:method:: BIMDataViewer.activateButtonMenu(target, visibility)
+    :param string target: name of the button
+    :param boolean visibility:     
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.showButtonMenu(target, visibility)
         
-        **Parameters:**
-            * target: 
-            * visibility: *boolean*
-*	``BIMDataViewer.showButtonMenu()``:
+    :param string target: name of the button
+    :param boolean visibility:
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.showSelectModeMenu(target, visibility)
         
-        **Parameters:**
-            * target: 
-            * visibility: *boolean* 
-*	``BIMDataViewer.showSelectModeMenu``:
-        
-        **Parameters:**
-            * target: 
-            * visibility: *boolean*
-*	``BIMDataViewer.addCustomButtonMenu``:
-        
-        **Parameters:**
-            * id: *integer* ID of the menu
-            * options: *Object* instance of ``BIMViewerCustomButtonOptionsMenu``
-*	``BIMDataViewer.removeCustomButtonMenu()`` :
-        
-        **Parameters:**
-            * id: *integer* ID of the menu
+    :param string target:name of the button
+    :param boolean visibility: 
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.addCustomButtonMenu(id, options)
+
+    :param integer id: ID of the menu
+    :param object options: *Object* instance of ``BIMViewerCustomButtonOptionsMenu``
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.removeCustomButtonMenu(id)
+
+    :param integer id: ID of the menu  
+    :returns: void
 
 
 Reach the Viewer
@@ -134,17 +155,19 @@ Reach the Viewer
 
 More generic methods to reach the Viewer and set it:
 
-*	``BIMDataViewer.on()``:
-        **Parameters:**
-            * eventName: *string* name of the targeted event
-            * callback: *Function* [callback]
-        **Returns:**
-            * number: an auto-increment ID for this Viewer instance
-*	``BIMDataViewer.off()``:
-        **Parameters:**
-            * id: *integer* ID of the Viewer
-        **Returns:**
-            * *void*
+
+.. js:method:: BIMDataViewer.on(eventName, callback)
+
+    :param string eventName: name of the targeted event
+    :param function callback: *Function* [callback]
+    :returns:number: an auto-increment ID for this Viewer instance
+        
+
+
+.. js:method:: BIMDataViewer.off(id)
+    
+    :param integer id: ID of the Viewer
+    :returns: void
 
 
 Elements & IFC
@@ -152,103 +175,130 @@ Elements & IFC
 
 Methods to interact with elements of your model:
 
-*	``BIMDataViewer.setPickable()``: set an element of the model as pickable for selection
-        **Parameters:**
-            * selector: *string* CSS-style selector
-        **Returns:**
-            * *void*
-*	``BIMDataViewer.setUnpickable()``: set an element of the model as non-pickable for selection
-        **Parameters:**
-            * selector: *string* CSS-style selector
-        **Returns:**
-            * *void*
-*	``BIMDataViewer.getElementsInfo()``: get an element/collection of elements of your model and their informations
-        **Parameters:**
-            * icdId: *integer* 
-        **Returns:**
-            * Element(s) *Object(s)*: { [id: string]: any }
-*	``BIMDataViewer.getModel()``: get the Model object
-        **Parameters:**
-            * uuid: *integer* 
-        **Returns:**
-            * *string*
-*	``BIMDataViewer.getStructure()``:
-        **Parameters:**
-            * uuid: *integer* 
-        **Returns:**
-            * Promise *Function*
+
+.. js:method:: BIMDataViewer.setPickable(selector) 
+
+Set an element of the model as pickable for selection
+
+    :param string selector: CSS-style selector
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.setUnpickable(selector) 
+
+Set an element of the model as non-pickable for selection
+
+    :param string selector: CSS-style selector
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.getElementsInfo(ifcId) 
+
+Get an element/collection of elements of your model and their informations
+
+    :param integer ifcId:
+    :returns object elements: *Object(s)*: { [id: string]: any }
+
+
+.. js:method:: BIMDataViewer.getModel(uuid) 
+
+Get the Model object
+
+    :param integer uuid:
+    :returns: model
+
+
+.. js:method:: BIMDataViewer.getStructure(uuid)
+
+    :param integer uuid:
+    :returns:  Promise *Function*
 
 
 Interface
 ---------
 Methods to modify display, view and point of view:
 
-*	``BIMDataViewer.getColor()``:
-        **Parameters:**
-            * id: *integer* ID of the IFCElement
-        **Returns:**
-            * color: Promise<[ *number*, *number*, *number* ]
-*	``BIMDataViewer.setColor()``:
-        **Parameters:**
-            * selector: *string* 
-            * color: *array* [ *number*, *number*, *number* ]
-        **Returns:**
-            * returns *void*
-*	``BIMDataViewer.getSnapshot()``:
-        **Parameters:**
-            * options: *Object* { *integer* width, *integer* height, *string* format: "png|jpg" }
-        **Returns:**
-            * color: *string*
-*	``BIMDataViewer.getViewpoint()``:
-        **Returns:**
-            * returns *Object* instance of <ViewPoint>
-*	``BIMDataViewer.setViewPoint()``:
-        **Parameters:**
-            * viewpoint: *Object* instance of <ViewPoint>
-        **Returns:**
-            * returns *void*
-*	``BIMDataViewer.viewFit()``: focus on the given element(s)
-        **Parameters:**
-            * selector: *string* CSS-style selector
-        **Returns:**
-            * returns *void*
-*	``BIMDataViewer.select()``:
-        **Parameters:**
-            * selector: *string* CSS-style selector
-        **Returns:**
-            * returns *void*
-*	``BIMDataViewer.deselect()``:
-        **Parameters:**
-            * selector: *string* CSS-style selector
-        **Returns:**
-            * returns *void*
-*	``BIMDataViewer.highlight()``: put the element(s) in the highlight color
-        **Parameters:**
-            * selector: *string* CSS-style selector
-        **Returns:**
-            * returns *void*
-*	``BIMDataViewer.dehighlight()``: remove the highlight from the element(s)
-        **Parameters:**
-            * selector: *string* CSS-style selector
-        **Returns:**
-            * returns *void*
-*	``BIMDataViewer.show()``:
-        **Parameters:**
-            * selector: *string* CSS-style selector
-        **Returns:**
-            * returns *void*
-*	``BIMDataViewer.hide()``:
-        **Parameters:**
-            * selector: *string* CSS-style selector
-        **Returns:**
-            * returns *void*
-*	``BIMDataViewer.unghost()``: no more transparency for the given element(s)
-        **Parameters:**
-            * selector: *string* CSS-style selector
-        **Returns:**
-            * returns *void*
-*	``BIMDataViewer.ghost()``: set transparency to the maximum for the given element(s)
-        **Parameters:**
-            * selector: *string* CSS-style selector
-        **Returns:**
-            * returns *void*
+
+.. js:method:: BIMDataViewer.getColor(id)
+
+    :param integer id: ID of the IFCElement
+    :returns: color: Promise<[ *number*, *number*, *number* ]
+
+
+.. js:method:: BIMDataViewer.setColor(selector, color)
+
+    :param string selector:
+    :param array color:  [ *number*, *number*, *number* ]
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.getSnapshot(options)
+
+    :param object options: { *integer* width, *integer* height, *string* format: "png|jpg" }
+    :returns: *string* color
+
+
+.. js:method:: BIMDataViewer.getViewpoint()
+    
+    :returns: *Object* instance of <ViewPoint>
+
+
+.. js:method:: BIMDataViewer.setViewPoint(viewpoint)
+
+    :param object viewpoint: instance of <ViewPoint>
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.viewFit() focus on the given element(s)
+
+    :param string selector: CSS-style selector
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.select()
+
+    :param string selector: CSS-style selector
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.deselect()
+
+    :param string selector: CSS-style selector
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.highlight() put the element(s) in the highlight color
+
+    :param string selector: CSS-style selector
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.dehighlight() remove the highlight from the element(s)
+
+    :param string selector: CSS-style selector
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.show()
+
+    :param string selector: CSS-style selector
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.hide()
+
+    :param string selector: CSS-style selector
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.unghost() no more transparency for the given element(s)
+
+    :param string selector: CSS-style selector
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.ghost() set transparency to the maximum for the given element(s)
+
+    :param string selector: CSS-style selector
+    :returns: void
+
