@@ -40,37 +40,60 @@ Window
 
 All these methods return *void*, except ``onCustomWindow`` (see above).
 
+.. js:method:: BIMDataViewer.addCustomWindow(id, options)
+
+   :param string id: ID of the Window
+   :param object options: Instance of BIMViewerParamsCustomWindowOptions
+   :returns: void
+
 *	``BIMDataViewer.addCustomWindow()``: creation of a custom window, initialization with the parameters given in the ``options`` Object
+        
         **Parameters:**
             * *string* id: ID of the Window  
             * ``options``: *Object* ``BIMViewerParamsCustomWindowOptions`` 
+        **Usage**
+            ```.. code-block:: javascript
+
+                    viewer1.addCustomWindow('first-window', {
+                        open: true,
+                        template: 'awesome'
+                    })
+            
 *   ``BIMDataViewer.addCustomButtonMenu()``:
+        
         **Parameters:**
             * id: *string* ID of the Menu,
             * options: *Object* BIMViewerCustomButtonOptionsMenu
 *	``BIMDataViewer.removeCustomWindow()``:
+        
         **Parameters:**
             * id: *string* ID of the custom Window
 *	``BIMDataViewer.openCustomWindow()``:
+        
         **Parameters:**
             * id: *string* ID of the custom Window
 *	``BIMDataViewer.closeCustomWindow()``:
+        
         **Parameters:**
             * id: *string* ID of the custom Window
 *	``BIMDataViewer.setCustomWindowTemplate()``:
+        
         **Parameters:**
             * id: *string* ID of the custom Window
             * template: *string* name of the template
 *	``BIMDataViewer.onCustomWindow()``:
+        
         **Parameters:**
             * idWindow: *integer* ID of the custom Window
             * event: *string* name of the event 
             * selector: *string* CSS-style selector
             * callback: *Function* [callback]
             * preventDefault: *boolean*
+        
         **Returns:**
             * windowNumber: *integer* auto-increment numeration of the custom Windows
 *	``BIMDataViewer.offCustomWindow()``:
+        
         **Parameters:**
             * id: *string* ID of the custom Window
 
@@ -81,22 +104,27 @@ Methods to interact with buttons.
 All these methods return *void*.
 
 *	``BIMDataViewer.activateButtonMenu()``:
+        
         **Parameters:**
             * target: 
             * visibility: *boolean*
 *	``BIMDataViewer.showButtonMenu()``:
+        
         **Parameters:**
             * target: 
             * visibility: *boolean* 
 *	``BIMDataViewer.showSelectModeMenu``:
+        
         **Parameters:**
             * target: 
             * visibility: *boolean*
 *	``BIMDataViewer.addCustomButtonMenu``:
+        
         **Parameters:**
             * id: *integer* ID of the menu
             * options: *Object* instance of ``BIMViewerCustomButtonOptionsMenu``
 *	``BIMDataViewer.removeCustomButtonMenu()`` :
+        
         **Parameters:**
             * id: *integer* ID of the menu
 
