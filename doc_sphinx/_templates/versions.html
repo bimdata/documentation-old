@@ -9,7 +9,7 @@
       <dl>
         <dt>{{ _('Versions') }}</dt>
         {% for slug, url in versions %}
-          <dd><a href="{{ url }}">{{ slug }}</a></dd>
+          <dd><a href="{{ url }}.{{html_file_suffix}}">{{ slug }}</a></dd>
         {% endfor %}
       </dl>
       <dl>

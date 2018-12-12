@@ -160,7 +160,6 @@ scv_priority = 'branches'
 scv_whitelist_branches = ('master','dev', 'tech-writing')
 
 html_style = 'css/my_theme.css' 
-html_file_suffix = None
 html_context = {
     'github_user': 'bimdata',
     'github_repo': 'documentation',
