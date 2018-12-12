@@ -125,6 +125,6 @@ Example: The BIMData platform uses this auth option.
 
 
 
-.. _Create an application process: ../cookbook/create_an_application
-.. _Authentication by client credential: ../cookbook/get_access_token
-.. _Your Access Token: ../cookbook/get_access_token
+.. _Create an application process: ../cookbook/create_an_application.html
+.. _Authentication by client credential: ../cookbook/get_access_token.html
+.. _Your Access Token: ../cookbook/get_access_token.html
