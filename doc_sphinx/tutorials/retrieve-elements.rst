@@ -50,7 +50,7 @@ First, define a name to create your first Cloud. Post this `name` on https://api
 
 Let's upload your IFC model!
 
-Step 3. Upload your IFC"
+Step 3. Upload your IFC
 ============================
 
 The API let you upload your IFC file. In this tutorial, you can use this IFC file: `Download Cassiopea.ifc <https://drive.google.com/file/d/1njhweVCFvDNl8Gy3B1HxAolcfExt0Tg-/view?usp=sharing>`_
