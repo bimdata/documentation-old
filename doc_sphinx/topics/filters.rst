@@ -87,4 +87,4 @@ Javascript
 
 
 .. _Swagger doc: https://api-beta.bimdata.io/doc
-.. _IFC: core_ressources/ifc
+.. _IFC: core_ressources/ifc.html
