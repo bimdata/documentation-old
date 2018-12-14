@@ -11,7 +11,7 @@ Load the Javascript API
 To be able to use the API from the same script than your Viewer, include the API by using this line in your HTML file.
 This will include the ``bimdata.ApiClient`` you will use to make your API calls.
 
-.. code-block:: javascript
+.. code-block:: html
 
     <script type="text/javascript" src="https://unpkg.com/@bimdata/bimdata-api-client/dist/javascript-api-client.min.js"><!-- API call --></script>
   
@@ -23,7 +23,6 @@ The following informations will be needed:
 
  * cloud ID, project ID and IFC ID
  * the Access Token as a string
- * the Bearer will be 
 
 
 Using the API
