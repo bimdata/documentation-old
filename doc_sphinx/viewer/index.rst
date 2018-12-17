@@ -20,6 +20,12 @@ Usage examples
  * How-to: `doors filtering`_
 
 
+Reference
+================
+
+* `Javascript methods of the Viewer`_
+
+
 Example of the Viewer
 ==========================
 
@@ -47,14 +53,10 @@ Example of the Viewer
    :file: ../_static/simple_viewer.html
 
 
-Reference
-================
-
-* `JS methods of the viewer`_
 
 
 .. _get your model into the Viewer: viewer/get_model_from_cloud.html
 .. _Including the Viewer in your app: ../viewer/include_viewer.html
 .. _doors filtering: ../viewer/example_doors.html
 .. _zoom in the model and focus on an element: ../viewer/zoom_in_the_model.html
-.. _JS methods of the viewer: ../viewer/parameters.html
+.. _Javascript methods of the Viewer: ../viewer/parameters.html
