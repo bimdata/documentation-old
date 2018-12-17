@@ -118,6 +118,7 @@ All these methods return *void*.
 
 
 .. js:method:: BIMDataViewer.activateButtonMenu(target, visibility)
+
     :param string target: name of the button
     :param boolean visibility:     
     :returns: void
