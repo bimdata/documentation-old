@@ -12,18 +12,18 @@ Attributes
 
 List of attributes of the ````BIMDataViewer````.
 
-*	`` .helper``: instance of *ViewerHelper* (Type: *object*)
-*	`` .iframe``: the *HTMLElement* <iframe>
-*	`` .elementHovered``: name of the element (Type: *string*), read-only
-*	`` .elementsHovered``: list of names of the elements, read-only
-*	`` .elementHighlighted``: name of the element (Type: *string*)
-*	`` .elementSelected``: name of the element (Type: *string*)
-*	`` .elementsHighlighted``: list of names of the elements (Type: *array*)
-*	`` .elementsSelected``: list of names of the elements (Type: *array*)
-*	`` .elementsHided``: list of names of the elements (Type: *array*)
-*	`` .elementsGhosted``: list of names of the elements (Type: *array*)
-*	`` .buttonsMenuActivated``: { [ buttonId ]: *boolean* isActivated?  } (Type: *Object*), read-only 
-*	`` .buttonsMenuShowed``: { [ buttonId ]: *boolean* isVisible } (Type: *Object*), read-only
+*	``.helper``: instance of *ViewerHelper* (Type: *object*)
+*	``.iframe``: the *HTMLElement* <iframe>
+*	``.elementHovered``: name of the element (Type: *string*), read-only
+*	``.elementsHovered``: list of names of the elements, read-only
+*	``.elementHighlighted``: name of the element (Type: *string*)
+*	``.elementSelected``: name of the element (Type: *string*)
+*	``.elementsHighlighted``: list of names of the elements (Type: *array*)
+*	``.elementsSelected``: list of names of the elements (Type: *array*)
+*	``.elementsHided``: list of names of the elements (Type: *array*)
+*	``.elementsGhosted``: list of names of the elements (Type: *array*)
+*	``.buttonsMenuActivated``: { [ buttonId ]: *boolean* isActivated?  } (Type: *Object*), read-only 
+*	``.buttonsMenuShowed``: { [ buttonId ]: *boolean* isVisible } (Type: *Object*), read-only
 
 Methods
 ==========
@@ -35,6 +35,7 @@ Delete
 
 
 .. js:method:: BIMDataViewer.drop()
+
     deletes the BIMViewer
     
     :returns: void
@@ -53,7 +54,7 @@ All these methods return *void*, except ``onCustomWindow`` (see above).
    :param object options: Instance of BIMViewerParamsCustomWindowOptions
    :returns: void
 
-   ```.. code-block:: javascript
+   .. code-block:: javascript
 
                     viewer1.addCustomWindow('first-window', {
                         open: true,
@@ -66,7 +67,6 @@ All these methods return *void*, except ``onCustomWindow`` (see above).
     :param string id: ID of the Menu,
     :param object options: *Object* BIMViewerCustomButtonOptionsMenu
     :returns: void
-
 
 
 .. js:method:: BIMDataViewer.removeCustomWindow(id)
@@ -109,6 +109,7 @@ All these methods return *void*, except ``onCustomWindow`` (see above).
 
     :param string id: ID of the custom Window
     :returns: void
+
 
 Buttons
 ----------
@@ -162,7 +163,6 @@ More generic methods to reach the Viewer and set it:
     :param string eventName: name of the targeted event
     :param function callback: *Function* [callback]
     :returns:number: an auto-increment ID for this Viewer instance
-        
 
 
 .. js:method:: BIMDataViewer.off(id)
