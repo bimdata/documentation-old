@@ -7,20 +7,20 @@ Viewer
 
 BIMData provides a 3D Viewer with which you can interact with Javascript.
 
-Usage
+Guide
 =================
 
 * `Including the Viewer in your app`_
 * Javascript API: `get your model into the Viewer`_
 
 
-Examples
+Usage examples
 ===============
 
  * How-to: `doors filtering`_
 
 
-Example of the Viewer:
+Example of the Viewer
 ==========================
 
 .. code-block:: javascript
