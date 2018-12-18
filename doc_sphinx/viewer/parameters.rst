@@ -162,7 +162,7 @@ More generic methods to reach the Viewer and set it:
 
     :param string eventName: name of the targeted event
     :param function callback: *Function* [callback]
-    :returns:number: an auto-increment ID for this Viewer instance
+    :returns: number: an auto-increment ID for this Viewer instance
 
 
 .. js:method:: BIMDataViewer.off(id)

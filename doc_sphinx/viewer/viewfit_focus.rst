@@ -71,4 +71,4 @@ It's now time to use your function. When the Viewer is loading, the viewFit is s
    :file: ../_static/st_viewfit_focus.html
 
 .. _see the Viewer methods available: ../viewer/parameters.html
-.._ How-to get the model from the cloud: ../viewer/get_model_from_cloud.rst
+.. _How-to get the model from the cloud: ../viewer/get_model_from_cloud.rst
