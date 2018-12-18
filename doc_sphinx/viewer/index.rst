@@ -2,27 +2,34 @@
    :github: https://github.com/bimdata/documentation/blob/dev/doc_sphinx/viewer/index.rst
 
 =======================
-Viewer
+Viewer Documentation
 =======================
 
 BIMData provides a 3D Viewer with which you can interact with Javascript.
 
-Usage
------------
+Guide
+=================
 
 * `Including the Viewer in your app`_
 * Javascript API: `get your model into the Viewer`_
 
 
-Examples
-------------
+Cookbook
+===============
+
+Usage examples of the Viewer:
 
  * How-to: `doors filtering`_
 
 
+Reference
+================
 
-Example of the Viewer:
--------------------------
+* `Javascript methods of the Viewer`_
+
+
+Example of the Viewer
+==========================
 
 .. code-block:: javascript
 
@@ -42,16 +49,11 @@ Example of the Viewer:
    :file: ../_static/simple_viewer.html
 
 
-.. toctree::
-    :hidden:
-
-    include_viewer
-    example_doors
-    get_model_from_cloud
-    viewfit_focus
-    parameters
 
 
-.. _Including the Viewer in your app: include_viewer.html
-.. _doors filtering: example_doors.html
-.. _get your model into the Viewer: get_model_from_cloud.html
+.. _get your model into the Viewer: viewer/get_model_from_cloud.html
+.. _Including the Viewer in your app: ../viewer/include_viewer.html
+.. _doors filtering: ../viewer/example_doors.html
+.. _zoom in the model and focus on an element: ../viewer/zoom_in_the_model.html
+.. _Javascript methods of the Viewer: ../viewer/parameters.html
+.. _use the viewFit focus: ../viewer/viewfit_focus.html
