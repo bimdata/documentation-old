@@ -18,6 +18,7 @@ Usage examples
 ===============
 
  * How-to: `doors filtering`_
+ * How-to: `use the viewFit focus`_
 
 
 Reference
@@ -60,3 +61,4 @@ Example of the Viewer
 .. _doors filtering: ../viewer/example_doors.html
 .. _zoom in the model and focus on an element: ../viewer/zoom_in_the_model.html
 .. _Javascript methods of the Viewer: ../viewer/parameters.html
+.. _use the viewFit focus: ../viewer/viewfit_focus.html
