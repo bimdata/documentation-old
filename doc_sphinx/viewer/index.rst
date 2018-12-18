@@ -2,7 +2,7 @@
    :github: https://github.com/bimdata/documentation/blob/dev/doc_sphinx/viewer/index.rst
 
 =======================
-Viewer
+Viewer Documentation
 =======================
 
 BIMData provides a 3D Viewer with which you can interact with Javascript.
@@ -14,8 +14,10 @@ Guide
 * Javascript API: `get your model into the Viewer`_
 
 
-Usage examples
+Cookbook
 ===============
+
+Usage examples of the Viewer:
 
  * How-to: `doors filtering`_
 
