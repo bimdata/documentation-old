@@ -12,7 +12,7 @@ BIMData provides you:
  * `an API`_ to request data from your IFC files
  * `a Viewer`_ for your IFC file in the brower
 
-After reading about the concepts in our `Concepts Guide`_, take a look at our `guide by topics`_, our `cookbook`_ and our `tutorials`_.
+After reading about the concepts in our `Concepts Tour`_, take a look at our `Guide by topics`_, our `Cookbook`_ and our `Tutorials`_.
 
 Chapters
 ========
@@ -20,11 +20,11 @@ Chapters
 .. toctree::
     :maxdepth: 1
 
-    Concepts Guide <core_resources/index>
+    Concepts <concepts/index>
     Guide by topics <topics/index>
-    tutorials/index
-    cookbook/index
-    viewer/index
+    Tutorials <tutorials/index>
+    Cookbook <cookbook/index>
+    Viewer Doc <viewer/index>
     API Doc<../redoc/index.html#://>
 
 
@@ -32,7 +32,7 @@ Chapters
 .. _a Viewer: visionneuse/
 .. _BIMData Connect: topics/authentication_bimdata_connect.html
 
-.. _Concepts Guide: core_resources/
-.. _guide by topics: topics/
-.. _cookbook: cookbook/
-.. _tutorials: tutorials/
+.. _Concepts Tour: core_resources/
+.. _Guide by topics: topics/
+.. _Cookbook: cookbook/
+.. _Tutorials: tutorials/
