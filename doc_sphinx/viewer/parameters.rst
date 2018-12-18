@@ -195,7 +195,7 @@ Set an element of the model as non-pickable for selection
 
 .. js:method:: BIMDataViewer.getElementsInfo(ifcId) 
 
-Get an element/collection of elements of your model and their informations
+Get an element/collection of elements of your model and their information
 
     :param integer ifcId:
     :returns object elements: *Object(s)*: { [id: string]: any }
