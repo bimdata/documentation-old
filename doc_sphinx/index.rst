@@ -29,10 +29,10 @@ Chapters
 
 
 .. _an API: ../../redoc/index.html
-.. _a Viewer: visionneuse/
+.. _a Viewer: viewer/
 .. _BIMData Connect: topics/authentication_bimdata_connect.html
 
-.. _Concepts Tour: core_resources/
+.. _Concepts Tour: concepts/
 .. _Guide by topics: topics/
 .. _Cookbook: cookbook/
 .. _Tutorials: tutorials/
