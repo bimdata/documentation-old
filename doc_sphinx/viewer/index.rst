@@ -11,7 +11,6 @@ Guide
 =================
 
 * `Including the Viewer in your app`_
-* Javascript API: `get your model into the Viewer`_
 
 
 Cookbook
@@ -51,8 +50,9 @@ Reference
 * `JS methods of the viewer`_
 
 
-.. _get your model into the Viewer: ../viewer/get_model_from_cloud.html
+.. _get your model into the Viewer: ../viewer/get_your_model_into_the_viewer.html
 .. _Including the Viewer in your app: ../viewer/include_viewer.html
 .. _doors filtering: ../viewer/example_doors.html
 .. _zoom in the model and focus on an element: ../viewer/zoom_in_the_model.html
+.. _use the viewFit focus: ../viewer/viewfit_focus.html
 .. _JS methods of the viewer: ../viewer/parameters.html

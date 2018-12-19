@@ -112,5 +112,5 @@ The complete example
     });
 
 .. _see the Viewer methods available: ../viewer/parameters.html
-.. _How-to get the model from the cloud: ../viewer/get_model_from_cloud.rst
+.. _How-to get the model from the cloud: ../viewer/get_your_model_into_the_viewer.html
 .. _code example on Codepen.io: https://codepen.io/bimdata/pen/dwpwog
