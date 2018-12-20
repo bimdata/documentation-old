@@ -18,8 +18,10 @@ Cookbook
 
 Usage examples of the Viewer:
 
+ * How-to: `init the Viewer`_
  * How-to: `doors filtering`_
  * How-to: `use the viewFit focus`_
+
 
 
 Reference
@@ -51,8 +53,8 @@ Example of the Viewer
 
 
 
-.. _get your model into the Viewer: ../viewer/get_your_model_into_the_viewer.rst
 .. _Including the Viewer in your app: ../viewer/include_viewer.html
+.. _init the Viewer: ../viewer/init_viewer.html
 .. _doors filtering: ../viewer/example_doors.html
 .. _zoom in the model and focus on an element: ../viewer/zoom_in_the_model.html
 .. _Javascript methods of the Viewer: ../viewer/parameters.html

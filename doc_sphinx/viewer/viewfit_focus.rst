@@ -14,10 +14,10 @@ The script has 3 parts:
 
 See the whole `code example on Codepen.io`_.
 
-Get the model from the cloud
+Get the model in the Viewer
 ------------------------------
 
-This part is covered by the Recipe "`How-to get the model from the cloud`_"
+This part is covered by the Recipe "`How-to init the Viewer`_"
 In this recipe, it's assumed that you have the IFC's id.
 
 
@@ -112,5 +112,5 @@ The complete example
     });
 
 .. _see the Viewer methods available: ../viewer/parameters.html
-.. _How-to get the model from the cloud: ../viewer/get_your_model_into_the_viewer.html
+.. _How-to init the Viewer: ../viewer/init_viewer.html
 .. _code example on Codepen.io: https://codepen.io/bimdata/pen/dwpwog
