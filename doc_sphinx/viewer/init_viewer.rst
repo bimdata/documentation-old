@@ -11,14 +11,14 @@ Constructor
 
 The instanciation of the `BIMDataViewer` requires:
 
- * {String}: ID of DOM container element to append the viewer's canvas to, probably a `<div>` element
- * {Object}: Configuration for the Viewer with this attributes as strings:
-    * accessToken
-    * cloudId
-    * projectId
-    * ifcId
- * {Boolean} (default = *false*) Whether to make the viewer canvas transparent, which would allow the container to show through.
- * {String} (default = *'fr'*) Selects the current localisation language 
+    * {String}: ID of DOM container element to append the viewer's canvas to, probably a `<div>` element
+    * {Object}: Configuration for the Viewer with this attributes as strings:
+        * accessToken
+        * cloudId
+        * projectId
+        * ifcId
+    * {Boolean} (default = *false*) Whether to make the viewer canvas transparent, which would allow the container to show through.
+    * {String} (default = *'fr'*) Selects the current localisation language 
 
 
 The code snippet
