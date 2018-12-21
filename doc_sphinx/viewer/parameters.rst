@@ -198,12 +198,12 @@ Methods to interact with elements of your model:
     Get an element/collection of elements of your model and their information
 
     :param integer ifcId:
-    :returns: object elements: *Object(s)*: { [id: string]: any }
+    :returns: objects { [id: string]: any }
 
 
 .. js:method:: BIMDataViewer.getModel(uuid)
 
-   Get the Model object
+    Get the Model object
 
     :param integer uuid:
     :returns: model
@@ -250,7 +250,9 @@ Methods to modify display, view and point of view:
     :returns: void
 
 
-.. js:method:: BIMDataViewer.viewFit() focus on the given element(s)
+.. js:method:: BIMDataViewer.viewFit()
+
+    Put the focus on the given element(s)
 
     :param string selector: CSS-style selector
     :returns: void
@@ -268,13 +270,17 @@ Methods to modify display, view and point of view:
     :returns: void
 
 
-.. js:method:: BIMDataViewer.highlight() put the element(s) in the highlight color
+.. js:method:: BIMDataViewer.highlight()
+
+    put the element(s) in the highlight color
 
     :param string selector: CSS-style selector
     :returns: void
 
 
-.. js:method:: BIMDataViewer.dehighlight() remove the highlight from the element(s)
+.. js:method:: BIMDataViewer.dehighlight()
+
+    remove the highlight from the element(s)
 
     :param string selector: CSS-style selector
     :returns: void
@@ -292,13 +298,17 @@ Methods to modify display, view and point of view:
     :returns: void
 
 
-.. js:method:: BIMDataViewer.unghost() no more transparency for the given element(s)
+.. js:method:: BIMDataViewer.unghost()
+
+    no more transparency for the given element(s)
 
     :param string selector: CSS-style selector
     :returns: void
 
 
-.. js:method:: BIMDataViewer.ghost() set transparency to the maximum for the given element(s)
+.. js:method:: BIMDataViewer.ghost()
+
+    set transparency to the maximum for the given element(s)
 
     :param string selector: CSS-style selector
     :returns: void
