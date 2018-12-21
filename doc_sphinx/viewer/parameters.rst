@@ -10,7 +10,7 @@ You can change the display of the Viewer using the value of attributes, and usin
 Attributes
 ============
 
-List of attributes of the ````BIMDataViewer````.
+List of attributes of the ``BIMDataViewer``.
 
 *	``.helper``: instance of *ViewerHelper* (Type: *object*)
 *	``.iframe``: the *HTMLElement* <iframe>
@@ -22,7 +22,7 @@ List of attributes of the ````BIMDataViewer````.
 *	``.elementsSelected``: list of names of the elements (Type: *array*)
 *	``.elementsHided``: list of names of the elements (Type: *array*)
 *	``.elementsGhosted``: list of names of the elements (Type: *array*)
-*	``.buttonsMenuActivated``: { [ buttonId ]: *boolean* isActivated?  } (Type: *Object*), read-only 
+*	``.buttonsMenuActivated``: { [ buttonId ]: *boolean* isActivated?  } (Type: *Object*), read-only
 *	``.buttonsMenuShowed``: { [ buttonId ]: *boolean* isVisible } (Type: *Object*), read-only
 
 Methods
@@ -37,7 +37,7 @@ Delete
 .. js:method:: BIMDataViewer.drop()
 
     deletes the BIMViewer
-    
+
     :returns: void
 
 Window
@@ -60,7 +60,7 @@ All these methods return *void*, except ``onCustomWindow`` (see above).
                         open: true,
                         template: 'awesome'
                     })
-                
+
 
 .. js:method:: BIMDataViewer.addCustomButtonMenu(id, options)
 
@@ -71,39 +71,39 @@ All these methods return *void*, except ``onCustomWindow`` (see above).
 
 .. js:method:: BIMDataViewer.removeCustomWindow(id)
 
-    :param string id: ID of the custom Window  
+    :param string id: ID of the custom Window
     :returns: void
 
 
 .. js:method:: BIMDataViewer.openCustomWindow(id)
 
-    :param string id: ID of the custom Window 
+    :param string id: ID of the custom Window
     :returns: void
 
 
 .. js:method:: BIMDataViewer.closeCustomWindow(id)
 
-    :param string id: ID of the custom Window 
+    :param string id: ID of the custom Window
     :returns: void
 
 
 .. js:method:: BIMDataViewer.setCustomWindowTemplate(id, template)
 
-    :param string id: ID of the custom Window 
+    :param string id: ID of the custom Window
     :param string template: name of the template
     :returns: void
 
 
 .. js:method:: BIMDataViewer.onCustomWindow(idWindow, event, selector, callback, preventDefault)
 
-    :param integer idWindow: ID of the custom Window    
-    :param integer event: name of the event 
-    :param integer selector: CSS-style selector
+    :param integer idWindow: ID of the custom Window
+    :param string event: name of the event
+    :param string selector: CSS-style selector
     :param function callback:
     :param boolean preventDefault:
-    
-    :returns integer windowNumber: auto-increment numeration of the custom Windows
-        
+
+    :returns: integer windowNumber: auto-increment numeration of the custom Windows
+
 
 .. js:method:: BIMDataViewer.offCustomWindow()
 
@@ -121,21 +121,21 @@ All these methods return *void*.
 .. js:method:: BIMDataViewer.activateButtonMenu(target, visibility)
 
     :param string target: name of the button
-    :param boolean visibility:     
+    :param boolean visibility:
     :returns: void
 
 
 .. js:method:: BIMDataViewer.showButtonMenu(target, visibility)
-        
+
     :param string target: name of the button
     :param boolean visibility:
     :returns: void
 
 
 .. js:method:: BIMDataViewer.showSelectModeMenu(target, visibility)
-        
+
     :param string target:name of the button
-    :param boolean visibility: 
+    :param boolean visibility:
     :returns: void
 
 
@@ -148,7 +148,7 @@ All these methods return *void*.
 
 .. js:method:: BIMDataViewer.removeCustomButtonMenu(id)
 
-    :param integer id: ID of the menu  
+    :param integer id: ID of the menu
     :returns: void
 
 
@@ -166,7 +166,7 @@ More generic methods to reach the Viewer and set it:
 
 
 .. js:method:: BIMDataViewer.off(id)
-    
+
     :param integer id: ID of the Viewer
     :returns: void
 
@@ -177,33 +177,33 @@ Elements & IFC
 Methods to interact with elements of your model:
 
 
-.. js:method:: BIMDataViewer.setPickable(selector) 
+.. js:method:: BIMDataViewer.setPickable(selector)
 
-Set an element of the model as pickable for selection
-
-    :param string selector: CSS-style selector
-    :returns: void
-
-
-.. js:method:: BIMDataViewer.setUnpickable(selector) 
-
-Set an element of the model as non-pickable for selection
+    Set an element of the model as pickable for selection
 
     :param string selector: CSS-style selector
     :returns: void
 
 
-.. js:method:: BIMDataViewer.getElementsInfo(ifcId) 
+.. js:method:: BIMDataViewer.setUnpickable(selector)
 
-Get an element/collection of elements of your model and their information
+    Set an element of the model as non-pickable for selection
+
+    :param string selector: CSS-style selector
+    :returns: void
+
+
+.. js:method:: BIMDataViewer.getElementsInfo(ifcId)
+
+    Get an element/collection of elements of your model and their information
 
     :param integer ifcId:
-    :returns object elements: *Object(s)*: { [id: string]: any }
+    :returns: object elements: *Object(s)*: { [id: string]: any }
 
 
-.. js:method:: BIMDataViewer.getModel(uuid) 
+.. js:method:: BIMDataViewer.getModel(uuid)
 
-Get the Model object
+   Get the Model object
 
     :param integer uuid:
     :returns: model
@@ -240,7 +240,7 @@ Methods to modify display, view and point of view:
 
 
 .. js:method:: BIMDataViewer.getViewpoint()
-    
+
     :returns: *Object* instance of <ViewPoint>
 
 
@@ -302,4 +302,3 @@ Methods to modify display, view and point of view:
 
     :param string selector: CSS-style selector
     :returns: void
-
