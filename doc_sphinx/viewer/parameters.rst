@@ -254,14 +254,13 @@ Methods to modify the display, the view, and point of view.
 
 
 .. js:method:: BIMDataViewer.getSnapshot(options)
-   
+
     Captures a snapshot image of the viewer's canvas.
 
     :param object options: { *integer* width, *integer* height, *string* format: *"png|jpeg|bmp"* }
     :param integer width: Desired width of result in pixels - defaults to width of canvas.
     :param integer height: Desired height of result in pixels - defaults to height of canvas.
     :param string format: Desired format; "jpeg", "png" or "bmp", default is *"jpeg"*
-
     :returns: *string* String-encoded image data
 
    .. code-block:: javascript
