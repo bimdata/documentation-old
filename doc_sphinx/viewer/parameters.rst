@@ -10,7 +10,7 @@ You can change the display of the Viewer using the value of attributes, and usin
 Attributes
 ============
 
-List of attributes of the ``BIMDataViewer``.
+List of attributes of the ``BIMDataViewer``:
 
 *	``.helper``: instance of *ViewerHelper* (Type: *object*)
 *	``.iframe``: the *HTMLElement* <iframe>
@@ -36,15 +36,14 @@ Delete
 
 .. js:method:: BIMDataViewer.drop()
 
-    deletes the BIMViewer
+    Delete the Viewer
 
     :returns: void
 
 Window
 -------
 
-All these methods return *void*, except ``onCustomWindow`` (see above).
-
+Methods to interact with custom windows of the Viewer
 
 .. js:method:: BIMDataViewer.addCustomWindow(id, options)
 
@@ -64,6 +63,8 @@ All these methods return *void*, except ``onCustomWindow`` (see above).
 
 .. js:method:: BIMDataViewer.addCustomButtonMenu(id, options)
 
+    Attach a button to the Options menu
+
     :param string id: ID of the Menu,
     :param object options: *Object* BIMViewerCustomButtonOptionsMenu
     :returns: void
@@ -71,11 +72,15 @@ All these methods return *void*, except ``onCustomWindow`` (see above).
 
 .. js:method:: BIMDataViewer.removeCustomWindow(id)
 
+    Delete the previously created custom window
+
     :param string id: ID of the custom Window
     :returns: void
 
 
 .. js:method:: BIMDataViewer.openCustomWindow(id)
+
+    Display the custom window previously created
 
     :param string id: ID of the custom Window
     :returns: void
@@ -83,11 +88,16 @@ All these methods return *void*, except ``onCustomWindow`` (see above).
 
 .. js:method:: BIMDataViewer.closeCustomWindow(id)
 
+    Close the custom window previously created
+
+
     :param string id: ID of the custom Window
     :returns: void
 
 
 .. js:method:: BIMDataViewer.setCustomWindowTemplate(id, template)
+
+    Apply a template to the custom window
 
     :param string id: ID of the custom Window
     :param string template: name of the template
@@ -95,6 +105,8 @@ All these methods return *void*, except ``onCustomWindow`` (see above).
 
 
 .. js:method:: BIMDataViewer.onCustomWindow(idWindow, event, selector, callback, preventDefault)
+
+    Associate a behavior, via a function, to the custom window event(s)
 
     :param integer idWindow: ID of the custom Window
     :param string event: name of the event
@@ -120,12 +132,16 @@ All these methods return *void*.
 
 .. js:method:: BIMDataViewer.activateButtonMenu(target, visibility)
 
+    Activate a button of the menu 
+
     :param string target: name of the button
     :param boolean visibility:
     :returns: void
 
 
 .. js:method:: BIMDataViewer.showButtonMenu(target, visibility)
+
+    Display a button 
 
     :param string target: name of the button
     :param boolean visibility:
@@ -155,10 +171,11 @@ All these methods return *void*.
 Reach the Viewer
 -----------------
 
-More generic methods to reach the Viewer and set it:
-
+More generic methods to reach the Viewer and set it.
 
 .. js:method:: BIMDataViewer.on(eventName, callback)
+
+    Associate a behavior, through a function, to the Viewer event(s)
 
     :param string eventName: name of the targeted event
     :param function callback: *Function* [callback]
@@ -174,8 +191,7 @@ More generic methods to reach the Viewer and set it:
 Elements & IFC
 ----------------
 
-Methods to interact with elements of your model:
-
+Methods to interact with elements of your Model.
 
 .. js:method:: BIMDataViewer.setPickable(selector)
 
@@ -211,14 +227,16 @@ Methods to interact with elements of your model:
 
 .. js:method:: BIMDataViewer.getStructure(uuid)
 
+    Get the structure of the Model
+
     :param integer uuid:
     :returns:  Promise *Function*
 
 
 Interface
 ---------
-Methods to modify display, view and point of view:
 
+Methods to modify the display, the view, and point of view.
 
 .. js:method:: BIMDataViewer.getColor(id)
 
