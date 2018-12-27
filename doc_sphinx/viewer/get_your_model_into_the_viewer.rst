@@ -1,7 +1,13 @@
-==========================================================
-How-to get your model from your cloud for the Viewer
-==========================================================
+.... note:: WIP
 
+    This page is not finished yet.
+
+
+=====================================
+How-to get your model into the Viewer
+=====================================
+
+@WIP
 
 Include the Viewer as specified in the  `Include viewer recipe`_, then, you will use the BIMData API.
 
@@ -16,10 +22,10 @@ This will include the ``bimdata.ApiClient`` you will use to make your API calls.
     <script type="text/javascript" src="https://unpkg.com/@bimdata/bimdata-api-client/dist/javascript-api-client.min.js"><!-- API call --></script>
   
   
-What info do you will need?
+What info do you will get?
 =================================
 
-The following informations will be needed:
+The following informations will be obtained:
 
  * cloud ID, project ID and IFC ID
  * the Access Token as a string
@@ -27,16 +33,6 @@ The following informations will be needed:
 
 Using the API
 ===============
-
-Begin with defining all the variables, for an easier maintenance.
-
-.. code-block:: javascript
-
-    <script>
-        var accessToken = 'DEMO_TOKEN';
-        var cloudId = 88;
-        var projectId = 100;
-        var ifcId = 175;
 
 Create an instance of the API client. You will store it, in this example, in the ``defaultClient`` var.
 
@@ -56,16 +52,6 @@ Then, you will use the API client to get the Bearer object, and you Access Token
       
 
 Now, you are able to retrieve the Model from your cloud.
-Instanciate the BIMDataViewer and pass to it the IDs of your Cloud, your Project and your IFC file to get a Viewer for the Model your IFC describe.
-
-.. code-block:: javascript
-
-        var viewer = new BIMDataViewer('embed', {
-            accessToken: accessToken,
-            cloudId: cloudId,
-            projectId: projectId,
-            ifcId: ifcId
-        });
 
 
-.. _Include viewer recipe: viewer/include_viewer.html
+.. _Include viewer recipe: ../viewer/include_viewer.html
