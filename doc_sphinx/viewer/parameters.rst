@@ -49,11 +49,11 @@ Methods to interact with custom windows of the Viewer
 
     Creation of a custom window, initialization with the parameters given in the ``options`` Object
 
-   :param string id: ID of the Window
-   :param object options: Instance of BIMViewerParamsCustomWindowOptions
-   :returns: void
+    :param string id: ID of the Window
+    :param object options: Instance of BIMViewerParamsCustomWindowOptions
+    :returns: void
 
-   .. code-block:: javascript
+    .. code-block:: javascript
 
                     viewer1.addCustomWindow('first-window', {
                         open: true,
