@@ -1,0 +1,16 @@
+===============================
+Getting started with the Viewer
+===============================
+
+
+Include the Viewer
+=======================
+
+    .... code-block:: html
+
+        <script src="https://cdn-beta.bimdata.io/js/bimdata-viewer-embed.js"></script><!--the viewer itself-- >
+        <div id="embed" style="width: 100%; height: 100vh;" ></div>
+        <script>
+            var viewer = new BIMDataViewer('embed');
+        </script>
+
