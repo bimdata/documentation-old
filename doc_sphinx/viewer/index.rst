@@ -7,6 +7,8 @@ Viewer Documentation
 
 BIMData provides a 3D Viewer with which you can interact with Javascript.
 
+`Getting started`_
+
 Guide
 =================
 
@@ -52,7 +54,7 @@ Example of the Viewer
 
 
 
-
+.. _Getting started: ../tutorial/getting_started.html
 .. _Including the Viewer in your app: ../viewer/include_viewer.html
 .. _init the Viewer: ../viewer/init_viewer.html
 .. _doors filtering: ../viewer/example_doors.html
