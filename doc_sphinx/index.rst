@@ -12,7 +12,7 @@ BIMData provides you:
  * `an API`_ to request data from your IFC files
  * `a Viewer`_ for your IFC file in the brower
 
-After reading about the concepts in our `Concepts Guide`_, take a look at our `guide by topics`_, our `cookbook`_ and our `tutorials`_.
+After reading about the concepts in our `Concepts Tour`_, take a look at our `Guide by topics`_, our `Cookbook`_ and our `Tutorials`_.
 
 Chapters
 ========
@@ -25,14 +25,14 @@ Chapters
     Tutorials <tutorials/index>
     Cookbook <cookbook/index>
     Viewer Doc <viewer/index>
-    API Doc<../../redoc/index.html#://>
+    API Doc<../redoc/index.html#://>
 
 
-.. _an API: ../redoc/index.html
+.. _an API: ../../redoc/index.html
 .. _a Viewer: viewer/
 .. _BIMData Connect: topics/authentication_bimdata_connect.html
 
-.. _Concepts Guide: concepts/
-.. _guide by topics: topics/
-.. _cookbook: cookbook/
-.. _tutorials: tutorials/
+.. _Concepts Tour: concepts/
+.. _Guide by topics: topics/
+.. _Cookbook: cookbook/
+.. _Tutorials: tutorials/
