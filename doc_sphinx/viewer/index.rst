@@ -55,6 +55,7 @@ Requirements
 =================
 
 Only `WebGL-enabled browsers`_ are supported:
+
 * Firefox
 * Chrome
 * Edge
@@ -69,17 +70,18 @@ Minimal
 
 * Javascript enabled
 * 2 GB RAM
-* Modern browser with ECMAScript 2015 support
+* Modern browser with WebGL support (`see which browsers have WebGL support`_)
 
 
 Recommended
 ------------
 
-For best performance, we recommend the latest versions of modern browsers: Firefox, Chrome, Edge or Safari.
+For best performance, use the latest versions of modern browsers: Firefox, Chrome, Edge or Safari.
+In addition to that, we recommend:
 
 * 4 GB RAM (1GB for the system, 1GB for the browser and 2GB for the Viewer)
-* Javascript and GPU hardware accelerated enabled
-* Modern browser with ECMAScript 2015 support
+* Javascript and built-in hardware acceleration enabled
+* Modern browser with `ECMAScript 2015 support`_
 
 .. _Including the Viewer in your app: ../viewer/include_viewer.html
 .. _init the Viewer: ../viewer/init_viewer.html
@@ -88,5 +90,6 @@ For best performance, we recommend the latest versions of modern browsers: Firef
 .. _Javascript methods of the Viewer: ../viewer/parameters.html
 .. _use the viewFit focus: ../viewer/viewfit_focus.html
 .. _Test the WebGL support: https://get.webgl.org
+.. _see which browsers have WebGL support: https://caniuse.com/#feat=webgl
 .. _WebGL-enabled browsers: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
-.. _Microsoft recommends using Microsoft Edge: https://support.microsoft.com/en-us/help/17454/lifecycle-faq-internet-explorer
+.. _ECMAScript 2015 support: https://kangax.github.io/compat-table/es6
