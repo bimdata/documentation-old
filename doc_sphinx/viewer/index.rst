@@ -65,14 +65,6 @@ Only `WebGL-enabled browsers`_ are supported:
 
     `Test the WebGL support`_ of your browser.
 
-Minimal
-----------
-
-* Javascript enabled
-* 2 GB RAM
-* Modern browser with WebGL support (`see which browsers have WebGL support`_)
-
-
 Recommended
 ------------
 
@@ -90,6 +82,5 @@ In addition to that, we recommend:
 .. _Javascript methods of the Viewer: ../viewer/parameters.html
 .. _use the viewFit focus: ../viewer/viewfit_focus.html
 .. _Test the WebGL support: https://get.webgl.org
-.. _see which browsers have WebGL support: https://caniuse.com/#feat=webgl
 .. _WebGL-enabled browsers: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
 .. _ECMAScript 2015 support: https://kangax.github.io/compat-table/es6
