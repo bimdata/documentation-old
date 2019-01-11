@@ -53,11 +53,36 @@ Example of the Viewer
    :file: ../_static/simple_viewer.html
 
 
+Requirements
+=================
 
-.. _Getting started: ../tutorial/getting_started.html
+Only `WebGL-enabled browsers`_ are supported:
+
+* Firefox
+* Chrome
+* Edge
+* Safari 11 or later
+
+.. note::
+
+    `Test the WebGL support`_ of your browser.
+
+Recommended
+------------
+
+For best performance, use the latest versions of modern browsers: Firefox, Chrome, Edge or Safari.
+In addition to that, we recommend:
+
+* 4 GB RAM (1GB for the system, 1GB for the browser and 2GB for the Viewer)
+* Javascript and built-in hardware acceleration enabled
+* Modern browser with `ECMAScript 2015 support`_
+
 .. _Including the Viewer in your app: ../viewer/include_viewer.html
 .. _init the Viewer: ../viewer/init_viewer.html
 .. _doors filtering: ../viewer/example_doors.html
 .. _zoom in the model and focus on an element: ../viewer/zoom_in_the_model.html
 .. _Javascript methods of the Viewer: ../viewer/parameters.html
 .. _use the viewFit focus: ../viewer/viewfit_focus.html
+.. _Test the WebGL support: https://get.webgl.org
+.. _WebGL-enabled browsers: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
+.. _ECMAScript 2015 support: https://kangax.github.io/compat-table/es6
