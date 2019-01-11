@@ -155,9 +155,6 @@ html_theme_options = {
     'titles_only': False
 }
 
-
-
-
 html_style = 'css/my_theme.css' 
 html_file_suffix = None
 html_context = {
@@ -166,10 +163,8 @@ html_context = {
     'github_version': 'dev/',
     'display_github': True,
     'conf_py_path': 'doc_sphinx/',
-    'source_suffix': '.rst',
+    'source_suffix': '.rst'
 }
-
-
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -193,7 +188,6 @@ html_title = u'BIMData Doc'
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
 # html_short_title = None
-
 
 
 # The name of an image file (relative to this directory) to use as a favicon of
