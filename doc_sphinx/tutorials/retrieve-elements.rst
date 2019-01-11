@@ -15,17 +15,18 @@ Follow the steps and learn how to query your model through our API.
 Step 1. Get your token
 ========================
 
-To get an Access Token, you first `create an application <https://documentation.bimdata.io/v1.0/docs/create-your-application>`_ named "Windows retriever".
-Then follow `the procedure described on the dedicated page to get your Access Token <https://documentation.bimdata.io/v1.0/docs/authentication-by-client_credential>`_.
+To get an Access Token, you first `create an application`_ named "Windows retriever".
+Then follow `the procedure described on the dedicated page to get your Access Token`_.
 You are now ready to use the API.
 
 Step 2. Set up your project
 ===============================
 
 Once your app exists and you have your Access Token, you are able to use the API.
-Begin with the creation of a Cloud (`What's a cloud? <https://documentation.bimdata.io/v1.0/docs/cloud-1>`_), in which you create a Project (`What's a project? <https://documentation.bimdata.io/v1.0/docs/project-1>`_).
+Begin with the creation of a Cloud (`What's a cloud?`_), in which you create a Project (`What's a project?`_).
 In the script below, there is an example of the creation of a project in your Cloud through API, so you can have a `projectId`.
-First, define a name to create your first Cloud. Post this `name` on https://api-beta.bimdata.io/cloud using your Access Token. Then use the `cloudId` to create your first Project.
+First, define a name to create your first Cloud. Post this `name` on https://api-beta.bimdata.io/cloud using your Access Token. 
+Then use the `cloudId` to create your first Project.
 
 .. code:: python
 
@@ -53,13 +54,13 @@ Let's upload your IFC model!
 Step 3. Upload your IFC
 ============================
 
-The API let you upload your IFC file. In this tutorial, you can use this IFC file: `Download Cassiopea.ifc <https://drive.google.com/file/d/1njhweVCFvDNl8Gy3B1HxAolcfExt0Tg-/view?usp=sharing>`_
+The API let you upload your IFC file. In this tutorial, you can use this IFC file: `Download Cassiopea IFC`_
 
 Use the API to upload
 -------------------------
 
 Use the `/cloud/{cloud_pk}/project/{project_pk}/document` route to upload your file.
-The `documentation for this route <https://api-beta.bimdata.io/doc#/project/createDocument>`_ is available on our API Reference page.
+The `documentation for this route`_ is available on our API Reference page.
 
 .. code:: python
 
@@ -85,8 +86,8 @@ The `documentation for this route <https://api-beta.bimdata.io/doc#/project/crea
 Follow the upload process
 ---------------------------
 
-During the upload, you must query the server to get information about the upload process, see `the IFC documentation page <https://documentation.bimdata.io/v1.0/docs/ifc-1>`_ about the available information.
-The server detects IFC format and you can get information about your file using the API: `https://api-staging.bimdata.io/doc#/ifc/getIfc <https://api-staging.bimdata.io/doc#/ifc/getIfc>`_
+During the upload, you must query the server to get information about the upload process, see `the IFC documentation page`_ about the available information.
+The server detects IFC format and you can get information about your file using the API: https://api-staging.bimdata.io/doc#/ifc/getIfc
 
 .. note::
     The IFC document provided in this tutorial takes approximatively 10 seconds to be processed.\nUsually, the processing time could be very different depending on the IFC file.
@@ -127,7 +128,7 @@ Retrieve elements
 
 The route is: `/cloud/{cloud_pk}/project/{project_pk}/ifc/{ifc_pk}/element`
 
-As listed `on the documentation page for this route <https://api-beta.bimdata.io/doc#/ifc/getElements>`_:
+As listed `on the documentation page for this route`_:
 the mandatory parameters are:
 
  * *cloud_pk* string
@@ -161,3 +162,12 @@ You get a list of windows, all the windows of your model.
     #all_windows are available in this var for your next scripts
 
 With the filters, every IFC element can be retrieved. You can retrieve any element in the collection provided in the API.
+
+.. _create an application: ../cookbook/create_an_application.html
+.. _the procedure described on the dedicated page to get your Access Token: ../cookbook/get_access_token.html
+.. _What's a cloud?: ../concepts/cloud.html
+.. _What's a project?: ../concepts/projects.html
+.. _Download Cassiopea IFC: https://drive.google.com/file/d/1njhweVCFvDNl8Gy3B1HxAolcfExt0Tg-/view?usp=sharing
+.. _documentation for this route: https://api-beta.bimdata.io/doc#/project/createDocument
+.. _the IFC documentation page: ../concepts/ifc.html
+.. _on the documentation page for this route: https://api-beta.bimdata.io/doc#/ifc/getElements
