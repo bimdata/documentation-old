@@ -54,16 +54,59 @@ You will need this Access Token for every call of the BIMData's API.
 Create your first cloud and its first project
 -------------------------------------------------
 
+.. code-block:: python
+
+        import requests
+        #prepare headers and cloud_name for POST request
+        headers = {
+            'authorization': 'Bearer '+ access_token,
+        }
+        cloud_name = {
+            'name': 'My fabulous cloud'
+        }
+        response = requests.post(f'https://api-staging.bimdata.io/cloud', data=cloud_name, headers=headers)
+        assert response.status_code == 201
+
+        cloud_id = response.json().get('id')
+        response = requests.post(f'https://api-staging.bimdata.io/cloud/{cloud_id}/project',  headers=headers)
+        assert response.status_code == 201
+
+        project_id = response.json().get('id')
+
+
 
 
 Upload your IFC file in your project
 --------------------------------------
 
+.. code-block:: python
+
+        import requests
+        #prepare headers and payload for POST request
+        headers = {
+            'authorization': 'Bearer '+ access_token,
+        }
+        payload = {
+            'name': 'My lovely IFC'
+        }
+        my_ifc_to_upload = {'file': open('/path/to/XXX.ifc', 'rb')}
+
+        #previous script gives you the cloud_id and the project_id
+        url = f'https://api-staging.bimdata.io/cloud/{cloud_id}/project/{project_id}/document'
+        response = requests.post(url, data=payload, files=my_ifc_to_upload, headers=headers)
+        assert response.status_code == 201
+
+        my_ifc_id = response.json().get('ifc_id')
 
 
 Get all the information pieces from your IFC
 ----------------------------------------------
 
+.. code-block:: python
+
+        url = f'https://api-staging.bimdata.io/cloud/{cloud_id}/project/{project_id}/document/{my_ifc_id}'
+        response = requests.get(url, data=my_filter, headers=headers)
+        assert response.status_code == 200
 
 
 Include the Viewer
