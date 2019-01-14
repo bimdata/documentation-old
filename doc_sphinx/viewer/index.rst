@@ -12,7 +12,7 @@ BIMData provides a 3D Viewer with which you can interact with Javascript.
 Guide
 =================
 
-* `Including the Viewer in your app`_
+* `Include the Viewer in your app`_
 
 
 Cookbook
