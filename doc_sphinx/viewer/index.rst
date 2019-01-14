@@ -77,6 +77,7 @@ In addition to that, we recommend:
 * Javascript and built-in hardware acceleration enabled
 * Modern browser with `ECMAScript 2015 support`_
 
+.. _Getting started: ../viewer/getting_started.html
 .. _Including the Viewer in your app: ../viewer/include_viewer.html
 .. _init the Viewer: ../viewer/init_viewer.html
 .. _doors filtering: ../viewer/example_doors.html
