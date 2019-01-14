@@ -9,13 +9,13 @@ Getting Started
     #. `Create your first cloud and its first project`_
     #. Upload your IFC file in your project
     #. Get all the information pieces from your IFC
-#. BONUS: `Include the Viewer in your website`_
+#. BONUS: `Include the Viewer on your website`_
 
 Create a BIMData Connect account
 ===================================
 
 First, you need an account.
-Fill the form with your e-mail and name, chose an password and you have your account.
+Fill the form with your e-mail and name, chose a password and you have your account.
 
 .. image:: /_images/tutorials/BIMdata_connect_create_an_account.png
    :scale: 100 %
@@ -54,50 +54,28 @@ You will need this Access Token for every call of the BIMData's API.
 Create your first cloud and its first project
 -------------------------------------------------
 
+See the `details for the route /cloud/ for the cloud creation`_ and for `the route cloud/{cloud_pk}/project`_ the project creation.
+
 .. code-block:: python
 
-        import requests
-        #prepare headers and cloud_name for POST request
-        headers = {
-            'authorization': 'Bearer '+ access_token,
-        }
-        cloud_name = {
-            'name': 'My fabulous cloud'
-        }
         response = requests.post(f'https://api-staging.bimdata.io/cloud', data=cloud_name, headers=headers)
-        assert response.status_code == 201
-
         cloud_id = response.json().get('id')
         response = requests.post(f'https://api-staging.bimdata.io/cloud/{cloud_id}/project',  headers=headers)
-        assert response.status_code == 201
-
-        project_id = response.json().get('id')
-
 
 
 
 Upload your IFC file in your project
 --------------------------------------
 
+
 .. code-block:: python
 
-        import requests
-        #prepare headers and payload for POST request
-        headers = {
-            'authorization': 'Bearer '+ access_token,
-        }
-        payload = {
-            'name': 'My lovely IFC'
-        }
-        my_ifc_to_upload = {'file': open('/path/to/XXX.ifc', 'rb')}
-
-        #previous script gives you the cloud_id and the project_id
         url = f'https://api-staging.bimdata.io/cloud/{cloud_id}/project/{project_id}/document'
-        response = requests.post(url, data=payload, files=my_ifc_to_upload, headers=headers)
-        assert response.status_code == 201
+        response = requests.post(url, data=payload, files=ifc_path_to_upload, headers=headers)
 
-        my_ifc_id = response.json().get('ifc_id')
+.. note::
 
+    This is `a step of our Viewer Tutorial`_
 
 Get all the information pieces from your IFC
 ----------------------------------------------
@@ -106,8 +84,10 @@ Get all the information pieces from your IFC
 
         url = f'https://api-staging.bimdata.io/cloud/{cloud_id}/project/{project_id}/document/{my_ifc_id}'
         response = requests.get(url, data=my_filter, headers=headers)
-        assert response.status_code == 200
 
+.. note:: 
+
+    Many filters are available, `check out the getElements route`_
 
 Include the Viewer
 =======================
@@ -119,3 +99,7 @@ See the dedicated page `Getting Started with the Viewer`_
 .. _get the Access Token: ../cookbook/get_access_token.html
 .. _Use your credentials to log in: ../cookbook/get_access_token.html
 .. _Create your first cloud and its first project: ../tutorials/retrieve-elements.html#step-2-set-up-your-project
+.. _details for the route /cloud/ for the cloud creation: ../redoc/index.html#operation/createCloud
+.. _the route cloud/{cloud_pk}/project: https://developers-staging.bimdata.io/redoc/index.html#operation/createProject
+.. _a step of our Viewer Tutorial: ../tutorials/retrieve-elements.html#step-3-upload-your-ifc
+.. _check out the getElements route: ../redoc/index.html#operation/getElements
