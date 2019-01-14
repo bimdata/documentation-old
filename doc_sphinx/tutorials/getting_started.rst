@@ -103,3 +103,4 @@ See the dedicated page `Getting Started with the Viewer`_
 .. _the route cloud/{cloud_pk}/project: https://developers-staging.bimdata.io/redoc/index.html#operation/createProject
 .. _a step of our Viewer Tutorial: ../tutorials/retrieve-elements.html#step-3-upload-your-ifc
 .. _check out the getElements route: ../redoc/index.html#operation/getElements
+.. _Getting Started with the Viewer: ../viewer/getting_started.html
