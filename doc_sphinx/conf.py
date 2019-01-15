@@ -61,7 +61,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'BIMData Documentation (dev)'
+project = u'BIMData Documentation'
 copyright = u'2018, BIMData'
 author = u'BIMData'
 
@@ -70,9 +70,9 @@ author = u'BIMData'
 # built documents.
 #
 # The short X.Y version.
-version = 'dev'
+version = '1.0'
 # The full version, including alpha/beta/rc tags.
-release = '1.0-dev'
+release = '1.0 - latest'
 
 #sphinx-contrib
 #scv_whitelist_branches = ('master', '1.0', 'dev', 'testing_new_features')
@@ -158,15 +158,19 @@ html_theme_options = {
 
 
 
+scv_priority = 'branches'
+#scv_whitelist_branches = ('master','dev', 'tech-writing')
+
+
 html_style = 'css/my_theme.css' 
 html_file_suffix = None
 html_context = {
     'github_user': 'bimdata',
     'github_repo': 'documentation',
-    'github_version': 'dev/',
     'display_github': True,
     'conf_py_path': 'doc_sphinx/',
     'source_suffix': '.rst',
+    'github_version': 'master/',
 }
 
 
@@ -200,7 +204,7 @@ html_title = u'BIMData Doc'
 # the docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
 #
-# html_favicon = None
+html_favicon = "_static/_images/bimdata_favico.png"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
