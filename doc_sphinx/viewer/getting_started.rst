@@ -2,7 +2,7 @@
 Getting started with the Viewer
 ===============================
 
-.. image:: viewer/BIMdata_viewer_small.png
+.. image:: /_images/viewer/BIMdata_viewer_small.png
    :scale: 100 %
    :alt: Viewer screenshot
    :align: center
