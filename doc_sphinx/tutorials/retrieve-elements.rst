@@ -8,7 +8,7 @@ Retrieve elements of your model
 .. highlight:: python
    :linenothreshold: 5
 
-The bimdata Platform allows you to get any information on your model. In this tutorial, you learn how to retrieve elements of your model.
+The BIMData Platform allows you to get any information on your model. In this tutorial, you learn how to retrieve elements of your model.
 In this tutorial, we use the *client_credential* type of authentication, that is available when you have an application.
 Follow the steps and learn how to query your model through our API.
 
@@ -116,7 +116,7 @@ The server detects IFC format and you can get information about your file using 
 
 
 When the status is *C* meaning Complete, your IFC document is uploaded and processed.
-Let's use the bimdata API to query your model!
+Let's use the BIMData API to query your model!
 
 Step 4. Retrieve windows
 ===========================

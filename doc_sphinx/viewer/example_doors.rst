@@ -2,7 +2,7 @@
    :github: https://github.com/bimdata/documentation/blob/dev/doc_sphinx/viewer/example_doors.rst
 
 ===============================
-Example: usage of the Viewer
+Example: doors filtering
 ===============================
 
 BIMData provides a 3D Viewer with which you can interact with Javascript.

@@ -155,11 +155,6 @@ html_theme_options = {
     'titles_only': False
 }
 
-
-
-scv_priority = 'branches'
-#scv_whitelist_branches = ('master','dev', 'tech-writing')
-
 html_style = 'css/my_theme.css' 
 html_file_suffix = None
 html_context = {
@@ -170,8 +165,6 @@ html_context = {
     'source_suffix': '.rst',
     'github_version': 'master/',
 }
-
-
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -231,7 +224,7 @@ html_use_smartypants = True
 #
 # html_sidebars = {}
 html_sidebars = {
-   '**': ['globaltoc.html','sourcelink.html', 'searchbox.html', 'side_versions.html'],
+   '**': ['globaltoc.html','sourcelink.html', 'searchbox.html'],
 
 }
 
@@ -273,6 +266,7 @@ html_show_sphinx = True
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
 html_file_suffix = '.html'
+html_link_suffix = '.html'
 
 # Language to be used for generating the HTML full-text search index.
 # Sphinx supports the following languages:

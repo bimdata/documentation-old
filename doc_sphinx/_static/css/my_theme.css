@@ -1,5 +1,6 @@
 @import url("theme.css");
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto Mono');
 @font-face {
 	font-family: "Roboto", sans-serif;
 }
@@ -64,4 +65,11 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend{
 .wy-menu-vertical li a span.toctree-expand{
     color:#ffffff;
     background-color: inherit;
+}
+code.literal, code, .rst-content code,
+{
+    font-family: "Roboto Mono", monospace; 
+    background-color: #f5f5f5;
+    color: #1B1B1B;
+    border: none;
 }
