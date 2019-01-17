@@ -17,9 +17,8 @@ What's new?
 * URL is not the same than the previous one.
 * Grant type is now: 'client_credentials'
 
-The new authentication is fully implementing and respecting oAuth 2.0 offering to the users a more secure authentication.
-Additionally to that, respecting the oAuth 2.0 standard means more features such as 
-authenticate users from your front or your back apps, emulate the user's actions and also create your own credentials.
+The new authentication is fully implementing OpenID Connect offering to the users a more secure authentication.
+Additionally to that, respecting the OpenID Connect standard means more features such as authenticate users from your front or your back apps, emulate the user's actions and also create your own credentials.
 
 Learn more `about the new authentication on the dedicated page`_.
 
