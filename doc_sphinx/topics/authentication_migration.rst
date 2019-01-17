@@ -2,9 +2,8 @@
 Authentication migration
 ===================================
 
-The authentication migration is currently under progress.
-Your old credentials are still working with the new Authentication. 
-However the association of the users credentials with their clouds is no longer provided.
+The authentication migration is currently under progress. 
+Your old credentials are still working with the new Authentication, however the association of the users credentials with their clouds is no longer provided.
 
 .. warning:: 
     
@@ -22,3 +21,6 @@ The new authentication is fully implementing and respecting oAuth 2.0 offering t
 Additionally to that, respecting the oAuth 2.0 standard means more features such as 
 authenticate users from your front or your back apps, emulate the user's actions and also create your own credentials.
 
+Learn more `about the new authentication on the dedicated page`_.
+
+.. _about the new authentication on the dedicated page: ../topics/authentication_bimdata_connect.html
