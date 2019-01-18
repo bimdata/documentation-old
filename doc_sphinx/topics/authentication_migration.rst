@@ -31,7 +31,7 @@ Comparison of Requests
 Old Authentication Request
 ---------------------------
 
-.. blockcode:: python
+.. code:: python
 
     import requests
     url = "https://api-beta.bimdata.io/oauth/v2/token/"
@@ -42,7 +42,7 @@ Old Authentication Request
 New Authentication Request
 ---------------------------
 
-.. blockcode:: python
+.. code:: python
 
     import requests
     url = "https://login-staging.bimdata.io/token"
@@ -61,7 +61,7 @@ Comparison of Responses
 Old Response
 --------------
 
-.. blockcode:: json
+.. code:: json
 
     {
         "access_token": "ZeZr9oYxHspA99dSCo9uftaLaEHX1N",
@@ -75,7 +75,7 @@ Old Response
 New Response
 --------------
 
-.. blockcode:: json
+.. code:: json
 
     {
         "access_token": "108a3781a1234a9d84a12345bd863d7c",
