@@ -28,8 +28,12 @@ Learn more `about the new authentication on the dedicated page`_.
 Comparison of Requests
 =========================
 
+Comparing the old and new (current) requests and responses shows the similarities between the old and new authentications.
+
 Old Authentication Request
 ---------------------------
+
+The old request was a string payload with username and password in it.
 
 .. code:: python
 
@@ -41,6 +45,8 @@ Old Authentication Request
 
 New Authentication Request
 ---------------------------
+
+The new request takes a JSON payload.
 
 .. code:: python
 
@@ -61,6 +67,8 @@ Comparison of Responses
 Old Response
 --------------
 
+The old response contains a "refresh_token" property.
+
 .. code:: json
 
     {
@@ -74,6 +82,8 @@ Old Response
 
 New Response
 --------------
+
+The new response has a more detailed scope.
 
 .. code:: json
 
