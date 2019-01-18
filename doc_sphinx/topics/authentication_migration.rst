@@ -23,3 +23,68 @@ Additionally to that, respecting the OpenID Connect standard means more features
 Learn more `about the new authentication on the dedicated page`_.
 
 .. _about the new authentication on the dedicated page: ../topics/authentication_bimdata_connect.html
+
+
+Comparison of Requests
+=========================
+
+Old Authentication Request
+---------------------------
+
+.. blockcode:: python
+
+    import requests
+    url = "https://api-beta.bimdata.io/oauth/v2/token/"
+    payload = "client_secret=CLIENT_SECRET&client_id=CLIENT_ID&grant_type=password&username=my_user%40mail.com&password=passw0rd"
+    response = requests.post(url, data=payload, headers=headers)
+
+
+New Authentication Request
+---------------------------
+
+.. blockcode:: python
+
+    import requests
+    url = "https://login-staging.bimdata.io/token"
+    payload = {
+        "client_id": CLIENT_ID,
+        "client_secret": CLIENT_SECRET,
+        "grant_type": "client_credentials",
+    }
+
+    response = requests.post(url, data=payload)
+
+
+Comparison of Responses
+===========================
+
+Old Response
+--------------
+
+.. blockcode:: json
+
+    {
+        "access_token": "ZeZr9oYxHspA99dSCo9uftaLaEHX1N",
+        "expires_in": 36000,
+        "token_type": "Bearer",
+        "scope": "read write",
+        "refresh_token": "MI8fx999PmcfdEDYntvBIKck999BuM"
+    }
+
+
+New Response
+--------------
+
+.. blockcode:: json
+
+    {
+        "access_token": "108a3781a1234a9d84a12345bd863d7c",
+        "expires_in": 3600,
+        "token_type": "bearer",
+        "scope": "ifc:read
+        ifc:write
+        cloud:read
+        cloud:manage
+        document:read
+        document:write"
+    }
