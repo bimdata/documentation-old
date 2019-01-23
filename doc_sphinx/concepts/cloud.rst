@@ -24,4 +24,4 @@ References
 * POST ``/cloud``
 * GET ``/cloud/{cloud_pk}/user``
 
-.. _projects: projects
+.. _projects: projects.html
