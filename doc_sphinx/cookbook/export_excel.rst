@@ -1,7 +1,7 @@
 .. meta:
 
 ==========================================
-How-to oputput your data for Excel export
+How-to output your data for Excel export
 ==========================================
 
 You have to export data and produce Excel files.
