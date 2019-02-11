@@ -9,7 +9,7 @@ Getting Started
     #. `Create your first cloud and its first project`_
     #. Upload your IFC file in your project
     #. Get all the information pieces from your IFC
-#. BONUS: `Include the Viewer on your website`_
+#. BONUS: Include the Viewer on your website
 
 Create a BIMData Connect account
 ===================================
@@ -100,7 +100,7 @@ See the dedicated page `Getting Started with the Viewer`_
 .. _Use your credentials to log in: ../cookbook/get_access_token.html
 .. _Create your first cloud and its first project: ../tutorials/retrieve-elements.html#step-2-set-up-your-project
 .. _details for the route /cloud/ for the cloud creation: ../redoc/index.html#operation/createCloud
-.. _the route cloud/{cloud_pk}/project: https://developers-staging.bimdata.io/redoc/index.html#operation/createProject
 .. _a step of our Viewer Tutorial: ../tutorials/retrieve-elements.html#step-3-upload-your-ifc
 .. _check out the getElements route: ../redoc/index.html#operation/getElements
 .. _Getting Started with the Viewer: ../viewer/getting_started.html
+.. _the route cloud/{cloud_pk}/project: https://developers-staging.bimdata.io/redoc/index.html#operation/createProject
