@@ -14,12 +14,14 @@ BIMData provides you:
 
 After reading about the concepts in our `Concepts Tour`_, take a look at our `Guide by topics`_, our `Cookbook`_ and our `Tutorials`_.
 
+
 Chapters
 ========
 
 .. toctree::
     :maxdepth: 1
 
+    Getting Started <tutorials/getting_started>
     Concepts <concepts/index>
     Guide by topics <topics/index>
     Tutorials <tutorials/index>
