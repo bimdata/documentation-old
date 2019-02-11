@@ -18,11 +18,12 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend{
 
 .wy-side-nav-search,
 .wy-nav-side{
+    position: inherit;
     background: none;
     background-color: #30374b;
 }
 
-.wy-side-nav-search > a img.logo,
+/* .wy-side-nav-search > a img.logo,
 .wy-side-nav-search .wy-dropdown > a img.logo{
     display: block;
     height: 130px;
@@ -31,7 +32,7 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend{
     border-radius: 0;
     max-width: 100%;
     background: transparent;
-}
+} */
 
 .wy-side-nav-search a{
     font-size: 1.5em;
@@ -44,7 +45,7 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend{
 }
 
 .wy-nav-content{
-    max-width: 1100px;
+    max-width: 100%;
 }
 
 .wy-nav-content a{
@@ -68,8 +69,35 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend{
 }
 code.literal, code, .rst-content code,
 {
-    font-family: "Roboto Mono", monospace; 
+    font-family: "Roboto Mono", monospace;
     background-color: #f5f5f5;
     color: #1B1B1B;
     border: none;
+}
+
+
+/* bloc HEADER */
+header{
+  height: 60px;
+}
+.wy-side-nav-search{
+	margin: 0;
+  padding: 0;
+	height: 60px;
+	width: 100%;
+}
+.wy-side-nav-search > a{
+	margin: 0;
+	padding: 0;
+}
+.wy-side-nav-search > a img.logo{
+	margin: 0 auto;
+	padding: 0;
+	width: 40%;
+  height: auto;
+}
+
+/* bloc SIDE NAV */
+.wy-grid-for-nav {
+	height: calc(100% - 60px);
 }
