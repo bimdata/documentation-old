@@ -71,9 +71,9 @@ author = u'BIMData'
 # built documents.
 #
 # The short X.Y version.
-version = 'dev'
+version = '1.0'
 # The full version, including alpha/beta/rc tags.
-release = 'dev'
+release = '1.0'
 
 #sphinx-contrib
 #scv_whitelist_branches = ('latest', 'dev', 'tech-writing')
@@ -164,7 +164,7 @@ html_context = {
     'display_github': True,
     'conf_py_path': 'doc_sphinx/',
     'source_suffix': '.rst',
-    'github_version': 'dev/',
+    'github_version': 'master/',
 }
 
 # The name of an image file (relative to this directory) to place at the top
