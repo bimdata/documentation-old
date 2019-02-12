@@ -1,5 +1,5 @@
 .. meta::
-    :github_url: https://github.com/bimdata/documentation/blob/master/doc_sphinx/index.rst
+    :github_url: https://github.com/bimdata/documentation/blob/latest/doc_sphinx/index.rst
 
 
 ================================================
