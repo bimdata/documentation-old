@@ -198,7 +198,7 @@ html_theme_options = {
 
 
 def setup(app):
-    app.add_stylesheet("css/my_theme.css")  # also can be a full URL
+    app.add_stylesheet("css/style.scss.css")  # also can be a full URL
     # app.add_stylesheet("ANOTHER.css")
     # app.add_stylesheet("AND_ANOTHER.css")
 
