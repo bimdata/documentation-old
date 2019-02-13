@@ -101,6 +101,8 @@
 
 {%- macro script() %}
     <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/documentation_options.js', 1) }}"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/bootstrap.bundle.min.js', 1) }}"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/bootstrap.min.js', 1) }}"></script>
     {%- for js in script_files %}
       {{ js_tag(js) }}
     {%- endfor %}
@@ -109,7 +111,11 @@
 {%- macro css() %}
     <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
-    <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
+
+    <link rel="stylesheet" href="{{ pathto('_static/css/bootstrap-reboot.min.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/css/bootstrap-grid.min.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/css/bootstrap.min.css', 1) }}" type="text/css" />
+
     {%- for css in css_files %}
       {%- if css|attr("filename") %}
         {{ css_tag(css) }}
@@ -195,56 +201,59 @@
 
   {%- block body_tag %}<body>{% endblock %}
 
-    <div class="navbar fixed-top flex-md-nowrap p-0">
+    <div class="navbar fixed-top pr-4 pb-0 pt-0 pl-4">
       {%- include "header.html" %}
     </div>
 
-  {%- block relbar1 %}{{ relbar() }}{% endblock %}
-
   {%- block content %}
-    {%- block sidebar1 %}
-      {# possible location for sidebar #}
-    {% endblock %}
+  <div class="container-fluid content-doc">
+    <div class="row">
+      <div class="col-2">
+        {%- block sidebar1 %}
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+            {% block menu %}
+              {# The singlehtml builder doesn't handle this toctree call when the toctree is empty. Skip building this for now. #}
 
-      <div class="document">
-        {%- block document %}
-            <div class="documentwrapper">
-            {%- if render_sidebar %}
-              <div class="bodywrapper">
-            {%- endif %}
-                <div class="body" role="main">
-                  {% block body %} {% endblock %}
-                </div>
-            {%- if render_sidebar %}
-              </div>
-            {%- endif %}
-            </div>
-        {%- endblock %}
-
-        <div class="clearer"></div>
+              {% if 'singlehtml' not in builder %}
+                {% set global_toc = toctree(maxdepth=theme_navigation_depth|int,
+                        collapse=theme_collapse_navigation|tobool,
+                        includehidden=theme_includehidden|tobool,
+                        titles_only=theme_titles_only|tobool) %}
+              {% endif %}
+              {% if global_toc %}
+                {{ global_toc }}
+              {% else %}
+                <!-- Local TOC -->
+                <div class="local-toc">{{ toc }}</div>
+              {% endif %}
+            {% endblock %}
+          </div>
+        {% endblock %}
       </div>
-  {%- endblock %}
 
-  {%- block relbar2 %}{{ relbar() }}{% endblock %}
+      <div class="col-10">
+        <div class="document">
+          {%- block document %}
+              <div class="documentwrapper">
+              {%- if render_sidebar %}
+                <div class="bodywrapper">
+              {%- endif %}
+                  <div class="body" role="main">
+                    {% block body %}{% endblock %}
+                  </div>
+              {%- if render_sidebar %}
+                </div>
+              {%- endif %}
+              </div>
+          {%- endblock %}
 
-  {%- block footer %}
-    <div class="footer" role="contentinfo">
-      {%- if show_copyright %}
-        {%- if hasdoc('copyright') %}
-          {% trans path=pathto('copyright'), copyright=copyright|e %}&#169; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
-        {%- else %}
-          {% trans copyright=copyright|e %}&#169; Copyright {{ copyright }}.{% endtrans %}
-        {%- endif %}
-      {%- endif %}
-
-      {%- if last_updated %}
-        {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
-      {%- endif %}
-
-      {%- if show_sphinx %}
-        {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx-doc.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
-      {%- endif %}
+          <div class="clearer"></div>
+        </div>
+      </div>
     </div>
+  </div>
   {%- endblock %}
+
+  {%- block footer %}{%- endblock %}
   </body>
 </html>

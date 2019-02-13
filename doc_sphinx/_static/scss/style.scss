@@ -1,0 +1,92 @@
+
+@import "../../node_modules/@bimdata/utils/scss/common.scss";
+
+html, body{
+  padding: 0;
+  background-color: rgba(255,255,255,1);
+  color: rgba(151,151,151,1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+/* custom NAVBAR
+---------------------------------------- */
+.navbar{
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+  header{
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    // navbar LOGO
+    .navbar-logo{
+      a, .version{
+        display: inline-block;
+      }
+      a{
+        img{
+          width: 100px;
+        }
+      }
+    }
+
+    // navbar SEARCH
+    .navbar-search{
+      #searchbox{
+        input{
+          width: 100%;
+          position: relative;
+          border: none;
+          box-shadow: none;
+          &::before{
+            content: "";
+            position: absolute;
+            background-image: url("../_images/bimdata_loupe.svg");
+          }
+          &:-webkit-autofill{
+            -webkit-box-shadow: 0 0 0 1000px #fff inset;
+          }
+        }
+      }
+    }
+
+    // navbar MENU
+    .navbar-menu{
+      ul{
+        margin: 0;
+        li{
+          display: inline-block;
+        }
+      }
+    }
+
+    // navbar SEARCH
+    .navbar-btn{
+      .btn{
+        height: 32px;
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        font-size: 0.8571rem;
+        line-height: 1rem;
+        box-shadow: none;
+        &.btn-primary{
+          background-color: rgba(47,55,74,1);
+        }
+        &.btn-shadow{
+          &:hover{
+            background-color: rgba(47,55,74,0.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+// custom CONTENT
+.content-doc{
+  margin-top: 60px;
+  .wy-menu-vertical{
+    width: 100%;
+  }
+}

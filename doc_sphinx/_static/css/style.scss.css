@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'robotobold';
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoitalic';
+  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/roboto-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* custom VARIABLES ------------------------ */
+/* custom MIXINS ------------------------ */
+@font-face {
+  font-family: 'robotobold';
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoitalic';
+  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/roboto-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-size: 14px;
+}
+
+::-moz-selection {
+  background: #2f374a;
+  color: #f9c72c;
+}
+
+::selection {
+  background: #2f374a;
+  color: #f9c72c;
+}
+
+/* blocs BTN ------------------------ */
+.btn-primary {
+  height: 32px;
+  border-radius: 3px;
+  background-color: #2f374a;
+  color: white;
+  font-family: "robotoregular", sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.btn-shadow {
+  height: 32px;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #2f374a;
+  font-family: "robotoregular", sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.btn-shadow:hover {
+  background-color: rgba(47, 55, 74, 0.1);
+}
+
+html, body {
+  padding: 0;
+  background-color: white;
+  color: #979797;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+/* custom NAVBAR
+---------------------------------------- */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar header {
+  height: 60px;
+  width: 100%;
+  align-items: center;
+}
+
+.navbar header .navbar-logo a, .navbar header .navbar-logo .version {
+  display: inline-block;
+}
+
+.navbar header .navbar-logo a img {
+  width: 100px;
+}
+
+.navbar header .navbar-search #searchbox input {
+  width: 100%;
+  position: relative;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar header .navbar-search #searchbox input::before {
+  content: "";
+  position: absolute;
+  background-image: url("../_images/bimdata_loupe.svg");
+}
+
+.navbar header .navbar-search #searchbox input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+
+.navbar header .navbar-menu ul {
+  margin: 0;
+}
+
+.navbar header .navbar-menu ul li {
+  display: inline-block;
+}
+
+.navbar header .navbar-btn .btn {
+  height: 32px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.8571rem;
+  line-height: 1rem;
+  box-shadow: none;
+}
+
+.navbar header .navbar-btn .btn.btn-primary {
+  background-color: #2f374a;
+}
+
+.navbar header .navbar-btn .btn.btn-shadow:hover {
+  background-color: rgba(47, 55, 74, 0.1);
+}
+
+.content-doc {
+  margin-top: 60px;
+}
+
+.content-doc .wy-menu-vertical {
+  width: 100%;
+}

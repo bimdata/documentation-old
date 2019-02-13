@@ -1,0 +1,15 @@
+{
+  "name": "doc_sphinx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "@bimdata/utils": "0.0.4",
+    "bootstrap": "^4.3.0"
+  }
+}
