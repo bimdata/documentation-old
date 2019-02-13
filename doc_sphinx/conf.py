@@ -155,9 +155,10 @@ html_theme_options = {
 
 
 def setup(app):
-    app.add_stylesheet("css/style.scss.css")  # also can be a full URL
-    # app.add_stylesheet("ANOTHER.css")
-    # app.add_stylesheet("AND_ANOTHER.css")
+    if os.environ.get("ENV", "development") == "development":
+        app.add_js_file("js/reload.js")  # also can be a full URL
+
+    app.add_stylesheet("css/style.css")  # also can be a full URL
 
 
 html_file_suffix = None
@@ -490,5 +491,5 @@ OUTPUT_STYLE = os.environ.get("SCSS_OUTPUT_STYLE", "expanded")
 SCSS_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), "./_static/scss"))
 CSS_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), "./_static/css"))
 
-b = builder.Manifest(sass_path=SCSS_DIR, css_path=CSS_DIR)
+b = builder.Manifest(sass_path=SCSS_DIR, css_path=CSS_DIR, strip_extension=True)
 b.build("", output_style=OUTPUT_STYLE)

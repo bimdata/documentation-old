@@ -108,10 +108,10 @@
     {%- endfor %}
 {%- endmacro %}
 
+
 {%- macro css() %}
     <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
-
     <link rel="stylesheet" href="{{ pathto('_static/css/bootstrap-reboot.min.css', 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/css/bootstrap-grid.min.css', 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/css/bootstrap.min.css', 1) }}" type="text/css" />
@@ -199,7 +199,7 @@
     {%- block extrahead %} {% endblock %}
   </head>
 
-  {%- block body_tag %}<body>{% endblock %}
+  {%- block body_tag %}<body">{% endblock %}
 
     <div class="navbar fixed-top pr-4 pb-0 pt-0 pl-4">
       {%- include "header.html" %}
