@@ -58,7 +58,3 @@ workflows:
           requires:
             - checkout_code
             - build
-          filters:
-            branches:
-              only:
-                - master
