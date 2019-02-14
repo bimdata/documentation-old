@@ -1,0 +1,26 @@
+{#
+    basic/globaltoc.html
+    ~~~~~~~~~~~~~~~~~~~~
+
+    Sphinx sidebar template: global table of contents.
+
+    :copyright: Copyright 2007-2019 by the Sphinx team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+#}
+
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+    {% block menu %}
+      {% if 'singlehtml' not in builder %}
+        {% set global_toc = toctree(maxdepth=theme_navigation_depth|int,
+                collapse=theme_collapse_navigation|tobool,
+                includehidden=theme_includehidden|tobool,
+                titles_only=theme_titles_only|tobool) %}
+      {% endif %}
+      {% if global_toc %}
+        {{ global_toc }}
+      {% else %}
+        <!-- Local TOC -->
+        <div class="local-toc">{{ toc }}</div>
+      {% endif %}
+    {% endblock %}
+  </div>

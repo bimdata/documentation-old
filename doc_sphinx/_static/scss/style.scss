@@ -1,12 +1,57 @@
-
 @import "../../node_modules/@bimdata/utils/scss/common.scss";
 
 html, body{
   padding: 0;
   background-color: rgba(255,255,255,1);
   color: rgba(151,151,151,1);
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-family: $font-primary;
+  @include font-size(14px);
+}
+
+/* custom GLOBAL
+---------------------------------------- */
+h1, h2{
+  color: $color-primary;
+  font-family: $font-primary_medium;
+}
+a{
+  color: $color-primary;
+  font-family: $font-primary_medium;
+  position: relative;
+  &:hover{
+    color: $color-primary;
+    text-decoration: none;
+  }
+  &:visited{
+    color: $color-primary;
+  }
+  &.headerlink{
+    display: none;
+  }
+}
+p, ul, ol{
+  a.reference.external{
+    position: relative;
+    &::after{
+      content: "";
+      width: 100%;
+      height: 1.5px;
+      background-color: $color-primary;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      @include transform(scaleX(0));
+      @include transform-origin(right);
+      @include transition(transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1));
+    }
+    &:hover{
+      &::after{
+        @include transform(scaleX(1));
+        @include transform-origin(left);
+      }
+    }
+  }
 }
 
 /* custom NAVBAR
@@ -28,24 +73,41 @@ html, body{
           width: 100px;
         }
       }
+      .version{
+        span{
+          width: 24px;
+          display: block;
+          @include font-size(10px);
+          text-align: center;
+        }
+      }
     }
 
     // navbar SEARCH
     .navbar-search{
       #searchbox{
+        position: relative;
         input{
+          padding: 0 2rem;
           width: 100%;
           position: relative;
           border: none;
           box-shadow: none;
-          &::before{
-            content: "";
-            position: absolute;
-            background-image: url("../_images/bimdata_loupe.svg");
-          }
+
           &:-webkit-autofill{
             -webkit-box-shadow: 0 0 0 1000px #fff inset;
           }
+        }
+        &::before{
+          content: "";
+          position: absolute;
+          background-image: url("../_images/bimdata_loupe.svg");
+          height: 14px;
+          width: 14px;
+          background-size: cover;
+          background-position: center;
+          z-index: 10;
+          top: 6px;
         }
       }
     }
@@ -56,6 +118,37 @@ html, body{
         margin: 0;
         li{
           display: inline-block;
+          a{
+            padding: 22px;
+            position: relative;
+            display: block;
+            color: $color-primary;
+            @include font-size(10px);
+            font-family: $font-primary_medium;
+            &:hover{
+              text-decoration: none;
+              &::after{
+                background-color: rgba($color-secondary, .3);
+                opacity: 1;
+                @include transform(scaleX(1));
+                @include transform-origin(left);
+              }
+            }
+            &::after{
+              height: 3px;
+              width: 100%;
+              content: '';
+              position: absolute;
+              display: inline-block;
+              left: 0;
+              bottom: 0;
+              background-color: $color-secondary;
+              opacity: 0;
+              @include transition(.3s ease all);
+              @include transform(scaleX(0));
+              @include transform-origin(right);
+            }
+          }
         }
       }
     }
@@ -67,7 +160,7 @@ html, body{
         width: 100%;
         border: none;
         border-radius: 3px;
-        font-size: 0.8571rem;
+        @include font-size(12px);
         line-height: 1rem;
         box-shadow: none;
         &.btn-primary{
@@ -86,7 +179,131 @@ html, body{
 // custom CONTENT
 .content-doc{
   margin-top: 60px;
-  .wy-menu-vertical{
-    width: 100%;
+  // custom SUMMARY
+  &_summary{
+    padding: 0;
+    height: calc(100vh - 60px);
+    position: fixed;
+    background-color: $color-background;
+    .wy-menu-vertical{
+      width: 100%;
+      // custom TITLE SUMMARY
+      .caption{
+        color: $color-primary;
+        @include font-size(13px);
+        text-transform: initial;
+      }
+      // custom LINK SUMMARY
+      .toctree-l1{
+        position: relative;
+        &::before{
+          content: "";
+          position: absolute;
+        }
+        a{
+          color: $color-primary;
+          font-family: $font-primary;
+          &:hover{
+            background-color: $color-secondary;
+          }
+        }
+
+        &.current{
+          a{
+            background-color: $color-secondary;
+            border: none;
+          }
+          ul{
+            .toctree-l2{
+              a{
+                position: relative;
+                background-color: $color-background;
+                &::before{
+                  content: "";
+                  position: absolute;
+                  left: 22px;
+                  top: 7px;
+                  width: 2px;
+                  height: 14px;
+                  background-color: $color-secondary;
+                  opacity: 0;
+                }
+                &:hover{
+                  &::before{
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // custom CONTENT
+  &_content{
+    padding-left: 27px;
+    .wy-breadcrumbs{
+      li{
+        margin: 0 7px;
+        padding: 7px 9px;
+        position: relative;
+        background-color: $color-background;
+        border-radius: 10px;
+        @include font-size(13px);
+        a{
+          padding: 0;
+          color: $color-primary;
+          text-decoration: none;
+        }
+        &:first-child{
+          a{
+            span{
+              margin-right: 2px;
+              display: inline-block;
+              position: relative;
+              text-align: center;
+              img{
+                margin-top: -2px;
+                width: 13px;
+                height: 13px;
+              }
+            }
+          }
+        }
+        &:last-child{
+          &::after{
+            content: "";
+          }
+        }
+        &::after{
+          content: " / ";
+          position: absolute;
+          top: 6px;
+          right: -11px;
+        }
+      }
+    }
+
+    blockquote{
+      ul{
+        line-height: 2;
+        li{
+          padding: 0 0 0 1rem;
+          position: relative;
+          &::before{
+            content: " ";
+            position: absolute;
+            background-color: $color-secondary;
+            left: 0;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            top: 15px;
+          }
+        }
+      }
+    }
   }
 }

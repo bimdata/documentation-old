@@ -20,17 +20,17 @@
       {% endif %}
       {% if nav_version %}
         <div class="version">
-          {{ nav_version }}
+          <span>{{ nav_version }}</span>
         </div>
       {% endif %}
     {% endif %}
   </div>
 
-  <div class="navbar-search col-3">
+  <div class="navbar-search col-2">
     {% include "searchbox.html" %}
   </div>
 
-  <div class="navbar-menu col-4">
+  <div class="navbar-menu col-5">
     <ul>
       <li><a title="{{ _('concepts') }}" href="{{ pathto('concepts/index') }}">Concepts</a></li>
       <li><a title="{{ _('topics') }}" href="{{ pathto('topics/index') }}">Guide</a></li>

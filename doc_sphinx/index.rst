@@ -1,9 +1,8 @@
 .. meta::
     :github_url: https://github.com/bimdata/documentation/blob/master/doc_sphinx/index.rst
 
-
 ================================================
-Welcome to BIMData documentation!
+Welcome to BIMData documentation !
 ================================================
 
 BIMData provides you:
@@ -16,9 +15,9 @@ After reading about the concepts in our `Concepts Tour`_, take a look at our `Gu
 
 Chapters
 ========
-
 .. toctree::
     :maxdepth: 1
+    :caption: BIMData Doc
 
     Concepts <concepts/index>
     Guide by topics <topics/index>

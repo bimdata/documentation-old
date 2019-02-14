@@ -10,7 +10,7 @@
   "author": "",
   "license": "CC-BY-4.0",
   "dependencies": {
-    "@bimdata/utils": "0.0.4",
+    "@bimdata/utils": "0.0.6",
     "bootstrap": "^4.3.0"
   },
   "devDependencies": {
