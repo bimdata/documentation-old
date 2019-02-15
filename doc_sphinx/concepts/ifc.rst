@@ -16,6 +16,13 @@ When the BIMData API detects an IFC format (based on the file name ending with `
 
 IFC files are tied to a `document` which represents the actual uploaded file.
 
+We use HTTP Compression to speed up the file transfer. HTTP Compression will start as soon as you upload a file.
+Files are decompressed at the output of the API.
+
+.. note::
+
+    The displayed filesize is the compressed size and not the actual size of the initial file.
+
 Workflow
 =========
 
