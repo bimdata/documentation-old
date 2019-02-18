@@ -30,7 +30,7 @@
     {% block breadcrumbs %}
       <li>
         <a href="{{ pathto(master_doc) }}">
-          <span><img src="../_static/_images/bimdata_home.svg" alt=""></span>
+          <i class="material-icons">home</i>
           {{ _('Docs') }}
         </a>
       </li>
@@ -44,7 +44,7 @@
   </ul>
 
     {% block breadcrumbs_aside %}
-      <li class="wy-breadcrumbs-aside col-2">
+      <div class="wy-breadcrumbs-aside col-2">
         {% if hasdoc(pagename) %}
             {% if display_github %}
             {% if check_meta and 'github_url' in meta %}
@@ -73,7 +73,7 @@
             <a href="{{ pathto('_sources/' + sourcename, true)|e }}" rel="nofollow"> {{ _('View page source') }}</a>
           {% endif %}
         {% endif %}
-      </li>
+      </div>
     {% endblock %}
   </ul>
 </div>

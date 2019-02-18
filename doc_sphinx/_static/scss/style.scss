@@ -14,6 +14,12 @@ h1, h2{
   color: $color-primary;
   font-family: $font-primary_medium;
 }
+h1{
+  @include font-size(20px);
+}
+h2{
+  @include font-size(16px);
+}
 a{
   color: $color-primary;
   font-family: $font-primary_medium;
@@ -53,6 +59,12 @@ p, ul, ol{
     }
   }
 }
+p{
+  @include font-size(12px);
+}
+pre{
+  padding: 1rem;
+}
 
 /* custom NAVBAR
 ---------------------------------------- */
@@ -85,7 +97,7 @@ p, ul, ol{
 
     // navbar SEARCH
     .navbar-search{
-      #searchbox{
+      #rtd-search-form{
         position: relative;
         input{
           padding: 0 2rem;
@@ -146,22 +158,24 @@ p, ul, ol{
               opacity: 0;
               @include transition(.3s ease all);
               @include transform(scaleX(0));
-              @include transform-origin(right);
+              // @include transform-origin(right);
             }
           }
         }
       }
     }
 
-    // navbar SEARCH
+    // navbar BTN
     .navbar-btn{
+      .row{
+        justify-content: flex-end;
+      }
       .btn{
         height: 32px;
         width: 100%;
         border: none;
         border-radius: 3px;
         @include font-size(12px);
-        line-height: 1rem;
         box-shadow: none;
         &.btn-primary{
           background-color: rgba(47,55,74,1);
@@ -196,22 +210,55 @@ p, ul, ol{
       // custom LINK SUMMARY
       .toctree-l1{
         position: relative;
+        background: $color-background;
         &::before{
           content: "";
           position: absolute;
+          background-image: url("../_images/bimdata_carret-right.svg");
+          width: 17px;
+          height: 15px;
+          top: 11px;
+          left: 22px;
+          background-size: 11px;
+          background-repeat: no-repeat;
+          z-index: 1;
         }
         a{
+          padding: .5rem 2.5rem;
           color: $color-primary;
           font-family: $font-primary;
           &:hover{
             background-color: $color-secondary;
           }
+          &.external{
+            &::after{
+              content: none;
+            }
+          }
+        }
+        ul{
+          .toctree-l2{
+            a{
+              margin: .4rem 0;
+              padding: 0 3.5rem;
+            }
+            .toctree-l3{
+              a{
+                margin: .5rem 0;
+                padding: 0 4.25rem;
+              }
+            }
+          }
         }
 
         &.current{
+          &::before{
+            background-image: url("../_images/bimdata_carret-down.svg");
+          }
           a{
             background-color: $color-secondary;
             border: none;
+            font-weight: inherit;
           }
           ul{
             .toctree-l2{
@@ -221,10 +268,10 @@ p, ul, ol{
                 &::before{
                   content: "";
                   position: absolute;
-                  left: 22px;
-                  top: 7px;
+                  left: 39px;
+                  top: 0;
                   width: 2px;
-                  height: 14px;
+                  height: 100%;
                   background-color: $color-secondary;
                   opacity: 0;
                 }
@@ -233,11 +280,26 @@ p, ul, ol{
                     opacity: 1;
                   }
                 }
+                &.current{
+                  &::before{
+                    opacity: 1;
+                  }
+                }
+              }
+              .toctree-l3{
+                a{
+                  &::before{
+                    left: 55px;
+                  }
+                }
               }
             }
           }
         }
       }
+    }
+    li.current{
+      background: $color-background;
     }
   }
 
@@ -248,6 +310,7 @@ p, ul, ol{
       li{
         margin: 0 7px;
         padding: 7px 9px;
+        height: 38px;
         position: relative;
         background-color: $color-background;
         border-radius: 10px;
@@ -259,16 +322,11 @@ p, ul, ol{
         }
         &:first-child{
           a{
-            span{
-              margin-right: 2px;
-              display: inline-block;
-              position: relative;
-              text-align: center;
-              img{
-                margin-top: -2px;
-                width: 13px;
-                height: 13px;
-              }
+            i{
+              margin: 0 .125rem .1rem 0;
+              @include font-size(16px);
+              vertical-align: middle;
+
             }
           }
         }

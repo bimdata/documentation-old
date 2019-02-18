@@ -111,6 +111,16 @@ h1, h2 {
   font-family: "robotomedium", sans-serif;
 }
 
+h1 {
+  font-size: 20px;
+  font-size: 1.42857rem;
+}
+
+h2 {
+  font-size: 16px;
+  font-size: 1.14286rem;
+}
+
 a {
   color: #2f374a;
   font-family: "robotomedium", sans-serif;
@@ -168,6 +178,15 @@ p a.reference.external:hover::after, ul a.reference.external:hover::after, ol a.
   transform-origin: left;
 }
 
+p {
+  font-size: 12px;
+  font-size: 0.85714rem;
+}
+
+pre {
+  padding: 1rem;
+}
+
 /* custom NAVBAR
 ---------------------------------------- */
 .navbar {
@@ -197,11 +216,11 @@ p a.reference.external:hover::after, ul a.reference.external:hover::after, ol a.
   text-align: center;
 }
 
-.navbar header .navbar-search #searchbox {
+.navbar header .navbar-search #rtd-search-form {
   position: relative;
 }
 
-.navbar header .navbar-search #searchbox input {
+.navbar header .navbar-search #rtd-search-form input {
   padding: 0 2rem;
   width: 100%;
   position: relative;
@@ -209,11 +228,11 @@ p a.reference.external:hover::after, ul a.reference.external:hover::after, ol a.
   box-shadow: none;
 }
 
-.navbar header .navbar-search #searchbox input:-webkit-autofill {
+.navbar header .navbar-search #rtd-search-form input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px #fff inset;
 }
 
-.navbar header .navbar-search #searchbox::before {
+.navbar header .navbar-search #rtd-search-form::before {
   content: "";
   position: absolute;
   background-image: url("../_images/bimdata_loupe.svg");
@@ -279,10 +298,10 @@ p a.reference.external:hover::after, ul a.reference.external:hover::after, ol a.
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transform-origin: right;
-  -moz-transform-origin: right;
-  -ms-transform-origin: right;
-  transform-origin: right;
+}
+
+.navbar header .navbar-btn .row {
+  justify-content: flex-end;
 }
 
 .navbar header .navbar-btn .btn {
@@ -292,7 +311,6 @@ p a.reference.external:hover::after, ul a.reference.external:hover::after, ol a.
   border-radius: 3px;
   font-size: 12px;
   font-size: 0.85714rem;
-  line-height: 1rem;
   box-shadow: none;
 }
 
@@ -328,14 +346,24 @@ p a.reference.external:hover::after, ul a.reference.external:hover::after, ol a.
 
 .content-doc_summary .wy-menu-vertical .toctree-l1 {
   position: relative;
+  background: #f7f7f7;
 }
 
 .content-doc_summary .wy-menu-vertical .toctree-l1::before {
   content: "";
   position: absolute;
+  background-image: url("../_images/bimdata_carret-right.svg");
+  width: 17px;
+  height: 15px;
+  top: 11px;
+  left: 22px;
+  background-size: 11px;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .content-doc_summary .wy-menu-vertical .toctree-l1 a {
+  padding: .5rem 2.5rem;
   color: #2f374a;
   font-family: "robotoregular", sans-serif;
 }
@@ -344,9 +372,28 @@ p a.reference.external:hover::after, ul a.reference.external:hover::after, ol a.
   background-color: #f9c72c;
 }
 
+.content-doc_summary .wy-menu-vertical .toctree-l1 a.external::after {
+  content: none;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 a {
+  margin: .4rem 0;
+  padding: 0 3.5rem;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 .toctree-l3 a {
+  margin: .5rem 0;
+  padding: 0 4.25rem;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current::before {
+  background-image: url("../_images/bimdata_carret-down.svg");
+}
+
 .content-doc_summary .wy-menu-vertical .toctree-l1.current a {
   background-color: #f9c72c;
   border: none;
+  font-weight: inherit;
 }
 
 .content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a {
@@ -357,16 +404,28 @@ p a.reference.external:hover::after, ul a.reference.external:hover::after, ol a.
 .content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a::before {
   content: "";
   position: absolute;
-  left: 22px;
-  top: 7px;
+  left: 39px;
+  top: 0;
   width: 2px;
-  height: 14px;
+  height: 100%;
   background-color: #f9c72c;
   opacity: 0;
 }
 
 .content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a:hover::before {
   opacity: 1;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a.current::before {
+  opacity: 1;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 .toctree-l3 a::before {
+  left: 55px;
+}
+
+.content-doc_summary li.current {
+  background: #f7f7f7;
 }
 
 .content-doc_content {
@@ -376,6 +435,7 @@ p a.reference.external:hover::after, ul a.reference.external:hover::after, ol a.
 .content-doc_content .wy-breadcrumbs li {
   margin: 0 7px;
   padding: 7px 9px;
+  height: 38px;
   position: relative;
   background-color: #f7f7f7;
   border-radius: 10px;
@@ -389,17 +449,11 @@ p a.reference.external:hover::after, ul a.reference.external:hover::after, ol a.
   text-decoration: none;
 }
 
-.content-doc_content .wy-breadcrumbs li:first-child a span {
-  margin-right: 2px;
-  display: inline-block;
-  position: relative;
-  text-align: center;
-}
-
-.content-doc_content .wy-breadcrumbs li:first-child a span img {
-  margin-top: -2px;
-  width: 13px;
-  height: 13px;
+.content-doc_content .wy-breadcrumbs li:first-child a i {
+  margin: 0 .125rem .1rem 0;
+  font-size: 16px;
+  font-size: 1.14286rem;
+  vertical-align: middle;
 }
 
 .content-doc_content .wy-breadcrumbs li:last-child::after {

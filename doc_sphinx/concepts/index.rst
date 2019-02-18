@@ -3,9 +3,7 @@ Concepts
 ========
 
 .. toctree::
-   :glob:
-   :maxdepth: 4
-   :titlesonly:
+   :hidden:
 
     Cloud <cloud>
     Folders and documents <folders_and_documents>
