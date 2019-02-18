@@ -90,7 +90,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "*.scss"]
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -130,15 +130,14 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-import sphinx_rtd_theme
 # import sphinx_bootstrap_theme
 
+# html_theme = "classic"
+import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-# html_theme = "bootstrap"
-# html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
-# html_theme = "classic"
+#html_theme = "classic"
 
 html_theme_options = {
     'logo_only': False,
@@ -160,7 +159,6 @@ def setup(app):
 
     app.add_stylesheet("css/style.css")  # also can be a full URL
 
-
 html_file_suffix = None
 html_context = {
     "github_user": "bimdata",
@@ -174,7 +172,7 @@ html_context = {
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 #
-html_logo = "_static/_images/bimdata_logo-doc.svg"
+html_logo = "static/_images/bimdata_logo-doc.svg"
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
@@ -195,7 +193,7 @@ html_favicon = "_static/_images/bimdata_favico.png"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ["_static", "_images"]
+html_static_path = ["_static", "_static/_images"]
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied

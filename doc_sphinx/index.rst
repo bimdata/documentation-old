@@ -13,10 +13,8 @@ BIMData provides you:
 
 After reading about the concepts in our `Concepts Tour`_, take a look at our `Guide by topics`_, our `Cookbook`_ and our `Tutorials`_.
 
-Chapters
-========
 .. toctree::
-    :maxdepth: 1
+    :hidden:
     :caption: BIMData Doc
 
     Concepts <concepts/index>
@@ -26,13 +24,3 @@ Chapters
     Viewer Doc <viewer/index>
     API Doc<../redoc/index.html#://>
     BIMData.io website <https://bimdata.io/>
-
-
-.. _an API: ../../redoc/index.html
-.. _a Viewer: viewer/
-.. _BIMData Connect: topics/authentication_bimdata_connect.html
-
-.. _Concepts Tour: concepts/
-.. _Guide by topics: topics/
-.. _Cookbook: cookbook/
-.. _Tutorials: tutorials/
