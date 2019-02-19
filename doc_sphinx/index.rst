@@ -30,7 +30,7 @@ Chapters
     Tutorials <tutorials/index>
     Cookbook <cookbook/index>
     Viewer Doc <viewer/index>
-    API Doc<../redoc/index.html#://>
+    API Doc<../../redoc/index.html#://>
     BIMData.io website <https://bimdata.io/>
 
 
