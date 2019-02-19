@@ -1,12 +1,11 @@
 ===========
-Topics
+Guide
 ===========
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 1
 
        API Introduction <introduction>
        Authentication <authentication_bimdata_connect>
        Errors <errors>
        Filters <filters>
-

@@ -17,9 +17,7 @@ After reading about the concepts in our `Concepts Tour`_, take a look at our `Gu
     :hidden:
     :caption: BIMData Doc
 
-    Concepts <concepts/index>
-    Guide by topics <topics/index>
-    Tutorials <tutorials/index>
+
     Cookbook <cookbook/index>
     Viewer Doc <viewer/index>
     API Doc<../redoc/index.html#://>

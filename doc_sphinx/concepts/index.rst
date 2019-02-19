@@ -3,7 +3,7 @@ Concepts
 ========
 
 .. toctree::
-   :hidden:
+   :maxdepth: 1
 
     Cloud <cloud>
     Folders and documents <folders_and_documents>

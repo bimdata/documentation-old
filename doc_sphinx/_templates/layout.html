@@ -17,6 +17,9 @@
     {%- include "header.html" %}
   </div>
   <div class="container-fluid content-doc">
+    {% if pagename == 'index' %}
+      {%- include "home.html" %}
+    {% else %}
     <div class="row">
       <div class="content-doc_summary col-2 pt-4">
         {%- block sidebar1 %}
@@ -35,6 +38,8 @@
         {%- endblock %}
       </div>
     </div>
+    {% endif %}
+
   </div>
   {%- endblock %}
 

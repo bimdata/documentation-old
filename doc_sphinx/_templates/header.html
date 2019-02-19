@@ -30,7 +30,7 @@
     {% include "searchbox.html" %}
   </div>
 
-  <div class="navbar-menu col-5">
+  <div class="navbar-menu col-4 px-5">
     <ul>
       <li><a title="{{ _('concepts') }}" href="{{ pathto('concepts/index') }}">Concepts</a></li>
       <li><a title="{{ _('topics') }}" href="{{ pathto('topics/index') }}">Guide</a></li>
@@ -39,7 +39,7 @@
     </ul>
   </div>
 
-  <div class="navbar-btn col-3">
+  <div class="navbar-btn col-3 offset-1">
     <div class="row">
       <div class="col-6">
         <button type="button" class="btn btn-primary">create account</button>
@@ -52,3 +52,13 @@
 
   {% endblock %}
 </header>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('ul li a').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+  });
+});
+
+</script>
