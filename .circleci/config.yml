@@ -7,7 +7,7 @@ references:
     working_directory: ~/repo
 
 jobs:
-  build:
+  branch:
     <<: *container_config
     steps:
       - checkout
@@ -16,26 +16,56 @@ jobs:
           name: push to docker hub
           command: |
             docker login -u $DOCKER_USER -p $DOCKER_PASS
-            docker build -t bimdata/documentation:latest .
-            docker push bimdata/documentation:latest
+            docker pull bimdata/deployment:latest
+            # We can't mount volumes in docker in circleci (https://discuss.circleci.com/t/why-circleci-2-0-does-not-support-mounting-folders/11605/14)
+            # so we create a container, copy files in it then start it
+            docker create --name deployment -v /var/run/docker.sock:/var/run/docker.sock bimdata/deployment:latest
+            docker cp ~/repo deployment:/var/repo
+            docker start deployment
 
-  deploy:
+            docker exec -it deployment ansible-playbook build.yml -i inventories/staging --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa","force_tag":"branch"}' --user=deploy
+            docker push bimdata/documentation:branch
+
+            docker run -it bimdata/deployment:latest ansible-playbook -i inventories/staging deploy.yml --tags=documentation --extra-vars='{"ansible_ssh_private_key_file":"./files/deploy_rsa","tag_to_deploy":"branch"}' --user=deploy
+
+  master:
     <<: *container_config
     steps:
+      - checkout
       - setup_remote_docker
       - run:
           name: push to docker hub
           command: |
-            # deploy master branch
             docker login -u $DOCKER_USER -p $DOCKER_PASS
             docker pull bimdata/deployment:latest
+            # We can't mount volumes in docker in circleci (https://discuss.circleci.com/t/why-circleci-2-0-does-not-support-mounting-folders/11605/14)
+            # so we create a container, copy files in it then start it
+            docker create --name deployment -v /var/run/docker.sock:/var/run/docker.sock bimdata/deployment:latest
+            docker cp ~/repo deployment:/var/repo
+            docker start deployment
+
+            docker exec -it deployment ansible-playbook build.yml -i inventories/staging --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa"}' --user=deploy
+            docker push bimdata/documentation:latest
+
+            docker exec -it deployment ansible-playbook build.yml -i inventories/next --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa"}' --user=deploy
+            docker push bimdata/documentation:next
+
+            docker exec -it deployment ansible-playbook build.yml -i inventories/prod --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa"}' --user=deploy
+            docker push bimdata/documentation:prod
+
             docker run -it bimdata/deployment:latest ansible-playbook -i inventories/staging deploy.yml --tags=documentation --extra-vars "ansible_ssh_private_key_file=./files/deploy_rsa" --user=deploy
 
 workflows:
   version: 2
   test_and_deploy:
     jobs:
-      - build:
+      - branch:
+          filters:
+            branches:
+              ignore:
+                - master
       - deploy:
-          requires:
-            - build
+          filters:
+            branches:
+              only:
+                - master
