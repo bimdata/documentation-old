@@ -98,30 +98,48 @@ There are three types of user auth, detailed beneath:
 Type of user auth detailed
 ===========================
 
-The three types serve different purposes.
+The three types are three different mechanisms to aks for user's permissions.
+
+
+`Implicit flow` is the way when you don't need a back-end software. Everything is done in the user's browser. 
+It retrieves the access_token and can use it as you want. But when the token expires, you need the user to refresh it.
 
 
 
 Authorization code flow
 -----------------------
 
-Behave as a user even without the user actually using the application.
-Example: Useful when you try to enrich the data of your app with your own dataset.
+This is the most common flow. 
+Behave as a user even without the user actually using the application, directly inherited from OAuth (ie: cron, asynchronous data processing)
+* You can proxy your users through your back-end to  between their browser and BIMData API
+* You can forward the Access Token to the browser and let the browser directly call the BIMData API. 
+It this case, you need to implement a way to refresh the Access Token when it expires.
 
+.. highlights::
+    Example: enrichment of your app's data with your own dataset.
 
 Implicit flow
 -------------
 
 Usage of the access enabled by the user currently connected into the application.
-Example: get the Access Token by the browser to use it directly after getting it.
-Example2: reporting into the application of the user's actions
+`Implicit flow` is the way when you don't need a back-end software. Everything is done in the user's browser. 
+It retrieves the access_token and can use it as you want. But when the token expires, you need the user to refresh it.
+
+.. highlights::
+
+    Example: get the Access Token by the browser to use it directly after getting it.
+
+.. highlights::
+    Example2: reporting into the application of the user's actions
 
 
 Hybrid flow
 -----------
 
 This option combines the previous two options: you can make some reporting and actions as a user.
-Example: The BIMData platform uses this auth option.
+
+.. highlights::
+    Example: The BIMData platform uses this auth option.
 
 
 
