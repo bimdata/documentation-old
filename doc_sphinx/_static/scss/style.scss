@@ -185,11 +185,14 @@ pre{
         @include font-size(12px);
         box-shadow: none;
         &.btn-primary{
-          background-color: rgba(47,55,74,1);
+          background-color: rgba($color-primary,1);
         }
         &.btn-shadow{
+          background-color: rgba($color-primary,0);
+          @include transition(all .2s cubic-bezier(.35,0,.25,1));
           &:hover{
-            background-color: rgba(47,55,74,0.1);
+            background-color: rgba($color-primary,0.05);
+            @include transition(all .2s cubic-bezier(.35,0,.25,1));
           }
         }
       }
@@ -330,7 +333,7 @@ pre{
         @include flexbox;
         @include justify-content(center);
         .box-documentation{
-          margin: 0 41px;
+          margin: 0 30px;
           padding: 0 36px;
           height: 327px;
           max-width: 264px;
@@ -369,9 +372,33 @@ pre{
               border: none;
             }
           }
-          &:nth-child(2){
-            img{
-              padding: .8rem;
+          &.clef{
+            .box-documentation_content{
+              img{
+                padding: .8rem;
+              }
+            }
+          }
+        }
+        .box-round{
+          @include flexbox;
+          @include align-items(center);
+          span{
+            display: block;
+            background-color: rgba(216,216,216,1);
+            border-radius: 50%;
+            &:first-child{
+              width: 4.5px;
+              height: 4.5px;
+            }
+            &:nth-child(2){
+              margin: 0 .25rem;
+              width: 6px;
+              height: 6px;
+            }
+            &:last-child{
+              width: 4.5px;
+              height: 4.5px;
             }
           }
         }
@@ -482,7 +509,7 @@ pre{
           content: " / ";
           position: absolute;
           top: 6px;
-          right: -11px;
+          right: -13px;
         }
       }
     }

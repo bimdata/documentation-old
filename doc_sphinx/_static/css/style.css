@@ -325,8 +325,22 @@ pre {
   background-color: #2f374a;
 }
 
+.navbar header .navbar-btn .btn.btn-shadow {
+  background-color: rgba(47, 55, 74, 0);
+  -webkit-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  -ms-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  -o-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+}
+
 .navbar header .navbar-btn .btn.btn-shadow:hover {
-  background-color: rgba(47, 55, 74, 0.1);
+  background-color: rgba(47, 55, 74, 0.05);
+  -webkit-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  -ms-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  -o-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
 }
 
 .content-doc {
@@ -460,7 +474,7 @@ pre {
 }
 
 .content-doc_home .documentation .flex-container_equal .box-documentation {
-  margin: 0 41px;
+  margin: 0 30px;
   padding: 0 36px;
   height: 327px;
   max-width: 264px;
@@ -521,8 +535,43 @@ pre {
   border: none;
 }
 
-.content-doc_home .documentation .flex-container_equal .box-documentation:nth-child(2) img {
+.content-doc_home .documentation .flex-container_equal .box-documentation.clef .box-documentation_content img {
   padding: .8rem;
+}
+
+.content-doc_home .documentation .flex-container_equal .box-round {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.content-doc_home .documentation .flex-container_equal .box-round span {
+  display: block;
+  background-color: #d8d8d8;
+  border-radius: 50%;
+}
+
+.content-doc_home .documentation .flex-container_equal .box-round span:first-child {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.content-doc_home .documentation .flex-container_equal .box-round span:nth-child(2) {
+  margin: 0 .25rem;
+  width: 6px;
+  height: 6px;
+}
+
+.content-doc_home .documentation .flex-container_equal .box-round span:last-child {
+  width: 4.5px;
+  height: 4.5px;
 }
 
 .content-doc_home .help {
@@ -668,7 +717,7 @@ pre {
   content: " / ";
   position: absolute;
   top: 6px;
-  right: -11px;
+  right: -13px;
 }
 
 .content-doc_content blockquote ul {

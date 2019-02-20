@@ -32,21 +32,6 @@
   {%- set titlesuffix = "" %}
 {%- endif %}
 
-
-{%- macro script() %}
-    <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/documentation_options.js', 1) }}"></script>
-    <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/bootstrap.bundle.min.js', 1) }}"></script>
-    <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/bootstrap.min.js', 1) }}"></script>
-    <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/main.js', 1) }}"></script>
-    {%- for js in script_files %}
-      {{ js_tag(js) }}
-    {%- endfor %}
-
-    {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
-    <script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
-{%- endmacro %}
-
-
 {%- macro css() %}
     <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
@@ -63,6 +48,20 @@
         <link rel="stylesheet" href="{{ pathto(css, 1) }}" type="text/css" />
       {%- endif %}
     {%- endfor %}
+{%- endmacro %}
+
+{%- macro script() %}
+    <script type="text/javascript" id="jquery-3" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/jquery-3.3.1.min.js', 1) }}"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/documentation_options.js', 1) }}"></script>
+    <script type="text/javascript" id="bootstrap-bundle" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/bootstrap.bundle.min.js', 1) }}"></script>
+    <script type="text/javascript" id="bootstrap" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/bootstrap.min.js', 1) }}"></script>
+    <script type="text/javascript" id="main" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/main.js', 1) }}"></script>
+    {%- for js in script_files %}
+      {{ js_tag(js) }}
+    {%- endfor %}
+
+    {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
+    <script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
 {%- endmacro %}
 
 {%- if html_tag %}
