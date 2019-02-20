@@ -32,11 +32,13 @@
 
   <div class="navbar-menu col-4 px-5">
     <ul>
-      <li><a title="{{ _('concepts') }}" href="{{ pathto('concepts/index') }}">Concepts</a></li>
-      <li><a title="{{ _('topics') }}" href="{{ pathto('topics/index') }}">Guide</a></li>
-      <li><a title="{{ _('tutorials') }}" href="{{ pathto('tutorials/index') }}">Tutorials</a></li>
-      <li><a title="{{ _('reference') }}" href="{{ pathto('reference/index') }}">Reference</a></li>
-      <li><a title="{{ _('reference') }}" href="{{ pathto('cookbook/index') }}">Cookbook</a></li>
+      <li><a {%if title == 'Concepts' %} class="active" {% endif %} title="{{ _('concepts') }}" href="{{ pathto('concepts/index') }}">Concepts</a></li>
+      <li>
+        <a {%if title == 'Guide' %} class="active" {% endif %} title="{{ _('topics') }}" href="{{ pathto('topics/index') }}">Guide</a>
+      </li>
+      <li class="d-none"><a title="{{ _('tutorials') }}" href="{{ pathto('tutorials/index') }}">Tutorials</a></li>
+      <li><a {%if title == 'Reference' %} class="active" {% endif %} title="{{ _('reference') }}" href="{{ pathto('reference/index') }}">Reference</a></li>
+      <li><a {%if title == 'Cookbook' %} class="active" {% endif %} title="{{ _('reference') }}" href="{{ pathto('cookbook/index') }}">Cookbook</a></li>
     </ul>
   </div>
 
@@ -53,13 +55,3 @@
 
   {% endblock %}
 </header>
-
-<script type="text/javascript">
-$(document).ready(function(){
-  $('ul li a').click(function(){
-    $('li a').removeClass("active");
-    $(this).addClass("active");
-  });
-});
-
-</script>

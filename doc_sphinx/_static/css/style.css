@@ -151,19 +151,34 @@ html, body {
 
 /* custom GLOBAL
 ---------------------------------------- */
-h1, h2 {
+h1, h2, h3, h4 {
   color: #2f374a;
-  font-family: "robotomedium", sans-serif;
 }
 
 h1 {
+  margin-top: 1.4rem;
+  font-family: "robotobold", sans-serif;
   font-size: 20px;
   font-size: 1.42857rem;
 }
 
 h2 {
+  margin-top: 3rem;
+  font-family: "robotomedium", sans-serif;
+  font-size: 18px;
+  font-size: 1.28571rem;
+}
+
+h3 {
+  font-family: "robotobold", sans-serif;
   font-size: 16px;
   font-size: 1.14286rem;
+}
+
+h4 {
+  font-family: "robotomedium", sans-serif;
+  font-size: 15px;
+  font-size: 1.07143rem;
 }
 
 a {
@@ -224,6 +239,7 @@ p a.reference.external:hover::after, ul a.reference.external:hover::after, ol a.
 }
 
 p {
+  margin: 0;
   font-size: 12px;
   font-size: 0.85714rem;
 }
@@ -350,6 +366,14 @@ pre {
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
+}
+
+.navbar header .navbar-menu ul li a.active::after {
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .navbar header .navbar-btn .row {
@@ -731,7 +755,11 @@ pre {
 }
 
 .content-doc_content {
-  padding-left: 27px;
+  padding: 0 0 4rem 27px;
+}
+
+.content-doc_content .wy-breadcrumbs {
+  margin: 0;
 }
 
 .content-doc_content .wy-breadcrumbs li {

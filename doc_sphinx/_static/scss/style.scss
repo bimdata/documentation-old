@@ -10,15 +10,26 @@ html, body{
 
 /* custom GLOBAL
 ---------------------------------------- */
-h1, h2{
+h1, h2, h3, h4{
   color: $color-primary;
-  font-family: $font-primary_medium;
 }
 h1{
+  margin-top: 1.4rem;
+  font-family: $font-primary_bold;
   @include font-size(20px);
 }
 h2{
+  margin-top: 3rem;
+  font-family: $font-primary_medium;
+  @include font-size(18px);
+}
+h3{
+  font-family: $font-primary_bold;
   @include font-size(16px);
+}
+h4{
+  font-family: $font-primary_medium;
+  @include font-size(15px);
 }
 a{
   color: $color-primary;
@@ -60,6 +71,7 @@ p, ul, ol{
   }
 }
 p{
+  margin: 0;
   @include font-size(12px);
 }
 ul{
@@ -166,6 +178,12 @@ pre{
               @include transition(.3s ease all);
               @include transform(scaleX(0));
               // @include transform-origin(right);
+            }
+            &.active{
+              &::after{
+                opacity: 1;
+                @include transform(scaleX(1));
+              }
             }
           }
         }
@@ -475,8 +493,9 @@ pre{
 
   // custom CONTENT
   &_content{
-    padding-left: 27px;
+    padding: 0 0 4rem 27px;
     .wy-breadcrumbs{
+      margin: 0;
       li{
         margin: 0 7px;
         padding: 7px 9px;
