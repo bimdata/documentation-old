@@ -5,8 +5,8 @@ Guide
 .. topic:: `API Introduction`_
 
     .. include:: introduction.rst
-       :start-line: 9
-       :end-line: 9
+       :start-line: 8
+       :end-line: 10
 
 .. topic:: `Authentication`_
 
@@ -17,14 +17,14 @@ Guide
 .. topic:: `Authentication migration`_
 
     .. include:: authentication_migration.rst
-       :start-line: 10
-       :end-line: 11
+       :start-line: 8
+       :end-line: 10
 
 .. topic:: `Errors`_
 
     .. include:: errors.rst
-       :start-after: excerpt
-       :end-before: .. endexcerpt
+       :start-line: 9
+       :end-line: 11
 
 .. topic:: `Filters`_
 

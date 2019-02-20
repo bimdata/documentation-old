@@ -443,7 +443,7 @@ pre{
               @include font-size(15px);
               line-height: 22px;
             }
-            button{
+            a{
               padding: 0;
               @include btn($color-white, $color-primary, $font-primary);
               border: none;
@@ -537,11 +537,53 @@ pre{
 }
 
 // page CONCEPTS & GUIDE
-#concepts, #guide{
+#concepts, #guide, #cookbook{
   h1{
     @include font-size(27px);
     text-align: center;
     text-transform: uppercase;
+  }
+  .topic{
+    margin: 37px auto;
+    padding: 0 30px;
+    width: 960px;
+    height: 106px;
+    background-color: $color-white;
+    box-shadow: 0 2px 7px 0 rgba($color-black, .1);
+    @include flexbox;
+    @include align-items(center);
+    p{
+      margin: 0;
+      a{
+        &::after{
+          content: none;
+        }
+      }
+      &.topic-title{
+        width: 300px;
+        height: 100%;
+        position: relative;
+        @include flexbox;
+        @include align-items(center);
+        @include font-size(20px);
+        line-height: 24px;
+        &::after{
+          content: "";
+          position: absolute;
+          width: 2px;
+          height: 100%;
+          top: 0;
+          right: 0;
+          background-color: $color-background;
+        }
+      }
+      &:last-child{
+        padding-left: 32px;
+        width: 555px;
+        @include font-size(16px);
+        line-height: 22px;
+      }
+    }
   }
 }
 
