@@ -6,26 +6,11 @@ references:
       - image: circleci/python:3.7
     working_directory: ~/repo
 
-  restore_repo: &restore_repo
-    restore_cache:
-      keys:
-        - repo-{{ .Branch }}-{{ .Revision }}
-
 jobs:
-  checkout_code:
-    <<: *container_config
-    steps:
-      - *restore_repo
-      - checkout
-      - save_cache:
-          key: repo-{{ .Branch }}-{{ .Revision }}
-          paths:
-            - .
-
   build:
     <<: *container_config
     steps:
-      - *restore_repo
+      - checkout
       - setup_remote_docker
       - run:
           name: push to docker hub
@@ -50,11 +35,7 @@ workflows:
   version: 2
   test_and_deploy:
     jobs:
-      - checkout_code
       - build:
-          requires:
-            - checkout_code
       - deploy:
           requires:
-            - checkout_code
             - build

@@ -6,7 +6,7 @@ import os
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
-needs_sphinx = '1.8'
+needs_sphinx = "1.8"
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -53,18 +53,18 @@ scv_whitelist_branches = os.environ.get("WHITELIST_BRANCHES", ".*").split(",")
 
 API_URL = os.environ.get("API_URL", "https://api-staging.bimdata.io")
 CDN_URL = os.environ.get("CDN_URL", "https://cdn-staging.bimdata.io")
-BIMDATA_CONNECT = os.environ.get("CDN_URL", "https://login-staging.bimdata.io")
+CONNECT_URL = os.environ.get("CONNECT_URL", "https://login-staging.bimdata.io")
 
 substitutions = [
-    ('|api_url|', API_URL),
-    ('|cdn_url|', CDN_URL),
-    ('|bimdata_connect|', BIMDATA_CONNECT),
+    ("|api_url|", API_URL),
+    ("|cdn_url|", CDN_URL),
+    ("|bimdata_connect|", CONNECT_URL),
 ]
- 
+
 rst_prolog = f"""
-.. |api_url| replace:: {API_URL} 
-.. |cdn_url| replace:: {CDN_URL} 
-.. |bimdata_connect| replace:: {BIMDATA_CONNECT}
+.. |api_url| replace:: {API_URL}
+.. |cdn_url| replace:: {CDN_URL}
+.. |bimdata_connect| replace:: {CONNECT_URL}
 """
 
 
@@ -154,8 +154,7 @@ htmlhelp_basename = "BimdataSphinxdoc"
 
 # -- Options for LaTeX output ---------------------------------------------
 
-latex_elements = {
-}
+latex_elements = {}
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
@@ -212,4 +211,3 @@ swagger2sphinx_swagger_location = "api/swagger.json"
 
 # Autosummary issue resolver
 numpydoc_show_class_members = False
-
