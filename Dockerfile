@@ -3,6 +3,10 @@ WORKDIR /opt
 ADD doc_sphinx/requirements.txt /opt
 RUN pip install -r requirements.txt
 
+ADD doc_sphinx/package.json /opt
+ADD doc_sphinx/package-lock.json /opt
+RUN cd doc_sphinx && npm ci
+
 ARG API_URL
 ARG CDN_URL
 ARG CONNECT_URL
