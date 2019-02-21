@@ -49,8 +49,12 @@ version = "dev"
 release = "dev"
 
 # sphinx-contrib
-scv_whitelist_branches = os.environ.get("WHITELIST_BRANCHES", ".*").split(",")
-
+scv_whitelist_branches = tuple(
+    os.environ.get("WHITELIST_BRANCHES", "feature/integration-header").split(",")
+)
+scv_whitelist_branches = ("master", "feature/integration-header")
+print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa")
+print(scv_whitelist_branches)
 API_URL = os.environ.get("API_URL", "https://api-staging.bimdata.io")
 CDN_URL = os.environ.get("CDN_URL", "https://cdn-staging.bimdata.io")
 CONNECT_URL = os.environ.get("CONNECT_URL", "https://login-staging.bimdata.io")
