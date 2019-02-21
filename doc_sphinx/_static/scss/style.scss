@@ -19,11 +19,12 @@ h1{
   @include font-size(20px);
 }
 h2{
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-family: $font-primary_medium;
   @include font-size(18px);
 }
 h3{
+  margin-top: 1rem;
   font-family: $font-primary_bold;
   @include font-size(16px);
 }
@@ -454,15 +455,17 @@ pre{
             h3{
               margin-bottom: 26px;
               color: $color-primary;
-              font-family: $font-primary;
               @include font-size(19px);
+              a{
+                font-family: $font-primary;
+              }
             }
             p{
               margin-bottom: 16px;
               @include font-size(15px);
               line-height: 22px;
             }
-            a{
+            .btn-arrow{
               padding: 0;
               @include btn($color-white, $color-primary, $font-primary);
               border: none;

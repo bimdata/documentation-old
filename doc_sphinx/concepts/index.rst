@@ -38,3 +38,12 @@ Concepts
 .. _IFC: ifc.html
 .. _Projects: projects.html
 .. _Users management: users.html
+
+.. toctree::
+   :hidden:
+
+    Cloud <cloud>
+    Folders and documents <folders_and_documents>
+    IFC <ifc>
+    Projects <projects>
+    Users management <users>

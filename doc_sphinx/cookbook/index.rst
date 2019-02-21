@@ -24,3 +24,10 @@ Cookbook
 .. _Create an application: create_an_application.html
 .. _Get Access Token: get_access_token.html
 .. _Export Excel: export_excel.html
+
+.. toctree::
+    :hidden:
+
+    create_an_application
+    get_access_token
+    export_excel

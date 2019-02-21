@@ -15,7 +15,20 @@ After reading about the concepts in our `Concepts Tour`_, take a look at our `Gu
 
 .. toctree::
     :hidden:
+    :maxdepth: 1
+
+    Getting Started <tutorials/getting_started>
+    Concepts <concepts/index>
+    Guide by topics <topics/index>
+    Tutorials <tutorials/index>
+    Cookbook <cookbook/index>
+    Viewer Doc <viewer/index>
+    API Doc<../../redoc/index.html#://>
+    BIMData.io website <https://bimdata.io/>
+
+.. toctree::
     :caption: BIMData Doc
+    :name: sidebar
 
     Viewer Doc <viewer/index>
     API Doc<../redoc/index.html#://>

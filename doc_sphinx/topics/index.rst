@@ -38,3 +38,12 @@ Guide
 .. _Authentication migration: authentication_migration.html
 .. _Errors: errors.html
 .. _Filters: filters.html
+
+.. toctree::
+   :hidden:
+
+       API Introduction <introduction>
+       Authentication <authentication_bimdata_connect>
+       Authentication migration <authentication_migration>
+       Errors <errors>
+       Filters <filters>
