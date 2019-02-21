@@ -207,7 +207,7 @@ p a.reference.external, ul a.reference.external, ol a.reference.external {
 p a.reference.external::after, ul a.reference.external::after, ol a.reference.external::after {
   content: "";
   width: 100%;
-  height: 1.5px;
+  height: 1px;
   background-color: #2f374a;
   position: absolute;
   left: 0;
@@ -506,7 +506,7 @@ pre {
   opacity: 1;
 }
 
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a.current::before {
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a.active::before {
   opacity: 1;
 }
 
@@ -586,10 +586,10 @@ pre {
 }
 
 .content-doc_home .documentation .flex-container_equal .box-documentation_content p {
-  margin-top: 22px;
+  margin: 22px 0;
   font-size: 12px;
   font-size: 0.85714rem;
-  line-height: 15px;
+  line-height: 16px;
 }
 
 .content-doc_home .documentation .flex-container_equal .box-documentation_content button {
@@ -704,6 +704,7 @@ pre {
 }
 
 .content-doc_home .help .flex-container .box-help_content p {
+  margin-bottom: 16px;
   font-size: 15px;
   font-size: 1.07143rem;
   line-height: 22px;

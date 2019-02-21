@@ -52,7 +52,7 @@ p, ul, ol{
     &::after{
       content: "";
       width: 100%;
-      height: 1.5px;
+      height: 1px;
       background-color: $color-primary;
       position: absolute;
       left: 0;
@@ -312,7 +312,7 @@ pre{
                     opacity: 1;
                   }
                 }
-                &.current{
+                &.active{
                   &::before{
                     opacity: 1;
                   }
@@ -380,9 +380,9 @@ pre{
               background-color: $color-secondary;
             }
             p{
-              margin-top: 22px;
+              margin: 22px 0;
               @include font-size(12px);
-              line-height: 15px;
+              line-height: 16px;
             }
             button{
               width: 117px;
@@ -458,6 +458,7 @@ pre{
               @include font-size(19px);
             }
             p{
+              margin-bottom: 16px;
               @include font-size(15px);
               line-height: 22px;
             }

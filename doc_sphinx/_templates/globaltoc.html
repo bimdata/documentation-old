@@ -22,4 +22,13 @@
     <div class="local-toc">{{ toc }}</div>
       {% endif %}
     </div>
+
+    <script>
+      $(document).ready(function() {
+        $(".toctree-l2 a").click(function() {
+          $(".toctree-l2 a.active").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+      </script>
   {% endblock %}
