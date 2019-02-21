@@ -32,7 +32,7 @@
 
   <div class="navbar-menu col-4 px-5">
     <ul>
-      <li><a {%if title == 'Concepts' %} class="active" {% endif %} title="{{ _('concepts') }}" href="{{ pathto('concepts/index') }}">Concepts</a></li>
+      <li><a {%if title == 'Concepts' or parents.title == 'Concepts' %} class="active" {% endif %} title="{{ _('concepts') }}" href="{{ pathto('concepts/index') }}">Concepts</a></li>
       <li>
         <a {%if title == 'Guide' %} class="active" {% endif %} title="{{ _('topics') }}" href="{{ pathto('topics/index') }}">Guide</a>
       </li>
