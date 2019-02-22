@@ -56,7 +56,6 @@ Fields description
      - Your application's website, if applicable. Visible on the BIMData Connect platform to users.
    * - Terms URL
      - Terms of service of your application, if applicable. Visible on the BIMData Connect platform to users.
-   * - Terms URL
    * - Logo Image
      - Logo of your application, if applicable. Visible on the BIMData Connect platform to users.
 
