@@ -53,9 +53,15 @@ Fields description
    * - Post Logout Redirect URIs
      - list of callback URIs when the user logs out from your application
    * - Website URL
+<<<<<<< HEAD
      - Your application's website
    * - Terms URL
      - Terms of service of your application
+=======
+     - Your application's website, if applicable. Visible on the BIMData Connect platform to users.
+   * - Terms URL
+     - Terms of service of your application, if applicable. Visible on the BIMData Connect platform to users.
+>>>>>>> 10820be... Fix list-table formatting
    * - Logo Image
      - Logo of your application
 
