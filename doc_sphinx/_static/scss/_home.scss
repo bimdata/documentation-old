@@ -1,0 +1,158 @@
+// custom HOME
+.content-doc_home{
+  // bloc DOCUMENTATION
+  .documentation{
+    height: 532px;
+    background-color: $color-background;
+    &_title{
+      h1{
+        margin: 62px 0 45px;
+        @include font-size(27px);
+      }
+    }
+    .flex-container_equal{
+      @include flexbox;
+      @include justify-content(center);
+      .box-documentation{
+        margin: 0 30px;
+        padding: 0 36px;
+        height: 327px;
+        max-width: 264px;
+        @include flexbox;
+        @include align-items(center);
+        border-radius: 15px;
+        background-color: $color-white;
+        box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+        &_content{
+          img{
+            height: 92px;
+          }
+          h2{
+            margin: 16px 0 7px 0;
+            @include font-size(21px);
+            font-family: $font-primary_bold;
+            &::first-letter{
+              text-transform: capitalize;
+            }
+          }
+          span{
+            margin: auto;
+            width: 14.6px;
+            height: 1.5px;
+            display: block;
+            background-color: $color-secondary;
+          }
+          p{
+            margin: 22px 0;
+            @include font-size(12px);
+            line-height: 16px;
+          }
+          button{
+            width: 117px;
+            @include btn($color-primary, $color-white, $font-primary);
+            border: none;
+          }
+        }
+        &.clef{
+          .box-documentation_content{
+            img{
+              padding: .8rem;
+            }
+          }
+        }
+      }
+      .box-round{
+        @include flexbox;
+        @include align-items(center);
+        span{
+          display: block;
+          background-color: rgba(216,216,216,1);
+          border-radius: 50%;
+          &:first-child{
+            width: 4.5px;
+            height: 4.5px;
+          }
+          &:nth-child(2){
+            margin: 0 .25rem;
+            width: 6px;
+            height: 6px;
+          }
+          &:last-child{
+            width: 4.5px;
+            height: 4.5px;
+          }
+        }
+      }
+    }
+  }
+
+  // bloc HOW CAN WE CAN HELP ?
+  .help{
+    margin-top: 47px;
+    &_title{
+      h2{
+        @include font-size(25px);
+      }
+      p{
+        color: $color-primary;
+        @include font-size(16px);
+      }
+    }
+    .flex-container{
+      margin-top: 44px;
+      @include flexbox;
+      @include justify-content(space-around);
+      @include flex-flow(row wrap);
+      .box-help{
+        margin-bottom: 30px;
+        padding: 0 33px;
+        height: 195px;
+        max-width: 466px;
+        @include flexbox;
+        @include align-items(center);
+        border-radius: 8px;
+        background-color: $color-white;
+        box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+        &_content{
+          h3{
+            margin-bottom: 26px;
+            color: $color-primary;
+            @include font-size(19px);
+            a{
+              font-family: $font-primary;
+            }
+          }
+          p{
+            margin-bottom: 16px;
+            @include font-size(15px);
+            line-height: 22px;
+          }
+          .btn-arrow{
+            padding: 0;
+            @include btn($color-white, $color-primary, $font-primary);
+            border: none;
+            @include flexbox;
+            @include align-items(center);
+            i{
+              margin-left: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // bloc DO YOU HAVE A QUESTIONS ?
+  .questions{
+    margin: 80px 0 119px;
+    h2{
+      margin-bottom: 24px;
+      @include font-size(25px);
+    }
+    p{
+      margin: 0;
+      @include font-size(16px);
+      line-height: 1.7rem;
+    }
+  }
+}
