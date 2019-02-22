@@ -23,8 +23,8 @@ Topics
 .. topic:: `Errors`_ 
 
     .. include:: errors.rst
-       :start-after: excerpt
-       :end-before: .. endexcerpt
+       :start-line: 10
+       :end-line: 11
 
 .. topic:: `Filters`_ 
 
