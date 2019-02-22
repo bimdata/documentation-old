@@ -48,10 +48,10 @@ jobs:
             docker push bimdata/documentation:latest
 
             docker exec -it deployment ansible-playbook build.yml -i inventories/next --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa"}' --user=deploy
-            docker push bimdata/documentation:next
+            docker push bimdata/documentation:staging
 
             docker exec -it deployment ansible-playbook build.yml -i inventories/prod --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa"}' --user=deploy
-            docker push bimdata/documentation:prod
+            docker push bimdata/documentation:next
 
             docker run -it bimdata/deployment:latest ansible-playbook -i inventories/staging deploy.yml --tags=documentation --extra-vars "ansible_ssh_private_key_file=./files/deploy_rsa" --user=deploy
 
