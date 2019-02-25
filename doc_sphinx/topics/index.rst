@@ -5,32 +5,37 @@ Guide
 .. topic:: `API Introduction`_
 
     .. include:: introduction.rst
-       :start-line: 8
-       :end-line: 10
+       :start-after: excerpt
+       :end-before: endexcerpt
+
 
 .. topic:: `Authentication`_
 
     .. include:: authentication_bimdata_connect.rst
-       :start-line: 5
-       :end-line: 6
+       :start-after: excerpt
+       :end-before: endexcerpt
+
 
 .. topic:: `Authentication migration`_
 
     .. include:: authentication_migration.rst
-       :start-line: 8
-       :end-line: 10
+       :start-after: excerpt
+       :end-before: endexcerpt
+
 
 .. topic:: `Errors`_
 
     .. include:: errors.rst
-       :start-line: 9
-       :end-line: 11
+       :start-after: excerpt
+       :end-before: endexcerpt
+
 
 .. topic:: `Filters`_
 
     .. include:: ../topics/filters.rst
-       :start-line: 10
-       :end-line: 11
+       :start-after: excerpt
+       :end-before: endexcerpt
+
 
 
 .. _API Introduction: introduction.html

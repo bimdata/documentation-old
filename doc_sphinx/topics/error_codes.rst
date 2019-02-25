@@ -2,6 +2,10 @@
 Error codes
 ====================
 
+.. 
+    excerpt
+        Find error messages for your users 
+    endexcerpt
 
 
 HTTP Statuses Response Codes

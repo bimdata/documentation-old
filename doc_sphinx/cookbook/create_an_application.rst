@@ -2,6 +2,11 @@
 Create your application
 =========================
 
+.. 
+    excerpt
+        How-To create your application on BIMData Connect
+    endexcerpt
+
 **How-To create your application on BIMData Connect**
 
 Create an account on the https://login-staging.bimdata.io/ website. After the login step, go to "Manage your application" screen and fill the form to Create an Application.

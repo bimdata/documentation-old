@@ -3,7 +3,10 @@
    module: topics
 
 ===========
-  Authentification & Migration
+Authentification & Migration
 ===========
 
-juste un test d'affichage
+.. 
+    excerpt
+        The new Authentification process is slightly different, learn how to migrate.
+    endexcerpt

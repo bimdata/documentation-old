@@ -6,6 +6,11 @@
 IFC
 ===
 
+.. 
+    excerpt
+        After being uploaded, the IFC will be processed on our servers.
+    endexcerpt
+
 BIMData API exposes a lot of tools for extract, update and manipulate information from `IFC files`_.
 
 Upload an IFC

@@ -5,32 +5,32 @@ Concepts
 .. topic:: `Cloud`_
 
     .. include:: cloud.rst
-       :start-line: 11
-       :end-line: 13
+       :start-after: excerpt
+       :end-before: endexcerpt
 
 .. topic:: `Folders and documents`_
 
     .. include:: folders_and_documents.rst
-       :start-line: 9
-       :end-line: 11
+       :start-after: excerpt
+       :end-before: endexcerpt
 
 .. topic:: `IFC`_
 
     .. include:: ifc.rst
-       :start-line: 8
-       :end-line: 10
+       :start-after: excerpt
+       :end-before: endexcerpt
 
 .. topic:: `Projects`_
 
     .. include:: projects.rst
-       :start-line: 13
-       :end-line: 15
+       :start-after: excerpt
+       :end-before: endexcerpt
 
 .. topic:: `Users management`_
 
     .. include:: users.rst
-       :start-line: 13
-       :end-line: 15
+       :start-after: excerpt
+       :end-before: endexcerpt
 
 
 .. _Cloud: cloud.html
