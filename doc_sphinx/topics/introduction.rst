@@ -6,7 +6,11 @@
 API Introduction
 ======================================
 
-This page will help you get started with BIMData. You'll be up and running in a jiffy!
+.. 
+    excerpt
+        This page will help you get started with BIMData. You'll be up and running in a jiffy!
+    endexcerpt
+
 
 
 Introduction
