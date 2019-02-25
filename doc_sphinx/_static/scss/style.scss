@@ -575,7 +575,7 @@ pre{
     box-shadow: 0 2px 7px 0 rgba($color-black, .1);
     @include flexbox;
     @include align-items(center);
-    p{
+    p, blockquote{
       margin: 0;
       a{
         &::after{
