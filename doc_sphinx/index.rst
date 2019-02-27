@@ -31,6 +31,8 @@ Chapters
     Cookbook <cookbook/index>
     Viewer Doc <viewer/index>
     API Doc<../../redoc/index.html#://>
+    Get Help <get_help>
+    Contributing <contributing>
     BIMData.io website <https://bimdata.io/>
 
 
