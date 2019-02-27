@@ -38,7 +38,7 @@ Iterate on topics and do another request to get the Viewpoints.
     The BIMData's UI tools let you have only one Viewpoint by Topic. The API let you manage several.
     It's the reason you see `viewpoints[0]` line 13.
 
-.. code:: python
+.. code-block:: python
    :linenos:
 
     url = f'https://api-staging.bimdata.io/bcf/2.1/projects/{project_pk}/topics'
@@ -73,7 +73,7 @@ Then you iterate on the Viewpoint's elements, and in this loop on the IFCs to ge
     Some IFCs could not have the Element, in the case of multi-model BCF.
 
 
-.. code:: python
+.. code-block:: python
    :linenos:
 
     allElements = []
@@ -103,7 +103,7 @@ Step 3 - Write your file
 
 For our example, this is the code you write:
 
-.. code:: python
+.. code-block:: python
    :linenos:
     
     with open(f'exportComments_{project_pk}.csv', 'w', newline='') as csvfile:
@@ -123,7 +123,7 @@ For our example, this is the code you write:
 The full script
 =================
 
-.. code:: python
+.. code-block:: python
    :linenos:
 
     import requests
