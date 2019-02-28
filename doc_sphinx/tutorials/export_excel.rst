@@ -1,10 +1,12 @@
 ==========================================
-Output your data for Excel export
+Process BCF data for Excel export
 ==========================================
 
-You want statistics about which Elements are the most commented.
+You want statistics about which Elements are the most commented with BCF.
 You have to export data about the commented elements, you want to produce Excel files to import to a stats software.
 You will create a CSV file, each line is for an Element. 
+Our API implements `the 2.1 version of the BCF specification`_
+
 
 The column are: 
 
@@ -21,7 +23,6 @@ Let's help you to achieve your goal.
 
     For clarity reasons, the code shown below is not optimized.
 
-Our API implements `the 2.1 version of the BCF specification`_
 
 
 Step 1 - Get all Topics from your Model
