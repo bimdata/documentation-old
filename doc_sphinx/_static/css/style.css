@@ -1027,3 +1027,48 @@ code.literal {
 .admonition.note .admonition-title::before {
   background-color: #2f374a;
 }
+
+.docutils {
+  width: 100%;
+  border: none;
+}
+
+.docutils thead {
+  border-bottom: 8px solid white;
+}
+
+.docutils thead .row-odd th {
+  padding: .9rem;
+  border: none;
+  color: white;
+  font-weight: normal;
+  font-size: 12px;
+  font-size: 0.85714rem;
+}
+
+.docutils thead .row-odd th:nth-child(odd) {
+  background-color: #2f374a;
+}
+
+.docutils thead .row-odd th:nth-child(even) {
+  background-color: #48516B;
+}
+
+.docutils tbody tr {
+  border-bottom: 5px solid white;
+}
+
+.docutils tbody tr td {
+  padding: .5rem .9rem;
+  border: none;
+  font-size: 12px;
+  font-size: 0.85714rem;
+}
+
+.docutils tbody tr td:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.docutils tbody tr td:nth-child(even) {
+  background-color: #E2E2E2;
+}

@@ -143,3 +143,43 @@ code{
     }
   }
 }
+
+// custom TABLEAU
+.docutils{
+  width: 100%;
+  border: none;
+  thead{
+    border-bottom: 8px solid white;
+    .row-odd{
+      th{
+        padding: .9rem;
+        border: none;
+        color: $color-white;
+        font-weight: normal;
+        @include font-size(12px);
+        &:nth-child(odd){
+          background-color: $color-primary;
+        }
+        &:nth-child(even){
+          background-color: #48516B;
+        }
+      }
+    }
+  }
+  tbody{
+    tr{
+      border-bottom: 5px solid white;
+      td{
+        padding: .5rem .9rem;
+        border: none;
+        @include font-size(12px);
+        &:nth-child(odd){
+          background-color: $color-background;
+        }
+        &:nth-child(even){
+          background-color: #E2E2E2;
+        }
+      }
+    }
+  }
+}
