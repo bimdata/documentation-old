@@ -60,6 +60,10 @@ html, body {
   font-size: 14px;
 }
 
+.container-fluid, .container, [class*="col-"] {
+  padding: 0;
+}
+
 ::-moz-selection {
   background: #2f374a;
   color: #f9c72c;
@@ -68,6 +72,35 @@ html, body {
 ::selection {
   background: #2f374a;
   color: #f9c72c;
+}
+
+/* style TITLES ------------------------ */
+h1, h2, h3, h4 {
+  color: #2f374a;
+}
+
+h1 {
+  font-family: "robotobold", sans-serif;
+  font-size: 20px;
+  font-size: 1.42857rem;
+}
+
+h2 {
+  font-family: "robotomedium", sans-serif;
+  font-size: 18px;
+  font-size: 1.28571rem;
+}
+
+h3 {
+  font-family: "robotobold", sans-serif;
+  font-size: 16px;
+  font-size: 1.14286rem;
+}
+
+h4 {
+  font-family: "robotomedium", sans-serif;
+  font-size: 15px;
+  font-size: 1.07143rem;
 }
 
 /* blocs BTN ------------------------ */
@@ -83,6 +116,14 @@ html, body {
   line-height: 1rem;
 }
 
+.btn-primary:active:focus {
+  box-shadow: none;
+}
+
+.btn-primary:focus {
+  outline: none;
+}
+
 .btn-shadow {
   padding: 0;
   height: 32px;
@@ -95,8 +136,17 @@ html, body {
   line-height: 1rem;
 }
 
+.btn-shadow:active:focus {
+  box-shadow: none;
+}
+
+.btn-shadow:focus {
+  outline: none;
+}
+
 .btn-shadow:hover {
   background-color: rgba(47, 55, 74, 0.1);
+  color: #2f374a;
 }
 
 /* ajout VARIABLES ------------------------ */
@@ -169,6 +219,9 @@ html, body {
   padding: 0 36px;
   height: 327px;
   max-width: 264px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -179,9 +232,6 @@ html, body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  border-radius: 15px;
-  background-color: white;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .content-doc_home .documentation .flex-container_equal .box-documentation_content img {
@@ -226,6 +276,14 @@ html, body {
   font-size: 1rem;
   line-height: 1rem;
   border: none;
+}
+
+.content-doc_home .documentation .flex-container_equal .box-documentation_content button:active:focus {
+  box-shadow: none;
+}
+
+.content-doc_home .documentation .flex-container_equal .box-documentation_content button:focus {
+  outline: none;
 }
 
 .content-doc_home .documentation .flex-container_equal .box-documentation.clef .box-documentation_content img {
@@ -298,10 +356,13 @@ html, body {
 }
 
 .content-doc_home .help .flex-container .box-help {
-  margin-bottom: 30px;
+  margin: 0 0 30px;
   padding: 0 33px;
   height: 195px;
   max-width: 466px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -312,9 +373,6 @@ html, body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  border-radius: 8px;
-  background-color: white;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .content-doc_home .help .flex-container .box-help_content h3 {
@@ -357,6 +415,14 @@ html, body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+.content-doc_home .help .flex-container .box-help_content .btn-arrow:active:focus {
+  box-shadow: none;
+}
+
+.content-doc_home .help .flex-container .box-help_content .btn-arrow:focus {
+  outline: none;
 }
 
 .content-doc_home .help .flex-container .box-help_content .btn-arrow i {
@@ -758,7 +824,7 @@ html, body {
 
 .navbar header .navbar-btn .btn {
   height: 32px;
-  width: 100%;
+  width: 95%;
   border: none;
   border-radius: 3px;
   font-size: 12px;
@@ -797,42 +863,22 @@ html, body {
   font-size: 1rem;
 }
 
-.container-fluid, .container, [class*="col-"] {
-  padding: 0;
-}
-
 /* custom GLOBAL
 ---------------------------------------- */
 h1, h2, h3, h4 {
-  color: #2f374a;
   font-weight: inherit;
 }
 
 h1 {
   margin-top: 1.4rem;
-  font-family: "robotobold", sans-serif;
-  font-size: 20px;
-  font-size: 1.42857rem;
 }
 
 h2 {
   margin-top: 2rem;
-  font-family: "robotomedium", sans-serif;
-  font-size: 18px;
-  font-size: 1.28571rem;
 }
 
 h3 {
   margin-top: 1rem;
-  font-family: "robotobold", sans-serif;
-  font-size: 16px;
-  font-size: 1.14286rem;
-}
-
-h4 {
-  font-family: "robotomedium", sans-serif;
-  font-size: 15px;
-  font-size: 1.07143rem;
 }
 
 a {
@@ -904,21 +950,49 @@ ul li {
 }
 
 pre {
+  margin-top: 1rem;
   padding: 1rem;
+  color: white;
+  font-size: 12px;
+  font-size: 0.85714rem;
+}
+
+code.literal {
+  padding: .5rem;
+  background-color: #f7f7f7;
+  border: none;
 }
 
 .admonition {
   margin: 24px 0;
   padding: 12px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .admonition .admonition-title {
   margin: -12px -12px 12px -12px;
   padding: 6px 12px;
-  color: white;
-  font-weight: bold;
+  color: #2f374a;
   display: block;
-  text-transform: uppercase;
+  font-size: 13px;
+  font-size: 0.92857rem;
+}
+
+.admonition .admonition-title::before {
+  content: "!";
+  height: 23px;
+  width: 23px;
+  display: inline-block;
+  border-radius: 50%;
+  color: white;
+  line-height: 1.5;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.admonition .last {
+  font-size: 13px;
+  font-size: 0.92857rem;
 }
 
 .admonition blockquote {
@@ -926,26 +1000,30 @@ pre {
   line-height: 24px;
 }
 
-.admonition.important {
-  background: #dbfaf4;
-}
-
 .admonition.important .admonition-title {
-  background: #1abc9c;
+  background: #EAFFF1;
 }
 
-.admonition.warning {
-  background: #ffedcc;
+.admonition.important .admonition-title::before {
+  background-color: #4DBD74;
 }
 
 .admonition.warning .admonition-title {
-  background: #f0b37e;
+  background: #FFF9E7;
+}
+
+.admonition.warning .admonition-title::before {
+  background-color: #F9C72C;
 }
 
 .admonition.note {
-  background: #e7f2fa;
+  background: white;
 }
 
 .admonition.note .admonition-title {
-  background: #6ab0de;
+  background: #EFF7FF;
+}
+
+.admonition.note .admonition-title::before {
+  background-color: #2f374a;
 }
