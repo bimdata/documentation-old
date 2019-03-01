@@ -52,8 +52,7 @@ release = "dev"
 scv_whitelist_branches = tuple(
     os.environ.get("WHITELIST_BRANCHES", "feature/integration-header").split(",")
 )
-scv_whitelist_branches = ("master", "feature/integration-header")
-print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa")
+scv_whitelist_branches = ("master", "dev", "tech-writing")
 print(scv_whitelist_branches)
 API_URL = os.environ.get("API_URL", "https://api-staging.bimdata.io")
 CDN_URL = os.environ.get("CDN_URL", "https://cdn-staging.bimdata.io")
