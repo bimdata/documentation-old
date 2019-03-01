@@ -34,7 +34,7 @@ cURL
 .. code-block:: bash
 
     curl -X GET \
-    'https://api-staging.bimdata.io/cloud/1/project/1/ifc?status=C' \
+    '|api_url|/cloud/1/project/1/ifc?status=C' \
     -H 'Authorization: Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N' \
     -H 'Content-Type: application/json' \
 
@@ -45,7 +45,7 @@ Python
 
     import requests
 
-    url = "https://api-staging.bimdata.io/cloud/1/project/1/ifc"
+    url = "|api_url|/cloud/1/project/1/ifc"
 
     querystring = {"status":"C"}
 
@@ -67,7 +67,7 @@ Javascript
     var request = require("request");
 
     var options = { method: 'GET',
-    url: 'https://api-staging.bimdata.io/cloud/1/project/1/ifc',
+    url: '|api_url|/cloud/1/project/1/ifc',
     qs: { status: 'C' },
     headers:
     { Authorization: 'Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N',
