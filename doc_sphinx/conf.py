@@ -22,6 +22,7 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx.ext.githubpages",
     "sphinxprettysearchresults",
+    "sphinx_substitution_extensions"
 ]
 
 
