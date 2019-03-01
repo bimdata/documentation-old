@@ -56,7 +56,7 @@ Create your first cloud and its first project
 
 See the `details for the route /cloud/ for the cloud creation`_ and for `the route cloud/{cloud_pk}/project`_ the project creation.
 
-.. code-block:: python
+.. substitution-code-block:: python
 
         response = requests.post(f'|api_url|/cloud', data=cloud_name, headers=headers)
         cloud_id = response.json().get('id')
@@ -68,7 +68,7 @@ Upload your IFC file in your project
 --------------------------------------
 
 
-.. code-block:: python
+.. substitution-code-block:: python
 
         url = f'|api_url|/cloud/{cloud_id}/project/{project_id}/document'
         response = requests.post(url, data=payload, files=ifc_path_to_upload, headers=headers)
@@ -80,7 +80,7 @@ Upload your IFC file in your project
 Get all the information pieces from your IFC
 ----------------------------------------------
 
-.. code-block:: python
+.. substitution-code-block:: python
 
         url = f'|api_url|/cloud/{cloud_id}/project/{project_id}/document/{my_ifc_id}'
         response = requests.get(url, data=my_filter, headers=headers)

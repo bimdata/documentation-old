@@ -35,7 +35,7 @@ Old Authentication Request
 
 The old request was a string payload with username and password in it.
 
-.. code:: python
+.. substitution-code-block:: python
 
     import requests
     url = "|api_url|/oauth/v2/token/"
@@ -48,7 +48,7 @@ New Authentication Request
 
 The new request takes a JSON payload.
 
-.. code:: python
+.. substitution-code-block:: python
 
     import requests
     url = "|bimdata_connect|/token"

@@ -31,7 +31,7 @@ You can combine several filters. Elements matching all combined filters will be 
 cURL
 =========
 
-.. code-block:: bash
+.. substitution-code-block:: bash
 
     curl -X GET \
     '|api_url|/cloud/1/project/1/ifc?status=C' \
@@ -41,7 +41,7 @@ cURL
 Python
 =========
 
-.. code-block:: python
+.. substitution-code-block:: python
 
     import requests
 
@@ -62,7 +62,7 @@ Python
 Javascript
 ===========
 
-.. code-block:: javascript
+.. substitution-code-block:: javascript
 
     var request = require("request");
 

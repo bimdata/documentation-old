@@ -28,7 +28,7 @@ In the script below, there is an example of the creation of a project in your Cl
 First, define a name to create your first Cloud. Post this `name` on |api_url|/cloud using your Access Token. 
 Then use the `cloudId` to create your first Project.
 
-.. code:: python
+.. substitution-code-block:: python
 
     import requests
 
@@ -62,7 +62,7 @@ Use the API to upload
 Use the `/cloud/{cloud_pk}/project/{project_pk}/document` route to upload your file.
 The `documentation for this route`_ is available on our API Reference page.
 
-.. code:: python
+.. substitution-code-block:: python
 
     import requests
 
@@ -93,7 +93,7 @@ The server detects IFC format and you can get information about your file using 
     The IFC document provided in this tutorial takes approximatively 10 seconds to be processed.\nUsually, the processing time could be very different depending on the IFC file.
 
 
-.. code:: python
+.. substitution-code-block:: python
 
     import time
     import requests
@@ -146,7 +146,7 @@ In addition, you can filter by:
 To retrieve only windows, the accurate filter is *type*: **IfcWindow**.
 You get a list of windows, all the windows of your model.
 
-.. code:: python
+.. substitution-code-block:: python
 
     import requests
     # This script requires an IFC document uploaded
