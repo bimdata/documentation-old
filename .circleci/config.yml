@@ -23,7 +23,7 @@ jobs:
             docker cp ~/repo deployment:/var/repo
             docker start deployment
 
-            docker exec -it deployment ansible-playbook build.yml -i inventories/staging --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa","force_tag":"branch"}' --user=deploy
+            docker exec -it deployment ansible-playbook build.yml -i inventories/staging --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa","tag_to_deploy":"branch"}' --user=deploy
             docker push bimdata/documentation:branch
 
             docker run -it bimdata/deployment:latest ansible-playbook -i inventories/staging deploy.yml --tags=documentation --extra-vars='{"ansible_ssh_private_key_file":"./files/deploy_rsa","tag_to_deploy":"branch"}' --user=deploy
