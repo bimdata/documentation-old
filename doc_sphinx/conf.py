@@ -58,12 +58,14 @@ API_URL = os.environ.get("API_URL", "https://api-staging.bimdata.io")
 CDN_URL = os.environ.get("CDN_URL", "https://cdn-staging.bimdata.io")
 CONNECT_URL = os.environ.get("CONNECT_URL", "https://login-staging.bimdata.io")
 
+#replace in code
 substitutions = [
     ("|api_url|", API_URL),
     ("|cdn_url|", CDN_URL),
     ("|bimdata_connect|", CONNECT_URL),
 ]
 
+#replace in text
 rst_prolog = f"""
 .. |api_url| replace:: {API_URL}
 .. |cdn_url| replace:: {CDN_URL}
