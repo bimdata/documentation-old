@@ -264,8 +264,10 @@ h4 {
   line-height: 16px;
 }
 
-.content-doc_home .documentation .flex-container_equal .box-documentation_content button {
-  width: 117px;
+.content-doc_home .documentation .flex-container_equal .box-documentation_content a {
+  margin: auto;
+  width: 128px;
+  border: none;
   padding: 0;
   height: 32px;
   border: none;
@@ -275,14 +277,28 @@ h4 {
   font-family: "robotoregular", sans-serif;
   font-size: 1rem;
   line-height: 1rem;
-  border: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
-.content-doc_home .documentation .flex-container_equal .box-documentation_content button:active:focus {
+.content-doc_home .documentation .flex-container_equal .box-documentation_content a:active:focus {
   box-shadow: none;
 }
 
-.content-doc_home .documentation .flex-container_equal .box-documentation_content button:focus {
+.content-doc_home .documentation .flex-container_equal .box-documentation_content a:focus {
   outline: none;
 }
 
