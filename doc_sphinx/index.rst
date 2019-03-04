@@ -2,7 +2,7 @@
     :github_url: https://github.com/bimdata/documentation/blob/master/doc_sphinx/index.rst
 
 ================================================
-Welcome to BIMData documentation !
+Welcome to BIMData documentation!
 ================================================
 
 BIMData provides you:
@@ -24,12 +24,19 @@ After reading about the concepts in our `Concepts Tour`_, take a look at our `Gu
     Cookbook <cookbook/index>
     Viewer Doc <viewer/index>
     API Doc<../../redoc/index.html#://>
+    Get Help <get_help>
+    Contributing <contributing>
     BIMData.io website <https://bimdata.io/>
 
 .. toctree::
     :caption: BIMData Doc
     :name: sidebar
 
-    Viewer Doc <viewer/index>
-    API Doc<../redoc/index.html#://>
-    BIMData.io website <https://bimdata.io/>
+.. _an API: ../../redoc/index.html
+.. _a Viewer: viewer/
+.. _BIMData Connect: topics/authentication_bimdata_connect.html
+
+.. _Concepts Tour: concepts/
+.. _Guide by topics: topics/
+.. _Cookbook: cookbook/
+.. _Tutorials: tutorials/
