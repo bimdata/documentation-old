@@ -28,7 +28,7 @@ Cookbook
 .. _Export Excel: export_excel.html
 
 .. toctree::
-    :maxdepth: 4
+    :hidden:
 
     create_an_application
     get_access_token
