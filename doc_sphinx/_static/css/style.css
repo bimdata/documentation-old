@@ -678,7 +678,7 @@ h4 {
   background-color: #f7f7f7;
 }
 
-#concepts .topic p:last-child, #guide .topic p:last-child, #cookbook .topic p:last-child {
+#concepts .topic blockquote, #guide .topic blockquote, #cookbook .topic blockquote {
   padding-left: 32px;
   width: 555px;
   font-size: 16px;
