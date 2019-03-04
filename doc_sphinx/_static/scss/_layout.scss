@@ -221,12 +221,12 @@
           background-color: $color-background;
         }
       }
-      &:last-child{
-        padding-left: 32px;
-        width: 555px;
-        @include font-size(16px);
-        line-height: 22px;
-      }
+    }
+    blockquote{
+      padding-left: 32px;
+      width: 555px;
+      @include font-size(16px);
+      line-height: 22px;
     }
   }
 }
