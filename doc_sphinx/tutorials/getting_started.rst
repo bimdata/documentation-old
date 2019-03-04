@@ -9,7 +9,7 @@ Getting Started
     #. `Create your first cloud and its first project`_
     #. Upload your IFC file in your project
     #. Get all the information pieces from your IFC
-#. BONUS: `Include the Viewer on your website`_
+#. BONUS: Include the Viewer on your website
 
 Create a BIMData Connect account
 ===================================
@@ -56,11 +56,11 @@ Create your first cloud and its first project
 
 See the `details for the route /cloud/ for the cloud creation`_ and for `the route cloud/{cloud_pk}/project`_ the project creation.
 
-.. code-block:: python
+.. substitution-code-block:: python
 
-        response = requests.post(f'https://api-staging.bimdata.io/cloud', data=cloud_name, headers=headers)
+        response = requests.post(f'|api_url|/cloud', data=cloud_name, headers=headers)
         cloud_id = response.json().get('id')
-        response = requests.post(f'https://api-staging.bimdata.io/cloud/{cloud_id}/project',  headers=headers)
+        response = requests.post(f'|api_url|/cloud/{cloud_id}/project',  headers=headers)
 
 
 
@@ -68,9 +68,9 @@ Upload your IFC file in your project
 --------------------------------------
 
 
-.. code-block:: python
+.. substitution-code-block:: python
 
-        url = f'https://api-staging.bimdata.io/cloud/{cloud_id}/project/{project_id}/document'
+        url = f'|api_url|/cloud/{cloud_id}/project/{project_id}/document'
         response = requests.post(url, data=payload, files=ifc_path_to_upload, headers=headers)
 
 .. note::
@@ -80,9 +80,9 @@ Upload your IFC file in your project
 Get all the information pieces from your IFC
 ----------------------------------------------
 
-.. code-block:: python
+.. substitution-code-block:: python
 
-        url = f'https://api-staging.bimdata.io/cloud/{cloud_id}/project/{project_id}/document/{my_ifc_id}'
+        url = f'|api_url|/cloud/{cloud_id}/project/{project_id}/document/{my_ifc_id}'
         response = requests.get(url, data=my_filter, headers=headers)
 
 .. note:: 
@@ -100,7 +100,7 @@ See the dedicated page `Getting Started with the Viewer`_
 .. _Use your credentials to log in: ../cookbook/get_access_token.html
 .. _Create your first cloud and its first project: ../tutorials/retrieve-elements.html#step-2-set-up-your-project
 .. _details for the route /cloud/ for the cloud creation: ../redoc/index.html#operation/createCloud
-.. _the route cloud/{cloud_pk}/project: https://developers-staging.bimdata.io/redoc/index.html#operation/createProject
 .. _a step of our Viewer Tutorial: ../tutorials/retrieve-elements.html#step-3-upload-your-ifc
 .. _check out the getElements route: ../redoc/index.html#operation/getElements
 .. _Getting Started with the Viewer: ../viewer/getting_started.html
+.. _the route cloud/{cloud_pk}/project: https://developers-staging.bimdata.io/redoc/index.html#operation/createProject

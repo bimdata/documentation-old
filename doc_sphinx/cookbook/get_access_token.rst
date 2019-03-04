@@ -2,6 +2,11 @@
 How-to get your Access Token
 =============================
 
+.. 
+    excerpt
+        The script regarding the Access Token
+    endexcerpt
+
 
 .. WARNING:: Pre-requisite: having created an application
 
@@ -33,9 +38,9 @@ Get the token
 Python
 ^^^^^^^^
 
-.. code-block:: python
+.. substitution-code-block:: python
 
-    response = requests.post("https://login-staging.bimdata.io/token", data=payload)
+    response = requests.post("|bimdata_connect|/token", data=payload)
     access_token = response.json().get("access_token")
 
     import requests
@@ -45,5 +50,5 @@ Python
         "grant_type": "client_credentials",
     }
     #Get the token
-    response = requests.post("https://login-staging.bimdata.io/token", data=payload)
+    response = requests.post("|bimdata_connect|/token", data=payload)
     access_token = response.json().get("access_token")

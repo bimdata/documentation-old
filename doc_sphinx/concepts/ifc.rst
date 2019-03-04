@@ -6,6 +6,11 @@
 IFC
 ===
 
+.. 
+    excerpt
+        After being uploaded, the IFC will be processed on our servers.
+    endexcerpt
+
 BIMData API exposes a lot of tools for extract, update and manipulate information from `IFC files`_.
 
 Upload an IFC
@@ -38,11 +43,16 @@ E                  Error               The process has failed.
                                        An alert is triggered and our team will fix it promptly.
 ================  ===================  ========================================================================================================
 
-Once the process is completed, you can:
+Once the process is completed, depending on the options you chose, you can:
 
-* Retrieve and update zones and spaces
-* Retrieve and update elements and properties
-* Retrieve the model
-* Retrieve the structure
+* Retrieve the model as a 3D GLTF file
+* Retrieve elements and properties
+* Retrieve the spatial structure
+* Retrieve classifications, systemes and zones
+* Retrieve 2D plans in SVG format
+
+For all above, you can also update the data stored in our databases.
+
+
 
 .. _IFC files: https://en.wikipedia.org/wiki/Industry_Foundation_Classes

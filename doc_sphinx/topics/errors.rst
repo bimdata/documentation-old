@@ -7,6 +7,11 @@
 Errors
 ===========
 
+.. 
+    excerpt
+        BIMData uses conventional HTTP response codes to indicate the success or failure of an API request. 
+    endexcerpt
+
 BIMData uses conventional HTTP response codes to indicate the success or failure of an API request. 
 
 * Codes in the 2xx range indicate success.

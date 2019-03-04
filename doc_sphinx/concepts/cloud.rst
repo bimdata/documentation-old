@@ -6,6 +6,11 @@
 Cloud
 ========
 
+.. 
+    excerpt
+        Find out more about a Cloud and Cloud users.
+    endexcerpt
+
 Concept
 ---------
 
@@ -24,4 +29,4 @@ References
 * POST ``/cloud``
 * GET ``/cloud/{cloud_pk}/user``
 
-.. _projects: projects
+.. _projects: projects.html

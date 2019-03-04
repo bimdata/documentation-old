@@ -8,6 +8,12 @@
 Projects
 ==========
 
+.. 
+    excerpt
+        A Project is a place where IFC files and documents are stored.
+    endexcerpt
+
+
 Concept
 =========
 

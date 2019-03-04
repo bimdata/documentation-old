@@ -2,4 +2,7 @@
 Export Excel
 =========================
 
-test de Gaëlle, remplacer ici et mettre un vrai texte
+.. 
+    excerpt
+        How-To create a data export in a CSV file Excel-compliant
+    endexcerpt
