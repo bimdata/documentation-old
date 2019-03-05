@@ -13,7 +13,7 @@ To support the Viewer you will need a `<div>` element, with an id attribute, and
 
   .. code-block:: html
 
-    <script src="https://cdn-beta.bimdata.io/js/bimdata-viewer-embed.js" ><!--the viewer itself --></script>
+    <script src="|cdn_url|/js/bimdata-viewer-embed.js" ><!--the viewer itself --></script>
     <script>
 
 
