@@ -1,6 +1,5 @@
-# -*- coding: utf-8 -*-
-#
 import os
+import re
 
 # -- General configuration ------------------------------------------------
 
@@ -51,9 +50,21 @@ version = "dev"
 release = "dev"
 
 # sphinx-contrib
+scv_whitelist_branches_regexp = [
+    re.compile(regexp)
+    for regexp in os.environ.get("WHITELIST_BRANCHES_REGEXP", "").split(",")
+    if regexp != ""
+]
+
+scv_whitelist_branches_name = os.environ.get(
+    "WHITELIST_BRANCHES_NAME", "master,dev,tech-writing"
+).split(",")
+
 scv_whitelist_branches = tuple(
-    os.environ.get("WHITELIST_BRANCHES", "master,dev,tech-writing").split(",")
+    scv_whitelist_branches_name + scv_whitelist_branches_regexp
 )
+
+
 API_URL = os.environ.get("API_URL", "https://api-staging.bimdata.io")
 CDN_URL = os.environ.get("CDN_URL", "https://cdn-staging.bimdata.io")
 CONNECT_URL = os.environ.get("CONNECT_URL", "https://login-staging.bimdata.io")
