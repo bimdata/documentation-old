@@ -31,21 +31,21 @@ You can combine several filters. Elements matching all combined filters will be 
 cURL
 =========
 
-.. code-block:: bash
+.. substitution-code-block:: bash
 
     curl -X GET \
-    'https://api-staging.bimdata.io/cloud/1/project/1/ifc?status=C' \
+    '|api_url|/cloud/1/project/1/ifc?status=C' \
     -H 'Authorization: Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N' \
     -H 'Content-Type: application/json' \
 
 Python
 =========
 
-.. code-block:: python
+.. substitution-code-block:: python
 
     import requests
 
-    url = "https://api-staging.bimdata.io/cloud/1/project/1/ifc"
+    url = "|api_url|/cloud/1/project/1/ifc"
 
     querystring = {"status":"C"}
 
@@ -62,12 +62,12 @@ Python
 Javascript
 ===========
 
-.. code-block:: javascript
+.. substitution-code-block:: javascript
 
     var request = require("request");
 
     var options = { method: 'GET',
-    url: 'https://api-staging.bimdata.io/cloud/1/project/1/ifc',
+    url: '|api_url|/cloud/1/project/1/ifc',
     qs: { status: 'C' },
     headers:
     { Authorization: 'Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N',

@@ -35,10 +35,10 @@ Old Authentication Request
 
 The old request was a string payload with username and password in it.
 
-.. code:: python
+.. substitution-code-block:: python
 
     import requests
-    url = "https://api-beta.bimdata.io/oauth/v2/token/"
+    url = "|api_url|/oauth/v2/token/"
     payload = "client_secret=CLIENT_SECRET&client_id=CLIENT_ID&grant_type=password&username=my_user%40mail.com&password=passw0rd"
     response = requests.post(url, data=payload, headers=headers)
 
@@ -48,10 +48,10 @@ New Authentication Request
 
 The new request takes a JSON payload.
 
-.. code:: python
+.. substitution-code-block:: python
 
     import requests
-    url = "https://login-staging.bimdata.io/token"
+    url = "|bimdata_connect|/token"
     payload = {
         "client_id": CLIENT_ID,
         "client_secret": CLIENT_SECRET,

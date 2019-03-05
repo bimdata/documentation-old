@@ -20,7 +20,7 @@ Code example
 JSON
 ^^^^^
 
-``https://api-beta.bimdata.io/cloud/1/project/1``
+``|api_url|/cloud/1/project/1``
 
 .. code-block:: javascript
 
@@ -58,13 +58,18 @@ Upload a document
 File upload is one of the few API calls which does not use the ``application/json`` Content Type. This call uses ``x-www-urlencoded`` with ``form-data``.
 The name of the file field must be "``file``", this means that you have to fire multiple calls if you want to upload many files.
 
+.. note::
+
+    The filesize is the compressed size and not the actual size of the initial file due to HTTP Compression.
+
+
 cURL
 ^^^^^^^^^
 
-.. code-block:: bash
+.. substitution-code-block:: bash
 
     curl -X POST \
-    'https://api-beta.bimdata.io/cloud/1/project/1/document' \
+    '|api_url|/cloud/1/project/1/document' \
     -H 'authorization: Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N'
     -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
     -F name=my_custom_name \
@@ -73,13 +78,13 @@ cURL
 JavaScript
 ^^^^^^^^^^^
 
-.. code-block:: javascript
+.. substitution-code-block:: javascript
 
     var fs = require("fs");
     var request = require("request");
 
     var options = { method: 'POST',
-    url: 'https://api-beta.bimdata.io/cloud/1/project/1/document',
+    url: '|api_url|/cloud/1/project/1/document',
     headers:
     { 'authorization': 'Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N',
         'content-type': 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' },
@@ -99,11 +104,11 @@ JavaScript
 Python
 ^^^^^^^^^
 
-.. code-block:: python
+.. substitution-code-block:: python
 
     import requests
 
-    url = "https://api-staging.bimdata.io/cloud/1/project/1/document"
+    url = "|api_url|/cloud/1/project/1/document"
 
     headers = {
         'authorization': 'Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N',

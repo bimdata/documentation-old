@@ -25,10 +25,10 @@ Step 2. Set up your project
 Once your app exists and you have your Access Token, you are able to use the API.
 Begin with the creation of a Cloud (`What's a cloud?`_), in which you create a Project (`What's a project?`_).
 In the script below, there is an example of the creation of a project in your Cloud through API, so you can have a `projectId`.
-First, define a name to create your first Cloud. Post this `name` on https://api-beta.bimdata.io/cloud using your Access Token. 
+First, define a name to create your first Cloud. Post this `name` on |api_url|/cloud using your Access Token. 
 Then use the `cloudId` to create your first Project.
 
-.. code:: python
+.. substitution-code-block:: python
 
     import requests
 
@@ -40,11 +40,11 @@ Then use the `cloudId` to create your first Project.
     cloud_name = {
         'name': 'Windows retrieval'
     }
-    response = requests.post(f'https://api-staging.bimdata.io/cloud', data=cloud_name, headers=headers)
+    response = requests.post(f'|api_url|/cloud', data=cloud_name, headers=headers)
     assert response.status_code == 201
 
     cloud_id = response.json().get('id')
-    response = requests.post(f'https://api-staging.bimdata.io/cloud/{cloud_id}/project',  headers=headers)
+    response = requests.post(f'|api_url|/cloud/{cloud_id}/project',  headers=headers)
     assert response.status_code == 201
 
     project_id = response.json().get('id')
@@ -62,7 +62,7 @@ Use the API to upload
 Use the `/cloud/{cloud_pk}/project/{project_pk}/document` route to upload your file.
 The `documentation for this route`_ is available on our API Reference page.
 
-.. code:: python
+.. substitution-code-block:: python
 
     import requests
 
@@ -76,7 +76,7 @@ The `documentation for this route`_ is available on our API Reference page.
     my_ifc_to_upload = {'file': open('/path/to/XXX.ifc', 'rb')}
 
     #previous script gives you the cloud_id and the project_id
-    url = f'https://api-staging.bimdata.io/cloud/{cloud_id}/project/{project_id}/document'
+    url = f'|api_url|/cloud/{cloud_id}/project/{project_id}/document'
     response = requests.post(url, data=payload, files=my_ifc_to_upload, headers=headers)
     assert response.status_code == 201
 
@@ -87,13 +87,13 @@ Follow the upload process
 ---------------------------
 
 During the upload, you must query the server to get information about the upload process, see `the IFC documentation page`_ about the available information.
-The server detects IFC format and you can get information about your file using the API: https://api-staging.bimdata.io/doc#/ifc/getIfc
+The server detects IFC format and you can get information about your file using the API: |api_url|/doc#/ifc/getIfc
 
 .. note::
     The IFC document provided in this tutorial takes approximatively 10 seconds to be processed.\nUsually, the processing time could be very different depending on the IFC file.
 
 
-.. code:: python
+.. substitution-code-block:: python
 
     import time
     import requests
@@ -101,7 +101,7 @@ The server detects IFC format and you can get information about your file using 
     ready = False
 
     while not ready:
-        url = f'https://api-staging.bimdata.io/cloud/{cloud_id}/project/{project_id}/ifc/{my_ifc_id}'
+        url = f'|api_url|/cloud/{cloud_id}/project/{project_id}/ifc/{my_ifc_id}'
         response = requests.get(url, headers=headers)
         assert response.status_code == 200
 
@@ -146,7 +146,7 @@ In addition, you can filter by:
 To retrieve only windows, the accurate filter is *type*: **IfcWindow**.
 You get a list of windows, all the windows of your model.
 
-.. code:: python
+.. substitution-code-block:: python
 
     import requests
     # This script requires an IFC document uploaded
@@ -154,7 +154,7 @@ You get a list of windows, all the windows of your model.
     my_filter = {
         'type': 'IfcWindow'
     }
-    url = f'https://api-staging.bimdata.io/cloud/{cloud_id}/project/{project_id}/document/{my_ifc_id}'
+    url = f'|api_url|/cloud/{cloud_id}/project/{project_id}/document/{my_ifc_id}'
     response = requests.get(url, data=my_filter, headers=headers)
     assert response.status_code == 200
 
@@ -168,6 +168,6 @@ With the filters, every IFC element can be retrieved. You can retrieve any eleme
 .. _What's a cloud?: ../concepts/cloud.html
 .. _What's a project?: ../concepts/projects.html
 .. _Download Cassiopea IFC: https://drive.google.com/file/d/1njhweVCFvDNl8Gy3B1HxAolcfExt0Tg-/view?usp=sharing
-.. _documentation for this route: https://api-beta.bimdata.io/doc#/project/createDocument
+.. _documentation for this route: |api_url|/doc#/project/createDocument
 .. _the IFC documentation page: ../concepts/ifc.html
-.. _on the documentation page for this route: https://api-beta.bimdata.io/doc#/ifc/getElements
+.. _on the documentation page for this route: |api_url|/doc#/ifc/getElements

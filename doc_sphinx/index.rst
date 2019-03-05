@@ -15,6 +15,9 @@ BIMData provides you:
 After reading about the concepts in our `Concepts Tour`_, take a look at our `Guide by topics`_, our `Cookbook`_ and our `Tutorials`_.
 
 
+BIMData's tools let you convert your gltf file, optimize your IFC files, store your files, manage your project and user credentials.
+
+
 Chapters
 ========
 
