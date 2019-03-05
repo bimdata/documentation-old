@@ -64,7 +64,7 @@ workflows:
             branches:
               ignore:
                 - master
-      - deploy:
+      - master:
           filters:
             branches:
               only:
