@@ -45,6 +45,7 @@ author = "BIMData"
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 # The short X.Y version.
+
 version = "dev"
 # The full version, including alpha/beta/rc tags.
 release = "dev"
@@ -118,7 +119,7 @@ html_context = {
     "display_github": True,
     "conf_py_path": "doc_sphinx/",
     "source_suffix": ".rst",
-    "github_version": "dev/",
+    "github_version": "master/",
 }
 
 # The name of an image file (relative to this directory) to place at the top
