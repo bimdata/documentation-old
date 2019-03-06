@@ -73,6 +73,18 @@ ul{
     @include font-size(12px);
   }
 }
+ol{
+  margin-left: 1.25rem;
+  list-style-type: decimal;
+  li{
+    list-style-type: decimal;
+    ol{
+      li{
+        margin-left: 1rem;
+      }
+    }
+  }
+}
 pre{
   margin-top: 1rem;
   padding: 1rem;

@@ -41,10 +41,14 @@
             @include font-size(12px);
             line-height: 16px;
           }
-          button{
-            width: 117px;
-            @include btn($color-primary, $color-white, $font-primary);
+          a{
+            margin: auto;
+            width: 128px;
             border: none;
+            @include btn($color-primary, $color-white, $font-primary);
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
           }
         }
         &.clef{
