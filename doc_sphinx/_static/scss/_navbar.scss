@@ -115,13 +115,15 @@
         width: 95%;
         border: none;
         border-radius: 3px;
-        @include font-size(12px);
         box-shadow: none;
+        line-height: 32px;
+        @include font-size(12px);
         &.btn-primary{
           background-color: rgba($color-primary,1);
         }
         &.btn-shadow{
           background-color: rgba($color-primary,0);
+          color: $color-primary;
           @include transition(all .2s cubic-bezier(.35,0,.25,1));
           &:hover{
             background-color: rgba($color-primary,0.05);
