@@ -72,12 +72,15 @@ rst_prolog = f"""
 .. |bimdata_connect| replace:: {CONNECT_URL}
 """
 
-
 language = None
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
-html_extra_path = ["_static/robots.txt"]
+html_extra_path = []
+
+HAS_ROBOTS_TXT = os.environ.get("HAS_ROBOTS_TXT", "true")
+if HAS_ROBOTS_TXT == "true":
+    html_extra_path.append("_static/robots.txt")
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
