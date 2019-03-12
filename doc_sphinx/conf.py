@@ -37,7 +37,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "BIMData Documentation"
+project = "BIMData Documentation (dev)"
 copyright = "2018, BIMData"
 author = "BIMData"
 
@@ -45,15 +45,11 @@ author = "BIMData"
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 # The short X.Y version.
-
 version = "dev"
 # The full version, including alpha/beta/rc tags.
 release = "dev"
 
-# sphinx-contrib
-scv_whitelist_branches = tuple(
-    os.environ.get("WHITELIST_BRANCHES", "master,dev,tech-writing").split(",")
-)
+
 API_URL = os.environ.get("API_URL", "https://api-staging.bimdata.io")
 CDN_URL = os.environ.get("CDN_URL", "https://cdn-staging.bimdata.io")
 CONNECT_URL = os.environ.get("CONNECT_URL", "https://login-staging.bimdata.io")
@@ -118,7 +114,14 @@ html_theme_options = {
     "titles_only": False,
 }
 
-html_style = "css/my_theme.css"
+
+def setup(app):
+    if os.environ.get("ENV", "development") == "development":
+        app.add_js_file("js/reload.js")  # also can be a full URL
+
+    app.add_stylesheet("css/style.css")  # also can be a full URL
+
+
 html_file_suffix = None
 html_context = {
     "github_user": "bimdata",
@@ -126,12 +129,23 @@ html_context = {
     "display_github": True,
     "conf_py_path": "doc_sphinx/",
     "source_suffix": ".rst",
-    "github_version": "master/",
+    "github_version": "dev/",
 }
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = "_static/_images/logo-bimdata-darkbg.svg"
+#
+html_logo = "static/_images/bimdata_logo-doc.svg"
+
+# The name for this set of Sphinx documents.
+# "<project> v<release> documentation" by default.
+#
+html_title = "BIMData Doc"
+
+# A shorter title for the navigation bar.  Default is the same as html_title.
+#
+# html_short_title = None
+
 
 # The name of an image file (relative to this directory) to use as a favicon of
 # the docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -148,7 +162,7 @@ html_static_path = ["_static", "_images"]
 html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-html_sidebars = {"**": ["globaltoc.html", "sourcelink.html", "searchbox.html"]}
+html_sidebars = {"**": ["globaltoc.html"]}
 
 html_domain_indices = True
 html_use_index = True

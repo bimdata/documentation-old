@@ -6,6 +6,11 @@
 Cloud
 ========
 
+.. 
+    excerpt
+        Find out more about a Cloud and Cloud users.
+    endexcerpt
+
 Concept
 ---------
 

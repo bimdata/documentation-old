@@ -41,7 +41,7 @@ Example of the Viewer
       var cloudId = 88;
       var projectId = 100;
       var ifcId = 175;
-      
+
       var viewer = new BIMDataViewer('embed', {
         accessToken: accessToken,
         cloudId: cloudId,

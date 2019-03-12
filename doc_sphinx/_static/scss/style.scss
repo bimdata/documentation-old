@@ -1,0 +1,100 @@
+@import "../../node_modules/@bimdata/utils/scss/common.scss";
+@import "home";
+@import "layout";
+@import "navbar";
+
+html, body{
+  padding: 0;
+  background-color: rgba(255,255,255,1);
+  color: rgba(151,151,151,1);
+  font-family: $font-primary;
+  @include font-size(14px);
+}
+
+/* custom GLOBAL
+---------------------------------------- */
+h1, h2, h3, h4{
+  font-weight: inherit;
+}
+h1{
+  margin-top: 1.4rem;
+}
+h2{
+  margin-top: 2rem;
+}
+h3{
+  margin-top: 1rem;
+}
+a{
+  color: $color-primary;
+  font-family: $font-primary_medium;
+  position: relative;
+  &:hover{
+    color: $color-primary;
+    text-decoration: none;
+  }
+  &:visited{
+    color: $color-primary;
+  }
+  &.headerlink{
+    display: none;
+  }
+}
+p, ul, ol{
+  a.reference.external{
+    position: relative;
+    &::after{
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $color-primary;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      @include transform(scaleX(0));
+      @include transform-origin(right);
+      @include transition(transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1));
+    }
+    &:hover{
+      &::after{
+        @include transform(scaleX(1));
+        @include transform-origin(left);
+      }
+    }
+  }
+}
+p{
+  margin: 0;
+  @include font-size(12px);
+}
+ul{
+  li{
+    @include font-size(12px);
+  }
+}
+ol{
+  margin-left: 1.25rem;
+  list-style-type: decimal;
+  li{
+    list-style-type: decimal;
+    ol{
+      li{
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+pre{
+  margin-top: 1rem;
+  padding: 1rem;
+  color: $color-white;
+  @include font-size(12px);
+}
+code{
+  &.literal{
+    padding: .5rem;
+    background-color: $color-background;
+    border: none;
+  }
+}

@@ -1,6 +1,5 @@
 .. meta::
-    :github_url: https://github.com/bimdata/documentation/blob/latest/doc_sphinx/index.rst
-
+    :github_url: https://github.com/bimdata/documentation/blob/master/doc_sphinx/index.rst
 
 ================================================
 Welcome to BIMData documentation!
@@ -14,14 +13,8 @@ BIMData provides you:
 
 After reading about the concepts in our `Concepts Tour`_, take a look at our `Guide by topics`_, our `Cookbook`_ and our `Tutorials`_.
 
-
-BIMData's tools let you convert your gltf file, optimize your IFC files, store your files, manage your project and user credentials.
-
-
-Chapters
-========
-
 .. toctree::
+    :hidden:
     :maxdepth: 1
 
     Getting Started <tutorials/getting_started>
@@ -35,12 +28,10 @@ Chapters
     Contributing <contributing>
     BIMData.io website <https://bimdata.io/>
 
+.. toctree::
+    :caption: BIMData Doc
+    :name: sidebar
 
-.. _an API: ../../redoc/index.html
-.. _a Viewer: viewer/
-.. _BIMData Connect: topics/authentication_bimdata_connect.html
-
-.. _Concepts Tour: concepts/
-.. _Guide by topics: topics/
-.. _Cookbook: cookbook/
-.. _Tutorials: tutorials/
+    Viewer Doc <viewer/index>
+    API Doc <../../redoc/index.html#://>
+    BIMData.io website <https://bimdata.io/>

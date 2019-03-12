@@ -5,22 +5,31 @@ Cookbook
 .. topic:: `Create an application`_
 
     .. include:: create_an_application.rst
-       :start-line: 7
-       :end-line: 7
+       :start-after: excerpt
+       :end-before: endexcerpt
 
 .. topic:: `Get Access Token`_
 
     .. include:: get_access_token.rst
-       :start-line: 14
-       :end-line: 14
+       :start-after: excerpt
+       :end-before: endexcerpt
+
 
 .. topic:: `Export Excel`_
 
     .. include:: export_excel.rst
-       :start-line: 7
-       :end-line: 7
+       :start-after: excerpt
+       :end-before: endexcerpt
+
 
 
 .. _Create an application: create_an_application.html
 .. _Get Access Token: get_access_token.html
 .. _Export Excel: export_excel.html
+
+.. toctree::
+    :hidden:
+
+    create_an_application
+    get_access_token
+    export_excel

@@ -2,6 +2,11 @@
 Authentication migration
 ===================================
 
+.. 
+    excerpt
+        The new Authentification process is slightly different, learn how to migrate.
+    endexcerpt
+
 The authentication migration is currently under progress. 
 Your old credentials are still working with the new Authentication, however the association of the users credentials with their clouds is no longer provided.
 

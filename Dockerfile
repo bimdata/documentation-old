@@ -24,8 +24,8 @@ ENV WHITELIST_BRANCHES=$WHITELIST_BRANCHES
 
 COPY ./ /opt
 RUN mv /opt/node_modules /opt/doc_sphinx/node_modules
-RUN ls /opt/doc_sphinx/node_modules
-RUN git remote set-url origin https://github.com/bimdata/documentation.git && sphinx-versioning build doc_sphinx html_doc
+
+RUN sphinx-build doc_sphinx html_doc
 
 FROM nginx:stable-alpine
 COPY --from=0 /opt/html_doc/ /usr/share/nginx/html/
