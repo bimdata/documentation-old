@@ -51,21 +51,20 @@ release = "dev"
 
 # sphinx-contrib
 scv_whitelist_branches = tuple(
-    os.environ.get("WHITELIST_BRANCHES", "feature/integration-header").split(",")
+    os.environ.get("WHITELIST_BRANCHES", "master,dev,tech-writing").split(",")
 )
-scv_whitelist_branches = ("master", "dev", "tech-writing")
 API_URL = os.environ.get("API_URL", "https://api-staging.bimdata.io")
 CDN_URL = os.environ.get("CDN_URL", "https://cdn-staging.bimdata.io")
 CONNECT_URL = os.environ.get("CONNECT_URL", "https://login-staging.bimdata.io")
 
-#replace in code
+# replace in code
 substitutions = [
     ("|api_url|", API_URL),
     ("|cdn_url|", CDN_URL),
     ("|bimdata_connect|", CONNECT_URL),
 ]
 
-#replace in text
+# replace in text
 rst_prolog = f"""
 .. |api_url| replace:: {API_URL}
 .. |cdn_url| replace:: {CDN_URL}
@@ -125,6 +124,7 @@ def setup(app):
         app.add_js_file("js/reload.js")  # also can be a full URL
 
     app.add_stylesheet("css/style.css")  # also can be a full URL
+
 
 html_file_suffix = None
 html_context = {
