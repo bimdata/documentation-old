@@ -37,7 +37,6 @@
         <a {%if title == 'Guide' or parents and parents[0]["title"] == 'Guide' %} class="active" {% endif %} title="{{ _('topics') }}" href="{{ pathto('topics/index') }}">Guide</a>
       </li>
       <li class="d-none"><a {%if title == 'Tutorials' or parents and parents[0]["title"] == 'Tutorials' %} class="active" {% endif %} title="{{ _('tutorials') }}" href="{{ pathto('tutorials/index') }}">Tutorials</a></li>
-      <li><a {%if title == 'Reference' or parents and parents[0]["title"] == 'Reference' %} class="active" {% endif %} title="{{ _('reference') }}" href="{{ pathto('reference/index') }}">Reference</a></li>
       <li><a {%if title == 'Cookbook' or parents and parents[0]["title"] == 'Cookbook' %} class="active" {% endif %} title="{{ _('reference') }}" href="{{ pathto('cookbook/index') }}">Cookbook</a></li>
     </ul>
   </div>
