@@ -11,9 +11,9 @@ To support the Viewer you will need a `<div>` element, with an id attribute, and
 * The API Javascript client, for API calls, to embed with the script tag
 * Your own JS script: in this documentation, this part will be directly in the HTML `<script>` tag
 
-  .. code-block:: html
+.. substitution-code-block:: html
 
-    <script src="https://cdn-beta.bimdata.io/js/bimdata-viewer-embed.js" ><!--the viewer itself --></script>
+    <script src="|cdn_url|/js/bimdata-viewer-embed.js" ><!--the viewer itself --></script>
     <script>
 
 

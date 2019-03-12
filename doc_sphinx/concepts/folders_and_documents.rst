@@ -63,6 +63,11 @@ Upload a document
 File upload is one of the few API calls which does not use the ``application/json`` Content Type. This call uses ``x-www-urlencoded`` with ``form-data``.
 The name of the file field must be "``file``", this means that you have to fire multiple calls if you want to upload many files.
 
+.. note::
+
+    The filesize is the compressed size and not the actual size of the initial file due to HTTP Compression.
+
+
 cURL
 ^^^^^^^^^
 
