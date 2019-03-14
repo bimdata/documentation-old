@@ -33,5 +33,5 @@ After reading about the concepts in our `Concepts Tour`_, take a look at our `Gu
     :name: sidebar
 
     Viewer Doc <viewer/index>
-    API Doc <../../redoc/index.html#://>
+    API Doc <../../api/public/index.html#://>
     BIMData.io website <https://bimdata.io/>
