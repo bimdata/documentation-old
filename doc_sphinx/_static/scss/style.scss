@@ -11,6 +11,14 @@ html, body{
   @include font-size(14px);
 }
 
+/* override BOOTSRAP
+---------------------------------------- */
+@media (min-width: 1200px){
+  .container {
+    max-width: 1400px;
+  }
+}
+
 /* custom GLOBAL
 ---------------------------------------- */
 h1, h2, h3, h4{
@@ -93,8 +101,18 @@ pre{
 }
 code{
   &.literal{
-    padding: .5rem;
-    background-color: $color-background;
     border: none;
+    span{
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      font-size: 90%;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      padding: .2rem .3rem;
+      border-radius: .2rem;
+      line-height: 2;
+      background-color: rgba(249, 199, 44,1);
+      color: #2f374a;
+    }
   }
 }
