@@ -26,6 +26,7 @@ COPY ./ /opt
 RUN mv /opt/node_modules /opt/doc_sphinx/node_modules
 
 RUN sphinx-build doc_sphinx html_doc
+RUN spectacle --target-dir html_doc/api doc_sphinx/_static/bimdata_api.json
 
 FROM nginx:stable-alpine
 COPY --from=0 /opt/html_doc/ /usr/share/nginx/html/
