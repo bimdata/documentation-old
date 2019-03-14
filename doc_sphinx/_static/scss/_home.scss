@@ -14,49 +14,10 @@
       .flex-container_equal{
         @include flexbox;
         @include justify-content(center);
-        .box-documentation{
-          @include card(0 30px, 0 36px, 327px, 264px, $color-white, 15px, 0 2px 10px 0 rgba(0,0,0,0.1));
-          @include flexbox;
-          @include align-items(center);
-          &_content{
+        .clef{
+          .card-horizontal_content{
             img{
-              height: 92px;
-            }
-            h2{
-              margin: 16px 0 7px 0;
-              @include font-size(21px);
-              font-family: $font-primary_bold;
-              &::first-letter{
-                text-transform: capitalize;
-              }
-            }
-            span{
-              margin: auto;
-              width: 14.6px;
-              height: 1.5px;
-              display: block;
-              background-color: $color-secondary;
-            }
-            p{
-              margin: 22px 0;
-              @include font-size(12px);
-              line-height: 16px;
-            }
-            a{
-              margin: auto;
-              width: 128px;
-              border: none;
-              @include btn($color-primary, $color-white, $font-primary);
-              @include flexbox;
-              @include align-items(center);
-              @include justify-content(center);
-            }
-          }
-          &.clef{
-            .box-documentation_content{
-              img{
-                padding: .8rem;
-              }
+              padding: .8rem;
             }
           }
         }
@@ -103,59 +64,8 @@
       @include flexbox;
       @include justify-content(center);
       @include flex-flow(row wrap);
-      .box-help{
-        position: relative;
-        @include card(0 0 30px, 0 33px, 195px, 466px, $color-white, 8px, 0 2px 10px 0 rgba(0,0,0,0.1));
-        @include flexbox;
-        @include align-items(center);
-        &::before{
-          content: "";
-          position: absolute;
-          left: 0;
-          height: 100%;
-          width: 6px;
-          background-color: $color-secondary;
-        }
-        &_content{
-          width: 100%;
-          h3{
-            margin: 0 0 22px;
-            color: $color-primary;
-            a{
-              font-family: $font-primary;
-            }
-          }
-          p{
-            margin-bottom: 16px;
-          }
-          .btn-arrow{
-            @include flexbox;
-            @include align-items(center);
-            @include transition(all .5s ease);
-            .action-button__rectangle{
-              width: 25px;
-              height: 2px;
-              position: absolute;
-              top: 50%;
-              left: 20%;
-              background-color: $color-primary;
-              @include transition(all .5s ease);
-              @include transform(translateY(-50%) scaleX(1));
-              @include transform-origin(right);
-            }
-            .action-button__arrow{
-              position: absolute;
-              top: 2%;
-              left: 23%;
-            }
-            &:hover{
-              @include transform(translateX(22px));
-              .action-button__rectangle{
-                @include transform(translateY(-50%) scaleX(0));
-              }
-            }
-          }
-        }
+      .card-vertical{
+        padding: 0 33px;
       }
     }
   }
