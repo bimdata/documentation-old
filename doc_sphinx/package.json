@@ -14,7 +14,7 @@
     "bootstrap": "^4.3.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.7",
-    "spectacle-doc": "^1.0.7"
+    "spectacle-docs": "^1.0.7"
   },
   "devDependencies": {
     "ws": "^6.1.3",
