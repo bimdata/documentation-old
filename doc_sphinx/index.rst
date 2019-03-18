@@ -23,7 +23,7 @@ After reading about the concepts in our `Concepts Tour`_, take a look at our `Gu
     Tutorials <tutorials/index>
     Cookbook <cookbook/index>
     Viewer Doc <viewer/index>
-    API Doc<../../redoc/index.html#://>
+    API Doc<../../api/index.html#://>
     Get Help <get_help>
     Contributing <contributing>
     BIMData.io website <https://bimdata.io/>
@@ -33,5 +33,5 @@ After reading about the concepts in our `Concepts Tour`_, take a look at our `Gu
     :name: sidebar
 
     Viewer Doc <viewer/index>
-    API Doc <api/index.html#://>
+    API Doc<../../api/index.html#://>
     BIMData.io website <https://bimdata.io/>
