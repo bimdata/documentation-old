@@ -96,6 +96,19 @@ ol{
     }
   }
 }
+dl{
+  margin-top: 29px;
+  @include font-size(12px);
+  dt{
+    margin-bottom: 13px;
+  }
+  dd{
+    margin-left: 1rem;
+    table{
+      margin-left: 1rem;
+    }
+  }
+}
 pre{
   margin-top: 1rem;
   padding: 1rem;
@@ -103,20 +116,16 @@ pre{
   @include font-size(12px);
 }
 code{
-  &.literal{
-    background: none;
-    border: none;
-    span{
-      -webkit-box-decoration-break: clone;
-      box-decoration-break: clone;
-      font-size: 90%;
-      overflow-wrap: break-word;
-      word-wrap: break-word;
-      padding: .2rem .3rem;
-      border-radius: .2rem;
-      line-height: 2;
-      background-color: rgba(249, 199, 44,1);
-      color: #2f374a;
-    }
-  }
+  margin: 0 .5rem 0 0;
+  padding: 5px;
+  background-color: $color-background;;
+  border: none;
+  border-radius: 3px;
+  color: $color-primary;
+  line-height: 2;
+  font-weight: bold;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
