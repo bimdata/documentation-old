@@ -66,6 +66,19 @@
       @include flex-flow(row wrap);
       .card-vertical{
         padding: 0 33px;
+        &_content{
+          .action-button{
+            display: inline-block;
+            &__rectangle{
+              top: 58%;
+              left: 122%;
+            }
+            &__arrow{
+              top: 8%;
+              left: 140%;
+            }
+          }
+        }
       }
     }
   }

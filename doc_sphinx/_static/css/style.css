@@ -1447,6 +1447,20 @@ p {
   padding: 0 33px;
 }
 
+.content-doc_home .help .flex-container .card-vertical_content .action-button {
+  display: inline-block;
+}
+
+.content-doc_home .help .flex-container .card-vertical_content .action-button__rectangle {
+  top: 58%;
+  left: 122%;
+}
+
+.content-doc_home .help .flex-container .card-vertical_content .action-button__arrow {
+  top: 8%;
+  left: 140%;
+}
+
 .content-doc_home .questions {
   margin: 80px 0 119px;
 }
