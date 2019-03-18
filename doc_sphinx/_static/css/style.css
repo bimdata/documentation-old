@@ -1913,6 +1913,15 @@ html, body {
   }
 }
 
+/* add FONTS CODE
+---------------------------------------- */
+@font-face {
+  font-family: 'mononokibold';
+  src: url("../fonts/mononoki-Bold.woff2") format("woff2"), url("../fonts/mononoki-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* custom GLOBAL
 ---------------------------------------- */
 h1, h2, h3, h4 {
@@ -2050,9 +2059,7 @@ code {
   border-radius: 3px;
   color: #2f374a;
   line-height: 2;
-  font-weight: bold;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  font-family: "mononokibold";
+  font-size: 10px;
+  font-size: 0.71429rem;
 }
