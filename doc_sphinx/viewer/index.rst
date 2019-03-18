@@ -28,9 +28,6 @@ Reference
 * `Javascript methods of the Viewer`_
 
 
-Example of the Viewer
-==========================
-
 .. code-block:: javascript
 
       var accessToken = 'DEMO_TOKEN';
