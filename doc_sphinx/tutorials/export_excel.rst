@@ -32,22 +32,22 @@ First step, with a single endpoint, you get all the Topics attached to your Mode
 Iterate on topics and do another request to get the Viewpoints. 
 
 .. tip:: API specs
-    Explore the OpenAPI specification for the endpoint: https://api-staging.bimdata.io/doc?format=openapi
+    Explore the OpenAPI specification for the endpoint: |api_url|/doc?format=openapi
 
 
 .. note:: 
     The BIMData's UI tools let you have only one Viewpoint by Topic. The API let you manage several.
     It's the reason you see `viewpoints[0]` line 13.
 
-.. code-block:: python
+.. substitution-code-block:: python
    :linenos:
 
-    url = f'https://api-staging.bimdata.io/bcf/2.1/projects/{project_pk}/topics'
+    url = f'|api_url|/bcf/2.1/projects/{project_pk}/topics'
     response = requests.get(url, headers=headers)
     assert response.status_code == 200
     for topic in response.json():
         #iterate on topics and do another request to get viewpoints
-        url = f'https://api-staging.bimdata.io/bcf/2.1/projects/{project_pk}/topics/{topic["guid"]}/topic-viewpoints'
+        url = f'|api_url|/bcf/2.1/projects/{project_pk}/topics/{topic["guid"]}/topic-viewpoints'
         response = requests.get(url, headers=headers)
         viewpoints = response.json()
 
@@ -74,13 +74,13 @@ Then you iterate on the Viewpoint's elements, and in this loop on the IFCs to ge
     Some IFCs could not have the Element, in the case of multi-model BCF.
 
 
-.. code-block:: python
+.. substitution-code-block:: python
    :linenos:
 
     allElements = []
     for element_uuid in element_uuids:
         for ifc_pk in ifcs_list:
-            url = f'https://api-staging.bimdata.io/cloud/{cloud_pk}/project/{project_pk}/ifc/{ifc_pk}/element/{element_uuid}'
+            url = f'|api_url|/cloud/{cloud_pk}/project/{project_pk}/ifc/{ifc_pk}/element/{element_uuid}'
             response = requests.get(url, headers=headers)
 
             #if there is no matching IFC, we continue with the next one
@@ -104,7 +104,7 @@ Step 3 - Write your file
 
 For our example, this is the code you write:
 
-.. code-block:: python
+.. substitution-code-block:: python
    :linenos:
     
     with open(f'exportComments_{project_pk}.csv', 'w', newline='') as csvfile:
@@ -124,7 +124,7 @@ For our example, this is the code you write:
 The full script
 =================
 
-.. code-block:: python
+.. substitution-code-block:: python
    :linenos:
 
     import requests
@@ -138,12 +138,12 @@ The full script
 
     allElements = []
 
-    url = f'https://api-staging.bimdata.io/bcf/2.1/projects/{project_pk}/topics'
+    url = f'|api_url|/bcf/2.1/projects/{project_pk}/topics'
     response = requests.get(url, headers=headers)
     assert response.status_code == 200
 
     for topic in response.json():
-        url = f'https://api-staging.bimdata.io/bcf/2.1/projects/{project_pk}/topics/{topic["guid"]}/topic-viewpoints'
+        url = f'|api_url|/bcf/2.1/projects/{project_pk}/topics/{topic["guid"]}/topic-viewpoints'
         response = requests.get(url, headers=headers)
         viewpoints = response.json()
         if not viewpoints: 
@@ -157,7 +157,7 @@ The full script
 
         for element_uuid in element_uuids:
             for ifc_pk in ifcs_list:
-                url = f'https://api-staging.bimdata.io/cloud/{cloud_pk}/project/{project_pk}/ifc/{ifc_pk}/element/{element_uuid}'
+                url = f'|api_url|/cloud/{cloud_pk}/project/{project_pk}/ifc/{ifc_pk}/element/{element_uuid}'
                 response = requests.get(url, headers=headers)
                 if(response.status_code != 200):
                     continue

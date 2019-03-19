@@ -2,6 +2,11 @@
 Authentication with BIMData Connect
 ===================================
 
+.. 
+    excerpt
+        BIMData Connect handles sign-in and log in for your app.
+    endexcerpt
+
 The OpenID Connect used by the BIMData Connect, our authentication system, is built on the shoulders of oAuth2.0. BIMData Connect handles the sign-in, the login and authentication processes of your application users. You can focus on creating and building your application.
 BIMData Connect handles sign-in and log in for your app
 

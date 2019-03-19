@@ -7,6 +7,11 @@
 Filters
 =========
 
+.. 
+    excerpt
+        Many API end-points allow filtering.
+    endexcerpt
+
 Many API end-points allow filtering.
 See available filters in the `Swagger doc`_.
 

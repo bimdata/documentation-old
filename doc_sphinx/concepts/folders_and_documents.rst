@@ -7,6 +7,11 @@
 Folders & Documents
 ================================
 
+.. 
+    excerpt
+        Folders and documents are useful to tidy your content. 
+    endexcerpt
+
 The API exposes a complete set of methods to upload and manage documents.
 
 Folders

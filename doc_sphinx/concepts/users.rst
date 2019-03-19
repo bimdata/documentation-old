@@ -8,6 +8,12 @@
 Users
 =======
 
+.. 
+    excerpt
+        Find out more about Users and BIMData Connect
+    endexcerpt
+
+
 Concept
 ========
 

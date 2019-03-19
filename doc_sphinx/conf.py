@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+#
 import os
 import re
 
@@ -85,6 +87,14 @@ rst_prolog = f"""
 
 
 language = None
+# Add any extra paths that contain custom files (such as robots.txt or
+# .htaccess) here, relative to this directory. These files are copied
+# directly to the root of the documentation.
+html_extra_path = []
+
+HAS_ROBOTS_TXT = os.environ.get("HAS_ROBOTS_TXT", "true")
+if HAS_ROBOTS_TXT == "true":
+    html_extra_path.append("_static/robots.txt")
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -122,7 +132,14 @@ html_theme_options = {
     "titles_only": False,
 }
 
-html_style = "css/my_theme.css"
+
+def setup(app):
+    if os.environ.get("ENV", "development") == "development":
+        app.add_js_file("js/reload.js")  # also can be a full URL
+
+    app.add_stylesheet("css/style.css")  # also can be a full URL
+
+
 html_file_suffix = None
 html_context = {
     "github_user": "bimdata",
@@ -135,7 +152,18 @@ html_context = {
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = "_static/_images/logo-bimdata-darkbg.svg"
+#
+html_logo = "static/_images/bimdata_logo-doc.svg"
+
+# The name for this set of Sphinx documents.
+# "<project> v<release> documentation" by default.
+#
+html_title = "BIMData Doc"
+
+# A shorter title for the navigation bar.  Default is the same as html_title.
+#
+# html_short_title = None
+
 
 # The name of an image file (relative to this directory) to use as a favicon of
 # the docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32

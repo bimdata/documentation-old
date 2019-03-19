@@ -1,0 +1,99 @@
+// custom HOME
+.content-doc_home{
+  // bloc DOCUMENTATION
+  .content-doc_documentation{
+    height: 532px;
+    background-color: $color-background;
+    .documentation{
+      &_title{
+        h1{
+          margin: 62px 0 45px;
+          @include font-size(27px);
+        }
+      } 
+      .flex-container_equal{
+        @include flexbox;
+        @include justify-content(center);
+        .clef{
+          .card-horizontal_content{
+            img{
+              padding: .8rem;
+            }
+          }
+        }
+        .box-round{
+          @include flexbox;
+          @include align-items(center);
+          span{
+            display: block;
+            background-color: rgba(216,216,216,1);
+            border-radius: 50%;
+            &:first-child{
+              width: 4.5px;
+              height: 4.5px;
+            }
+            &:nth-child(2){
+              margin: 0 .25rem;
+              width: 6px;
+              height: 6px;
+            }
+            &:last-child{
+              width: 4.5px;
+              height: 4.5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // bloc HOW CAN WE CAN HELP ?
+  .help{
+    margin-top: 47px;
+    &_title{
+      h2{
+        @include font-size(25px);
+      }
+      p{
+        color: $color-primary;
+        @include font-size(16px);
+      }
+    }
+    .flex-container{
+      margin-top: 44px;
+      @include flexbox;
+      @include justify-content(center);
+      @include flex-flow(row wrap);
+      .card-vertical{
+        padding: 0 33px;
+        &_content{
+          .action-button{
+            display: inline-block;
+            &__rectangle{
+              top: 58%;
+              left: 122%;
+            }
+            &__arrow{
+              top: 8%;
+              left: 140%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // bloc DO YOU HAVE A QUESTIONS ?
+  .questions{
+    margin: 80px 0 119px;
+    h2{
+      margin-bottom: 24px;
+      @include font-size(25px);
+    }
+    p{
+      margin: 0;
+      @include font-size(16px);
+      line-height: 1.7rem;
+    }
+  }
+}

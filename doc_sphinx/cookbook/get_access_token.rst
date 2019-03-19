@@ -2,6 +2,11 @@
 How-to get your Access Token
 =============================
 
+.. 
+    excerpt
+        The script regarding the Access Token
+    endexcerpt
+
 
 .. WARNING:: Pre-requisite: having created an application
 

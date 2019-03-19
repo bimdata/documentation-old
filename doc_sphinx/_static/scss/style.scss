@@ -1,0 +1,138 @@
+@import "../../node_modules/@bimdata/utils/scss/common";
+@import "home";
+@import "layout";
+@import "navbar";
+
+html, body{
+  padding: 0;
+  background-color: rgba(255,255,255,1);
+  color: rgba(151,151,151,1);
+  font-family: $font-primary;
+  @include font-size(14px);
+}
+
+/* override BOOTSRAP
+---------------------------------------- */
+@media (min-width: 1200px){
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* add FONTS CODE
+---------------------------------------- */
+@font-face {
+  font-family: 'mononokibold';
+  src: url('../fonts/mononoki-Bold.woff2') format('woff2'),
+       url('../fonts/mononoki-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* custom GLOBAL
+---------------------------------------- */
+h1, h2, h3, h4{
+  font-weight: inherit;
+}
+h1{
+  margin-top: 1.4rem;
+}
+h2{
+  margin-top: 2rem;
+}
+h3{
+  margin-top: 1.25rem;
+}
+h4{
+  margin-top: 1rem;
+}
+a{
+  color: $color-primary;
+  font-family: $font-primary_medium;
+  position: relative;
+  &:hover{
+    color: $color-primary;
+    text-decoration: none;
+  }
+  &:visited{
+    color: $color-primary;
+  }
+  &.headerlink{
+    display: none;
+  }
+}
+p, ul, ol{
+  a.reference.external{
+    position: relative;
+    &::after{
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $color-primary;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      @include transform(scaleX(0));
+      @include transform-origin(right);
+      @include transition(transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1));
+    }
+    &:hover{
+      &::after{
+        @include transform(scaleX(1));
+        @include transform-origin(left);
+      }
+    }
+  }
+}
+p{
+  margin: 0;
+  @include font-size(12px);
+}
+ul{
+  li{
+    @include font-size(12px);
+  }
+}
+ol{
+  margin-left: 1.25rem;
+  list-style-type: decimal;
+  li{
+    list-style-type: decimal;
+    ol{
+      li{
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+dl{
+  margin-top: 29px;
+  @include font-size(12px);
+  dt{
+    margin-bottom: 13px;
+  }
+  dd{
+    margin-left: 1rem;
+    table{
+      margin-left: 1rem;
+    }
+  }
+}
+pre{
+  margin-top: 1rem;
+  padding: 1rem;
+  color: $color-white;
+  @include font-size(12px);
+}
+code{
+  margin: 0 .5rem 0 0;
+  padding: 5px;
+  background-color: $color-background;;
+  border: none;
+  border-radius: 3px;
+  color: $color-primary;
+  line-height: 2;
+  font-family: "mononokibold";
+  @include font-size(10px);
+}

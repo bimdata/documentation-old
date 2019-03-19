@@ -4,8 +4,7 @@ Tutorials
 
 
 .. toctree::
-   :maxdepth: 2
-   :titlesonly:
+   :hidden:
 
     Getting Started with the Viewer <../viewer/getting_started>
     Tutorial: Retrieve elements of your model <retrieve-elements>

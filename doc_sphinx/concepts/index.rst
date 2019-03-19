@@ -5,32 +5,32 @@ Concepts
 .. topic:: `Cloud`_
 
     .. include:: cloud.rst
-       :start-line: 12
-       :end-line: 12
+       :start-after: excerpt
+       :end-before: endexcerpt
 
 .. topic:: `Folders and documents`_
 
     .. include:: folders_and_documents.rst
-       :start-line: 10
-       :end-line: 10
+       :start-after: excerpt
+       :end-before: endexcerpt
 
 .. topic:: `IFC`_
 
     .. include:: ifc.rst
-       :start-line: 9
-       :end-line: 9
+       :start-after: excerpt
+       :end-before: endexcerpt
 
 .. topic:: `Projects`_
 
     .. include:: projects.rst
-       :start-line: 14
-       :end-line: 14
+       :start-after: excerpt
+       :end-before: endexcerpt
 
 .. topic:: `Users management`_
 
     .. include:: users.rst
-       :start-line: 14
-       :end-line: 14
+       :start-after: excerpt
+       :end-before: endexcerpt
 
 
 .. _Cloud: cloud.html
@@ -39,3 +39,11 @@ Concepts
 .. _Projects: projects.html
 .. _Users management: users.html
 
+.. toctree::
+   :hidden:
+
+    Cloud <cloud>
+    Folders and documents <folders_and_documents>
+    IFC <ifc>
+    Projects <projects>
+    Users management <users>
