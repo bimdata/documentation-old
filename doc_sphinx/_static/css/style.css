@@ -1627,16 +1627,16 @@ p {
   right: -13px;
 }
 
-.content-doc_content .simple {
+.content-doc_content ul.simple {
   line-height: 2;
 }
 
-.content-doc_content .simple li {
+.content-doc_content ul.simple li {
   padding: 0 0 0 1rem;
   position: relative;
 }
 
-.content-doc_content .simple li::before {
+.content-doc_content ul.simple li::before {
   content: " ";
   position: absolute;
   background-color: #f9c72c;
@@ -1645,6 +1645,18 @@ p {
   height: 4px;
   border-radius: 50%;
   top: 12px;
+}
+
+.content-doc_content ol.simple {
+  line-height: 2;
+}
+
+.content-doc_content ol.simple li dl {
+  margin: 0;
+}
+
+.content-doc_content ol.simple li dl dt {
+  margin: 0;
 }
 
 #concepts h1, #guide h1, #cookbook h1 {
