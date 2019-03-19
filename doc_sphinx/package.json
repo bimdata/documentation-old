@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "node bin/watch.js",
-    "build:spectacle": "spectacle --target-dir ../html_doc/api _static/bimdata_api.json"
+    "build:apiref": "spectacle --target-dir ../html_doc/api _static/bimdata_api.json"
   },
   "author": "",
   "license": "CC-BY-4.0",
