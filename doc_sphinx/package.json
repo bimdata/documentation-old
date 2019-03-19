@@ -10,10 +10,11 @@
   "author": "",
   "license": "CC-BY-4.0",
   "dependencies": {
-    "@bimdata/utils": "0.1.3",
+    "@bimdata/utils": "0.1.6",
     "bootstrap": "^4.3.0",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.7"
+    "popper.js": "^1.14.7",
+    "spectacle-docs": "^1.0.7"
   },
   "devDependencies": {
     "ws": "^6.1.3",
