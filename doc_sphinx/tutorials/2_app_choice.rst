@@ -26,5 +26,6 @@ With Users
 -------------
 
 Chose this way if your backend application is bound with Users credentials,
-and you will need to share your app data with another app
+or if your users will be able to share your app's data with another app.
+
 => `Create a backend app`_
