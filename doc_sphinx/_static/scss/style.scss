@@ -1,4 +1,4 @@
-@import "../../node_modules/@bimdata/utils/scss/common.scss";
+@import "../../node_modules/@bimdata/utils/scss/common";
 @import "home";
 @import "layout";
 @import "navbar";
@@ -9,6 +9,24 @@ html, body{
   color: rgba(151,151,151,1);
   font-family: $font-primary;
   @include font-size(14px);
+}
+
+/* override BOOTSRAP
+---------------------------------------- */
+@media (min-width: 1200px){
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* add FONTS CODE
+---------------------------------------- */
+@font-face {
+  font-family: 'mononokibold';
+  src: url('../fonts/mononoki-Bold.woff2') format('woff2'),
+       url('../fonts/mononoki-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* custom GLOBAL
@@ -23,6 +41,9 @@ h2{
   margin-top: 2rem;
 }
 h3{
+  margin-top: 1.25rem;
+}
+h4{
   margin-top: 1rem;
 }
 a{
@@ -85,6 +106,19 @@ ol{
     }
   }
 }
+dl{
+  margin-top: 29px;
+  @include font-size(12px);
+  dt{
+    margin-bottom: 13px;
+  }
+  dd{
+    margin-left: 1rem;
+    table{
+      margin-left: 1rem;
+    }
+  }
+}
 pre{
   margin-top: 1rem;
   padding: 1rem;
@@ -92,9 +126,13 @@ pre{
   @include font-size(12px);
 }
 code{
-  &.literal{
-    padding: .5rem;
-    background-color: $color-background;
-    border: none;
-  }
+  margin: 0 .5rem 0 0;
+  padding: 5px;
+  background-color: $color-background;;
+  border: none;
+  border-radius: 3px;
+  color: $color-primary;
+  line-height: 2;
+  font-family: "mononokibold";
+  @include font-size(10px);
 }

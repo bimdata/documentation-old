@@ -157,21 +157,30 @@
       }
     }
 
-    blockquote{
-      ul{
-        line-height: 2;
-        li{
-          padding: 0 0 0 1rem;
-          position: relative;
-          &::before{
-            content: " ";
-            position: absolute;
-            background-color: $color-secondary;
-            left: 0;
-            width: 4px;
-            height: 4px;
-            border-radius: 50%;
-            top: 12px;
+    ul.simple{
+      line-height: 2;
+      li{
+        padding: 0 0 0 1rem;
+        position: relative;
+        &::before{
+          content: " ";
+          position: absolute;
+          background-color: $color-secondary;
+          left: 0;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          top: 12px;
+        }
+      }
+    }
+    ol.simple{
+      line-height: 2;
+      li{
+        dl{
+          margin: 0;
+          dt{
+            margin: 0;
           }
         }
       }
@@ -242,6 +251,35 @@
       border-radius: 3px;
       font-weight: bold;
       letter-spacing: .02rem;
+    }
+  }
+}
+
+// page PARAMETERS & METHODS
+#parameters-and-methods{
+  #attributes{
+    ul{
+      li{
+        padding: 0;
+        &::before{
+          content: none;
+        }
+      }
+    }
+  }
+  h3{
+    margin-bottom: 13px;
+  }
+}
+table.field-list{
+  margin-top: .5rem;
+  width: inherit;
+  tbody{
+    tr{
+      td{
+        padding: 0 1rem;
+        background-color: $color-white;
+      }
     }
   }
 }
