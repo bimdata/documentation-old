@@ -1820,8 +1820,16 @@ table.field-list tbody tr td {
 
 .navbar header .navbar-menu ul {
   margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 .navbar header .navbar-menu ul li {
