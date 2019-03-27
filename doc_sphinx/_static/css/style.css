@@ -1659,14 +1659,14 @@ p {
   margin: 0;
 }
 
-#concepts h1, #guide h1, #cookbook h1 {
+#concepts h1, #guide h1, #cookbook h1, #tutorials h1 {
   font-size: 27px;
   font-size: 1.92857rem;
   text-align: center;
   text-transform: uppercase;
 }
 
-#concepts .topic, #guide .topic, #cookbook .topic {
+#concepts .topic, #guide .topic, #cookbook .topic, #tutorials .topic {
   margin: 37px auto;
   padding: 0 30px;
   width: 960px;
@@ -1685,15 +1685,15 @@ p {
   align-items: center;
 }
 
-#concepts .topic p, #guide .topic p, #cookbook .topic p {
+#concepts .topic p, #guide .topic p, #cookbook .topic p, #tutorials .topic p {
   margin: 0;
 }
 
-#concepts .topic p a::after, #guide .topic p a::after, #cookbook .topic p a::after {
+#concepts .topic p a::after, #guide .topic p a::after, #cookbook .topic p a::after, #tutorials .topic p a::after {
   content: none;
 }
 
-#concepts .topic p.topic-title, #guide .topic p.topic-title, #cookbook .topic p.topic-title {
+#concepts .topic p.topic-title, #guide .topic p.topic-title, #cookbook .topic p.topic-title, #tutorials .topic p.topic-title {
   width: 300px;
   height: 100%;
   position: relative;
@@ -1712,7 +1712,7 @@ p {
   line-height: 24px;
 }
 
-#concepts .topic p.topic-title::after, #guide .topic p.topic-title::after, #cookbook .topic p.topic-title::after {
+#concepts .topic p.topic-title::after, #guide .topic p.topic-title::after, #cookbook .topic p.topic-title::after, #tutorials .topic p.topic-title::after {
   content: "";
   position: absolute;
   width: 2px;
@@ -1722,7 +1722,7 @@ p {
   background-color: #f7f7f7;
 }
 
-#concepts .topic blockquote, #guide .topic blockquote, #cookbook .topic blockquote {
+#concepts .topic blockquote, #guide .topic blockquote, #cookbook .topic blockquote, #tutorials .topic blockquote {
   padding-left: 32px;
   width: 555px;
   font-size: 16px;
