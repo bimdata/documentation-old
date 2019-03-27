@@ -147,7 +147,7 @@ html_context = {
     "display_github": True,
     "conf_py_path": "doc_sphinx/",
     "source_suffix": ".rst",
-    "github_version": "master/",
+    "github_version": "dev/",
 }
 
 # The name of an image file (relative to this directory) to place at the top
