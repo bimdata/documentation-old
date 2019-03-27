@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 import os
+import re
 
 # -- General configuration ------------------------------------------------
 
@@ -37,7 +38,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "BIMData Documentation (dev)"
+project = "BIMData Documentation"
 copyright = "2018, BIMData"
 author = "BIMData"
 
@@ -45,9 +46,25 @@ author = "BIMData"
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 # The short X.Y version.
+
 version = "dev"
 # The full version, including alpha/beta/rc tags.
 release = "dev"
+
+# sphinx-contrib
+scv_whitelist_branches_regexp = [
+    re.compile(regexp)
+    for regexp in os.environ.get("WHITELIST_BRANCHES_REGEXP", "").split(",")
+    if regexp != ""
+]
+
+scv_whitelist_branches_name = os.environ.get(
+    "WHITELIST_BRANCHES_NAME", "master,dev,tech-writing"
+).split(",")
+
+scv_whitelist_branches = tuple(
+    scv_whitelist_branches_name + scv_whitelist_branches_regexp
+)
 
 
 API_URL = os.environ.get("API_URL", "https://api-staging.bimdata.io")
@@ -130,7 +147,7 @@ html_context = {
     "display_github": True,
     "conf_py_path": "doc_sphinx/",
     "source_suffix": ".rst",
-    "github_version": "dev/",
+    "github_version": "master/",
 }
 
 # The name of an image file (relative to this directory) to place at the top
@@ -163,7 +180,7 @@ html_static_path = ["_static", "_images"]
 html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-html_sidebars = {"**": ["globaltoc.html"]}
+html_sidebars = {"**": ["globaltoc.html", "sourcelink.html", "searchbox.html"]}
 
 html_domain_indices = True
 html_use_index = True
@@ -238,13 +255,3 @@ swagger2sphinx_swagger_location = "api/swagger.json"
 
 # Autosummary issue resolver
 numpydoc_show_class_members = False
-
-# SASS/SCSS
-from sassutils import builder
-
-OUTPUT_STYLE = os.environ.get("SCSS_OUTPUT_STYLE", "expanded")
-SCSS_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), "./_static/scss"))
-CSS_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), "./_static/css"))
-
-b = builder.Manifest(sass_path=SCSS_DIR, css_path=CSS_DIR, strip_extension=True)
-b.build("", output_style=OUTPUT_STYLE)
