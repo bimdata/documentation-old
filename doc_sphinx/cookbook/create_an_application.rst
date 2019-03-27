@@ -49,7 +49,7 @@ Fields description
      - sets the way of authenticating, see the Authentication documentation content to learn more.
    * - Scopes
      - lists every granted access for your application on the data. 
-       `See the Scopes documentation content <https://documentation.bimdata.io/v1.0/docs/scopes>`_ to learn more.
+       `See the Scopes documentation content <../concepts/scopes.html>`_ to learn more.
    * - JWT Algorithm
      - lets you choose which algorithm is used to encode ID tokens
    * - Redirect URIs
