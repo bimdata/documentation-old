@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 import os
+import re
 
 # -- General configuration ------------------------------------------------
 
@@ -37,7 +38,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "BIMData Documentation (dev)"
+project = "BIMData Documentation"
 copyright = "2018, BIMData"
 author = "BIMData"
 
@@ -45,9 +46,25 @@ author = "BIMData"
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 # The short X.Y version.
+
 version = "dev"
 # The full version, including alpha/beta/rc tags.
 release = "dev"
+
+# sphinx-contrib
+scv_whitelist_branches_regexp = [
+    re.compile(regexp)
+    for regexp in os.environ.get("WHITELIST_BRANCHES_REGEXP", "").split(",")
+    if regexp != ""
+]
+
+scv_whitelist_branches_name = os.environ.get(
+    "WHITELIST_BRANCHES_NAME", "master,dev,tech-writing"
+).split(",")
+
+scv_whitelist_branches = tuple(
+    scv_whitelist_branches_name + scv_whitelist_branches_regexp
+)
 
 
 API_URL = os.environ.get("API_URL", "https://api-staging.bimdata.io")

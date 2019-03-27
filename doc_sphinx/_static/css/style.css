@@ -1712,7 +1712,7 @@ p {
   line-height: 24px;
 }
 
-#concepts .topic p.topic-title::after, #guide .topic p.topic-title::after, #cookbook .topic p.topic-title::after, #tutorials .topic p.topic-title::after {
+#concepts .topic p.topic-title::after, #guide .topic p.topic-title::after, #cookbook .topic p.topic-title::after {
   content: "";
   position: absolute;
   width: 2px;
@@ -1722,7 +1722,7 @@ p {
   background-color: #f7f7f7;
 }
 
-#concepts .topic blockquote, #guide .topic blockquote, #cookbook .topic blockquote, #tutorials .topic blockquote {
+#concepts .topic blockquote, #guide .topic blockquote, #cookbook .topic blockquote {
   padding-left: 32px;
   width: 555px;
   font-size: 16px;
@@ -1820,8 +1820,16 @@ table.field-list tbody tr td {
 
 .navbar header .navbar-menu ul {
   margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 .navbar header .navbar-menu ul li {
