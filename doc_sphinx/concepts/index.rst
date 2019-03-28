@@ -33,11 +33,19 @@ Concepts
        :end-before: endexcerpt
 
 
+.. topic:: `Scopes`_
+
+    .. include:: users.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+
 .. _Cloud: cloud.html
 .. _Folders and documents: folders_and_documents.html
 .. _IFC: ifc.html
 .. _Projects: projects.html
 .. _Users management: users.html
+.. _Scopes: scopes.html
 
 .. toctree::
    :hidden:
@@ -47,3 +55,4 @@ Concepts
     IFC <ifc>
     Projects <projects>
     Users management <users>
+    Scopes <scopes>

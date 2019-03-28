@@ -85,7 +85,6 @@ rst_prolog = f"""
 .. |bimdata_connect| replace:: {CONNECT_URL}
 """
 
-
 language = None
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
@@ -255,3 +254,13 @@ swagger2sphinx_swagger_location = "api/swagger.json"
 
 # Autosummary issue resolver
 numpydoc_show_class_members = False
+
+# SASS/SCSS
+from sassutils import builder
+
+OUTPUT_STYLE = os.environ.get("SCSS_OUTPUT_STYLE", "expanded")
+SCSS_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), "./_static/scss"))
+CSS_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), "./_static/css"))
+
+b = builder.Manifest(sass_path=SCSS_DIR, css_path=CSS_DIR, strip_extension=True)
+b.build("", output_style=OUTPUT_STYLE)
