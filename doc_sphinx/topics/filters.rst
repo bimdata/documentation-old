@@ -52,18 +52,18 @@ You can combine several filters. Elements matching all combined filters will be 
 
             import requests
 
-                url = "|api_url|/cloud/1/project/1/ifc"
+            url = "|api_url|/cloud/1/project/1/ifc"
 
-                querystring = {"status":"C"}
+            querystring = {"status":"C"}
 
-                headers = {
-                    'Content-Type': "application/json",
-                    'Authorization': "Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N",
-                    }
+            headers = {
+                'Content-Type': "application/json",
+                'Authorization': "Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N",
+                }
 
-                response = requests.request("GET", url, headers=headers, params=querystring)
+            response = requests.request("GET", url, headers=headers, params=querystring)
 
-                print(response.text)
+            print(response.text)
 
    .. tab-container:: javascript
         :title: JavaScript
