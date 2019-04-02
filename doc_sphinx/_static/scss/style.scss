@@ -136,3 +136,48 @@ code{
   font-family: "mononokibold";
   @include font-size(10px);
 }
+
+// custom COPY TO CLIPBOARD
+a.copybtn{
+  margin: .5rem;
+  padding: 0;
+  top: 0;
+  height: auto;
+  opacity: 1;
+  &:hover{
+    opacity: .6;
+    img{
+      opacity: .6;
+      @include transition(opacity 0.5s);
+    }
+  }
+}
+.o-tooltip--left:after{
+  left: -4px;
+  font-size: 14px;
+  letter-spacing: .05rem;
+  text-transform: lowercase;
+  padding: 0px 5px;
+  line-height: 1.5rem;
+  background-color: transparent;
+}
+.o-tooltip--left:hover:after {
+  opacity: .6;
+}
+
+// custom TABS 
+ul.contenttab-selector{
+  margin-top: 2.071rem!important;
+  li{
+    margin-right: 1.643rem!important;
+    padding: 0!important;
+    height: 30px;
+    background-color: $color-white!important; 
+    color: $color-primary!important;
+    border-radius: 0!important;
+    @include font-size(16px);
+    &.selected{
+      border-bottom: 2px solid $color-secondary;
+    }
+  }
+}
