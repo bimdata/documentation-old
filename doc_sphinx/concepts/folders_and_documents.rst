@@ -67,68 +67,67 @@ The name of the file field must be "``file``", this means that you have to fire 
 
     The filesize is the compressed size and not the actual size of the initial file due to HTTP Compression.
 
+.. content-tabs::
 
-cURL
-^^^^^^^^^
+   .. tab-container:: cURL
+        :title: cURL
 
-.. substitution-code-block:: bash
+         .. substitution-code-block:: bash
 
-    curl -X POST \
-    '|api_url|/cloud/1/project/1/document' \
-    -H 'authorization: Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N'
-    -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
-    -F name=my_custom_name \
-    -F file=@/path/to/XXX.pdf
+            curl -X POST \
+            '|api_url|/cloud/1/project/1/document' \
+            -H 'authorization: Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N'
+            -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
+            -F name=my_custom_name \
+            -F file=@/path/to/XXX.pdf
 
-JavaScript
-^^^^^^^^^^^
+   .. tab-container:: py
+        :title: Python
 
-.. substitution-code-block:: javascript
+         .. substitution-code-block:: python
 
-    var fs = require("fs");
-    var request = require("request");
+            import requests
 
-    var options = { method: 'POST',
-    url: '|api_url|/cloud/1/project/1/document',
-    headers:
-    { 'authorization': 'Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N',
-        'content-type': 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' },
-    formData:
-    { name: 'my_custom_name',
-        file:
-        { value: 'fs.createReadStream("/path/to/XXX.pdf")',
-            options: { filename: '/path/to/XXX.pdf', contentType: null } } } };
+            url = "|api_url|/cloud/1/project/1/document"
 
-    request(options, function (error, response, body) {
-    if (error) throw new Error(error);
+            headers = {
+                'authorization': 'Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N',
+            }
 
-    console.log(body);
-    });
+            payload = {
+                'name': 'my_custom_name'
+            }
 
+            files = {'file': open('/path/to/XXX.pdf', 'rb')}
 
-Python
-^^^^^^^^^
+            response = requests.request("POST", url, data=payload, files=files, headers=headers)
 
-.. substitution-code-block:: python
+            print(response.text)
 
-    import requests
+   .. tab-container:: javascript
+        :title: JavaScript
 
-    url = "|api_url|/cloud/1/project/1/document"
+         .. substitution-code-block:: javascript
 
-    headers = {
-        'authorization': 'Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N',
-    }
+            var fs = require("fs");
+            var request = require("request");
 
-    payload = {
-        'name': 'my_custom_name'
-    }
+            var options = { method: 'POST',
+            url: '|api_url|/cloud/1/project/1/document',
+            headers:
+            { 'authorization': 'Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N',
+                'content-type': 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' },
+            formData:
+            { name: 'my_custom_name',
+                file:
+                { value: 'fs.createReadStream("/path/to/XXX.pdf")',
+                    options: { filename: '/path/to/XXX.pdf', contentType: null } } } };
 
-    files = {'file': open('/path/to/XXX.pdf', 'rb')}
+            request(options, function (error, response, body) {
+            if (error) throw new Error(error);
 
-    response = requests.request("POST", url, data=payload, files=files, headers=headers)
-
-    print(response.text)
-
+            console.log(body);
+            });
 
 Response
 ---------
@@ -157,46 +156,48 @@ Download a document
 
 You can download files using the URL returned by the API. The URL is valid for 1 hour.
 
-cURL
-^^^^^^^^^
+.. content-tabs::
 
-.. code-block:: bash
+   .. tab-container:: cURL
+        :title: cURL
 
-    curl -X GET \
-    'https://storage.gra3.cloud.ovh.net/v1/AUTH_b6a1c0b6b7c041d3a71d56f84ce25102/bimdata-staging-dev/cloud_1/project_1/XXX.pdf?temp_url_sig=311d34059bbebc87cd7f37de244bb6b62d114679&temp_url_expires=1527771256'
+         .. substitution-code-block:: bash
 
-Javascript
-^^^^^^^^^^^
+            curl -X GET \
+            'https://storage.gra3.cloud.ovh.net/v1/AUTH_b6a1c0b6b7c041d3a71d56f84ce25102/bimdata-staging-dev/cloud_1/project_1/XXX.pdf?temp_url_sig=311d34059bbebc87cd7f37de244bb6b62d114679&temp_url_expires=1527771256'
 
-.. code-block:: javascript
+   .. tab-container:: py
+        :title: Python
 
-    var request = require("request");
+         .. substitution-code-block:: python
 
-    var url = 'https://storage.gra3.cloud.ovh.net/v1/AUTH_b6a1c0b6b7c041d3a71d56f84ce25102/bimdata-staging-dev/cloud_1/project_1/XXX.pdf?temp_url_sig=311d34059bbebc87cd7f37de244bb6b62d114679&temp_url_expires=1527771256'
+            import requests
 
-    var options = {
-    method: 'GET',
-    url: url,
-    }
+            url = "|api_url|/cloud/1/project/1/ifc"
 
-    request(options, function (error, response, body) {
-    if (error) throw new Error(error);
+            querystring = {"status":"C"}
 
-    console.log(body);
-    });
+            headers = {
+                'Content-Type': "application/json",
+                'Authorization': "Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N",
+                }
 
-Python
-^^^^^^^^^
+            response = requests.request("GET", url, headers=headers, params=querystring)
 
-.. code-block:: python
+            print(response.text)
 
-    import requests
+   .. tab-container:: javascript
+        :title: JavaScript
 
-    url = "https://storage.gra3.cloud.ovh.net/v1/AUTH_b6a1c0b6b7c041d3a71d56f84ce25102/bimdata-staging-dev/cloud_1/project_1/XXX.pdf?temp_url_sig=311d34059bbebc87cd7f37de244bb6b62d114679&temp_url_expires=1527771256"
+         .. substitution-code-block:: javascript
 
-    response = requests.request("GET", url)
+            import requests
 
-    print(response.text)
+            url = "https://storage.gra3.cloud.ovh.net/v1/AUTH_b6a1c0b6b7c041d3a71d56f84ce25102/bimdata-staging-dev/cloud_1/project_1/XXX.pdf?temp_url_sig=311d34059bbebc87cd7f37de244bb6b62d114679&temp_url_expires=1527771256"
+
+            response = requests.request("GET", url)
+
+            print(response.text)
 
 References
 --------------
