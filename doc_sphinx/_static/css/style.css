@@ -1935,6 +1935,7 @@ html, body {
   background-color: white;
   color: #979797;
   font-family: "robotoregular", sans-serif;
+  scroll-behavior: smooth;
   font-size: 14px;
   font-size: 1rem;
 }
@@ -2096,6 +2097,21 @@ code {
   font-family: "mononokibold";
   font-size: 10px;
   font-size: 0.71429rem;
+}
+
+::-webkit-scrollbar {
+  height: 7px;
+}
+
+.section :target::before {
+  padding-top: 60px;
+  content: "";
+  display: block;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 a.copybtn {

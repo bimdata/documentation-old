@@ -8,6 +8,7 @@ html, body{
   background-color: rgba(255,255,255,1);
   color: rgba(151,151,151,1);
   font-family: $font-primary;
+  scroll-behavior: smooth;
   @include font-size(14px);
 }
 
@@ -135,6 +136,17 @@ code{
   line-height: 2;
   font-family: "mononokibold";
   @include font-size(10px);
+}
+::-webkit-scrollbar {
+  height: 7px;
+}
+.section{
+  :target::before{
+    padding-top: 60px;
+    content: "";
+    display: block;
+    @include transition(all 0.5s);
+  }
 }
 
 // custom COPY TO CLIPBOARD
