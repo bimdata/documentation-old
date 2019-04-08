@@ -78,7 +78,7 @@ In addition to that, we recommend:
 * Modern browser with `ECMAScript 2015 support`_
 
 .. _Getting started: ../viewer/getting_started.html
-.. _Including the Viewer in your app: ../viewer/include_viewer.html
+.. _Include the Viewer in your app: ../viewer/include_viewer.html
 .. _init the Viewer: ../viewer/init_viewer.html
 .. _doors filtering: ../viewer/example_doors.html
 .. _zoom in the model and focus on an element: ../viewer/zoom_in_the_model.html
