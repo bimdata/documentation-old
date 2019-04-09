@@ -1,7 +1,29 @@
-==================
+=========
 Tutorials
-==================
+=========
 
+.. topic:: `Viewer`_
+
+    .. include:: ../viewer/get_started.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+
+.. topic:: `API`_
+
+    .. include:: retrieve-elements.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+.. topic:: `BCF`_
+
+    .. include:: export_excel.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+.. _Viewer: ../viewer/getting_started.html
+.. _API: retrieve-elements.html
+.. _BCF: export_excel.html
 
 .. toctree::
    :hidden:

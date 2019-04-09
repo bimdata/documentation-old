@@ -157,7 +157,7 @@
       }
     }
 
-    .simple{
+    ul.simple{
       line-height: 2;
       li{
         padding: 0 0 0 1rem;
@@ -174,12 +174,23 @@
         }
       }
     }
+    ol.simple{
+      line-height: 2;
+      li{
+        dl{
+          margin: 0;
+          dt{
+            margin: 0;
+          }
+        }
+      }
+    }
   }
 }
 
 
 // page CONCEPTS & GUIDE
-#concepts, #guide, #cookbook{
+#concepts, #guide, #cookbook, #tutorials{
   h1{
     @include font-size(27px);
     text-align: center;

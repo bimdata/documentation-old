@@ -2,6 +2,12 @@
 Getting started with the Viewer
 ===============================
 
+.. 
+    excerpt
+        Getting Started with the Viewer
+    endexcerpt
+
+
 .. image:: /_images/viewer/BIMdata_viewer_small.png
    :scale: 100 %
    :alt: Viewer screenshot

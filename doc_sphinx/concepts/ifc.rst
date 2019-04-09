@@ -13,6 +13,17 @@ IFC
 
 BIMData API exposes a lot of tools for extract, update and manipulate information from `IFC files`_.
 
+The tools are compatible IFC2x3TC1 and IFC4 Add2.
+
+
+Depending on the options you chose, you can:
+
+* Retrieve the model as a 3D GLTF file
+* Retrieve elements and properties
+* Retrieve the spatial structure
+* Retrieve classifications, systemes and zones
+* Retrieve 2D plans in SVG format
+
 Upload an IFC
 =============
 
@@ -50,15 +61,6 @@ E                  Error               The process has failed.
                                        An alert is triggered and our team will fix it promptly.
 ================  ===================  ========================================================================================================
 
-Once the process is completed, depending on the options you chose, you can:
-
-* Retrieve the model as a 3D GLTF file
-* Retrieve elements and properties
-* Retrieve the spatial structure
-* Retrieve classifications, systemes and zones
-* Retrieve 2D plans in SVG format
-
-For all above, you can also update the data stored in our databases.
 
 
 

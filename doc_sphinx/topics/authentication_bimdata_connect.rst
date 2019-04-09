@@ -7,8 +7,15 @@ Authentication with BIMData Connect
         BIMData Connect handles sign-in and log in for your app.
     endexcerpt
 
-The OpenID Connect used by the BIMData Connect, our authentication system, is built on the shoulders of oAuth2.0. BIMData Connect handles the sign-in, the login and authentication processes of your application users. You can focus on creating and building your application.
-BIMData Connect handles sign-in and log in for your app
+The OpenID Connect used by the BIMData Connect, our authentication system, is built on the shoulders of oAuth2.0. 
+
+BIMData Connect handles the sign-in, the login and authentication processes of your application users. 
+You can focus on creating and building your application.
+The user's browser is redirect to the Sign-In page by the Web Application.
+
+The Sign-In page is on the BIMData Connect server. The BIMData Connect provides to the user's browser an Access Token.
+Then the user's browser could send requests to the Web Application sending the Access Token.
+The type of authentication is defined during the creation of the application.
 
 .. image:: /_images/topics/BIMdata_connect_diagram_colors.jpg
    :scale: 80 %
@@ -63,8 +70,8 @@ Use it when you need to have a scheduled response to an event and launch a scrip
 .. IMPORTANT::
     You cannot access as a user, therefore you cannot:
 
-        do any impersonation
-        manager fine granularity with access rights
+    * do any impersonation
+    * manager fine granularity with access rights
 
 
 When use a user impersonation?
