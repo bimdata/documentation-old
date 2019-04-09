@@ -8,19 +8,20 @@ Cloud
 
 .. 
     excerpt
-        Find out more about a Cloud and Cloud users.
+        A cloud is a global space where your projects are hosted.
     endexcerpt
 
 Concept
 ---------
 
-A cloud is a global space where doc `projects`_ are hosted. A cloud is a workspace for your company. It also could be a personal playground.
+A cloud is a global space where your `projects`_ are hosted with a similar configuration.
+A cloud contains projects, and each project contains your models, your Document Management System and BCFs.
 
 Cloud administrators are also Projects admin by default, they can see every user in their cloud and change everyone's roles.
 
 Cloud users can't see cloud collaborators. This means that a contractor on a project can't see every collaborator of the company.
 
-Not many actions are available directly on clouds.
+A cloud is a workspace for your company. It also could be a personal playground.
 
 References
 ------------
@@ -28,5 +29,10 @@ References
 * GET ``/cloud``
 * POST ``/cloud``
 * GET ``/cloud/{cloud_pk}/user``
+* GET ``/cloud/{cloud_pk}/user/{user_pk}``
+* GET ``/cloud/{cloud_pk}/invitation``
+* GET ``/cloud/{cloud_pk}/size``
+* GET ``/cloud/{cloud_pk}/create-demo``
+
 
 .. _projects: projects.html
