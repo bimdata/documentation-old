@@ -33,62 +33,59 @@ You can combine several filters. Elements matching all combined filters will be 
     No OR operation is supported in this version.
 
 
-cURL
-=========
+.. content-tabs::
 
-.. substitution-code-block:: bash
+   .. tab-container:: cURL
+        :title: cURL
 
-    curl -X GET \
-    '|api_url|/cloud/1/project/1/ifc?status=C' \
-    -H 'Authorization: Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N' \
-    -H 'Content-Type: application/json' \
+         .. substitution-code-block:: bash
 
-Python
-=========
+            curl -X GET \
+            '|api_url|/cloud/1/project/1/ifc?status=C' \
+            -H 'Authorization: Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N' \
+            -H 'Content-Type: application/json' \
 
-.. substitution-code-block:: python
+   .. tab-container:: py
+        :title: Python
 
-    import requests
+         .. substitution-code-block:: python
 
-    url = "|api_url|/cloud/1/project/1/ifc"
+            import requests
 
-    querystring = {"status":"C"}
+            url = "|api_url|/cloud/1/project/1/ifc"
 
-    headers = {
-        'Content-Type': "application/json",
-        'Authorization': "Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N",
-        }
+            querystring = {"status":"C"}
 
-    response = requests.request("GET", url, headers=headers, params=querystring)
+            headers = {
+                'Content-Type': "application/json",
+                'Authorization': "Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N",
+                }
 
-    print(response.text)
+            response = requests.request("GET", url, headers=headers, params=querystring)
 
+            print(response.text)
 
-Javascript
-===========
+   .. tab-container:: javascript
+        :title: JavaScript
 
-.. substitution-code-block:: javascript
+         .. substitution-code-block:: javascript
 
-    var request = require("request");
+            var request = require("request");
 
-    var options = { method: 'GET',
-    url: '|api_url|/cloud/1/project/1/ifc',
-    qs: { status: 'C' },
-    headers:
-    { Authorization: 'Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N',
-        'Content-Type': 'application/json',
-    }
-    };
+            var options = { method: 'GET',
+            url: '|api_url|/cloud/1/project/1/ifc',
+            qs: { status: 'C' },
+            headers:
+            { Authorization: 'Bearer ZeZr9oYxHspA8OdSCo9uftaLaEHX1N',
+                'Content-Type': 'application/json',
+            }
+            };
 
-    request(options, function (error, response, body) {
-    if (error) throw new Error(error);
+            request(options, function (error, response, body) {
+            if (error) throw new Error(error);
 
-    console.log(body);
-    });
-
-
-
-
+            console.log(body);
+            });
 
 
 .. _Swagger doc: https://api-beta.bimdata.io/doc
