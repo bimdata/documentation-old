@@ -31,6 +31,7 @@ Tutorials
     Getting Started with the Viewer <../viewer/getting_started>
     Tutorial: Retrieve elements of your model <retrieve-elements>
     Tutorial: Process BCF data for Excel export <export_excel>
+    API Onboarding <4_api_onboarding>
 
 
 
