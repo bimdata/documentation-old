@@ -14,8 +14,8 @@ Cloud
 Concept
 ---------
 
-A cloud is a global space where your `projects`_ are hosted with a similar configuration.
-A cloud contains projects, and each project contains your models, your Document Management System and BCFs.
+A cloud is a set of `projects`_ sharing the same configuration. 
+Each project contains your models, your Document Management System and BCFs.
 
 Cloud administrators are also Projects admin by default, they can see every user in their cloud and change everyone's roles.
 
