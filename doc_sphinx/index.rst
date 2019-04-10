@@ -30,11 +30,10 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
 
 
 .. toctree::
-    :caption: Viewer Documentation
+    :caption: Viewer Doc
     :maxdepth: 2
-    :name: sidebar
 
-    viewer/index
+    viewer/getting_started
     Viewer API <viewer/parameters>
 
 
@@ -42,7 +41,6 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
 .. toctree::
     :caption: BIMData Doc
     :maxdepth: 2
-    :name: sidebar
 
     API Reference<../../redoc/index.html#://>
     BIMData.io website <https://bimdata.io/>
