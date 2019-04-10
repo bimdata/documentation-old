@@ -28,10 +28,21 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     Contributing <contributing>
     BIMData.io website <https://bimdata.io/>
 
+
 .. toctree::
-    :caption: BIMData Doc
+    :caption: Viewer Documentation
+    :maxdepth: 2
     :name: sidebar
 
-    Viewer Doc <viewer/index>
-    API Doc<../../redoc/index.html#://>>
+    viewer/index
+    Viewer API <viewer/parameters>
+
+
+
+.. toctree::
+    :caption: BIMData Doc
+    :maxdepth: 2
+    :name: sidebar
+
+    API Reference<../../redoc/index.html#://>
     BIMData.io website <https://bimdata.io/>
