@@ -21,8 +21,6 @@ Cloud administrators are also Projects admin by default, they can see every user
 
 Cloud users can't see cloud collaborators. This means that a contractor on a project can't see every collaborator of the company.
 
-A cloud is a workspace for your company. It also could be a personal playground.
-
 References
 ------------
 

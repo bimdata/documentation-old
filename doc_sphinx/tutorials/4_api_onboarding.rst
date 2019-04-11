@@ -10,7 +10,7 @@ Through the API, you can manage your projects, the clouds, upload your IFC files
 BIMData API follows this general principles:
 
 * All API access is over HTTPS
-* All data is sent and received as JSON
+* All non-binary data is sent and received as JSON
 * Errors are sent using standard HTTP response codes (400, 404, 403)
 * Actions are indicated by HTTP verbs: GET, POST, PUT, PATCH, DELETE
 * All authentication is possible via OAuth2 bearer tokens
