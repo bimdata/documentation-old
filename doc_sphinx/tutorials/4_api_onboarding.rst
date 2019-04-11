@@ -5,7 +5,7 @@ API Onboarding
 ===============
 
 BIMData API is a tool to interact with your models stored on BIMData's servers.
-Through the API, you can manage your projects, the clouds, upload your IFC files and manage them through endpoints.
+Using the API, you can manage your projects, the clouds, upload your IFC files, manage them and retrieve and update data from your models through endpoints.
 
 BIMData API follows this general principles:
 
@@ -38,4 +38,4 @@ Filters
     To learn more about the `filters, see the concept page`_ .
 
 .. _cloud, see the concept page: ../concepts/cloud.html
-.. filters, see the concept page: ../concepts/filters.html
+.. _filters, see the concept page: ../concepts/filters.html
