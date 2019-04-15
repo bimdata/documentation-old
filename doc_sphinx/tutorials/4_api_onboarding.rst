@@ -24,7 +24,7 @@ Cloud
        :end-before: endexcerpt
 
 .. note::  
-    To learn more about the `cloud, see the concept page`_ .
+    To learn `more about the cloud, see the concept page`_ .
 
 
 Filters
@@ -35,7 +35,7 @@ Filters
        :end-before: endexcerpt
 
 .. note::  
-    To learn more about the `filters, see the concept page`_ .
+    To learn `more about the filters, see the concept page`_ .
 
-.. _cloud, see the concept page: ../concepts/cloud.html
-.. _filters, see the concept page: ../concepts/filters.html
+.. _more about the cloud, see the concept page: ../concepts/cloud.html
+.. _more about the filters, see the concept page: ../concepts/filters.html
