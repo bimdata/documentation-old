@@ -87,6 +87,7 @@ rst_prolog = f"""
 .. |bimdata_connect| replace:: {CONNECT_URL}
 """
 
+
 language = None
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
