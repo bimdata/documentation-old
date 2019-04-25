@@ -25,9 +25,8 @@ Admin
 
 A cloud Admin can see every other member of the Cloud, can invite other Users as admin in the Cloud.
 
+By default, the cloud Admin has admin rights on every project on the Cloud.
 
-
-A cloud admin has admin rights on every project on the Cloud.
 A cloud admin can ban any User from the Cloud.
 
 .. warning::
@@ -37,7 +36,7 @@ A cloud admin can ban any User from the Cloud.
 Member 
 ---------------
 
-A Cloud member is at least member of one Project.
+A Cloud member is at least a member of one Project.
 
 User in the Project
 ===================
@@ -60,7 +59,7 @@ The Project admin manages the Roles of the Users: the admin car add, edit or del
 Member 
 ----------------
 
-Can read and write EDM, model and BCF.
+Can read and write EDM, model, and BCF.
 
 Guest 
 ----------------
