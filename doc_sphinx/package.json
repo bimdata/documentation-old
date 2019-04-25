@@ -6,20 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "node bin/watch.js",
-    "build:apiref": "spectacle --target-dir ../html_doc/api _static/bimdata_api.json"
+    "build:apiref": "spectacle --app-dir /home/sarah/Public/www/documentation/theme_spectacle --target-dir ../html_doc/api _static/bimdata_api.json"
   },
   "author": "",
   "license": "CC-BY-4.0",
   "dependencies": {
     "@bimdata/utils": "0.1.6",
     "bootstrap": "^4.3.0",
+    "http-server": "^0.11.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.7",
     "spectacle-docs": "^1.0.7",
     "what-input": "^5.1.4"
   },
   "devDependencies": {
-    "ws": "^6.1.3",
-    "node-watch": "^0.6.0"
+    "grunt-sass": "^3.0.2",
+    "node-sass": "^4.11.0",
+    "node-watch": "^0.6.0",
+    "ws": "^6.1.3"
   }
 }
