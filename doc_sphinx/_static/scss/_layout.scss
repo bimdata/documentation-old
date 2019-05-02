@@ -18,7 +18,8 @@
       // custom LINK SUMMARY
       .toctree-l1{
         position: relative;
-        background: $color-background;
+
+        // picto CARET
         .toctree-expand{
           position: absolute;
           top: 7px;
@@ -37,6 +38,7 @@
             background-image: url("../_images/bimdata_carret-right.svg");
           }
         }
+
         a{
           padding: .5rem 2.5rem;
           position: relative;
@@ -44,9 +46,6 @@
           font-family: $font-primary;
           &:hover{
             background-color: $color-secondary;
-          }
-          &.internal{
-            
           }
           &.external{
             &::after{
@@ -69,6 +68,7 @@
           }
         }
 
+        // custom SUBMENU ACTIVE OR VISIBLE
         &.current, &.show{
           a{
             background-color: $color-secondary;
@@ -112,6 +112,7 @@
           }
         }
 
+        // custom for SUBMENU & CARET DOWN
         &.show{
           .toctree-expand{
             &::before{
