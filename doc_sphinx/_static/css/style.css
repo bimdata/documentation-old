@@ -1501,7 +1501,28 @@ p {
 }
 
 .content-doc_summary .wy-menu-vertical .toctree-l1 {
+  position: relative;
   background: #f7f7f7;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 .toctree-expand {
+  position: absolute;
+  top: 7px;
+  left: 10%;
+  cursor: pointer;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 .toctree-expand::before {
+  font-family: none;
+  content: "";
+  position: relative;
+  width: 17px;
+  height: 15px;
+  top: 4px;
+  background-size: 11px;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-image: url("../_images/bimdata_carret-right.svg");
 }
 
 .content-doc_summary .wy-menu-vertical .toctree-l1 a {
@@ -1513,19 +1534,6 @@ p {
 
 .content-doc_summary .wy-menu-vertical .toctree-l1 a:hover {
   background-color: #f9c72c;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1 a.internal::before {
-  content: "";
-  position: absolute;
-  background-image: url("../_images/bimdata_carret-right.svg");
-  width: 17px;
-  height: 15px;
-  top: 11px;
-  left: 22px;
-  background-size: 11px;
-  background-repeat: no-repeat;
-  z-index: 1;
 }
 
 .content-doc_summary .wy-menu-vertical .toctree-l1 a.external::after {
@@ -1542,22 +1550,18 @@ p {
   padding: 0 4.25rem;
 }
 
-.content-doc_summary .wy-menu-vertical .toctree-l1.current a {
+.content-doc_summary .wy-menu-vertical .toctree-l1.current a, .content-doc_summary .wy-menu-vertical .toctree-l1.show a {
   background-color: #f9c72c;
   border: none;
   font-weight: inherit;
 }
 
-.content-doc_summary .wy-menu-vertical .toctree-l1.current a.internal::before {
-  background-image: url("../_images/bimdata_carret-down.svg");
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a {
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a {
   position: relative;
   background-color: #f7f7f7;
 }
 
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a::before {
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a::before {
   content: "";
   position: absolute;
   left: 39px;
@@ -1568,20 +1572,45 @@ p {
   opacity: 0;
 }
 
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a:hover::before {
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a:hover::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a:hover::before {
   opacity: 1;
 }
 
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a.active::before {
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a.active::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a.active::before {
   opacity: 1;
 }
 
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 .toctree-l3 a::before {
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 .toctree-l3 a::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 .toctree-l3 a::before {
   left: 55px;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.show .toctree-expand::before {
+  background-image: url("../_images/bimdata_carret-down.svg");
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.show ul {
+  display: block;
+}
+
+.content-doc_summary .wy-menu-vertical .tutorial-toc ol {
+  margin-left: 42px;
+}
+
+.content-doc_summary .wy-menu-vertical .tutorial-toc ol li a {
+  padding: .5rem;
+  display: inline-block;
+}
+
+.content-doc_summary .wy-menu-vertical .tutorial-toc ol li a:hover {
+  background-color: transparent;
 }
 
 .content-doc_summary li.current {
   background: #f7f7f7;
+}
+
+.content-doc_summary li.current ul {
+  display: none;
 }
 
 .content-doc_content {
@@ -2042,18 +2071,30 @@ p {
   font-size: 0.85714rem;
 }
 
-ul li {
+ul li, ol li {
   font-size: 12px;
   font-size: 0.85714rem;
 }
 
 ol {
   margin-left: 1.25rem;
-  list-style-type: decimal;
+  list-style: none;
+  counter-reset: my-awesome-counter;
 }
 
 ol li {
-  list-style-type: decimal;
+  color: #2f374a;
+  counter-increment: my-awesome-counter;
+}
+
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  display: inline-block;
+  font-weight: bold;
+}
+
+ol li a:hover {
+  background-color: transparent;
 }
 
 ol li ol li {

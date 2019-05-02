@@ -90,16 +90,28 @@ p{
   margin: 0;
   @include font-size(12px);
 }
-ul{
+ul, ol{
   li{
     @include font-size(12px);
   }
 }
 ol{
   margin-left: 1.25rem;
-  list-style-type: decimal;
+  list-style: none;
+  counter-reset: my-awesome-counter;
   li{
-    list-style-type: decimal;
+    color: $color-primary;
+    counter-increment: my-awesome-counter;
+    &::before{
+      content: counter(my-awesome-counter) ". ";
+      display: inline-block;
+      font-weight: bold;
+    }
+    a{
+      &:hover{
+        background-color: transparent;
+      }
+    }
     ol{
       li{
         margin-left: 1rem;
