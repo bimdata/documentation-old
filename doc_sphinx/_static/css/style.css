@@ -1595,8 +1595,17 @@ p {
   margin-left: 42px;
 }
 
+.content-doc_summary .wy-menu-vertical .tutorial-toc ol li {
+  display: block;
+}
+
+.content-doc_summary .wy-menu-vertical .tutorial-toc ol li::before {
+  width: inherit;
+  display: inline-block;
+}
+
 .content-doc_summary .wy-menu-vertical .tutorial-toc ol li a {
-  padding: .5rem 0;
+  padding: .5rem;
   display: inline-block;
 }
 
