@@ -23,7 +23,7 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     Tutorials <tutorials/index>
     Cookbook <cookbook/index>
     Viewer Doc <viewer/index>
-    API Doc<../../api/index.html#://>
+    API Doc<../../redoc/index.html#://>
     Get Help <get_help>
     Contributing <contributing>
     BIMData.io website <https://bimdata.io/>
@@ -43,5 +43,5 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     :maxdepth: 2
 
     Viewer Doc <viewer/index>
-    API Doc<../../api/index.html#://>
+    API Doc<../../redoc/index.html#://>>
     BIMData.io website <https://bimdata.io/>

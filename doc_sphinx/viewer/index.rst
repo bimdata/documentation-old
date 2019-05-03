@@ -7,33 +7,26 @@ Viewer Documentation
 
 BIMData provides a 3D Viewer with which you can interact with Javascript.
 
-`Getting started`_
-
-Guide
-=================
-
-* `Include the Viewer in your app`_
+`Get started`_ wit the BIM Viewer now!
+Include the Viewer in your app.
 
 
-Cookbook
-===============
+Customize the Viewer
+======================
 
-Usage examples of the Viewer:
+Examples
+----------
 
  * How-to: `init the Viewer`_
  * How-to: `doors filtering`_
  * How-to: `use the viewFit focus`_
 
 
-
 Reference
-================
+------------
 
 * `Javascript methods of the Viewer`_
 
-
-Example of the Viewer
-==========================
 
 .. code-block:: javascript
 
@@ -88,15 +81,3 @@ In addition to that, we recommend:
 .. _WebGL-enabled browsers: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
 .. _ECMAScript 2015 support: https://kangax.github.io/compat-table/es6
 
-.. toctree::
-    :hidden:
-    :maxdepth: 1
-
-    getting_started
-    include_viewer
-    example_doors
-    init_viewer
-    get_your_model_into_the_viewer
-    parameters
-    viewfit_focus
-    zoom_in_the_model

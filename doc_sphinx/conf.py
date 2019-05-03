@@ -87,7 +87,6 @@ rst_prolog = f"""
 .. |bimdata_connect| replace:: {CONNECT_URL}
 """
 
-
 language = None
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
@@ -149,7 +148,7 @@ html_context = {
     "display_github": True,
     "conf_py_path": "doc_sphinx/",
     "source_suffix": ".rst",
-    "github_version": "dev/",
+    "github_version": "master/",
 }
 
 # The name of an image file (relative to this directory) to place at the top

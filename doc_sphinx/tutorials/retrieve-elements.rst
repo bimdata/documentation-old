@@ -1,6 +1,12 @@
 ================================
 Retrieve elements of your model
 ================================
+
+.. 
+    excerpt
+        How-to retrieve elements of your model through the API
+    endexcerpt
+
 .. topic:: This tutorial is about
 
     How-to retrieve elements of your model through the API
