@@ -14,6 +14,27 @@ Users can have this Roles:
 * user
 * guest
 
+Constant values in API
+-----------------------
+
+Using the API, there are constant values associated to roles. 
+See `the User endpoint`_ to learn about the usage.
+
+.. note::
+    
+    These constants are only used in API.
+
+When checking User's role through the API, the values are:
+
+* Cloud role's values
+   * admin: 100
+   * user: 50
+
+* Project role's values
+   * admin: 100
+   * user: 50
+   * guest: 25
+
 
 User in the Cloud
 ==================
@@ -65,3 +86,7 @@ Guest
 ----------------
 
 Can read-only : EDM, models, BCF and write BCF content.
+
+
+
+.. _the User endpoint: |api_url|/doc#/user/getSelfUser
