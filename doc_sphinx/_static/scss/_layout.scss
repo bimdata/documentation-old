@@ -17,7 +17,28 @@
       }
       // custom LINK SUMMARY
       .toctree-l1{
-        background: $color-background;
+        position: relative;
+
+        // picto CARET
+        .toctree-expand{
+          position: absolute;
+          top: 7px;
+          left: 10%;
+          cursor: pointer;
+          &::before{
+            font-family: none;
+            content: "";
+            position: relative;
+            width: 17px;
+            height: 15px;
+            top: 4px;
+            background-size: 11px;
+            background-repeat: no-repeat;
+            z-index: 1;
+            background-image: url("../_images/bimdata_carret-right.svg");
+          }
+        }
+
         a{
           padding: .5rem 2.5rem;
           position: relative;
@@ -25,20 +46,6 @@
           font-family: $font-primary;
           &:hover{
             background-color: $color-secondary;
-          }
-          &.internal{
-            &::before{
-              content: "";
-              position: absolute;
-              background-image: url("../_images/bimdata_carret-right.svg");
-              width: 17px;
-              height: 15px;
-              top: 11px;
-              left: 22px;
-              background-size: 11px;
-              background-repeat: no-repeat;
-              z-index: 1;
-            }
           }
           &.external{
             &::after{
@@ -61,16 +68,12 @@
           }
         }
 
-        &.current{
+        // custom SUBMENU ACTIVE OR VISIBLE
+        &.current, &.show{
           a{
             background-color: $color-secondary;
             border: none;
             font-weight: inherit;
-            &.internal{
-              &::before{
-                background-image: url("../_images/bimdata_carret-down.svg");
-              }
-            }
           }
           ul{
             .toctree-l2{
@@ -108,10 +111,42 @@
             }
           }
         }
+
+        // custom for SUBMENU & CARET DOWN
+        &.show{
+          .toctree-expand{
+            &::before{
+              background-image: url("../_images/bimdata_carret-down.svg");
+            }
+          }
+          ul{
+            display: block;
+          }
+        }
       }
+
+      // custom TUTORIAL TOCTREE
+      .tutorial-toc{
+        ol{
+          margin-left: 42px;
+          li{
+            a{
+              padding: .5rem 0;
+              display: inline-block;
+              &:hover{
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+
     }
     li.current{
       background: $color-background;
+      ul{
+        display: none;
+      }
     }
   }
 

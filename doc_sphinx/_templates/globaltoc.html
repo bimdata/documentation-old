@@ -13,14 +13,36 @@
     {# The singlehtml builder doesn't handle this toctree call when the toctree is empty. Skip building this for now.
     #}
     {% if 'singlehtml' not in builder %}
-      {% set global_toc = toctree(maxdepth=theme_navigation_depth|int, collapse=theme_collapse_navigation, includehidden=False) %}
+      {% set global_toc = toctree(maxdepth=theme_navigation_depth|int,
+                          collapse=theme_collapse_navigation|tobool,
+                          includehidden=theme_includehidden|tobool,
+                          titles_only=theme_titles_only|tobool) %}
     {% endif %}
     {% if global_toc %}
+    <div class="test">
       {{ global_toc }}
+    </div>
     {% else %}
     <!-- Local TOC -->
     <div class="local-toc">{{ toc }}</div>
       {% endif %}
+
+      {% if pagename == 'tutorials/index' %}
+      <div class="tutorial-toc">
+        <p class="caption">Guided Tour</p>
+        <ol>
+          <li class="toctree-l1"><a href="">Create your app</a></li>
+          <li class="toctree-l1"><a href="">Chose the auth type</a></li>
+          <li class="toctree-l1"><a href="">OpenID authentication</a></li>
+          <li class="toctree-l1"><a href="">API Onboarding</a></li>
+          <li class="toctree-l1"><a href="">The Viewer in your app</a></li>
+          <li class="toctree-l1"><a href="">Users management</a></li>
+          <li class="toctree-l1"><a href="">Asking for access</a></li>
+          <li class="toctree-l1"><a href="">Customize the Viewer</a></li>
+        </ol>
+      </div>
+      {% endif %}
+
     </div>
 
     <script>
@@ -28,6 +50,12 @@
         $(".toctree-l2 a").click(function() {
           $(".toctree-l2 a.active").removeClass("active");
           $(this).addClass("active");
+        });
+
+        $( ".toctree-l1 > .internal" ).before( "<span class='toctree-expand'></span>" );
+
+        $('.toctree-expand').on('click', function(){
+          $(this).closest('.toctree-l1').toggleClass('show');
         });
       });
       </script>

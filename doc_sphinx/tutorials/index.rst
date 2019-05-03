@@ -2,7 +2,6 @@
 Tutorials
 =========
 
-
 .. topic:: `Getting Started`_
 
     .. include:: getting_started.rst
@@ -41,7 +40,8 @@ Tutorials
 .. _Guided Tour: guided_tour.html
 
 .. toctree::
-   :hidden:
+    :hidden:
+    :maxdepth: 1
 
     Getting Started with the Viewer <../viewer/getting_started>
     Tutorial: Retrieve elements of your model <retrieve-elements>

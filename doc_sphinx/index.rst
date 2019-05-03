@@ -31,7 +31,9 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
 .. toctree::
     :caption: BIMData Doc
     :name: sidebar
+    :maxdepth: 2
 
     Viewer Doc <viewer/index>
+    Guided Tour <tutorials/index>
     API Doc<../../redoc/index.html#://>>
     BIMData.io website <https://bimdata.io/>

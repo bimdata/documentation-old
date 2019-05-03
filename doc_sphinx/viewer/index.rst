@@ -90,8 +90,7 @@ In addition to that, we recommend:
 
 .. toctree::
     :hidden:
-    :maxdepth: 1
-
+    
     getting_started
     include_viewer
     example_doors
