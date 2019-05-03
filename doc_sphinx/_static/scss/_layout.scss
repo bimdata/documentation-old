@@ -130,8 +130,13 @@
         ol{
           margin-left: 42px;
           li{
+            display: block;
+            &::before{
+              width: inherit;
+              display: inline-block;
+            }
             a{
-              padding: .5rem 0;
+              padding: .5rem;
               display: inline-block;
               &:hover{
                 background-color: transparent;
