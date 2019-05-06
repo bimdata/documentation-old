@@ -33,7 +33,7 @@ Tutorials
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. _Viewer: ../viewer/getting_started.html
+.. _Viewer: ../viewer/get_started.html
 .. _API: retrieve-elements.html
 .. _BCF: export_excel.html
 .. _Getting Started: getting_started.html
@@ -43,6 +43,7 @@ Tutorials
     :hidden:
     :maxdepth: 1
 
-    Getting Started with the Viewer <../viewer/getting_started>
+    Guided Tour <guided_tour>   
+    Getting Started with the Viewer <../viewer/get_started>
     Tutorial: Retrieve elements of your model <retrieve-elements>
     Tutorial: Process BCF data for Excel export <export_excel>
