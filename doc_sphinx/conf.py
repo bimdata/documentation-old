@@ -184,10 +184,11 @@ html_use_smartypants = True
 # Custom sidebar templates, maps document names to template names.
 html_sidebars = {
     
-    "tutorials/*": ["globaltoc.html", "rellinks.html"],
-    "topics/*": ["globaltoc.html", "rellinks.html"],
-    "guide/*": ["globaltoc.html", "rellinks.html"],
-    "**": ["globaltoc.html"],
+    "tutorials/index": ["globaltoc.html"],
+    "topics/index": ["globaltoc.html"],
+    "cookbook/index": ["globaltoc.html"],
+    "concepts/*": ["globaltoc.html"],
+    "**": ["globaltoc.html", "rellinks.html"],
 
     }
 
