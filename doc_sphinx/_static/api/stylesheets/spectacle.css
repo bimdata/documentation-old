@@ -15,28 +15,28 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     content: "Path";
     display: block;
     margin-bottom: 0.5em;
-    color: #f68b1f;
+    color: #f9c72c;
     text-transform: uppercase;
     font-size: 0.9rem; }
   #spectacle .swagger-operation-description:before {
     content: "Description";
     display: block;
     margin-bottom: 0.5em;
-    color: #f68b1f;
+    color: #f9c72c;
     text-transform: uppercase;
     font-size: 0.9rem; }
   #spectacle .swagger-request-params:before {
     content: "Request parameters";
     display: block;
     margin-bottom: 0.5em;
-    color: #f68b1f;
+    color: #f9c72c;
     text-transform: uppercase;
     font-size: 0.9rem; }
   #spectacle .swagger-request-body:before {
     content: "Request body";
     display: block;
     margin-bottom: 0.5em;
-    color: #f68b1f;
+    color: #f9c72c;
     text-transform: uppercase;
     font-size: 0.9rem; }
   #spectacle .swagger-request-body .json-schema-properties:before {
@@ -45,7 +45,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     content: "Responses";
     display: block;
     margin-bottom: 0.5em;
-    color: #f68b1f;
+    color: #f9c72c;
     text-transform: uppercase;
     font-size: 0.9rem; }
   #spectacle .swagger-global:before {
@@ -122,7 +122,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     content: "Security";
     display: block;
     margin-bottom: 0.5em;
-    color: #f68b1f;
+    color: #f9c72c;
     text-transform: uppercase;
     font-size: 0.9rem; }
   #spectacle .swagger-security-definition-basic:before {
@@ -138,14 +138,14 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     content: "Description";
     display: block;
     margin-bottom: 0.5em;
-    color: #f68b1f;
+    color: #f9c72c;
     text-transform: uppercase;
     font-size: 0.9rem; }
   #spectacle .json-schema-properties:before {
     content: "Properties";
     display: block;
     margin-bottom: 0.5em;
-    color: #f68b1f;
+    color: #f9c72c;
     text-transform: uppercase;
     font-size: 0.9rem; }
   #spectacle .json-schema-properties dl {
@@ -170,21 +170,21 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     content: "Example";
     display: block;
     margin-bottom: 0.5em;
-    color: #f68b1f;
+    color: #f9c72c;
     text-transform: uppercase;
     font-size: 0.9rem; }
   #spectacle .json-schema-array-items:before {
     content: "Items";
     display: block;
     margin-bottom: 0.5em;
-    color: #f68b1f;
+    color: #f9c72c;
     text-transform: uppercase;
     font-size: 0.9rem; }
   #spectacle .json-schema-allOf-inherited:before {
     content: "Inherited";
     display: block;
     margin-bottom: 0.5em;
-    color: #f68b1f;
+    color: #f9c72c;
     text-transform: uppercase;
     font-size: 0.9rem; }
   #spectacle .json-schema-anyOf > dl {
@@ -197,7 +197,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     content: "Additional properties";
     display: block;
     margin-bottom: 0.5em;
-    color: #f68b1f;
+    color: #f9c72c;
     text-transform: uppercase;
     font-size: 0.9rem; }
   #spectacle .json-inner-schema .json-schema-properties,
@@ -280,8 +280,8 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     line-height: 1;
     white-space: nowrap;
     cursor: default;
-    background: #767676;
-    color: #fefefe;
+    background: #f9c72c;
+    color: #2d3134;
     font-size: 0.75rem;
     border-radius: 4px;
     padding: 3px 6px; }
@@ -1010,7 +1010,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     bottom: 0;
     left: 0;
     top: 0;
-    width: 250px; }
+    width: 400px; }
     #spectacle #sidebar h5 {
       margin: 1.5rem 0 0.65rem;
       text-transform: uppercase;
@@ -1025,7 +1025,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis; }
       #spectacle #sidebar a.active {
-        color: #1779ba; }
+        color: #2f374a; }
     #spectacle #sidebar ul {
       list-style-type: none;
       padding: 0;
@@ -1217,7 +1217,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
       font-size: 80%;
       color: #cacaca; }
       #spectacle article .powered-by span {
-        color: #f68b1f; }
+        color: #f9c72c; }
     #spectacle article .operation .operation-tags {
       position: absolute;
       top: 0;
@@ -1261,9 +1261,9 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     transition: transform 0.5s ease;
     backface-visibility: hidden; }
     #spectacle .drawer-layout .drawer.slide-left {
-      transform: translateX(-250px); }
+      transform: translateX(-400px); }
     #spectacle .drawer-layout .drawer.slide-right {
-      transform: translateX(250px); }
+      transform: translateX(400px); }
     #spectacle .drawer-layout .drawer .drawer-overlay {
       position: absolute;
       top: 0;
@@ -1274,19 +1274,19 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     @media print, screen and (min-width: 64em) {
       #spectacle .drawer-layout .drawer.slide-left {
         transform: none;
-        margin-left: -250px; }
+        margin-left: -400px; }
       #spectacle .drawer-layout .drawer.slide-right {
         transform: none;
-        margin-left: 250px; }
+        margin-left: 400px; }
       #spectacle .drawer-layout .drawer .drawer-overlay {
         display: none; } }
   @media print, screen and (min-width: 64em) {
     #spectacle .drawer-layout.drawer-slide-left-large .drawer {
-      margin-left: -250px; }
+      margin-left: -400px; }
     #spectacle .drawer-layout.drawer-slide-left-large .floating-menu-icon {
       opacity: 0; }
     #spectacle .drawer-layout.drawer-slide-right-large .drawer {
-      margin-left: 250px; }
+      margin-left: 400px; }
     #spectacle .drawer-layout.drawer-slide-right-large .floating-menu-icon {
       opacity: 0; } }
   #spectacle .drawer-layout.drawer-open .floating-menu-icon {

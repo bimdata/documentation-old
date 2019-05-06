@@ -1,4 +1,11 @@
+@import 'api/monokai';
+@import 'api/foundation';
+@import 'api/spectacle';
+
 @import "../../node_modules/@bimdata/utils/scss/common";
+
+@import "doc-api";
+
 @import "home";
 @import "layout";
 @import "navbar";
@@ -46,6 +53,10 @@ h3{
 }
 h4{
   margin-top: 1rem;
+}
+h5{
+  font-family: $font-primary;
+  font-weight: normal;
 }
 a{
   color: $color-primary;
