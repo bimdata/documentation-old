@@ -188,7 +188,7 @@ html_sidebars = {
     "topics/index": ["globaltoc.html"],
     "cookbook/index": ["globaltoc.html"],
     "concepts/*": ["globaltoc.html"],
-    "**": ["globaltoc.html", "rellinks.html"],
+    "**": ["globaltoc.html"],
 
     }
 

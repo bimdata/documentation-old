@@ -1482,145 +1482,6 @@ p {
   margin-top: 60px;
 }
 
-.content-doc_summary {
-  padding: 0;
-  height: calc(100vh - 60px);
-  position: fixed;
-  background-color: #f7f7f7;
-}
-
-.content-doc_summary .wy-menu-vertical {
-  width: 100%;
-}
-
-.content-doc_summary .wy-menu-vertical .caption {
-  color: #2f374a;
-  font-size: 13px;
-  font-size: 0.92857rem;
-  text-transform: initial;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1 {
-  position: relative;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1 .toctree-expand {
-  position: absolute;
-  top: 7px;
-  left: 10%;
-  cursor: pointer;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1 .toctree-expand::before {
-  font-family: none;
-  content: "";
-  position: relative;
-  width: 17px;
-  height: 15px;
-  top: 4px;
-  background-size: 11px;
-  background-repeat: no-repeat;
-  z-index: 1;
-  background-image: url("../_images/bimdata_carret-right.svg");
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1 a {
-  padding: .5rem 2.5rem;
-  position: relative;
-  color: #2f374a;
-  font-family: "robotoregular", sans-serif;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1 a:hover {
-  background-color: #f9c72c;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1 a.external::after {
-  content: none;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 a {
-  margin: .4rem 0;
-  padding: 0 3.5rem;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 .toctree-l3 a {
-  margin: .5rem 0;
-  padding: 0 4.25rem;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1.current a, .content-doc_summary .wy-menu-vertical .toctree-l1.show a {
-  background-color: #f9c72c;
-  border: none;
-  font-weight: inherit;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a {
-  position: relative;
-  background-color: #f7f7f7;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a::before {
-  content: "";
-  position: absolute;
-  left: 39px;
-  top: 0;
-  width: 2px;
-  height: 100%;
-  background-color: #f9c72c;
-  opacity: 0;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a:hover::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a:hover::before {
-  opacity: 1;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a.active::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a.active::before {
-  opacity: 1;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 .toctree-l3 a::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 .toctree-l3 a::before {
-  left: 55px;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1.show .toctree-expand::before {
-  background-image: url("../_images/bimdata_carret-down.svg");
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1.show ul {
-  display: block;
-}
-
-.content-doc_summary .wy-menu-vertical .tutorial-toc ol {
-  margin-left: 42px;
-}
-
-.content-doc_summary .wy-menu-vertical .tutorial-toc ol li {
-  display: block;
-}
-
-.content-doc_summary .wy-menu-vertical .tutorial-toc ol li::before {
-  width: inherit;
-  display: inline-block;
-}
-
-.content-doc_summary .wy-menu-vertical .tutorial-toc ol li a {
-  padding: .5rem;
-  display: inline-block;
-}
-
-.content-doc_summary .wy-menu-vertical .tutorial-toc ol li a:hover {
-  background-color: transparent;
-}
-
-.content-doc_summary li.current {
-  background: #f7f7f7;
-}
-
-.content-doc_summary li.current ul {
-  display: none;
-}
-
 .content-doc_content {
   padding: 0 27px 4rem;
 }
@@ -1796,6 +1657,170 @@ table.field-list {
 table.field-list tbody tr td {
   padding: 0 1rem;
   background-color: white;
+}
+
+.content-doc_summary {
+  padding: 0;
+  height: calc(100vh - 60px);
+  position: fixed;
+  background-color: #f7f7f7;
+  overflow: auto;
+}
+
+.content-doc_summary .wy-menu-vertical {
+  width: 100%;
+}
+
+.content-doc_summary .wy-menu-vertical .caption {
+  color: #2f374a;
+  font-size: 13px;
+  font-size: 0.92857rem;
+  text-transform: initial;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 {
+  position: relative;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 .toctree-expand {
+  position: absolute;
+  top: 7px;
+  left: 10%;
+  cursor: pointer;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 .toctree-expand::before {
+  font-family: none;
+  content: "";
+  position: relative;
+  width: 17px;
+  height: 15px;
+  top: 0px;
+  left: -2px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-image: url("../_images/bimdata_carret-right.svg");
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 a {
+  padding: .5rem 2.5rem;
+  position: relative;
+  color: #2f374a;
+  font-family: "robotoregular", sans-serif;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 a:hover {
+  background-color: #f9c72c;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 a.external::after {
+  content: none;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 a {
+  margin: .4rem 0;
+  padding: 0 3.5rem;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 .toctree-l3 a {
+  margin: .5rem 0;
+  padding: 0 4.25rem;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current a, .content-doc_summary .wy-menu-vertical .toctree-l1.show a {
+  background-color: #f9c72c;
+  border: none;
+  font-weight: inherit;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 > ul, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 > ul {
+  display: block;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a {
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a::before {
+  content: "";
+  position: absolute;
+  left: 39px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #f9c72c;
+  opacity: 0;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a:hover::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a:hover::before {
+  opacity: 1;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a.active::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a.active::before {
+  opacity: 1;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 .toctree-l3 a::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 .toctree-l3 a::before {
+  left: 55px;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.show .toctree-expand::before {
+  background-image: url("../_images/bimdata_carret-down.svg");
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.show ul {
+  display: block;
+}
+
+.content-doc_summary .wy-menu-vertical .tutorial-toc ol {
+  margin-left: 42px;
+}
+
+.content-doc_summary .wy-menu-vertical .tutorial-toc ol li {
+  display: block;
+}
+
+.content-doc_summary .wy-menu-vertical .tutorial-toc ol li::before {
+  width: inherit;
+  display: inline-block;
+}
+
+.content-doc_summary .wy-menu-vertical .tutorial-toc ol li a {
+  padding: .5rem;
+  display: inline-block;
+}
+
+.content-doc_summary .wy-menu-vertical .tutorial-toc ol li a:hover {
+  background-color: transparent;
+}
+
+.content-doc_summary li.current {
+  background: #f7f7f7;
+}
+
+.content-doc_summary li.current ul {
+  display: none;
+}
+
+.content-doc_prev-next {
+  margin-top: 1rem;
+  padding: 0 1.618em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.content-doc_prev-next .prev, .content-doc_prev-next .next {
+  font-size: 80%;
 }
 
 /* custom NAVBAR
