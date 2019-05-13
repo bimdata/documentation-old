@@ -11,7 +11,7 @@
   "author": "",
   "license": "CC-BY-4.0",
   "dependencies": {
-    "@bimdata/utils": "0.1.6",
+    "@bimdata/utils": "0.2.8",
     "bootstrap": "^4.3.0",
     "http-server": "^0.11.1",
     "jquery": "^3.3.1",

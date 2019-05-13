@@ -1,59 +1,59 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'robotobold';
-  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
+  src: url("/dist/fonts/roboto-bold-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotoitalic';
-  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/roboto-italic-webfont.woff") format("woff");
+  src: url("/dist/fonts/roboto-italic-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotomedium';
-  src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
+  src: url("/dist/fonts/roboto-medium-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotoregular';
-  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  src: url("/dist/fonts/roboto-regular-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 /* variables COULEURS ------------------------ */
-/* variables LIGHTNESS COULEURS ------------------------ */
 /* variable FONTS ------------------------ */
 /*  BIM DATA VARIABLES ------------------------ */
 @font-face {
   font-family: 'robotobold';
-  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
+  src: url("/dist/fonts/roboto-bold-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotoitalic';
-  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/roboto-italic-webfont.woff") format("woff");
+  src: url("/dist/fonts/roboto-italic-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotomedium';
-  src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
+  src: url("/dist/fonts/roboto-medium-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotoregular';
-  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  src: url("/dist/fonts/roboto-regular-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -163,6 +163,10 @@
 }
 
 /* blocs BTN ------------------------ */
+.btn {
+  color: #2f374a;
+}
+
 .btn:focus {
   outline: none;
   box-shadow: none;
@@ -195,6 +199,15 @@
   border-color: #1c202c;
 }
 
+.btn-primary:active {
+  background-color: #212634;
+  border-color: #1c202c;
+}
+
+.btn-primary:active:focus {
+  box-shadow: none;
+}
+
 .btn-primary_small {
   height: 27px;
 }
@@ -208,10 +221,24 @@
 }
 
 .btn-secondary {
+  padding: 0;
   width: 100%;
-  background-color: #f9c72c;
+  height: 32px;
   border: none;
+  border-radius: 3px;
+  background-color: #f9c72c;
   color: #2f374a;
+  font-family: "robotoregular", sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.btn-secondary:active:focus {
+  box-shadow: none;
+}
+
+.btn-secondary:focus {
+  outline: none;
 }
 
 .btn-secondary_small {
@@ -224,7 +251,6 @@
 
 .btn-secondary_large {
   height: 39px;
-  line-height: 30px;
 }
 
 .btn-shadow {
@@ -363,11 +389,10 @@
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
 }
 
-/* custom CARD HORINZONTAL ------------------ */
-.card-horizontal {
+/* custom CARD VERTICAL ------------------ */
+.card-vertical {
   margin: 0 30px;
   padding: 0 36px;
   height: 327px;
@@ -387,22 +412,22 @@
   align-items: center;
 }
 
-.card-horizontal_content img {
+.card-vertical_content img {
   height: 92px;
 }
 
-.card-horizontal_content h2 {
+.card-vertical_content h2 {
   margin: 16px 0 7px 0;
   font-size: 21px;
   font-size: 1.5rem;
   font-family: "robotobold", sans-serif;
 }
 
-.card-horizontal_content h2::first-letter {
+.card-vertical_content h2::first-letter {
   text-transform: capitalize;
 }
 
-.card-horizontal_content span {
+.card-vertical_content span {
   margin: auto;
   width: 14.6px;
   height: 1.5px;
@@ -410,14 +435,14 @@
   background-color: #f9c72c;
 }
 
-.card-horizontal_content p {
+.card-vertical_content p {
   margin: 22px 0;
   font-size: 12px;
   font-size: 0.85714rem;
   line-height: 16px;
 }
 
-.card-horizontal_content a {
+.card-vertical_content .btn {
   margin: auto;
   width: 128px;
   border: none;
@@ -448,16 +473,16 @@
   justify-content: center;
 }
 
-.card-horizontal_content a:active:focus {
+.card-vertical_content .btn:active:focus {
   box-shadow: none;
 }
 
-.card-horizontal_content a:focus {
+.card-vertical_content .btn:focus {
   outline: none;
 }
 
-/* custom CARD VERTICAL --------------------- */
-.card-vertical {
+/* custom CARD HORIZONTAL --------------------- */
+.card-horizontal {
   position: relative;
   margin: 0 0 30px;
   padding: 0 33px;
@@ -478,7 +503,7 @@
   align-items: center;
 }
 
-.card-vertical::before {
+.card-horizontal::before {
   content: "";
   position: absolute;
   left: 0;
@@ -487,24 +512,24 @@
   background-color: #f9c72c;
 }
 
-.card-vertical_content {
+.card-horizontal_content {
   width: 100%;
 }
 
-.card-vertical_content h3 {
+.card-horizontal_content h3 {
   margin: 0 0 22px;
   color: #2f374a;
 }
 
-.card-vertical_content h3 a {
+.card-horizontal_content h3 a {
   font-family: "robotoregular", sans-serif;
 }
 
-.card-vertical_content p {
+.card-horizontal_content p {
   margin-bottom: 16px;
 }
 
-.card-vertical_content .action-button {
+.card-horizontal_content .action-button {
   position: relative;
   color: #2f374a;
   font-family: "robotomedium", sans-serif;
@@ -525,7 +550,7 @@
   transition: all 0.35s ease;
 }
 
-.card-vertical_content .action-button__rectangle {
+.card-horizontal_content .action-button__rectangle {
   width: 25px;
   height: 2px;
   position: absolute;
@@ -547,13 +572,13 @@
   transform-origin: right;
 }
 
-.card-vertical_content .action-button__arrow {
+.card-horizontal_content .action-button__arrow {
   position: absolute;
   top: 2%;
   left: 23%;
 }
 
-.card-vertical_content .action-button:hover {
+.card-horizontal_content .action-button:hover {
   text-decoration: none;
   -webkit-transform: translateX(22px);
   -moz-transform: translateX(22px);
@@ -561,7 +586,7 @@
   transform: translateX(22px);
 }
 
-.card-vertical_content .action-button:hover .action-button__rectangle {
+.card-horizontal_content .action-button:hover .action-button__rectangle {
   -webkit-transform: translateY(-50%) scaleX(0);
   -moz-transform: translateY(-50%) scaleX(0);
   -ms-transform: translateY(-50%) scaleX(0);
@@ -630,7 +655,6 @@
   -moz-box-orient: vertical;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .loader-layout__text {
@@ -1320,6 +1344,14 @@ p {
   font-size: 0.85714rem;
 }
 
+svg {
+  width: 5%;
+}
+
+svg .st0 {
+  fill: #2f374a;
+}
+
 /* ajout VARIABLES ------------------------ */
 .flex-container {
   display: -webkit-box;
@@ -1346,6 +1378,145 @@ p {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+}
+
+/* variables THEMES COULEURS ------------------------ */
+.theme-dark {
+  background-color: #11131c;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  -ms-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  /* custom TITLES & TEXT --------------------- */
+  /* custom BTNS ------------------------------ */
+  /* custom SVG ------------------------------- */
+  /* custom CARD HORINZONTAL ------------------ */
+  /* custom CARD VERTICAL --------------------- */
+  /* custom TABLE --------------------- */
+  /* custom BREADCRUMB --------------------- */
+  /* custom ĈODE HIGHLIGHT --------------------- */
+  /* custom ADMONITION --------------------- */
+  /* custom TABLE ----------------------------- */
+  /* custom NAVBAR --------------------- */
+}
+
+.theme-dark body {
+  background-color: #11131c;
+}
+
+.theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark p, .theme-dark a {
+  color: white;
+}
+
+.theme-dark a:visited {
+  color: white;
+}
+
+.theme-dark a.btn-secondary {
+  color: #2f374a;
+}
+
+.theme-dark .st0 {
+  fill: white;
+}
+
+.theme-dark .card-horizontal {
+  background-color: #1e212c;
+  background-color: #11131c;
+}
+
+.theme-dark .card-horizontal_content .action-button__rectangle {
+  background-color: white;
+}
+
+.theme-dark .card-vertical {
+  background-color: #1e212c;
+}
+
+.theme-dark .card-vertical_content {
+  width: 100%;
+}
+
+.theme-dark .card-vertical_content h3, .theme-dark .card-vertical_content p, .theme-dark .card-vertical_content .action-button {
+  color: white;
+}
+
+.theme-dark .card-vertical_content .action-button__rectangle {
+  background-color: white;
+}
+
+.theme-dark .card-vertical_content .btn {
+  box-shadow: none;
+}
+
+.theme-dark table thead .row-odd th:nth-child(odd) {
+  background-color: #181C28;
+}
+
+.theme-dark table thead .row-odd th:nth-child(2n) {
+  background-color: #202533;
+}
+
+.theme-dark table tbody tr td {
+  color: white;
+}
+
+.theme-dark table tbody tr td:nth-child(odd) {
+  background-color: #1e212c;
+}
+
+.theme-dark table tbody tr td:nth-child(2n) {
+  background-color: rgba(226, 226, 226, 0.08);
+}
+
+.theme-dark .breadcrumb-item {
+  background-color: #1e212c;
+}
+
+.theme-dark .content-doc_content .wy-breadcrumbs li {
+  background-color: #1e212c;
+}
+
+.theme-dark .highlight {
+  background-color: #1e212c;
+}
+
+.theme-dark .admonition {
+  background-color: #1E212C;
+}
+
+.theme-dark .admonition.note .admonition-title, .theme-dark .admonition.important .admonition-title, .theme-dark .admonition.warning .admonition-title {
+  background-color: #2D303A;
+  color: white;
+}
+
+.theme-dark .admonition-content {
+  background-color: #1e212c;
+}
+
+.theme-dark table thead {
+  border-color: #11131c;
+}
+
+.theme-dark table tbody tr {
+  border-color: #11131c;
+}
+
+.theme-dark .navbar {
+  background-color: #1e212c;
+}
+
+.theme-dark .navbar header .navbar-search #rtd-search-form input {
+  background-color: transparent;
+}
+
+.theme-dark .navbar header .navbar-menu ul li a {
+  color: white;
+}
+
+.theme-dark .navbar header .navbar-btn .btn.btn-shadow {
+  color: white;
 }
 
 .content-doc_home .content-doc_documentation {
@@ -1897,12 +2068,12 @@ table.field-list tbody tr td {
 }
 
 .navbar header .navbar-btn .btn {
+  padding: .5rem;
   height: 32px;
   width: 95%;
   border: none;
   border-radius: 3px;
   box-shadow: none;
-  line-height: 32px;
   font-size: 12px;
   font-size: 0.85714rem;
 }
@@ -1928,6 +2099,48 @@ table.field-list tbody tr td {
   -ms-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
   -o-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
   transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+/* custom DOCUMENTATION --------------------- */
+.theme-dark .content-doc_home .content-doc_documentation {
+  background-color: #11131c;
+}
+
+.theme-dark .content-doc_home .help_title p {
+  color: white;
+}
+
+.theme-dark .content-doc_summary {
+  background-color: #1e212c;
+}
+
+.theme-dark .content-doc_summary .wy-menu-vertical .caption {
+  color: white;
+}
+
+.theme-dark .content-doc_summary .wy-menu-vertical .toctree-l1 {
+  background-color: #1e212c;
+}
+
+.theme-dark .content-doc_summary .wy-menu-vertical .toctree-l1 a {
+  color: white;
+}
+
+.theme-dark .content-doc_summary .wy-menu-vertical .toctree-l1.current a {
+  color: #2f374a;
+}
+
+.theme-dark .content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a {
+  background-color: #1e212c;
+  color: white;
+}
+
+.theme-dark .content-doc_content .wy-breadcrumbs li a {
+  color: white;
+}
+
+.theme-dark #concepts .topic, .theme-dark #guide .topic, .theme-dark #cookbook .topic, .theme-dark #tutorials .topic {
+  background-color: #1e212c;
 }
 
 html, body {
@@ -2166,4 +2379,10 @@ ul.contenttab-selector li {
 
 ul.contenttab-selector li.selected {
   border-bottom: 2px solid #f9c72c;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  background-color: #212634;
+  border-color: #1c202c;
+  box-shadow: none;
 }

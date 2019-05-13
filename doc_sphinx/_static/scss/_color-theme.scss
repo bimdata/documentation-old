@@ -1,0 +1,48 @@
+/* custom DOCUMENTATION --------------------- */
+.theme-dark{
+  .content-doc_home{
+    .content-doc_documentation{
+      background-color: theme-color('black', 'light');
+    }
+    .help_title{
+      p{
+        color: theme-color('white', 'base');
+      }
+    }
+  }
+  .content-doc_summary{
+    background-color: theme-color('primary', 'dark');
+    .wy-menu-vertical{
+      .caption{
+        color: theme-color('white', 'base');
+      }
+      .toctree-l1{
+        background-color: theme-color('primary', 'dark');
+        a{
+          color: theme-color('white', 'base');
+        }
+        &.current{
+          a{
+            color: theme-color('primary', 'base');
+          }
+          ul{
+            .toctree-l2 a{
+              background-color: theme-color('primary', 'dark');
+              color: theme-color('white', 'base');
+            }
+          }
+        }
+      }
+    } 
+  }
+  .content-doc_content{
+    .wy-breadcrumbs li a{
+      color: theme-color('white', 'base');
+    }
+  }
+  #concepts, #guide, #cookbook, #tutorials{
+    .topic{
+      background-color: theme-color('primary', 'dark');
+    }
+  }
+}

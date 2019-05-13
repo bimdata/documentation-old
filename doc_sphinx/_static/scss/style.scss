@@ -1,7 +1,9 @@
-@import "../../node_modules/@bimdata/utils/scss/common";
+@import "../../node_modules/@bimdata/utils/src/scss/main.scss";
 @import "home";
 @import "layout";
 @import "navbar";
+
+@import "color-theme.scss";
 
 html, body{
   padding: 0;
@@ -192,4 +194,11 @@ ul.contenttab-selector{
       border-bottom: 2px solid $color-secondary;
     }
   }
+}
+
+// custom BTN
+.btn-primary:not(:disabled):not(.disabled):active:focus{
+  background-color: #212634;
+  border-color: #1c202c;
+  box-shadow: none;
 }
