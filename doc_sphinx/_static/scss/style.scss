@@ -8,6 +8,7 @@
 
 @import "home";
 @import "layout";
+@import "aside";
 @import "navbar";
 
 html, body{
@@ -101,23 +102,49 @@ p{
   margin: 0;
   @include font-size(12px);
 }
-ul{
+ul, ol{
   li{
     @include font-size(12px);
   }
 }
+
+// custom NUMBERED LIST 
 ol{
   margin-left: 1.25rem;
-  list-style-type: decimal;
+  list-style: none;
+  counter-reset: my-counter;
   li{
-    list-style-type: decimal;
+    color: $color-primary;
+    counter-increment: my-counter;
+    @include flexbox;
+    &::before{
+      width: 1%;
+      content: counter(my-counter) ". ";
+      font-weight: bold;
+    }
+    a{
+      &:hover{
+        background-color: transparent;
+      }
+    }
     ol{
       li{
         margin-left: 1rem;
       }
     }
+    dl{
+      width: 100%;
+      dd{
+        margin: 0;
+        ol{
+          margin: 0;
+        }
+      }
+    }
   }
 }
+
+// custom DEFINITION LIST 
 dl{
   margin-top: 29px;
   @include font-size(12px);
@@ -131,6 +158,8 @@ dl{
     }
   }
 }
+
+// custom CODE & PRE
 pre{
   margin-top: 1rem;
   padding: 1rem;
@@ -148,9 +177,7 @@ code{
   font-family: "mononokibold";
   @include font-size(10px);
 }
-::-webkit-scrollbar {
-  height: 7px;
-}
+
 .section{
   :target::before{
     padding-top: 60px;

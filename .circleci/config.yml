@@ -23,10 +23,13 @@ jobs:
             docker cp ~/repo deployment:/var/repo
             docker start deployment
 
-            docker exec -it deployment ansible-playbook build.yml -i inventories/staging --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa","tag_to_deploy":"branch"}' --user=deploy
-            docker push bimdata/documentation:branch
+            SLUG_BRANCH="$(echo "$CIRCLE_BRANCH" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
 
-            docker run -it bimdata/deployment:latest ansible-playbook -i inventories/staging deploy.yml --tags=documentation --extra-vars='{"ansible_ssh_private_key_file":"./files/deploy_rsa","tag_to_deploy":"branch"}' --user=deploy
+            docker exec -it deployment ansible-playbook build.yml -i inventories/dev --tags=documentation --extra-vars="{\"context_dir\":\"/var/repo\",\"ansible_ssh_private_key_file\":\"./files/deploy_rsa\",\"tag_to_deploy\":\"${SLUG_BRANCH}\"}" --user=deploy
+
+            docker push bimdata/documentation:${SLUG_BRANCH}
+
+            docker run -it bimdata/deployment:latest ansible-playbook -i inventories/dev deploy.yml --tags=documentation --extra-vars="{\"ansible_ssh_private_key_file\":\"./files/deploy_rsa\",\"tag_to_deploy\":\"${SLUG_BRANCH}\"}" --user=deploy
 
   master:
     <<: *container_config

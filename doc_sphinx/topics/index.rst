@@ -36,7 +36,14 @@ Guide
        :start-after: excerpt
        :end-before: endexcerpt
 
-
+.. toctree::
+    :hidden:
+    
+    API Introduction <introduction>
+    Authentication <authentication_bimdata_connect>
+    Authentication migration <authentication_migration>
+    Errors <errors>
+    Filters <filters>
 
 .. _API Introduction: introduction.html
 .. _Authentication: authentication_bimdata_connect.html
@@ -44,11 +51,4 @@ Guide
 .. _Errors: errors.html
 .. _Filters: filters.html
 
-.. toctree::
-   :hidden:
 
-       API Introduction <introduction>
-       Authentication <authentication_bimdata_connect>
-       Authentication migration <authentication_migration>
-       Errors <errors>
-       Filters <filters>

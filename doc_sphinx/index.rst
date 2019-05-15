@@ -23,25 +23,17 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     Tutorials <tutorials/index>
     Cookbook <cookbook/index>
     Viewer Doc <viewer/index>
-    API Doc<../../redoc/index.html#://>
+    API Doc<../../api/index.html#://>
     Get Help <get_help>
     Contributing <contributing>
     BIMData.io website <https://bimdata.io/>
 
-
-.. toctree::
-    :caption: Viewer Doc
-    :maxdepth: 2
-
-    viewer/getting_started
-    Viewer API <viewer/parameters>
-
-
-
 .. toctree::
     :caption: BIMData Doc
-    :maxdepth: 2
+    :name: sidebar
+    :maxdepth: 1
 
     Viewer Doc <viewer/index>
-    API Doc<../../redoc/index.html#://>>
+    Guided Tour <tutorials/guided_tour>
+    API Doc<../../api/index.html#://>>
     BIMData.io website <https://bimdata.io/>
