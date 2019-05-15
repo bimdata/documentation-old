@@ -118,8 +118,6 @@ import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
-# html_theme = "classic"
-
 html_theme_options = {
     "logo_only": False,
     "display_version": True,
@@ -252,7 +250,6 @@ epub_exclude_files = ["search.html"]
 intersphinx_mapping = {"https://docs.python.org/": None}
 
 swagger2sphinx_swagger_location = "api/swagger.json"
-# swagger2sphinx_swagger_location = "http://example.com/swagger.json"
 
 # Autosummary issue resolver
 numpydoc_show_class_members = False

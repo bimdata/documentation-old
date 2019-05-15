@@ -15,6 +15,9 @@
         @include font-size(13px);
         text-transform: initial;
       }
+      ul{
+        margin: 0;
+      }
       // custom LINK SUMMARY
       .toctree-l1{
         background: $color-background;
@@ -118,6 +121,9 @@
   // custom CONTENT
   &_content{
     padding: 0 27px 4rem;
+    &.doc-api{
+      padding-bottom: 0;
+    }
     .wy-breadcrumbs{
       margin: 0;
       li{
@@ -234,8 +240,9 @@
     blockquote{
       padding-left: 32px;
       width: 555px;
-      @include font-size(16px);
+      border: none;
       line-height: 22px;
+      @include font-size(16px);
     }
   }
 }
