@@ -30,7 +30,11 @@ jobs:
             docker push bimdata/documentation:${SLUG_BRANCH}
 
             docker run -it bimdata/deployment:latest ansible-playbook -i inventories/dev deploy.yml --tags=documentation --extra-vars="{\"ansible_ssh_private_key_file\":\"./files/deploy_rsa\",\"tag_to_deploy\":\"${SLUG_BRANCH}\"}" --user=deploy
-
+      - run:
+          name: url of the build
+          command: |
+            SLUG_BRANCH="$(echo "$CIRCLE_BRANCH" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
+            echo "$SLUG_BRANCH"
   master:
     <<: *container_config
     steps:
