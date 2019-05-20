@@ -67,7 +67,7 @@ The benefits
 
 Use it when you need to have a scheduled response to an event and launch a script depending on this response.
 
-.. IMPORTANT::
+.. IMPORTANT:: titre
     You cannot access as a user, therefore you cannot:
 
     * do any impersonation
@@ -103,20 +103,15 @@ Use it when you need to access the user's log, such as user's history, and repor
 
 There are three types of user auth, detailed beneath:
 
-* Authorization code flow
-* Implicit flow
-* Hybrid flow
+    * Authorization code flow
+    * Implicit flow
+    * Hybrid flow
+
 
 Type of user auth detailed
 ===========================
 
 The three types are three different mechanisms to aks for user's permissions.
-
-
-`Implicit flow` is the way when you don't need a back-end software. Everything is done in the user's browser. 
-It retrieves the access_token and can use it as you want. But when the token expires, you need the user to refresh it.
-
-
 
 Authorization code flow
 -----------------------
