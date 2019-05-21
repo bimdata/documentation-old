@@ -185,7 +185,7 @@ html_use_smartypants = True
 html_sidebars = {
     
     "tutorials/index": ["globaltoc.html"],
-    "topics/index": ["globaltoc.html"],
+    "guide/index": ["globaltoc.html"],
     "cookbook/index": ["globaltoc.html"],
     "concepts/*": ["globaltoc.html"],
     "**": ["globaltoc.html"],

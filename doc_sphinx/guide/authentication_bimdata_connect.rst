@@ -17,7 +17,7 @@ The Sign-In page is on the BIMData Connect server. The BIMData Connect provides 
 Then the user's browser could send requests to the Web Application sending the Access Token.
 The type of authentication is defined during the creation of the application.
 
-.. image:: /_images/topics/BIMdata_connect_diagram_colors.jpg
+.. image:: /_images/guide/BIMdata_connect_diagram_colors.jpg
    :scale: 80 %
    :alt: BIMData Connect handles sign-in and log in for your app
    :align: center
@@ -32,7 +32,7 @@ Get your Access Token
 
 Follow the procedure described in `Authentication by client credential`_
 
-.. image:: /_images/topics/auth_flow_diagram_colors.jpg
+.. image:: /_images/guide/auth_flow_diagram_colors.jpg
    :scale: 100 %
    :alt: Authentication flow
    :align: center

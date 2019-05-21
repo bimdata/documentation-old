@@ -27,7 +27,7 @@ Additionally to that, respecting the OpenID Connect standard means more features
 
 Learn more `about the new authentication on the dedicated page`_.
 
-.. _about the new authentication on the dedicated page: ../topics/authentication_bimdata_connect.html
+.. _about the new authentication on the dedicated page: ../guide/authentication_bimdata_connect.html
 
 
 Comparison of Requests

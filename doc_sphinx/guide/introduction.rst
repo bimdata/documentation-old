@@ -1,6 +1,6 @@
 .. index::
    single: API, HTTP, introduction, bimdata
-   module: topics
+   module: guide
 
 ======================================
 API Introduction

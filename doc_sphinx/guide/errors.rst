@@ -1,6 +1,6 @@
 .. index::
    single: errors, HTTP
-   module: topics
+   module: guide
 
 
 ===========

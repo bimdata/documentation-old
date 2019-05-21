@@ -30,7 +30,7 @@ Cloud
 Filters
 ========
 
-    .. include:: ../topics/filters.rst
+    .. include:: ../guide/filters.rst
        :start-after: excerpt
        :end-before: endexcerpt
 

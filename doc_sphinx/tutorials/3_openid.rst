@@ -28,4 +28,4 @@ Flow Authentication
 
 
 
-.. _learn more about the Authentication flows, read the Authentication guide page: ../topics/authentication_bimdata_connect.html
+.. _learn more about the Authentication flows, read the Authentication guide page: ../guide/authentication_bimdata_connect.html

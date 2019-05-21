@@ -1,6 +1,6 @@
 .. index::
    single: filters
-   module: topics
+   module: guide
 
 
 =========

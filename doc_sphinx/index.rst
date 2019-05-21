@@ -19,7 +19,7 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
 
     Getting Started <tutorials/getting_started>
     Concepts <concepts/index>
-    Guide by topics <topics/index>
+    Guide by topics <guide/index>
     Tutorials <tutorials/index>
     Cookbook <cookbook/index>
     Viewer Doc <viewer/index>
