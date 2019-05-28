@@ -117,7 +117,6 @@
         border: none;
         border-radius: 3px;
         box-shadow: none;
-        line-height: 32px;
         @include font-size(12px);
         &.btn-primary{
           background-color: rgba($color-primary,1);

@@ -1,8 +1,10 @@
+/* custom DOC API ----------------------------*/
 @import 'api/monokai';
 @import 'api/foundation';
 @import 'api/spectacle';
 
-@import "../../node_modules/@bimdata/utils/scss/common";
+/* import LIB UTILS --------------------------*/
+@import "../../node_modules/@bimdata/utils/src/scss/main";
 
 @import "doc-api";
 
@@ -11,10 +13,22 @@
 @import "aside";
 @import "navbar";
 
+/* custom THEME DARK -----------------------*/
+@import "theme/doc-theme";
+
+// @TODO: delete 
+
+
+.theme-dark{
+  
+}
+
+
+
 html, body{
   padding: 0;
-  background-color: rgba(255,255,255,1);
-  color: rgba(151,151,151,1);
+  background-color: $color-white;
+  color: $color-text;
   font-family: $font-primary;
   scroll-behavior: smooth;
   @include font-size(14px);
@@ -107,6 +121,12 @@ ul, ol{
     @include font-size(12px);
   }
 }
+ul{
+  margin: 0;
+  ul{
+    margin: 0;
+  }
+}
 
 // custom NUMBERED LIST 
 ol{
@@ -157,6 +177,11 @@ dl{
       margin-left: 1rem;
     }
   }
+}
+
+// custom BLOCKQUOTE
+blockquote{
+  border: none;
 }
 
 // custom CODE & PRE

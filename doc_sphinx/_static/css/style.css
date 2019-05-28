@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* custom DOC API ----------------------------*/
 /*
 
 Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
@@ -5282,34 +5283,54 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   color: #75715e;
 }
 
+<<<<<<< HEAD
 @font-face {
   font-family: 'robotobold';
   src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
+=======
+/* import LIB UTILS --------------------------*/
+@font-face {
+  font-family: 'robotobold';
+  src: url("/dist/fonts/roboto-bold-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-bold-webfont.woff") format("woff");
+>>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotoitalic';
+<<<<<<< HEAD
   src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/roboto-italic-webfont.woff") format("woff");
+=======
+  src: url("/dist/fonts/roboto-italic-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-italic-webfont.woff") format("woff");
+>>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotomedium';
+<<<<<<< HEAD
   src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
+=======
+  src: url("/dist/fonts/roboto-medium-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-medium-webfont.woff") format("woff");
+>>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotoregular';
+<<<<<<< HEAD
   src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+=======
+  src: url("/dist/fonts/roboto-regular-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-regular-webfont.woff") format("woff");
+>>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
 
+<<<<<<< HEAD
 /* variables COULEURS ------------------------ */
 /* variables LIGHTNESS COULEURS ------------------------ */
 /* variable FONTS ------------------------ */
@@ -5317,27 +5338,50 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 @font-face {
   font-family: 'robotobold';
   src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
+=======
+/* variables COLORS ------------------------------------ */
+/* variables LIGHTEN COLORS ---------------------------- */
+/* variables DARKEN COLORS ----------------------------- */
+/* variable FONTS -------------------------------------- */
+/*  BIM DATA VARIABLES -------------------------------- */
+/* BOOTSTRAP VARIABLES ------------------------------- */
+@font-face {
+  font-family: 'robotobold';
+  src: url("/dist/fonts/roboto-bold-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-bold-webfont.woff") format("woff");
+>>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotoitalic';
+<<<<<<< HEAD
   src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/roboto-italic-webfont.woff") format("woff");
+=======
+  src: url("/dist/fonts/roboto-italic-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-italic-webfont.woff") format("woff");
+>>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotomedium';
+<<<<<<< HEAD
   src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
+=======
+  src: url("/dist/fonts/roboto-medium-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-medium-webfont.woff") format("woff");
+>>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotoregular';
+<<<<<<< HEAD
   src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+=======
+  src: url("/dist/fonts/roboto-regular-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-regular-webfont.woff") format("woff");
+>>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
@@ -5427,6 +5471,10 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 .breadcrumb .breadcrumb-item {
   background-color: white;
+<<<<<<< HEAD
+=======
+  border-radius: 10px;
+>>>>>>> add new lib UTILS && custom dark mode
   padding: 8px;
   line-height: 1em;
   box-sizing: border-box;
@@ -5443,15 +5491,35 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 .breadcrumb-divider:before {
   content: "/";
+<<<<<<< HEAD
   color: #979797;
 }
 
 /* blocs BTN ------------------------ */
+=======
+  color: #94979a;
+}
+
+/* blocs BTN ------------------------ */
+.btn {
+  color: #2f374a;
+}
+
+>>>>>>> add new lib UTILS && custom dark mode
 .btn:focus {
   outline: none;
   box-shadow: none;
 }
 
+<<<<<<< HEAD
+=======
+.btn.btn-primary:hover {
+  color: white;
+  background-color: #212634;
+  border-color: #1c202c;
+}
+
+>>>>>>> add new lib UTILS && custom dark mode
 .btn-primary {
   padding: 0;
   width: 100%;
@@ -5479,6 +5547,18 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   border-color: #1c202c;
 }
 
+<<<<<<< HEAD
+=======
+.btn-primary:active {
+  background-color: #212634;
+  border-color: #1c202c;
+}
+
+.btn-primary:active:focus {
+  box-shadow: none;
+}
+
+>>>>>>> add new lib UTILS && custom dark mode
 .btn-primary_small {
   height: 27px;
 }
@@ -5491,10 +5571,45 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   height: 39px;
 }
 
+<<<<<<< HEAD
 .btn-secondary {
   width: 100%;
   background-color: #f9c72c;
   border: none;
+=======
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #1b202b;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  background-color: #1b202b;
+  box-shadow: none;
+}
+
+.btn-secondary {
+  padding: 0;
+  width: 100%;
+  height: 32px;
+  border: none;
+  border-radius: 3px;
+  background-color: #f9c72c;
+  color: #2f374a;
+  font-family: "robotoregular", sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.btn-secondary:active:focus {
+  box-shadow: none;
+}
+
+.btn-secondary:focus {
+  outline: none;
+}
+
+.btn-secondary:hover {
+  background-color: #f9c72c;
+>>>>>>> add new lib UTILS && custom dark mode
   color: #2f374a;
 }
 
@@ -5508,7 +5623,10 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 .btn-secondary_large {
   height: 39px;
+<<<<<<< HEAD
   line-height: 30px;
+=======
+>>>>>>> add new lib UTILS && custom dark mode
 }
 
 .btn-shadow {
@@ -5607,6 +5725,10 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .card {
   background: white;
   border-radius: 3px;
+<<<<<<< HEAD
+=======
+  border: none;
+>>>>>>> add new lib UTILS && custom dark mode
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.07);
 }
 
@@ -5647,11 +5769,18 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
+<<<<<<< HEAD
   -webkit-font-smoothing: antialiased;
 }
 
 /* custom CARD HORINZONTAL ------------------ */
 .card-horizontal {
+=======
+}
+
+/* custom CARD VERTICAL ------------------ */
+.card-vertical {
+>>>>>>> add new lib UTILS && custom dark mode
   margin: 0 30px;
   padding: 0 36px;
   height: 327px;
@@ -5671,22 +5800,38 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   align-items: center;
 }
 
+<<<<<<< HEAD
 .card-horizontal_content img {
   height: 92px;
 }
 
 .card-horizontal_content h2 {
+=======
+.card-vertical_content img {
+  height: 92px;
+}
+
+.card-vertical_content h2 {
+>>>>>>> add new lib UTILS && custom dark mode
   margin: 16px 0 7px 0;
   font-size: 21px;
   font-size: 1.5rem;
   font-family: "robotobold", sans-serif;
 }
 
+<<<<<<< HEAD
 .card-horizontal_content h2::first-letter {
   text-transform: capitalize;
 }
 
 .card-horizontal_content span {
+=======
+.card-vertical_content h2::first-letter {
+  text-transform: capitalize;
+}
+
+.card-vertical_content span {
+>>>>>>> add new lib UTILS && custom dark mode
   margin: auto;
   width: 14.6px;
   height: 1.5px;
@@ -5694,14 +5839,22 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   background-color: #f9c72c;
 }
 
+<<<<<<< HEAD
 .card-horizontal_content p {
+=======
+.card-vertical_content p {
+>>>>>>> add new lib UTILS && custom dark mode
   margin: 22px 0;
   font-size: 12px;
   font-size: 0.85714rem;
   line-height: 16px;
 }
 
+<<<<<<< HEAD
 .card-horizontal_content a {
+=======
+.card-vertical_content .btn {
+>>>>>>> add new lib UTILS && custom dark mode
   margin: auto;
   width: 128px;
   border: none;
@@ -5732,6 +5885,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   justify-content: center;
 }
 
+<<<<<<< HEAD
 .card-horizontal_content a:active:focus {
   box-shadow: none;
 }
@@ -5742,6 +5896,18 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 /* custom CARD VERTICAL --------------------- */
 .card-vertical {
+=======
+.card-vertical_content .btn:active:focus {
+  box-shadow: none;
+}
+
+.card-vertical_content .btn:focus {
+  outline: none;
+}
+
+/* custom CARD HORIZONTAL --------------------- */
+.card-horizontal {
+>>>>>>> add new lib UTILS && custom dark mode
   position: relative;
   margin: 0 0 30px;
   padding: 0 33px;
@@ -5762,7 +5928,11 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   align-items: center;
 }
 
+<<<<<<< HEAD
 .card-vertical::before {
+=======
+.card-horizontal::before {
+>>>>>>> add new lib UTILS && custom dark mode
   content: "";
   position: absolute;
   left: 0;
@@ -5771,15 +5941,24 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   background-color: #f9c72c;
 }
 
+<<<<<<< HEAD
 .card-vertical_content {
   width: 100%;
 }
 
 .card-vertical_content h3 {
+=======
+.card-horizontal_content {
+  width: 100%;
+}
+
+.card-horizontal_content h3 {
+>>>>>>> add new lib UTILS && custom dark mode
   margin: 0 0 22px;
   color: #2f374a;
 }
 
+<<<<<<< HEAD
 .card-vertical_content h3 a {
   font-family: "robotoregular", sans-serif;
 }
@@ -5802,6 +5981,18 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+=======
+.card-horizontal_content h3 a {
+  font-family: "robotoregular", sans-serif;
+}
+
+.card-horizontal_content p {
+  margin-bottom: 16px;
+}
+
+.card-horizontal_content a.action-button {
+  display: inline-block;
+>>>>>>> add new lib UTILS && custom dark mode
   -webkit-transition: all 0.35s ease;
   -moz-transition: all 0.35s ease;
   -ms-transition: all 0.35s ease;
@@ -5809,18 +6000,37 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   transition: all 0.35s ease;
 }
 
+<<<<<<< HEAD
 .card-vertical_content .action-button__rectangle {
   width: 25px;
   height: 2px;
   position: absolute;
   top: 50%;
   left: 20%;
+=======
+.card-horizontal_content a.action-button .arrow {
+  display: inline-block;
+  position: relative;
+  width: 32px;
+  height: 21px;
+}
+
+.card-horizontal_content a.action-button .arrow::before {
+  bottom: 3px;
+  content: "";
+  width: 25px;
+  position: absolute;
+  right: 0;
+  transform-origin: bottom;
+  height: 2px;
+>>>>>>> add new lib UTILS && custom dark mode
   background-color: #2f374a;
   -webkit-transition: all 0.35s ease;
   -moz-transition: all 0.35s ease;
   -ms-transition: all 0.35s ease;
   -o-transition: all 0.35s ease;
   transition: all 0.35s ease;
+<<<<<<< HEAD
   -webkit-transform: translateY(-50%) scaleX(1);
   -moz-transform: translateY(-50%) scaleX(1);
   -ms-transform: translateY(-50%) scaleX(1);
@@ -5850,6 +6060,426 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   -moz-transform: translateY(-50%) scaleX(0);
   -ms-transform: translateY(-50%) scaleX(0);
   transform: translateY(-50%) scaleX(0);
+}
+
+/* custom INITIALS ------------------------ */
+.initials {
+  height: 44px;
+  width: 44px;
+  border-radius: 100%;
+  background: #2f374a;
+  color: white;
+=======
+}
+
+.card-horizontal_content a.action-button .arrow::after {
+  border-color: transparent transparent #2f374a;
+  border-style: solid;
+  border-width: 0 0 8px 8px;
+  right: 0;
+  position: absolute;
+  top: 13px;
+  content: "";
+  display: inline-block;
+  transform: rotate(-45deg);
+}
+
+.card-horizontal_content a.action-button:hover {
+  margin-left: 1rem;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  -ms-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.card-horizontal_content a.action-button:hover .arrow::before {
+  width: 0;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  -ms-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.base-input-text-material {
+  position: relative;
+  margin-bottom: 45px;
+  margin-top: 20px;
+  /* active state */
+}
+
+.base-input-text-material.empty input:valid ~ label,
+.base-input-text-material.empty textarea:valid ~ label {
+  top: 0;
+  color: #94979A;
+  font-size: 1.071rem;
+}
+
+.base-input-text-material.empty input:focus ~ label,
+.base-input-text-material.empty textarea:focus ~ label {
+  top: -19px;
+  font-size: 0.857rem;
+  color: #2f374a;
+}
+
+.base-input-text-material.empty input:focus ~ .bar:before, .base-input-text-material.empty input:focus ~ .bar:after,
+.base-input-text-material.empty textarea:focus ~ .bar:before,
+.base-input-text-material.empty textarea:focus ~ .bar:after {
+  width: 50% !important;
+}
+
+.base-input-text-material.empty input:valid ~ .bar:before, .base-input-text-material.empty input:valid ~ .bar:after,
+.base-input-text-material.empty textarea:valid ~ .bar:before,
+.base-input-text-material.empty textarea:valid ~ .bar:after {
+  width: 0;
+}
+
+.base-input-text-material input,
+.base-input-text-material textarea,
+.base-input-text-material select,
+.base-input-text-material select[multiple] {
+  font-size: 1.071rem;
+  padding: 1px 0;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #9A9DA0;
+  height: auto;
+  background-color: white;
+}
+
+.base-input-text-material input:focus,
+.base-input-text-material textarea:focus,
+.base-input-text-material select:focus,
+.base-input-text-material select[multiple]:focus {
+  outline: none;
+}
+
+.base-input-text-material input:-webkit-autofill ~ label,
+.base-input-text-material textarea:-webkit-autofill ~ label,
+.base-input-text-material select:-webkit-autofill ~ label,
+.base-input-text-material select[multiple]:-webkit-autofill ~ label {
+  top: -19px !important;
+  color: #2f374a !important;
+  font-size: 0.857rem !important;
+}
+
+.base-input-text-material input:-moz-autofill ~ label,
+.base-input-text-material textarea:-moz-autofill ~ label,
+.base-input-text-material select:-moz-autofill ~ label,
+.base-input-text-material select[multiple]:-moz-autofill ~ label {
+  top: -19px !important;
+  color: #2f374a !important;
+  font-size: 0.857rem !important;
+}
+
+.base-input-text-material textarea {
+  height: 2em;
+  min-height: 2em;
+}
+
+.base-input-text-material select {
+  -webkit-appearance: none;
+}
+
+.base-input-text-material select[multiple] ~ label,
+.base-input-text-material input[type=file] ~ label {
+  top: -19px !important;
+  font-size: 0.857rem !important;
+  color: #2F374A !important;
+}
+
+.base-input-text-material label {
+  color: #94979A;
+  font-size: 1.071rem;
+  font-weight: 100;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transition: 0.2s ease all;
+}
+
+.base-input-text-material .file-input {
+  display: flex;
+  align-items: center;
+}
+
+.base-input-text-material .file-input input[type=file] {
+  position: absolute;
+  opacity: 0;
+  max-width: 99px;
+}
+
+.base-input-text-material .file-input input[type=file] ~ label {
+  position: relative;
+  top: 0 !important;
+  width: 100%;
+  max-width: 99px;
+  margin: 0;
+  pointer-events: auto;
+}
+
+.base-input-text-material .file-input .btn {
+  text-transform: uppercase;
+  border-radius: 7px;
+}
+
+.base-input-text-material .file-input .input-file-name {
+  margin-left: 10px;
+  border-bottom: 1px solid #9A9DA0;
+  min-height: 33px;
+  width: 100%;
+  font-size: 1.071rem;
+  color: #94979a;
+  display: flex;
+  align-items: center;
+}
+
+.base-input-text-material input:focus ~ label,
+.base-input-text-material input:valid ~ label,
+.base-input-text-material textarea:focus ~ label,
+.base-input-text-material textarea:valid ~ label,
+.base-input-text-material select:focus ~ label,
+.base-input-text-material select:valid ~ label,
+.base-input-text-material select[multiple]:focus ~ label,
+.base-input-text-material select[multiple]:valid ~ label {
+  top: -19px;
+  font-size: 0.857rem;
+  color: #2f374a;
+}
+
+.base-input-text-material .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.base-input-text-material .bar:before, .base-input-text-material .bar:after {
+  content: '';
+  height: 1px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #2F374A;
+  transition: 0.2s ease all;
+}
+
+.base-input-text-material .bar:before {
+  left: 50%;
+}
+
+.base-input-text-material .bar:after {
+  right: 50%;
+}
+
+.base-input-text-material input:valid ~ .bar:before, .base-input-text-material input:valid ~ .bar:after,
+.base-input-text-material input:focus ~ .bar:before,
+.base-input-text-material input:focus ~ .bar:after,
+.base-input-text-material textarea:valid ~ .bar:before,
+.base-input-text-material textarea:valid ~ .bar:after,
+.base-input-text-material textarea:focus ~ .bar:before,
+.base-input-text-material textarea:focus ~ .bar:after,
+.base-input-text-material select:valid ~ .bar:before,
+.base-input-text-material select:valid ~ .bar:after,
+.base-input-text-material select:focus ~ .bar:before,
+.base-input-text-material select:focus ~ .bar:after,
+.base-input-text-material select[multiple]:valid ~ .bar:before,
+.base-input-text-material select[multiple]:valid ~ .bar:after,
+.base-input-text-material select[multiple]:focus ~ .bar:before,
+.base-input-text-material select[multiple]:focus ~ .bar:after {
+  width: 50%;
+}
+
+.base-input-text-material .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.base-input-text-material--error input,
+.base-input-text-material--error textarea,
+.base-input-text-material--error select,
+.base-input-text-material--error select[multiple] {
+  border-bottom: 2px solid #FF3D1E;
+}
+
+.base-input-text-material--error input:focus,
+.base-input-text-material--error textarea:focus,
+.base-input-text-material--error select:focus,
+.base-input-text-material--error select[multiple]:focus {
+  border-color: #FF3D1E;
+}
+
+.base-input-text-material--error input ~ label,
+.base-input-text-material--error textarea ~ label,
+.base-input-text-material--error select ~ label,
+.base-input-text-material--error select[multiple] ~ label {
+  color: #FF3D1E !important;
+}
+
+.base-input-text-material--error .bar:before, .base-input-text-material--error .bar:after {
+  background-color: #FF3D1E;
+}
+
+.base-input-text-material .help-text {
+  color: #94979a;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.base-error-text {
+  font-size: 0.857rem;
+  color: #FF3D1E;
+}
+
+.base-success-text {
+  font-size: 0.857rem;
+  color: #00AF50;
+}
+
+.header {
+  padding: 15px 30px;
+  height: 60px;
+  position: relative;
+  background-color: white;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.07);
+}
+
+.header__container {
+  height: 100%;
+>>>>>>> add new lib UTILS && custom dark mode
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+<<<<<<< HEAD
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  font-size: 14px;
+  font-size: 1rem;
+}
+
+/* custom LOADER ------------------------ */
+.loader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1040;
+=======
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.logo-container {
+  flex-basis: 60px;
+>>>>>>> add new lib UTILS && custom dark mode
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+<<<<<<< HEAD
+.loader-layout {
+  margin-top: 6rem;
+  position: relative;
+  background: none;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-direction: normal;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+=======
+.navigation {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.navigation__item {
+  padding: 15px;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.navigation__item:after {
+  width: 100%;
+  height: 3px;
+  display: inline-block;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background-color: #2f374a;
+  opacity: 0;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.navigation__item:hover, .navigation__item.active {
+  text-decoration: none;
+}
+
+.navigation__item:hover:after, .navigation__item.active:after {
+  opacity: 1;
 }
 
 /* custom INITIALS ------------------------ */
@@ -5914,7 +6544,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   -moz-box-orient: vertical;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column;
+>>>>>>> add new lib UTILS && custom dark mode
 }
 
 .loader-layout__text {
@@ -6231,12 +6861,169 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   }
 }
 
+<<<<<<< HEAD
+=======
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar header {
+  height: 60px;
+  width: 100%;
+  align-items: center;
+}
+
+.navbar header .navbar-logo a, .navbar header .navbar-logo .version {
+  display: inline-block;
+}
+
+.navbar header .navbar-logo a img, .navbar header .navbar-logo a svg {
+  width: 100px;
+}
+
+.navbar header .navbar-logo .version span {
+  width: 24px;
+  display: block;
+  font-size: 10px;
+  font-size: 0.71429rem;
+  text-align: center;
+}
+
+.navbar header .navbar-menu ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.navbar header .navbar-menu ul li {
+  display: inline-block;
+}
+
+.navbar header .navbar-menu ul li a {
+  padding: 22px;
+  position: relative;
+  display: block;
+  color: #2f374a;
+  font-size: 10px;
+  font-size: 0.71429rem;
+  font-family: "robotomedium", sans-serif;
+}
+
+.navbar header .navbar-menu ul li a:hover {
+  text-decoration: none;
+}
+
+.navbar header .navbar-menu ul li a:hover::after {
+  background-color: rgba(249, 199, 44, 0.3);
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+}
+
+.navbar header .navbar-menu ul li a::after {
+  height: 3px;
+  width: 100%;
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  bottom: 0;
+  background-color: #f9c72c;
+  opacity: 0;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.navbar header .navbar-menu ul li a.active::after {
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.navbar header .navbar-btn .row {
+  justify-content: flex-end;
+}
+
+.navbar header .navbar-btn .btn {
+  padding: .5rem;
+  height: 32px;
+  width: 95%;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  font-size: 12px;
+  font-size: 0.85714rem;
+}
+
+.navbar header .navbar-btn .btn.btn-primary {
+  background-color: #2f374a;
+}
+
+.navbar header .navbar-btn .btn.btn-shadow {
+  background-color: rgba(47, 55, 74, 0);
+  color: #2f374a;
+  -webkit-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  -ms-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  -o-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+.navbar header .navbar-btn .btn.btn-shadow:hover {
+  background-color: rgba(47, 55, 74, 0.05);
+  -webkit-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  -ms-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  -o-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+>>>>>>> add new lib UTILS && custom dark mode
 /* custom SCROLLBAR ------------------------ */
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
 }
 
+<<<<<<< HEAD
+/* Track */
+::-webkit-scrollbar-track {
+  background: #D8D8D8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2f374a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+=======
 /* Track */
 ::-webkit-scrollbar-track {
   background: #D8D8D8;
@@ -6252,6 +7039,217 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   background: #555;
 }
 
+.content_summary {
+  margin-top: 60px;
+  padding: 0;
+  height: calc(100vh - 60px);
+  position: fixed;
+  left: 0;
+  background-color: #f7f7f7;
+}
+
+.content_summary .caption {
+  color: #2f374a;
+  font-size: 13px;
+  font-size: 0.92857rem;
+  text-transform: initial;
+}
+
+.content_summary .toctree-l1 {
+  background: #f7f7f7;
+}
+
+.content_summary .toctree-l1 a {
+  padding: .5rem 2.5rem;
+  position: relative;
+  color: #2f374a;
+  font-family: "robotoregular", sans-serif;
+}
+
+.content_summary .toctree-l1 a:hover {
+  background-color: #f9c72c;
+}
+
+.content_summary .toctree-l1 a.internal::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/bimdata_carret-right.svg");
+  width: 17px;
+  height: 15px;
+  top: 11px;
+  left: 22px;
+  background-size: 11px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.content_summary .toctree-l1 a.external::after {
+  content: none;
+}
+
+.content_summary .toctree-l1 ul .toctree-l2 a {
+  margin: .4rem 0;
+  padding: 0 3.5rem;
+}
+
+.content_summary .toctree-l1 ul .toctree-l2 .toctree-l3 a {
+  margin: .5rem 0;
+  padding: 0 4.25rem;
+}
+
+.content_summary .toctree-l1.current a {
+  background-color: #f9c72c;
+  border: none;
+  font-weight: inherit;
+}
+
+.content_summary .toctree-l1.current a.internal::before {
+  background-image: url("/img/bimdata_carret-down.svg");
+}
+
+.content_summary .toctree-l1.current ul .toctree-l2 a {
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+.content_summary .toctree-l1.current ul .toctree-l2 a::before {
+  content: "";
+  position: absolute;
+  left: 39px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #f9c72c;
+  opacity: 0;
+}
+
+.content_summary .toctree-l1.current ul .toctree-l2 a:hover::before {
+  opacity: 1;
+}
+
+.content_summary .toctree-l1.current ul .toctree-l2 a.active::before {
+  opacity: 1;
+}
+
+.content_summary .toctree-l1.current ul .toctree-l2 .toctree-l3 a::before {
+  left: 55px;
+}
+
+.content_summary a {
+  color: #2f374a;
+}
+
+.content_summary a:hover {
+  text-decoration: none;
+}
+
+.content_summary .aside-content .link a {
+  padding: .5rem 2rem;
+  display: block;
+}
+
+.content_summary .aside-content .link .submenu {
+  margin-left: 2rem;
+  display: none;
+}
+
+.content_summary .aside-content .link .submenu li a {
+  margin: .5rem 0;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.content_summary .aside-content .link .submenu li a:hover::before {
+  background-color: #f9c72c;
+}
+
+.content_summary .aside-content .link .submenu li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+}
+
+.content_summary .aside-content .link:hover > a {
+  background-color: #f9c72c;
+  color: #2f374a;
+}
+
+.content_summary .aside-content .link.active > a {
+  background-color: #f9c72c;
+}
+
+.content_summary .aside-content .active .submenu {
+  display: block;
+}
+
+.content_summary .aside-footer {
+  margin: 0 2rem;
+  padding: 0;
+  position: absolute;
+  bottom: 2rem;
+  font-size: 10px;
+  font-size: 0.71429rem;
+}
+
+.content_summary .aside-footer li {
+  margin: 0 1.5rem 0 0;
+  position: relative;
+  display: inline-block;
+}
+
+.content_summary .aside-footer li::after {
+  content: "—";
+  position: absolute;
+  top: -1px;
+  right: -16px;
+}
+
+.content_summary .aside-footer li:last-child::after {
+  content: none;
+}
+
+.content_summary .aside-footer li a {
+  position: relative;
+}
+
+.content_summary .aside-footer li a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #2f374a;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: right;
+  -moz-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+}
+
+.content_summary .aside-footer li a:hover::after {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+>>>>>>> add new lib UTILS && custom dark mode
+}
+
 .switch-component {
   display: -webkit-box;
   display: -moz-box;
@@ -6263,6 +7261,14 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+<<<<<<< HEAD
+=======
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+>>>>>>> add new lib UTILS && custom dark mode
 }
 
 .switch-component .switch {
@@ -6298,7 +7304,11 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   left: 0;
   right: 0;
   bottom: 0;
+<<<<<<< HEAD
   background-color: #E2E2E2;
+=======
+  background-color: #e3e4e4;
+>>>>>>> add new lib UTILS && custom dark mode
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
@@ -6380,7 +7390,11 @@ table tbody tr td:nth-child(odd) {
 }
 
 table tbody tr td:nth-child(even) {
+<<<<<<< HEAD
   background-color: #E2E2E2;
+=======
+  background-color: #e3e4e4;
+>>>>>>> add new lib UTILS && custom dark mode
 }
 
 .top-toolbar__choice-list-items {
@@ -6466,7 +7480,11 @@ table tbody tr td:nth-child(even) {
 }
 
 .top-toolbar__choice-list-items .choice-list .choice-list__list-options .items-container li.active {
+<<<<<<< HEAD
   background-color: #EFEFEF;
+=======
+  background-color: rgba(148, 151, 154, 0.1);
+>>>>>>> add new lib UTILS && custom dark mode
 }
 
 .base-valid-delete {
@@ -6542,9 +7560,267 @@ table tbody tr td:nth-child(even) {
   fill: #FF3D1E;
 }
 
+<<<<<<< HEAD
 html, body {
   font-family: "robotoregular", sans-serif;
   font-size: 14px;
+=======
+/* custom PROJECTS ----------------------------------- */
+.content-doc_content .wy-breadcrumbs li {
+  background-color: #1e212c;
+}
+
+.theme-dark {
+  /* custom COLORS --------------------------------------- */
+  /* custom TYPOGRAPHY ----------------------------------- */
+  /* custom BTNS ---------------------------------------- */
+}
+
+.theme-dark .example {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-dark #colors .color .light .color_content-title, .theme-dark #colors .color .text-light .color_content-title, .theme-dark #colors .color .black-light .color_content-title, .theme-dark #colors .color .primary-dark .color_content-title, .theme-dark #colors .color .secondary-dark .color_content-title, .theme-dark #colors .color .text-dark .color_content-title, .theme-dark #colors .color .background-dark .color_content-title {
+  color: white;
+}
+
+.theme-dark #typography .fontsize-content span, .theme-dark #typography .fontweight-content span {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.theme-dark #buttons .buttons-content_style span {
+  color: white;
+}
+
+.theme-dark #buttons .buttons-content_style:last-child {
+  background-color: #1e212c;
+}
+
+.theme-dark {
+  background-color: #1e212c;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  -ms-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  /* custom TITLES & TEXT --------------------- */
+  /* custom SVG ------------------------------- */
+  /* custom ĈODE HIGHLIGHT --------------------- */
+  /* custom COMPONENT ADMONITIONS ------------------------------ */
+  /* custom COMPONENT BREADCRUMB ------------------------------- */
+  /* custom COMPONENT BUTTONS ---------------------------------- */
+  /* custom COMPONENT CARD HORINZONTAL ------------------------- */
+  /* custom COMPONENT CARD VERTICAL ---------------------------- */
+  /* custom COMPONENT FORM -------------------------------------- */
+  /* custom COMPONENT LOADER ----------------------------------- */
+  /* custom COMPONENT NAVBAR ----------------------------------- */
+  /* custom COMPONENT SIDEBAR --------------------------------- */
+  /* custom COMPONENT TABLE ----------------------------------- */
+}
+
+.theme-dark body {
+  background-color: #1e212c;
+}
+
+.theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark p, .theme-dark a {
+  color: white;
+}
+
+.theme-dark a:visited {
+  color: white;
+}
+
+.theme-dark a:hover {
+  color: white;
+}
+
+.theme-dark a:hover::after {
+  background-color: white;
+}
+
+.theme-dark .st0 {
+  fill: white;
+}
+
+.theme-dark .highlight {
+  background-color: #1e212c;
+}
+
+.theme-dark pre[class*="language-"] {
+  background-color: #11131c;
+}
+
+.theme-dark .admonition {
+  background-color: #1e212c;
+}
+
+.theme-dark .admonition.note .admonition-title, .theme-dark .admonition.important .admonition-title, .theme-dark .admonition.warning .admonition-title {
+  background-color: #2d303a;
+  color: white;
+}
+
+.theme-dark .admonition-content {
+  background-color: #1e212c;
+}
+
+.theme-dark .breadcrumb-item {
+  background-color: #1e212c;
+}
+
+.theme-dark a.btn-secondary {
+  color: #2f374a;
+}
+
+.theme-dark .btn-shadow {
+  color: white;
+}
+
+.theme-dark .btn-shadow:hover {
+  background-color: rgba(227, 228, 228, 0.2);
+  color: white;
+}
+
+.theme-dark .card-header {
+  background-color: #07090c;
+}
+
+.theme-dark .card-body {
+  background-color: #11131c;
+}
+
+.theme-dark .base-card__header {
+  background-color: #07090c;
+}
+
+.theme-dark .base-card__content {
+  background-color: #11131c;
+}
+
+.theme-dark .card-horizontal {
+  background-color: #11131c;
+}
+
+.theme-dark .card-horizontal_content a.action-button .arrow::before {
+  background-color: white;
+}
+
+.theme-dark .card-horizontal_content a.action-button .arrow::after {
+  border-color: transparent transparent white;
+}
+
+.theme-dark .card-vertical {
+  background-color: #11131c;
+}
+
+.theme-dark .card-vertical_content {
+  width: 100%;
+}
+
+.theme-dark .card-vertical_content h3, .theme-dark .card-vertical_content p, .theme-dark .card-vertical_content .action-button {
+  color: white;
+}
+
+.theme-dark .card-vertical_content .action-button__rectangle {
+  background-color: white;
+}
+
+.theme-dark .card-vertical_content .btn {
+  box-shadow: none;
+}
+
+.theme-dark .base-input-text-material input {
+  background-color: transparent;
+}
+
+.theme-dark .loader {
+  background-color: #1e212c;
+}
+
+.theme-dark .navbar {
+  background-color: #1e212c;
+}
+
+.theme-dark .navbar header .navbar-search #rtd-search-form input {
+  background-color: transparent;
+}
+
+.theme-dark .navbar header .navbar-menu ul li a {
+  color: white;
+}
+
+.theme-dark .navbar header .navbar-btn .btn.btn-shadow {
+  color: white;
+}
+
+.theme-dark .content_summary {
+  background-color: #11131c;
+}
+
+.theme-dark .content_summary .caption {
+  color: white;
+}
+
+.theme-dark .content_summary .aside-content .link .submenu li a {
+  color: white;
+}
+
+.theme-dark .content_summary .aside-footer li a:hover::after {
+  background-color: white;
+}
+
+.theme-dark table thead {
+  border-color: #11131c;
+}
+
+.theme-dark table thead .row-odd th:nth-child(odd) {
+  background-color: #1b202b;
+}
+
+.theme-dark table thead .row-odd th:nth-child(2n) {
+  background-color: #202533;
+}
+
+.theme-dark table tbody tr {
+  border-color: #11131c;
+}
+
+.theme-dark table tbody tr td {
+  color: white;
+}
+
+.theme-dark table tbody tr td:nth-child(odd) {
+  background-color: #1e212c;
+}
+
+.theme-dark table tbody tr td:nth-child(2n) {
+  background-color: rgba(227, 228, 228, 0.08);
+}
+
+.theme-dark .top-toolbar__choice-list-items .choice-list .choice-list__field-selected {
+  background-color: #11131c;
+}
+
+.theme-dark .top-toolbar__choice-list-items .choice-list .choice-list__field-selected path {
+  fill: white;
+}
+
+.theme-dark .top-toolbar__choice-list-items .choice-list .choice-list__field-selected span {
+  color: white;
+}
+
+.theme-dark .base-valid-delete {
+  background-color: #11131c;
+}
+
+.theme-dark .base-valid-delete .check-cross:hover, .theme-dark .base-valid-delete .check:hover {
+  background-color: rgba(227, 228, 228, 0.2);
+}
+
+html, body {
+  font-family: "robotoregular", sans-serif;
+  font-size: 14px;
+  scroll-behavior: smooth;
+>>>>>>> add new lib UTILS && custom dark mode
 }
 
 .container-fluid, .container, [class*="col-"] {
@@ -6600,10 +7876,25 @@ h4 {
 
 p {
   margin: 0;
+<<<<<<< HEAD
+=======
+  color: #94979a;
+>>>>>>> add new lib UTILS && custom dark mode
   font-size: 12px;
   font-size: 0.85714rem;
 }
 
+<<<<<<< HEAD
+=======
+svg {
+  width: 5%;
+}
+
+svg .st0 {
+  fill: #2f374a;
+}
+
+>>>>>>> add new lib UTILS && custom dark mode
 /* ajout VARIABLES ------------------------ */
 .flex-container {
   display: -webkit-box;
@@ -6797,18 +8088,31 @@ p {
   opacity: .5;
 }
 
+<<<<<<< HEAD
 .content-doc_home .content-doc_documentation {
+=======
+.content_home .content_documentation {
+  margin-top: 60px;
+>>>>>>> add new lib UTILS && custom dark mode
   height: 532px;
   background-color: #f7f7f7;
 }
 
+<<<<<<< HEAD
 .content-doc_home .content-doc_documentation .documentation_title h1 {
+=======
+.content_home .content_documentation .documentation_title h1 {
+>>>>>>> add new lib UTILS && custom dark mode
   margin: 62px 0 45px;
   font-size: 27px;
   font-size: 1.92857rem;
 }
 
+<<<<<<< HEAD
 .content-doc_home .content-doc_documentation .documentation .flex-container_equal {
+=======
+.content_home .content_documentation .documentation .flex-container_equal {
+>>>>>>> add new lib UTILS && custom dark mode
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -6821,11 +8125,19 @@ p {
   justify-content: center;
 }
 
+<<<<<<< HEAD
 .content-doc_home .content-doc_documentation .documentation .flex-container_equal .clef .card-horizontal_content img {
   padding: .8rem;
 }
 
 .content-doc_home .content-doc_documentation .documentation .flex-container_equal .box-round {
+=======
+.content_home .content_documentation .documentation .flex-container_equal .clef .card-horizontal_content img {
+  padding: .8rem;
+}
+
+.content_home .content_documentation .documentation .flex-container_equal .box-round {
+>>>>>>> add new lib UTILS && custom dark mode
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -6838,44 +8150,76 @@ p {
   align-items: center;
 }
 
+<<<<<<< HEAD
 .content-doc_home .content-doc_documentation .documentation .flex-container_equal .box-round span {
+=======
+.content_home .content_documentation .documentation .flex-container_equal .box-round span {
+>>>>>>> add new lib UTILS && custom dark mode
   display: block;
   background-color: #d8d8d8;
   border-radius: 50%;
 }
 
+<<<<<<< HEAD
 .content-doc_home .content-doc_documentation .documentation .flex-container_equal .box-round span:first-child {
+=======
+.content_home .content_documentation .documentation .flex-container_equal .box-round span:first-child {
+>>>>>>> add new lib UTILS && custom dark mode
   width: 4.5px;
   height: 4.5px;
 }
 
+<<<<<<< HEAD
 .content-doc_home .content-doc_documentation .documentation .flex-container_equal .box-round span:nth-child(2) {
+=======
+.content_home .content_documentation .documentation .flex-container_equal .box-round span:nth-child(2) {
+>>>>>>> add new lib UTILS && custom dark mode
   margin: 0 .25rem;
   width: 6px;
   height: 6px;
 }
 
+<<<<<<< HEAD
 .content-doc_home .content-doc_documentation .documentation .flex-container_equal .box-round span:last-child {
+=======
+.content_home .content_documentation .documentation .flex-container_equal .box-round span:last-child {
+>>>>>>> add new lib UTILS && custom dark mode
   width: 4.5px;
   height: 4.5px;
 }
 
+<<<<<<< HEAD
 .content-doc_home .help {
   margin-top: 47px;
 }
 
 .content-doc_home .help_title h2 {
+=======
+.content_home .help {
+  margin-top: 47px;
+}
+
+.content_home .help_title h2 {
+>>>>>>> add new lib UTILS && custom dark mode
   font-size: 25px;
   font-size: 1.78571rem;
 }
 
+<<<<<<< HEAD
 .content-doc_home .help_title p {
+=======
+.content_home .help_title p {
+>>>>>>> add new lib UTILS && custom dark mode
   color: #2f374a;
   font-size: 16px;
   font-size: 1.14286rem;
 }
 
+<<<<<<< HEAD
 .content-doc_home .help .flex-container {
+=======
+.content_home .help .flex-container {
+>>>>>>> add new lib UTILS && custom dark mode
   margin-top: 44px;
   display: -webkit-box;
   display: -moz-box;
@@ -6892,6 +8236,7 @@ p {
   flex-flow: row wrap;
 }
 
+<<<<<<< HEAD
 .content-doc_home .help .flex-container .card-vertical {
   padding: 0 33px;
 }
@@ -6901,32 +8246,60 @@ p {
 }
 
 .content-doc_home .help .flex-container .card-vertical_content .action-button__rectangle {
+=======
+.content_home .help .flex-container .card-vertical {
+  padding: 0 33px;
+}
+
+.content_home .help .flex-container .card-vertical_content .action-button {
+  display: inline-block;
+}
+
+.content_home .help .flex-container .card-vertical_content .action-button__rectangle {
+>>>>>>> add new lib UTILS && custom dark mode
   top: 58%;
   left: 122%;
 }
 
+<<<<<<< HEAD
 .content-doc_home .help .flex-container .card-vertical_content .action-button__arrow {
+=======
+.content_home .help .flex-container .card-vertical_content .action-button__arrow {
+>>>>>>> add new lib UTILS && custom dark mode
   top: 8%;
   left: 140%;
 }
 
+<<<<<<< HEAD
 .content-doc_home .questions {
   margin: 80px 0 119px;
 }
 
 .content-doc_home .questions h2 {
+=======
+.content_home .questions {
+  margin: 80px 0 119px;
+}
+
+.content_home .questions h2 {
+>>>>>>> add new lib UTILS && custom dark mode
   margin-bottom: 24px;
   font-size: 25px;
   font-size: 1.78571rem;
 }
 
+<<<<<<< HEAD
 .content-doc_home .questions p {
+=======
+.content_home .questions p {
+>>>>>>> add new lib UTILS && custom dark mode
   margin: 0;
   font-size: 16px;
   font-size: 1.14286rem;
   line-height: 1.7rem;
 }
 
+<<<<<<< HEAD
 .content-doc {
   margin-top: 60px;
 }
@@ -6943,6 +8316,20 @@ p {
   margin: 0 7px;
   padding: 7px 9px;
   height: 38px;
+=======
+.content_layout {
+  margin-top: 60px;
+  padding: 0 27px 4rem;
+}
+
+.content_layout .breadcrumb {
+  margin: 0;
+}
+
+.content_layout .breadcrumb li {
+  margin: 0 7px;
+  padding: 7px 9px;
+>>>>>>> add new lib UTILS && custom dark mode
   position: relative;
   background-color: #f7f7f7;
   border-radius: 10px;
@@ -6950,19 +8337,28 @@ p {
   font-size: 0.92857rem;
 }
 
+<<<<<<< HEAD
 .content-doc_content .wy-breadcrumbs li a {
+=======
+.content_layout .breadcrumb li a {
+>>>>>>> add new lib UTILS && custom dark mode
   padding: 0;
   color: #2f374a;
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 .content-doc_content .wy-breadcrumbs li:first-child a i {
+=======
+.content_layout .breadcrumb li:first-child a i {
+>>>>>>> add new lib UTILS && custom dark mode
   margin: 0 .125rem .1rem 0;
   font-size: 16px;
   font-size: 1.14286rem;
   vertical-align: middle;
 }
 
+<<<<<<< HEAD
 .content-doc_content .wy-breadcrumbs li:last-child::after {
   content: "";
 }
@@ -6979,11 +8375,33 @@ p {
 }
 
 .content-doc_content ul.simple li {
+=======
+.content_layout .breadcrumb li:last-child::after {
+  content: "";
+}
+
+.content_layout .breadcrumb li::after {
+  content: " / ";
+  position: absolute;
+  top: 6px;
+  right: -9px;
+}
+
+.content_layout ul.simple {
+  line-height: 2;
+}
+
+.content_layout ul.simple li {
+>>>>>>> add new lib UTILS && custom dark mode
   padding: 0 0 0 1rem;
   position: relative;
 }
 
+<<<<<<< HEAD
 .content-doc_content ul.simple li::before {
+=======
+.content_layout ul.simple li::before {
+>>>>>>> add new lib UTILS && custom dark mode
   content: " ";
   position: absolute;
   background-color: #f9c72c;
@@ -6994,6 +8412,7 @@ p {
   top: 12px;
 }
 
+<<<<<<< HEAD
 .content-doc_content ol.simple {
   line-height: 2;
 }
@@ -7003,6 +8422,17 @@ p {
 }
 
 .content-doc_content ol.simple li dl dt {
+=======
+.content_layout ol.simple {
+  line-height: 2;
+}
+
+.content_layout ol.simple li dl {
+  margin: 0;
+}
+
+.content_layout ol.simple li dl dt {
+>>>>>>> add new lib UTILS && custom dark mode
   margin: 0;
 }
 
@@ -7072,9 +8502,15 @@ p {
 #concepts .topic blockquote, #guide .topic blockquote, #cookbook .topic blockquote, #tutorials .topic blockquote {
   padding-left: 32px;
   width: 555px;
+<<<<<<< HEAD
   font-size: 16px;
   font-size: 1.14286rem;
   line-height: 22px;
+=======
+  line-height: 22px;
+  font-size: 16px;
+  font-size: 1.14286rem;
+>>>>>>> add new lib UTILS && custom dark mode
 }
 
 #search-results .context .highlighted {
@@ -7108,6 +8544,7 @@ table.field-list tbody tr td {
   background-color: white;
 }
 
+<<<<<<< HEAD
 .content-doc_summary {
   padding: 0;
   height: calc(100vh - 60px);
@@ -7121,24 +8558,47 @@ table.field-list tbody tr td {
 }
 
 .content-doc_summary .wy-menu-vertical .caption {
+=======
+.content_summary {
+  overflow: auto;
+}
+
+.content_summary .caption {
+>>>>>>> add new lib UTILS && custom dark mode
   color: #2f374a;
   font-size: 13px;
   font-size: 0.92857rem;
   text-transform: initial;
 }
 
+<<<<<<< HEAD
 .content-doc_summary .wy-menu-vertical .toctree-l1 {
   position: relative;
 }
 
 .content-doc_summary .wy-menu-vertical .toctree-l1 .toctree-expand {
+=======
+.content_summary .wy-menu-vertical {
+  width: 100%;
+}
+
+.content_summary .wy-menu-vertical .toctree-l1 {
+  position: relative;
+}
+
+.content_summary .wy-menu-vertical .toctree-l1 .toctree-expand {
+>>>>>>> add new lib UTILS && custom dark mode
   position: absolute;
   top: 7px;
   left: 10%;
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 .content-doc_summary .wy-menu-vertical .toctree-l1 .toctree-expand::before {
+=======
+.content_summary .wy-menu-vertical .toctree-l1 .toctree-expand::before {
+>>>>>>> add new lib UTILS && custom dark mode
   font-family: none;
   content: "";
   position: relative;
@@ -7152,13 +8612,18 @@ table.field-list tbody tr td {
   background-image: url("../_images/bimdata_carret-right.svg");
 }
 
+<<<<<<< HEAD
 .content-doc_summary .wy-menu-vertical .toctree-l1 a {
+=======
+.content_summary .wy-menu-vertical .toctree-l1 a {
+>>>>>>> add new lib UTILS && custom dark mode
   padding: .5rem 2.5rem;
   position: relative;
   color: #2f374a;
   font-family: "robotoregular", sans-serif;
 }
 
+<<<<<<< HEAD
 .content-doc_summary .wy-menu-vertical .toctree-l1 a:hover {
   background-color: #f9c72c;
 }
@@ -7168,31 +8633,62 @@ table.field-list tbody tr td {
 }
 
 .content-doc_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 a {
+=======
+.content_summary .wy-menu-vertical .toctree-l1 a:hover {
+  background-color: #f9c72c;
+}
+
+.content_summary .wy-menu-vertical .toctree-l1 a.external::after {
+  content: none;
+}
+
+.content_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 a {
+>>>>>>> add new lib UTILS && custom dark mode
   margin: .4rem 0;
   padding: 0 3.5rem;
 }
 
+<<<<<<< HEAD
 .content-doc_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 .toctree-l3 a {
+=======
+.content_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 .toctree-l3 a {
+>>>>>>> add new lib UTILS && custom dark mode
   margin: .5rem 0;
   padding: 0 4.25rem;
 }
 
+<<<<<<< HEAD
 .content-doc_summary .wy-menu-vertical .toctree-l1.current a, .content-doc_summary .wy-menu-vertical .toctree-l1.show a {
+=======
+.content_summary .wy-menu-vertical .toctree-l1.current a, .content_summary .wy-menu-vertical .toctree-l1.show a {
+>>>>>>> add new lib UTILS && custom dark mode
   background-color: #f9c72c;
   border: none;
   font-weight: inherit;
 }
 
+<<<<<<< HEAD
 .content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 > ul, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 > ul {
   display: block;
 }
 
 .content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a {
+=======
+.content_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 > ul, .content_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 > ul {
+  display: block;
+}
+
+.content_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a, .content_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a {
+>>>>>>> add new lib UTILS && custom dark mode
   position: relative;
   background-color: #f7f7f7;
 }
 
+<<<<<<< HEAD
 .content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a::before {
+=======
+.content_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a::before, .content_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a::before {
+>>>>>>> add new lib UTILS && custom dark mode
   content: "";
   position: absolute;
   left: 39px;
@@ -7203,6 +8699,7 @@ table.field-list tbody tr td {
   opacity: 0;
 }
 
+<<<<<<< HEAD
 .content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a:hover::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a:hover::before {
   opacity: 1;
 }
@@ -7232,15 +8729,51 @@ table.field-list tbody tr td {
 }
 
 .content-doc_summary .wy-menu-vertical .tutorial-toc ol li::before {
+=======
+.content_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a:hover::before, .content_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a:hover::before {
+  opacity: 1;
+}
+
+.content_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a.active::before, .content_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a.active::before {
+  opacity: 1;
+}
+
+.content_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 .toctree-l3 a::before, .content_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 .toctree-l3 a::before {
+  left: 55px;
+}
+
+.content_summary .wy-menu-vertical .toctree-l1.show .toctree-expand::before {
+  background-image: url("../_images/bimdata_carret-down.svg");
+}
+
+.content_summary .wy-menu-vertical .toctree-l1.show ul {
+  display: block;
+}
+
+.content_summary .wy-menu-vertical .tutorial-toc ol {
+  margin-left: 42px;
+}
+
+.content_summary .wy-menu-vertical .tutorial-toc ol li {
+  display: block;
+}
+
+.content_summary .wy-menu-vertical .tutorial-toc ol li::before {
+>>>>>>> add new lib UTILS && custom dark mode
   width: inherit;
   display: inline-block;
 }
 
+<<<<<<< HEAD
 .content-doc_summary .wy-menu-vertical .tutorial-toc ol li a {
+=======
+.content_summary .wy-menu-vertical .tutorial-toc ol li a {
+>>>>>>> add new lib UTILS && custom dark mode
   padding: .5rem;
   display: inline-block;
 }
 
+<<<<<<< HEAD
 .content-doc_summary .wy-menu-vertical .tutorial-toc ol li a:hover {
   background-color: transparent;
 }
@@ -7254,6 +8787,21 @@ table.field-list tbody tr td {
 }
 
 .content-doc_prev-next {
+=======
+.content_summary .wy-menu-vertical .tutorial-toc ol li a:hover {
+  background-color: transparent;
+}
+
+.content_summary li.current {
+  background: #f7f7f7;
+}
+
+.content_summary li.current ul {
+  display: none;
+}
+
+.content_prev-next {
+>>>>>>> add new lib UTILS && custom dark mode
   margin-top: 1rem;
   padding: 0 1.618em;
   display: -webkit-box;
@@ -7268,7 +8816,11 @@ table.field-list tbody tr td {
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .content-doc_prev-next .prev, .content-doc_prev-next .next {
+=======
+.content_prev-next .prev, .content_prev-next .next {
+>>>>>>> add new lib UTILS && custom dark mode
   font-size: 80%;
 }
 
@@ -7414,7 +8966,10 @@ table.field-list tbody tr td {
   border: none;
   border-radius: 3px;
   box-shadow: none;
+<<<<<<< HEAD
   line-height: 32px;
+=======
+>>>>>>> add new lib UTILS && custom dark mode
   font-size: 12px;
   font-size: 0.85714rem;
 }
@@ -7442,10 +8997,84 @@ table.field-list tbody tr td {
   transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
 }
 
+<<<<<<< HEAD
 html, body {
   padding: 0;
   background-color: white;
   color: #979797;
+=======
+/* custom THEME DARK -----------------------*/
+.theme-dark .content_documentation {
+  background-color: #1e212c;
+}
+
+.theme-dark .content_home .help_title p {
+  color: white;
+}
+
+.theme-dark .content_summary {
+  background-color: #11131c;
+}
+
+.theme-dark .content_summary .toctree-l1 {
+  background-color: #11131c;
+}
+
+.theme-dark .content_summary .toctree-l1 a {
+  color: white;
+}
+
+.theme-dark .content_summary .toctree-l1 a:hover {
+  color: #2f374a;
+}
+
+.theme-dark .content_summary .toctree-l1.current a {
+  color: #2f374a;
+}
+
+.theme-dark .content_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a, .theme-dark .content_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a {
+  background-color: #11131c;
+  color: white;
+}
+
+.theme-dark .content_layout .breadcrumb li {
+  background-color: #11131c;
+}
+
+.theme-dark .content_layout .breadcrumb li a {
+  color: white;
+}
+
+.theme-dark .content_content .wy-breadcrumbs li {
+  background-color: #1e212c;
+}
+
+.theme-dark .navbar header .navbar-search #rtd-search-form input {
+  -webkit-box-shadow: 0 0 0 1000px #1e212c inset;
+}
+
+.theme-dark .navbar header .navbar-btn .btn.btn-shadow:hover {
+  background-color: rgba(227, 228, 228, 0.2);
+}
+
+.theme-dark input:-internal-autofill-selected {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.theme-dark #concepts .topic, .theme-dark #guide .topic, .theme-dark #cookbook .topic, .theme-dark #tutorials .topic {
+  background-color: #11131c;
+}
+
+.theme-dark #concepts .topic p.topic-title::after, .theme-dark #guide .topic p.topic-title::after, .theme-dark #cookbook .topic p.topic-title::after, .theme-dark #tutorials .topic p.topic-title::after {
+  opacity: .1;
+}
+
+html, body {
+  padding: 0;
+  background-color: white;
+  color: #94979a;
+>>>>>>> add new lib UTILS && custom dark mode
   font-family: "robotoregular", sans-serif;
   scroll-behavior: smooth;
   font-size: 14px;
@@ -7564,6 +9193,17 @@ ul li, ol li {
   font-size: 0.85714rem;
 }
 
+<<<<<<< HEAD
+=======
+ul {
+  margin: 0;
+}
+
+ul ul {
+  margin: 0;
+}
+
+>>>>>>> add new lib UTILS && custom dark mode
 ol {
   margin-left: 1.25rem;
   list-style: none;
@@ -7624,6 +9264,13 @@ dl dd table {
   margin-left: 1rem;
 }
 
+<<<<<<< HEAD
+=======
+blockquote {
+  border: none;
+}
+
+>>>>>>> add new lib UTILS && custom dark mode
 pre {
   margin-top: 1rem;
   padding: 1rem;

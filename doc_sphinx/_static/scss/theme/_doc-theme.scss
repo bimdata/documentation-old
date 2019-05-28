@@ -1,0 +1,103 @@
+.theme-dark{
+  .content{
+    // custom page HOME
+    &_documentation{
+      background-color: $color-dark-primary;
+    }
+    &_home{
+      .help_title{
+        p{
+          color: $color-white;
+        }
+      }
+    }
+
+    // custom SIDEBAR
+    &_summary{
+      background-color: $color-dark-background;
+      .toctree-l1{
+        background-color: $color-dark-background;
+        a{
+          color: $color-white;
+          &:hover{
+            color: $color-primary;
+          }
+        }
+        &.current{
+          a{
+            color: $color-primary;
+          }
+        }
+      }
+      .wy-menu-vertical{
+        .toctree-l1{
+          &.current, &.show{
+            ul{
+              .toctree-l2{
+                a{
+                  background-color: $color-dark-background;
+                  color: $color-white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &_layout{
+      .breadcrumb{
+        li{
+          background-color: $color-dark-background;
+          a{
+            color: $color-white;
+          }
+        }
+      }
+    }
+
+    // custom CONTENT
+    &_content{
+      .wy-breadcrumbs li{
+        background-color: $color-dark-primary;
+      }
+    }
+  }
+
+  // custom NAVBAR
+  .navbar{
+    header{
+      .navbar-search{
+        #rtd-search-form{
+          input{
+            -webkit-box-shadow: 0 0 0 1000px #1e212c inset;
+          }
+        }
+      }
+      .navbar-btn{
+        .btn.btn-shadow{
+          &:hover{
+            background-color: rgba($color-text-l30, .2);
+          }
+        }
+      }
+    }
+  }
+
+  input:-internal-autofill-selected{
+    background-color: transparent!important;
+    color: white!important;
+  }
+
+  // custom PAGES CONTENT
+  #concepts, #guide, #cookbook, #tutorials{
+    .topic{
+      background-color: $color-dark-background;
+      p.topic-title{
+        &::after{
+          opacity: .1;
+        }
+      }
+    }
+  }
+}

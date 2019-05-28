@@ -1,19 +1,15 @@
 // custom SUMMARY
-.content-doc{
+.content{
   &_summary{
-    padding: 0;
-    height: calc(100vh - 60px);
-    position: fixed;
-    background-color: $color-background;
     overflow: auto;
+    // custom TITLE SUMMARY
+    .caption{
+      color: $color-primary;
+      @include font-size(13px);
+      text-transform: initial;
+    }
     .wy-menu-vertical{
       width: 100%;
-      // custom TITLE SUMMARY
-      .caption{
-        color: $color-primary;
-        @include font-size(13px);
-        text-transform: initial;
-      }
       // custom LINK SUMMARY
       .toctree-l1{
         position: relative;
