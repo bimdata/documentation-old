@@ -27,7 +27,7 @@ Public
 ======
 
 As your app has no backend, you can't keep a secret token. 
-(Any string stored in browser or mobile app can be found even if the code is minified or compiled)
+(Any string stored in the browser or mobile app can be found even if the code is minified or compiled)
 
 Response types
 ==============
@@ -70,12 +70,12 @@ After allowing your app to access their data, users will be redirected to your a
 
 .. tip::
 
-    For security reasons, avoid using locals URL such as *localhost*, _127.0.0.1_, _192.168.x.x_, etc.
+    For security reasons, avoid using locals URL such as *localhost*, *127.0.0.1*, *192.168.x.x*, etc.
 
 Post Logout URIs
 =================
 
 List of authorized Post Logout URIs
-Useful only if you want to implement a SSO logout.
+Useful only if you want to implement an SSO logout.
 
 .. _scopes: ../concepts/scopes.html
