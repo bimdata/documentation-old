@@ -119,8 +119,6 @@ import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
-# html_theme = "classic"
-
 html_theme_options = {
     "logo_only": False,
     "display_version": True,
@@ -149,7 +147,7 @@ html_context = {
     "display_github": True,
     "conf_py_path": "doc_sphinx/",
     "source_suffix": ".rst",
-    "github_version": "dev/",
+    "github_version": "master/",
 }
 
 # The name of an image file (relative to this directory) to place at the top
@@ -261,7 +259,6 @@ epub_exclude_files = ["search.html"]
 intersphinx_mapping = {"https://docs.python.org/": None}
 
 swagger2sphinx_swagger_location = "api/swagger.json"
-# swagger2sphinx_swagger_location = "http://example.com/swagger.json"
 
 # Autosummary issue resolver
 numpydoc_show_class_members = False
