@@ -182,15 +182,7 @@ html_static_path = ["_static", "_images"]
 html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-html_sidebars = {
-    
-    "tutorials/index": ["globaltoc.html"],
-    "guide/index": ["globaltoc.html"],
-    "cookbook/index": ["globaltoc.html"],
-    "concepts/*": ["globaltoc.html"],
-    "**": ["globaltoc.html"],
-
-    }
+html_sidebars = {"**": ["globaltoc.html"]}
 
 html_domain_indices = True
 html_use_index = True

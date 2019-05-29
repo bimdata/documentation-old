@@ -51,8 +51,7 @@ Our own BIMData Platform uses BIMData Connect users (backend-app with users).
 
 ➤ `Create a backend app`_
 
-.. _Create a backend-less app: ../tutorials/2_create_nobackend_app.html
-.. _Create a backend app: ../tutorials/2_create_backend_app.html
+
 
 ==================
 2 - Authentication 
@@ -229,3 +228,5 @@ Can read-only : EDM, models, BCF and write BCF content.
 
 .. _the User endpoint: |api_url|/doc#/user/getSelfUser
 
+.. _Create a backend-less app: ../cookbook/2_create_nobackend_app.html
+.. _Create a backend app: ../cookbook/2_create_backend_app.html
