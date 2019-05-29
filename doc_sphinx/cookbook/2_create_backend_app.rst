@@ -6,6 +6,10 @@ Create backend app
         How-To create an application on BIMData Connect
     endexcerpt
 
+.. image:: /_images/cookbook/BIMdata_create_application.png
+   :scale: 50 %
+   :alt: Create your application
+   :align: right
 
 Name
 ====

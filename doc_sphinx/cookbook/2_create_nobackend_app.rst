@@ -7,6 +7,10 @@ Create backend-less app
         How-To create a mobile or tablet application on BIMData Connect
     endexcerpt
 
+.. image:: /_images/cookbook/BIMdata_create_application.png
+   :scale: 50 %
+   :alt: Create your application
+   :align: right
 
 Name
 =====
