@@ -2,6 +2,12 @@
 Process BCF data for Excel export
 ==========================================
 
+.. 
+    excerpt
+        You want statistics about which Elements are the most commented with BCF.
+    endexcerpt
+
+
 You want statistics about which Elements are the most commented with BCF.
 You have to export data about the commented elements, you want to produce Excel files to import to a stats software.
 You will create a CSV file, each line is for an Element. 

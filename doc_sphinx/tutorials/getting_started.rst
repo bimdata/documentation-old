@@ -1,6 +1,10 @@
 ===============
 Getting Started
 ===============
+.. 
+    excerpt
+        Follow the guide and make your first steps into the BIMData's API.
+    endexcerpt
 
 #. Create a BIMData Connect account
 #. Create your app

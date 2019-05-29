@@ -27,24 +27,13 @@ Cookbook
        :start-after: excerpt
        :end-before: endexcerpt
 
-
-.. topic:: `Export Excel`_
-
-    .. include:: export_excel.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-
-
 .. _Create an application: create_an_application.html
 .. _Create a backend-less application: 2_create_nobackend_app.html
 .. _Create a backend application: 2_create_backend_app.html
 .. _Get Access Token: get_access_token.html
-.. _Export Excel: export_excel.html
 
 .. toctree::
     :hidden:
-
+    
     create_an_application
     get_access_token
-    export_excel

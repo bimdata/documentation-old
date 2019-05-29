@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 import os
+import re
 
 # -- General configuration ------------------------------------------------
 
@@ -23,6 +24,8 @@ extensions = [
     "sphinx.ext.githubpages",
     "sphinxprettysearchresults",
     "sphinx_substitution_extensions",
+    "sphinx_copybutton",
+    "sphinxcontrib.contentui",
 ]
 
 
@@ -37,7 +40,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "BIMData Documentation (dev)"
+project = "BIMData Documentation"
 copyright = "2018, BIMData"
 author = "BIMData"
 
@@ -45,9 +48,25 @@ author = "BIMData"
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 # The short X.Y version.
+
 version = "dev"
 # The full version, including alpha/beta/rc tags.
 release = "dev"
+
+# sphinx-contrib
+scv_whitelist_branches_regexp = [
+    re.compile(regexp)
+    for regexp in os.environ.get("WHITELIST_BRANCHES_REGEXP", "").split(",")
+    if regexp != ""
+]
+
+scv_whitelist_branches_name = os.environ.get(
+    "WHITELIST_BRANCHES_NAME", "master,dev,tech-writing"
+).split(",")
+
+scv_whitelist_branches = tuple(
+    scv_whitelist_branches_name + scv_whitelist_branches_regexp
+)
 
 
 API_URL = os.environ.get("API_URL", "https://api-staging.bimdata.io")
@@ -68,6 +87,7 @@ rst_prolog = f"""
 .. |bimdata_connect| replace:: {CONNECT_URL}
 """
 
+
 language = None
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
@@ -81,7 +101,7 @@ if HAS_ROBOTS_TXT == "true":
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.rst", "node_modules"]
 
 # The name of the Pygments (syntax highlighting) style to use.
 # pygments_style = 'sphinx'
@@ -98,8 +118,6 @@ import sphinx_rtd_theme
 
 html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-
-# html_theme = "classic"
 
 html_theme_options = {
     "logo_only": False,
@@ -129,7 +147,7 @@ html_context = {
     "display_github": True,
     "conf_py_path": "doc_sphinx/",
     "source_suffix": ".rst",
-    "github_version": "dev/",
+    "github_version": "master/",
 }
 
 # The name of an image file (relative to this directory) to place at the top
@@ -162,7 +180,15 @@ html_static_path = ["_static", "_images"]
 html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-html_sidebars = {"**": ["globaltoc.html"]}
+html_sidebars = {
+    
+    "tutorials/index": ["globaltoc.html"],
+    "topics/index": ["globaltoc.html"],
+    "cookbook/index": ["globaltoc.html"],
+    "concepts/*": ["globaltoc.html"],
+    "**": ["globaltoc.html"],
+
+    }
 
 html_domain_indices = True
 html_use_index = True
@@ -233,7 +259,6 @@ epub_exclude_files = ["search.html"]
 intersphinx_mapping = {"https://docs.python.org/": None}
 
 swagger2sphinx_swagger_location = "api/swagger.json"
-# swagger2sphinx_swagger_location = "http://example.com/swagger.json"
 
 # Autosummary issue resolver
 numpydoc_show_class_members = False

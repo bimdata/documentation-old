@@ -1,6 +1,14 @@
+@import 'api/monokai';
+@import 'api/foundation';
+@import 'api/spectacle';
+
 @import "../../node_modules/@bimdata/utils/scss/common";
+
+@import "doc-api";
+
 @import "home";
 @import "layout";
+@import "aside";
 @import "navbar";
 
 html, body{
@@ -8,6 +16,7 @@ html, body{
   background-color: rgba(255,255,255,1);
   color: rgba(151,151,151,1);
   font-family: $font-primary;
+  scroll-behavior: smooth;
   @include font-size(14px);
 }
 
@@ -45,6 +54,10 @@ h3{
 }
 h4{
   margin-top: 1rem;
+}
+h5{
+  font-family: $font-primary;
+  font-weight: normal;
 }
 a{
   color: $color-primary;
@@ -89,23 +102,49 @@ p{
   margin: 0;
   @include font-size(12px);
 }
-ul{
+ul, ol{
   li{
     @include font-size(12px);
   }
 }
+
+// custom NUMBERED LIST 
 ol{
   margin-left: 1.25rem;
-  list-style-type: decimal;
+  list-style: none;
+  counter-reset: my-counter;
   li{
-    list-style-type: decimal;
+    color: $color-primary;
+    counter-increment: my-counter;
+    @include flexbox;
+    &::before{
+      width: 1%;
+      content: counter(my-counter) ". ";
+      font-weight: bold;
+    }
+    a{
+      &:hover{
+        background-color: transparent;
+      }
+    }
     ol{
       li{
         margin-left: 1rem;
       }
     }
+    dl{
+      width: 100%;
+      dd{
+        margin: 0;
+        ol{
+          margin: 0;
+        }
+      }
+    }
   }
 }
+
+// custom DEFINITION LIST 
 dl{
   margin-top: 29px;
   @include font-size(12px);
@@ -119,6 +158,8 @@ dl{
     }
   }
 }
+
+// custom CODE & PRE
 pre{
   margin-top: 1rem;
   padding: 1rem;
@@ -135,4 +176,58 @@ code{
   line-height: 2;
   font-family: "mononokibold";
   @include font-size(10px);
+}
+
+.section{
+  :target::before{
+    padding-top: 60px;
+    content: "";
+    display: block;
+    @include transition(all 0.5s);
+  }
+}
+
+// custom COPY TO CLIPBOARD
+a.copybtn{
+  margin: .5rem;
+  padding: 0;
+  top: 0;
+  height: auto;
+  opacity: 1;
+  &:hover{
+    opacity: .6;
+    img{
+      opacity: .6;
+      @include transition(opacity 0.5s);
+    }
+  }
+}
+.o-tooltip--left:after{
+  left: -4px;
+  font-size: 14px;
+  letter-spacing: .05rem;
+  text-transform: lowercase;
+  padding: 0px 5px;
+  line-height: 1.5rem;
+  background-color: transparent;
+}
+.o-tooltip--left:hover:after {
+  opacity: .6;
+}
+
+// custom TABS 
+ul.contenttab-selector{
+  margin-top: 2.071rem!important;
+  li{
+    margin-right: 1.643rem!important;
+    padding: 0!important;
+    height: 30px;
+    background-color: $color-white!important; 
+    color: $color-primary!important;
+    border-radius: 0!important;
+    @include font-size(16px);
+    &.selected{
+      border-bottom: 2px solid $color-secondary;
+    }
+  }
 }

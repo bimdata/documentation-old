@@ -13,7 +13,10 @@
     {# The singlehtml builder doesn't handle this toctree call when the toctree is empty. Skip building this for now.
     #}
     {% if 'singlehtml' not in builder %}
-      {% set global_toc = toctree(maxdepth=theme_navigation_depth|int, collapse=theme_collapse_navigation, includehidden=False) %}
+      {% set global_toc = toctree(maxdepth=theme_navigation_depth|int,
+                          collapse=theme_collapse_navigation,
+                          includehidden=theme_includehidden,
+                          titles_only=theme_titles_only) %}
     {% endif %}
     {% if global_toc %}
       {{ global_toc }}
@@ -21,6 +24,7 @@
     <!-- Local TOC -->
     <div class="local-toc">{{ toc }}</div>
       {% endif %}
+
     </div>
 
     <script>
@@ -28,6 +32,12 @@
         $(".toctree-l2 a").click(function() {
           $(".toctree-l2 a.active").removeClass("active");
           $(this).addClass("active");
+        });
+
+        $( ".toctree-l1 > .internal" ).before( "<span class='toctree-expand'></span>" );
+
+        $('.toctree-expand').on('click', function(){
+          $(this).closest('.toctree-l1').toggleClass('show');
         });
       });
       </script>

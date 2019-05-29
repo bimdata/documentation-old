@@ -1,0 +1,162 @@
+.doc-api{
+  .wy-breadcrumbs{
+    padding-left: 3rem;
+  }
+  #spectacle{
+    // custom SIDEBAR API DOC
+    #sidebar{
+      padding: 0;
+      width: 319px;
+      height: calc(100vh - 60px);
+      position: fixed;
+      top: 60px;
+      .close-button{
+        display: none;
+      }
+      #nav{
+        h5{
+          margin: 1.5rem 0 .65rem;
+          padding-left: 15px;
+          color: $color-primary;
+          text-transform: uppercase;
+          @include font-size(13px);   
+        }
+        a{
+          margin: 0;
+          padding-left: 33px;
+          height: 34px;
+          color: $color-primary;
+          font-family: $font-primary;
+          line-height: 34px;
+          font-size: 85%;
+          &.active{
+            color: $color-primary;
+            background-color: $color-secondary;
+          }
+          &:hover{
+            background-color: $color-secondary;
+          }
+        }
+        section{
+          a{
+            position: relative;
+            &::before{
+              content: "";
+              left: 10px;
+              background-position: center center;
+              position: absolute;
+              width: 17px;
+              height: 17px;
+              top: 8px;
+              background-size: 20px;
+              background-repeat: no-repeat;
+              z-index: 1;
+              background-image: url(../_images/bimdata_carret-right.svg);
+            }
+          }
+          ul{
+            li{
+              a{
+                margin: .4rem 0;
+                height: 20px;
+               line-height: 20px;
+                cursor: pointer;
+                &::before{
+                  content: "";
+                  background-image: none;
+                  position: absolute;
+                  left: 20px;
+                  top: 0;
+                  width: 2px;
+                  height: 100%;
+                  background-color: #f9c72c;
+                  opacity: 0;
+                }
+                &:hover, &.active{
+                  background-color: transparent;
+                  &::before{
+                    opacity: 1;
+                    background-image: none;
+                  }
+                }
+              }
+            }
+          }
+          &.expand{
+            a{
+              &::before{
+                background-image: url(../_images/bimdata_carret-down.svg);
+              }
+            }
+            & > ul{
+              margin: 0 .75rem .75rem;
+            }
+          }
+        }
+      }
+    }
+
+    // custom CONTENT API DOC
+    #docs{
+      margin-left: 0;
+      display: block;
+      box-shadow: none;
+      .floating-menu-icon{
+        display: none;
+      }
+      article{
+        // custom LEFT BLOCK
+        h1, h2{
+          color: $color-primary;
+        }
+        h1.doc-title{
+          padding-left: 3rem;
+        }
+        #introduction{
+          .doc-copy{
+            padding-left: 3rem!important;
+          }
+        }
+        .label{
+          display: block;
+          background-color: $color-secondary;
+          color: $color-primary;
+          font-family: $font-primary;
+          text-transform: uppercase;
+        }
+        .swagger-operation-path, .swagger-operation-description, .swagger-responses, .swagger-request-params, .swagger-request-body, .json-schema-properties, .json-schema-array-items{
+          @include font-size(12px);
+          &::before{
+            margin-bottom: .25rem;
+            color: $color-primary;
+            @include font-size(16px);
+          }
+          span{
+            @include font-size(12px);
+          }
+        }
+        .prop-row{
+          .prop-title{
+            color: $color-primary;
+          }
+        }
+
+        // custom RIGHT BLOCK
+        .doc-examples{
+          h5{
+            color: #fefefe;
+            opacity: .8;
+            @include font-size(13px);
+            a{
+              color: $color-secondary;
+              font-family: $font-primary;
+            }
+            span{
+              opacity: .5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
