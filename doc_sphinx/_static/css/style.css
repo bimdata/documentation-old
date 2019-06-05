@@ -5500,6 +5500,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   color: #94979a;
 }
 
+<<<<<<< HEAD
 /* blocs BTN ------------------------ */
 .btn {
   color: #2f374a;
@@ -5514,9 +5515,18 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 <<<<<<< HEAD
 =======
 .btn.btn-primary:hover {
+=======
+/* blocs BTN --------------------------------------------------- */
+a.btn:hover, .btn-primary:hover {
+>>>>>>> adjusting dark mode
   color: white;
-  background-color: #212634;
-  border-color: #1c202c;
+  background-color: #1b202b;
+  border-color: #1b202b;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 >>>>>>> add new lib UTILS && custom dark mode
@@ -5531,6 +5541,11 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   font-family: "robotoregular", sans-serif;
   font-size: 1rem;
   line-height: 1rem;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .btn-primary:active:focus {
@@ -5541,6 +5556,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   outline: none;
 }
 
+<<<<<<< HEAD
 .btn-primary:hover {
   color: white;
   background-color: #212634;
@@ -5549,9 +5565,11 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> adjusting dark mode
 .btn-primary:active {
-  background-color: #212634;
-  border-color: #1c202c;
+  background-color: #1b202b;
+  border-color: #1b202b;
 }
 
 .btn-primary:active:focus {
@@ -5640,6 +5658,11 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   font-family: "robotoregular", sans-serif;
   font-size: 1rem;
   line-height: 1rem;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .btn-shadow:active:focus {
@@ -5653,6 +5676,11 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .btn-shadow:hover {
   background-color: rgba(47, 55, 74, 0.1);
   color: #2f374a;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .base-button-icon {
@@ -5735,6 +5763,10 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .card-header {
   color: #2f374a;
   background-color: #f7f7f7;
+}
+
+.card-header h2 {
+  margin: 0;
 }
 
 /* custom BASE LINK ------------------------ */
@@ -6016,20 +6048,25 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 
 .card-horizontal_content a.action-button .arrow::before {
-  bottom: 3px;
-  content: "";
   width: 25px;
+  height: 2px;
+  content: "";
   position: absolute;
+  bottom: 3px;
   right: 0;
+<<<<<<< HEAD
   transform-origin: bottom;
   height: 2px;
 >>>>>>> add new lib UTILS && custom dark mode
+=======
+>>>>>>> adjusting dark mode
   background-color: #2f374a;
   -webkit-transition: all 0.35s ease;
   -moz-transition: all 0.35s ease;
   -ms-transition: all 0.35s ease;
   -o-transition: all 0.35s ease;
   transition: all 0.35s ease;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transform: translateY(-50%) scaleX(1);
   -moz-transform: translateY(-50%) scaleX(1);
@@ -6070,6 +6107,12 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   background: #2f374a;
   color: white;
 =======
+=======
+  -webkit-transform-origin: bottom;
+  -moz-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+>>>>>>> adjusting dark mode
 }
 
 .card-horizontal_content a.action-button .arrow::after {
@@ -6081,6 +6124,9 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   top: 13px;
   content: "";
   display: inline-block;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -6187,7 +6233,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .base-input-text-material input[type=file] ~ label {
   top: -19px !important;
   font-size: 0.857rem !important;
-  color: #2F374A !important;
+  color: #2f374a !important;
 }
 
 .base-input-text-material label {
@@ -6262,7 +6308,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   width: 0;
   bottom: 0;
   position: absolute;
-  background: #2F374A;
+  background: #2f374a;
   transition: 0.2s ease all;
 }
 
@@ -7007,6 +7053,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
+  height: 7px;
 }
 
 <<<<<<< HEAD
@@ -7026,7 +7073,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 =======
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #D8D8D8;
+  background: #e3e4e4;
 }
 
 /* Handle */
@@ -7036,7 +7083,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #4d4d4d;
 }
 
 .content_summary {
@@ -7055,10 +7102,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   text-transform: initial;
 }
 
-.content_summary .toctree-l1 {
-  background: #f7f7f7;
-}
-
 .content_summary .toctree-l1 a {
   padding: .5rem 2.5rem;
   position: relative;
@@ -7068,19 +7111,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 .content_summary .toctree-l1 a:hover {
   background-color: #f9c72c;
-}
-
-.content_summary .toctree-l1 a.internal::before {
-  content: "";
-  position: absolute;
-  background-image: url("/img/bimdata_carret-right.svg");
-  width: 17px;
-  height: 15px;
-  top: 11px;
-  left: 22px;
-  background-size: 11px;
-  background-repeat: no-repeat;
-  z-index: 1;
 }
 
 .content_summary .toctree-l1 a.external::after {
@@ -7105,11 +7135,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 .content_summary .toctree-l1.current a.internal::before {
   background-image: url("/img/bimdata_carret-down.svg");
-}
-
-.content_summary .toctree-l1.current ul .toctree-l2 a {
-  position: relative;
-  background-color: #f7f7f7;
 }
 
 .content_summary .toctree-l1.current ul .toctree-l2 a::before {
@@ -7340,6 +7365,60 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   border-radius: 50%;
 }
 
+.switch-component.dark-mode input:checked + .slider:before {
+  background-color: #f9c72c;
+  -webkit-transform: translateX(calc(30px - 10px));
+  -moz-transform: translateX(calc(30px - 10px));
+  -ms-transform: translateX(calc(30px - 10px));
+  transform: translateX(calc(30px - 10px));
+}
+
+.switch-component.dark-mode .slider.round {
+  width: 26px;
+  height: 11px;
+}
+
+.switch-component.dark-mode .slider:before {
+  width: 15px;
+  height: 15px;
+  bottom: -1.5px;
+  left: -4px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.switch-component.dark-mode .tooltip {
+  top: 24px;
+  font-size: 10px;
+  background-color: #2f374a;
+  padding: .2rem;
+  height: 19px;
+  width: 61px;
+  text-align: center;
+  color: white;
+  border-radius: 3px;
+  left: -18px;
+}
+
+.switch-component.dark-mode .tooltip:hover {
+  opacity: 0;
+}
+
+.switch-component.dark-mode .tooltip::before {
+  border-color: transparent transparent #2f374a;
+  border-style: solid;
+  border-width: 0 0 8px 8px;
+  right: 25px;
+  position: absolute;
+  top: -4px;
+  content: "";
+  display: inline-block;
+  transform: rotate(-135deg);
+}
+
+.switch-component.dark-mode .switch:hover .tooltip {
+  opacity: 1;
+}
+
 table {
   width: 100%;
   border: none;
@@ -7566,10 +7645,6 @@ html, body {
   font-size: 14px;
 =======
 /* custom PROJECTS ----------------------------------- */
-.content-doc_content .wy-breadcrumbs li {
-  background-color: #1e212c;
-}
-
 .theme-dark {
   /* custom COLORS --------------------------------------- */
   /* custom TYPOGRAPHY ----------------------------------- */
@@ -7593,19 +7668,20 @@ html, body {
 }
 
 .theme-dark #buttons .buttons-content_style:last-child {
-  background-color: #1e212c;
+  background-color: #1b202b;
 }
 
 .theme-dark {
-  background-color: #1e212c;
+  background-color: #1b202b;
   -webkit-transition: all 0.35s ease;
   -moz-transition: all 0.35s ease;
   -ms-transition: all 0.35s ease;
   -o-transition: all 0.35s ease;
   transition: all 0.35s ease;
-  /* custom TITLES & TEXT --------------------- */
-  /* custom SVG ------------------------------- */
-  /* custom ĈODE HIGHLIGHT --------------------- */
+  /* custom TITLES & TEXT ---------------------------------((--- */
+  /* custom INPUT & TEXTAREA ----------------------------------- */
+  /* custom SVG ------------------------------------------------ */
+  /* custom CODE HIGHLIGHT ------------------------------------- */
   /* custom COMPONENT ADMONITIONS ------------------------------ */
   /* custom COMPONENT BREADCRUMB ------------------------------- */
   /* custom COMPONENT BUTTONS ---------------------------------- */
@@ -7613,13 +7689,15 @@ html, body {
   /* custom COMPONENT CARD VERTICAL ---------------------------- */
   /* custom COMPONENT FORM -------------------------------------- */
   /* custom COMPONENT LOADER ----------------------------------- */
+  /* custom COMPONENT LOADER BLOB ------------------------------ */
   /* custom COMPONENT NAVBAR ----------------------------------- */
   /* custom COMPONENT SIDEBAR --------------------------------- */
+  /* custom SWITCH DARK MODE ---------------------------------- */
   /* custom COMPONENT TABLE ----------------------------------- */
 }
 
 .theme-dark body {
-  background-color: #1e212c;
+  background-color: #1b202b;
 }
 
 .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark p, .theme-dark a {
@@ -7638,33 +7716,65 @@ html, body {
   background-color: white;
 }
 
+.theme-dark input, .theme-dark textarea, .theme-dark [contenteditable] {
+  caret-color: white;
+}
+
+.theme-dark input {
+  background-color: #11141b;
+}
+
+.theme-dark input:focus {
+  background-color: #11141b;
+}
+
+.theme-dark .base-input-text-material label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.theme-dark .base-input-text-material input:focus ~ label {
+  color: white;
+}
+
+.theme-dark .base-input-text-material .bar:before, .theme-dark .base-input-text-material .bar:after {
+  background: white;
+}
+
 .theme-dark .st0 {
   fill: white;
 }
 
 .theme-dark .highlight {
-  background-color: #1e212c;
+  background-color: #11141b;
 }
 
 .theme-dark pre[class*="language-"] {
-  background-color: #11131c;
+  background-color: #11141b;
 }
 
 .theme-dark .admonition {
-  background-color: #1e212c;
+  background-color: #11141b;
 }
 
 .theme-dark .admonition.note .admonition-title, .theme-dark .admonition.important .admonition-title, .theme-dark .admonition.warning .admonition-title {
-  background-color: #2d303a;
+  background-color: #252b3a;
   color: white;
 }
 
 .theme-dark .admonition-content {
-  background-color: #1e212c;
+  background-color: #11141b;
 }
 
 .theme-dark .breadcrumb-item {
-  background-color: #1e212c;
+  background-color: #1b202b;
+}
+
+.theme-dark .breadcrumb li {
+  background-color: #11141b;
+}
+
+.theme-dark .breadcrumb li a {
+  color: white;
 }
 
 .theme-dark a.btn-secondary {
@@ -7681,23 +7791,28 @@ html, body {
 }
 
 .theme-dark .card-header {
-  background-color: #07090c;
+  background-color: #252b3a;
+  color: white;
 }
 
 .theme-dark .card-body {
-  background-color: #11131c;
+  background-color: #11141b;
 }
 
 .theme-dark .base-card__header {
-  background-color: #07090c;
+  background-color: #252b3a;
+}
+
+.theme-dark .base-card__header .base-card__title-container {
+  color: white;
 }
 
 .theme-dark .base-card__content {
-  background-color: #11131c;
+  background-color: #11141b;
 }
 
 .theme-dark .card-horizontal {
-  background-color: #11131c;
+  background-color: #11141b;
 }
 
 .theme-dark .card-horizontal_content a.action-button .arrow::before {
@@ -7709,7 +7824,7 @@ html, body {
 }
 
 .theme-dark .card-vertical {
-  background-color: #11131c;
+  background-color: #11141b;
 }
 
 .theme-dark .card-vertical_content {
@@ -7733,11 +7848,19 @@ html, body {
 }
 
 .theme-dark .loader {
-  background-color: #1e212c;
+  background-color: #1b202b;
+}
+
+.theme-dark .loader-layout .lds-dual-ring:after {
+  border-color: white transparent;
+}
+
+.theme-dark .loader-blobs .blob-center, .theme-dark .loader-blobs .blob {
+  background-color: white;
 }
 
 .theme-dark .navbar {
-  background-color: #1e212c;
+  background-color: #1b202b;
 }
 
 .theme-dark .navbar header .navbar-search #rtd-search-form input {
@@ -7753,7 +7876,7 @@ html, body {
 }
 
 .theme-dark .content_summary {
-  background-color: #11131c;
+  background-color: #11141b;
 }
 
 .theme-dark .content_summary .caption {
@@ -7768,20 +7891,33 @@ html, body {
   background-color: white;
 }
 
+.theme-dark .switch-component.dark-mode input:checked + .slider {
+  background-color: rgba(193, 193, 193, 0.39);
+}
+
 .theme-dark table thead {
-  border-color: #11131c;
+  border-color: #1b202b;
 }
 
 .theme-dark table thead .row-odd th:nth-child(odd) {
-  background-color: #1b202b;
+  background-color: #11141b;
 }
 
 .theme-dark table thead .row-odd th:nth-child(2n) {
-  background-color: #202533;
+  background-color: rgba(17, 20, 27, 0.5);
+}
+
+.theme-dark table thead tr {
+  background-color: #1b202b;
+}
+
+.theme-dark table tbody {
+  background-color: #1b202b;
+  border: none;
 }
 
 .theme-dark table tbody tr {
-  border-color: #11131c;
+  border-color: #1b202b;
 }
 
 .theme-dark table tbody tr td {
@@ -7789,15 +7925,19 @@ html, body {
 }
 
 .theme-dark table tbody tr td:nth-child(odd) {
-  background-color: #1e212c;
+  background-color: #2f374a;
 }
 
 .theme-dark table tbody tr td:nth-child(2n) {
-  background-color: rgba(227, 228, 228, 0.08);
+  background-color: rgba(47, 55, 74, 0.6);
+}
+
+.theme-dark table tbody tr:nth-child(even) {
+  background-color: #1b202b;
 }
 
 .theme-dark .top-toolbar__choice-list-items .choice-list .choice-list__field-selected {
-  background-color: #11131c;
+  background-color: #11141b;
 }
 
 .theme-dark .top-toolbar__choice-list-items .choice-list .choice-list__field-selected path {
@@ -7809,7 +7949,7 @@ html, body {
 }
 
 .theme-dark .base-valid-delete {
-  background-color: #11131c;
+  background-color: #11141b;
 }
 
 .theme-dark .base-valid-delete .check-cross:hover, .theme-dark .base-valid-delete .check:hover {
@@ -8500,6 +8640,7 @@ svg .st0 {
 }
 
 #concepts .topic blockquote, #guide .topic blockquote, #cookbook .topic blockquote, #tutorials .topic blockquote {
+  margin: 0;
   padding-left: 32px;
   width: 555px;
 <<<<<<< HEAD
@@ -8586,11 +8727,20 @@ table.field-list tbody tr td {
   position: relative;
 }
 
+.content_summary .wy-menu-vertical .toctree-l1:hover .toctree-expand::before {
+  border-color: transparent transparent #2f374a;
+}
+
 .content_summary .wy-menu-vertical .toctree-l1 .toctree-expand {
+<<<<<<< HEAD
 >>>>>>> add new lib UTILS && custom dark mode
+=======
+  width: 20px;
+  height: 20px;
+>>>>>>> adjusting dark mode
   position: absolute;
-  top: 7px;
-  left: 10%;
+  top: 6px;
+  left: 9%;
   cursor: pointer;
 }
 
@@ -8598,18 +8748,30 @@ table.field-list tbody tr td {
 .content-doc_summary .wy-menu-vertical .toctree-l1 .toctree-expand::before {
 =======
 .content_summary .wy-menu-vertical .toctree-l1 .toctree-expand::before {
+<<<<<<< HEAD
 >>>>>>> add new lib UTILS && custom dark mode
   font-family: none;
+=======
+>>>>>>> adjusting dark mode
   content: "";
-  position: relative;
-  width: 17px;
-  height: 15px;
-  top: 0px;
-  left: -2px;
-  background-size: 20px;
-  background-repeat: no-repeat;
+  position: absolute;
+  left: 5px;
+  top: 7px;
+  display: inline-block;
+  border-color: transparent transparent white;
+  border-style: solid;
+  border-width: 0px 0px 7px 7px;
+  box-sizing: border-box;
   z-index: 1;
-  background-image: url("../_images/bimdata_carret-right.svg");
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  -ms-transition: transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 <<<<<<< HEAD
@@ -8623,6 +8785,7 @@ table.field-list tbody tr td {
   font-family: "robotoregular", sans-serif;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .content-doc_summary .wy-menu-vertical .toctree-l1 a:hover {
   background-color: #f9c72c;
@@ -8638,6 +8801,8 @@ table.field-list tbody tr td {
   background-color: #f9c72c;
 }
 
+=======
+>>>>>>> adjusting dark mode
 .content_summary .wy-menu-vertical .toctree-l1 a.external::after {
   content: none;
 }
@@ -8658,8 +8823,19 @@ table.field-list tbody tr td {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .content-doc_summary .wy-menu-vertical .toctree-l1.current a, .content-doc_summary .wy-menu-vertical .toctree-l1.show a {
 =======
+=======
+.content_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 .toctree-l4 a {
+  margin: .5rem .8rem;
+}
+
+.content_summary .wy-menu-vertical .toctree-l1.current .toctree-expand::before, .content_summary .wy-menu-vertical .toctree-l1.show .toctree-expand::before {
+  border-color: transparent transparent #2f374a;
+}
+
+>>>>>>> adjusting dark mode
 .content_summary .wy-menu-vertical .toctree-l1.current a, .content_summary .wy-menu-vertical .toctree-l1.show a {
 >>>>>>> add new lib UTILS && custom dark mode
   background-color: #f9c72c;
@@ -8688,13 +8864,16 @@ table.field-list tbody tr td {
 .content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a::before {
 =======
 .content_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a::before, .content_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a::before {
+<<<<<<< HEAD
 >>>>>>> add new lib UTILS && custom dark mode
+=======
+  width: 2px;
+  height: 100%;
+>>>>>>> adjusting dark mode
   content: "";
   position: absolute;
   left: 39px;
   top: 0;
-  width: 2px;
-  height: 100%;
   background-color: #f9c72c;
   opacity: 0;
 }
@@ -8743,7 +8922,20 @@ table.field-list tbody tr td {
 }
 
 .content_summary .wy-menu-vertical .toctree-l1.show .toctree-expand::before {
-  background-image: url("../_images/bimdata_carret-down.svg");
+  box-sizing: border-box;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  -ms-transition: transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+.content_summary .wy-menu-vertical .toctree-l1.show a {
+  color: #2f374a;
 }
 
 .content_summary .wy-menu-vertical .toctree-l1.show ul {
@@ -8960,6 +9152,7 @@ table.field-list tbody tr td {
   justify-content: flex-end;
 }
 
+<<<<<<< HEAD
 .navbar header .navbar-btn .btn {
   height: 32px;
   width: 95%;
@@ -8976,27 +9169,32 @@ table.field-list tbody tr td {
 
 .navbar header .navbar-btn .btn.btn-primary {
   background-color: #2f374a;
+=======
+.navbar header .navbar-btn .btn-primary {
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+>>>>>>> adjusting dark mode
 }
 
-.navbar header .navbar-btn .btn.btn-shadow {
-  background-color: rgba(47, 55, 74, 0);
-  color: #2f374a;
-  -webkit-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
-  -moz-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
-  -ms-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
-  -o-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
-  transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+.navbar header .navbar-btn .btn-primary:hover {
+  color: white;
+  background-color: #07090c;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
-.navbar header .navbar-btn .btn.btn-shadow:hover {
-  background-color: rgba(47, 55, 74, 0.05);
-  -webkit-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
-  -moz-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
-  -ms-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
-  -o-transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
-  transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+/* custom THEME DARK -----------------------*/
+.theme-dark p a.reference.external::after, .theme-dark ul a.reference.external::after, .theme-dark ol a.reference.external::after {
+  background-color: white;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 html, body {
   padding: 0;
@@ -9004,20 +9202,18 @@ html, body {
   color: #979797;
 =======
 /* custom THEME DARK -----------------------*/
+=======
+>>>>>>> adjusting dark mode
 .theme-dark .content_documentation {
-  background-color: #1e212c;
+  background-color: #252b3a;
 }
 
 .theme-dark .content_home .help_title p {
   color: white;
 }
 
-.theme-dark .content_summary {
-  background-color: #11131c;
-}
-
 .theme-dark .content_summary .toctree-l1 {
-  background-color: #11131c;
+  background-color: #11141b;
 }
 
 .theme-dark .content_summary .toctree-l1 a {
@@ -9033,12 +9229,12 @@ html, body {
 }
 
 .theme-dark .content_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a, .theme-dark .content_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a {
-  background-color: #11131c;
+  background-color: #11141b;
   color: white;
 }
 
 .theme-dark .content_layout .breadcrumb li {
-  background-color: #11131c;
+  background-color: #11141b;
 }
 
 .theme-dark .content_layout .breadcrumb li a {
@@ -9046,7 +9242,12 @@ html, body {
 }
 
 .theme-dark .content_content .wy-breadcrumbs li {
-  background-color: #1e212c;
+  background-color: #252b3a;
+}
+
+.theme-dark .content ul.contenttab-selector li {
+  background-color: #252b3a !important;
+  color: white !important;
 }
 
 .theme-dark .navbar header .navbar-search #rtd-search-form input {
@@ -9063,7 +9264,7 @@ html, body {
 }
 
 .theme-dark #concepts .topic, .theme-dark #guide .topic, .theme-dark #cookbook .topic, .theme-dark #tutorials .topic {
-  background-color: #11131c;
+  background-color: #11141b;
 }
 
 .theme-dark #concepts .topic p.topic-title::after, .theme-dark #guide .topic p.topic-title::after, .theme-dark #cookbook .topic p.topic-title::after, .theme-dark #tutorials .topic p.topic-title::after {
@@ -9079,6 +9280,38 @@ html, body {
   scroll-behavior: smooth;
   font-size: 14px;
   font-size: 1rem;
+}
+
+.section h3 {
+  margin: .5rem 1rem;
+}
+
+.section h4 {
+  margin: .5rem 0 1rem 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section h4::after {
+  content: "";
+  background-color: white;
+  width: -webkit-fill-available;
+  position: absolute;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+}
+
+.section p {
+  padding: 0 2rem;
+}
+
+.section ul.simple {
+  padding: 0 2rem;
+}
+
+.section > .section {
+  margin: 0;
 }
 
 /* override BOOTSRAP
@@ -9301,6 +9534,10 @@ code {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.section blockquote {
+  padding: 0;
 }
 
 a.copybtn {

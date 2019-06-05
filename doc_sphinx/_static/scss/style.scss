@@ -16,15 +16,6 @@
 /* custom THEME DARK -----------------------*/
 @import "theme/doc-theme";
 
-// @TODO: delete 
-
-
-.theme-dark{
-  
-}
-
-
-
 html, body{
   padding: 0;
   background-color: $color-white;
@@ -32,6 +23,35 @@ html, body{
   font-family: $font-primary;
   scroll-behavior: smooth;
   @include font-size(14px);
+}
+
+.section{
+  h3{
+    margin: .5rem 1rem;
+  }
+  h4{
+    margin: .5rem 0 1rem 2rem;
+    position: relative;
+    display: inline-block;
+    &::after{
+      content: "";
+      background-color: white;
+      width: -webkit-fill-available;
+      position: absolute;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  p{
+    padding: 0 2rem;
+  }
+  ul.simple{
+    padding: 0 2rem;
+  }
+  & > .section{
+    margin: 0;
+  }
 }
 
 /* override BOOTSRAP
@@ -209,6 +229,9 @@ code{
     content: "";
     display: block;
     @include transition(all 0.5s);
+  }
+  blockquote{
+    padding: 0;
   }
 }
 

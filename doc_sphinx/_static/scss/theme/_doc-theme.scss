@@ -1,8 +1,15 @@
 .theme-dark{
+  p, ul, ol{
+    a.reference.external{
+      &::after{
+        background-color: $color-white;
+      }
+    }
+  }
   .content{
     // custom page HOME
     &_documentation{
-      background-color: $color-dark-primary;
+      background-color: $color-primary-d5;
     }
     &_home{
       .help_title{
@@ -14,9 +21,8 @@
 
     // custom SIDEBAR
     &_summary{
-      background-color: $color-dark-background;
       .toctree-l1{
-        background-color: $color-dark-background;
+        background-color: $color-primary-d15;
         a{
           color: $color-white;
           &:hover{
@@ -35,7 +41,7 @@
             ul{
               .toctree-l2{
                 a{
-                  background-color: $color-dark-background;
+                  background-color: $color-primary-d15;
                   color: $color-white;
                 }
               }
@@ -48,7 +54,7 @@
     &_layout{
       .breadcrumb{
         li{
-          background-color: $color-dark-background;
+          background-color: $color-primary-d15;
           a{
             color: $color-white;
           }
@@ -59,8 +65,13 @@
     // custom CONTENT
     &_content{
       .wy-breadcrumbs li{
-        background-color: $color-dark-primary;
+        background-color: $color-primary-d5;
       }
+    }
+
+    ul.contenttab-selector li{
+      background-color: $color-primary-d5!important;
+      color: $color-white!important;
     }
   }
 
@@ -92,7 +103,7 @@
   // custom PAGES CONTENT
   #concepts, #guide, #cookbook, #tutorials{
     .topic{
-      background-color: $color-dark-background;
+      background-color: $color-primary-d15;
       p.topic-title{
         &::after{
           opacity: .1;
