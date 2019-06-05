@@ -67,7 +67,7 @@ The benefits
 
 Use it when you need to have a scheduled response to an event and launch a script depending on this response.
 
-.. IMPORTANT:: titre
+.. IMPORTANT:: 
     You cannot access as a user, therefore you cannot:
 
     * do any impersonation

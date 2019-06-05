@@ -107,8 +107,8 @@ See the dedicated page `Getting Started with the Viewer`_
 .. _get the Access Token: ../cookbook/get_access_token.html
 .. _Use your credentials to log in: ../cookbook/get_access_token.html
 .. _Create your first cloud and its first project: ../tutorials/retrieve-elements.html#step-2-set-up-your-project
-.. _details for the route /cloud/ for the cloud creation: ../redoc/index.html#operation/createCloud
+.. _details for the route /cloud/ for the cloud creation: ../api/index.html#operation/createCloud
 .. _a step of our Viewer Tutorial: ../tutorials/retrieve-elements.html#step-3-upload-your-ifc
-.. _check out the getElements route: ../redoc/index.html#operation/getElements
+.. _check out the getElements route: ../api/index.html#operation/getElements
 .. _Getting Started with the Viewer: ../viewer/getting_started.html
-.. _the route cloud/{cloud_pk}/project: https://developers-staging.bimdata.io/redoc/index.html#operation/createProject
+.. _the route cloud/{cloud_pk}/project: https://developers-staging.bimdata.io/api/index.html#operation/createProject
