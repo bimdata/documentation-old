@@ -9196,6 +9196,7 @@ table.field-list tbody tr td {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 html, body {
   padding: 0;
   background-color: white;
@@ -9204,6 +9205,12 @@ html, body {
 /* custom THEME DARK -----------------------*/
 =======
 >>>>>>> adjusting dark mode
+=======
+.theme-dark .highlight .copybtn:hover::after {
+  background-color: transparent;
+}
+
+>>>>>>> add DARK MODE
 .theme-dark .content_documentation {
   background-color: #252b3a;
 }
@@ -9538,6 +9545,14 @@ code {
 
 .section blockquote {
   padding: 0;
+}
+
+.content-tabs.container {
+  max-width: 100% !important;
+}
+
+.content-tabs .tab-content.container {
+  max-width: 100% !important;
 }
 
 a.copybtn {

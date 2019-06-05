@@ -6,6 +6,16 @@
       }
     }
   }
+
+  .highlight{
+    .copybtn{
+      &:hover{
+        &::after{
+          background-color: transparent;
+        }
+      }
+    }
+  }
   .content{
     // custom page HOME
     &_documentation{

@@ -235,6 +235,18 @@ code{
   }
 }
 
+.content-tabs{
+  &.container{
+    max-width: 100%!important;
+  }
+  .tab-content{
+    &.container{
+      max-width: 100%!important;
+    }
+  }
+}
+
+
 // custom COPY TO CLIPBOARD
 a.copybtn{
   margin: .5rem;
