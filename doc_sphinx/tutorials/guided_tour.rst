@@ -17,12 +17,12 @@ You can create several types of applications.
 Backend-less application
 ==========================
 
-Chose this way if you are developping a backend-less application.
+Chose this way if you are developing a backend-less application.
 
 These applications:
   - could share data with other applications like BIMData Platform or any other third party app.
   - must use **BIMData Connect users** credentials system.
-  - are usually mobiles apps or small javacript apps.
+  - are usually mobile apps or small Javacript apps.
 
 ➤ `Create a backend-less app`_
 
@@ -32,13 +32,14 @@ Application with a backend
 With BIMData Connect Users
 --------------------------
 
-Chose this way if your app have a backend (php, node.js, python, .NET, etc).
+Chose this way if your app have a backend (PHP, NodeJS, python, .NET, etc.).
 
 These applications:
-  - could share data with other applications like BIMData Platform or any other third party app.
+  - could share data with other applications like BIMData Platform or any other third-party app.
   - must use **BIMData Connect users** credentials system.
 
-FYI, our own BIMData Platform application uses BIMData Connect users (backend-app with users).
+.. note
+    Our own BIMData Platform application uses BIMData Connect users (backend-app with users).
 
 ➤ `Create a backend app`_
 
@@ -48,7 +49,7 @@ Without Users
 Chose this way if you don't want to use BIMData Connect users.
 
 These applications:
-  - have to managed their own users and authorizations.
+  - have to managed their own users and authorizations
   - can't share data with others BIMData applications
   - have an easier setup
 
