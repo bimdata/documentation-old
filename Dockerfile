@@ -22,6 +22,8 @@ ENV CDN_URL=$CDN_URL
 ENV CONNECT_URL=$CONNECT_URL
 ENV WHITELIST_BRANCHES=$WHITELIST_BRANCHES
 
+ENV SCSS_OUTPUT_STYLE=compact
+
 COPY ./ /opt
 RUN mv /opt/node_modules /opt/doc_sphinx/node_modules
 
