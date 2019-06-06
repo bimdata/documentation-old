@@ -2,14 +2,14 @@
 Authentication with BIMData Connect
 ===================================
 
-.. 
+..
     excerpt
         BIMData Connect handles sign-in and log in for your app.
     endexcerpt
 
-The OpenID Connect used by the BIMData Connect, our authentication system, is built on the shoulders of oAuth2.0. 
+The OpenID Connect used by the BIMData Connect, our authentication system, is built on the shoulders of OAuth2.0.
 
-BIMData Connect handles the sign-in, the login and authentication processes of your application users. 
+BIMData Connect handles the sign-in, the login and authentication processes of your application users.
 You can focus on creating and building your application.
 The user's browser is redirect to the Sign-In page by the Web Application.
 
@@ -59,19 +59,15 @@ The benefits
 
     **Pluggable**
 
-    You can subscribe to events and use webhooks.
-
-    **Cloud by cloud**
-
-    `Your Access Token`_ will let you access to one cloud information and data at the time.
+    You can subscribe to events and use webhooks. It's the easiest way to provide automation.
 
 Use it when you need to have a scheduled response to an event and launch a script depending on this response.
 
-.. IMPORTANT:: titre
-    You cannot access as a user, therefore you cannot:
+.. IMPORTANT:: You cannot access as a user, therefore you cannot:
 
     * do any impersonation
-    * manager fine granularity with access rights
+    * manage fine granularity with access rights
+    * Share data with other application using BIMData
 
 
 When use a user impersonation?
@@ -112,44 +108,3 @@ Type of user auth detailed
 ===========================
 
 The three types are three different mechanisms to aks for user's permissions.
-
-Authorization code flow
------------------------
-
-This is the most common flow. 
-Behave as a user even without the user actually using the application, directly inherited from OAuth (ie: cron, asynchronous data processing)
-* You can proxy your users through your back-end to  between their browser and BIMData API
-* You can forward the Access Token to the browser and let the browser directly call the BIMData API. 
-It this case, you need to implement a way to refresh the Access Token when it expires.
-
-.. highlights::
-    Example: enrichment of your app's data with your own dataset.
-
-Implicit flow
--------------
-
-Usage of the access enabled by the user currently connected into the application.
-`Implicit flow` is the way when you don't need a back-end software. Everything is done in the user's browser. 
-It retrieves the access_token and can use it as you want. But when the token expires, you need the user to refresh it.
-
-.. highlights::
-
-    Example: get the Access Token by the browser to use it directly after getting it.
-
-.. highlights::
-    Example2: reporting into the application of the user's actions
-
-
-Hybrid flow
------------
-
-This option combines the previous two options: you can make some reporting and actions as a user.
-
-.. highlights::
-    Example: The BIMData platform uses this auth option.
-
-
-
-.. _Create an application process: ../cookbook/create_an_application.html
-.. _Authentication by client credential: ../cookbook/get_access_token.html
-.. _Your Access Token: ../cookbook/get_access_token.html
