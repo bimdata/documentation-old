@@ -2,11 +2,20 @@
 Security
 ============
 
+.. 
+    excerpt
+        Here are answers on how we keep your data secure.
+    endexcerpt
+
+
+
+We treat your data with care and apply state-of-the-art security. 
+Here are answers on how we keep your data secure.
 
 Where is my BIMData hosted?
 ===========================
 
-Your BIMData data and BIMData.io infrastructure is hosted by OVH.
+Your BIMData data and BIMData.io infrastructure are hosted by OVH.
 
 
 How often are backups made?
