@@ -4,14 +4,14 @@ Authentication with BIMData Connect
 
 ..
     excerpt
-        BIMData Connect handles sign-in and log in for your app.
+        BIMData Connect handles sign-in and logs in for your app.
     endexcerpt
 
 The OpenID Connect used by the BIMData Connect, our authentication system, is built on the shoulders of OAuth2.0.
 
 BIMData Connect handles the sign-in, the login and authentication processes of your application users.
 You can focus on creating and building your application.
-The user's browser is redirect to the Sign-In page by the Web Application.
+The user's browser is redirected to the Sign-In page by the Web Application.
 
 The Sign-In page is on the BIMData Connect server. The BIMData Connect provides to the user's browser an Access Token.
 Then the user's browser could send requests to the Web Application sending the Access Token.
@@ -63,11 +63,11 @@ The benefits
 
 Use it when you need to have a scheduled response to an event and launch a script depending on this response.
 
-.. IMPORTANT:: You cannot access as a user, therefore you cannot:
+.. IMPORTANT:: You cannot access as a user, therefore it's not possible to:
 
     * do any impersonation
     * manage fine granularity with access rights
-    * Share data with other application using BIMData
+    * share data with other application using BIMData
 
 
 When use a user impersonation?
@@ -78,8 +78,8 @@ The benefits
 -------------
 
 
-User's name as author
-^^^^^^^^^^^^^^^^^^^^^^^
+User's name as the author
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Emulating the user's actions enables you to act in the name of the user. Creating content with impersonation writes the user's name in the creator's name of this content.
 
@@ -95,7 +95,7 @@ Let BIMData handle the complexity
 
 The credentials complexity is handled by the BIMData Connect authentication server. This option is compliant with the user's credentials.
 
-Use it when you need to access the user's log, such as user's history, and report actions.
+Use it when you need to access the user's log, such as the user's history, and report actions.
 
 There are three types of user auth, detailed beneath:
 
