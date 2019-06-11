@@ -6,7 +6,7 @@ OpenID Connect has different authentication flows and you have to chose the one 
 
 
 Authorization code flow
------------------------
+========================
 
 This flow is designed to be used with apps using a backend with templating technologies.
 It gives you an Access Token you can use directly to call the API and a Refresh Token you can use later to behave as a user even without the user actually using the application (ie: cron, asynchronous data processing)
@@ -21,7 +21,7 @@ And you can find libraries helping you implementing it there: https://openid.net
     Example: enrichment of your app's data with your own dataset.
 
 Implicit flow
--------------
+=============
 
 This flow is designed to be used with apps without a backend like modiles apps or full javascript apps.
 `Implicit flow` is the way when you don't need a back-end software. Everything is done in the user's browser.
