@@ -4,5 +4,4 @@
 IFC
 ====
 
-.. include::
-  .. raw:: ../_static/swaggerui.html
+IFC

@@ -36,10 +36,8 @@
           {% if "api_partial/" not in pagename %}
             {% block body %}{% endblock %}
           {% else %}
-            else {{pagename}}
             {%- include "openapi_endpoint.html" %}
           {% endif %}
-          
         </div>
         {%- endblock %}
       </div>
