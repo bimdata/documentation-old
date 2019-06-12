@@ -44,8 +44,9 @@ Use your Access Token
 =====================
 
 There are two possible ways to authenticate depending on your application architecture design.
-You can either access as an application and benefit from authentication capacities
-or use a user-behavior authentication.
+You can either:
+ * access as an application and benefit from authentication capacities,
+ * or use a user-behavior authentication.
 
 When use an app auth?
 =====================
@@ -67,7 +68,7 @@ Use it when you need to have a scheduled response to an event and launch a scrip
 
     * do any impersonation
     * manage fine granularity with access rights
-    * share data with other application using BIMData
+    * share data with other applications using BIMData
 
 
 When use a user impersonation?
@@ -81,7 +82,8 @@ The benefits
 User's name as the author
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Emulating the user's actions enables you to act in the name of the user. Creating content with impersonation writes the user's name in the creator's name of this content.
+Emulating the user's actions enables you to act in the name of the user. 
+Creating content with impersonation writes the user's name in the creator's name of this content.
 
 
 Sharing the authoring
@@ -93,7 +95,8 @@ Your script can modify data created by the user and amend it.
 Let BIMData handle the complexity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The credentials complexity is handled by the BIMData Connect authentication server. This option is compliant with the user's credentials.
+The credentials complexity is handled by the BIMData Connect authentication server. 
+This option is compliant with the user's credentials.
 
 Use it when you need to access the user's log, such as the user's history, and report actions.
 

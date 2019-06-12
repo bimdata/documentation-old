@@ -20,9 +20,9 @@ Backend-less application
 Chose this way if you are developing a backend-less application.
 
 These applications:
-  - could share data with other applications like BIMData Platform or any other third party app.
+  - could share data with other applications like BIMData Platform or any other third-party app.
   - must use **BIMData Connect users** credentials system.
-  - are usually mobile apps or small Javacript apps.
+  - are usually mobile apps or small Javascript apps.
 
 ➤ `Create a backend-less app`_
 
@@ -32,7 +32,7 @@ Application with a backend
 With BIMData Connect Users
 --------------------------
 
-Chose this way if your app have a backend (PHP, NodeJS, python, .NET, etc.).
+Chose this way if your app has a backend (PHP, NodeJS, Python, .NET, etc.).
 
 These applications:
   - could share data with other applications like BIMData Platform or any other third-party app.
@@ -49,8 +49,8 @@ Without Users
 Chose this way if you don't want to use BIMData Connect users.
 
 These applications:
-  - have to managed their own users and authorizations
-  - can't share data with others BIMData applications
+  - have to manage their own users and authorizations
+  - can't share data with other BIMData applications
   - have an easier setup
 
 ➤ `Create a backend app`_
@@ -63,27 +63,33 @@ These applications:
 
 For the authentication part, your application has to be registered on the BIMData Connect account manager (even if you're not using BIMData Connect users).
 
-Depending of the type of app you have, you may use different ways to authenticate your app or your users.
+Depending on the type of app you have, you may use different ways to authenticate your app or your users.
 
-Your goal here is to retrieve an **Access Token**.
+Your goal is to retrieve an **Access Token**.
 
-An **Access Token** is needed for every call to the BIMData's API. It represents your app or a user using your app.
+An **Access Token** is needed for every call to the BIMData's API. 
+It represents your app, or a user using your app.
 
 Retrieve an app Access Token
-----------------------------
-An app Access Token represents the app itself, not any user. It is used if you don't use **BIMData Connect** users, if you want to use webhooks (LINK TO WEBHOOKS PAGE) or if you're doing some automated tasks.
+=============================
 
-SEE get_access_token.rst PAGE
+An application Access Token represents the app itself and is not linked to any user. 
+It is used when you don't use **BIMData Connect** users or if you want to use `webhooks`_  or if you're doing some automated tasks.
+
+See `Get Access Token documentation`_ for more information.
+
 
 Retrieve a user Access Token
-----------------------------
-A user Access Token represents a user using your app. It means when you're calling the API with this token, you will get the data (clouds, projects, models, etc) the user has access to.
+=============================
 
-Before you can retrieve a user Access Token, the user must explicitly allow your application to behave as the user. There are multiple ways to ask them their consent, you can see them LINK TO CpenId Connect Authorization  flows
+A user Access Token represents a user using your app. 
+It means when you're calling the API with this token, you will get the data (clouds, projects, models, etc.) the user has access to.
 
-SEE authentication_flows.rst PAGE
+Before you can retrieve a user Access Token, the user must explicitly allow your application to behave as the user.
+There are multiple ways to ask them their consent, you can see them LINK TO OpenID Connect Authorization  flows
 
-.. chapter 4
+See `Authentication Flow documentation`_
+
 
 ===================
 3 - API Onboarding
@@ -92,7 +98,7 @@ SEE authentication_flows.rst PAGE
 BIMData API is a tool to interact with your models stored on BIMData's servers.
 Using the API, you can manage your projects, the clouds, upload your IFC files, manage them and retrieve and update data from your models through endpoints.
 
-BIMData API follows this general principles:
+BIMData API follows these general principles:
 
 * All API access is over HTTPS
 * All non-binary data is sent and received as JSON
@@ -109,7 +115,7 @@ Cloud
        :end-before: endexcerpt
 
 .. note::
-    To learn `more about the cloud, see the concept page`_ .
+    To learn `more about the cloud, see the concept page`_.
 
 
 Filters
@@ -120,7 +126,7 @@ Filters
        :end-before: endexcerpt
 
 .. note::
-    To learn `more about the filters, see the concept page`_ .
+    To learn `more about the filters, see the concept page`_.
 
 .. _more about the cloud, see the concept page: ../concepts/cloud.html
 .. _more about the filters, see the concept page: ../concepts/filters.html
@@ -131,19 +137,18 @@ Filters
 
 See the dedicated page `Getting Started with the Viewer`_
 
-.. _Getting Started with the Viewer: ../viewer/getting_started.html
 
 ====================
 5 - Users Management
 ====================
 
-There is currently 3 roles defined for Users.
+There are currently 3 roles defined for Users.
 Each User has a Role, and each User belongs to a Project.
 
 Roles
 =====
 
-Users can have this Roles:
+Users can have these Roles:
 
 * admin
 * user
@@ -152,7 +157,7 @@ Users can have this Roles:
 Constant values in API
 -----------------------
 
-Using the API, there are constant values associated to roles.
+Using the API, there are constant values associated with roles.
 See `the User endpoint`_ to learn about the usage.
 
 .. note::
@@ -220,11 +225,15 @@ Can read and write EDM, model, and BCF.
 Guest
 ----------------
 
-Can read-only : EDM, models, BCF and write BCF content.
+Can read-only: EDM, models, BCF and write BCF content.
 
 
 
 .. _the User endpoint: |api_url|/doc#/user/getSelfUser
+.. _Getting Started with the Viewer: ../viewer/getting_started.html
 
 .. _Create a backend-less app: ../cookbook/2_create_nobackend_app.html
 .. _Create a backend app: ../cookbook/2_create_backend_app.html
+.. _webhooks: ../guide/webhooks.html
+.. _Get Access Token documentation: ../cookbook/get_access_token.html
+.. _Authentication Flow documentation: ../guide/authentication_flows.html
