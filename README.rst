@@ -36,11 +36,11 @@ Customization
 For the version switcher, we are using `the sphinx-versioning extension <https://robpol86.github.io/sphinxcontrib-versioning/>`_.
 The theme is the `sphinx-rtd-theme <https://sphinx-rtd-theme.readthedocs.io>`_.
 
-Redoc:
-=======
+Spectacle:
+===========
 
-Our API Reference is served by `Redoc <https://rebilly.github.io/ReDoc/>`_ in its own separate directory.
-Redoc directory contains:
+Our API Reference is served by `Spectacle <https://github.com/sourcey/spectacle/>`_ in its own separate directory.
+Spectacle directory contains:
 
 * the Redoc JS library file
 * our OpenAPI file

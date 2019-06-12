@@ -220,13 +220,12 @@ The Project admin manages the Roles of the Users: the admin car add, edit or del
 Member
 ----------------
 
-Can read and write EDM, model, and BCF.
+Can read and write DMS, model, and BCF.
 
 Guest
 ----------------
 
-Can read-only: EDM, models, BCF and write BCF content.
-
+Can read-only: DMS, models, BCF and write BCF content.
 
 
 .. _the User endpoint: |api_url|/doc#/user/getSelfUser

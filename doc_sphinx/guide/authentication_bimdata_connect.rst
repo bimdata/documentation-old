@@ -64,8 +64,8 @@ The benefits
 
 Use it when you need to have a scheduled response to an event and launch a script depending on this response.
 
-.. IMPORTANT:: You cannot access as a user, therefore it's not possible to:
-
+.. IMPORTANT:: 
+    You cannot access as a user, therefore you cannot:
     * do any impersonation
     * manage fine granularity with access rights
     * share data with other applications using BIMData
