@@ -4,3 +4,5 @@ node_modules/
 npm-debug.log
 .vscode
 
+doc_sphinx/_static/api/
+doc_sphinx/_static/css/style.css
