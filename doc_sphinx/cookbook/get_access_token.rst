@@ -2,7 +2,7 @@
 How-to get your Access Token
 =============================
 
-.. 
+..
     excerpt
         The script regarding the Access Token
     endexcerpt
@@ -23,7 +23,7 @@ Python
 
 .. substitution-code-block:: python
 
-   import requests
+    import requests
 
     payload = {
         "client_id": CLIENT_ID,
@@ -32,5 +32,19 @@ Python
     }
 
     #Get the token
-    response = requests.post("https://|bimdata_connect|.bimdata.io/token", data=payload)
+    response = requests.post("|bimdata_connect|/token", data=payload)
     access_token = response.json().get("access_token")
+
+Curl
+^^^^^^^^
+
+.. substitution-code-block:: bash
+
+    curl --request POST "https://connect-next.bimdata.io/token" \
+      --header "Content-Type: application/x-www-form-urlencoded" \
+      --data "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
+
+
+.. WARNING:: This API call doesn't accept JSON
+
+    Be sure to use application/x-www-form-urlencoded encoding
