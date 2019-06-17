@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "node bin/watch.js",
-    "build:apiref": "spectacle -e --target-dir _static/api  _static/bimdata_api.json"
+    "build:apiref": "curl ${API_URL:-https://api-staging.bimdata.io}/doc.json > /tmp/bimdata_api.json && spectacle -e --target-dir _static/api  /tmp/bimdata_api.json"
   },
   "author": "",
   "license": "CC-BY-4.0",
