@@ -6,6 +6,13 @@
 IFC
 ===
 
+
+.. image:: /_images/concepts/ifc_logo.svg
+   :scale: 10 %
+   :width: 200 px
+   :align: right
+   :alt: IFC logo
+
 .. 
     excerpt
         After being uploaded, the IFC will be processed on our servers.
@@ -24,16 +31,18 @@ Depending on the options you chose, you can:
 * Retrieve classifications, systemes and zones
 * Retrieve 2D plans in SVG format
 
+
 Upload an IFC
 =============
 
-To upload an IFC file, you have to upload a `document`. 
+To upload an IFC file, you have to upload a ``document``. 
 When the BIMData API detects an IFC format (based on the file name ending with ``.ifc`` or ``.ifczip``), it will trigger the IFC process.
 
-IFC files are tied to a `document` which represents the actual uploaded file.
+IFC files are tied to a ``document`` which represents the actual uploaded file.
 
 We use HTTP Compression to speed up the file transfer. HTTP Compression will start as soon as you upload a file.
 Files are decompressed at the output of the API.
+
 
 .. note::
 
@@ -47,7 +56,7 @@ After being uploaded, the IFC will be processed on our servers.
 .. NOTE::
     The process takes from few minutes to an hour depending on the size of the file and the options activated.
 
-You can follow the progress on the `status` field:
+You can follow the progress on the ``status`` field:
 
 
 ================  ===================  ========================================================================================================
