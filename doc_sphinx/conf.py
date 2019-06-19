@@ -72,6 +72,7 @@ scv_whitelist_branches = tuple(
 API_URL = os.environ.get("API_URL", "https://api-staging.bimdata.io")
 CDN_URL = os.environ.get("CDN_URL", "https://cdn-staging.bimdata.io")
 CONNECT_URL = os.environ.get("CONNECT_URL", "https://login-staging.bimdata.io")
+PLAYGROUND_CLIENT_ID = os.environ.get("PLAYGROUND_CLIENT_ID", "719549")
 
 # replace in code
 substitutions = [
@@ -150,6 +151,10 @@ html_context = {
     "conf_py_path": "doc_sphinx/",
     "source_suffix": ".rst",
     "github_version": "dev/",
+    "api_url": API_URL,
+    "cdn_url": CDN_URL,
+    "connect_url": CONNECT_URL,
+    "playground_client_id": PLAYGROUND_CLIENT_ID,
 }
 
 # The name of an image file (relative to this directory) to place at the top
@@ -183,14 +188,12 @@ html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
 html_sidebars = {
-    
     "tutorials/index": ["globaltoc.html"],
     "guide/index": ["globaltoc.html"],
     "cookbook/index": ["globaltoc.html"],
     "concepts/*": ["globaltoc.html"],
     "**": ["globaltoc.html"],
-
-    }
+}
 
 html_domain_indices = True
 html_use_index = True
