@@ -1,9 +1,3 @@
-.. index::
-   single: execution
-   single: context
-   single: projects
-   module: core
-
 ==========
 Projects
 ==========
@@ -25,6 +19,11 @@ A project contains:
  * your models
  * your Document Management System
  * and BCFs.
+
+ .. image:: /_images/concepts/projects.svg
+   :scale: 20 %
+   :alt: Cloud contains projects
+   :align: center
 
 .. note:: BCF
     A BCF is linked to a project, not a model.
