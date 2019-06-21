@@ -37,7 +37,11 @@
         {% include "breadcrumbs.html" %}
         {%- block document %}
         <div class="body" role="main">
-          {% block body %}{% endblock %}
+          {% if "api_partial/" not in pagename %}
+            {% block body %}{% endblock %}
+          {% else %}
+            {%- include "openapi_endpoint.html" %}
+          {% endif %}
         </div>
         {%- endblock %}
       </div>

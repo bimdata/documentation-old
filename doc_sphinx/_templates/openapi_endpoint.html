@@ -1,0 +1,55 @@
+{% set rst_name = pagename.split("/") %}
+{% set openapi_to_load = rst_name[1].split("_") %}
+{% set name_of_endpoint = openapi_to_load[0] %}
+<script type="text/javascript" src="../_static/swagger-dist/swagger-ui-bundle.js"></script>
+<link rel="stylesheet" href="../_static/swagger-dist/swagger-ui.css">
+<script type="text/javascript" src="../_static/swagger-dist/swagger-ui-standalone-preset.js"></script>
+<script>
+  window.onload = function() {
+    // Build a system
+    const ui = SwaggerUIBundle({
+      url: "{{api_url}}/doc/{{name_of_endpoint}}.json",
+      dom_id: '#endpoint',
+      defaultModelsExpandDepth: -1,
+      docExpansion: "none",
+      deepLinking: true,
+      presets: [
+        SwaggerUIBundle.presets.apis,
+        SwaggerUIStandalonePreset
+      ],
+      plugins: [
+        SwaggerUIBundle.plugins.DownloadUrl
+      ],
+      layout: "StandaloneLayout",
+      oauth2RedirectUrl: window.location.origin + "/_static/swagger-dist/oauth2-redirect.html"
+    });
+
+    ui.initOAuth({
+      clientId: "{{playground_client_id}}",
+      appName: "BIMData documentation",
+      scopeSeparator: " ",
+      additionalQueryStringParams: {}
+    });
+  };
+</script>
+<style>
+
+.information-container{
+  display: none;
+}
+
+form.download-url-wrapper input,
+form.download-url-wrapper select
+{
+  width: 500px;
+}
+
+.swagger-ui > .topbar {
+  display: none;
+}
+
+.swagger-ui code {
+  font-size: 12px;
+}
+</style>
+<div id="endpoint"></div>
