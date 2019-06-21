@@ -1,6 +1,8 @@
 {% set rst_name = pagename.split("/") %}
-{% set openapi_to_load = rst_name[1].split("_") %}
-{% set name_of_endpoint = openapi_to_load[0] %}
+{% if "index" not in pagename and "introduction" not in pagename %}
+    {% set openapi_to_load = rst_name[1].split("_") %}
+    {% set name_of_endpoint = openapi_to_load[0] %}
+
 <script type="text/javascript" src="../_static/swagger-dist/swagger-ui-bundle.js"></script>
 <script type="text/javascript" src="../_static/swagger-dist/swagger-ui-standalone-preset.js"></script>
 <script>
@@ -44,3 +46,4 @@ form.download-url-wrapper select
 }
 </style>
 <div id="endpoint"></div>
+{% endif %}
