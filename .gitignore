@@ -3,3 +3,6 @@ node_modules/
 .v_env/
 npm-debug.log
 .vscode
+
+doc_sphinx/_static/api/
+doc_sphinx/_static/css/style.css

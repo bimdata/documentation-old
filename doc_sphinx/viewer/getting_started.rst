@@ -16,7 +16,7 @@ Getting started with the Viewer
 Include the Viewer
 =======================
 
-With this code in your HTML page, you load a Viewer woth our Demo Model.
+With this code in your HTML page, you load a Viewer with our Demo Model.
 
 .. substitution-code-block:: html
 

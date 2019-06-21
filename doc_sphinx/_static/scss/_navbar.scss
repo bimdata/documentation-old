@@ -32,6 +32,7 @@
       #rtd-search-form{
         position: relative;
         input{
+          margin: 0;
           padding: 0 2rem;
           width: 100%;
           position: relative;
@@ -51,7 +52,7 @@
           background-size: cover;
           background-position: center;
           z-index: 10;
-          top: 6px;
+          top: 12px;
         }
       }
     }

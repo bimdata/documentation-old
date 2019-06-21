@@ -102,7 +102,14 @@ if HAS_ROBOTS_TXT == "true":
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.rst", "node_modules"]
+exclude_patterns = [
+    "_build",
+    "Thumbs.db",
+    ".DS_Store",
+    "README.rst",
+    "node_modules",
+    ".v_env",
+]
 
 # The name of the Pygments (syntax highlighting) style to use.
 # pygments_style = 'sphinx'
@@ -187,13 +194,9 @@ html_static_path = ["_static", "_images"]
 html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-html_sidebars = {
-    "tutorials/index": ["globaltoc.html"],
-    "guide/index": ["globaltoc.html"],
-    "cookbook/index": ["globaltoc.html"],
-    "concepts/*": ["globaltoc.html"],
-    "**": ["globaltoc.html"],
-}
+
+html_sidebars = {"**": ["globaltoc.html"]}
+
 
 html_domain_indices = True
 html_use_index = True

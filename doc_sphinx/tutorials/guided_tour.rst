@@ -2,7 +2,7 @@
 Guided Tour
 ===========
 
-.. 
+..
     excerpt
         Take a tour around and create your first application
     endexcerpt
@@ -17,25 +17,29 @@ You can create several types of applications.
 Backend-less application
 ==========================
 
-Chose this way if you are developping a backend-less application.
+Chose this way if you are developing a backend-less application.
 
-It could be the case, if you are working on **an app for tablet or mobile**.
-
-Or maybe that your main programming language is Javascript.
+These applications:
+  - could share data with other applications like BIMData Platform or any other third-party app.
+  - must use **BIMData Connect users** credentials system.
+  - are usually mobile apps or small Javascript apps.
 
 ➤ `Create a backend-less app`_
 
 Application with a backend
 ===========================
 
-With Users
--------------
+With BIMData Connect Users
+--------------------------
 
-Chose this way if your backend application benefit from **BIMData Connect users** credentials system.
+Chose this way if your app has a backend (PHP, NodeJS, Python, .NET, etc.).
 
-Therefore, your users are able to share their data between multiple app.
+These applications:
+  - could share data with other applications like BIMData Platform or any other third-party app.
+  - must use **BIMData Connect users** credentials system.
 
-It could be the case if they are sharing data between your app and BIMData Platform by example.
+.. note
+    Our own BIMData Platform application uses BIMData Connect users (backend-app with users).
 
 ➤ `Create a backend app`_
 
@@ -44,49 +48,48 @@ Without Users
 
 Chose this way if you don't want to use BIMData Connect users.
 
-You have to handle authorization access yourself and will not be able to share data with other BIMData applications.
-The basic setup is easier.
-
-Our own BIMData Platform uses BIMData Connect users (backend-app with users).
+These applications:
+  - have to manage their own users and authorizations
+  - can't share data with other BIMData applications
+  - have an easier setup
 
 ➤ `Create a backend app`_
 
-.. _Create a backend-less app: ../tutorials/2_create_nobackend_app.html
-.. _Create a backend app: ../tutorials/2_create_backend_app.html
+
 
 ==================
-2 - Authentication 
+2 - Authentication
 ==================
 
-For the authentication part, your application has to be registered on the BIMData Connect account manager.
+For the authentication part, your application has to be registered on the BIMData Connect account manager (even if you're not using BIMData Connect users).
 
-What's an Access Token ?
-=========================
+Depending on the type of app you have, you may use different ways to authenticate your app or your users.
 
-The Client ID and the Client Secret are the 2 mandatory elements to get an Access Token from the Authentication Server.
-You will need this Access Token for every call to the BIMData's API.
+Your goal is to retrieve an **Access Token**.
 
+An **Access Token** is needed for every call to the BIMData's API. 
+It represents your app, or a user using your app.
 
-OpenID Connect
-==============
+Retrieve an app Access Token
+=============================
 
-To implement OpenID Connect within your application, find OpenID Connect libraries in your language : https://openid.net/developers/certified/
+An application Access Token represents the app itself and is not linked to any user. 
+It is used when you don't use **BIMData Connect** users or if you want to use `webhooks`_  or if you're doing some automated tasks.
 
-
-Flow Authentication
-===================
-
-
-.. note::
-
-    To `learn more about the Authentication flows, read the Authentication guide page`_.
+See `Get Access Token documentation`_ for more information.
 
 
+Retrieve a user Access Token
+=============================
 
+A user Access Token represents a user using your app. 
+It means when you're calling the API with this token, you will get the data (clouds, projects, models, etc.) the user has access to.
 
-.. _learn more about the Authentication flows, read the Authentication guide page: ../topics/authentication_bimdata_connect.html
+Before you can retrieve a user Access Token, the user must explicitly allow your application to behave as the user.
+There are multiple ways to ask them their consent, you can see them LINK TO OpenID Connect Authorization  flows
 
-.. chapter 4
+See `Authentication Flow documentation`_
+
 
 ===================
 3 - API Onboarding
@@ -95,7 +98,7 @@ Flow Authentication
 BIMData API is a tool to interact with your models stored on BIMData's servers.
 Using the API, you can manage your projects, the clouds, upload your IFC files, manage them and retrieve and update data from your models through endpoints.
 
-BIMData API follows this general principles:
+BIMData API follows these general principles:
 
 * All API access is over HTTPS
 * All non-binary data is sent and received as JSON
@@ -111,8 +114,8 @@ Cloud
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. note::  
-    To learn `more about the cloud, see the concept page`_ .
+.. note::
+    To learn `more about the cloud, see the concept page`_.
 
 
 Filters
@@ -122,8 +125,8 @@ Filters
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. note::  
-    To learn `more about the filters, see the concept page`_ .
+.. note::
+    To learn `more about the filters, see the concept page`_.
 
 .. _more about the cloud, see the concept page: ../concepts/cloud.html
 .. _more about the filters, see the concept page: ../concepts/filters.html
@@ -134,19 +137,18 @@ Filters
 
 See the dedicated page `Getting Started with the Viewer`_
 
-.. _Getting Started with the Viewer: ../viewer/getting_started.html
 
 ====================
 5 - Users Management
 ====================
 
-There is currently 3 roles defined for Users.
+There are currently 3 roles defined for Users.
 Each User has a Role, and each User belongs to a Project.
 
 Roles
 =====
 
-Users can have this Roles:
+Users can have these Roles:
 
 * admin
 * user
@@ -155,11 +157,11 @@ Users can have this Roles:
 Constant values in API
 -----------------------
 
-Using the API, there are constant values associated to roles. 
+Using the API, there are constant values associated with roles.
 See `the User endpoint`_ to learn about the usage.
 
 .. note::
-    
+
     These constants are only used in API.
 
 When checking User's role through the API, the values are:
@@ -179,7 +181,7 @@ User in the Cloud
 
 Every User in the Cloud is linked to a Project.
 
-Admin 
+Admin
 -------------
 
 A cloud Admin can see every other member of the Cloud, can invite other Users as admin in the Cloud.
@@ -190,9 +192,9 @@ A cloud admin can ban any User from the Cloud.
 
 .. warning::
 
-    Ban a User exclude the User from all Projects of the Cloud. 
+    Ban a User exclude the User from all Projects of the Cloud.
 
-Member 
+Member
 ---------------
 
 A Cloud member is at least a member of one Project.
@@ -203,29 +205,34 @@ User in the Project
 Any User in any Project can read the user list and see the other users of the project.
 
 
-Admin 
+Admin
 -------------
 
 A Project admin can invite Users to the Project.
 
-.. note:: 
+.. note::
 
     The User is implicitly invited in the Cloud.
 
 The Project admin manages the Roles of the Users: the admin car add, edit or delete Roles.
 
 
-Member 
+Member
 ----------------
 
-Can read and write EDM, model, and BCF.
+Can read and write DMS, model, and BCF.
 
-Guest 
+Guest
 ----------------
 
-Can read-only : EDM, models, BCF and write BCF content.
-
+Can read-only: DMS, models, BCF and write BCF content.
 
 
 .. _the User endpoint: |api_url|/doc#/user/getSelfUser
+.. _Getting Started with the Viewer: ../viewer/getting_started.html
 
+.. _Create a backend-less app: ../cookbook/2_create_nobackend_app.html
+.. _Create a backend app: ../cookbook/2_create_backend_app.html
+.. _webhooks: ../guide/webhooks.html
+.. _Get Access Token documentation: ../cookbook/get_access_token.html
+.. _Authentication Flow documentation: ../guide/authentication_flows.html
