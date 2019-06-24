@@ -6931,8 +6931,121 @@ p {
   margin-top: 60px;
 }
 
+<<<<<<< HEAD
+=======
+.content-doc_summary {
+  padding: 0;
+  height: calc(100vh - 60px);
+  position: fixed;
+  background-color: #f7f7f7;
+}
+
+.content-doc_summary .wy-menu-vertical {
+  width: 100%;
+}
+
+.content-doc_summary .wy-menu-vertical .caption {
+  color: #2f374a;
+  font-size: 13px;
+  font-size: 0.92857rem;
+  text-transform: initial;
+}
+
+.content-doc_summary .wy-menu-vertical ul {
+  margin: 0;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 {
+  background: #f7f7f7;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 a {
+  padding: .5rem 2.5rem;
+  position: relative;
+  color: #2f374a;
+  font-family: "robotoregular", sans-serif;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 a:hover {
+  background-color: #f9c72c;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 a.internal::before {
+  content: "";
+  position: absolute;
+  background-image: url("../_images/bimdata_carret-right.svg");
+  width: 17px;
+  height: 15px;
+  top: 11px;
+  left: 22px;
+  background-size: 11px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 a.external::after {
+  content: none;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 a {
+  margin: .4rem 0;
+  padding: 0 3.5rem;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 .toctree-l3 a {
+  margin: .5rem 0;
+  padding: 0 4.25rem;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current a {
+  background-color: #f9c72c;
+  border: none;
+  font-weight: inherit;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current a.internal::before {
+  background-image: url("../_images/bimdata_carret-down.svg");
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a {
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a::before {
+  content: "";
+  position: absolute;
+  left: 39px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #f9c72c;
+  opacity: 0;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a:hover::before {
+  opacity: 1;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a.active::before {
+  opacity: 1;
+}
+
+.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 .toctree-l3 a::before {
+  left: 55px;
+}
+
+.content-doc_summary li.current {
+  background: #f7f7f7;
+}
+
+>>>>>>> new-api-doc-tool
 .content-doc_content {
   padding: 0 27px 4rem;
+}
+
+.content-doc_content.doc-api {
+  padding-bottom: 0;
 }
 
 .content-doc_content .wy-breadcrumbs {
@@ -7072,9 +7185,10 @@ p {
 #concepts .topic blockquote, #guide .topic blockquote, #cookbook .topic blockquote, #tutorials .topic blockquote {
   padding-left: 32px;
   width: 555px;
+  border: none;
+  line-height: 22px;
   font-size: 16px;
   font-size: 1.14286rem;
-  line-height: 22px;
 }
 
 #search-results .context .highlighted {

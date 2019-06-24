@@ -43,6 +43,13 @@ Guide
        :end-before: endexcerpt
 
 
+.. topic:: `Security`_
+
+    .. include:: security.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+
 .. toctree::
     :hidden:
     
@@ -52,6 +59,7 @@ Guide
     Errors <errors>
     Filters <filters>
     Webhooks <webhooks>
+    Security Concerns<security>
 
 .. _API Introduction: introduction.html
 .. _Authentication: authentication_bimdata_connect.html
@@ -59,6 +67,7 @@ Guide
 .. _Errors: errors.html
 .. _Filters: filters.html
 .. _Webhooks: webhooks.html
+.. _Security: security.html
 
 
 

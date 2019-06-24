@@ -127,6 +127,13 @@ For our example, this is the code you write:
                 ])
 
 
+You have now a CSV file Excel-compatible!
+
+.. image:: /_images/tutorials/BIMdata_export_excel.png
+   :scale: 100 %
+   :alt: Screenshot of an Excel export of comments
+   :align: center
+
 The full script
 =================
 
