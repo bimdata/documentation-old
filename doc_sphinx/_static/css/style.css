@@ -5283,62 +5283,35 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   color: #75715e;
 }
 
-<<<<<<< HEAD
-@font-face {
-  font-family: 'robotobold';
-  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
-=======
 /* import LIB UTILS --------------------------*/
 @font-face {
   font-family: 'robotobold';
   src: url("/dist/fonts/roboto-bold-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-bold-webfont.woff") format("woff");
->>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotoitalic';
-<<<<<<< HEAD
-  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/roboto-italic-webfont.woff") format("woff");
-=======
   src: url("/dist/fonts/roboto-italic-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-italic-webfont.woff") format("woff");
->>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotomedium';
-<<<<<<< HEAD
-  src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
-=======
   src: url("/dist/fonts/roboto-medium-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-medium-webfont.woff") format("woff");
->>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotoregular';
-<<<<<<< HEAD
-  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
-=======
   src: url("/dist/fonts/roboto-regular-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-regular-webfont.woff") format("woff");
->>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
 
-<<<<<<< HEAD
-/* variables COULEURS ------------------------ */
-/* variables LIGHTNESS COULEURS ------------------------ */
-/* variable FONTS ------------------------ */
-/*  BIM DATA VARIABLES ------------------------ */
-@font-face {
-  font-family: 'robotobold';
-  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
-=======
 /* variables COLORS ------------------------------------ */
 /* variables LIGHTEN COLORS ---------------------------- */
 /* variables DARKEN COLORS ----------------------------- */
@@ -5348,40 +5321,27 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 @font-face {
   font-family: 'robotobold';
   src: url("/dist/fonts/roboto-bold-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-bold-webfont.woff") format("woff");
->>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotoitalic';
-<<<<<<< HEAD
-  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/roboto-italic-webfont.woff") format("woff");
-=======
   src: url("/dist/fonts/roboto-italic-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-italic-webfont.woff") format("woff");
->>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotomedium';
-<<<<<<< HEAD
-  src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
-=======
   src: url("/dist/fonts/roboto-medium-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-medium-webfont.woff") format("woff");
->>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'robotoregular';
-<<<<<<< HEAD
-  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
-=======
   src: url("/dist/fonts/roboto-regular-webfont.woff2") format("woff2"), url("/dist/fonts/roboto-regular-webfont.woff") format("woff");
->>>>>>> add new lib UTILS && custom dark mode
   font-weight: normal;
   font-style: normal;
 }
@@ -5471,10 +5431,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 .breadcrumb .breadcrumb-item {
   background-color: white;
-<<<<<<< HEAD
-=======
   border-radius: 10px;
->>>>>>> add new lib UTILS && custom dark mode
   padding: 8px;
   line-height: 1em;
   box-sizing: border-box;
@@ -5491,34 +5448,11 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 .breadcrumb-divider:before {
   content: "/";
-<<<<<<< HEAD
-  color: #979797;
-}
-
-/* blocs BTN ------------------------ */
-=======
   color: #94979a;
 }
 
-<<<<<<< HEAD
-/* blocs BTN ------------------------ */
-.btn {
-  color: #2f374a;
-}
-
->>>>>>> add new lib UTILS && custom dark mode
-.btn:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-<<<<<<< HEAD
-=======
-.btn.btn-primary:hover {
-=======
 /* blocs BTN --------------------------------------------------- */
 a.btn:hover, .btn-primary:hover {
->>>>>>> adjusting dark mode
   color: white;
   background-color: #1b202b;
   border-color: #1b202b;
@@ -5529,7 +5463,6 @@ a.btn:hover, .btn-primary:hover {
   transition: all ease 0.3s;
 }
 
->>>>>>> add new lib UTILS && custom dark mode
 .btn-primary {
   padding: 0;
   width: 100%;
@@ -5556,17 +5489,6 @@ a.btn:hover, .btn-primary:hover {
   outline: none;
 }
 
-<<<<<<< HEAD
-.btn-primary:hover {
-  color: white;
-  background-color: #212634;
-  border-color: #1c202c;
-}
-
-<<<<<<< HEAD
-=======
-=======
->>>>>>> adjusting dark mode
 .btn-primary:active {
   background-color: #1b202b;
   border-color: #1b202b;
@@ -5576,7 +5498,6 @@ a.btn:hover, .btn-primary:hover {
   box-shadow: none;
 }
 
->>>>>>> add new lib UTILS && custom dark mode
 .btn-primary_small {
   height: 27px;
 }
@@ -5589,12 +5510,6 @@ a.btn:hover, .btn-primary:hover {
   height: 39px;
 }
 
-<<<<<<< HEAD
-.btn-secondary {
-  width: 100%;
-  background-color: #f9c72c;
-  border: none;
-=======
 .btn-primary:not(:disabled):not(.disabled):active {
   background-color: #1b202b;
 }
@@ -5627,7 +5542,6 @@ a.btn:hover, .btn-primary:hover {
 
 .btn-secondary:hover {
   background-color: #f9c72c;
->>>>>>> add new lib UTILS && custom dark mode
   color: #2f374a;
 }
 
@@ -5641,10 +5555,6 @@ a.btn:hover, .btn-primary:hover {
 
 .btn-secondary_large {
   height: 39px;
-<<<<<<< HEAD
-  line-height: 30px;
-=======
->>>>>>> add new lib UTILS && custom dark mode
 }
 
 .btn-shadow {
@@ -5753,10 +5663,7 @@ a.btn:hover, .btn-primary:hover {
 .card {
   background: white;
   border-radius: 3px;
-<<<<<<< HEAD
-=======
   border: none;
->>>>>>> add new lib UTILS && custom dark mode
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.07);
 }
 
@@ -5801,18 +5708,10 @@ a.btn:hover, .btn-primary:hover {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
-<<<<<<< HEAD
-  -webkit-font-smoothing: antialiased;
-}
-
-/* custom CARD HORINZONTAL ------------------ */
-.card-horizontal {
-=======
 }
 
 /* custom CARD VERTICAL ------------------ */
 .card-vertical {
->>>>>>> add new lib UTILS && custom dark mode
   margin: 0 30px;
   padding: 0 36px;
   height: 327px;
@@ -5832,38 +5731,22 @@ a.btn:hover, .btn-primary:hover {
   align-items: center;
 }
 
-<<<<<<< HEAD
-.card-horizontal_content img {
-  height: 92px;
-}
-
-.card-horizontal_content h2 {
-=======
 .card-vertical_content img {
   height: 92px;
 }
 
 .card-vertical_content h2 {
->>>>>>> add new lib UTILS && custom dark mode
   margin: 16px 0 7px 0;
   font-size: 21px;
   font-size: 1.5rem;
   font-family: "robotobold", sans-serif;
 }
 
-<<<<<<< HEAD
-.card-horizontal_content h2::first-letter {
-  text-transform: capitalize;
-}
-
-.card-horizontal_content span {
-=======
 .card-vertical_content h2::first-letter {
   text-transform: capitalize;
 }
 
 .card-vertical_content span {
->>>>>>> add new lib UTILS && custom dark mode
   margin: auto;
   width: 14.6px;
   height: 1.5px;
@@ -5871,22 +5754,14 @@ a.btn:hover, .btn-primary:hover {
   background-color: #f9c72c;
 }
 
-<<<<<<< HEAD
-.card-horizontal_content p {
-=======
 .card-vertical_content p {
->>>>>>> add new lib UTILS && custom dark mode
   margin: 22px 0;
   font-size: 12px;
   font-size: 0.85714rem;
   line-height: 16px;
 }
 
-<<<<<<< HEAD
-.card-horizontal_content a {
-=======
 .card-vertical_content .btn {
->>>>>>> add new lib UTILS && custom dark mode
   margin: auto;
   width: 128px;
   border: none;
@@ -5917,18 +5792,6 @@ a.btn:hover, .btn-primary:hover {
   justify-content: center;
 }
 
-<<<<<<< HEAD
-.card-horizontal_content a:active:focus {
-  box-shadow: none;
-}
-
-.card-horizontal_content a:focus {
-  outline: none;
-}
-
-/* custom CARD VERTICAL --------------------- */
-.card-vertical {
-=======
 .card-vertical_content .btn:active:focus {
   box-shadow: none;
 }
@@ -5939,7 +5802,6 @@ a.btn:hover, .btn-primary:hover {
 
 /* custom CARD HORIZONTAL --------------------- */
 .card-horizontal {
->>>>>>> add new lib UTILS && custom dark mode
   position: relative;
   margin: 0 0 30px;
   padding: 0 33px;
@@ -5960,11 +5822,7 @@ a.btn:hover, .btn-primary:hover {
   align-items: center;
 }
 
-<<<<<<< HEAD
-.card-vertical::before {
-=======
 .card-horizontal::before {
->>>>>>> add new lib UTILS && custom dark mode
   content: "";
   position: absolute;
   left: 0;
@@ -5973,47 +5831,15 @@ a.btn:hover, .btn-primary:hover {
   background-color: #f9c72c;
 }
 
-<<<<<<< HEAD
-.card-vertical_content {
-  width: 100%;
-}
-
-.card-vertical_content h3 {
-=======
 .card-horizontal_content {
   width: 100%;
 }
 
 .card-horizontal_content h3 {
->>>>>>> add new lib UTILS && custom dark mode
   margin: 0 0 22px;
   color: #2f374a;
 }
 
-<<<<<<< HEAD
-.card-vertical_content h3 a {
-  font-family: "robotoregular", sans-serif;
-}
-
-.card-vertical_content p {
-  margin-bottom: 16px;
-}
-
-.card-vertical_content .action-button {
-  position: relative;
-  color: #2f374a;
-  font-family: "robotomedium", sans-serif;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-=======
 .card-horizontal_content h3 a {
   font-family: "robotoregular", sans-serif;
 }
@@ -6024,7 +5850,6 @@ a.btn:hover, .btn-primary:hover {
 
 .card-horizontal_content a.action-button {
   display: inline-block;
->>>>>>> add new lib UTILS && custom dark mode
   -webkit-transition: all 0.35s ease;
   -moz-transition: all 0.35s ease;
   -ms-transition: all 0.35s ease;
@@ -6032,14 +5857,6 @@ a.btn:hover, .btn-primary:hover {
   transition: all 0.35s ease;
 }
 
-<<<<<<< HEAD
-.card-vertical_content .action-button__rectangle {
-  width: 25px;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  left: 20%;
-=======
 .card-horizontal_content a.action-button .arrow {
   display: inline-block;
   position: relative;
@@ -6054,65 +5871,16 @@ a.btn:hover, .btn-primary:hover {
   position: absolute;
   bottom: 3px;
   right: 0;
-<<<<<<< HEAD
-  transform-origin: bottom;
-  height: 2px;
->>>>>>> add new lib UTILS && custom dark mode
-=======
->>>>>>> adjusting dark mode
   background-color: #2f374a;
   -webkit-transition: all 0.35s ease;
   -moz-transition: all 0.35s ease;
   -ms-transition: all 0.35s ease;
   -o-transition: all 0.35s ease;
   transition: all 0.35s ease;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translateY(-50%) scaleX(1);
-  -moz-transform: translateY(-50%) scaleX(1);
-  -ms-transform: translateY(-50%) scaleX(1);
-  transform: translateY(-50%) scaleX(1);
-  -webkit-transform-origin: right;
-  -moz-transform-origin: right;
-  -ms-transform-origin: right;
-  transform-origin: right;
-}
-
-.card-vertical_content .action-button__arrow {
-  position: absolute;
-  top: 2%;
-  left: 23%;
-}
-
-.card-vertical_content .action-button:hover {
-  text-decoration: none;
-  -webkit-transform: translateX(22px);
-  -moz-transform: translateX(22px);
-  -ms-transform: translateX(22px);
-  transform: translateX(22px);
-}
-
-.card-vertical_content .action-button:hover .action-button__rectangle {
-  -webkit-transform: translateY(-50%) scaleX(0);
-  -moz-transform: translateY(-50%) scaleX(0);
-  -ms-transform: translateY(-50%) scaleX(0);
-  transform: translateY(-50%) scaleX(0);
-}
-
-/* custom INITIALS ------------------------ */
-.initials {
-  height: 44px;
-  width: 44px;
-  border-radius: 100%;
-  background: #2f374a;
-  color: white;
-=======
-=======
   -webkit-transform-origin: bottom;
   -moz-transform-origin: bottom;
   -ms-transform-origin: bottom;
   transform-origin: bottom;
->>>>>>> adjusting dark mode
 }
 
 .card-horizontal_content a.action-button .arrow::after {
@@ -6399,7 +6167,6 @@ a.btn:hover, .btn-primary:hover {
 
 .header__container {
   height: 100%;
->>>>>>> add new lib UTILS && custom dark mode
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -6410,26 +6177,6 @@ a.btn:hover, .btn-primary:hover {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  font-size: 14px;
-  font-size: 1rem;
-}
-
-/* custom LOADER ------------------------ */
-.loader {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1040;
-=======
   -webkit-box-pack: justify;
   -moz-box-pack: justify;
   -ms-flex-pack: justify;
@@ -6439,7 +6186,6 @@ a.btn:hover, .btn-primary:hover {
 
 .logo-container {
   flex-basis: 60px;
->>>>>>> add new lib UTILS && custom dark mode
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -6457,19 +6203,6 @@ a.btn:hover, .btn-primary:hover {
   justify-content: center;
 }
 
-<<<<<<< HEAD
-.loader-layout {
-  margin-top: 6rem;
-  position: relative;
-  background: none;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -moz-box-direction: normal;
-  -moz-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-=======
 .navigation {
   display: -webkit-box;
   display: -moz-box;
@@ -6590,7 +6323,6 @@ a.btn:hover, .btn-primary:hover {
   -moz-box-orient: vertical;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
->>>>>>> add new lib UTILS && custom dark mode
 }
 
 .loader-layout__text {
@@ -6907,8 +6639,6 @@ a.btn:hover, .btn-primary:hover {
   }
 }
 
-<<<<<<< HEAD
-=======
 .navbar {
   background-color: white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
@@ -7048,7 +6778,6 @@ a.btn:hover, .btn-primary:hover {
   transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
 }
 
->>>>>>> add new lib UTILS && custom dark mode
 /* custom SCROLLBAR ------------------------ */
 /* width */
 ::-webkit-scrollbar {
@@ -7056,21 +6785,6 @@ a.btn:hover, .btn-primary:hover {
   height: 7px;
 }
 
-<<<<<<< HEAD
-/* Track */
-::-webkit-scrollbar-track {
-  background: #D8D8D8;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #2f374a;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-=======
 /* Track */
 ::-webkit-scrollbar-track {
   background: #e3e4e4;
@@ -7272,7 +6986,6 @@ a.btn:hover, .btn-primary:hover {
   -moz-transform-origin: left;
   -ms-transform-origin: left;
   transform-origin: left;
->>>>>>> add new lib UTILS && custom dark mode
 }
 
 .switch-component {
@@ -7286,14 +6999,11 @@ a.btn:hover, .btn-primary:hover {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-<<<<<<< HEAD
-=======
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
->>>>>>> add new lib UTILS && custom dark mode
 }
 
 .switch-component .switch {
@@ -7329,11 +7039,7 @@ a.btn:hover, .btn-primary:hover {
   left: 0;
   right: 0;
   bottom: 0;
-<<<<<<< HEAD
-  background-color: #E2E2E2;
-=======
   background-color: #e3e4e4;
->>>>>>> add new lib UTILS && custom dark mode
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
@@ -7469,11 +7175,7 @@ table tbody tr td:nth-child(odd) {
 }
 
 table tbody tr td:nth-child(even) {
-<<<<<<< HEAD
-  background-color: #E2E2E2;
-=======
   background-color: #e3e4e4;
->>>>>>> add new lib UTILS && custom dark mode
 }
 
 .top-toolbar__choice-list-items {
@@ -7559,11 +7261,7 @@ table tbody tr td:nth-child(even) {
 }
 
 .top-toolbar__choice-list-items .choice-list .choice-list__list-options .items-container li.active {
-<<<<<<< HEAD
-  background-color: #EFEFEF;
-=======
   background-color: rgba(148, 151, 154, 0.1);
->>>>>>> add new lib UTILS && custom dark mode
 }
 
 .base-valid-delete {
@@ -7639,11 +7337,6 @@ table tbody tr td:nth-child(even) {
   fill: #FF3D1E;
 }
 
-<<<<<<< HEAD
-html, body {
-  font-family: "robotoregular", sans-serif;
-  font-size: 14px;
-=======
 /* custom PROJECTS ----------------------------------- */
 .theme-dark {
   /* custom COLORS --------------------------------------- */
@@ -7960,7 +7653,6 @@ html, body {
   font-family: "robotoregular", sans-serif;
   font-size: 14px;
   scroll-behavior: smooth;
->>>>>>> add new lib UTILS && custom dark mode
 }
 
 .container-fluid, .container, [class*="col-"] {
@@ -8016,16 +7708,11 @@ h4 {
 
 p {
   margin: 0;
-<<<<<<< HEAD
-=======
   color: #94979a;
->>>>>>> add new lib UTILS && custom dark mode
   font-size: 12px;
   font-size: 0.85714rem;
 }
 
-<<<<<<< HEAD
-=======
 svg {
   width: 5%;
 }
@@ -8034,7 +7721,6 @@ svg .st0 {
   fill: #2f374a;
 }
 
->>>>>>> add new lib UTILS && custom dark mode
 /* ajout VARIABLES ------------------------ */
 .flex-container {
   display: -webkit-box;
@@ -8228,31 +7914,19 @@ svg .st0 {
   opacity: .5;
 }
 
-<<<<<<< HEAD
-.content-doc_home .content-doc_documentation {
-=======
 .content_home .content_documentation {
   margin-top: 60px;
->>>>>>> add new lib UTILS && custom dark mode
   height: 532px;
   background-color: #f7f7f7;
 }
 
-<<<<<<< HEAD
-.content-doc_home .content-doc_documentation .documentation_title h1 {
-=======
 .content_home .content_documentation .documentation_title h1 {
->>>>>>> add new lib UTILS && custom dark mode
   margin: 62px 0 45px;
   font-size: 27px;
   font-size: 1.92857rem;
 }
 
-<<<<<<< HEAD
-.content-doc_home .content-doc_documentation .documentation .flex-container_equal {
-=======
 .content_home .content_documentation .documentation .flex-container_equal {
->>>>>>> add new lib UTILS && custom dark mode
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -8265,19 +7939,11 @@ svg .st0 {
   justify-content: center;
 }
 
-<<<<<<< HEAD
-.content-doc_home .content-doc_documentation .documentation .flex-container_equal .clef .card-horizontal_content img {
-  padding: .8rem;
-}
-
-.content-doc_home .content-doc_documentation .documentation .flex-container_equal .box-round {
-=======
 .content_home .content_documentation .documentation .flex-container_equal .clef .card-horizontal_content img {
   padding: .8rem;
 }
 
 .content_home .content_documentation .documentation .flex-container_equal .box-round {
->>>>>>> add new lib UTILS && custom dark mode
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -8290,76 +7956,44 @@ svg .st0 {
   align-items: center;
 }
 
-<<<<<<< HEAD
-.content-doc_home .content-doc_documentation .documentation .flex-container_equal .box-round span {
-=======
 .content_home .content_documentation .documentation .flex-container_equal .box-round span {
->>>>>>> add new lib UTILS && custom dark mode
   display: block;
   background-color: #d8d8d8;
   border-radius: 50%;
 }
 
-<<<<<<< HEAD
-.content-doc_home .content-doc_documentation .documentation .flex-container_equal .box-round span:first-child {
-=======
 .content_home .content_documentation .documentation .flex-container_equal .box-round span:first-child {
->>>>>>> add new lib UTILS && custom dark mode
   width: 4.5px;
   height: 4.5px;
 }
 
-<<<<<<< HEAD
-.content-doc_home .content-doc_documentation .documentation .flex-container_equal .box-round span:nth-child(2) {
-=======
 .content_home .content_documentation .documentation .flex-container_equal .box-round span:nth-child(2) {
->>>>>>> add new lib UTILS && custom dark mode
   margin: 0 .25rem;
   width: 6px;
   height: 6px;
 }
 
-<<<<<<< HEAD
-.content-doc_home .content-doc_documentation .documentation .flex-container_equal .box-round span:last-child {
-=======
 .content_home .content_documentation .documentation .flex-container_equal .box-round span:last-child {
->>>>>>> add new lib UTILS && custom dark mode
   width: 4.5px;
   height: 4.5px;
 }
 
-<<<<<<< HEAD
-.content-doc_home .help {
-  margin-top: 47px;
-}
-
-.content-doc_home .help_title h2 {
-=======
 .content_home .help {
   margin-top: 47px;
 }
 
 .content_home .help_title h2 {
->>>>>>> add new lib UTILS && custom dark mode
   font-size: 25px;
   font-size: 1.78571rem;
 }
 
-<<<<<<< HEAD
-.content-doc_home .help_title p {
-=======
 .content_home .help_title p {
->>>>>>> add new lib UTILS && custom dark mode
   color: #2f374a;
   font-size: 16px;
   font-size: 1.14286rem;
 }
 
-<<<<<<< HEAD
-.content-doc_home .help .flex-container {
-=======
 .content_home .help .flex-container {
->>>>>>> add new lib UTILS && custom dark mode
   margin-top: 44px;
   display: -webkit-box;
   display: -moz-box;
@@ -8376,17 +8010,6 @@ svg .st0 {
   flex-flow: row wrap;
 }
 
-<<<<<<< HEAD
-.content-doc_home .help .flex-container .card-vertical {
-  padding: 0 33px;
-}
-
-.content-doc_home .help .flex-container .card-vertical_content .action-button {
-  display: inline-block;
-}
-
-.content-doc_home .help .flex-container .card-vertical_content .action-button__rectangle {
-=======
 .content_home .help .flex-container .card-vertical {
   padding: 0 33px;
 }
@@ -8396,67 +8019,32 @@ svg .st0 {
 }
 
 .content_home .help .flex-container .card-vertical_content .action-button__rectangle {
->>>>>>> add new lib UTILS && custom dark mode
   top: 58%;
   left: 122%;
 }
 
-<<<<<<< HEAD
-.content-doc_home .help .flex-container .card-vertical_content .action-button__arrow {
-=======
 .content_home .help .flex-container .card-vertical_content .action-button__arrow {
->>>>>>> add new lib UTILS && custom dark mode
   top: 8%;
   left: 140%;
 }
 
-<<<<<<< HEAD
-.content-doc_home .questions {
-  margin: 80px 0 119px;
-}
-
-.content-doc_home .questions h2 {
-=======
 .content_home .questions {
   margin: 80px 0 119px;
 }
 
 .content_home .questions h2 {
->>>>>>> add new lib UTILS && custom dark mode
   margin-bottom: 24px;
   font-size: 25px;
   font-size: 1.78571rem;
 }
 
-<<<<<<< HEAD
-.content-doc_home .questions p {
-=======
 .content_home .questions p {
->>>>>>> add new lib UTILS && custom dark mode
   margin: 0;
   font-size: 16px;
   font-size: 1.14286rem;
   line-height: 1.7rem;
 }
 
-<<<<<<< HEAD
-.content-doc {
-  margin-top: 60px;
-}
-
-.content-doc_content {
-  padding: 0 27px 4rem;
-}
-
-.content-doc_content .wy-breadcrumbs {
-  margin: 0;
-}
-
-.content-doc_content .wy-breadcrumbs li {
-  margin: 0 7px;
-  padding: 7px 9px;
-  height: 38px;
-=======
 .content_layout {
   margin-top: 60px;
   padding: 0 27px 4rem;
@@ -8469,7 +8057,6 @@ svg .st0 {
 .content_layout .breadcrumb li {
   margin: 0 7px;
   padding: 7px 9px;
->>>>>>> add new lib UTILS && custom dark mode
   position: relative;
   background-color: #f7f7f7;
   border-radius: 10px;
@@ -8477,45 +8064,19 @@ svg .st0 {
   font-size: 0.92857rem;
 }
 
-<<<<<<< HEAD
-.content-doc_content .wy-breadcrumbs li a {
-=======
 .content_layout .breadcrumb li a {
->>>>>>> add new lib UTILS && custom dark mode
   padding: 0;
   color: #2f374a;
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-.content-doc_content .wy-breadcrumbs li:first-child a i {
-=======
 .content_layout .breadcrumb li:first-child a i {
->>>>>>> add new lib UTILS && custom dark mode
   margin: 0 .125rem .1rem 0;
   font-size: 16px;
   font-size: 1.14286rem;
   vertical-align: middle;
 }
 
-<<<<<<< HEAD
-.content-doc_content .wy-breadcrumbs li:last-child::after {
-  content: "";
-}
-
-.content-doc_content .wy-breadcrumbs li::after {
-  content: " / ";
-  position: absolute;
-  top: 6px;
-  right: -13px;
-}
-
-.content-doc_content ul.simple {
-  line-height: 2;
-}
-
-.content-doc_content ul.simple li {
-=======
 .content_layout .breadcrumb li:last-child::after {
   content: "";
 }
@@ -8532,16 +8093,11 @@ svg .st0 {
 }
 
 .content_layout ul.simple li {
->>>>>>> add new lib UTILS && custom dark mode
   padding: 0 0 0 1rem;
   position: relative;
 }
 
-<<<<<<< HEAD
-.content-doc_content ul.simple li::before {
-=======
 .content_layout ul.simple li::before {
->>>>>>> add new lib UTILS && custom dark mode
   content: " ";
   position: absolute;
   background-color: #f9c72c;
@@ -8552,17 +8108,6 @@ svg .st0 {
   top: 12px;
 }
 
-<<<<<<< HEAD
-.content-doc_content ol.simple {
-  line-height: 2;
-}
-
-.content-doc_content ol.simple li dl {
-  margin: 0;
-}
-
-.content-doc_content ol.simple li dl dt {
-=======
 .content_layout ol.simple {
   line-height: 2;
 }
@@ -8572,7 +8117,6 @@ svg .st0 {
 }
 
 .content_layout ol.simple li dl dt {
->>>>>>> add new lib UTILS && custom dark mode
   margin: 0;
 }
 
@@ -8643,15 +8187,9 @@ svg .st0 {
   margin: 0;
   padding-left: 32px;
   width: 555px;
-<<<<<<< HEAD
-  font-size: 16px;
-  font-size: 1.14286rem;
-  line-height: 22px;
-=======
   line-height: 22px;
   font-size: 16px;
   font-size: 1.14286rem;
->>>>>>> add new lib UTILS && custom dark mode
 }
 
 #search-results .context .highlighted {
@@ -8685,40 +8223,17 @@ table.field-list tbody tr td {
   background-color: white;
 }
 
-<<<<<<< HEAD
-.content-doc_summary {
-  padding: 0;
-  height: calc(100vh - 60px);
-  position: fixed;
-  background-color: #f7f7f7;
-  overflow: auto;
-}
-
-.content-doc_summary .wy-menu-vertical {
-  width: 100%;
-}
-
-.content-doc_summary .wy-menu-vertical .caption {
-=======
 .content_summary {
   overflow: auto;
 }
 
 .content_summary .caption {
->>>>>>> add new lib UTILS && custom dark mode
   color: #2f374a;
   font-size: 13px;
   font-size: 0.92857rem;
   text-transform: initial;
 }
 
-<<<<<<< HEAD
-.content-doc_summary .wy-menu-vertical .toctree-l1 {
-  position: relative;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1 .toctree-expand {
-=======
 .content_summary .wy-menu-vertical {
   width: 100%;
 }
@@ -8732,27 +8247,15 @@ table.field-list tbody tr td {
 }
 
 .content_summary .wy-menu-vertical .toctree-l1 .toctree-expand {
-<<<<<<< HEAD
->>>>>>> add new lib UTILS && custom dark mode
-=======
   width: 20px;
   height: 20px;
->>>>>>> adjusting dark mode
   position: absolute;
   top: 6px;
   left: 9%;
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-.content-doc_summary .wy-menu-vertical .toctree-l1 .toctree-expand::before {
-=======
 .content_summary .wy-menu-vertical .toctree-l1 .toctree-expand::before {
-<<<<<<< HEAD
->>>>>>> add new lib UTILS && custom dark mode
-  font-family: none;
-=======
->>>>>>> adjusting dark mode
   content: "";
   position: absolute;
   left: 5px;
@@ -8774,59 +8277,27 @@ table.field-list tbody tr td {
   transition: transform 0.2s ease;
 }
 
-<<<<<<< HEAD
-.content-doc_summary .wy-menu-vertical .toctree-l1 a {
-=======
 .content_summary .wy-menu-vertical .toctree-l1 a {
->>>>>>> add new lib UTILS && custom dark mode
   padding: .5rem 2.5rem;
   position: relative;
   color: #2f374a;
   font-family: "robotoregular", sans-serif;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.content-doc_summary .wy-menu-vertical .toctree-l1 a:hover {
-  background-color: #f9c72c;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1 a.external::after {
-  content: none;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 a {
-=======
-.content_summary .wy-menu-vertical .toctree-l1 a:hover {
-  background-color: #f9c72c;
-}
-
-=======
->>>>>>> adjusting dark mode
 .content_summary .wy-menu-vertical .toctree-l1 a.external::after {
   content: none;
 }
 
 .content_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 a {
->>>>>>> add new lib UTILS && custom dark mode
   margin: .4rem 0;
   padding: 0 3.5rem;
 }
 
-<<<<<<< HEAD
-.content-doc_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 .toctree-l3 a {
-=======
 .content_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 .toctree-l3 a {
->>>>>>> add new lib UTILS && custom dark mode
   margin: .5rem 0;
   padding: 0 4.25rem;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.content-doc_summary .wy-menu-vertical .toctree-l1.current a, .content-doc_summary .wy-menu-vertical .toctree-l1.show a {
-=======
-=======
 .content_summary .wy-menu-vertical .toctree-l1 ul .toctree-l2 .toctree-l4 a {
   margin: .5rem .8rem;
 }
@@ -8835,41 +8306,24 @@ table.field-list tbody tr td {
   border-color: transparent transparent #2f374a;
 }
 
->>>>>>> adjusting dark mode
 .content_summary .wy-menu-vertical .toctree-l1.current a, .content_summary .wy-menu-vertical .toctree-l1.show a {
->>>>>>> add new lib UTILS && custom dark mode
   background-color: #f9c72c;
   border: none;
   font-weight: inherit;
 }
 
-<<<<<<< HEAD
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 > ul, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 > ul {
-  display: block;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a {
-=======
 .content_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 > ul, .content_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 > ul {
   display: block;
 }
 
 .content_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a, .content_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a {
->>>>>>> add new lib UTILS && custom dark mode
   position: relative;
   background-color: #f7f7f7;
 }
 
-<<<<<<< HEAD
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a::before {
-=======
 .content_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a::before, .content_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a::before {
-<<<<<<< HEAD
->>>>>>> add new lib UTILS && custom dark mode
-=======
   width: 2px;
   height: 100%;
->>>>>>> adjusting dark mode
   content: "";
   position: absolute;
   left: 39px;
@@ -8878,37 +8332,6 @@ table.field-list tbody tr td {
   opacity: 0;
 }
 
-<<<<<<< HEAD
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a:hover::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a:hover::before {
-  opacity: 1;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a.active::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a.active::before {
-  opacity: 1;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 .toctree-l3 a::before, .content-doc_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 .toctree-l3 a::before {
-  left: 55px;
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1.show .toctree-expand::before {
-  background-image: url("../_images/bimdata_carret-down.svg");
-}
-
-.content-doc_summary .wy-menu-vertical .toctree-l1.show ul {
-  display: block;
-}
-
-.content-doc_summary .wy-menu-vertical .tutorial-toc ol {
-  margin-left: 42px;
-}
-
-.content-doc_summary .wy-menu-vertical .tutorial-toc ol li {
-  display: block;
-}
-
-.content-doc_summary .wy-menu-vertical .tutorial-toc ol li::before {
-=======
 .content_summary .wy-menu-vertical .toctree-l1.current ul .toctree-l2 a:hover::before, .content_summary .wy-menu-vertical .toctree-l1.show ul .toctree-l2 a:hover::before {
   opacity: 1;
 }
@@ -8951,35 +8374,15 @@ table.field-list tbody tr td {
 }
 
 .content_summary .wy-menu-vertical .tutorial-toc ol li::before {
->>>>>>> add new lib UTILS && custom dark mode
   width: inherit;
   display: inline-block;
 }
 
-<<<<<<< HEAD
-.content-doc_summary .wy-menu-vertical .tutorial-toc ol li a {
-=======
 .content_summary .wy-menu-vertical .tutorial-toc ol li a {
->>>>>>> add new lib UTILS && custom dark mode
   padding: .5rem;
   display: inline-block;
 }
 
-<<<<<<< HEAD
-.content-doc_summary .wy-menu-vertical .tutorial-toc ol li a:hover {
-  background-color: transparent;
-}
-
-.content-doc_summary li.current {
-  background: #f7f7f7;
-}
-
-.content-doc_summary li.current ul {
-  display: none;
-}
-
-.content-doc_prev-next {
-=======
 .content_summary .wy-menu-vertical .tutorial-toc ol li a:hover {
   background-color: transparent;
 }
@@ -8993,7 +8396,6 @@ table.field-list tbody tr td {
 }
 
 .content_prev-next {
->>>>>>> add new lib UTILS && custom dark mode
   margin-top: 1rem;
   padding: 0 1.618em;
   display: -webkit-box;
@@ -9008,11 +8410,7 @@ table.field-list tbody tr td {
   justify-content: space-between;
 }
 
-<<<<<<< HEAD
-.content-doc_prev-next .prev, .content-doc_prev-next .next {
-=======
 .content_prev-next .prev, .content_prev-next .next {
->>>>>>> add new lib UTILS && custom dark mode
   font-size: 80%;
 }
 
@@ -9152,31 +8550,12 @@ table.field-list tbody tr td {
   justify-content: flex-end;
 }
 
-<<<<<<< HEAD
-.navbar header .navbar-btn .btn {
-  height: 32px;
-  width: 95%;
-  border: none;
-  border-radius: 3px;
-  box-shadow: none;
-<<<<<<< HEAD
-  line-height: 32px;
-=======
->>>>>>> add new lib UTILS && custom dark mode
-  font-size: 12px;
-  font-size: 0.85714rem;
-}
-
-.navbar header .navbar-btn .btn.btn-primary {
-  background-color: #2f374a;
-=======
 .navbar header .navbar-btn .btn-primary {
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   -ms-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
   transition: all ease 0.3s;
->>>>>>> adjusting dark mode
 }
 
 .navbar header .navbar-btn .btn-primary:hover {
@@ -9194,23 +8573,10 @@ table.field-list tbody tr td {
   background-color: white;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-html, body {
-  padding: 0;
-  background-color: white;
-  color: #979797;
-=======
-/* custom THEME DARK -----------------------*/
-=======
->>>>>>> adjusting dark mode
-=======
 .theme-dark .highlight .copybtn:hover::after {
   background-color: transparent;
 }
 
->>>>>>> add DARK MODE
 .theme-dark .content_documentation {
   background-color: #252b3a;
 }
@@ -9282,7 +8648,6 @@ html, body {
   padding: 0;
   background-color: white;
   color: #94979a;
->>>>>>> add new lib UTILS && custom dark mode
   font-family: "robotoregular", sans-serif;
   scroll-behavior: smooth;
   font-size: 14px;
@@ -9433,8 +8798,6 @@ ul li, ol li {
   font-size: 0.85714rem;
 }
 
-<<<<<<< HEAD
-=======
 ul {
   margin: 0;
 }
@@ -9443,7 +8806,6 @@ ul ul {
   margin: 0;
 }
 
->>>>>>> add new lib UTILS && custom dark mode
 ol {
   margin-left: 1.25rem;
   list-style: none;
@@ -9504,13 +8866,10 @@ dl dd table {
   margin-left: 1rem;
 }
 
-<<<<<<< HEAD
-=======
 blockquote {
   border: none;
 }
 
->>>>>>> add new lib UTILS && custom dark mode
 pre {
   margin-top: 1rem;
   padding: 1rem;
