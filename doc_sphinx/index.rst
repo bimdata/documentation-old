@@ -23,7 +23,10 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     Tutorials <tutorials/index>
     Cookbook <cookbook/index>
     Viewer Doc <viewer/index>
+
     API Doc<../../api/index.html#://>
+    API endpoints <api_partial/index> 
+
     Get Help <get_help>
     Contributing <contributing>
     BIMData.io website <https://bimdata.io/>
@@ -36,4 +39,5 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     Viewer Doc <viewer/index>
     Guided Tour <tutorials/guided_tour>
     API Doc<../../api/index.html#://>>
+    API endpoints <api_partial/index>
     BIMData.io website <https://bimdata.io/>
