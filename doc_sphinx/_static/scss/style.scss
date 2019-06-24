@@ -1,8 +1,10 @@
+/* custom DOC API ----------------------------*/
 @import 'api/monokai';
 @import 'api/foundation';
 @import 'api/spectacle';
 
-@import "../../node_modules/@bimdata/utils/scss/common";
+/* import LIB UTILS --------------------------*/
+@import "../../node_modules/@bimdata/utils/src/scss/main";
 
 @import "doc-api";
 
@@ -11,13 +13,45 @@
 @import "aside";
 @import "navbar";
 
+/* custom THEME DARK -----------------------*/
+@import "theme/doc-theme";
+
 html, body{
   padding: 0;
-  background-color: rgba(255,255,255,1);
-  color: rgba(151,151,151,1);
+  background-color: $color-white;
+  color: $color-text;
   font-family: $font-primary;
   scroll-behavior: smooth;
   @include font-size(14px);
+}
+
+.section{
+  h3{
+    margin: .5rem 1rem;
+  }
+  h4{
+    margin: .5rem 0 1rem 2rem;
+    position: relative;
+    display: inline-block;
+    &::after{
+      content: "";
+      background-color: white;
+      width: -webkit-fill-available;
+      position: absolute;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  p{
+    padding: 0 2rem;
+  }
+  ul.simple{
+    padding: 0 2rem;
+  }
+  & > .section{
+    margin: 0;
+  }
 }
 
 /* override BOOTSRAP
@@ -107,6 +141,12 @@ ul, ol{
     @include font-size(12px);
   }
 }
+ul{
+  margin: 0;
+  ul{
+    margin: 0;
+  }
+}
 
 // custom NUMBERED LIST 
 ol{
@@ -159,6 +199,11 @@ dl{
   }
 }
 
+// custom BLOCKQUOTE
+blockquote{
+  border: none;
+}
+
 // custom CODE & PRE
 pre{
   margin-top: 1rem;
@@ -185,7 +230,22 @@ code{
     display: block;
     @include transition(all 0.5s);
   }
+  blockquote{
+    padding: 0;
+  }
 }
+
+.content-tabs{
+  &.container{
+    max-width: 100%!important;
+  }
+  .tab-content{
+    &.container{
+      max-width: 100%!important;
+    }
+  }
+}
+
 
 // custom COPY TO CLIPBOARD
 a.copybtn{

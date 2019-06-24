@@ -16,12 +16,12 @@
   <div class="navbar fixed-top px-4 py-0">
     {%- include "header.html" %}
   </div>
-  <div class="container-fluid content-doc">
+  <div class="container-fluid content">
     {% if pagename == 'index' %}
       {%- include "home.html" %}
     {% else %}
     <div class="row">
-      <div class="content-doc_summary col-2 pt-4">
+      <div class="content_summary col-2 pt-4">
         {%- block sidebar1 %}
         {%- for sidebartemplate in sidebars %}
         {%- include sidebartemplate %}
@@ -30,9 +30,9 @@
       </div>
 
       {% if pagename == 'api/index' %}
-      <div class="content-doc_content doc-api col-10 pt-4 px-0 ml-sm-auto">
+      <div class="content_layout doc-api col-10 pt-4 px-0 ml-sm-auto">
       {% else %}
-      <div class="content-doc_content col-10 pt-4 px-5 ml-sm-auto">
+      <div class="content_layout col-10 pt-4 px-5 ml-sm-auto">
       {% endif %}
         {% include "breadcrumbs.html" %}
         {%- block document %}
