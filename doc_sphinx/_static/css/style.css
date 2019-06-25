@@ -8491,13 +8491,13 @@ table.field-list tbody tr td {
 }
 
 .navbar header .navbar-menu ul li a {
-  padding: 22px;
+  padding: 18px;
   position: relative;
   display: block;
   color: #2f374a;
-  font-size: 10px;
-  font-size: 0.71429rem;
-  font-family: "robotomedium", sans-serif;
+  font-size: 14px;
+  font-size: 1rem;
+  font-family: "robotoregular", sans-serif;
 }
 
 .navbar header .navbar-menu ul li a:hover {

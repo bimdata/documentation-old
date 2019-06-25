@@ -66,12 +66,12 @@
         li{
           display: inline-block;
           a{
-            padding: 22px;
+            padding: 18px;
             position: relative;
             display: block;
             color: $color-primary;
-            @include font-size(10px);
-            font-family: $font-primary_medium;
+            @include font-size(14px);
+            font-family: $font-primary;
             &:hover{
               text-decoration: none;
               &::after{
