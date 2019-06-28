@@ -17,8 +17,10 @@ It this case, you need to implement a way to refresh the Access Token when it ex
 You can find more information here : https://rograce.github.io/openid-connect-documentation/explore_auth_code_flow
 And you can find libraries helping you implementing it there: https://openid.net/developers/libraries/
 
-.. highlights::
-    Example: enrichment of your app's data with your own dataset.
+Usage example
+--------------
+
+* **Example:** enrichment of your app's data with your own dataset.
 
 Implicit flow
 =============
@@ -31,12 +33,11 @@ You can find a small example of implicit flow usage in a web browser here: https
 And you can find libraries helping you implementing it there: https://openid.net/developers/libraries/
 
 
-.. highlights::
+Usage examples
+---------------
 
-    Example: get the Access Token by the browser to use it directly after getting it.
-
-.. highlights::
-    Example2: reporting into the application of the user's actions
+* **Example:** get the Access Token by the browser to use it directly after getting it.
+* **Example2:** reporting into the application of the user's actions
 
 
 .. _Create an application process: ../cookbook/create_an_application.html
