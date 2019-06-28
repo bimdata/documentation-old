@@ -45,6 +45,7 @@ Use your Access Token
 
 There are two possible ways to authenticate depending on your application architecture design.
 You can either:
+
  * access as an application and benefit from authentication capacities,
  * or use a user-behavior authentication.
 
@@ -111,3 +112,6 @@ Type of user auth detailed
 ===========================
 
 The three types are three different mechanisms to aks for user's permissions.
+
+.. _Create an application process: ../tutorials/guided_tour.html#which-app-will-you-create
+.. _Authentication by client credential: ../guide/authentication_flows.html

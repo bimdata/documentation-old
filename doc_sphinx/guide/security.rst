@@ -39,4 +39,4 @@ Where do I go if I have more questions?
 Please contact us by email: <support@bimdata.io>
 
 
-.. OVH Object Storage: https://www.ovh.com/fr/public-cloud/object-storage/
+.. _OVH Object Storage: https://www.ovh.com/fr/public-cloud/object-storage/
