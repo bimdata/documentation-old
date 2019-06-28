@@ -10,7 +10,7 @@ Tutorials
 
 .. topic:: `Viewer`_
 
-    .. include:: ../viewer/get_started.rst
+    .. include:: ../viewer/getting_started.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
@@ -33,7 +33,7 @@ Tutorials
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. _Viewer: ../viewer/get_started.html
+.. _Viewer: ../viewer/getting_started.html
 .. _API: retrieve-elements.html
 .. _BCF: export_excel.html
 .. _Getting Started: getting_started.html
