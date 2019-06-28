@@ -32,7 +32,7 @@ Guide
 
 .. topic:: `Filters`_
 
-    .. include:: ../topics/filters.rst
+    .. include:: /guide/filters.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
