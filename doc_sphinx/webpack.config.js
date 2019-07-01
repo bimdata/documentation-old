@@ -48,9 +48,7 @@ module.exports = {
             name: ('img/[name].[hash:7].[ext]')
           }
         },
-        {
-          loader: 'file-loader'
-        }
+        { loader: 'file-loader' }
         ]
       },
       {
