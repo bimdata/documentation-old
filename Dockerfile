@@ -32,4 +32,3 @@ RUN cd doc_sphinx && npm run build && npm run build:apiref
 
 FROM nginx:stable-alpine
 COPY --from=0 /opt/html_doc/ /usr/share/nginx/html/
-COPY --from=0 /opt/redoc/ /usr/share/nginx/html/redoc/
