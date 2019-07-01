@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "node bin/watch.js",
     "build:apiref": "curl ${API_URL:-https://api-staging.bimdata.io}/doc.json > /tmp/bimdata_api.json && spectacle -e --target-dir _static/api  /tmp/bimdata_api.json",
-    "start": "webpack -w --config webpack.config.js"
+    "start": "webpack -w --config webpack.config.js",
+    "build": "webpack --config webpack.config.js"
   },
   "author": "",
   "license": "CC-BY-4.0",
@@ -20,21 +21,5 @@
     "spectacle-docs": "git+https://github.com/bimdata/spectacle.git",
     "what-input": "^5.2.3"
   },
-  "devDependencies": {
-    "copy-webpack-plugin": "^5.0.3",
-    "css-loader": "^3.0.0",
-    "file-loader": "^4.0.0",
-    "grunt-sass": "^3.0.2",
-    "mini-css-extract-plugin": "^0.7.0",
-    "node-sass": "^4.12.0",
-    "node-watch": "^0.6.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "resolve-url-loader": "^3.1.0",
-    "sass-loader": "^7.1.0",
-    "terser-webpack-plugin": "^1.3.0",
-    "url-loader": "^2.0.1",
-    "webpack": "^4.35.0",
-    "webpack-cli": "^3.3.5",
-    "ws": "^6.1.3"
-  }
+  "devDependencies": {}
 }
