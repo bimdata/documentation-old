@@ -39,14 +39,15 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        use: [{
-          loader: 'url-loader',
-          options: {
-            limit: 10000,
-            name: ('img/[name].[hash:7].[ext]')
-          }
-        },
-        { loader: 'file-loader' }
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              name: ('img/[hash].[ext]')
+            }
+          },
+          { loader: 'image-webpack-loader' },
         ]
       },
       {
