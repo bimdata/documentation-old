@@ -24,12 +24,11 @@ ENV CONNECT_URL=$CONNECT_URL
 ENV PLAYGROUND_CLIENT_ID=$PLAYGROUND_CLIENT_ID
 ENV WHITELIST_BRANCHES=$WHITELIST_BRANCHES
 
-ENV SCSS_OUTPUT_STYLE=compact
-
 COPY ./ /opt
 RUN mv /opt/node_modules /opt/doc_sphinx/node_modules
 
 RUN sphinx-build doc_sphinx html_doc
+RUN cd doc_sphinx && npm run start
 RUN cd doc_sphinx && npm run build:apiref
 
 FROM nginx:stable-alpine
