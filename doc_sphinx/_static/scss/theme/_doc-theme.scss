@@ -57,6 +57,21 @@
               }
             }
           }
+          .toctree-expand{
+            &::before{
+              border-color: transparent transparent $color-white;
+            }
+          }
+          &:hover{
+            a{
+              color: $color-primary;
+            }
+            .toctree-expand{
+              &::before{
+                border-color: transparent transparent $color-primary;
+              }
+            }
+          }
         }
       }
     }
