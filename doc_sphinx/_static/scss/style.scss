@@ -53,6 +53,10 @@ html, body{
   }
 }
 
+.btn:focus{
+  box-shadow: none;
+}
+
 /* override BOOTSRAP
 ---------------------------------------- */
 @media (min-width: 1200px){
@@ -147,7 +151,7 @@ ul{
   }
 }
 
-// custom NUMBERED LIST 
+// custom NUMBERED LIST
 ol{
   margin-left: 1.25rem;
   list-style: none;
@@ -183,7 +187,7 @@ ol{
   }
 }
 
-// custom DEFINITION LIST 
+// custom DEFINITION LIST
 dl{
   margin-top: 29px;
   @include font-size(12px);
@@ -241,6 +245,52 @@ code{
   .tab-content{
     &.container{
       max-width: 100%!important;
+    }
+  }
+}
+
+// custom ADMONITION
+.admonition{
+  &.warning{
+    .admonition-title{
+      &::before{
+        display: inline-flex;
+        height: 0;
+        width: 0;
+        border-right: 13px solid transparent;
+        border-bottom: 23px solid $color-secondary;
+        border-left: 13px solid transparent;
+        border-radius: 0;
+        background-color: transparent;
+        justify-content: center;
+      }
+    }
+  }
+  &.tip{
+    .admonition-title{
+      background-color: #FDEDFF;
+      &::before{
+        background-color: #B34DBD;
+      }
+    }
+  }
+  &.caution{
+    .admonition-title{
+      background-color: #FFECEB;
+      &::before{
+        background-color: #DA0704;
+      }
+    }
+  }
+}
+
+.theme-dark{
+  .admonition{
+    &.caution, &.tip{
+      .admonition-title{
+        background-color: #2D303A;
+        color: $color-white;
+      }
     }
   }
 }
