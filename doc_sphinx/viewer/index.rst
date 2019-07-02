@@ -91,7 +91,7 @@ In addition to that, we recommend:
 .. toctree::
     :hidden:
     
-    get_started
+    getting_started
     include_viewer
     example_doors
     init_viewer
