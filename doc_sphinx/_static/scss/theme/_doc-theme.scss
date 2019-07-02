@@ -49,11 +49,19 @@
         .toctree-l1{
           &.current, &.show{
             ul{
+              background-color: $color-primary-d15;
               .toctree-l2{
                 a{
                   background-color: $color-primary-d15;
                   color: $color-white;
                 }
+              }
+            }
+          }
+          &.current{
+            .toctree-expand{
+              &::before{
+                border-color: transparent transparent $color-primary;
               }
             }
           }
