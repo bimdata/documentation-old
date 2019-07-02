@@ -1,4 +1,10 @@
 .doc-api{
+  & > .row{
+    width: calc(100vw - 362px);
+    margin-right: 0;
+    margin-left: auto;
+    padding-right: 40px;
+  }
   .wy-breadcrumbs{
     padding-left: 3rem;
   }
@@ -98,9 +104,11 @@
 
     // custom CONTENT API DOC
     #docs{
-      margin-left: 0;
+      margin-right: 0;
       display: block;
       box-shadow: none;
+      width: calc(100vw - 325px);
+      margin-left: auto;
       .floating-menu-icon{
         display: none;
       }
