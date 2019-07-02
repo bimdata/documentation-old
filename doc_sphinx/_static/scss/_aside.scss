@@ -1,41 +1,48 @@
 // custom SUMMARY
-.content-doc{
+.content{
   &_summary{
-    padding: 0;
-    height: calc(100vh - 60px);
-    position: fixed;
-    background-color: $color-background;
     overflow: auto;
+    // custom TITLE SUMMARY
+    .caption{
+      color: $color-primary;
+      @include font-size(13px);
+      text-transform: initial;
+    }
     .wy-menu-vertical{
       width: 100%;
-      // custom TITLE SUMMARY
-      .caption{
-        color: $color-primary;
-        @include font-size(13px);
-        text-transform: initial;
-      }
       // custom LINK SUMMARY
       .toctree-l1{
         position: relative;
 
+        &:hover{
+          .toctree-expand{
+            &::before{
+              border-color: transparent transparent $color-primary;
+            }
+          }
+        }
+
         // picto CARET
         .toctree-expand{
+          width: 20px;
+          height: 20px;
           position: absolute;
-          top: 7px;
-          left: 10%;
+          top: 6px;
+          left: 9%;
           cursor: pointer;
           &::before{
-            font-family: none;
             content: "";
-            position: relative;
-            width: 17px;
-            height: 15px;
-            top: 0px;
-            left: -2px;
-            background-size: 20px;
-            background-repeat: no-repeat;
+            position: absolute;
+            left: 5px;
+            top: 7px;
+            display: inline-block;
+            border-color: transparent transparent $color-white;
+            border-style: solid;
+            border-width: 0px 0px 7px 7px;
+            box-sizing: border-box;
             z-index: 1;
-            background-image: url("../_images/bimdata_carret-right.svg");
+            @include transform(rotate(-45deg));
+            @include transition(transform 0.2s ease);
           }
         }
 
@@ -44,15 +51,14 @@
           position: relative;
           color: $color-primary;
           font-family: $font-primary;
-          &:hover{
-            background-color: $color-secondary;
-          }
+          
           &.external{
             &::after{
               content: none;
             }
           }
         }
+        
         ul{
           .toctree-l2{
             a{
@@ -65,11 +71,21 @@
                 padding: 0 4.25rem;
               }
             }
+            .toctree-l4{
+              a{
+                margin: .5rem .8rem;
+              }
+            }
           }
         }
 
         // custom SUBMENU ACTIVE OR VISIBLE
         &.current, &.show{
+          .toctree-expand{
+            &::before{
+              border-color: transparent transparent $color-primary;
+            }
+          }
           a{
             background-color: $color-secondary;
             border: none;
@@ -84,12 +100,12 @@
                 position: relative;
                 background-color: $color-background;
                 &::before{
+                  width: 2px;
+                  height: 100%;
                   content: "";
                   position: absolute;
                   left: 39px;
                   top: 0;
-                  width: 2px;
-                  height: 100%;
                   background-color: $color-secondary;
                   opacity: 0;
                 }
@@ -119,8 +135,13 @@
         &.show{
           .toctree-expand{
             &::before{
-              background-image: url("../_images/bimdata_carret-down.svg");
+              box-sizing: border-box;
+              @include transform(rotate(45deg));
+              @include transition(transform 0.2s ease);
             }
+          }
+          a{
+            color: $color-primary;
           }
           ul{
             display: block;

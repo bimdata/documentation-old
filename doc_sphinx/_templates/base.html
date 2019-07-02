@@ -58,7 +58,7 @@
   <script type="text/javascript" id="bootstrap-bundle" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/bootstrap/bootstrap.bundle.min.js', 1) }}"></script>
   <script type="text/javascript" id="bootstrap" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/bootstrap/bootstrap.min.js', 1) }}"></script>
   <script type="text/javascript" id="jquery-3" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/jquery.min.js', 1) }}"></script>
-  <script type="text/javascript" id="jquery-3" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/spectacle.min.js', 1) }}"></script>
+  <script type="text/javascript" id="spectacle" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/spectacle.min.js', 1) }}"></script>
   <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/documentation_options.js', 1) }}"></script>
   <script type="text/javascript" id="main" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/js/main.js', 1) }}"></script>
   {%- for js in script_files %}
@@ -143,5 +143,7 @@
   {%- block content %}{%- endblock %}
 
   {%- block footer %}{%- endblock %}
+
+  <script type="text/javascript" id="test" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('./_static/js/main.js', 1) }}"></script>
   </body>
 </html>

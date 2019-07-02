@@ -1,0 +1,124 @@
+.theme-dark{
+  p, ul, ol{
+    a.reference.external{
+      &::after{
+        background-color: $color-white;
+      }
+    }
+  }
+
+  .highlight{
+    .copybtn{
+      &:hover{
+        &::after{
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .content{
+    // custom page HOME
+    &_documentation{
+      background-color: $color-primary-d5;
+    }
+    &_home{
+      .help_title{
+        p{
+          color: $color-white;
+        }
+      }
+    }
+
+    // custom SIDEBAR
+    &_summary{
+      .toctree-l1{
+        background-color: $color-primary-d15;
+        a{
+          color: $color-white;
+          &:hover{
+            color: $color-primary;
+          }
+        }
+        &.current{
+          a{
+            color: $color-primary;
+          }
+        }
+      }
+      .wy-menu-vertical{
+        .toctree-l1{
+          &.current, &.show{
+            ul{
+              .toctree-l2{
+                a{
+                  background-color: $color-primary-d15;
+                  color: $color-white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &_layout{
+      .breadcrumb{
+        li{
+          background-color: $color-primary-d15;
+          a{
+            color: $color-white;
+          }
+        }
+      }
+    }
+
+    // custom CONTENT
+    &_content{
+      .wy-breadcrumbs li{
+        background-color: $color-primary-d5;
+      }
+    }
+
+    ul.contenttab-selector li{
+      background-color: $color-primary-d5!important;
+      color: $color-white!important;
+    }
+  }
+
+  // custom NAVBAR
+  .navbar{
+    header{
+      .navbar-search{
+        #rtd-search-form{
+          input{
+            -webkit-box-shadow: 0 0 0 1000px #1e212c inset;
+          }
+        }
+      }
+      .navbar-btn{
+        .btn.btn-shadow{
+          &:hover{
+            background-color: rgba($color-text-l30, .2);
+          }
+        }
+      }
+    }
+  }
+
+  input:-internal-autofill-selected{
+    background-color: transparent!important;
+    color: white!important;
+  }
+
+  // custom PAGES CONTENT
+  #concepts, #guide, #cookbook, #tutorials{
+    .topic{
+      background-color: $color-primary-d15;
+      p.topic-title{
+        &::after{
+          opacity: .1;
+        }
+      }
+    }
+  }
+}

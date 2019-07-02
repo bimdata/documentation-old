@@ -26,7 +26,7 @@
 
 <div role="navigation" aria-label="breadcrumbs navigation" class="row">
 
-  <ul class="wy-breadcrumbs col-10">
+  <ul class="breadcrumb col-10">
     {% block breadcrumbs %}
       <li>
         <a href="{{ pathto(master_doc) }}">
@@ -44,7 +44,7 @@
   </ul>
 
   {% block breadcrumbs_aside %}
-    <div class="wy-breadcrumbs-aside col-2">
+    <div class="wy-breadcrumbs-aside col-2 text-right">
       {% if hasdoc(pagename) %}
           {% if display_github %}
           {% if check_meta and 'github_url' in meta %}
