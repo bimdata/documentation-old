@@ -2,14 +2,7 @@
 .content{
   &_summary{
     overflow: auto;
-    // custom TITLE SUMMARY
-    .caption{
-      color: $color-primary;
-      @include font-size(13px);
-      text-transform: initial;
-    }
     .wy-menu-vertical{
-      width: 100%;
       // custom LINK SUMMARY
       .toctree-l1{
         position: relative;
@@ -43,10 +36,6 @@
         }
 
         a{
-          padding: .5rem 2.5rem;
-          position: relative;
-          color: $color-primary;
-          font-family: $font-primary;
           &.external{
             &::after{
               content: none;
@@ -58,6 +47,7 @@
         }
 
         ul{
+          background-color: $color-background;
           .toctree-l2{
             a{
               margin: .4rem 0;
@@ -85,6 +75,7 @@
             }
           }
           a{
+            padding: .5rem 2.5rem;
             background-color: $color-secondary;
             border: none;
             font-weight: inherit;
@@ -142,28 +133,7 @@
             color: $color-primary;
           }
           ul{
-            display: block;
-          }
-        }
-      }
-
-      // custom TUTORIAL TOCTREE
-      .tutorial-toc{
-        ol{
-          margin-left: 42px;
-          li{
-            display: block;
-            &::before{
-              width: inherit;
-              display: inline-block;
-            }
-            a{
-              padding: .5rem;
-              display: inline-block;
-              &:hover{
-                background-color: transparent;
-              }
-            }
+            display: grid;
           }
         }
       }
@@ -173,16 +143,6 @@
       ul{
         display: none;
       }
-    }
-  }
-
-  &_prev-next{
-    margin-top: 1rem;
-    padding: 0 1.618em;
-    @include flexbox;
-    @include justify-content(space-between);
-    .prev, .next{
-      font-size: 80%;
     }
   }
 }

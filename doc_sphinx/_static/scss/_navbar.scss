@@ -1,12 +1,7 @@
 /* custom NAVBAR
 ---------------------------------------- */
 .navbar{
-  background-color: rgba(255,255,255,1);
-  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
   header{
-    height: 60px;
-    width: 100%;
-    align-items: center;
     // navbar LOGO
     .navbar-logo{
       a, .version{
@@ -52,7 +47,7 @@
           background-size: cover;
           background-position: center;
           z-index: 10;
-          top: 12px;
+          top: 6px;
         }
       }
     }
@@ -60,47 +55,11 @@
     // navbar MENU
     .navbar-menu{
       ul{
-        margin: 0;
-        @include flexbox;
-        @include justify-content(center);
         li{
-          display: inline-block;
           a{
             padding: 18px;
-            position: relative;
-            display: block;
-            color: $color-primary;
-            @include font-size(14px);
             font-family: $font-primary;
-            &:hover{
-              text-decoration: none;
-              &::after{
-                background-color: rgba($color-secondary, .3);
-                opacity: 1;
-                @include transform(scaleX(1));
-                @include transform-origin(left);
-              }
-            }
-            &::after{
-              height: 3px;
-              width: 100%;
-              content: '';
-              position: absolute;
-              display: inline-block;
-              left: 0;
-              bottom: 0;
-              background-color: $color-secondary;
-              opacity: 0;
-              @include transition(.3s ease all);
-              @include transform(scaleX(0));
-              // @include transform-origin(right);
-            }
-            &.active{
-              &::after{
-                opacity: 1;
-                @include transform(scaleX(1));
-              }
-            }
+            @include font-size(14px);
           }
         }
       }
@@ -108,13 +67,9 @@
 
     // navbar BTN
     .navbar-btn{
-      .row{
-        justify-content: flex-end;
-      }
       .btn-primary{
         @include transition(all ease .3s);
         &:hover{
-          color: $color-white;
           background-color: $color-primary-d20;
           @include transition(all ease .3s);
         }
