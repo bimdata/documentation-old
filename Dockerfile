@@ -28,7 +28,7 @@ COPY ./ /opt
 RUN mv /opt/node_modules /opt/doc_sphinx/node_modules
 
 RUN sphinx-build doc_sphinx html_doc
-RUN cd doc_sphinx && npm run build && npm run build:apiref
+RUN cd doc_sphinx && npm run build:apiref && npm run build
 
 FROM nginx:stable-alpine
 COPY --from=0 /opt/html_doc/ /usr/share/nginx/html/
