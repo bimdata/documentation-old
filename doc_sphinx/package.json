@@ -12,9 +12,9 @@
   "license": "CC-BY-4.0",
   "dependencies": {
     "@bimdata/utils": "0.2.13",
-    "bootstrap": "^4.3.0",
+    "bootstrap": "^4.3.1",
     "http-server": "^0.11.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "popper.js": "^1.14.7",
     "spectacle-docs": "git+https://github.com/bimdata/spectacle.git",
     "what-input": "^5.1.4"
