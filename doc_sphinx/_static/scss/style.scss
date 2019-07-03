@@ -20,9 +20,10 @@ html, body{
   background-color: $color-white;
   color: $color-text;
   font-family: $font-primary;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   @include font-size(14px);
 }
+
 
 .section{
   h3{
@@ -324,14 +325,14 @@ a.copybtn{
   opacity: .6;
 }
 
-// custom TABS 
+// custom TABS
 ul.contenttab-selector{
   margin-top: 2.071rem!important;
   li{
     margin-right: 1.643rem!important;
     padding: 0!important;
     height: 30px;
-    background-color: $color-white!important; 
+    background-color: $color-white!important;
     color: $color-primary!important;
     border-radius: 0!important;
     @include font-size(16px);
