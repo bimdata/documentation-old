@@ -23,12 +23,14 @@ ENV CDN_URL=$CDN_URL
 ENV CONNECT_URL=$CONNECT_URL
 ENV PLAYGROUND_CLIENT_ID=$PLAYGROUND_CLIENT_ID
 ENV WHITELIST_BRANCHES=$WHITELIST_BRANCHES
+ENV ENV=production
 
 COPY ./ /opt
-RUN mv /opt/node_modules /opt/doc_sphinx/node_modules
+RUN mv /opt/node_modules /opt/doc_sphinx/node_modules # Avoid an override of nome_modules
 
+RUN cd doc_sphinx && npm run build:apiref
 RUN sphinx-build doc_sphinx html_doc
-RUN cd doc_sphinx && npm run build:apiref && npm run build
+RUN cd doc_sphinx && npm run build
 
 FROM nginx:stable-alpine
 COPY --from=0 /opt/html_doc/ /usr/share/nginx/html/
