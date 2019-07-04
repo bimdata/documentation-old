@@ -4,7 +4,6 @@ BIMData.io API Documentation
 .. toctree::
   :maxdepth: 2
 
-  introduction
   application_endpoint
   bcf_endpoint
   checkplan_endpoint
