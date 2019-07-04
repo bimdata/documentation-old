@@ -76,7 +76,9 @@ Retrieve an app Access Token
 An application Access Token represents the app itself and is not linked to any user. 
 It is used when you don't use **BIMData Connect** users or if you want to use `webhooks`_  or if you're doing some automated tasks.
 
-See `Get Access Token documentation`_ for more information.
+.. note::
+
+    See `Get Access Token documentation`_ for more information.
 
 
 Retrieve a user Access Token
@@ -86,9 +88,11 @@ A user Access Token represents a user using your app.
 It means when you're calling the API with this token, you will get the data (clouds, projects, models, etc.) the user has access to.
 
 Before you can retrieve a user Access Token, the user must explicitly allow your application to behave as the user.
-There are multiple ways to ask them their consent, you can see them LINK TO OpenID Connect Authorization  flows
+There are multiple ways to ask them their consent, you can see them LINK TO OpenID Connect Authorization flows
 
-See `Authentication Flow documentation`_
+.. note::
+
+    See `Authentication Flow documentation`_
 
 
 ===================
@@ -110,9 +114,9 @@ BIMData API follows these general principles:
 Cloud
 ======
 
-    .. include:: ../concepts/cloud.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
+.. include:: ../concepts/cloud.rst
+    :start-after: excerpt
+    :end-before: endexcerpt
 
 .. note::
     To learn `more about the cloud, see the concept page`_.
@@ -121,9 +125,9 @@ Cloud
 Filters
 ========
 
-    .. include:: ../guide/filters.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
+.. include:: ../guide/filters.rst
+    :start-after: excerpt
+    :end-before: endexcerpt
 
 .. note::
     To learn `more about the filters, see the concept page`_.
@@ -158,6 +162,7 @@ Constant values in API
 -----------------------
 
 Using the API, there are constant values associated with roles.
+
 See `the User endpoint`_ to learn about the usage.
 
 .. note::
