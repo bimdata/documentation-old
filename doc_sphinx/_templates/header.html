@@ -50,6 +50,7 @@
       </li>
       <li><a {%if title == 'Tutorials' or parents and parents[0]["title"] == 'Tutorials' %} class="active" {% endif %} title="{{ _('tutorials') }}" href="{{ pathto('tutorials/index') }}">Tutorials</a></li>
       <li><a {%if title == 'Cookbook' or parents and parents[0]["title"] == 'Cookbook' %} class="active" {% endif %} title="{{ _('reference') }}" href="{{ pathto('cookbook/index') }}">Cookbook</a></li>
+      <li><a {%if title == 'API' or parents and parents[0]["title"] == 'API' %} class="active" {% endif %} title="{{ _('reference') }}" href="{{ pathto('api/introduction') }}">API</a></li>
     </ul>
   </div>
 
