@@ -88,7 +88,7 @@ They are auto-generated from `our OpenAPI file`_ with `swagger-codegen`_.
 .. _our OpenAPI file: https://api-beta.bimdata.io/doc
 .. _swagger-codegen: https://swagger.io/
 
-.. _Go to API Reference: ../api/
+.. _Go to API Reference: ../api/index.html
 .. _Get data from model into an Excel file: ../tutorials/export_excel.html
 .. _Retrieve elements following a constraint: ../tutorials/retrieve-elements.html
 .. _playground: ../api_partial/index.html
