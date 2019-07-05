@@ -76,7 +76,7 @@ They are auto-generated from `our OpenAPI file`_ with `openapi-generator`_.
 .. _Go to API Reference: ../api/index.html
 .. _Get data from model into an Excel file: ../tutorials/export_excel.html
 .. _Retrieve elements following a constraint: ../tutorials/retrieve-elements.html
-.. _playground: ../api_partial/index.html
-.. _check it out:  ../api_partial/index.html
+.. _playground: ../api_playground/index.html
+.. _check it out:  ../api_playground/index.html
 
 
