@@ -58,26 +58,20 @@
               }
             }
           }
-          &.current{
+          &.current, &.show{
             .toctree-expand{
-              &::before{
-                border-color: transparent transparent $color-primary;
-              }
+              background-image: url("../_images/bimdata_carret-right.svg");
             }
           }
           .toctree-expand{
-            &::before{
-              border-color: transparent transparent $color-white;
-            }
+            background-image: url("../_images/bimdata_carret-right_white.svg");
           }
           &:hover{
             a{
               color: $color-primary;
             }
             .toctree-expand{
-              &::before{
-                border-color: transparent transparent $color-primary;
-              }
+              background-image: url("../_images/bimdata_carret-right.svg");
             }
           }
         }

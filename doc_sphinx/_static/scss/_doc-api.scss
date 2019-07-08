@@ -89,10 +89,8 @@
             }
           }
           &.expand{
-            a{
-              &::before{
-                background-image: url(../_images/bimdata_carret-down.svg);
-              }
+            a::before{
+              background-image: url(../_images/bimdata_carret-down.svg);
             }
             & > ul{
               margin: 0 .75rem .75rem;
