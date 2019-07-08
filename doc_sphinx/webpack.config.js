@@ -22,7 +22,8 @@ module.exports = {
       chunkFilename: "[id].css"
     }),
     new CopyPlugin([
-      { from: './node_modules/@bimdata/utils/dist/fonts', to: '../dist/fonts/' }
+      { from: './node_modules/@bimdata/utils/dist/fonts', to: '../dist/fonts/' },
+      { from: './node_modules/@bimdata/utils/dist/js/main.js', to: '../_static/js/' }
     ])
   ],
   module: {
