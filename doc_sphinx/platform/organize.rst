@@ -2,6 +2,11 @@
 Organize
 ========================
 
+.. 
+    excerpt
+        How-To organize your content: models, clouds, projects
+    endexcerpt
+
 Once you are logged in BIMData Connect, you can create Clouds on the Platform.
 In each Cloud, you can create Projects and manage diverse Documents.
 

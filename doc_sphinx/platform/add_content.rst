@@ -2,7 +2,12 @@
 Add Content
 ========================
 
-.. contents::
+.. 
+    excerpt
+        How-To add content: models, clouds, projects
+    endexcerpt
+
+.. contents:: Learn how-to
 
 
 Create containers
@@ -14,9 +19,9 @@ Create a Cloud
 * Click the [+ Create Cloud] button from the button zone
 * Fill the Cloud's name
 
-.. image:: /_images/user_guide/platform/cloud.svg
+.. figure:: /_images/user_guide/platform/cloud.svg
    :alt: Cloud card
-   :align: left
+   :align: right
 
 The freshly created Cloud is added at the end of to the list. 
 On each Cloud's card, the number of Projects and the number of Users are visible.
@@ -27,9 +32,9 @@ For any new Cloud, you can set Users rights. See `Users Management page`_ for mo
 Create a Project
 ------------------
 
-.. image:: /_images/user_guide/platform/project_card.svg
+.. figure:: /_images/user_guide/platform/project_card.svg
    :alt: Project card
-   :align: left
+   :align: right
 
 * Click on the [+ New Project] button on the left of your Project list
 * Fill the name of your next Project

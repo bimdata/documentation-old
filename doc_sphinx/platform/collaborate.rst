@@ -1,3 +1,8 @@
 ========================
 Collaborate
 ========================
+
+.. 
+    excerpt
+        How-To collaborate with your colleagues
+    endexcerpt
