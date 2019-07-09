@@ -10,8 +10,8 @@ $(function () {
       }, 100);
     });
 
-    $("#sidebar #nav section a").click(function () {
-      $("#sidebar #nav section a.active").removeClass("active");
+    $("#sidebar #nav a").click(function () {
+      $("#sidebar #nav a.active").removeClass("active");
       $(this).addClass("active");
     });
 
