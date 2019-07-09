@@ -46,19 +46,6 @@
         section{
           a{
             position: relative;
-            &::before{
-              content: "";
-              left: 10px;
-              background-position: center center;
-              position: absolute;
-              width: 17px;
-              height: 17px;
-              top: 8px;
-              background-size: 20px;
-              background-repeat: no-repeat;
-              z-index: 1;
-              background-image: url(../_images/bimdata_carret-right.svg);
-            }
           }
           ul{
             li{
@@ -124,10 +111,14 @@
           }
         }
         .label{
-          display: block;
+          padding: 0 .5rem;
+          height: 22px;
+          display: flex;
+          align-items: center;
           background-color: $color-secondary;
           color: $color-primary;
           font-family: $font-primary;
+          font-size: 11px;
           text-transform: uppercase;
         }
         .swagger-operation-path, .swagger-operation-description, .swagger-responses, .swagger-request-params, .swagger-request-body, .json-schema-properties, .json-schema-array-items{

@@ -341,3 +341,24 @@ ul.contenttab-selector{
     }
   }
 }
+
+.toctree-expand{
+  margin-left: 18px;
+  background-image: url("../_images/bimdata_carret-right.svg");
+  width: 15px;
+  height: 34px;
+  background-size: contain;
+  z-index: 99999;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  cursor: pointer;
+  &::before{
+    content: none;
+  }
+}
+.expand{
+  .toctree-expand{
+    transform: rotate(90deg);
+  }
+}
