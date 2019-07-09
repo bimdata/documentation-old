@@ -144,9 +144,6 @@ html_theme_options = {
 
 
 def setup(app):
-    if os.environ.get("ENV", "development") == "development":
-        app.add_js_file("js/reload.js")  # also can be a full URL
-
     app.add_stylesheet("css/style.css")  # also can be a full URL
 
 
