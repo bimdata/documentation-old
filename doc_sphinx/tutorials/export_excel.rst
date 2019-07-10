@@ -43,7 +43,7 @@ Iterate on topics and do another request to get the Viewpoints.
 
 .. note:: 
     The BIMData's UI tools let you have only one Viewpoint by Topic. The API let you manage several.
-    It's the reason you see `viewpoints[0]` line 13.
+    It's the reason you see ``viewpoints[0]`` line 13.
 
 .. substitution-code-block:: python
    :linenos:

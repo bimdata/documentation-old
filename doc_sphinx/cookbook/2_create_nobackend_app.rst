@@ -37,12 +37,12 @@ Response types
 ==============
 
 Select id_token token (Implicit Flow)
-This means you will get an `id_token` (not used by BIMData) and an `access_token` (required to make API calls).
+This means you will get an ``id_token`` (not used by BIMData) and an ``access_token`` (required to make API calls).
 
 Scopes
 ======
 
-Select scopes your app needs (see `scopes`_ doc).
+Select scopes your app needs (see ``scopes``_ doc).
 
 JWT algorithm
 =============
