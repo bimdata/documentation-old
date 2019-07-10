@@ -16,7 +16,35 @@ One your account on BIMData Connect is created, you can:
 API Reference
 ==============
 
-:Just looking for the API Reference?: `Go to API Reference`_
+
+.. cssclass:: btn-primary
+
+  :ref:`Go to API Reference`_
+
+
+.. role:: lien
+
+    Just looking for the API Reference? :lien: `Go to API Reference`_
+
+
+
+Just looking for the API Reference? :ref:`api_ref`
+
+.. rst-class:: encore
+
+    Just looking for the API Reference? `Go to API Reference`_
+
+
+.. class:: sarah
+
+    Just looking for the API Reference? :sarah: `Go to API Reference`_
+
+
+.. class:: red
+
+    This is a paragraph.
+
+    This is another paragraph.
 
 
 URL
