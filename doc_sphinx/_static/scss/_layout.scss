@@ -19,6 +19,7 @@
           text-decoration: none;
         }
         &:first-child{
+          margin-left: 0;
           a{
             i{
               margin: 0 .125rem .1rem 0;
@@ -69,6 +70,9 @@
           }
         }
       }
+    }
+    &.doc-api{
+      padding-bottom: 0;
     }
   }
 }
@@ -122,6 +126,22 @@
       width: 555px;
       line-height: 22px;
       @include font-size(16px);
+    }
+  }
+}
+
+// page API INTRODUCTION
+#api-reference{
+  .btn-primary{
+    margin: .5rem 0 0 2rem;
+    padding: 0 1.5rem;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    box-shadow: none;
+    &:hover{
+      background-color: $color-primary-d20;
     }
   }
 }

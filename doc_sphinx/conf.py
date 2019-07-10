@@ -144,9 +144,6 @@ html_theme_options = {
 
 
 def setup(app):
-    if os.environ.get("ENV", "development") == "development":
-        app.add_js_file("js/reload.js")  # also can be a full URL
-
     app.add_stylesheet("css/style.css")  # also can be a full URL
 
 
@@ -271,13 +268,3 @@ swagger2sphinx_swagger_location = "api/swagger.json"
 
 # Autosummary issue resolver
 numpydoc_show_class_members = False
-
-# SASS/SCSS
-from sassutils import builder
-
-OUTPUT_STYLE = os.environ.get("SCSS_OUTPUT_STYLE", "expanded")
-SCSS_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), "./_static/scss"))
-CSS_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), "./_static/css"))
-
-b = builder.Manifest(sass_path=SCSS_DIR, css_path=CSS_DIR, strip_extension=True)
-b.build("", output_style=OUTPUT_STYLE)

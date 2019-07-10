@@ -16,14 +16,18 @@ One your account on BIMData Connect is created, you can:
 API Reference
 ==============
 
-:Just looking for the API Reference?: `Go to API Reference`_
+Just looking for the API Reference?
+
+.. raw:: html
+
+   <a href="../api/index.html" class="btn btn-primary">Go to API Reference</a>
 
 
 URL
 ================
 
 The API URL is **|api_url|**
-All API requests must be made over HTTPS. 
+All API requests must be made over HTTPS.
 
 .. NOTE::
     Calls made over plain HTTP will respond a 302, redirecting to the same URL over HTTPS.
@@ -55,15 +59,15 @@ Read our tutorials to begin using the API with a real-life sized purpose
 Playground
 ===========
 
-:You would like to try our API?: Gladly, we provide you some `playground`_, based on OpenAPI files : `check it out`_!
+You would like to try our API? Gladly, we provide you some `playground`_, based on OpenAPI files : `check it out`_!
 
 
 Libraries
 ================
 
 We're currently maintaining two external libraries:
-* Our `external lib in JavaScript`_ 
-* Our `external lib in Python`_. 
+* Our `external lib in JavaScript`_
+* Our `external lib in Python`_.
 
 They are auto-generated from `our OpenAPI file`_ with `openapi-generator`_.
 
