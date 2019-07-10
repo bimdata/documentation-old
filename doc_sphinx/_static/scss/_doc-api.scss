@@ -1,5 +1,5 @@
 .doc-api{
-  & > .row{
+  & > .row, #api-reference > h1{
     width: calc(100vw - 362px);
     margin-right: 0;
     margin-left: auto;
@@ -104,6 +104,9 @@
         }
         h1.doc-title{
           padding-left: 3rem;
+        }
+        p{
+          padding: 0;
         }
         #introduction{
           .doc-copy{

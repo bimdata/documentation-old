@@ -112,7 +112,7 @@ a{
     display: none;
   }
 }
-p, ul, ol{
+p, ul, ol, td{
   a.reference.external{
     position: relative;
     &::after{
@@ -373,4 +373,19 @@ ul.contenttab-selector{
   top: -60px;
   width: 100%;
   height: 60px;
+}
+
+#api-reference{
+  .btn-primary{
+    margin: .5rem 0 0 2rem;
+    padding: 0 1.5rem;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    box-shadow: none;
+    &:hover{
+      background-color: $color-primary-d20;
+    }
+  }
 }
