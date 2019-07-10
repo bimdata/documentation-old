@@ -61,7 +61,7 @@ Guide
     Webhooks <webhooks>
     Security Concerns<security>
 
-.. _API Introduction: introduction.html
+.. _API Introduction: ../api/introduction.html
 .. _Authentication: authentication_bimdata_connect.html
 .. _Authentication migration: authentication_migration.html
 .. _Errors: errors.html
