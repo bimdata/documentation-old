@@ -59,7 +59,7 @@ Read our tutorials to begin using the API with a real-life sized purpose
 Playground
 ===========
 
-:You would like to try our API?: Gladly, we provide you some `playground`_, based on OpenAPI files : `check it out`_!
+You would like to try our API? Gladly, we provide you some `playground`_, based on OpenAPI files : `check it out`_!
 
 
 Libraries
