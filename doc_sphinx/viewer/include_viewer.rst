@@ -5,11 +5,11 @@
 Include the Viewer in your app
 ================================
 
-To support the Viewer you will need a `<div>` element, with an id attribute, and 3 scripts:
+To support the Viewer you will need a ``<div>`` element, with an id attribute, and 3 scripts:
 
-* The JS viewer to embed with the `<script>` tag
+* The JS viewer to embed with the ``<script>`` tag
 * The API Javascript client, for API calls, to embed with the script tag
-* Your own JS script: in this documentation, this part will be directly in the HTML `<script>` tag
+* Your own JS script: in this documentation, this part will be directly in the HTML ``<script>`` tag
 
 .. substitution-code-block:: html
 
@@ -20,7 +20,7 @@ To support the Viewer you will need a `<div>` element, with an id attribute, and
 The <div> element
 ==================
 
-You `<div>` is simply styled by taking the whole screen width and height.
+You ``<div>`` is simply styled by taking the whole screen width and height.
 An ID will ensure the easy access in Javascript scripts.
 
   .. code-block:: html

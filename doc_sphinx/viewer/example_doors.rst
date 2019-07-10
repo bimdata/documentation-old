@@ -23,7 +23,7 @@ This part is covered by the Recipe "`How-to get the model from the cloud`_"
 Get all the doors
 ------------------
 
-Using the `ifcApi` you retrieve the doors the element `IfcDoor`, the getElements() methods could take an argument to filter by IFC element.
+Using the ``ifcApi`` you retrieve the doors the element `IfcDoor`, the getElements() methods could take an argument to filter by IFC element.
 Then you enlist the doors in two separate lists, based on their width: 
 
 Retrieve the whole script on `our Codepen`_.
@@ -32,7 +32,7 @@ Retrieve the whole script on `our Codepen`_.
 Color doors
 --------------------------------------------
 
-In this example, you first set all elements as *unpickable*, and you `ghost()` them. Then you `unghost()` and set *pickable* again only the doors elements.
+In this example, you first set all elements as *unpickable*, and you ``ghost()`` them. Then you ``unghost()`` and set *pickable* again only the doors elements.
 Since you have the doors list, you set the color of the elements related to their width.
 
 
