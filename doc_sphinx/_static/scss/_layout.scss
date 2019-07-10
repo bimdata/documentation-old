@@ -130,6 +130,22 @@
   }
 }
 
+// page API INTRODUCTION
+#api-reference{
+  .btn-primary{
+    margin: .5rem 0 0 2rem;
+    padding: 0 1.5rem;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    box-shadow: none;
+    &:hover{
+      background-color: $color-primary-d20;
+    }
+  }
+}
+
 
 // page RESULTATS RECHERCHE
 #search-results{

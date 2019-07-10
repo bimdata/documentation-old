@@ -342,7 +342,8 @@ ul.contenttab-selector{
   }
 }
 
-.toctree-expand{
+// picto CARET - GLOBAL
+.toctree-expand, .wy-menu-vertical li span.toctree-expand{
   margin-left: 18px;
   background-image: url("../_images/bimdata_carret-right.svg");
   width: 15px;
@@ -375,20 +376,6 @@ ul.contenttab-selector{
   height: 60px;
 }
 
-#api-reference{
-  .btn-primary{
-    margin: .5rem 0 0 2rem;
-    padding: 0 1.5rem;
-    width: auto;
-    display: inline-flex;
-    align-items: center;
-    font-size: 12px;
-    box-shadow: none;
-    &:hover{
-      background-color: $color-primary-d20;
-    }
-  }
-}
 .linenos{
   pre{
     color: $color-primary;
