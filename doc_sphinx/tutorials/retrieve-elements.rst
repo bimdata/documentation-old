@@ -30,9 +30,9 @@ Step 2. Set up your project
 
 Once your app exists and you have your Access Token, you are able to use the API.
 Begin with the creation of a Cloud (`What's a cloud?`_), in which you create a Project (`What's a project?`_).
-In the script below, there is an example of the creation of a project in your Cloud through API, so you can have a `projectId`.
-First, define a name to create your first Cloud. Post this `name` on |api_url|/cloud using your Access Token. 
-Then use the `cloudId` to create your first Project.
+In the script below, there is an example of the creation of a project in your Cloud through API, so you can have a ``projectId``.
+First, define a name to create your first Cloud. Post this ``name`` on |api_url|/cloud using your Access Token. 
+Then use the ``cloudId`` to create your first Project.
 
 .. substitution-code-block:: python
 
@@ -65,7 +65,7 @@ The API let you upload your IFC file. In this tutorial, you can use this IFC fil
 Use the API to upload
 -------------------------
 
-Use the `/cloud/{cloud_pk}/project/{project_pk}/document` route to upload your file.
+Use the ``/cloud/{cloud_pk}/project/{project_pk}/document`` route to upload your file.
 The `documentation for this route`_ is available on our API Reference page.
 
 .. substitution-code-block:: python

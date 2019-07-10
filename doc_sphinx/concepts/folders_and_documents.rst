@@ -54,7 +54,7 @@ Documents
 ===========
 
 
-BIMData API allows you to upload any kind of file (IFC, Office, images, binaries, etc.). Those files are named `documents`.
+BIMData API allows you to upload any kind of file (IFC, Office, images, binaries, etc.). Those files are named ``documents``.
 You can define in which folder you want to put the file using a ``parent_id``.
 
 Upload a document
