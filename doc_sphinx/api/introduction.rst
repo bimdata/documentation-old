@@ -16,6 +16,9 @@ One your account on BIMData Connect is created, you can:
 API Reference
 ==============
 
+.. container:: myclass
+
+    `BIMData.io <www.bimdata.io>`_
 
 .. cssclass:: btn-primary
 
@@ -24,7 +27,7 @@ API Reference
 
 .. role:: lien
 
-    Just looking for the API Reference? :lien: `Go to API Reference`_
+Just looking for the API Reference? :lien: `Go to API Reference`_
 
 
 
