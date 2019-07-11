@@ -2,6 +2,11 @@
 BIMData's API
 ===============
 
+.. 
+    excerpt
+        Discover BIMData's API documentation
+    endexcerpt
+
 Introduction
 ================
 
