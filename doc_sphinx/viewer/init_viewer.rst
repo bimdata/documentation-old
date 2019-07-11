@@ -9,9 +9,9 @@ These pieces of information are useful to set a new Viewer object in your JS pro
 Constructor
 ------------
 
-The instanciation of the `BIMDataViewer` requires:
+The instanciation of the ``BIMDataViewer`` requires:
 
-    * {String}: ID of DOM container element to append the viewer's canvas to, probably a `<div>` element
+    * {String}: ID of DOM container element to append the viewer's canvas to, probably a ``<div>`` element
     * {Object}: Configuration for the Viewer with this attributes as strings:
         * accessToken
         * cloudId
