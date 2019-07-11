@@ -4,7 +4,7 @@ Guide
 
 .. topic:: `API Introduction`_
 
-    .. include:: introduction.rst
+    .. include:: ../api/introduction.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
@@ -53,7 +53,7 @@ Guide
 .. toctree::
     :hidden:
     
-    API Introduction <introduction>
+    API Introduction <api/introduction>
     Authentication <authentication_bimdata_connect>
     Authentication migration <authentication_migration>
     Errors <errors>
