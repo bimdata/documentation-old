@@ -1,8 +1,3 @@
-.. index::
-   single: folder
-   single: project
-   module: core
-
 ================================
 Folders & Documents
 ================================
@@ -25,7 +20,7 @@ Code example
 JSON
 ^^^^^
 
-``|api_url|/cloud/1/project/1``
+|api_url|/cloud/1/project/1
 
 .. code-block:: javascript
 
