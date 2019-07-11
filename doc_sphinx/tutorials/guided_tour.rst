@@ -7,7 +7,7 @@ Guided Tour
         Take a tour around and create your first application
     endexcerpt
 
-==============================
+
 1 - Which app will you create?
 ==============================
 
@@ -15,7 +15,7 @@ The implementation of your app depends on your needs.
 You can create several types of applications.
 
 Backend-less application
-==========================
+------------------------
 
 Chose this way if you are developing a backend-less application.
 
@@ -27,10 +27,10 @@ These applications:
 ➤ `Create a backend-less app`_
 
 Application with a backend
-===========================
+--------------------------
 
 With BIMData Connect Users
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Chose this way if your app has a backend (PHP, NodeJS, Python, .NET, etc.).
 
@@ -44,7 +44,7 @@ These applications:
 ➤ `Create a backend app`_
 
 Without Users
--------------
+~~~~~~~~~~~~~
 
 Chose this way if you don't want to use BIMData Connect users.
 
@@ -57,7 +57,7 @@ These applications:
 
 
 
-==================
+
 2 - Authentication
 ==================
 
@@ -71,7 +71,7 @@ An **Access Token** is needed for every call to the BIMData's API.
 It represents your app, or a user using your app.
 
 Retrieve an app Access Token
-=============================
+----------------------------
 
 An application Access Token represents the app itself and is not linked to any user. 
 It is used when you don't use **BIMData Connect** users or if you want to use `webhooks`_  or if you're doing some automated tasks.
@@ -82,7 +82,7 @@ It is used when you don't use **BIMData Connect** users or if you want to use `w
 
 
 Retrieve a user Access Token
-=============================
+----------------------------
 
 A user Access Token represents a user using your app. 
 It means when you're calling the API with this token, you will get the data (clouds, projects, models, etc.) the user has access to.
@@ -95,7 +95,7 @@ There are multiple ways to ask them their consent, you can see them LINK TO Open
     See `Authentication Flow documentation`_
 
 
-===================
+
 3 - API Onboarding
 ===================
 
@@ -112,7 +112,7 @@ BIMData API follows these general principles:
 
 
 Cloud
-======
+-----
 
 .. include:: ../concepts/cloud.rst
     :start-after: excerpt
@@ -123,7 +123,7 @@ Cloud
 
 
 Filters
-========
+-------
 
 .. include:: ../guide/filters.rst
     :start-after: excerpt
@@ -135,14 +135,14 @@ Filters
 .. _more about the cloud, see the concept page: ../concepts/cloud.html
 .. _more about the filters, see the concept page: ../concepts/filters.html
 
-=======================
+
 4 - Include the Viewer
 =======================
 
 See the dedicated page `Getting Started with the Viewer`_
 
 
-====================
+
 5 - Users Management
 ====================
 
@@ -150,7 +150,7 @@ There are currently 3 roles defined for Users.
 Each User has a Role, and each User belongs to a Project.
 
 Roles
-=====
+-----
 
 Users can have these Roles:
 
@@ -159,7 +159,7 @@ Users can have these Roles:
 * guest
 
 Constant values in API
------------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 Using the API, there are constant values associated with roles.
 
@@ -182,12 +182,12 @@ When checking User's role through the API, the values are:
 
 
 User in the Cloud
-==================
+-----------------
 
 Every User in the Cloud is linked to a Project.
 
 Admin
--------------
+~~~~~
 
 A cloud Admin can see every other member of the Cloud, can invite other Users as admin in the Cloud.
 
@@ -200,18 +200,18 @@ A cloud admin can ban any User from the Cloud.
     Ban a User exclude the User from all Projects of the Cloud.
 
 Member
----------------
+~~~~~~~
 
 A Cloud member is at least a member of one Project.
 
 User in the Project
-===================
+-------------------
 
 Any User in any Project can read the user list and see the other users of the project.
 
 
 Admin
--------------
+~~~~~
 
 A Project admin can invite Users to the Project.
 
@@ -223,12 +223,12 @@ The Project admin manages the Roles of the Users: the admin car add, edit or del
 
 
 Member
-----------------
+~~~~~~
 
 Can read and write DMS, model, and BCF.
 
 Guest
-----------------
+~~~~~
 
 Can read-only: DMS, models, BCF and write BCF content.
 
@@ -241,3 +241,6 @@ Can read-only: DMS, models, BCF and write BCF content.
 .. _webhooks: ../guide/webhooks.html
 .. _Get Access Token documentation: ../cookbook/get_access_token.html
 .. _Authentication Flow documentation: ../guide/authentication_flows.html
+
+.. toctree::
+    :maxdepth: 1
