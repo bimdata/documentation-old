@@ -16,14 +16,14 @@ Create containers
 Create a Cloud
 ----------------
 
-* Click the [Create Cloud] button from the button zone
+* Click [Create Cloud] from the button zone
 * Fill the Cloud's name
 
 .. figure:: /_images/user_guide/platform/cloud.svg
    :alt: Cloud card
    :align: right
 
-The freshly created Cloud is added at the end of to the list. 
+The freshly created Cloud is added at the end of the list. 
 On each Cloud's card, the number of Projects and the number of Users are visible.
 
 For any new Cloud, you can set Users rights. See `Users Management page`_ for more information.
@@ -36,7 +36,7 @@ Create a Project
    :alt: Project card
    :align: right
 
-* Click on the [New Project] button on the left of your Project list
+* Click on [New Project] on the left of your Project list
 * Fill the name of your next Project
 
 You are ready to add content in the Project.
@@ -49,9 +49,9 @@ Upload your content
 Add your Models
 -----------------
 
- * Click the [File] button, above the User's List
+ * Click [File], above the User's List
  * Chose one or several file(s)
- * Click the [Upload 1 file] button
+ * Click [Upload 1 file] 
 
 Your file is listed in the IFC list, with the Creator and the uploaded Status.
 
@@ -59,9 +59,9 @@ Your file is listed in the IFC list, with the Creator and the uploaded Status.
 Add your Documents
 ---------------------
 
- * Click the [Import a Document] button
+ * Click [Import a Document] 
  * Drop or chose a file, or several at once, from your computer
- * Click the [Upload 1 file] button
+ * Click [Upload 1 file] 
 
 The uploaded file is available in the Document List. You can organize it by creating Folders.
 
@@ -72,8 +72,8 @@ The uploaded file is available in the Document List. You can organize it by crea
 Add BCF
 ========
 
-From any Project Card, a click the [Shortcut Viewer] button launches the Viewer directly in full-screen mode.
-From the Project Page, click the [Viewer] button and open the Viewer in full-screen mode as well.
+From any Project Card, a click [Shortcut Viewer] launches the Viewer directly in full-screen mode.
+From the Project Page, click [Viewer] and the Viewer opens in full-screen mode as well.
 
 .. note::
     

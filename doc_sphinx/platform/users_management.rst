@@ -7,18 +7,14 @@ Users Management
         How-To manage users on your Projects
     endexcerpt
 
-Authentication
-================
 
 
 
-Invite members
-================
+.. note:: 
+    
+    See also `the Guided Tour about Roles chapter`_
 
 
 
-Revoque members
-================
 
-
-.. note:: See Also
+.. _the Guided Tour about Roles chapter: ../tutorials/guided_tour.html#roles
