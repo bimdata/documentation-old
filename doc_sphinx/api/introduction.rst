@@ -2,6 +2,11 @@
 BIMData's API
 ===============
 
+.. 
+    excerpt
+        Discover BIMData's API documentation
+    endexcerpt
+
 Introduction
 ================
 
@@ -26,7 +31,8 @@ Just looking for the API Reference?
 URL
 ================
 
-The API URL is **|api_url|**
+The API URL is |api_url|
+
 All API requests must be made over HTTPS.
 
 .. NOTE::
