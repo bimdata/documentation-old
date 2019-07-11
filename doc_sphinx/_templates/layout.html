@@ -19,7 +19,9 @@
     {% if pagename == 'index' %}
       {%- include "home.html" %}
     {% else %}
+
     <div class="row">
+      {% if pagename != 'api/index' %}
       <div class="content_summary col-2 pt-4">
         {%- block sidebar1 %}
         {%- for sidebartemplate in sidebars %}
@@ -27,9 +29,10 @@
         {%- endfor %}
         {% endblock %}
       </div>
+      {% endif %}
 
       {% if pagename == 'api/index' %}
-      <div class="content_layout doc-api col-10 pt-4 px-0 ml-sm-auto">
+      <div class="content_layout doc-api col-12 pt-4 px-0 ml-sm-auto">
       {% else %}
       <div class="content_layout col-10 pt-4 px-5 ml-sm-auto">
       {% endif %}
