@@ -16,7 +16,7 @@ Create containers
 Create a Cloud
 ----------------
 
-* Click the [+ Create Cloud] button from the button zone
+* Click the [Create Cloud] button from the button zone
 * Fill the Cloud's name
 
 .. figure:: /_images/user_guide/platform/cloud.svg
@@ -36,7 +36,7 @@ Create a Project
    :alt: Project card
    :align: right
 
-* Click on the [+ New Project] button on the left of your Project list
+* Click on the [New Project] button on the left of your Project list
 * Fill the name of your next Project
 
 You are ready to add content in the Project.
@@ -49,8 +49,7 @@ Upload your content
 Add your Models
 -----------------
 
-
- * Click the [+ File] button, above the User's List
+ * Click the [File] button, above the User's List
  * Chose one or several file(s)
  * Click the [Upload 1 file] button
 
@@ -73,7 +72,14 @@ The uploaded file is available in the Document List. You can organize it by crea
 Add BCF
 ========
 
-From any Project Card, a click on the [Shortcut Viewer] button launches the Viewer directly in full-screen mode.
+From any Project Card, a click the [Shortcut Viewer] button launches the Viewer directly in full-screen mode.
+From the Project Page, click the [Viewer] button and open the Viewer in full-screen mode as well.
+
+.. note::
+    
+    For more information about the Viewer features, see the Viewer User Guide.
+
+From the Viewer, every member of the Project can add BCF comments directly and collaborate.
 
 .. _Users Management page: users_management.html
 .. _Organize: organize.html

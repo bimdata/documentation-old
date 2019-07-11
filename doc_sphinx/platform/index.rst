@@ -33,11 +33,6 @@ Platform User Guide
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: `FAQ`_
-
-    .. include:: faq.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
 
 .. topic:: `Support`_
 
@@ -53,12 +48,10 @@ Platform User Guide
     Add Content <add_content>
     Collaborate <collaborate>
 
-    FAQ <faq>
     Support <get_help>
 
 .. _Organize: organize.html
 .. _Users management: users_management.html
 .. _Add Content: add_content.html
 .. _Collaborate: collaborate.html
-.. _FAQ: faq.html
 .. _Support: ../get_help.html
