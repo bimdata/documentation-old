@@ -2,12 +2,6 @@
 .content{
   &_summary{
     overflow: auto;
-    // custom TITLE SUMMARY
-    .caption{
-      color: $color-primary;
-      @include font-size(13px);
-      text-transform: initial;
-    }
     .wy-menu-vertical{
       width: 100%;
       // custom LINK SUMMARY
@@ -15,51 +9,28 @@
         position: relative;
 
         &:hover{
-          .toctree-expand{
-            &::before{
-              border-color: transparent transparent $color-primary;
-            }
-          }
+          background-color: $color-secondary;
         }
 
-        // picto CARET
-        .toctree-expand{
-          width: 20px;
-          height: 20px;
-          position: absolute;
-          top: 6px;
-          left: 9%;
-          cursor: pointer;
-          &::before{
-            content: "";
-            position: absolute;
-            left: 5px;
-            top: 7px;
-            display: inline-block;
-            border-color: transparent transparent $color-white;
-            border-style: solid;
-            border-width: 0px 0px 7px 7px;
-            box-sizing: border-box;
-            z-index: 1;
-            @include transform(rotate(-45deg));
-            @include transition(transform 0.2s ease);
+        &.show{
+          .toctree-expand{
+            transform: rotate(90deg);
           }
         }
 
         a{
-          padding: .5rem 2.5rem;
-          position: relative;
-          color: $color-primary;
-          font-family: $font-primary;
-          
           &.external{
             &::after{
               content: none;
             }
           }
+          &:hover{
+            background-color: transparent;
+          }
         }
-        
+
         ul{
+          background-color: $color-background;
           .toctree-l2{
             a{
               margin: .4rem 0;
@@ -81,12 +52,8 @@
 
         // custom SUBMENU ACTIVE OR VISIBLE
         &.current, &.show{
-          .toctree-expand{
-            &::before{
-              border-color: transparent transparent $color-primary;
-            }
-          }
           a{
+            padding: .5rem 2.5rem;
             background-color: $color-secondary;
             border: none;
             font-weight: inherit;
@@ -133,59 +100,20 @@
 
         // custom for SUBMENU & CARET DOWN
         &.show{
-          .toctree-expand{
-            &::before{
-              box-sizing: border-box;
-              @include transform(rotate(45deg));
-              @include transition(transform 0.2s ease);
-            }
-          }
           a{
             color: $color-primary;
           }
           ul{
-            display: block;
+            display: grid;
           }
         }
       }
-
-      // custom TUTORIAL TOCTREE
-      .tutorial-toc{
-        ol{
-          margin-left: 42px;
-          li{
-            display: block;
-            &::before{
-              width: inherit;
-              display: inline-block;
-            }
-            a{
-              padding: .5rem;
-              display: inline-block;
-              &:hover{
-                background-color: transparent;
-              }
-            }
-          }
-        }
-      }
-
     }
     li.current{
       background: $color-background;
       ul{
         display: none;
       }
-    }
-  }
-
-  &_prev-next{
-    margin-top: 1rem;
-    padding: 0 1.618em;
-    @include flexbox;
-    @include justify-content(space-between);
-    .prev, .next{
-      font-size: 80%;
     }
   }
 }

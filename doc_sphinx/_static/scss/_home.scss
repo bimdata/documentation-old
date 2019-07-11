@@ -11,12 +11,10 @@
           margin: 62px 0 45px;
           @include font-size(27px);
         }
-      } 
+      }
       .flex-container_equal{
-        @include flexbox;
-        @include justify-content(center);
         .clef{
-          .card-horizontal_content{
+          .card-vertical_content{
             img{
               padding: .8rem;
             }
@@ -62,25 +60,7 @@
     }
     .flex-container{
       margin-top: 44px;
-      @include flexbox;
       @include justify-content(center);
-      @include flex-flow(row wrap);
-      .card-vertical{
-        padding: 0 33px;
-        &_content{
-          .action-button{
-            display: inline-block;
-            &__rectangle{
-              top: 58%;
-              left: 122%;
-            }
-            &__arrow{
-              top: 8%;
-              left: 140%;
-            }
-          }
-        }
-      }
     }
   }
 

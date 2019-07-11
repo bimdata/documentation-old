@@ -6,6 +6,9 @@
       }
     }
   }
+  ol, li{
+    color: $color-white;
+  }
 
   .highlight{
     .copybtn{
@@ -49,12 +52,29 @@
         .toctree-l1{
           &.current, &.show{
             ul{
+              background-color: $color-primary-d15;
               .toctree-l2{
                 a{
                   background-color: $color-primary-d15;
                   color: $color-white;
                 }
               }
+            }
+          }
+          &.current, &.show{
+            .toctree-expand{
+              background-image: url("../_images/bimdata_carret-right.svg");
+            }
+          }
+          .toctree-expand{
+            background-image: url("../_images/bimdata_carret-right_white.svg");
+          }
+          &:hover{
+            a{
+              color: $color-primary;
+            }
+            .toctree-expand{
+              background-image: url("../_images/bimdata_carret-right.svg");
             }
           }
         }
@@ -91,6 +111,7 @@
       .navbar-search{
         #rtd-search-form{
           input{
+            color: $color-white;
             -webkit-box-shadow: 0 0 0 1000px #1e212c inset;
           }
         }
@@ -119,6 +140,13 @@
           opacity: .1;
         }
       }
+    }
+  }
+
+  // custom CODE NUMBER LINES
+  .linenos{
+    pre{
+      color: $color-white;
     }
   }
 }

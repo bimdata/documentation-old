@@ -28,6 +28,7 @@
   </div>
 
   <div class="col-1">
+    {% if pagename != 'api/index' %}
     <div class="switch-component dark-mode">
       <label class="switch" for="themeSwitch" id="theme-dark">
         <input type="checkbox" id="themeSwitch">
@@ -36,6 +37,7 @@
         <span class="tooltip">Dark mode</span>
       </label>
     </div>
+    {% endif %}
   </div>
 
   <div class="navbar-search col-2">

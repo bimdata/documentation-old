@@ -1,4 +1,10 @@
 .doc-api{
+  & > .row, #api-reference > h1{
+    width: calc(100vw - 362px);
+    margin-right: 0;
+    margin-left: auto;
+    padding-right: 40px;
+  }
   .wy-breadcrumbs{
     padding-left: 3rem;
   }
@@ -19,7 +25,7 @@
           padding-left: 15px;
           color: $color-primary;
           text-transform: uppercase;
-          @include font-size(13px);   
+          @include font-size(13px);
         }
         a{
           margin: 0;
@@ -40,19 +46,6 @@
         section{
           a{
             position: relative;
-            &::before{
-              content: "";
-              left: 10px;
-              background-position: center center;
-              position: absolute;
-              width: 17px;
-              height: 17px;
-              top: 8px;
-              background-size: 20px;
-              background-repeat: no-repeat;
-              z-index: 1;
-              background-image: url(../_images/bimdata_carret-right.svg);
-            }
           }
           ul{
             li{
@@ -83,10 +76,8 @@
             }
           }
           &.expand{
-            a{
-              &::before{
-                background-image: url(../_images/bimdata_carret-down.svg);
-              }
+            a::before{
+              background-image: url(../_images/bimdata_carret-down.svg);
             }
             & > ul{
               margin: 0 .75rem .75rem;
@@ -98,9 +89,11 @@
 
     // custom CONTENT API DOC
     #docs{
-      margin-left: 0;
+      margin-right: 0;
       display: block;
       box-shadow: none;
+      width: calc(100vw - 325px);
+      margin-left: auto;
       .floating-menu-icon{
         display: none;
       }
@@ -112,16 +105,23 @@
         h1.doc-title{
           padding-left: 3rem;
         }
+        p{
+          padding: 0;
+        }
         #introduction{
           .doc-copy{
             padding-left: 3rem!important;
           }
         }
         .label{
-          display: block;
+          padding: 0 .5rem;
+          height: 22px;
+          display: flex;
+          align-items: center;
           background-color: $color-secondary;
           color: $color-primary;
           font-family: $font-primary;
+          font-size: 11px;
           text-transform: uppercase;
         }
         .swagger-operation-path, .swagger-operation-description, .swagger-responses, .swagger-request-params, .swagger-request-body, .json-schema-properties, .json-schema-array-items{
