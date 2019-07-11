@@ -2,7 +2,7 @@
 Platform User Guide
 =================================
 
-.. figure:: /_images/user_guide/platform/page-project.svg
+.. image:: /_images/user_guide/platform/page-project.svg
    :scale: 10%
    :align: left
    :alt: Screenshot of the Projects screen of the BIMData's Platform

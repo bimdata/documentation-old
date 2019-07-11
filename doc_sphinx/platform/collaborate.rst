@@ -7,6 +7,10 @@ Collaborate
         How-To collaborate with your colleagues
     endexcerpt
 
+.. figure:: /_images/user_guide/platform/invite.svg
+   :alt: Invitation List
+
+
 Invitations
 =============
 
@@ -16,6 +20,8 @@ Invitations
 * Click [Validate]
 
 The invitation is sent.
+
+
 
 .. note:: Users access levels
 

@@ -57,6 +57,8 @@ Add your Documents
  * Drop or chose a file, or several at once, from your computer
  * Click [Upload 1 file] 
 
+
+
 The uploaded file is available in the Document List. You can organize it by creating Folders.
 
 .. note::

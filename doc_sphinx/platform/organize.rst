@@ -13,6 +13,10 @@ In each Cloud, you can create Projects and manage diverse Documents.
 Clouds
 =======
 
+.. figure:: /_images/user_guide/platform/page-cloud.svg
+   :alt: Cloud screen
+   :align: right
+
 A cloud is a set of `projects`_ sharing the same configuration. 
 
 At your first log in, you have already 2 Clouds existing:
@@ -25,6 +29,10 @@ The Demo Cloud is a complete example and contains a Demo Project already populat
 Projects
 =========
 
+.. figure:: /_images/user_guide/platform/page-project-list.svg
+   :alt: Project list
+   :align: right
+
 A project is a place where IFC files and documents are stored. 
 
 A project belongs in a Cloud.
@@ -36,6 +44,9 @@ You can create directoru
 
 Documents
 ===========
+
+.. figure:: /_images/user_guide/platform/ged.svg
+   :alt: Documents
 
 IFC files and documents can be uploaded and organized, checkplans are defined.
 
