@@ -10,11 +10,16 @@ Add Content
 .. contents:: Learn how-to
 
 
-Create containers
-==================
+
+.. image:: /_images/user_guide/platform/page-project.svg
+   :scale: 10%
+   :align: left
+   :alt: Screenshot of the Projects screen of the BIMData's Platform
+
+
 
 Create a Cloud
-----------------
+==================
 
 * Click [Create Cloud] from the button zone
 * Fill the Cloud's name
@@ -28,7 +33,7 @@ For any new Cloud, you can set Users rights. See `Users Management screen`_ for 
 
 
 Create a Project
-------------------
+==================
 
 * Click on [New Project] on the left of your Project list
 * Fill the name of your next Project

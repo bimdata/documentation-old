@@ -2,14 +2,22 @@
 Platform User Guide
 =================================
 
-.. image:: /_images/user_guide/platform/page-project.svg
-   :scale: 10%
+
+
+
+Getting Started 
+===================
+
+.. image:: /_images/user_guide/platform/sign-in.svg
    :align: left
-   :alt: Screenshot of the Projects screen of the BIMData's Platform
-
-
+   :alt: Screenshot of Log In screen
 
 Log in the Platform on https://platform-staging.bimdata.io
+
+
+
+Learn more
+====================
 
 .. topic:: `Add Content`_
 
