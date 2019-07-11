@@ -19,22 +19,16 @@ Create a Cloud
 * Click [Create Cloud] from the button zone
 * Fill the Cloud's name
 
-.. figure:: /_images/user_guide/platform/cloud.svg
-   :alt: Cloud card
-   :align: right
+
 
 The freshly created Cloud is added at the end of the list. 
 On each Cloud's card, the number of Projects and the number of Users are visible.
 
-For any new Cloud, you can set Users rights. See `Users Management page`_ for more information.
+For any new Cloud, you can set Users rights. See `Users Management screen`_ for more information.
 
 
 Create a Project
 ------------------
-
-.. figure:: /_images/user_guide/platform/project_card.svg
-   :alt: Project card
-   :align: right
 
 * Click on [New Project] on the left of your Project list
 * Fill the name of your next Project
@@ -81,5 +75,5 @@ From the Project Page, click [Viewer] and the Viewer opens in full-screen mode a
 
 From the Viewer, every member of the Project can add BCF comments directly and collaborate.
 
-.. _Users Management page: users_management.html
+.. _Users Management screen: users_management.html
 .. _Organize: organize.html

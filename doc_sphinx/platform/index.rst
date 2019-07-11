@@ -7,15 +7,9 @@ Platform User Guide
    :align: left
    :alt: Screenshot of the Projects screen of the BIMData's Platform
 
-   Screenshot of the Projects screen of the BIMData's Platform
-
 
 
 Log in the Platform on https://platform-staging.bimdata.io
-The first screen you see is the Cloud List.
-
-
-
 
 .. topic:: `Add Content`_
 

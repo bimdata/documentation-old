@@ -29,8 +29,8 @@ A project is a place where IFC files and documents are stored.
 
 A project belongs in a Cloud.
 
-On the Project's page, the Viewer shows you information about your Models: Model Preview, Map with the surrounding, User's list, Documents of the Project.
-From the Project's page, you can invite Users (for more info, see Collaborate chapter), add Documents (see Add Content).
+On the Project's screen, the Viewer shows you information about your Models: Model Preview, Map with the surrounding, User's list, Documents of the Project.
+From the Project's screen, you can invite Users (for more info, see Collaborate chapter), add Documents (see Add Content).
 
 You can create directoru
 
