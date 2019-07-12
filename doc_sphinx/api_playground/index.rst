@@ -3,7 +3,6 @@ Playground
 ============
 
 .. toctree::
-  :hidden:
   :maxdepth: 1
   :titlesonly:
 
