@@ -20,7 +20,7 @@ Invitations
 * Click [Validate]
 
 The invitation is sent.
-
+You could change the Role of any User later. 
 
 
 .. note:: Users access levels
@@ -82,6 +82,7 @@ Revoke members
     
     Ban a User exclude the User from all Projects of the Cloud.
 
+To revoke a member, click [Delete User] and confirm your action. The User has no longer access to your Project.
 
 .. _the Guided Tour about Roles chapter: ../tutorials/guided_tour.html#roles
 .. _the Collaborate section about Invitation: ../platform/collaborate.html
