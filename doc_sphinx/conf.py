@@ -86,6 +86,8 @@ rst_prolog = f"""
 .. |api_url| replace:: {API_URL}
 .. |cdn_url| replace:: {CDN_URL}
 .. |bimdata_connect| replace:: {CONNECT_URL}
+.. |CREATE_CLOUD_IMG| image:: /_images/user_guide/platform/button-create-cloud.svg
+
 """
 
 

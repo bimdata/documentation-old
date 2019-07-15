@@ -1,3 +1,7 @@
+.. |ADD_FILE_IMG| image:: /_images/user_guide/platform/button-add-file.svg
+.. |UPLOAD_FILE_IMG| image:: /_images/user_guide/platform/button-upload-file.svg
+.. |SHORTCUT_VIEWER_IMG| image:: /_images/user_guide/platform/button-shortcut-viewer.svg
+
 ========================
 Add Content
 ========================
@@ -19,12 +23,9 @@ Add Content
 Create a Cloud
 ==================
 
-.. image:: /_images/user_guide/platform/button-create-cloud.svg
-   :alt: Create Cloud button
 
-* Click [Create Cloud] from the button zone
-* Fill the Cloud's name
-
+* Click [Create Cloud] |CREATE_CLOUD_IMG| from the button zone 
+* Fill the Cloud's name 
 
 
 The freshly created Cloud is added at the end of the list. 
@@ -48,15 +49,14 @@ Upload your content
 ======================
 
 
-Add your Models
+Add your Models  
 -----------------
 
- * Click [File], above the User's List
+
+ * |ADD_FILE_IMG| Click [File], above the User's List 
  * Chose one or several file(s)
  * Click [Upload 1 file] 
 
-.. image:: /_images/user_guide/platform/button-add-file.svg
-   :alt: Upload File button
 
 Your file is listed in the IFC list, with the Creator and the uploaded Status.
 
@@ -66,9 +66,9 @@ Add your Documents
 
  * Click [Import a Document] 
  * Drop or chose a file, or several at once, from your computer
- * Click [Upload 1 file] 
+ * |UPLOAD_FILE_IMG| Click [Upload 1 file] 
 
-.. image:: /_images/user_guide/platform/button-upload-file.svg
+
 
 The uploaded file is available in the Document List. You can organize it by creating Folders.
 
@@ -79,10 +79,7 @@ The uploaded file is available in the Document List. You can organize it by crea
 Add BCF
 ========
 
-.. image:: /_images/user_guide/platform/button-shortcut-viewer.svg
-   :alt: Shortcut Viewer eye-shaped button
-
-From any Project Card, a click [Shortcut Viewer] launches the Viewer directly in full-screen mode.
+From any Project Card, a click [Shortcut Viewer] launches the Viewer directly in full-screen mode. |SHORTCUT_VIEWER_IMG|
 From the Project Page, click [Viewer] and the Viewer opens in full-screen mode as well.
 
 .. note::
