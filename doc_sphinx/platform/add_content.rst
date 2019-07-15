@@ -10,9 +10,7 @@ Add Content
 .. contents:: Learn how-to
 
 
-
 .. image:: /_images/user_guide/platform/page-project.svg
-   :scale: 10%
    :align: left
    :alt: Screenshot of the Projects screen of the BIMData's Platform
 
@@ -20,6 +18,9 @@ Add Content
 
 Create a Cloud
 ==================
+
+.. image:: /_images/user_guide/platform/button-create-cloud.svg
+   :alt: Create Cloud button
 
 * Click [Create Cloud] from the button zone
 * Fill the Cloud's name
@@ -34,6 +35,8 @@ For any new Cloud, you can set Users rights. See `Users Management screen`_ for 
 
 Create a Project
 ==================
+
+
 
 * Click on [New Project] on the left of your Project list
 * Fill the name of your next Project
@@ -52,6 +55,9 @@ Add your Models
  * Chose one or several file(s)
  * Click [Upload 1 file] 
 
+.. image:: /_images/user_guide/platform/button-add-file.svg
+   :alt: Upload File button
+
 Your file is listed in the IFC list, with the Creator and the uploaded Status.
 
 
@@ -62,7 +68,7 @@ Add your Documents
  * Drop or chose a file, or several at once, from your computer
  * Click [Upload 1 file] 
 
-
+.. image:: /_images/user_guide/platform/button-upload-file.svg
 
 The uploaded file is available in the Document List. You can organize it by creating Folders.
 
@@ -72,6 +78,9 @@ The uploaded file is available in the Document List. You can organize it by crea
 
 Add BCF
 ========
+
+.. image:: /_images/user_guide/platform/button-shortcut-viewer.svg
+   :alt: Shortcut Viewer eye-shaped button
 
 From any Project Card, a click [Shortcut Viewer] launches the Viewer directly in full-screen mode.
 From the Project Page, click [Viewer] and the Viewer opens in full-screen mode as well.
