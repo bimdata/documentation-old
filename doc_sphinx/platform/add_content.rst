@@ -82,9 +82,6 @@ Add BCF
 From any Project Card, a click [Shortcut Viewer] launches the Viewer directly in full-screen mode. |SHORTCUT_VIEWER_IMG|
 From the Project Page, click [Viewer] and the Viewer opens in full-screen mode as well.
 
-.. note::
-    
-    For more information about the Viewer features, see the Viewer User Guide.
 
 From the Viewer, every member of the Project can add BCF comments directly and collaborate.
 
