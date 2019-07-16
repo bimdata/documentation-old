@@ -33,15 +33,9 @@ You can use:
 Customization
 ---------------
 
-For the version switcher, we are using `the sphinx-versioning extension <https://robpol86.github.io/sphinxcontrib-versioning/>`_.
-The theme is the `sphinx-rtd-theme <https://sphinx-rtd-theme.readthedocs.io>`_.
+The theme is custom and based on the `sphinx-rtd-theme <https://sphinx-rtd-theme.readthedocs.io>`_.
 
 Spectacle:
 ===========
 
 Our API Reference is served by `Spectacle <https://github.com/sourcey/spectacle/>`_ in its own separate directory.
-Spectacle directory contains:
-
-* the Redoc JS library file
-* our OpenAPI file
-* an HTML file to support JS processing OAS file
