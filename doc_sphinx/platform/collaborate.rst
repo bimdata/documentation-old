@@ -7,21 +7,28 @@ Collaborate
         How-To collaborate with your colleagues
     endexcerpt
 
-.. figure:: /_images/user_guide/platform/invite.svg
-   :alt: Invitation List
+
+.. image:: /_images/user_guide/platform/page-project.svg
+   :align: left
+   :alt: Screenshot of the Projects screen of the BIMData's Platform
 
 
 Invitations
 =============
 
+.. figure:: /_images/user_guide/platform/invite-form-filled.png
+   :alt: Invitation form filled example
+
+
 * Click [Invite] icon on top of the Users List
 * Fill in the e-mail address
-* Chose the access rights: Admin, User or Guest for the Project
+* Chose the access rights: Admin, User or Guest for the Project. You could change the Role of any User later. 
 * Click [Validate]
 
 The invitation is sent.
-You could change the Role of any User later. 
 
+.. figure:: /_images/user_guide/platform/invite.svg
+   :alt: Invitation List
 
 .. note:: Users access levels
 
@@ -73,6 +80,9 @@ The e-mail contains a link to accept directly the invitation.
 .. tip:: Invitation lost?
 
     To resend the invitation, click [Resend Invitation?]. The e-mail is sent again.
+
+    .. image:: /_images/user_guide/platform/invitation-pending.png
+
 
 
 Revoke members

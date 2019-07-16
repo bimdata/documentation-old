@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="65px" viewBox="0 0 150 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>create cloud</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="create-cloud">
+            <g>
+                <rect id="Rectangle" fill="#E8E8E8" x="0" y="0" width="150" height="65" rx="3"></rect>
+                <g id="Ajouter-un-utilisateur" transform="translate(11.000000, 12.000000)">
+                    <rect id="Rectangle-9" fill="#2F374A" x="0" y="0" width="128" height="41" rx="3"></rect>
+                    <g id="Group" transform="translate(21.000000, 14.000000)" fill="#FFFFFF">
+                        <polygon id="Page-1" points="5.31525484 1 5.28768962 6.28017184 0.00751778762 6.25260661 0 7.68474516 5.28017184 7.71213138 5.25260661 12.9924822 6.68456616 13 6.71213138 7.71982816 11.9923032 7.74739339 12 6.31525484 6.71964917 6.28786862 6.74721439 1.00751779"></polygon>
+                        <text id="Create-cloud" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal">
+                            <tspan x="18" y="11">Create cloud</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

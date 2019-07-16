@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="65px" viewBox="0 0 150 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>file</title>
+    <desc>Created with Sketch.</desc>
+    <g id="file" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="150" height="65"></rect>
+        <g id="upload-file">
+            <rect id="Rectangle" fill="#E8E8E8" x="0" y="0" width="150" height="65" rx="3"></rect>
+            <g id="Ajouter-un-utilisateur" transform="translate(0.000000, 12.000000)">
+                <rect id="Rectangle-9" fill="#2F374A" x="0" y="0" width="150" height="41"></rect>
+                <g id="Group" transform="translate(32.000000, 14.000000)" fill="#FFFFFF" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal">
+                    <text id="Upload-1-file">
+                        <tspan x="10.4208984" y="11">Upload 1 file</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
