@@ -16,7 +16,7 @@ Collaborate
 Invitations
 =============
 
-.. figure:: /_images/user_guide/platform/invite-form-filled.png
+.. figure:: /_images/user_guide/platform/invite-form-filled.svg
    :alt: Invitation form filled example
 
 
@@ -81,7 +81,7 @@ The e-mail contains a link to accept directly the invitation.
 
     To resend the invitation, click [Resend Invitation?]. The e-mail is sent again.
 
-    .. image:: /_images/user_guide/platform/invitation-pending.png
+    .. image:: /_images/user_guide/platform/invitation-pending.svg
 
 
 
