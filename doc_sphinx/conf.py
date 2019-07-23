@@ -213,7 +213,37 @@ htmlhelp_basename = "BimdataSphinxdoc"
 
 # -- Options for LaTeX output ---------------------------------------------
 
-latex_elements = {}
+latex_engine = 'xelatex'
+preamble = r'''
+%%% Redifined titleformat
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\newcommand{\hsp}{\hspace{20pt}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\titleformat{\chapter}[hang]{\Huge\bfseries\sffamily}{\thechapter\hsp}{0pt}{\Huge\bfseries\sffamily}
+\setallmainfonts(Digits,Latin,Greek)[Scale=1]{Roboto}
+\setallsansfonts[Scale=1]{Roboto}
+%%% Set numeration
+\setcounter{secnumdepth}{3}
+'''
+latex_elements = {
+# The paper size ('letterpaper' or 'a4paper').
+'papersize': 'a4paper',
+
+# The font size ('10pt', '11pt' or '12pt').
+'pointsize': '12pt',
+
+# Additional stuff for the LaTeX preamble.
+'preamble': preamble,
+
+# No default title
+'maketitle': '',
+
+# No default toc
+'tableofcontents': '',
+}
+
+latex_show_urls = 'footnote'
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
@@ -221,7 +251,7 @@ latex_elements = {}
 latex_documents = [
     (
         master_doc,
-        "BimdataSphinx.tex",
+        "BIMData_documentation.tex",
         "BIMData Sphinx Documentation",
         "bimdata",
         "manual",
