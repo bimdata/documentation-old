@@ -95,6 +95,7 @@ There are multiple ways to ask them their consent, you can see them LINK TO Open
     See `Authentication Flow documentation`_
 
 
+.. _api_onboarding_cloud:
 
 3 - API Onboarding
 ===================
