@@ -17,9 +17,18 @@ Add Content
 Create a Cloud
 ==================
 
-.. image:: /_images/user_guide/platform/page-cloud.svg
-   :align: left
-   :alt: Screenshot of the Clouds screen of the BIMData's Platform
+.. only:: html
+
+    .. image:: /_images/user_guide/platform/page-cloud.svg
+       :align: left
+       :alt: Screenshot of the Clouds screen of the BIMData's Platform
+
+.. only:: latex
+
+    .. image:: /_images/user_guide/platform/page-cloud.png
+       :align: left
+       :alt: Screenshot of the Clouds screen of the BIMData's Platform
+
 
 
 * Click [Create Cloud] |CREATE_CLOUD_IMG| from the button zone 
@@ -34,9 +43,17 @@ For any new Cloud, you can set Users rights. See `Users Management screen`_ for 
 Create a Project
 ==================
 
-.. image:: /_images/user_guide/platform/page-project-list.svg
-   :align: left
-   :alt: Screenshot of the Projects List screen of the BIMData's Platform
+.. only:: html
+
+    .. image:: /_images/user_guide/platform/page-project-list.svg
+        :align: left
+        :alt: Screenshot of the Projects List screen of the BIMData's Platform
+
+.. only:: latex
+
+    .. image:: /_images/user_guide/platform/page-project-list.png
+        :align: left
+        :alt: Screenshot of the Projects List screen of the BIMData's Platform
 
 
 * Click on [New Project] on the left of your Project list
@@ -65,9 +82,18 @@ Add your Documents
  * Drop or chose a file, or several at once, from your computer
  * |UPLOAD_FILE_IMG| Click [Upload 1 file] 
 
-.. image:: /_images/user_guide/platform/ged.svg
-   :align: left
-   :alt: Screenshot of EDM part of the BIMData's Platform
+
+.. only:: html
+
+    .. image:: /_images/user_guide/platform/ged.svg
+        :align: left
+        :alt: Screenshot of EDM part of the BIMData's Platform
+
+.. only:: latex
+
+    .. image:: /_images/user_guide/platform/ged.png
+        :align: left
+        :alt: Screenshot of EDM part of the BIMData's Platform
 
 
 The uploaded file is available in the Document List. You can organize it by creating Folders.

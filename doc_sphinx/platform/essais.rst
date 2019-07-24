@@ -2,6 +2,18 @@
 Essais
 =================
 
+Only 
+======
+
+.. only:: latex
+
+   This appears only in LaTeX output.
+
+.. only:: html
+
+   This appears only in HTML output. 
+
+
 
 Raw HTML
 =========
@@ -17,8 +29,7 @@ Raw HTML and object tag:
 Raw HTML and file option:
 
 .. raw:: html
-    :file: /_images/user_guide/platform/button-add-file.svg
-
+    :file: /_images/user_guide/platform/button-add-file.*
 
 
 
@@ -28,6 +39,25 @@ Directive image
 image : 
 
 .. image:: /_images/user_guide/platform/button-add-file.svg
+
+Only HTML
+-------------
+
+.. only:: html
+    .. image:: /_images/user_guide/platform/button-add-file.svg
+
+
+Only LaTeX
+-------------
+
+.. only:: latex
+    .. image:: /_images/user_guide/platform/button-add-file.png
+
+
+Directive with wildcard
+------------------------
+
+.. image:: /_images/user_guide/platform/button-add-file.*
 
 
 Include 

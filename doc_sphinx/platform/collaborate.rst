@@ -7,17 +7,31 @@ Collaborate
         How-To collaborate with your colleagues
     endexcerpt
 
+.. only:: html
 
-.. image:: /_images/user_guide/platform/page-project.svg
-   :align: left
-   :alt: Screenshot of the Projects screen of the BIMData's Platform
+    .. image:: /_images/user_guide/platform/page-project.svg
+        :align: left
+        :alt: Screenshot of the Projects screen of the BIMData's Platform
+
+.. only:: latex
+
+    .. image:: /_images/user_guide/platform/page-project.png
+        :align: left
+        :alt: Screenshot of the Projects screen of the BIMData's Platform
 
 
 Invitations
 =============
 
-.. figure:: /_images/user_guide/platform/invite-form-filled.svg
-   :alt: Invitation form filled example
+.. only:: html
+
+    .. figure:: /_images/user_guide/platform/invite-form-filled.svg
+        :alt: Invitation form filled example
+
+.. only:: latex
+
+    .. figure:: /_images/user_guide/platform/invite-form-filled.png
+        :alt: Invitation form filled example
 
 
 * Click [Invite] icon on top of the Users List
@@ -27,8 +41,16 @@ Invitations
 
 The invitation is sent.
 
-.. figure:: /_images/user_guide/platform/invite.svg
-   :alt: Invitation List
+.. only:: html
+
+    .. figure:: /_images/user_guide/platform/invite.svg
+        :alt: Invitation List
+
+.. only:: latex
+
+    .. figure:: /_images/user_guide/platform/invite.png
+        :alt: Invitation List
+
 
 .. note:: Users access levels
 
@@ -78,10 +100,15 @@ Until your recipient accepts it, the invitation appears incomplete.
 The e-mail contains a link to accept directly the invitation.
 
 .. tip:: Invitation lost?
-
     To resend the invitation, click [Resend Invitation?]. The e-mail is sent again.
 
-    .. image:: /_images/user_guide/platform/invitation-pending.svg
+    .. only:: html
+
+        .. image:: /_images/user_guide/platform/invitation-pending.svg
+    
+    .. only:: latex
+
+        .. image:: /_images/user_guide/platform/invitation-pending.png
 
 
 

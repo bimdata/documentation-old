@@ -13,9 +13,17 @@ The features you can use could be limited by your Role on the Project.
 Getting Started 
 ===================
 
-.. image:: /_images/user_guide/platform/sign-in.svg
-   :align: left
-   :alt: Screenshot of Log In screen
+.. only:: html 
+
+    .. image:: /_images/user_guide/platform/sign-in.svg
+        :align: left
+        :alt: Screenshot of Log In screen
+
+.. only:: latex
+
+    .. image:: /_images/user_guide/platform/sign-in.png
+        :align: left
+        :alt: Screenshot of Log In screen
 
 Log in the Platform on https://platform-staging.bimdata.io
 
@@ -40,14 +48,11 @@ Learn how-to...
        :start-after: excerpt
        :end-before: endexcerpt
 
-
 .. topic:: :doc:`Organize <organize>`
 
     .. include:: organize.rst
        :start-after: excerpt
        :end-before: endexcerpt
-
-
 
 .. topic:: :doc:`Support <../get_help>`
 
@@ -62,5 +67,4 @@ Learn how-to...
     Organize <organize>
     Collaborate <collaborate>
 
-    Support <get_help>
-
+    Support <../get_help>

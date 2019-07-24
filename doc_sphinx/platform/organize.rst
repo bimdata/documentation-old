@@ -13,9 +13,17 @@ In each Cloud, you can create Projects and manage diverse Documents.
 Clouds
 =======
 
-.. figure:: /_images/user_guide/platform/page-cloud.svg
-   :alt: Cloud screen
-   :align: right
+.. only:: html
+
+    .. figure:: /_images/user_guide/platform/page-cloud.svg
+        :alt: Cloud screen
+        :align: right
+
+.. only:: latex
+
+    .. figure:: /_images/user_guide/platform/page-cloud.png
+        :alt: Cloud screen
+        :align: right
 
 A cloud is a set of `projects`_ sharing the same configuration. 
 
@@ -38,9 +46,17 @@ From the main screen of the BIMData Platform, using the buttons, you can:
 Projects
 =========
 
-.. figure:: /_images/user_guide/platform/page-project-list.svg
-   :alt: Project list
-   :align: right
+.. only:: html
+
+    .. figure:: /_images/user_guide/platform/page-project-list.svg
+        :alt: Project list
+        :align: right
+
+.. only:: latex
+
+    .. figure:: /_images/user_guide/platform/page-project-list.png
+        :alt: Project list
+        :align: right
 
 A project is a place where IFC files and documents are stored. 
 
@@ -65,8 +81,15 @@ You can create directories to store and organize your Documents.
 Documents
 ===========
 
-.. figure:: /_images/user_guide/platform/ged.svg
-   :alt: Documents
+.. only:: html
+
+    .. figure:: /_images/user_guide/platform/ged.svg
+        :alt: Documents
+
+.. only:: latex
+
+    .. figure:: /_images/user_guide/platform/ged.png
+        :alt: Documents
 
 IFC files and documents can be uploaded and organized, checkplans are defined.
 
