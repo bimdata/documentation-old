@@ -37,3 +37,13 @@ References
 * GET ``/user/projects``
 * GET ``/cloud/{cloud_pk}/project``
 * POST ``/cloud/{cloud_pk}/project``
+
+
+
+.. note::
+
+    See also :doc:`Getting Started </tutorials/getting_started>` to learn how-to setup your project.
+    
+    .. include:: ../tutorials/getting_started.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
