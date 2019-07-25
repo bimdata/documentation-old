@@ -41,9 +41,9 @@ JSON
 References
 ------------
 
-* GET `/cloud/{cloud_pk}/project/{project_pk}/folder`
-* POST `/cloud/{cloud_pk}/project/{project_pk}/folder`
-* GET `/cloud/{cloud_pk}/project/{id}/tree`
+* GET ``/cloud/{cloud_pk}/project/{project_pk}/folder``
+* POST ``/cloud/{cloud_pk}/project/{project_pk}/folder``
+* GET ``/cloud/{cloud_pk}/project/{id}/tree``
 
 Documents
 ===========
@@ -199,3 +199,9 @@ References
 
 * GET ``/cloud/{cloud_pk}/project/{project_pk}/document``
 * POST ``/cloud/{cloud_pk}/project/{project_pk}/document``
+
+
+
+.. note::
+
+    See also :ref:`api_onboarding_cloud`

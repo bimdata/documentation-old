@@ -65,3 +65,13 @@ E                  Error               The process has failed.
 
 
 .. _IFC files: https://en.wikipedia.org/wiki/Industry_Foundation_Classes
+
+
+
+.. note::
+
+    See also :doc:`webhooks content </guide/webhooks>`
+    
+    .. include:: ../guide/webhooks.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
