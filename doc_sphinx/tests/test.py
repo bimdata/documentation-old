@@ -1,7 +1,7 @@
 import sys
 import scrapy
 from scrapy.crawler import CrawlerProcess
-from scrapy.linkextractors import LinkExtractor
+import server
 
 not_found_urls = []
 non_templated_urls = []
@@ -12,8 +12,8 @@ substitutions = ["|api_url|", "|cdn_url|", "|bimdata_connect|"]
 
 class NotFoundSpider(scrapy.Spider):
     name = "404"
-    allowed_domains = ["localhost:1212"] + substitutions
-    start_urls = ["http://localhost:1212"]
+    allowed_domains = ["localhost"] + substitutions
+    start_urls = ["http://localhost:1212/"]
     handle_httpstatus_list = [404]
 
     def parse(self, response):
@@ -38,10 +38,13 @@ class NotFoundSpider(scrapy.Spider):
             yield response.follow(href, self.parse)
 
 
-process = CrawlerProcess()
+server.start_server()
 
+
+process = CrawlerProcess()
 process.crawl(NotFoundSpider)
 process.start()
+server.close_server()
 
 if non_templated_urls or not_found_urls:
     print()
@@ -54,3 +57,5 @@ if non_templated_urls or not_found_urls:
         print(error + " from " + parent.decode("utf-8"))
 
     sys.exit(1)
+
+print("SUCCESS")

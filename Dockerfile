@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install libglu1-mesa -y
 
 RUN wget https://raw.githubusercontent.com/visionmedia/n/master/bin/n -O /usr/local/bin/n && \
     chmod +x /usr/local/bin/n && \
-	n 10
+    n 10
 
 WORKDIR /opt
 ADD doc_sphinx/requirements.txt /opt
