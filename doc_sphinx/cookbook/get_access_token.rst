@@ -40,7 +40,7 @@ Curl
 
 .. substitution-code-block:: bash
 
-    curl --request POST "https://connect-next.bimdata.io/token" \
+    curl --request POST "|bimdata_connect|/token" \
       --header "Content-Type: application/x-www-form-urlencoded" \
       --data "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
 
