@@ -9,7 +9,7 @@
     "build": "webpack --mode='production' --config webpack.config.js",
     "build-watch": "cd .. && rm -rf html_doc && cd doc_sphinx && sphinx-build . ../html_doc && npm run start",
     "pretest": "cd .. && rm -rf html_doc && cd doc_sphinx && sphinx-build . ../html_doc && webpack --mode='development' --config webpack.config.js",
-    "test": "cd .. && python -m http.server 1212 & python tests/test.py"
+    "test": "cd .. && python -m http.server 1212 & sleep 3 && python tests/test.py"
   },
   "author": "",
   "license": "CC-BY-4.0",
