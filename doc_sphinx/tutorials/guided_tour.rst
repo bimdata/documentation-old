@@ -133,7 +133,7 @@ Filters
     To learn `more about the filters, see the concept page`_.
 
 .. _more about the cloud, see the concept page: ../concepts/cloud.html
-.. _more about the filters, see the concept page: ../concepts/filters.html
+.. _more about the filters, see the concept page: ../guide/filters.html
 
 
 4 - Include the Viewer
