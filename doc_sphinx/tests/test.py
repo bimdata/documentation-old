@@ -12,8 +12,8 @@ substitutions = ["|api_url|", "|cdn_url|", "|bimdata_connect|"]
 
 class NotFoundSpider(scrapy.Spider):
     name = "404"
-    allowed_domains = ["developers-staging.bimdata.io"] + substitutions
-    start_urls = ["https://developers-staging.bimdata.io"]
+    allowed_domains = ["localhost:1212"] + substitutions
+    start_urls = ["http://localhost:1212"]
     handle_httpstatus_list = [404]
 
     def parse(self, response):
