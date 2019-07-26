@@ -21,7 +21,7 @@ Sphinx:
 =======
 
 We are using Sphinx to generate our documentation.
-The configuration file ``conf.py`` contains the settings for the build of our Sphinx edition. 
+The configuration file ``conf.py`` contains the settings for the build of our Sphinx edition.
 
 Note: we are using Python3. To be able to use Python3 and the context of working on the documentation, you can use `Virtualenv <https://virtualenv.pypa.io/en/stable/installation/>`_.
 
@@ -39,3 +39,10 @@ Spectacle:
 ===========
 
 Our API Reference is served by `Spectacle <https://github.com/sourcey/spectacle/>`_ in its own separate directory.
+
+
+Tests:
+======
+
+``$> cd doc_sphinx``
+``$> npm test``
