@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build:apiref": "curl ${API_URL:-https://api-staging.bimdata.io}/doc.json > /tmp/bimdata_api.json && spectacle -e --target-dir _static/api  /tmp/bimdata_api.json",
     "start": "webpack -w --mode='development' --config webpack.config.js",
     "build": "webpack --mode='production' --config webpack.config.js",
-    "build-watch": "cd .. && rm -rf html_doc && cd doc_sphinx && sphinx-build . ../html_doc && npm run start"
+    "build-watch": "cd .. && rm -rf html_doc && cd doc_sphinx && sphinx-build . ../html_doc && npm run start",
+    "pretest": "cd .. && rm -rf html_doc && cd doc_sphinx && sphinx-build . ../html_doc && webpack --mode='development' --config webpack.config.js",
+    "test": "cd .. && python -m http.server 1212 & python tests/test.py"
   },
   "author": "",
   "license": "CC-BY-4.0",
