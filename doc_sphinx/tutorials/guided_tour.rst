@@ -233,7 +233,7 @@ Guest
 Can read-only: DMS, models, BCF and write BCF content.
 
 
-.. _the User endpoint: |api_url|/doc#/user/getSelfUser
+.. _the User endpoint: ../api/index.html#operation--user-get
 .. _Getting Started with the Viewer: ../viewer/getting_started.html
 
 .. _Create a backend-less app: ../cookbook/2_create_nobackend_app.html
