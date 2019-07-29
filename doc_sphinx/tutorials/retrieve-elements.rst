@@ -169,6 +169,10 @@ You get a list of windows, all the windows of your model.
 
 With the filters, every IFC element can be retrieved. You can retrieve any element in the collection provided in the API.
 
+.. tip::
+
+    See also :doc:`the API completedocumentation </api/introduction>`
+
 .. _create an application: ../cookbook/create_an_application.html
 .. _the procedure described on the dedicated page to get your Access Token: ../cookbook/get_access_token.html
 .. _What's a cloud?: ../concepts/cloud.html
