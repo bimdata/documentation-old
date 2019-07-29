@@ -83,3 +83,7 @@ Authorizations
 API routes to manage Webhooks require the ``webhook:manage`` scope. 
 As these calls don't involve a user, the app needs to be authorized itself 
 on the Cloud and can't behave as a User.
+
+.. tip::
+    
+    See also :doc:`about IFC </concept/ifc>`

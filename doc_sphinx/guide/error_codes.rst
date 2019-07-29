@@ -31,3 +31,7 @@ Status Code	 Description
 502 	     API is down, or being upgraded.
 ============ ================================================================================================================================================================
 
+
+.. tip::
+    
+    See also :doc:`the API documentation </api/introduction>`
