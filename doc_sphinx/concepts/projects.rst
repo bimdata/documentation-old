@@ -40,7 +40,7 @@ References
 
 
 
-.. note::
+.. tip::
 
     See also :doc:`Getting Started </tutorials/getting_started>` to learn how-to setup your project.
     

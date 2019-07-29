@@ -68,7 +68,7 @@ E                  Error               The process has failed.
 
 
 
-.. note::
+.. tip::
 
     See also :doc:`webhooks content </guide/webhooks>`
     

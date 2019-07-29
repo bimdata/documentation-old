@@ -17,7 +17,7 @@ A user can be in none or many clouds (many-to-many relation) with the role of Us
 A user can be in none or many :doc:`projects` (many-to-many relation) with the role of User or Administrator.
 
 
-.. note::
+.. tip::
 
     See also :doc:`authentication guide </guide/authentication_bimdata_connect>`.
 
