@@ -6,3 +6,4 @@ npm-debug.log
 
 doc_sphinx/_static/api/
 doc_sphinx/_static/css/style.css
+doc_sphinx/package-lock.json

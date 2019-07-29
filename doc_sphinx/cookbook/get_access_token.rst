@@ -48,3 +48,7 @@ Curl
 .. WARNING:: This API call doesn't accept JSON
 
     Be sure to use application/x-www-form-urlencoded encoding
+
+.. tip::
+
+    See also :doc:`the API documentation </api/introduction>`

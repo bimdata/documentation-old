@@ -86,4 +86,4 @@ on the Cloud and can't behave as a User.
 
 .. tip::
     
-    See also :doc:`about IFC </concept/ifc>`
+    See also :doc:`about IFC </concepts/ifc>`
