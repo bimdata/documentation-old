@@ -11,22 +11,21 @@ Use Case IoT
 What was the problem?
 ======================
 
-Follow the data output of several sensors in context by getting images of the places
+Follow the data output of several sensors in context and visualize the location of the sensors in the building
 
 
 The idea
 =============
 
-View values on a 3D view of the building
-
-We use the BCF display system to display custom data.
+* View values on a 3D view of the building
+* Use the BCF display system to display custom data.
 
 
 Input 
 =======
 
 Sensors for temperature and sensors for moisture placed in our building.
-We have a Model of the building.
+We have a Model of the building, locations and pictures of the sensors. We attach every picture to a place on the Model.
 
 
 Result
@@ -44,7 +43,12 @@ Step-by-Step
 ----------------------
 
 We set a Viewer with some useful options:
-* ``edit: false``: no edition tools are provided
+
+ * ``edit: false``: no edition tools are provided
+ * ``comment: false``: no comment tool is provided
+ * ``camera: false``: no change camera
+ * ``fullscreen: false``: no fullscreen option
+ * ``property: false``: no property button is displayed
 
 .. code-block:: javascript
 
@@ -63,7 +67,8 @@ We set a Viewer with some useful options:
 2/ Set a list of monitored elements
 ------------------------------------
 
-Here we have chosen Instagram photos ID.
+In this recipe, we have chosen Instagram photos to associate with the elements.
+The elements here are the sensors
 
 .. code-block:: javascript
 
