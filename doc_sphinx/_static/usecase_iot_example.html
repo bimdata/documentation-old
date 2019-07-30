@@ -12,56 +12,56 @@
 </div>
 <script type="text/javascript">
 
-  // Example of extarnal data retrieving
-  async function retrieveExternalData() {
+ // Example of extarnal data retrieving
+ async function retrieveExternalData() {
     const url = "https://www.instagram.com/graphql/query/?query_hash=477b65a610463740ccdb83135b2014db&variables=%7B%22shortcode%22%3A%22By5YPArn5Sz%22%2C%22child_comment_count%22%3A3%2C%22fetch_comment_count%22%3A40%2C%22parent_comment_count%22%3A24%2C%22has_threaded_comments%22%3Atrue%7D"
 
     const response = await fetch(url);
     const json = await response.json();
-    return json.data;
-  }
+        return json.data;
+    }
 
-  // Setup BIMData Viewer
-  var accessToken = 'DEMO_TOKEN';
-  var cloudId = 88;
-  var projectId = 100;
-  var ifcId = 175;
+    // Setup BIMData Viewer
+    var accessToken = 'DEMO_TOKEN';
+    var cloudId = 88;
+    var projectId = 100;
+    var ifcId = 175;
 
-  let viewer = new window.BIMDataViewer('embed', {
+    let viewer = new window.BIMDataViewer('embed', {
     accessToken,
     cloudId,
     projectId,
     ifcId,
     options: {
-      menu: {
+        menu: {
         show_buttons: {
-          comment: false,
-          edit: false,
-          camera: false,
-          fullscreen: false,
-          property: false,
+            comment: false,
+            edit: false,
+            camera: false,
+            fullscreen: false,
+            property: false,
         }
-      }
+        }
     }
-  });
+    });
 
-  // Example of elements with annotations.
-  const monitoredElements = [
-    "313IdYHbv0JwPbnB6B727$",
-    "3n11jxQJbAbQWMixM04wKx",
-    "2enSXdsnT8fe5rSym78nVF",
-    "2Idfvppc1A1wUGKwi4iDp2"
-  ];
+    // Example of elements with annotations.
+    const monitoredElements = [
+        "313IdYHbv0JwPbnB6B727$",
+        "3n11jxQJbAbQWMixM04wKx",
+        "2enSXdsnT8fe5rSym78nVF",
+        "2Idfvppc1A1wUGKwi4iDp2"
+    ];
 
-  // Disable pre-selection of element on mouse hover
-  viewer.on('mouse-hover', e => {
-    e.preventDefault();
-  })
+    // Disable pre-selection of element on mouse hover
+    viewer.on('mouse-hover', e => {
+        e.preventDefault();
+    })
 
-  // Set Annotation CSS
-  viewer.on('viewer-init', function (e) {
-    viewer.setObjectAnnotationCSS(`
-      .bimdata-annotation-pin {
+    // Set Annotation CSS
+    viewer.on('viewer-init', function (e) {
+    viewer.setObjectAnnotationCSS('
+        .bimdata-annotation-pin {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -78,8 +78,8 @@
         box-shadow: 0 2px 10px 0 rgba(0,0,0,0.07);
         z-index: 0;
         background: #00AF50;
-      }
-      .bimdata-annotation-label {
+        }
+        .bimdata-annotation-label {
             position: absolute;
             max-width: 400px;
             min-height: 250px;
@@ -96,7 +96,7 @@
             z-index: 90000;
         }
         .bimdata-annotation-label:after {
-            content: '';
+            content: "";
             position: absolute;
             border-style: solid;
             border-width: 8px 12px 8px 0;
@@ -109,7 +109,7 @@
             top: 20px;
         }
         .bimdata-annotation-label:before {
-            content: '';
+            content: "";
             position: absolute;
             border-style: solid;
             border-width: 9px 13px 9px 0;
@@ -121,39 +121,39 @@
             left: -15px;
             top: 20px;
         }
-    `);
-  });
+    ');
+    });
 
-  // When the viewer has loaded the model
-  viewer.on('viewer-load', async function (e) {
+    // When the viewer has loaded the model
+    viewer.on('viewer-load', async function (e) {
     let index = 1;
     const data = await retrieveExternalData();
     for (let uuid of monitoredElements) {
-      // Create annotation for each interesting element
-      let annotationId = await viewer.createObjectAnnotation(uuid, {
-        spotHTML: `<div class='bimdata-annotation-pin'>${index}</div>`,
-        labelHTML: `<div class='bimdata-annotation-label' style='font-size: 18pt;'>
-          <p>${uuid}</p>
-          <img src=${data.shortcode_media.display_resources[2].src}></img>
-          </div>
-        `
-      });
-      index++;
+        // Create annotation for each interesting element
+        let annotationId = await viewer.createObjectAnnotation(uuid, {
+        spotHTML: '<div class="bimdata-annotation-pin">${index}</div>',
+        labelHTML: '<div class="bimdata-annotation-label" style="font-size: 18pt;">
+            <p>${uuid}</p>
+            <img src=${data.shortcode_media.display_resources[2].src}></img>
+            </div>
+        '
+        });
+        index++;
     }
-  })
+    })
 
-  // Opening the annotation detail on pin click
-  viewer.on("annotation-pin-clicked", async function (e) {
+    // Opening the annotation detail on pin click
+    viewer.on("annotation-pin-clicked", async function (e) {
     const annotationId = e.annotationId;
     const annotationShown = await viewer.getAnnotationLabelShown(annotationId);
     viewer.hideAnnotationsLabels();
     viewer.setAnnotationLabelShown(annotationId, !annotationShown);
-  });
+    });
 
-  // Close annotation detail on click away
-  viewer.on('mouse-click-nothing', e => {
+    // Close annotation detail on click away
+    viewer.on('mouse-click-nothing', e => {
     viewer.hideAnnotationsLabels();
-  });
+    });
 
 </script>
 </body>
