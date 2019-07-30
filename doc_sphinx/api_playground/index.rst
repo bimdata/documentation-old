@@ -3,7 +3,6 @@ Playground
 ============
 
 .. toctree::
-  :hidden:
   :maxdepth: 1
   :titlesonly:
 
@@ -42,7 +41,7 @@ Do you need help?
 
 You can reach us by e-mail: support@bimdata.io
 
-.. _our OpenAPI file: https://|api_url|/doc
+.. _our OpenAPI file: https://api-beta.bimdata.io/doc#/
 .. _openapi-generator: https://github.com/OpenAPITools/openapi-generator
 
 .. _REST: https://en.wikipedia.org/wiki/Representational_state_transfer

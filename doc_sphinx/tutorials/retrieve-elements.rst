@@ -174,6 +174,6 @@ With the filters, every IFC element can be retrieved. You can retrieve any eleme
 .. _What's a cloud?: ../concepts/cloud.html
 .. _What's a project?: ../concepts/projects.html
 .. _Download Cassiopea IFC: https://drive.google.com/file/d/1njhweVCFvDNl8Gy3B1HxAolcfExt0Tg-/view?usp=sharing
-.. _documentation for this route: |api_url|/doc#/project/createDocument
+.. _documentation for this route: ../api/index.html#operation--cloud--cloud_pk--project--project_pk--document-post
 .. _the IFC documentation page: ../concepts/ifc.html
-.. _on the documentation page for this route: |api_url|/doc#/ifc/getElements
+.. _on the documentation page for this route: ../api/index.html#operation--cloud--cloud_pk--project--project_pk--ifc--ifc_pk--element-get
