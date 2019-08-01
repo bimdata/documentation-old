@@ -291,6 +291,13 @@ preamble = r"""
 \newcommand{\chapterquote}[2]{\epigraphhead[60]{\epigraph{\textit{#1}}{\textbf {\textit{--#2}}}}}
 %%%%%%%%%%% Quote for all places except Chapter
 \newcommand{\sectionquote}[2]{{\quote{\textit{``#1''}}{\textbf {\textit{--#2}}}}}
+%%%%%%%%%%% Set fonts for all the main texts
+\usepackage{fontspec}
+
+\setmainfont[BoldFont={Roboto-Bold.ttf},
+ItalicFont={Roboto-LightItalic.ttf},
+BoldItalicFont={Roboto-BoldItalic.ttf}
+]{Roboto-Light.ttf}
 """
 
 # mktitle = r"""
