@@ -14,7 +14,7 @@ Cloud
 Concept
 ---------
 
-A cloud is a set of `projects`_ sharing the same configuration. 
+A cloud is a set of :doc:`projects <projects>` sharing the same configuration. 
 Each project contains your models, your Document Management System and BCFs.
 
 Cloud administrators are also Projects admin by default, they can see every user in their cloud and change everyone's roles.
@@ -31,6 +31,3 @@ References
 * GET ``/cloud/{cloud_pk}/invitation``
 * GET ``/cloud/{cloud_pk}/size``
 * GET ``/cloud/{cloud_pk}/create-demo``
-
-
-.. _projects: projects.html
