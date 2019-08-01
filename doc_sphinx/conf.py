@@ -227,7 +227,17 @@ preamble = r"""
 %%% it is used "\addtocontents{toc}{\vskip -1.2cm}" etc. in the document
 \usepackage[notlot,nottoc,notlof]{}
 
-\usepackage{color}
+
+\usepackage{xcolor}
+\usepackage{sectsty}
+
+\definecolor{primary}{RGB}{47,55,74}
+\definecolor{secondary}{RGB}{249,199,44}
+
+\chapterfont{\color{primary}}  % sets colour of chapters
+\sectionfont{\color{primary}}  % sets colour of sections
+\subsectionfont{\color{primary}} % sets colour of subsections
+
 \usepackage{transparent}
 \usepackage{eso-pic}
 \usepackage{lipsum}
@@ -240,13 +250,11 @@ preamble = r"""
 %%%%\doublespacing
 \singlespacing
 
-
 %%%%%%%%%%% datetime
 \usepackage{datetime}
 
 \newdateformat{MonthYearFormat}{%
     \monthname[\THEMONTH], \THEYEAR}
-
 
 %% RO, LE will not work for 'oneside' layout.
 %% Change oneside to twoside in document class
@@ -258,28 +266,22 @@ preamble = r"""
 \fancyhead[L]{\ifthenelse{\isodd{\value{page}}}{ \small \nouppercase{\leftmark} }{}}
 \fancyhead[R]{\ifthenelse{\isodd{\value{page}}}{}{ \small \nouppercase{\rightmark} }}
 
-%%% Alternating Header for two side
-%\fancyhead[RO]{\small \nouppercase{\rightmark}}
-%\fancyhead[LE]{\small \nouppercase{\leftmark}}
-
-%% for oneside: change footer at right side. If you want to use Left and right then use same as header defined above.
-\fancyfoot[R]{\ifthenelse{\isodd{\value{page}}}{{\tiny Meher Krishna Patel} }{\href{http://pythondsp.readthedocs.io/en/latest/pythondsp/toc.html}{\tiny PythonDSP}}}
-
-%%% Alternating Footer for two side
-%\fancyfoot[RO, RE]{\scriptsize Meher Krishna Patel (mekrip@gmail.com)}
-
 %%% page number
 \fancyfoot[CO, CE]{\thepage}
 
 \renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{\hbox to\headwidth{%
+  \color{secondary}\leaders\hrule height \headrulewidth\hfill}}
+
 \renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\footrule}{\hbox to\headwidth{%
+  \color{secondary}\leaders\hrule height \headrulewidth\hfill}}
 
 \RequirePackage{tocbibind} %%% comment this to remove page number for following
 \addto\captionsenglish{\renewcommand{\contentsname}{Table of contents}}
 \addto\captionsenglish{\renewcommand{\listfigurename}{List of figures}}
 \addto\captionsenglish{\renewcommand{\listtablename}{List of tables}}
 % \addto\captionsenglish{\renewcommand{\chaptername}{Chapter}}
-
 
 %%reduce spacing for itemize
 \usepackage{enumitem}
@@ -289,67 +291,56 @@ preamble = r"""
 \usepackage{epigraph}
 \setlength{\epigraphwidth}{0.8\columnwidth}
 \newcommand{\chapterquote}[2]{\epigraphhead[60]{\epigraph{\textit{#1}}{\textbf {\textit{--#2}}}}}
+
 %%%%%%%%%%% Quote for all places except Chapter
 \newcommand{\sectionquote}[2]{{\quote{\textit{``#1''}}{\textbf {\textit{--#2}}}}}
+
 %%%%%%%%%%% Set fonts for all the main texts
 \usepackage{fontspec}
-
 \setmainfont[BoldFont={Roboto-Bold.ttf},
 ItalicFont={Roboto-LightItalic.ttf},
 BoldItalicFont={Roboto-BoldItalic.ttf}
 ]{Roboto-Light.ttf}
 """
 
-# mktitle = r"""
-# \pagenumbering{Roman} %%% to avoid page 1 conflict with actual page 1
 
-# \begin{titlepage}
-#     \centering
+mktitle = r"""
+\pagenumbering{Roman} %%% to avoid page 1 conflict with actual page 1
 
-#     \vspace*{40mm} %%% * is used to give space from top
-#     \textbf{\Huge {Sphinx format for Latex and HTML}}
+\begin{titlepage}
+    \centering
 
-#     \vspace{0mm}
-#     \begin{figure}[!h]
-#         \centering
-#         %%% \includegraphics[scale=0.3]{_images/user_guide/login-button.png}
-#     \end{figure}
+    \vspace*{40mm} %%% * is used to give space from top
+    \textbf{\Huge {Sphinx Documentation}}
 
-#     \vspace{0mm}
-#     \Large \textbf{{Meher Krishna Patel}}
+    \vspace{0mm}
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[scale=0.3]{../../_images/bimdata-doc-logo.png}
+    \end{figure}
 
-#     \small Created on : Octorber, 2017
+    \vspace{0mm}
+    \Large \textbf{{Team BIMData}} %%% Change to contact@bimdata ?
 
-#     \vspace*{0mm}
-#     \small  Last updated : \MonthYearFormat\today
+    \small Created on : July, 2019
+
+    \vspace*{0mm}
+    \small  Last updated : \MonthYearFormat\today
 
 
-#     %% \vfill adds at the bottom
-#     \vfill
-#     \small \textit{More documents are freely available at }{\href{http://pythondsp.readthedocs.io/en/latest/pythondsp/toc.html}{PythonDSP}}
-# \end{titlepage}
+    %% \vfill adds at the bottom
+    \vfill
+    \small \textit{More documents are freely available at }{\href{https://developers.bimdata.io/}{bimdata.io}}
+\end{titlepage}
 
-# \clearpage
-# \pagenumbering{roman}
-# \tableofcontents
-# \listoffigures
-# \listoftables
-# \clearpage
-# \pagenumbering{arabic}
-# """
-
-# preamble = r"""
-# %%% Redifined titleformat
-# \setlength{\parindent}{0cm}
-# \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
-# \newcommand{\hsp}{\hspace{20pt}}
-# \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-# \titleformat{\chapter}[hang]{\Huge\bfseries\sffamily}{\thechapter\hsp}{0pt}{\Huge\bfseries\sffamily}
-# %%% \setallmainfonts(Digits,Latin,Greek)[Scale=1]{Roboto}
-# %%% \setallsansfonts[Scale=1]{Roboto}
-# %%% Set numeration
-# \setcounter{secnumdepth}{3}
-# """
+%% \clearpage
+%% \pagenumbering{roman}
+%% \tableofcontents
+%% \listoffigures
+%% \listoftables
+\clearpage
+\pagenumbering{arabic}
+"""
 
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
@@ -364,17 +355,17 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     "preamble": preamble,
     # No default title
-    "maketitle": "",
-    # "maketitle": mktitle,
+    # "maketitle": "",
+    "maketitle": mktitle,
     # Latex figure (float) alignment
     #
     # 'figure_align': 'htbp',
     "sphinxsetup": "hmargin={0.7in,0.7in}, vmargin={1in,1in}, \
         verbatimwithframe=true, \
-        TitleColor={rgb}{0,0,0}, \
+        TitleColor={rgb}{0.1843137254902,0.2156862745098,0.29019607843137}, \
         HeaderFamily=\\rmfamily\\bfseries, \
-        InnerLinkColor={rgb}{0,0,1}, \
-        OuterLinkColor={rgb}{0,0,1}",
+        InnerLinkColor={rgb}{0.1843137254902,0.2156862745098,0.29019607843137}, \
+        OuterLinkColor={rgb}{0.1843137254902,0.2156862745098,0.29019607843137}",
     "tableofcontents": " ",
     # No default toc
     # "tableofcontents": "",
