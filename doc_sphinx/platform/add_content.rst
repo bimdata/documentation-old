@@ -1,10 +1,11 @@
-.. |ADD_FILE_IMG| image:: /_images/user_guide/platform/button-add-file.svg
-.. |UPLOAD_FILE_IMG| image:: /_images/user_guide/platform/button-upload-file.svg
-.. |SHORTCUT_VIEWER_IMG| image:: /_images/user_guide/platform/button-shortcut-viewer.svg
-
 ========================
 Add Content
 ========================
+
+.. |CREATE_CLOUD_IMG| image:: ../_images/user_guide/platform/button-create-cloud.png
+.. |UPLOAD_FILE_IMG| image:: ../_images/user_guide/platform/button-upload-file.png
+.. |SHORTCUT_VIEWER_IMG| image:: ../_images/user_guide/platform/button-shortcut-viewer.png
+.. |BUTTON_ADD_FILE_IMG| image:: ../_images/user_guide/platform/button-add-file.png
 
 .. 
     excerpt
@@ -19,13 +20,13 @@ Create a Cloud
 
 .. only:: html
 
-    .. image:: /_images/user_guide/platform/page-cloud.svg
+    .. image:: ../_images/user_guide/platform/page-cloud.svg
        :align: left
        :alt: Screenshot of the Clouds screen of the BIMData's Platform
 
 .. only:: latex
 
-    .. image:: /_images/user_guide/platform/page-cloud.png
+    .. image:: ../_images/user_guide/platform/page-cloud.png
        :align: left
        :alt: Screenshot of the Clouds screen of the BIMData's Platform
 
@@ -45,13 +46,13 @@ Create a Project
 
 .. only:: html
 
-    .. image:: /_images/user_guide/platform/page-project-list.svg
+    .. image:: ../_images/user_guide/platform/page-project-list.svg
         :align: left
         :alt: Screenshot of the Projects List screen of the BIMData's Platform
 
 .. only:: latex
 
-    .. image:: /_images/user_guide/platform/page-project-list.png
+    .. image:: ../_images/user_guide/platform/page-project-list.png
         :align: left
         :alt: Screenshot of the Projects List screen of the BIMData's Platform
 
@@ -68,7 +69,7 @@ Upload your content
 Add your Models  
 -----------------
 
- * |ADD_FILE_IMG| Click [File], above the User's List 
+ * |BUTTON_ADD_FILE_IMG| Click [File], above the User's List 
  * Chose one or several file(s)
  * Click [Upload 1 file] 
 
@@ -85,13 +86,13 @@ Add your Documents
 
 .. only:: html
 
-    .. image:: /_images/user_guide/platform/ged.svg
+    .. image:: ../_images/user_guide/platform/ged.svg
         :align: left
         :alt: Screenshot of EDM part of the BIMData's Platform
 
 .. only:: latex
 
-    .. image:: /_images/user_guide/platform/ged.png
+    .. image:: ../_images/user_guide/platform/ged.png
         :align: left
         :alt: Screenshot of EDM part of the BIMData's Platform
 

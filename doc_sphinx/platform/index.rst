@@ -15,13 +15,13 @@ Getting Started
 
 .. only:: html 
 
-    .. image:: /_images/user_guide/platform/sign-in.svg
+    .. image:: ../_images/user_guide/platform/sign-in.svg
         :align: left
         :alt: Screenshot of Log In screen
 
 .. only:: latex
 
-    .. image:: /_images/user_guide/platform/sign-in.png
+    .. image:: ../_images/user_guide/platform/sign-in.png
         :align: left
         :alt: Screenshot of Log In screen
 

@@ -9,13 +9,13 @@ Collaborate
 
 .. only:: html
 
-    .. image:: /_images/user_guide/platform/page-project.svg
+    .. image:: ../_images/user_guide/platform/page-project.svg
         :align: left
         :alt: Screenshot of the Projects screen of the BIMData's Platform
 
 .. only:: latex
 
-    .. image:: /_images/user_guide/platform/page-project.png
+    .. image:: ../_images/user_guide/platform/page-project.png
         :align: left
         :alt: Screenshot of the Projects screen of the BIMData's Platform
 
@@ -25,12 +25,12 @@ Invitations
 
 .. only:: html
 
-    .. figure:: /_images/user_guide/platform/invite-form-filled.svg
+    .. figure:: ../_images/user_guide/platform/invite-form-filled.svg
         :alt: Invitation form filled example
 
 .. only:: latex
 
-    .. figure:: /_images/user_guide/platform/invite-form-filled.png
+    .. figure:: ../_images/user_guide/platform/invite-form-filled.png
         :alt: Invitation form filled example
 
 
@@ -43,12 +43,12 @@ The invitation is sent.
 
 .. only:: html
 
-    .. figure:: /_images/user_guide/platform/invite.svg
+    .. figure:: ../_images/user_guide/platform/invite.svg
         :alt: Invitation List
 
 .. only:: latex
 
-    .. figure:: /_images/user_guide/platform/invite.png
+    .. figure:: ../_images/user_guide/platform/invite.png
         :alt: Invitation List
 
 
@@ -104,11 +104,11 @@ The e-mail contains a link to accept directly the invitation.
 
     .. only:: html
 
-        .. image:: /_images/user_guide/platform/invitation-pending.svg
+        .. image:: ../_images/user_guide/platform/invitation-pending.svg
     
     .. only:: latex
 
-        .. image:: /_images/user_guide/platform/invitation-pending.png
+        .. image:: ../_images/user_guide/platform/invitation-pending.png
 
 
 

@@ -211,7 +211,7 @@ html_search_language = "en"
 # Output file base name for HTML help builder.
 htmlhelp_basename = "BimdataSphinxdoc"
 
-# -- Options for LaTeX output ---------------------------------------------
+# -- Options for LaTeX output ------------------------------------------------
 
 latex_engine = 'xelatex'
 preamble = r'''
@@ -241,6 +241,7 @@ latex_elements = {
 
 # No default toc
 'tableofcontents': '',
+
 }
 
 latex_show_urls = 'footnote'

@@ -15,13 +15,13 @@ Clouds
 
 .. only:: html
 
-    .. figure:: /_images/user_guide/platform/page-cloud.svg
+    .. figure:: ../_images/user_guide/platform/page-cloud.svg
         :alt: Cloud screen
         :align: right
 
 .. only:: latex
 
-    .. figure:: /_images/user_guide/platform/page-cloud.png
+    .. figure:: ../_images/user_guide/platform/page-cloud.png
         :alt: Cloud screen
         :align: right
 
@@ -48,13 +48,13 @@ Projects
 
 .. only:: html
 
-    .. figure:: /_images/user_guide/platform/page-project-list.svg
+    .. figure:: ../_images/user_guide/platform/page-project-list.svg
         :alt: Project list
         :align: right
 
 .. only:: latex
 
-    .. figure:: /_images/user_guide/platform/page-project-list.png
+    .. figure:: ../_images/user_guide/platform/page-project-list.png
         :alt: Project list
         :align: right
 
@@ -83,12 +83,12 @@ Documents
 
 .. only:: html
 
-    .. figure:: /_images/user_guide/platform/ged.svg
+    .. figure:: ../_images/user_guide/platform/ged.svg
         :alt: Documents
 
 .. only:: latex
 
-    .. figure:: /_images/user_guide/platform/ged.png
+    .. figure:: ../_images/user_guide/platform/ged.png
         :alt: Documents
 
 IFC files and documents can be uploaded and organized, checkplans are defined.
