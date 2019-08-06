@@ -11,7 +11,7 @@ Users
 Concept
 ========
 
-Users are currently heavily linked with the `BIMData.io platform`_ in the current version.
+Users are currently heavily linked with the BIMData.io Platform in the current version : |bimdata_connect|
 
 A user can be in none or many clouds (many-to-many relation) with the role of User or Administrator.
 A user can be in none or many :doc:`projects` (many-to-many relation) with the role of User or Administrator.
@@ -20,6 +20,3 @@ A user can be in none or many :doc:`projects` (many-to-many relation) with the r
 .. seealso::
 
     See also :doc:`authentication guide </guide/authentication_bimdata_connect>`.
-
-
-.. _BIMData.io platform: |bimdata_connect|
