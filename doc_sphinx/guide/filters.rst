@@ -83,7 +83,7 @@ You can combine several filters. Elements matching all combined filters will be 
             console.log(body);
             });
 
-.. tip::
+.. seealso::
     
     See also :doc:`the API documentation </api/introduction>`
 

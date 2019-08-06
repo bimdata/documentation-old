@@ -26,7 +26,7 @@ A project contains:
  * your Document Management System
  * and BCFs.
 
-.. seealso:: BCF
+.. note:: 
 
    A BCF is linked to a project, not a model.
 
@@ -41,7 +41,7 @@ References
 
 
 
-.. tip::
+.. seealso::
 
     See also :doc:`Getting Started </tutorials/getting_started>` to learn how-to setup your project.
     

@@ -94,6 +94,6 @@ The scopes available
      - x 
 
 
-.. tip::
+.. seealso::
 
     See also :doc:`security guide </guide/security>`.

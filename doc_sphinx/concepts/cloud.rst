@@ -29,6 +29,6 @@ References
 * GET ``/cloud/{cloud_pk}/create-demo``
 
 
-.. tip:: 
+.. seealso:: 
 
     See also :ref:`api_onboarding_cloud`

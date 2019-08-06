@@ -169,7 +169,7 @@ You get a list of windows, all the windows of your model.
 
 With the filters, every IFC element can be retrieved. You can retrieve any element in the collection provided in the API.
 
-.. tip::
+.. seealso::
 
     See also :doc:`the API completedocumentation </api/introduction>`
 

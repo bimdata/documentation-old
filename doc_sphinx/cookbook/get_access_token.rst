@@ -49,6 +49,6 @@ Curl
 
     Be sure to use application/x-www-form-urlencoded encoding
 
-.. tip::
+.. seealso::
 
     See also :doc:`the API documentation </api/introduction>`

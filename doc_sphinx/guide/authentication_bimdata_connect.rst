@@ -114,7 +114,7 @@ Type of user auth detailed
 The three types are three different mechanisms to aks for user's permissions.
 
 
-.. tip::
+.. seealso::
     
     See also the tutorial :doc:`"Retrieve elements following a constraint" </tutorials/retrieve-elements>`
     and :doc:`all the recipes from our Cookbook </cookbook/index>`

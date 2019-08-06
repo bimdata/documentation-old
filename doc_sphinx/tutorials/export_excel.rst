@@ -202,7 +202,7 @@ The full script
 
 You now have your data ready to be printed in a CSV file, or sent to your favorite Excel-file generator.
 
-.. tip::
+.. seealso::
 
     See also :doc:`more about IFC </concepts/ifc>`
 

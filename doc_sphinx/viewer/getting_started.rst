@@ -97,7 +97,7 @@ Customize the Viewer
 See `the available methods`_ to customize the Viewer.
 
 
-.. tip::
+.. seealso::
 
     See also the Viewer's tutorials :doc:`Using the viewFit focus </viewer/viewfit_focus>`
     and :doc:`Doors filtering example </viewer/example_doors>`

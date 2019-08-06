@@ -104,6 +104,6 @@ The new response has a more detailed scope.
         document:write"
     }
 
-.. tip::
+.. seealso::
     
     See also :doc:`the current Authentication process <authentication_bimdata_connect>`

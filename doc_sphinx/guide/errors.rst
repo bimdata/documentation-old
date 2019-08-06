@@ -31,6 +31,6 @@ Some 4xx errors include an error code explaining the reported error:
         ]
     }
 
-.. tip::
+.. seealso::
     
     See also :doc:`the API documentation </api/introduction>`

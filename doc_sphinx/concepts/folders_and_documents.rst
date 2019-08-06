@@ -202,6 +202,6 @@ References
 
 
 
-.. tip::
+.. seealso::
 
     See also :ref:`api_onboarding_cloud`
