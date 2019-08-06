@@ -26,8 +26,9 @@ A project contains:
  * your Document Management System
  * and BCFs.
 
-.. note:: BCF
-    A BCF is linked to a project, not a model.
+.. seealso:: BCF
+
+   A BCF is linked to a project, not a model.
 
 A project member can see all other members, and admin member can add a user to the project.
 

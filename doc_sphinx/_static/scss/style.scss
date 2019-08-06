@@ -283,6 +283,15 @@ code{
       }
     }
   }
+  &.seealso{
+    .admonition-title{
+      background-color:  $color-background;
+      &::before{
+        color:  $color-background;
+        background-color: $color-primary-d5;
+      }
+    }
+  }
 }
 
 .theme-dark{
@@ -291,6 +300,17 @@ code{
       .admonition-title{
         background-color: #2D303A;
         color: $color-white;
+      }
+    }
+    &.seealso{
+      .admonition-title{
+        background-color: $color-primary-d15;
+        border-bottom: .5px solid $color-primary-d5;
+        color: white;
+        &::before{
+          background-color:  $color-background;
+          color: $color-primary-d5;
+        }
       }
     }
   }
