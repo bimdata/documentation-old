@@ -111,6 +111,9 @@ a{
   &.headerlink{
     display: none;
   }
+  &>code{
+    color: $color-primary;
+  }
 }
 p, ul, ol, td{
   a.reference.external{
