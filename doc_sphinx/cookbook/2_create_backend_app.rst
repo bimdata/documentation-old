@@ -74,4 +74,9 @@ Post Logout URIs
 List of authorized Post Logout URIs
 Useful only if you want to implement an SSO logout
 
+.. seealso::
+
+    See also :doc:`Authentication documentation </guide/authentication_bimdata_connect>`
+
+
 .. _scopes: ../concepts/scopes.html

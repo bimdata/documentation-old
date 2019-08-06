@@ -69,3 +69,7 @@ You created your first application.
 
 You will see 2 new pieces of information: the Client ID and the Client Secret.
 This Client ID and Client Secret are mandatory to build your application.
+
+.. seealso::
+
+    See also :doc:`about Security </guide/security>`
