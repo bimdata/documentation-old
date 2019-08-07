@@ -16,7 +16,7 @@ Examples
 
 Let use the resource IFC: ``/cloud/{cloud_pk}/project/{project_pk}/ifc``
 
-The response list will only include completed IFCs (see `IFC`_).
+The response list will only include completed IFCs (see :doc:`IFC </concepts/ifc>`).
 You can combine several filters. Elements matching all combined filters will be returned. 
 
 
@@ -88,4 +88,3 @@ You can combine several filters. Elements matching all combined filters will be 
     See also :doc:`the API documentation </api/introduction>`
 
 .. _Swagger doc: https://api-beta.bimdata.io/doc
-.. _IFC: ../concepts/ifc.html

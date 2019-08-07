@@ -30,7 +30,7 @@ Get your Access Token
 .. WARNING::
     Requirement: you must have an application, see `Create an application process`_.
 
-Follow the procedure described in `Authentication by client credential`_
+Follow the procedure described in :doc:`Authentication by client credential </guide/authentication_flows>`
 
 .. image:: /_images/guide/auth_flow_diagram_colors.jpg
    :scale: 100 %
@@ -120,4 +120,3 @@ The three types are three different mechanisms to aks for user's permissions.
     and :doc:`all the recipes from our Cookbook </cookbook/index>`
 
 .. _Create an application process: ../tutorials/guided_tour.html#which-app-will-you-create
-.. _Authentication by client credential: ../guide/authentication_flows.html
