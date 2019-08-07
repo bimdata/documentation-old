@@ -2,9 +2,13 @@
 @import 'api/monokai';
 @import 'api/spectacle';
 
+/* custom PLAYGROUND API ----------------------------*/
+@import './playground/theme-feeling-blue';
+
 /* import LIB UTILS --------------------------*/
 @import "../../node_modules/@bimdata/utils/src/scss/main";
 
+@import './playground/custom-playground';
 @import "doc-api";
 
 @import "home";
