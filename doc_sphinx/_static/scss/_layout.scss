@@ -189,3 +189,16 @@ table.field-list{
     }
   }
 }
+
+// page PLAYGROUND API 
+.compound{
+  .toctree-l1{
+    height: 34px;
+    display: flex;
+    align-items: center;
+    span{
+      margin: 0;
+      position: inherit;
+    }
+  }
+}
