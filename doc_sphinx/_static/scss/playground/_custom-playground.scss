@@ -125,6 +125,31 @@
     }
   }
 
+  // custom MODAL
+  .modal-ux{
+    .close-modal{
+      svg{
+        width: 100%;
+        fill: $color-primary;
+      }
+    }
+    .btn{
+      font-weight: normal;
+      font-size: 12px;
+      box-shadow: none;
+    }
+    .authorize.button{
+      margin-right: 1em;
+    }
+    .btn-done{
+      border: none;
+      color: $color-primary;
+      &:hover{
+        background-color: rgba($color-text-l30, .4);
+      }
+    }
+  }
+
   // content ERRORS
   .errors-wrapper{
     border-width: .5px;
