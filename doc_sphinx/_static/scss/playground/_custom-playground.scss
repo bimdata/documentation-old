@@ -4,6 +4,9 @@
   .scheme-container {
     margin-top: 2rem;
     padding: 30px;
+    svg{
+      width: 12%;
+    }
   }
   .wrapper {
     padding: 0;
@@ -29,18 +32,18 @@
     // add margin for try it out btn
     .try-out {
       margin-left: 1rem;
-      // .btn{
-      //   border: none;
-      //   background-color: $color-primary;
-      //   box-shadow: none;
-      //   color: $color-white;
-      //   font-weight: normal;
-      //   @include font-size(12px);
-      //   &:hover{
-      //     background-color: $color-primary-d5;
-      //     box-shadow: none;
-      //   }
-      // }
+      .btn{
+        border: none;
+        background-color: $color-secondary;
+        box-shadow: none;
+        color: $color-primary;
+        font-weight: normal;
+        @include font-size(12px);
+        &:hover{
+          background-color: $color-secondary-d10;
+          box-shadow: none;
+        }
+      }
     }
 
     // add padding inside table
@@ -49,6 +52,7 @@
         padding: 10px;
       }
       &.model{
+        font-family: "mononokibold";
         tbody tr td{
           padding: 10px;
         }
