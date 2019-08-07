@@ -1,0 +1,75 @@
+.swagger-ui {
+
+  // add margin around table
+  .scheme-container {
+    margin-top: 2rem;
+    padding: 30px;
+  }
+  .wrapper {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+
+    .opblock-tag {
+      margin-bottom: 1rem;
+    }
+
+    // reset width of table
+    .col {
+      width: inherit;
+      &.parameters-col_name,
+      &.response-col_status {
+        width: 20%;
+      }
+      &.parameters-col_description {
+        width: 80%;
+      }
+    }
+
+    // add margin for try it out btn
+    .try-out {
+      margin-left: 1rem;
+      // .btn{
+      //   border: none;
+      //   background-color: $color-primary;
+      //   box-shadow: none;
+      //   color: $color-white;
+      //   font-weight: normal;
+      //   @include font-size(12px);
+      //   &:hover{
+      //     background-color: $color-primary-d5;
+      //     box-shadow: none;
+      //   }
+      // }
+    }
+
+    // add padding inside table
+    table{
+      tbody tr td:first-of-type, .parameters-col_description {
+        padding: 10px;
+      }
+      &.model{
+        tbody tr td{
+          padding: 10px;
+        }
+      }
+    }
+    .tab,
+    .body-param-options {
+      padding: 0 10px;
+    }
+
+    // delete border-radius to background color pre
+    .opblock{
+      &.opblock-get, &.opblock-post, &.opblock-put, &.opblock-patch, &.opblock-delete {
+        border: none;
+      }
+    }
+    .opblock-body {
+      pre {
+        border-radius: 0;
+        font-family: "mononokibold";
+      }
+    }
+  }
+}
