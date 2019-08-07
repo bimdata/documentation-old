@@ -83,6 +83,9 @@ You can combine several filters. Elements matching all combined filters will be 
             console.log(body);
             });
 
+.. seealso::
+    
+    See also :doc:`the API documentation </api/introduction>`
 
 .. _Swagger doc: https://api-beta.bimdata.io/doc
 .. _IFC: ../concepts/ifc.html

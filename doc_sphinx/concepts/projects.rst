@@ -26,8 +26,9 @@ A project contains:
  * your Document Management System
  * and BCFs.
 
-.. note:: BCF
-    A BCF is linked to a project, not a model.
+.. note:: 
+
+   A BCF is linked to a project, not a model.
 
 A project member can see all other members, and admin member can add a user to the project.
 
@@ -37,3 +38,13 @@ References
 * GET ``/user/projects``
 * GET ``/cloud/{cloud_pk}/project``
 * POST ``/cloud/{cloud_pk}/project``
+
+
+
+.. seealso::
+
+    See also :doc:`Getting Started </tutorials/getting_started>` to learn how-to setup your project.
+    
+    .. include:: ../tutorials/getting_started.rst
+       :start-after: excerpt
+       :end-before: endexcerpt

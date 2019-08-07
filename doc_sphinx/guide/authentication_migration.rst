@@ -103,3 +103,7 @@ The new response has a more detailed scope.
         document:read
         document:write"
     }
+
+.. seealso::
+    
+    See also :doc:`the current Authentication process <authentication_bimdata_connect>`
