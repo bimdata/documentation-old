@@ -89,6 +89,15 @@
     .body-param-options {
       padding: 0 10px;
     }
+    .tab{
+      li{
+        padding-right: .5rem;
+        min-width: auto;
+        &:first-of-type:after{
+          right: 4px;
+        }
+      }
+    }
 
     // delete border-radius to background color pre
     .opblock{
@@ -107,6 +116,12 @@
         border-radius: 0;
         font-family: "mononokibold";
       }
+    }
+  }
+
+  textarea{
+    &:focus{
+      border: none;
     }
   }
 
