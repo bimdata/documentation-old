@@ -3,7 +3,7 @@
   // add margin around table
   .scheme-container {
     margin-top: 2rem;
-    padding: 0px;
+    padding: 30px;
     box-shadow: none;
     .schemes{
       & > label{
@@ -41,7 +41,6 @@
 
     .opblock-tag {
       margin-bottom: 1rem;
-      border-bottom: .5px solid lightgray;
     }
 
     // reset width of table
