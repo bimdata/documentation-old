@@ -60,6 +60,13 @@
           }
           ul{
             .toctree-l2{
+              &.current{
+                a{
+                  &::before{
+                    opacity: 1;
+                  }
+                }
+              }
               & > ul{
                 display: block;
               }
