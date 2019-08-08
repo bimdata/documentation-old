@@ -1,0 +1,175 @@
+.swagger-ui {
+
+  // add margin around table
+  .scheme-container {
+    margin-top: 2rem;
+    padding: 0px;
+    box-shadow: none;
+    .schemes{
+      & > label{
+        display: none;
+      }
+      .auth-wrapper{
+        .btn.authorize{
+          padding: 0 1rem;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          border: none;
+          background-color: $color-primary;
+          color: $color-white;
+          span{
+            margin-right: .5rem;
+            padding: 0;
+          }
+          svg{
+            width: 12%;
+            fill: $color-white;
+          }
+          &:hover{
+            box-shadow: none;
+            background-color: $color-primary-d10;
+          }
+        }
+      }
+    }
+  }
+  .wrapper {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+
+    .opblock-tag {
+      margin-bottom: 1rem;
+      border-bottom: .5px solid lightgray;
+    }
+
+    // reset width of table
+    .col {
+      width: inherit;
+      &.parameters-col_name,
+      &.response-col_status {
+        width: 20%;
+      }
+      &.parameters-col_description {
+        width: 80%;
+      }
+    }
+
+    // add margin for try it out btn
+    .try-out {
+      margin-left: 1rem;
+      .btn{
+        border: none;
+        background-color: $color-secondary;
+        box-shadow: none;
+        color: $color-primary;
+        font-weight: normal;
+        @include font-size(12px);
+        &:hover{
+          background-color: $color-secondary-d10;
+          box-shadow: none;
+        }
+      }
+    }
+
+    // add padding inside table
+    table{
+      tbody tr td:first-of-type, .parameters-col_description {
+        padding: 10px;
+      }
+      &.model{
+        font-family: "mononokibold";
+        tbody tr td{
+          padding: 10px;
+        }
+      }
+    }
+    .tab,
+    .body-param-options {
+      padding: 0 10px;
+    }
+    .tab{
+      li{
+        padding-right: .5rem;
+        min-width: auto;
+        &:first-of-type:after{
+          right: 4px;
+        }
+      }
+    }
+
+    // delete border-radius to background color pre
+    .opblock{
+      &.opblock-get, &.opblock-post, &.opblock-put, &.opblock-patch, &.opblock-delete {
+        border: none;
+        .authorization__btn{
+          svg{
+            width: 70%;
+            fill: $color-primary;
+          }
+        }
+      }
+    }
+    .opblock-body {
+      pre {
+        border-radius: 0;
+        font-family: "mononokibold";
+      }
+    }
+  }
+
+  textarea{
+    &:focus{
+      border: none;
+    }
+  }
+
+  // custom MODAL
+  .modal-ux{
+    .close-modal{
+      svg{
+        width: 100%;
+        fill: $color-primary;
+      }
+    }
+    .btn{
+      font-weight: normal;
+      font-size: 12px;
+      box-shadow: none;
+    }
+    .authorize.button{
+      margin-right: 1em;
+    }
+    .btn-done{
+      border: none;
+      color: $color-primary;
+      &:hover{
+        background-color: rgba($color-text-l30, .4);
+      }
+    }
+  }
+
+  // content ERRORS
+  .errors-wrapper{
+    border-width: .5px;
+    .errors__clear-btn{
+      background-color: $color-primary;
+      border: none;
+      box-shadow: none;
+      color: $color-white;
+      font-weight: normal;
+      font-size: 12px;
+      &:hover{
+        background-color: $color-primary-d10;
+      }
+    }
+    .errors{
+      .error-wrapper{
+        span{
+          color: $color-text;
+        }
+      }
+    }
+  }
+}
