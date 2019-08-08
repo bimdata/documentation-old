@@ -1,6 +1,7 @@
 FROM python:3.7
 
 RUN apt-get update && apt-get install libglu1-mesa -y
+RUN apt-get install texlive-xetex 
 
 RUN wget https://raw.githubusercontent.com/visionmedia/n/master/bin/n -O /usr/local/bin/n && \
     chmod +x /usr/local/bin/n && \
