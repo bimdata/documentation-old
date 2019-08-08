@@ -1,7 +1,7 @@
 FROM python:3.7
 
 RUN apt-get update && apt-get install libglu1-mesa -y
-RUN apt-get install texlive-xetex -y
+RUN apt-get install texlive-full -y
 RUN apt-get install xindy -y
 
 RUN wget https://raw.githubusercontent.com/visionmedia/n/master/bin/n -O /usr/local/bin/n && \
