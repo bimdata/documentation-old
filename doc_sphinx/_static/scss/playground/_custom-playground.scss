@@ -79,7 +79,7 @@
           letter-spacing: .5px;
         }
       }
-      &.parameters-col_description {
+      &.parameters-col_description, .response-col_description__inner {
         width: 88%;
         .markdown{
           padding: 10px;
