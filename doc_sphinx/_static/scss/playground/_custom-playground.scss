@@ -1,16 +1,20 @@
 .swagger-ui {
+  .model-title{
+    font-family: $font-primary;
+    @include font-size(12px);
+  }
 
   // add margin around table
   .scheme-container {
     margin-top: 2rem;
-    padding: 0px;
+    padding: 30px;
     box-shadow: none;
-    .schemes{
-      & > label{
+    .schemes {
+      & > label {
         display: none;
       }
-      .auth-wrapper{
-        .btn.authorize{
+      .auth-wrapper {
+        .btn.authorize {
           padding: 0 1rem;
           height: 32px;
           display: flex;
@@ -18,15 +22,15 @@
           border: none;
           background-color: $color-primary;
           color: $color-white;
-          span{
-            margin-right: .5rem;
+          span {
+            margin-right: 0.5rem;
             padding: 0;
           }
-          svg{
+          svg {
             width: 12%;
             fill: $color-white;
           }
-          &:hover{
+          &:hover {
             box-shadow: none;
             background-color: $color-primary-d10;
           }
@@ -41,32 +45,72 @@
 
     .opblock-tag {
       margin-bottom: 1rem;
-      border-bottom: .5px solid lightgray;
+      border-bottom: 0.5px solid lightgray;
     }
 
-    // reset width of table
+    // custom TABLE
     .col {
       width: inherit;
       &.parameters-col_name,
       &.response-col_status {
-        width: 20%;
+        width: 12%;
+        font-family: $font-primary;
+        .parameter__name {
+          font-family: $font-primary;
+          @include font-size(12px);
+          &.required {
+            font-weight: normal;
+            span {
+              position: relative;
+              bottom: 1px;
+              @include font-size(9px);
+              vertical-align: super;
+            }
+            &::after{
+              @include font-size(9px);
+              letter-spacing: .5px;
+            }
+          }
+        }
+        .parameter__in{
+          font-family: $font-primary;
+          font-style: normal;
+          font-size: 10px;
+          letter-spacing: .5px;
+        }
       }
-      &.parameters-col_description {
-        width: 80%;
+      &.parameters-col_description, .response-col_description__inner {
+        width: 88%;
+        .markdown{
+          padding: 10px;
+        }
+      }
+    }
+    .model-box {
+      background: none;
+    }
+    table tbody tr {
+      background-color: $color-background;
+      &:last-child {
+        border: none;
+      }
+      td:nth-child(even) {
+        padding: 0;
+        background: $color-text-l30;
       }
     }
 
     // add margin for try it out btn
     .try-out {
       margin-left: 1rem;
-      .btn{
+      .btn {
         border: none;
         background-color: $color-secondary;
         box-shadow: none;
         color: $color-primary;
         font-weight: normal;
         @include font-size(12px);
-        &:hover{
+        &:hover {
           background-color: $color-secondary-d10;
           box-shadow: none;
         }
@@ -74,14 +118,31 @@
     }
 
     // add padding inside table
-    table{
-      tbody tr td:first-of-type, .parameters-col_description {
+    table {
+      tbody tr td:first-of-type,
+      .parameters-col_description {
         padding: 10px;
       }
-      &.model{
+      &.model {
+        margin-top: 10px;
         font-family: "mononokibold";
-        tbody tr td{
+        tbody tr td {
           padding: 10px;
+          &:nth-child(odd){
+            padding-right: 0.2em;
+            background:  $color-text-l20;
+          }
+          &:nth-child(even){
+            background: rgba( $color-text-l10,.4);
+          }
+          &:first-child{
+            span {
+              position: relative;
+              bottom: 1px;
+              @include font-size(9px);
+              vertical-align: super;
+            }
+          }
         }
       }
     }
@@ -89,84 +150,136 @@
     .body-param-options {
       padding: 0 10px;
     }
-    .tab{
-      li{
-        padding-right: .5rem;
+    .tab {
+      li {
+        padding-right: 0.5rem;
         min-width: auto;
-        &:first-of-type:after{
+        &:first-of-type:after {
           right: 4px;
         }
       }
     }
 
     // delete border-radius to background color pre
-    .opblock{
-      &.opblock-get, &.opblock-post, &.opblock-put, &.opblock-patch, &.opblock-delete {
+    .opblock {
+      &.opblock-get,
+      &.opblock-post,
+      &.opblock-put,
+      &.opblock-patch,
+      &.opblock-delete {
         border: none;
-        .authorization__btn{
-          svg{
+        .authorization__btn {
+          svg {
             width: 70%;
             fill: $color-primary;
           }
         }
       }
+      .opblock-section-header{
+        padding: 0 30px;
+        height: 50px;
+        background-color: $color-background;
+        box-shadow: none;
+        justify-content: space-between;
+      }
     }
     .opblock-body {
+      .table-container{
+        margin-top: 10px;
+        padding: 0 20px;
+      }
+      thead{
+        border: none;
+        .col{
+          padding: 15px 10px;
+          height: 52px;
+          border: none;
+          color: $color-white;
+          &.parameters-col_name, &.response-col_status{
+            background-color: $color-primary;
+          }
+          &.parameters-col_description, &.response-col_description{
+            background-color: $color-primary-l10;
+          }
+        }
+      }
       pre {
         border-radius: 0;
         font-family: "mononokibold";
       }
+      .markdown{
+        code{
+          background: #41444e;
+        }
+      }
+
+      // override SELECT
+      .body-param-content-type{
+        .content-type{
+          background-color: $color-text-l30;
+        }
+      }
+      .content-type{
+        padding: 0;
+        height: 25px;
+        min-width: auto;
+        background: none;
+        background-color: $color-background;
+        border: none;
+        box-shadow: none;
+        @include font-size(12px);
+      }
     }
   }
 
-  textarea{
-    &:focus{
+  textarea {
+    &:focus {
       border: none;
     }
   }
 
   // custom MODAL
-  .modal-ux{
-    .close-modal{
-      svg{
+  .modal-ux {
+    .close-modal {
+      svg {
         width: 100%;
         fill: $color-primary;
       }
     }
-    .btn{
+    .btn {
       font-weight: normal;
       font-size: 12px;
       box-shadow: none;
     }
-    .authorize.button{
+    .authorize.button {
       margin-right: 1em;
     }
-    .btn-done{
+    .btn-done {
       border: none;
       color: $color-primary;
-      &:hover{
-        background-color: rgba($color-text-l30, .4);
+      &:hover {
+        background-color: rgba($color-text-l30, 0.4);
       }
     }
   }
 
-  // content ERRORS
-  .errors-wrapper{
-    border-width: .5px;
-    .errors__clear-btn{
+  // custom ERRORS
+  .errors-wrapper {
+    border-width: 0.5px;
+    .errors__clear-btn {
       background-color: $color-primary;
       border: none;
       box-shadow: none;
       color: $color-white;
       font-weight: normal;
       font-size: 12px;
-      &:hover{
+      &:hover {
         background-color: $color-primary-d10;
       }
     }
-    .errors{
-      .error-wrapper{
-        span{
+    .errors {
+      .error-wrapper {
+        span {
           color: $color-text;
         }
       }
