@@ -18,7 +18,7 @@ The script has 3 parts:
 Get the model from the cloud
 ------------------------------
 
-This part is covered by the Recipe "`How-to get the model from the cloud`_"
+This part is covered by the Recipe ":doc:`How-to get the model from the cloud </viewer/get_your_model_into_the_viewer>`"
 
 Get all the doors
 ------------------
@@ -83,5 +83,4 @@ Example of the Viewer:
    :file: ../_static/st_iframe.html
 
 
-.. _How-to get the model from the cloud: ../viewer/get_your_model_into_the_viewer.html
 .. _our Codepen: https://codepen.io/bimdata

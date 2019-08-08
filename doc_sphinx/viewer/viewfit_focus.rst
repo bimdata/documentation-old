@@ -17,7 +17,7 @@ See the whole `code example on Codepen.io`_.
 Get the model in the Viewer
 ------------------------------
 
-This part is covered by the Recipe "`How-to init the Viewer`_"
+This part is covered by the Recipe ":doc:`How-to init the Viewer </viewer/init_viewer>`"
 In this recipe, it's assumed that you have the IFC's id.
 
 
@@ -33,7 +33,7 @@ To follow best practices of JS developement, you declare the elements and the cu
 
 
 For this example, you have previously get the UUID of your element.
-To get an element, `see the Viewer methods available`_.
+To get an element, :doc:`see the Viewer methods available </viewer/parameters>`.
 
 .. code-block:: javascript
 
@@ -111,6 +111,4 @@ The complete example
     showObjectByUUID(element_uuid, false);
     });
 
-.. _see the Viewer methods available: ../viewer/parameters.html
-.. _How-to init the Viewer: ../viewer/init_viewer.html
 .. _code example on Codepen.io: https://codepen.io/bimdata/pen/dwpwog

@@ -7,12 +7,12 @@ Viewer Documentation
 
 BIMData provides a 3D Viewer with which you can interact with Javascript.
 
-`Getting started`_
+:doc:`Getting started <getting_started>`
 
 Guide
 =================
 
-* `Include the Viewer in your app`_
+* :doc:`Include the Viewer in your app <include_viewer>`
 
 
 Cookbook
@@ -20,16 +20,16 @@ Cookbook
 
 Usage examples of the Viewer:
 
- * How-to: `init the Viewer`_
- * How-to: `doors filtering`_
- * How-to: `use the viewFit focus`_
+ * How-to: :doc:`init the Viewer <init_viewer>`
+ * How-to: :doc:`doors filtering <example_doors>`
+ * How-to: :doc:`use the viewFit focus <viewfit_focus>`
 
 
 
 Reference
 ================
 
-* `Javascript methods of the Viewer`_
+* :doc:`Javascript methods of the Viewer <parameters>`
 
 
 Example of the Viewer
@@ -77,13 +77,6 @@ In addition to that, we recommend:
 * Javascript and built-in hardware acceleration enabled
 * Modern browser with `ECMAScript 2015 support`_
 
-.. _Getting started: ../viewer/getting_started.html
-.. _Include the Viewer in your app: ../viewer/include_viewer.html
-.. _init the Viewer: ../viewer/init_viewer.html
-.. _doors filtering: ../viewer/example_doors.html
-.. _zoom in the model and focus on an element: ../viewer/zoom_in_the_model.html
-.. _Javascript methods of the Viewer: ../viewer/parameters.html
-.. _use the viewFit focus: ../viewer/viewfit_focus.html
 .. _Test the WebGL support: https://get.webgl.org
 .. _WebGL-enabled browsers: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
 .. _ECMAScript 2015 support: https://kangax.github.io/compat-table/es6
