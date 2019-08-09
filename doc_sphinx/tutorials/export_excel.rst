@@ -202,5 +202,9 @@ The full script
 
 You now have your data ready to be printed in a CSV file, or sent to your favorite Excel-file generator.
 
+.. seealso::
+
+    See also :doc:`more about IFC </concepts/ifc>`
+
 
 .. _the 2.1 version of the BCF specification: https://github.com/buildingSMART/BCF-API/tree/v2.1

@@ -2,50 +2,42 @@
 Concepts
 ========
 
-.. topic:: `Cloud`_
+.. topic:: :doc:`Cloud <cloud>`
 
     .. include:: cloud.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: `Folders and documents`_
+.. topic:: :doc:`Folders and documents <folders_and_documents>`
 
     .. include:: folders_and_documents.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: `IFC`_
+.. topic:: :doc:`IFC <ifc>`
 
     .. include:: ifc.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: `Projects`_
+.. topic:: :doc:`Projects <projects>`
 
     .. include:: projects.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: `Users management`_
+.. topic:: :doc:`Users management <users>`
 
     .. include:: users.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 
-.. topic:: `Scopes`_
+.. topic:: :doc:`Scopes <scopes>`
 
-    .. include:: users.rst
+    .. include:: scopes.rst
        :start-after: excerpt
        :end-before: endexcerpt
-
-
-.. _Cloud: cloud.html
-.. _Folders and documents: folders_and_documents.html
-.. _IFC: ifc.html
-.. _Projects: projects.html
-.. _Users management: users.html
-.. _Scopes: scopes.html
 
 .. toctree::
     :hidden:
@@ -56,4 +48,3 @@ Concepts
     Projects <projects>
     Users management <users>
     Scopes <scopes>
-

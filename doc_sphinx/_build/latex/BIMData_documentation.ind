@@ -1,0 +1,46 @@
+\begin{sphinxtheindex}
+\let\lettergroup\sphinxstyleindexlettergroup
+\let\lettergroupDefault\sphinxstyleindexlettergroupDefault
+\let\spxpagem\sphinxstyleindexpagemain
+\let\spxentry\sphinxstyleindexentry
+\let\spxextra\sphinxstyleindexextra
+
+
+  \lettergroup{C}
+  \item \spxentry{cloud}
+    \subitem \spxentry{context; user}, \hyperpage{7}
+  \item \spxentry{context}, \hyperpage{13}
+  \item \spxentry{core}
+    \subitem \spxentry{module}, \hyperpage{7}, \hyperpage{12}, \hyperpage{13}
+
+  \indexspace
+
+  \lettergroup{E}
+  \item \spxentry{errors, HTTP}, \hyperpage{22}
+  \item \spxentry{execution}, \hyperpage{13}
+    \subitem \spxentry{ifc}, \hyperpage{12}
+
+  \indexspace
+
+  \lettergroup{G}
+  \item \spxentry{guide}
+    \subitem \spxentry{module}, \hyperpage{22}
+
+  \indexspace
+
+  \lettergroup{M}
+  \item \spxentry{module}
+    \subitem \spxentry{core}, \hyperpage{7}, \hyperpage{12}, \hyperpage{13}
+    \subitem \spxentry{guide}, \hyperpage{22}
+
+  \indexspace
+
+  \lettergroup{P}
+  \item \spxentry{projects}, \hyperpage{13}
+
+  \indexspace
+
+  \lettergroup{U}
+  \item \spxentry{users}, \hyperpage{13}
+
+\end{sphinxtheindex}
