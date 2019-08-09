@@ -102,7 +102,7 @@ Include the Viewer
 
 See the dedicated page `Getting Started with the Viewer`_
 
-
+    
 .. _Include the Viewer in your website: ../viewer/getting_started.html
 .. _get the Access Token: ../cookbook/get_access_token.html
 .. _Use your credentials to log in: ../cookbook/get_access_token.html

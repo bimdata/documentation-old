@@ -42,7 +42,7 @@ This means you will get an ``id_token`` (not used by BIMData) and an ``access_to
 Scopes
 ======
 
-Select scopes your app needs (see ``scopes``_ doc).
+Select scopes your app needs (see :doc:`scopes </concepts/scopes>` doc).
 
 JWT algorithm
 =============
@@ -82,4 +82,6 @@ Post Logout URIs
 List of authorized Post Logout URIs
 Useful only if you want to implement an SSO logout.
 
-.. _scopes: ../concepts/scopes.html
+.. seealso::
+
+    See also :doc:`Authentication documentation </guide/authentication_bimdata_connect>`

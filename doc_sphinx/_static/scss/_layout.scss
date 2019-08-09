@@ -2,7 +2,7 @@
 .content{
   // custom CONTENT
   &_layout{
-    margin-top: 60px; 
+    margin-top: 60px;
     padding: 0 27px 4rem;
     .breadcrumb{
       margin: 0;
@@ -188,4 +188,9 @@ table.field-list{
       }
     }
   }
+}
+
+// page PLAYGROUND API
+.compound{
+  display: none;
 }
