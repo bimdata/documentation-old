@@ -1,8 +1,7 @@
 FROM python:3.7
 
 RUN apt-get update && apt-get install libglu1-mesa -y
-RUN apt-get install texlive-full -y
-RUN apt-get install xindy -y
+
 
 RUN wget https://raw.githubusercontent.com/visionmedia/n/master/bin/n -O /usr/local/bin/n && \
     chmod +x /usr/local/bin/n && \
@@ -34,7 +33,8 @@ ENV WHITELIST_BRANCHES=$WHITELIST_BRANCHES
 RUN cd doc_sphinx && npm run build:apiref
 RUN sphinx-build doc_sphinx html_doc
 RUN cd doc_sphinx && npm run build
-RUN cd doc_sphinx && sphinx-build -b latex -t latex -c . -Q concepts _build && make latexpdf
+RUN apt-get install texlive-full xindy latexmk -y
+RUN cd doc_sphinx && sphinx-build -b latex -t latex -c . -q platform _build && make latexpdf
 
 FROM nginx:stable-alpine
 COPY --from=0 /opt/html_doc/ /usr/share/nginx/html/
