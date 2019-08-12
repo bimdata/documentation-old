@@ -34,7 +34,29 @@ Once logged in, you can navigate through Clouds and Projects directly with the C
 And :doc:`create your first Project <add_content>`, :doc:`upload a Model <add_content>`. :doc:`Invite your colleagues <collaborate>` and begin to collaborate around your BIM Project.
 
 Learn how-to...
-====================
+================
+
+.. topic:: :doc:`Create a Project <create_project>`
+
+    .. include:: create_project.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+.. topic:: :doc:`Manage your Project <manage_project>`
+
+    .. include:: add_content.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+.. topic:: :doc:`Manage Documents <manage_documents>`
+
+    .. include:: manage_documents.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+
+Explore the capacities of the Platform
+=======================================
 
 .. topic:: :doc:`Add Content <add_content>`
 
@@ -66,5 +88,9 @@ Learn how-to...
     Add Content <add_content>
     Organize <organize>
     Collaborate <collaborate>
+
+    Create a Project <create_project>
+    Manage Project <manage_project>
+    Manage Documents <manage_documents>
 
     Support <../get_help>
