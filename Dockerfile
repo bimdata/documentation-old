@@ -33,7 +33,9 @@ ENV WHITELIST_BRANCHES=$WHITELIST_BRANCHES
 RUN cd doc_sphinx && npm run build:apiref
 RUN sphinx-build doc_sphinx html_doc
 RUN cd doc_sphinx && npm run build
-RUN apt-get install texlive-full xindy latexmk -y
+RUN apt-get install -y texlive texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-lang* latexmk xindy
+
+
 RUN cd doc_sphinx && sphinx-build -b latex -t latex -c . -q platform _build && make latexpdf
 
 FROM nginx:stable-alpine
