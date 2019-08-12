@@ -1,5 +1,7 @@
 :orphan:
 
+.. index:: project, documents, create a project
+
 =======================
 Create a Project
 =======================

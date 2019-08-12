@@ -1,3 +1,5 @@
+.. index:: project, models, clouds, organize
+
 ========================
 Organize
 ========================

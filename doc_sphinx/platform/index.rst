@@ -3,7 +3,7 @@ Platform User Guide
 =================================
 
 
-The Platform let you have as many Clouds as you need.
+The Platform lets you have as many Clouds as you need.
 In every Cloud, you can create as many Projects as you want.
 
 Every Project is a place to share about a BIM project: in a Project, you could be Admin, User or Guest.

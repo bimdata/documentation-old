@@ -1,3 +1,6 @@
+.. index:: documents, edm, access rights, users, members, cloud, project, models
+
+
 ========================
 Add Content
 ========================

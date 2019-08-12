@@ -1,4 +1,4 @@
-:index:
+.. index:: project, edm, projects list, project card, edit the project, rename
 
 ===============================
 Manage your Project

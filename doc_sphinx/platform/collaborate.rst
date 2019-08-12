@@ -1,3 +1,5 @@
+.. index:: documents, edm, access rights, users, invitation, invite, members
+
 ========================
 Collaborate
 ========================

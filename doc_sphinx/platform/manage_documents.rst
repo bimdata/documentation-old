@@ -1,3 +1,5 @@
+.. index:: documents, edm, upload, download, delete, remove, rename, move
+
 =================
 Manage Documents
 =================
