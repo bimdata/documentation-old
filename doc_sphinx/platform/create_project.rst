@@ -11,6 +11,19 @@ Create a Project
         Step-by-step how-to manage create a Project in the Platform.
     endexcerpt
 
+.. only:: latex
+
+    .. image:: ../_images/user_guide/platform/new-project-button.png
+        :align: left
+        :alt: Screenshot of the Projects List screen of the BIMData's Platform
+
+
+.. only:: html
+
+    .. image:: ../_images/user_guide/platform/new-project-button.svg
+        :align: left
+        :alt: Screenshot of the Projects List screen of the BIMData's Platform
+
 #. Click New Project
 #. Type the name of your Project
 #. Press Enter or click Submit

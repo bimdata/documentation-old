@@ -48,29 +48,6 @@ On each Cloud's card, the number of Projects and the number of Users are visible
 For any new Cloud, you can set Users rights. See `Users Management screen`_ for more information.
 
 
-Create a Project
-==================
-
-.. only:: latex
-
-    .. image:: ../_images/user_guide/platform/page-project-list.png
-        :align: left
-        :alt: Screenshot of the Projects List screen of the BIMData's Platform
-
-
-.. only:: html
-
-    .. image:: ../_images/user_guide/platform/page-project-list.svg
-        :align: left
-        :alt: Screenshot of the Projects List screen of the BIMData's Platform
-
-
-* Click on [New Project] on the left of your Project list
-* Fill the name of your next Project
-
-You are ready to add content in the Project's screen.
-
-
 Upload your content
 ======================
 
