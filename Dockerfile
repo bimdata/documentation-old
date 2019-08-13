@@ -1,8 +1,6 @@
 FROM python:3.7
 
 RUN apt-get update && apt-get install libglu1-mesa -y
-RUN apt-get install -y texlive-full
-RUN apt-get install -y latexmk xindy
 
 RUN wget https://raw.githubusercontent.com/visionmedia/n/master/bin/n -O /usr/local/bin/n && \
     chmod +x /usr/local/bin/n && \
@@ -36,9 +34,5 @@ RUN sphinx-build doc_sphinx html_doc
 RUN cd doc_sphinx && npm run build
 
 
-RUN cd doc_sphinx && sphinx-build -b latex -t latex -c . -q platform _build && make -s latexpdf
-
 FROM nginx:stable-alpine
 COPY --from=0 /opt/html_doc/ /usr/share/nginx/html/
-COPY --from=0 /opt/doc_sphinx/_build/latex/*.pdf /usr/share/nginx/html/_static/
-
