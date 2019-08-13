@@ -9,6 +9,18 @@ Manage your Project
         Step-by-step how-to manage your Project.
     endexcerpt
 
+.. only:: html
+
+    .. image:: ../_images/user_guide/platform/page-project.svg
+        :align: left
+        :alt: Screenshot of the Projects screen of the BIMData's Platform
+
+.. only:: latex
+
+    .. image:: ../_images/user_guide/platform/page-project.png
+        :align: left
+        :alt: Screenshot of the Projects screen of the BIMData's Platform
+
 .. contents::
 
 Access to your Project

@@ -29,5 +29,25 @@ Create a Project
 #. Press Enter or click Submit
 #. The Project is created.
 
-Your new Project is ready. Click the Project card and begin with :doc:`uploading your Model <add_content>`,
+
+
+Your new Project is ready.
+
+
+.. only:: latex
+
+    .. image:: ../_images/user_guide/platform/model-preview.png
+        :align: left
+        :alt: Project's card
+
+
+.. only:: html
+
+    .. image:: ../_images/user_guide/platform/model-preview.svg
+        :align: left
+        :alt: Project's card
+
+
+
+ Click the Project card and begin with :doc:`uploading your Model <add_content>`,
 or :doc:`creating the Project structure <manage_project_structure>`. 

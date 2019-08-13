@@ -9,12 +9,39 @@ Manage Documents
         Step-by-step how-to manage your Documents.
     endexcerpt
 
+.. only:: latex
+
+    .. image:: ../_images/user_guide/platform/ged.png
+        :align: left
+        :alt: Screenshot of the Projects List screen of the BIMData's Platform
+
+
+.. only:: html
+
+    .. image:: ../_images/user_guide/platform/ged.svg
+        :align: left
+        :alt: Screenshot of the Projects List screen of the BIMData's Platform
+
+
 .. contents::
 
 Upload your Documents
 ======================
 
 After or before creating your Folders, you can Import your Documents.
+
+.. only:: latex
+
+    .. image:: ../_images/user_guide/platform/button-upload-file.png
+        :align: left
+        :alt: Screenshot of the Projects List screen of the BIMData's Platform
+
+
+.. only:: html
+
+    .. image:: ../_images/user_guide/platform/button-upload-file.svg
+        :align: left
+        :alt: Screenshot of the Projects List screen of the BIMData's Platform
 
  #. In the EDM part, click "Import a document". You can either: Drop, Paste or Browse your computer for a file or several files.
  #. Click "Upload 1 file". The progress bar lets you know when the process will be finished.
