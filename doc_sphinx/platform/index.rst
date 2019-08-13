@@ -32,8 +32,8 @@ Quickstart
 
 #. Log in the Platform on https://platform-staging.bimdata.io
 #. Navigate through Clouds and Projects directly with the Choice's List on the top of every page.
-#. :doc:`Create your first Project <add_content>`.
-#. :doc:`Upload a Model <add_content>`.
+#. :doc:`Create your first Project <create_project>`.
+#. :doc:`Upload a Model <manage_documents>`.
 #. :doc:`Invite your colleagues <collaborate>` and begin to collaborate around your BIM Project.
 
 Learn how-to...
