@@ -9,6 +9,8 @@ After cloning this git repository, build your own local version:
 ``$> cd doc_sphinx && sphinx-build -b html . ../html_doc``
 
 
+.. image:: doc_sphinx/_images/bimdata_homepage_small.png
+
 Branches
 =========
 
