@@ -35,8 +35,8 @@ RUN cd doc_sphinx && npm run build
 
 
 RUN cd doc_sphinx && sphinx-build -b latex -t latex -c . -q platform _build && make -s latexpdf
+RUN cd doc_sphinx && cp _build/latex/BIMData_documentation.pdf /opt/html_doc/_static/
 
 FROM nginx:stable-alpine
 COPY --from=0 /opt/html_doc/ /usr/share/nginx/html/
-COPY --from=0 /opt/doc_sphinx/_build/latex/*.pdf /usr/share/nginx/html/_static/
 
