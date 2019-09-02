@@ -9,6 +9,7 @@ In every Cloud, you can create as many Projects as you want.
 Every Project is a place to share about a BIM project: in a Project, you could be Admin, User or Guest.
 The features you can use could be limited by your Role on the Project.
 
+:download:`Platform User Guide <../_static/BIMData_documentation.pdf>` 
 
 Getting Started 
 ===================
