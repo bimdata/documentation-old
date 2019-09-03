@@ -16,7 +16,7 @@ Download the Guide in PDF: :download:`Platform User Guide <../_static/BIMData_do
 
 .. note:: 
 
-   Find here the `User Guide in PDF format <_static/BIMData_documentation.pdf>`_.
+   Find here the `User Guide in PDF format </_static/BIMData_documentation.pdf>`_.
 
 
 Getting Started 
