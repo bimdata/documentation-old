@@ -11,13 +11,9 @@ Every Project is a place to share about a BIM project: in a Project, you could b
 
 The features you can use could be limited by your Role on the Project.
 
+.. note::
 
-Download the Guide in PDF: :download:`Platform User Guide <../_static/BIMData_documentation.pdf>` 
-
-.. note:: 
-
-   Find here the `User Guide in PDF format </_static/BIMData_documentation.pdf>`_.
-
+    Download the Guide in PDF: :download:`Platform User Guide <../_static/BIMData_documentation.pdf>` 
 
 Getting Started 
 ===================
