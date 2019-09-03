@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="31px" viewBox="0 0 45 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>shortcut viewer</title>
+    <desc>Created with Sketch.</desc>
+    <g id="shortcut-viewer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle" fill="#CBCBCB" fill-rule="nonzero" x="0" y="0" width="45" height="31"></rect>
+            <g id="baseline-remove_red_eye-24px" transform="translate(14.000000, 7.000000)">
+                <polygon id="Path" points="0 0 18 0 18 18 0 18"></polygon>
+                <path d="M9,3.375 C5.25,3.375 2.0475,5.7075 0.75,9 C2.0475,12.2925 5.25,14.625 9,14.625 C12.75,14.625 15.9525,12.2925 17.25,9 C15.9525,5.7075 12.75,3.375 9,3.375 Z M9,12.75 C6.93,12.75 5.25,11.07 5.25,9 C5.25,6.93 6.93,5.25 9,5.25 C11.07,5.25 12.75,6.93 12.75,9 C12.75,11.07 11.07,12.75 9,12.75 Z M9,6.75 C7.755,6.75 6.75,7.755 6.75,9 C6.75,10.245 7.755,11.25 9,11.25 C10.245,11.25 11.25,10.245 11.25,9 C11.25,7.755 10.245,6.75 9,6.75 Z" id="Shape" fill="#95989A" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

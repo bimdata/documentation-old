@@ -1,6 +1,6 @@
-FROM python:3.7
+FROM python:3.7-buster
 
-RUN apt-get update && apt-get install libglu1-mesa -y
+RUN apt-get update && apt-get install libglu1-mesa fonts-roboto latexmk xindy texlive-xetex -y
 
 RUN wget https://raw.githubusercontent.com/visionmedia/n/master/bin/n -O /usr/local/bin/n && \
     chmod +x /usr/local/bin/n && \
@@ -29,9 +29,13 @@ ENV CONNECT_URL=$CONNECT_URL
 ENV PLAYGROUND_CLIENT_ID=$PLAYGROUND_CLIENT_ID
 ENV WHITELIST_BRANCHES=$WHITELIST_BRANCHES
 
+RUN cd doc_sphinx && sphinx-build -b latex -t latex -c . -q platform _build && make -s latexpdf
+RUN cd doc_sphinx && cp _build/latex/BIMData_documentation.pdf _static/
+
 RUN cd doc_sphinx && npm run build:apiref
 RUN sphinx-build doc_sphinx html_doc
 RUN cd doc_sphinx && npm run build
 
 FROM nginx:stable-alpine
 COPY --from=0 /opt/html_doc/ /usr/share/nginx/html/
+

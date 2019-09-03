@@ -30,7 +30,7 @@ An ID will ensure the easy access in Javascript scripts.
 JS Viewer script
 =================
 
-The Viewer is based on `XeoGL Engine`_, see the `list of the methods of the Viewer`_ to interact with the Viewer.
+The Viewer is based on `XeoGL Engine`_, see the :doc:`list of the methods of the Viewer </viewer/parameters>` to interact with the Viewer.
 
 The Viewer is the object BIMDataViewer. The construction of a new BIMDataViewer expects an HTMLElement or a string (ID of this HTMLElement). 
 You will use the <div> ID.
@@ -42,4 +42,3 @@ Your own Javascript script
 You can now interact with the Viewer in your script. 
 
 .. _XeoGL Engine: http://xeogl.org/
-.. _list of the methods of the Viewer: ../viewer/parameters.html

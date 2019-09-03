@@ -94,7 +94,7 @@ Replace the Javascript by the following code, and you load a Viewer with your Mo
 Customize the Viewer
 =====================
 
-See `the available methods`_ to customize the Viewer.
+See :doc:`the available methods </viewer/parameters>` to customize the Viewer.
 
 
 .. seealso::
