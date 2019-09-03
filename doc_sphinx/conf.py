@@ -376,10 +376,10 @@ latex_show_urls = "footnote"
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (
-        master_doc,
+        "platform/index",
         "BIMData_documentation.tex",
         "BIMData Sphinx Documentation",
-        "bimdata",
+        "BIMData",
         "manual",
     )
 ]
