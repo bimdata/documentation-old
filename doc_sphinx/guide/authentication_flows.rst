@@ -45,6 +45,3 @@ Usage examples
 
 * **Example:** get the Access Token by the browser to use it directly after getting it
 * **Example2:** reporting into the application of the user's actions
-
-
-.. _Create an application process: ../cookbook/create_an_application.html

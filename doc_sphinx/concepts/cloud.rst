@@ -1,7 +1,3 @@
-.. index::
-   single: cloud; context; user
-   module: core
-
 ========
 Cloud
 ========
@@ -33,4 +29,6 @@ References
 * GET ``/cloud/{cloud_pk}/create-demo``
 
 
-.. _projects: projects.html
+.. seealso:: 
+
+    See also :ref:`api_onboarding_cloud`

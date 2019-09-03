@@ -10,31 +10,40 @@
 
 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
   {% block menu %}
-    {# The singlehtml builder doesn't handle this toctree call when the toctree is empty. Skip building this for now.
+  {# The singlehtml builder doesn't handle this toctree call when the toctree is empty. Skip building this for now.
     #}
-    {% if 'singlehtml' not in builder %}
-      {% set global_toc = toctree(maxdepth=theme_navigation_depth|int, collapse=theme_collapse_navigation, includehidden=theme_includehidden, titles_only=theme_titles_only) %}
-    {% endif %}
-    {% if global_toc %}
-      {{ global_toc }}
-    {% else %}
-    <!-- Local TOC -->
-    <div class="local-toc">{{ toc }}</div>
-      {% endif %}
-    </div>
+  {% if 'singlehtml' not in builder %}
+  {% set global_toc = toctree(maxdepth=theme_navigation_depth|int, collapse=theme_collapse_navigation, includehidden=theme_includehidden, titles_only=theme_titles_only) %}
+  {% endif %}
+  {% if global_toc %}
+  {{ global_toc }}
+  {% else %}
+  <!-- Local TOC -->
+  <div class="local-toc">{{ toc }}</div>
+  {% endif %}
+</div>
 
-    <script>
-      $(document).ready(function() {
-        $(".toctree-l2 a").click(function() {
-          $(".toctree-l2 a.active").removeClass("active");
-          $(this).addClass("active");
-        });
+<script>
+  $(document).ready(function () {
+    $(".toctree-l2 a").click(function () {
+      $(".toctree-l2 a.active").removeClass("active");
+      $(this).addClass("active");
+    });
 
-        $( ".toctree-l1 > .internal" ).before( "<span class='toctree-expand'></span>" );
+    $(".toctree-l1 > .internal").before("<span class='toctree-expand'></span>");
 
-        $('.toctree-expand').on('click', function(){
-          $(this).closest('.toctree-l1').toggleClass('show');
-        });
-      });
-      </script>
-  {% endblock %}
+    // open MENU && keep it open when reload or change page
+    $('.toctree-expand').on('click', function () {
+      localStorage.setItem('menu-open', $('.toctree-l1').hasClass('show'));
+      $(this).closest('.toctree-l1').toggleClass('show');
+    });
+    var state = localStorage.getItem('menu-open');
+    if (state === false) {
+      $('.toctree-l1.current').removeClass('show');
+    } else {
+        $('.toctree-l1.current').addClass('show');
+    }
+  });
+
+</script>
+{% endblock %}

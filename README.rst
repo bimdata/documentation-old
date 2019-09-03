@@ -4,9 +4,12 @@ Documentation BIMData
 
 Welcome to the BIMData's documentation git repository.
 
-After cloning the git repository, to build your own local version, having a directory to store the generated pages named ``html_doc``, in the same parent dir than ``sphinx_doc`` directory, the build command should be:
+After cloning this git repository, build your own local version:
 
-``$> sphinx-versioning build -r {branch_name} doc_sphinx html_doc``
+``$> cd doc_sphinx && sphinx-build -b html . ../html_doc``
+
+
+.. image:: doc_sphinx/_images/bimdata_homepage_small.png
 
 Branches
 =========
@@ -17,6 +20,7 @@ We work with 3 branches, currently named *master*, *dev* and *tech-writing*:
 * *dev*: testing before putting the new content in ``master`` and tests for new features of the documentation
 * *tech-writing*: content under edition. This branch is hosting Work In Progress and is not fully polished.
 
+
 Sphinx:
 =======
 
@@ -26,23 +30,36 @@ The configuration file ``conf.py`` contains the settings for the build of our Sp
 Note: we are using Python3. To be able to use Python3 and the context of working on the documentation, you can use `Virtualenv <https://virtualenv.pypa.io/en/stable/installation/>`_.
 
 The ``requirements.txt`` file lists all the extensions used for this Sphinx documentation.
-You can use:
+To install all the dependencies, use:
 
 ``$> pip install -r doc_sphinx/requirements.txt``
+
 
 Customization
 ---------------
 
-The theme is custom and based on the `sphinx-rtd-theme <https://sphinx-rtd-theme.readthedocs.io>`_.
+The Sphinx theme is custom and based on the `sphinx-rtd-theme <https://sphinx-rtd-theme.readthedocs.io>`_.
 
-Spectacle:
-===========
 
-Our API Reference is served by `Spectacle <https://github.com/sourcey/spectacle/>`_ in its own separate directory.
+API Documentation:
+===================
+
+Our API Reference is served by `Spectacle <https://github.com/sourcey/spectacle/>`_ in the directory named `api/`.
+
+The API Documentation build command is:
+
+``$> cd doc_sphinx && npm run build:apiref``
 
 
 Tests:
 ======
 
-``$> cd doc_sphinx``
-``$> npm test``
+Launch the test suite:
+
+``$> cd doc_sphinx && npm test``
+
+
+Licence:
+========
+
+This documentation is under Creative Commons: `Attribution 4.0 International (CC BY 4.0) <http://creativecommons.org/licenses/by/4.0/>`_  
