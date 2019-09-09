@@ -3,13 +3,6 @@ Cookbook
 ==========
 
 
-
-.. topic:: :doc:`Use-case IoT <usecase_iot>`
-
-    .. include:: usecase_iot.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
 .. topic:: `Get Access Token`_
 
     .. include:: get_access_token.rst
@@ -34,23 +27,6 @@ Cookbook
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`Use-case AR with BCF comments <usecase_augmented_reality_bcf>`
-
-    .. include:: usecase_augmented_reality_bcf.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-.. topic:: :doc:`Use-case tailored Platform <usecase_tailored_platform>`
-
-    .. include:: usecase_tailored_platform.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-.. topic:: :doc:`Use-case BCF in a blockchain <usecase_bcf_blockchain>`
-
-    .. include:: usecase_bcf_blockchain.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
 
 
 .. _Create an application: create_an_application.html
