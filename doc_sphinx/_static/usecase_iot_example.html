@@ -60,7 +60,7 @@
 
     // Set Annotation CSS
     viewer.on('viewer-init', function (e) {
-    viewer.setObjectAnnotationCSS('
+    viewer.setObjectAnnotationCSS(`
         .bimdata-annotation-pin {
         display: flex;
         align-items: center;
@@ -121,7 +121,7 @@
             left: -15px;
             top: 20px;
         }
-    ');
+    `);
     });
 
     // When the viewer has loaded the model
@@ -131,28 +131,27 @@
     for (let uuid of monitoredElements) {
         // Create annotation for each interesting element
         let annotationId = await viewer.createObjectAnnotation(uuid, {
-        spotHTML: '<div class="bimdata-annotation-pin">${index}</div>',
-        labelHTML: '<div class="bimdata-annotation-label" style="font-size: 18pt;">
+        spotHTML: `<div class="bimdata-annotation-pin">${index}</div>`,
+        labelHTML: `<div class="bimdata-annotation-label" style="font-size: 18pt;">
             <p>${uuid}</p>
             <img src=${data.shortcode_media.display_resources[2].src}></img>
             </div>
-        '
-        });
+        `});
         index++;
     }
     })
 
     // Opening the annotation detail on pin click
     viewer.on("annotation-pin-clicked", async function (e) {
-    const annotationId = e.annotationId;
-    const annotationShown = await viewer.getAnnotationLabelShown(annotationId);
-    viewer.hideAnnotationsLabels();
-    viewer.setAnnotationLabelShown(annotationId, !annotationShown);
+        const annotationId = e.annotationId;
+        const annotationShown = await viewer.getAnnotationLabelShown(annotationId);
+        viewer.hideAnnotationsLabels();
+        viewer.setAnnotationLabelShown(annotationId, !annotationShown);
     });
 
     // Close annotation detail on click away
     viewer.on('mouse-click-nothing', e => {
-    viewer.hideAnnotationsLabels();
+        viewer.hideAnnotationsLabels();
     });
 
 </script>
