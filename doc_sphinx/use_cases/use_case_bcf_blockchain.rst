@@ -25,6 +25,10 @@ The listener is built using the Webhooks, through the “bcf.topic.creation” e
 
 This process is incorporated into BIMData Viewer via a custom BCF plug-in.
 
+.. image:: /_images/use_cases/bcf_in_blockchain.png
+   :scale: 50%
+   :alt: BCF in blockchain
+   :align: center
 
 .. note::
 
