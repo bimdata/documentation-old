@@ -1,5 +1,5 @@
 =================================
-Use-case : tailored Platform
+Use-case: tailored Platform
 =================================
 
 ..

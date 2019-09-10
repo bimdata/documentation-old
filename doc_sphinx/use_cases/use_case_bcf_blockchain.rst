@@ -1,5 +1,5 @@
 ===================================
-Use-case : BCF in the blockchain
+Use-case: BCF in the blockchain
 ===================================
 
 ..
