@@ -12,13 +12,16 @@
 </div>
 <script type="text/javascript">
 
- // Example of extarnal data retrieving
- async function retrieveExternalData() {
-    const url = "https://www.instagram.com/graphql/query/?query_hash=477b65a610463740ccdb83135b2014db&variables=%7B%22shortcode%22%3A%22By5YPArn5Sz%22%2C%22child_comment_count%22%3A3%2C%22fetch_comment_count%22%3A40%2C%22parent_comment_count%22%3A24%2C%22has_threaded_comments%22%3Atrue%7D"
-
-    const response = await fetch(url);
-    const json = await response.json();
-        return json.data;
+     // Example of extarnal data retrieving
+     async function retrieveExternalData() {
+        const url = "https://www.instagram.com/graphql/query/?query_hash=477b65a610463740ccdb83135b2014db&variables=%7B%22shortcode%22%3A%22By5YPArn5Sz%22%2C%22child_comment_count%22%3A3%2C%22fetch_comment_count%22%3A40%2C%22parent_comment_count%22%3A24%2C%22has_threaded_comments%22%3Atrue%7D"
+        try {
+            const response = await fetch(url);
+            const json = await response.json();
+                return json.data;
+        } catch (e) {
+            return "Couldn't load Instagram data. Ad-blockers or privacy plugins may block it. You get the point"
+        }
     }
 
     // Setup BIMData Viewer
@@ -130,11 +133,17 @@
     const data = await retrieveExternalData();
     for (let uuid of monitoredElements) {
         // Create annotation for each interesting element
+        let content;
+        if (data.shortcode_media) {
+            content = `<img src=${data.shortcode_media.display_resources[2].src}></img>`
+        } else {
+            content = `<p>${data}</p>`
+        }
         let annotationId = await viewer.createObjectAnnotation(uuid, {
         spotHTML: `<div class="bimdata-annotation-pin">${index}</div>`,
         labelHTML: `<div class="bimdata-annotation-label" style="font-size: 18pt;">
             <p>${uuid}</p>
-            <img src=${data.shortcode_media.display_resources[2].src}></img>
+            ${content}
             </div>
         `});
         index++;
