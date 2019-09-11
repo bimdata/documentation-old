@@ -22,6 +22,7 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     Guide by topics <guide/index>
     Tutorials <tutorials/index>
     Cookbook <cookbook/index>
+    Platform User Guide <platform/index>
     Viewer Doc <viewer/index>
 
     Playground API <api_playground/index>
@@ -38,6 +39,7 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     Viewer Doc <viewer/index>
     Guided Tour <tutorials/guided_tour>
 
+    Platform User Guide <platform/index>
     Playground API <api_playground/index>
 
 

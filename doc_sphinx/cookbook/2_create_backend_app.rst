@@ -39,7 +39,7 @@ This means you will get a code and you will be able to trade it for an access_to
 Scopes
 ======
 
-Select scopes your app needs (see `scopes`_ doc).
+Select scopes your app needs (see :doc:`scopes </concepts/scopes>` doc).
 
 JWT algorithm
 ===============
@@ -77,6 +77,3 @@ Useful only if you want to implement an SSO logout
 .. seealso::
 
     See also :doc:`Authentication documentation </guide/authentication_bimdata_connect>`
-
-
-.. _scopes: ../concepts/scopes.html

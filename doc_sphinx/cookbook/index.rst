@@ -2,6 +2,19 @@
 Cookbook
 ==========
 
+
+.. topic:: :doc:`Use-case IoT <usecase_iot>`
+
+    .. include:: usecase_iot.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+.. topic:: `Get Access Token`_
+
+    .. include:: get_access_token.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
 .. topic:: `Create an application`_
 
     .. include:: create_an_application.rst
@@ -21,12 +34,6 @@ Cookbook
        :end-before: endexcerpt
 
 
-.. topic:: `Get Access Token`_
-
-    .. include:: get_access_token.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
 .. _Create an application: create_an_application.html
 .. _Create a backend-less application: 2_create_nobackend_app.html
 .. _Create a backend application: 2_create_backend_app.html
@@ -37,3 +44,4 @@ Cookbook
     
     create_an_application
     get_access_token
+    usecase_iot

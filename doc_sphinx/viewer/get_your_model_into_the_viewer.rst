@@ -9,7 +9,7 @@ How-to get your model into the Viewer
 
 @WIP
 
-Include the Viewer as specified in the  `Include viewer recipe`_, then, you will use the BIMData API.
+Include the Viewer as specified in the  :doc:`Include viewer recipe </viewer/include_viewer>`, then, you will use the BIMData API.
 
 Load the Javascript API
 ========================
@@ -52,6 +52,3 @@ Then, you will use the API client to get the Bearer object, and you Access Token
       
 
 Now, you are able to retrieve the Model from your cloud.
-
-
-.. _Include viewer recipe: ../viewer/include_viewer.html
