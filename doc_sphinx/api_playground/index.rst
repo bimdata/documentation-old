@@ -1,5 +1,5 @@
 ============
-Playground
+Welcome
 ============
 
 .. toctree::
@@ -14,8 +14,6 @@ Playground
   project_endpoint
   user_endpoint
 
-Welcome
-========
 
 The Bimdata API is organized around `REST`_. Our API has predictable, resource-oriented URLs, and uses HTTP response codes to indicate API errors. 
 We use built-in HTTP features, like HTTP authentication and HTTP verbs, which are understood by off-the-shelf HTTP clients. 

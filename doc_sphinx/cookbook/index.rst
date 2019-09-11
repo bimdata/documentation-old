@@ -3,12 +3,6 @@ Cookbook
 ==========
 
 
-.. topic:: :doc:`Use-case IoT <usecase_iot>`
-
-    .. include:: usecase_iot.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
 .. topic:: `Get Access Token`_
 
     .. include:: get_access_token.rst
@@ -34,6 +28,7 @@ Cookbook
        :end-before: endexcerpt
 
 
+
 .. _Create an application: create_an_application.html
 .. _Create a backend-less application: 2_create_nobackend_app.html
 .. _Create a backend application: 2_create_backend_app.html
@@ -45,3 +40,6 @@ Cookbook
     create_an_application
     get_access_token
     usecase_iot
+    usecase_augmented_reality_bcf
+    usecase_bcf_blockchain
+    usecase_tailored_platform

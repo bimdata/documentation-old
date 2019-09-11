@@ -22,6 +22,7 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     Guide by topics <guide/index>
     Tutorials <tutorials/index>
     Cookbook <cookbook/index>
+    Use Cases <use_cases/index>
     Platform User Guide <platform/index>
     Viewer Doc <viewer/index>
 
