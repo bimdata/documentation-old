@@ -101,17 +101,16 @@ This option is compliant with the user's credentials.
 
 Use it when you need to access the user's log, such as the user's history, and report actions.
 
-There are three types of user auth, detailed beneath:
+There are two types of user auth, detailed beneath:
 
     * Authorization code flow
     * Implicit flow
-    * Hybrid flow
 
 
 Type of user auth detailed
 ===========================
 
-The three types are three different mechanisms to aks for user's permissions.
+The two types are two different mechanisms to aks for user's permissions.
 
 
 .. seealso::
