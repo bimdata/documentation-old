@@ -1,6 +1,6 @@
-===============
-Use Case IoT
-===============
+=============================================
+Use Case: Enrich BIM Viewer with IoT data
+=============================================
 
 ..
     excerpt
@@ -101,12 +101,12 @@ This method is then used in:
     for (let uuid of monitoredElements) {
         // Create annotation for each interesting element
         let annotationId = await viewer.createObjectAnnotation(uuid, {
-        spotHTML: '<div class="bimdata-annotation-pin">${index}</div>',
-        labelHTML: '<div class="bimdata-annotation-label" style="font-size: 18pt;">
+        spotHTML: `<div class="bimdata-annotation-pin">${index}</div>`,
+        labelHTML: `<div class="bimdata-annotation-label" style="font-size: 18pt;">
             <p>${uuid}</p>
             <img src=${data.shortcode_media.display_resources[2].src}></img>
             </div>
-        '
+        `
         });
         index++;
     }
@@ -132,148 +132,164 @@ Complete code
 Want to try yourself?
 Copy-paste this code and try it!
 
-.. code-block:: javascript
+.. code-block:: html
     :linenos:
 
-    // Example of extarnal data retrieving
-    async function retrieveExternalData() {
-        const url = "https://www.instagram.com/graphql/query/?query_hash=477b65a610463740ccdb83135b2014db&variables=%7B%22shortcode%22%3A%22By5YPArn5Sz%22%2C%22child_comment_count%22%3A3%2C%22fetch_comment_count%22%3A40%2C%22parent_comment_count%22%3A24%2C%22has_threaded_comments%22%3Atrue%7D"
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <meta charset="UTF-8">
+        <title>BIMData Viewer</title>
+        <script src="https://cdn-beta.bimdata.io/js/bimdata-viewer-embed.js"></script>
+        </head>
+        <body>
+        <div class="viewer-container" style="overflow: hidden;">
+                <div id="embed" style="height: 100vh"></div>
+        </div>
+        <script type="text/javascript">
 
-        const response = await fetch(url);
-        const json = await response.json();
-        return json.data;
-    }
+        // Example of extarnal data retrieving
+        async function retrieveExternalData() {
+            const url = "https://www.instagram.com/graphql/query/?query_hash=477b65a610463740ccdb83135b2014db&variables=%7B%22shortcode%22%3A%22By5YPArn5Sz%22%2C%22child_comment_count%22%3A3%2C%22fetch_comment_count%22%3A40%2C%22parent_comment_count%22%3A24%2C%22has_threaded_comments%22%3Atrue%7D"
 
-    // Setup BIMData Viewer
-    var accessToken = 'DEMO_TOKEN';
-    var cloudId = 88;
-    var projectId = 100;
-    var ifcId = 175;
-
-    let viewer = new window.BIMDataViewer('embed', {
-        accessToken,
-        cloudId,
-        projectId,
-        ifcId,
-        options: {
-        menu: {
-            show_buttons: {
-            comment: false,
-            edit: false,
-            camera: false,
-            fullscreen: false,
-            property: false,
+            const response = await fetch(url);
+            const json = await response.json();
+                return json.data;
             }
-        }
-        }
-    });
 
-    // Example of elements with annotations.
-    const monitoredElements = [
-        "313IdYHbv0JwPbnB6B727$",
-        "3n11jxQJbAbQWMixM04wKx",
-        "2enSXdsnT8fe5rSym78nVF",
-        "2Idfvppc1A1wUGKwi4iDp2"
-    ];
+            // Setup BIMData Viewer
+            var accessToken = 'DEMO_TOKEN';
+            var cloudId = 88;
+            var projectId = 100;
+            var ifcId = 175;
 
-    // Disable pre-selection of element on mouse hover
-    viewer.on('mouse-hover', e => {
-        e.preventDefault();
-    })
-
-    // Set Annotation CSS
-    viewer.on('viewer-init', function (e) {
-        viewer.setObjectAnnotationCSS(`
-        .bimdata-annotation-pin {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
-            font-size: 0.786rem;
-            color: #ffffff;
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            border-radius: 100%;
-            border: 1px solid #ffffff;
-            background: black;
-            visibility: hidden;
-            box-shadow: 0 2px 10px 0 rgba(0,0,0,0.07);
-            z-index: 0;
-            background: #00AF50;
-        }
-        .bimdata-annotation-label {
-                position: absolute;
-                max-width: 400px;
-                min-height: 250px;
-                padding: 8px;
-                padding-left: 12px;
-                padding-right: 12px;
-                background: white;
-                color: black;
-                -webkit-border-radius: 3px;
-                -moz-border-radius: 3px;
-                border-radius: 6px;
-                border: #ffffff solid 2px;
-                box-shadow: 0px 0px 15px 1px #222222;
-                z-index: 90000;
+            let viewer = new window.BIMDataViewer('embed', {
+            accessToken,
+            cloudId,
+            projectId,
+            ifcId,
+            options: {
+                menu: {
+                show_buttons: {
+                    comment: false,
+                    edit: false,
+                    camera: false,
+                    fullscreen: false,
+                    property: false,
+                }
+                }
             }
-            .bimdata-annotation-label:after {
-                content: '';
+            });
+
+            // Example of elements with annotations.
+            const monitoredElements = [
+                "313IdYHbv0JwPbnB6B727$",
+                "3n11jxQJbAbQWMixM04wKx",
+                "2enSXdsnT8fe5rSym78nVF",
+                "2Idfvppc1A1wUGKwi4iDp2"
+            ];
+
+            // Disable pre-selection of element on mouse hover
+            viewer.on('mouse-hover', e => {
+                e.preventDefault();
+            })
+
+            // Set Annotation CSS
+            viewer.on('viewer-init', function (e) {
+            viewer.setObjectAnnotationCSS(`
+                .bimdata-annotation-pin {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+                font-size: 0.786rem;
+                color: #ffffff;
                 position: absolute;
-                border-style: solid;
-                border-width: 8px 12px 8px 0;
-                border-color: transparent darkblue;
-                display: block;
-                width: 0;
-                z-index: 1;
-                margin-top: -11px;
-                left: -12px;
-                top: 20px;
-            }
-            .bimdata-annotation-label:before {
-                content: '';
-                position: absolute;
-                border-style: solid;
-                border-width: 9px 13px 9px 0;
-                border-color: transparent #ffffff;
-                display: block;
-                width: 0;
+                width: 25px;
+                height: 25px;
+                border-radius: 100%;
+                border: 1px solid #ffffff;
+                background: black;
+                visibility: hidden;
+                box-shadow: 0 2px 10px 0 rgba(0,0,0,0.07);
                 z-index: 0;
-                margin-top: -12px;
-                left: -15px;
-                top: 20px;
+                background: #00AF50;
+                }
+                .bimdata-annotation-label {
+                    position: absolute;
+                    max-width: 400px;
+                    min-height: 250px;
+                    padding: 8px;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    background: white;
+                    color: black;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    border-radius: 6px;
+                    border: #ffffff solid 2px;
+                    box-shadow: 0px 0px 15px 1px #222222;
+                    z-index: 90000;
+                }
+                .bimdata-annotation-label:after {
+                    content: "";
+                    position: absolute;
+                    border-style: solid;
+                    border-width: 8px 12px 8px 0;
+                    border-color: transparent darkblue;
+                    display: block;
+                    width: 0;
+                    z-index: 1;
+                    margin-top: -11px;
+                    left: -12px;
+                    top: 20px;
+                }
+                .bimdata-annotation-label:before {
+                    content: "";
+                    position: absolute;
+                    border-style: solid;
+                    border-width: 9px 13px 9px 0;
+                    border-color: transparent #ffffff;
+                    display: block;
+                    width: 0;
+                    z-index: 0;
+                    margin-top: -12px;
+                    left: -15px;
+                    top: 20px;
+                }
+            `);
+            });
+
+            // When the viewer has loaded the model
+            viewer.on('viewer-load', async function (e) {
+            let index = 1;
+            const data = await retrieveExternalData();
+            for (let uuid of monitoredElements) {
+                // Create annotation for each interesting element
+                let annotationId = await viewer.createObjectAnnotation(uuid, {
+                spotHTML: `<div class="bimdata-annotation-pin">${index}</div>`,
+                labelHTML: `<div class="bimdata-annotation-label" style="font-size: 18pt;">
+                    <p>${uuid}</p>
+                    <img src=${data.shortcode_media.display_resources[2].src}></img>
+                    </div>
+                `});
+                index++;
             }
-        `);
-    });
+            })
 
-    // When the viewer has loaded the model
-    viewer.on('viewer-load', async function (e) {
-        let index = 1;
-        const data = await retrieveExternalData();
-        for (let uuid of monitoredElements) {
-        // Create annotation for each interesting element
-        let annotationId = await viewer.createObjectAnnotation(uuid, {
-            spotHTML: `<div class='bimdata-annotation-pin'>${index}</div>`,
-            labelHTML: `<div class='bimdata-annotation-label' style='font-size: 18pt;'>
-            <p>${uuid}</p>
-            <img src=${data.shortcode_media.display_resources[2].src}></img>
-            </div>
-            `
-        });
-        index++;
-        }
-    })
+            // Opening the annotation detail on pin click
+            viewer.on("annotation-pin-clicked", async function (e) {
+                const annotationId = e.annotationId;
+                const annotationShown = await viewer.getAnnotationLabelShown(annotationId);
+                viewer.hideAnnotationsLabels();
+                viewer.setAnnotationLabelShown(annotationId, !annotationShown);
+            });
 
-    // Opening the annotation detail on pin click
-    viewer.on("annotation-pin-clicked", async function (e) {
-        const annotationId = e.annotationId;
-        const annotationShown = await viewer.getAnnotationLabelShown(annotationId);
-        viewer.hideAnnotationsLabels();
-        viewer.setAnnotationLabelShown(annotationId, !annotationShown);
-    });
+            // Close annotation detail on click away
+            viewer.on('mouse-click-nothing', e => {
+                viewer.hideAnnotationsLabels();
+            });
 
-    // Close annotation detail on click away
-    viewer.on('mouse-click-nothing', e => {
-        viewer.hideAnnotationsLabels();
-    });
+        </script>
+        </body>
+        </html>

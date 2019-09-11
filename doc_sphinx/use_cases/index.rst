@@ -5,25 +5,19 @@
 Use Cases
 ===============
 
-.. topic:: :doc:`Use-case IoT <use_case_iot>`
+.. topic:: :doc:`Enrich BIM Viewer with IoT data <use_case_iot>`
 
     .. include:: use_case_iot.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`Use-case AR with BCF comments <use_case_augmented_reality_bcf>`
+.. topic:: :doc:`AR with BCF comments <use_case_augmented_reality_bcf>`
 
     .. include:: use_case_augmented_reality_bcf.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`Use-case tailored Platform <use_case_tailored_platform>`
-
-    .. include:: use_case_tailored_platform.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-.. topic:: :doc:`Use-case BCF in a blockchain <use_case_bcf_blockchain>`
+.. topic:: :doc:`BCF in a blockchain <use_case_bcf_blockchain>`
 
     .. include:: use_case_bcf_blockchain.rst
        :start-after: excerpt
@@ -35,4 +29,3 @@ Use Cases
     use_case_iot
     use_case_augmented_reality_bcf
     use_case_bcf_blockchain
-    use_case_tailored_platform
