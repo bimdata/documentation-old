@@ -31,6 +31,11 @@ project.update           a project is updated
 project.creation         a project is created
 ======================== ==============================================================================
 
+
+.. seealso::
+    
+    Read :doc:`the BCF Webhook payload description <bcf_webhook_payload>`
+
 Payload
 =======
 
@@ -83,6 +88,7 @@ Authorizations
 API routes to manage Webhooks require the ``webhook:manage`` scope. 
 As these calls don't involve a user, the app needs to be authorized itself 
 on the Cloud and can't behave as a User.
+
 
 .. seealso::
     
