@@ -34,7 +34,7 @@ project.creation         a project is created
 
 .. seealso::
     
-    Read :doc:`the BCF Webhook payload description <bcf_webhook_payload>`
+    Read :doc:`the webhooks payload description <webhook_payload>`
 
 Payload
 =======

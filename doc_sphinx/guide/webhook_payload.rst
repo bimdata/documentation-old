@@ -1,7 +1,7 @@
 :orphan:
 
 =======================
-BCF Webhook
+Payload Details
 =======================
 
 When an object is described with an UpperCamelCase name, it refers to the model of the same name in https://api-next.bimdata.io/doc
@@ -13,7 +13,7 @@ BCF Payload Details
 bcf.topic.creation
 ------------------------------------------
 
-.. code-block:: json
+.. code-block:: javascript
 
     {
         "project_id": project_id,
@@ -23,7 +23,7 @@ bcf.topic.creation
 bcf.topic.update
 ------------------------------------------
 
-.. code-block:: json
+.. code-block:: javascript
 
     {
         "project_id": project_id,
@@ -33,7 +33,7 @@ bcf.topic.update
 bcf.comment.creation
 ------------------------------------------
 
-.. code-block:: json
+.. code-block:: javascript
 
     {
         "project_id": project_id,
@@ -44,7 +44,7 @@ bcf.comment.creation
 bcf.comment.update
 ------------------------------------------
 
-.. code-block:: json
+.. code-block:: javascript
 
     {
         "project_id": project_id,
@@ -55,7 +55,7 @@ bcf.comment.update
 bcf.topic.full.creation
 ------------------------------------------
 
-.. code-block:: json
+.. code-block:: javascript
 
     {
         "project_id": project_id,
@@ -65,30 +65,34 @@ bcf.topic.full.creation
 bcf.topic.full.update
 ------------------------------------------
 
-.. code-block:: json
+.. code-block:: javascript
 
     {
         "project_id": project_id,
         "topic": FullTopic
     }
 
-    ## IFC
+
+IFC Payload Details
+====================
 
 ifc.process_update
 ------------------------------------------
 
-.. code-block:: json
+.. code-block:: javascript
 
     {
         Ifc
     }
 
-    ## Project
+
+Project Payload Details
+=========================
 
 project.creation
 ------------------------------------------
 
-.. code-block:: json
+.. code-block:: javascript
 
     {
         Project
@@ -97,16 +101,20 @@ project.creation
 project.update
 ------------------------------------------
 
-.. code-block:: json
+.. code-block:: javascript
 
     {
         Project
     }
 
+
+Document Payload Details
+==========================
+
 document.creation
 ------------------------------------------
 
-.. code-block:: json
+.. code-block:: javascript
 
     {
         "document": Document,
@@ -116,7 +124,7 @@ document.creation
 document.update
 ------------------------------------------
 
-.. code-block:: json
+.. code-block:: javascript
 
     {
         "document": Document,
