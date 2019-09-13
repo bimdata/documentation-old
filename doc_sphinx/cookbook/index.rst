@@ -15,23 +15,7 @@ Cookbook
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: `Create a backend-less application`_
-
-    .. include:: 2_create_nobackend_app.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-.. topic:: `Create a backend application`_
-
-    .. include:: 2_create_backend_app.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-
-
 .. _Create an application: create_an_application.html
-.. _Create a backend-less application: 2_create_nobackend_app.html
-.. _Create a backend application: 2_create_backend_app.html
 .. _Get Access Token: get_access_token.html
 
 .. toctree::
@@ -39,7 +23,3 @@ Cookbook
     
     create_an_application
     get_access_token
-    usecase_iot
-    usecase_augmented_reality_bcf
-    usecase_bcf_blockchain
-    usecase_tailored_platform
