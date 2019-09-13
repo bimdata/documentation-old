@@ -27,7 +27,6 @@ You will choose a *Name* for your application, let's type **"Wonderful app"** in
 These settings allow your app to communicate using a unique Token Access.
 Other choices are useful to manage the access rights for every API call.
 
-Let the other fields to their default value and submit the form.
 You created your first application.
 
 You will see 2 new pieces of information: the Client ID and the Client Secret.
@@ -62,6 +61,10 @@ Fields description
    * - Redirect URIs
      - List of authorized redirect URIs
        After allowing your app to access their data, users will be redirected to your app on one of these URIs.
+
+.. warning::
+
+    For security reasons, avoid using locals URL such as ``localhost``, ``127.0.0.1``, ``192.168.x.x``, *etc.* for applications in production.
 
 .. seealso::
 
