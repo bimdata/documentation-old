@@ -24,7 +24,7 @@ These applications:
   - must use **BIMData Connect users** credentials system.
   - are usually mobile apps or small Javascript apps.
 
-➤ `Create a backend-less app`_
+➤ :doc:`Create a backend-less app <../cookbook/create_an_application>`
 
 Application with a backend
 --------------------------
@@ -41,7 +41,7 @@ These applications:
 .. note
     Our own BIMData Platform application uses BIMData Connect users (backend-app with users).
 
-➤ `Create a backend app`_
+➤ :doc:`Create an application <../cookbook/create_an_application>`
 
 Without Users
 ~~~~~~~~~~~~~
@@ -53,7 +53,7 @@ These applications:
   - can't share data with other BIMData applications
   - have an easier setup
 
-➤ `Create a backend app`_
+➤ :doc:`Create a backend app <../cookbook/create_an_application>`
 
 
 
@@ -74,11 +74,11 @@ Retrieve an app Access Token
 ----------------------------
 
 An application Access Token represents the app itself and is not linked to any user. 
-It is used when you don't use **BIMData Connect** users or if you want to use `webhooks`_  or if you're doing some automated tasks.
+It is used when you don't use **BIMData Connect** users or if you want to use :doc:`webhooks <../guide/webhooks>`  or if you're doing some automated tasks.
 
 .. note::
 
-    See `Get Access Token documentation`_ for more information.
+    See :doc:`Get Access Token documentation <../cookbook/get_access_token>` for more information.
 
 
 Retrieve a user Access Token
@@ -92,10 +92,8 @@ There are multiple ways to ask them their consent, you can see them LINK TO Open
 
 .. note::
 
-    See `Authentication Flow documentation`_
+    See :doc:`Authentication Flow documentation <../guide/authentication_flows>`
 
-
-.. _api_onboarding_cloud:
 
 3 - API Onboarding
 ===================
@@ -120,7 +118,7 @@ Cloud
     :end-before: endexcerpt
 
 .. note::
-    To learn `more about the cloud, see the concept page`_.
+    To learn :doc:`more about the cloud, see the concept page <../concepts/cloud>`.
 
 
 Filters
@@ -131,17 +129,13 @@ Filters
     :end-before: endexcerpt
 
 .. note::
-    To learn `more about the filters, see the concept page`_.
-
-.. _more about the cloud, see the concept page: ../concepts/cloud.html
-.. _more about the filters, see the concept page: ../guide/filters.html
+    To learn :doc:`more about the filters, see the concept page <../guide/filters>`.
 
 
 4 - Include the Viewer
 =======================
 
-See the dedicated page `Getting Started with the Viewer`_
-
+See the dedicated page :doc:`Getting Started with the Viewer <../viewer/getting_started>` 
 
 
 5 - Users Management
@@ -164,7 +158,7 @@ Constant values in API
 
 Using the API, there are constant values associated with roles.
 
-See `the User endpoint`_ to learn about the usage.
+See `the User endpoint <../api/index.html#operation--user-get>`_ to learn about the usage.
 
 .. note::
 
@@ -232,16 +226,6 @@ Guest
 ~~~~~
 
 Can read-only: DMS, models, BCF and write BCF content.
-
-
-.. _the User endpoint: ../api/index.html#operation--user-get
-.. _Getting Started with the Viewer: ../viewer/getting_started.html
-
-.. _Create a backend-less app: ../cookbook/2_create_nobackend_app.html
-.. _Create a backend app: ../cookbook/2_create_backend_app.html
-.. _webhooks: ../guide/webhooks.html
-.. _Get Access Token documentation: ../cookbook/get_access_token.html
-.. _Authentication Flow documentation: ../guide/authentication_flows.html
 
 .. toctree::
     :maxdepth: 1

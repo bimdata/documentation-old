@@ -7,15 +7,17 @@ Create your application
         How-To create your application on BIMData Connect
     endexcerpt
 
-**How-To create your application on BIMData Connect**
-
-Create an account on the |bimdata_connect| website. After the login step, go to "Manage your application" screen and fill the form to Create an Application.
-
 .. image:: /_images/cookbook/BIMdata_create_application.png
    :scale: 70 %
    :alt: Create your application
    :align: right
 
+
+How-To create your application on BIMData Connect
+====================================================
+
+Create an account on the |bimdata_connect| website. 
+After the login step, go to "Manage your application" screen and fill the form to Create an Application.
 
 You will choose a *Name* for your application, let's type **"Wonderful app"** in the field *Name*.
 
@@ -24,6 +26,12 @@ You will choose a *Name* for your application, let's type **"Wonderful app"** in
 
 These settings allow your app to communicate using a unique Token Access.
 Other choices are useful to manage the access rights for every API call.
+
+Let the other fields to their default value and submit the form.
+You created your first application.
+
+You will see 2 new pieces of information: the Client ID and the Client Secret.
+This Client ID and Client Secret are mandatory to build your application.
 
 
 .. seealso::
@@ -54,14 +62,6 @@ Fields description
    * - Redirect URIs
      - List of authorized redirect URIs
        After allowing your app to access their data, users will be redirected to your app on one of these URIs.
-
-
-Let the other fields to their default value and submit the form.
-You created your first application.
-
-You will see 2 new pieces of information: the Client ID and the Client Secret.
-This Client ID and Client Secret are mandatory to build your application.
-
 
 .. seealso::
 
