@@ -72,8 +72,9 @@ Libraries
 ================
 
 We're currently maintaining two external libraries:
-* Our `external lib in JavaScript`_
-* Our `external lib in Python`_.
+
+ * Our `external lib in JavaScript`_
+ * Our `external lib in Python`_.
 
 They are auto-generated from `our OpenAPI file`_ with `openapi-generator`_.
 
