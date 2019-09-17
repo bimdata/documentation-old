@@ -95,8 +95,11 @@ There are multiple ways to ask them their consent, you can see them LINK TO Open
     See :doc:`Authentication Flow documentation <../guide/authentication_flows>`
 
 
+
 3 - API Onboarding
 ===================
+
+
 
 BIMData API is a tool to interact with your models stored on BIMData's servers.
 Using the API, you can manage your projects, the clouds, upload your IFC files, manage them and retrieve and update data from your models through endpoints.
@@ -109,6 +112,7 @@ BIMData API follows these general principles:
 * Actions are indicated by HTTP verbs: GET, POST, PUT, PATCH, DELETE
 * All authentication is possible via OAuth2 bearer tokens
 
+.. _api_onboarding_gt:
 
 Cloud
 -----
