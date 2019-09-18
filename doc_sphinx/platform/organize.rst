@@ -25,7 +25,6 @@ Clouds
 
     .. figure:: ../_images/user_guide/platform/page-cloud.png
         :alt: Cloud screen
-        :align: right
 
 A cloud is a set of `projects`_ sharing the same configuration. 
 
@@ -58,7 +57,6 @@ Projects
 
     .. figure:: ../_images/user_guide/platform/page-project-list.png
         :alt: Project list
-        :align: right
 
 A project is a place where IFC files and documents are stored. 
 
