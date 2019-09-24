@@ -7,6 +7,16 @@ BIMData's API
         Discover BIMData's API documentation
     endexcerpt
 
+API Reference
+==============
+
+Just looking for the API Reference?
+
+.. raw:: html
+
+   <a href="../api/index.html" class="btn btn-primary">Go to API Reference</a>
+
+
 Introduction
 ================
 
@@ -17,15 +27,6 @@ One your account on BIMData Connect is created, you can:
 * Create and manage projects
 * upload IFC file
 * request data from clouds, projects, and models
-
-API Reference
-==============
-
-Just looking for the API Reference?
-
-.. raw:: html
-
-   <a href="../api/index.html" class="btn btn-primary">Go to API Reference</a>
 
 
 URL
