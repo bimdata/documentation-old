@@ -47,6 +47,7 @@ Without Users
 ~~~~~~~~~~~~~
 
 Chose this way if you don't want to use BIMData Connect users.
+See :doc:`how-to create an IFC Access Token <../cookbook/ifc_access_token>`
 
 These applications:
   - have to manage their own users and authorizations
