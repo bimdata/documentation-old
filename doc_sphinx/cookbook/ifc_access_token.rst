@@ -12,6 +12,8 @@ To use them, your application needs the scope `ifc:token_manage`
 * You can create a token `with the createAccessToken endpoint`_
 * You revoke a token `with the deleteAccessToken endpoint`_
 * You can list all existing tokens for an IFC `with the getAccessTokens endpoint`_
+
+
 .. seealso::
 
     See also :doc:`Create an application </cookbook/create_an_application>`

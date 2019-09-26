@@ -49,6 +49,19 @@ Guide
        :start-after: excerpt
        :end-before: endexcerpt
 
+.. topic:: `Identity Providers`_
+
+    .. include:: identity_providers.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+.. topic:: `Invitations`_
+
+    .. include:: invitations.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+
 
 .. toctree::
     :hidden:
@@ -60,6 +73,8 @@ Guide
     Filters <filters>
     Webhooks <webhooks>
     Security Concerns<security>
+    Identity Providers <identity_providers>
+    Invitation process <invitations>
 
 .. _API Introduction: ../api/introduction.html
 .. _Authentication: authentication_bimdata_connect.html
@@ -68,6 +83,8 @@ Guide
 .. _Filters: filters.html
 .. _Webhooks: webhooks.html
 .. _Security: security.html
+.. _Identity Providers: identity_providers.html
+.. _Invitations: invitations.html
 
 
 
