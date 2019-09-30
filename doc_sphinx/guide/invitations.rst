@@ -36,8 +36,8 @@ Example Request
 .. substitution-code-block:: javascript
    :linenos:
 
-    {
-        "id": 1, 
+    curl -H "Content-Type: application/json" -X POST INVITATION_URL -d '{
+        "id": 1,
         "client_id": "111111",
         "redirect_uri": "https://platform.bimdata.io/cloud/12/project/15",
         "cloud_name": "Awesome Cloud",
@@ -46,13 +46,13 @@ Example Request
         "project_role": 100,
         "email": "user@bimdata.io",
         "sender_provider_sub": "12345678-564798-8789-784563",
-    }
+    }' 
 
 
 The detail of the fields
 -----------------------------
 
-.. list-table:: POST ``{invitation_url}`` with JSON
+.. list-table::
    :header-rows: 1
    :widths:  10 25 65
 
