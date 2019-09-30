@@ -4,7 +4,7 @@ Identity Providers
 
 .. 
     excerpt
-        BIMData supports many Identity Providers (BIMData Connect is an Identity provider) through Keycloak .
+        Log in BIMData with your own Active Directory, LDAP or OpenID Connect service
     endexcerpt
 
 BIMData supports many Identity Providers (BIMData Connect is an Identity provider) through `Keycloak`_, an Open Source software backed by RedHat.
