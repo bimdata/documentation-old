@@ -1,7 +1,7 @@
 :orphan:
-==================
-Webhook Signature
-==================
+==================================
+Webhook and Invitation signature
+==================================
 
 Signature
 =========

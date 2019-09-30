@@ -17,19 +17,20 @@ BIMData Connect:
  * Send the response to BIMData API
 
 
+Use your own Identity Provider
+================================
+
 If you use your own Identity Provider with BIMData, you manage invitations yourself (standing by the idea that it's *"Your users, your process"*).
 
+When you register an Identity Provider, you must define an Invitation URL where the invitation's data will be sent.
+We send a bundle of data to this URL (see the details below in Example Request).
 
-When you register an Identity Provider, you must define an Invitation URL. 
-We send some information to this URL (see the details below).
+In addition to that, you need a hash to sign your invitation and guarantee the invitation is the same.
 
 When an invitation is created with `inviteCloudUser`_ or `inviteProjectUser`_, BIMData API saves the invitation with the status PENDING (**P**) and send a signal to your invitation URL.
 
-Example Response
-=================
-
-The code
------------
+Example Request
+-----------------
 
 
 .. substitution-code-block:: javascript
@@ -91,16 +92,21 @@ The detail of the fields
 Signature
 ==========
 
-To avoid malicious calls, we sign the request with the ``client_secret`` of your provider's application. 
-
+To avoid malicious calls, we sign the request with a hash serving as a ``client secret`` of your provider's application. 
 
 If the invitation is sent again, you will receive the same JSON with the same ``id``.
+
+Message received
+=================
 
 Once the message is received, you do whatever you need with it:
 
  * Send an e-mail to the receiver and let him accept or deny the invitation,
  * Automatically accept or deny the invitation,
  * Anything else.
+
+Accept or deny an invitation
+=============================
 
 To accept or deny an invitation, see `Identity Provider in the API Reference`_
 Only Identity Provider Applications can call these routes.
