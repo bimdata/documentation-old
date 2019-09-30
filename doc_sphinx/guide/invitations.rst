@@ -25,7 +25,7 @@ If you use your own Identity Provider with BIMData, you manage invitations yours
 When you register an Identity Provider, you must define an Invitation URL where the invitation's data will be sent.
 We send a bundle of data to this URL (see the details below in Example Request).
 
-In addition to that, you need a hash to sign your invitation and guarantee the invitation is the same.
+In addition to that, you need to give us a secret to sign invitation calls to guarantee the call is legit (sent by us and not by a malicious hacker).
 
 When an invitation is created with `inviteCloudUser`_ or `inviteProjectUser`_, BIMData API saves the invitation with the status PENDING (**P**) and send a signal to your invitation URL.
 
