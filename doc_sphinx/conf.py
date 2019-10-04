@@ -367,6 +367,7 @@ latex_elements = {
     "tableofcontents": " ",
     # No default toc
     # "tableofcontents": "",
+      'extraclassoptions': 'openany,oneside',
 }
 
 latex_show_urls = "footnote"

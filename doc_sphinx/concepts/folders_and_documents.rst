@@ -204,4 +204,4 @@ References
 
 .. seealso::
 
-    See also :ref:`api_onboarding_cloud`
+    See also  :ref:`the Guided Tour <api_onboarding_gt>`
