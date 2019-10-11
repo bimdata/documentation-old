@@ -17,10 +17,19 @@ $(function() {
       $(this).addClass("active");
     });
 
-    $("section").on("click", function() {
+    $("section").click(function() {
+      if ($("section").hasClass("expand")) {
+        $("section").removeClass("expand");
+      } else {
+        $(this).addClass("expand");
+      }
+    });
+    $("section li a").click(function(e) {
       $(this)
-        .closest("section")
-        .toggleClass("expand");
+        .parent()
+        .parent()
+        .addClass("expand");
+      e.stopPropagation();
     });
   });
 });
