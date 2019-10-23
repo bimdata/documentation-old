@@ -27,6 +27,7 @@ This process is incorporated into BIMData Viewer via a custom BCF plug-in.
 
 .. image:: ../_images/use_cases/bcf_in_blockchain.png
     :align: center
+    :scale: 50 %
     :alt: Schematic process of BCF in the blockchain
 
 .. note::
