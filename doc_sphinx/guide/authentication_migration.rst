@@ -56,7 +56,7 @@ The new request takes a JSON payload.
 .. substitution-code-block:: python
 
     import requests
-    url = "|bimdata_connect|/token"
+    url = "|iam_url|/auth/realms/bimdata/protocol/openid-connect/token"
     payload = {
         "client_id": CLIENT_ID,
         "client_secret": CLIENT_SECRET,

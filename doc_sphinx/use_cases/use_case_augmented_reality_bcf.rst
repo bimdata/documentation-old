@@ -25,9 +25,6 @@ On the mobile device, the same Model is loaded in a tablet-specific viewer (base
 The users log in the BCF Server using BIMData Connect and retrieve their BCF comments.
 The BCF Server let any client-app retrieve BCF comments linked to any given Model. Then on-site, the users use the AR to superpose Model to what they are viewing through the camera of the mobile device. The users can create and edit BCF comments to acknowledge the status of the building along the corresponding Model.
 
-.. only:: html
-
-    .. image:: /_images/use_cases/bcf_and_ar.svg
-    :scale: 50%
-    :alt: schematic On-site BCF usage with Augmented Reality
+.. image:: ../_images/use_cases/augmented_reality.png
     :align: center
+    :alt: Screenshot of the Projects screen of the BIMData's Platform
