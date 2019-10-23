@@ -27,4 +27,5 @@ The BCF Server let any client-app retrieve BCF comments linked to any given Mode
 
 .. image:: ../_images/use_cases/augmented_reality.png
     :align: center
+    :scale: 50 %
     :alt: Screenshot of the Projects screen of the BIMData's Platform
