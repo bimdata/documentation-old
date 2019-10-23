@@ -70,7 +70,7 @@ scv_whitelist_branches = tuple(scv_whitelist_branches_name + scv_whitelist_branc
 API_URL = os.environ.get("API_URL", "https://api-staging.bimdata.io")
 CDN_URL = os.environ.get("CDN_URL", "https://cdn-staging.bimdata.io")
 CONNECT_URL = os.environ.get("CONNECT_URL", "https://login-staging.bimdata.io")
-IAM_URL = os.environ.get("IAM_URL", "|iam_url|/auth/realms/bimdata/protocol/openid-connect/token")
+IAM_URL = os.environ.get("IAM_URL", "https://iam-next.bimdata.io/auth/realms/bimdata/protocol/openid-connect/token")
 PLAYGROUND_CLIENT_ID = os.environ.get("PLAYGROUND_CLIENT_ID", "719549")
 
 # replace in code
