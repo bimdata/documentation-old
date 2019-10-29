@@ -4,7 +4,7 @@ Use-case: BCF in the blockchain
 
 ..
     excerpt
-        Discover why BCF comments stored in a blockchain
+        Discover why BCF comments are stored in a blockchain
     endexcerpt
 
 
