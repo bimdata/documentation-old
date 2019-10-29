@@ -8,20 +8,21 @@ Use Case: Enrich BIM Viewer with IoT data
     endexcerpt
 
 
+On one hand, we have different sensors placed in our building: some are to measure temperature and others are to measure the moisture.
+On the other hand, we have an IFC Model of the building including the locations of all the sensors.
 
-What was the input?
-======================
+And we also have pictures of the sensors on-site. Every picture of sensors is linked to a place in the Model.
 
-We have sensors for temperature and sensors for moisture placed in our building.
-We have a Model of the building, locations, and pictures of the sensors. We attach every picture to a place on the Model.
+Purpose
+==========
 
 We want to visualize the location of the sensors in the building.
 
 The idea
 ===========
 
-* View values on a 3D view of the building
-* Use the BCF display system to display custom images.
+* View sensors' values on a 3D view of the building
+* Use the BCF display system to display custom images
 
 The result
 ===========
@@ -40,7 +41,7 @@ Step-by-Step
 1/ Init the Viewer
 ----------------------
 
-We set a Viewer with some useful options:
+We create a Viewer object using some options:
 
  * ``edit: false``: no edition tools are provided
  * ``comment: false``: no comment tool is provided
@@ -48,7 +49,7 @@ We set a Viewer with some useful options:
  * ``fullscreen: false``: no fullscreen option
  * ``property: false``: no property button is displayed
 
-Basically, no UI interaction is needed.
+Basically, no UI interaction is needed in this data visualization.
 
 .. code-block:: javascript
 
@@ -67,7 +68,7 @@ Basically, no UI interaction is needed.
 2/ Set a list of monitored elements
 ------------------------------------
 
-In this recipe, we have chosen Instagram photos to associate with the elements.
+For this example, we have chosen Instagram photos to associate with the IFC elements.
 The sensors are listed with their UUID to be later linked with BCF.
 
 .. code-block:: javascript
@@ -80,6 +81,7 @@ The sensors are listed with their UUID to be later linked with BCF.
     ];
 
 .. note:: 
+
     Elements can be retrieved from an external Database.
 
 3/ Create annotations styles
