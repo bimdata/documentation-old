@@ -31,6 +31,17 @@ OpenAPI
 
 Our files are auto-generated from `our OpenAPI file`_ with `openapi-generator`_.
 
+Postman
+========
+
+You could also run our Postman collection: 
+
+.. image:: https://run.pstmn.io/button.svg
+   :alt: Run in Postman!
+   :target: https://app.getpostman.com/run-collection/3d3c0b2a685505934729
+
+:doc:`Check our guide to get started with our Postman collection </cookbook/postman_getting_started>`.
+
 Getting Help
 =============
 
@@ -44,3 +55,5 @@ You can reach us by e-mail: support@bimdata.io
 
 .. _REST: https://en.wikipedia.org/wiki/Representational_state_transfer
 .. _cross-origin resource sharing: https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
+
+.._ Run in Postman: https://app.getpostman.com/run-collection/3d3c0b2a685505934729
