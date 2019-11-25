@@ -8,19 +8,19 @@
       var projectId = 100;
       var ifcId = 175;
       var defaultClient = bimdata.ApiClient.instance;
-      
-      defaultClient.basePath = 'https://api-beta.bimdata.io';
+
+      defaultClient.basePath = 'https://api.bimdata.io';
       // Configure API key authorization: Bearer
       var Bearer = defaultClient.authentications['Bearer'];
       Bearer.apiKey = 'Bearer ' + accessToken;
-      
+
       var viewer = new BIMDataViewer('embed', {
         accessToken: accessToken,
         cloudId: cloudId,
         projectId: projectId,
         ifcId: ifcId
       });
-      
+
       // Wait the viewer to finish loading
       viewer.on('viewer-load', function(e) {
         // Hide all elements of the model
@@ -42,11 +42,11 @@
             let widthProperty = propertySet.properties.find(prop => prop.definition.name == 'Width');
             return widthProperty.value < 0.83;
           });
-      
+
           let doorsUuidList = doors.map(door => `${ifcId}#${door.uuid}`);
           let adaptedDoorsUuidList = adaptedDoors.map(door => `${ifcId}#${door.uuid}`);
           let unadaptedDoorsUuidList = unadaptedDoors.map(door => `${ifcId}#${door.uuid}`);
-      
+
           viewer.unghost(doorsUuidList);
           viewer.setPickable(doorsUuidList);
           // Color in green doors that are adapted to disabled persons and unghost doors
