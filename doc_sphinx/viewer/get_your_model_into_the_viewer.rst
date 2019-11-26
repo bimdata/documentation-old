@@ -20,8 +20,8 @@ This will include the ``bimdata.ApiClient`` you will use to make your API calls.
 .. code-block:: html
 
     <script type="text/javascript" src="https://unpkg.com/@bimdata/bimdata-api-client/dist/javascript-api-client.min.js"><!-- API call --></script>
-  
-  
+
+
 What info do you will get?
 =================================
 
@@ -44,11 +44,11 @@ Then, you will use the API client to get the Bearer object, and you Access Token
 
 
 .. code-block:: javascript
-        
-        defaultClient.basePath = 'https://api-beta.bimdata.io';
+
+        defaultClient.basePath = 'https://api.bimdata.io';
         // Configure API key authorization: Bearer
         var Bearer = defaultClient.authentications['Bearer'];
         Bearer.apiKey = 'Bearer ' + accessToken;
-      
+
 
 Now, you are able to retrieve the Model from your cloud.

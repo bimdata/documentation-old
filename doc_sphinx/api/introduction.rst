@@ -2,7 +2,7 @@
 BIMData's API
 ===============
 
-.. 
+..
     excerpt
         Discover BIMData's API documentation
     endexcerpt
@@ -82,7 +82,7 @@ They are auto-generated from `our OpenAPI file`_ with `openapi-generator`_.
 
 .. _external lib in JavaScript: https://www.npmjs.com/package/@bimdata/bimdata-api-client
 .. _external lib in Python: https://pypi.org/project/bimdata-api-client/
-.. _our OpenAPI file: https://api-beta.bimdata.io/doc#/
+.. _our OpenAPI file: https://api.bimdata.io/doc#/
 .. _openapi-generator: https://github.com/OpenAPITools/openapi-generator
 
 .. _Go to API Reference: ../api/index.html
