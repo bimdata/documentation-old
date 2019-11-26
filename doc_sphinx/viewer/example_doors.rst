@@ -24,7 +24,7 @@ Get all the doors
 ------------------
 
 Using the ``ifcApi`` you retrieve the doors the element `IfcDoor`, the getElements() methods could take an argument to filter by IFC element.
-Then you enlist the doors in two separate lists, based on their width: 
+Then you enlist the doors in two separate lists, based on their width:
 
 Retrieve the whole script on `our Codepen`_.
 
@@ -46,19 +46,19 @@ Example of the Viewer:
       var projectId = 100;
       var ifcId = 175;
       var defaultClient = bimdata.ApiClient.instance;
-      
-      defaultClient.basePath = 'https://api-beta.bimdata.io';
+
+      defaultClient.basePath = 'https://api.bimdata.io';
       // Configure API key authorization: Bearer
       var Bearer = defaultClient.authentications['Bearer'];
       Bearer.apiKey = 'Bearer ' + accessToken;
-      
+
       var viewer = new BIMDataViewer('embed', {
         accessToken: accessToken,
         cloudId: cloudId,
         projectId: projectId,
         ifcId: ifcId
       });
-      
+
       // Wait the viewer to finish loading
       viewer.on('viewer-load', function(e) {
         // Hide all elements of the model
