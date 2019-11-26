@@ -7,6 +7,15 @@ Guided Tour
         Take a tour around and create your first application
     endexcerpt
 
+.. note:: 
+   
+    About the Guided Tour:
+
+    * Topics: application, 
+    * Pre-requisites: REST API knowledge
+    * Goal of this tutorial: give your an overall view on our software
+    * 5 steps
+
 
 1 - Which app will you create?
 ==============================
