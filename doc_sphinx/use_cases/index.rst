@@ -23,9 +23,16 @@ Use Cases
        :start-after: excerpt
        :end-before: endexcerpt
 
+.. topic:: :doc:`Documentation linked in the Viewer<use_case_reference_in_the_viewer>`
+
+    .. include:: use_case_reference_in_the_viewer.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
 .. toctree::
     :hidden:
 
     use_case_iot
     use_case_augmented_reality_bcf
     use_case_bcf_blockchain
+    use_case_reference_in_the_viewer

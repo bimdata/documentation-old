@@ -15,8 +15,8 @@ Welcome
   user_endpoint
 
 
-The Bimdata API is organized around `REST`_. Our API has predictable, resource-oriented URLs, and uses HTTP response codes to indicate API errors. 
-We use built-in HTTP features, like HTTP authentication and HTTP verbs, which are understood by off-the-shelf HTTP clients. 
+The Bimdata API is organized around `REST`_. Our API has predictable, resource-oriented URLs, and uses HTTP response codes to indicate API errors.
+We use built-in HTTP features, like HTTP authentication and HTTP verbs, which are understood by off-the-shelf HTTP clients.
 We support `cross-origin resource sharing`_, allowing you to interact securely with our API from a client-side web application (though you should never expose your secret API key in any public website's client-side code).
 JSON is returned by all API responses, including errors, although our API libraries convert responses to appropriate language-specific objects.
 
@@ -34,7 +34,7 @@ Our files are auto-generated from `our OpenAPI file`_ with `openapi-generator`_.
 Postman
 ========
 
-You could also run our Postman collection: 
+You could also run our Postman collection:
 
 .. image:: https://run.pstmn.io/button.svg
    :alt: Run in Postman!
@@ -50,7 +50,7 @@ Do you need help?
 
 You can reach us by e-mail: support@bimdata.io
 
-.. _our OpenAPI file: https://api-beta.bimdata.io/doc#/
+.. _our OpenAPI file: https://api.bimdata.io/doc#/
 .. _openapi-generator: https://github.com/OpenAPITools/openapi-generator
 
 .. _REST: https://en.wikipedia.org/wiki/Representational_state_transfer
