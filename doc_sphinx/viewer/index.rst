@@ -6,33 +6,24 @@ Viewer Documentation
 =======================
 
 BIMData provides a 3D Viewer with which you can interact with Javascript.
-The Viewer is built with VueJS framework, and the architecture of the Viewer is with components.
+The Viewer is built with VueJS framework, the architecture of the Viewer is using components, and built-on XeoGL, the opensource
+
+Usage of the Viewer is either simply embedded in your web application, or with a custom to your needs plug-in changing the behavior of the Viewer. 
 
 Guide
 ======
 
+* :doc:`Getting Started with the Viewer </viewer/getting_started>`
 
-.. tip::
+Reference
+===========
 
-    Define in your CSS the minimal size of the Viewer container. The Viewer cannot fill its parent element.
-
-Embedded
----------
-
- * With VueJS
- * Without VueJS
-
-Custom Viewer
-----------------
-
-Behavior
-Plugin
-Connect the Viewer with your system (ie: 2D map acting on the 3D viewer)
+* :doc:`Events and listeners </viewer/listeners>`
 
 Tutorials
 ==========
 
- * How-to make a Viewer plug-in
+ * :doc:`How-to make a Viewer plug-in </viewer/create_viewer_plugin>`
 
 Requirements
 =================
@@ -57,6 +48,13 @@ In addition to that, we recommend:
 * 4 GB RAM (1GB for the system, 1GB for the browser and 2GB for the Viewer)
 * Javascript and built-in hardware acceleration enabled
 * Modern browser with `ECMAScript 2015 support`_
+
+.. toctree::
+    :hidden:
+
+    getting_started
+    create_viewer_plugin
+    listeners
 
 .. _Test the WebGL support: https://get.webgl.org
 .. _WebGL-enabled browsers: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
