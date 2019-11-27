@@ -10,7 +10,7 @@ Tutorials
 
 .. topic:: `Viewer`_
 
-    .. include:: ../viewer/getting_started.rst
+    .. include:: ../viewer/index.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
@@ -33,7 +33,7 @@ Tutorials
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. _Viewer: ../viewer/getting_started.html
+.. _Viewer: ../viewer/index.html
 .. _API: retrieve-elements.html
 .. _BCF: export_excel.html
 .. _Getting Started: getting_started.html
@@ -44,6 +44,6 @@ Tutorials
     :maxdepth: 1
 
     Guided Tour <guided_tour>   
-    Getting Started with the Viewer <../viewer/getting_started>
+    Getting Started with the Viewer <../viewer/index>
     Tutorial: Retrieve elements of your model <retrieve-elements>
     Tutorial: Process BCF data for Excel export <export_excel>
