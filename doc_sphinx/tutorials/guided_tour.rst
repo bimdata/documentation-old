@@ -140,7 +140,7 @@ Filters
 4 - Include the Viewer
 =======================
 
-See the dedicated page :doc:`Getting Started with the Viewer <../viewer/getting_started>` 
+See the dedicated page :doc:`Getting Started with the Viewer <../viewer/index>` 
 
 
 5 - Users Management
