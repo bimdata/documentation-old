@@ -29,3 +29,5 @@ Examples :
 ------------
 
 * Connect the Viewer with your system to link the 2D map user's actions on the 3D Viewer rendering
+
+:doc:`See how-to customize the Viewer to your needs <using_custom_viewer>`
