@@ -33,8 +33,6 @@ Only `WebGL-enabled browsers`_ are supported:
 
 * Firefox
 * Chrome
-* Edge
-* Safari 11 or later
 
 .. note::
 
@@ -43,12 +41,11 @@ Only `WebGL-enabled browsers`_ are supported:
 Recommended
 ------------
 
-For best performance, use the latest versions of modern browsers: Firefox, Chrome, Edge or Safari.
+For best performance, use the latest versions of modern browsers: Firefox or Chrome.
 In addition to that, we recommend:
 
 * 4 GB RAM (1GB for the system, 1GB for the browser and 2GB for the Viewer)
 * Javascript and built-in hardware acceleration enabled
-* Modern browser with `ECMAScript 2015 support`_
 
 .. toctree::
     :hidden:
