@@ -23,7 +23,8 @@ Reference
 Tutorials
 ==========
 
- * :doc:`How-to make a Viewer plug-in </viewer/create_viewer_plugin>`
+ * :doc:`How-to customize the Viewer to your design </viewer/using_custom_viewer>`
+ * :doc:`How-to create a Viewer plug-in </viewer/create_viewer_plugin>`
 
 Requirements
 =================
@@ -54,6 +55,7 @@ In addition to that, we recommend:
 
     getting_started
     create_viewer_plugin
+    using_custom_viewer
     listeners
 
 .. _Test the WebGL support: https://get.webgl.org
