@@ -14,7 +14,6 @@ Tutorials
        :start-after: excerpt
        :end-before: endexcerpt
 
-
 .. topic:: `API`_
 
     .. include:: retrieve-elements.rst
