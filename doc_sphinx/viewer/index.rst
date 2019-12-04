@@ -26,6 +26,31 @@ Tutorials
  * :doc:`How-to customize the Viewer to your design </viewer/using_custom_viewer>`
  * :doc:`How-to create a Viewer plug-in </viewer/create_viewer_plugin>`
 
+Example of code
+=================
+
+.. code-block:: html
+
+    <div style="height: 95vh">
+      <div id="app"></div>
+    </div>
+    <script>
+      const cfg = {
+        cloudId: 88,
+        projectId: 100,
+        ifcIds: [175],
+        bcf:false
+      }
+      const accessToken = 'DEMO_TOKEN';
+      const {viewer, store, eventHub, setAccessToken} = initBIMDataViewer('app', accessToken, cfg);
+    </script>
+
+
+
+
+.. raw:: html
+   :file: ../_static/viewer.html
+
 Requirements
 =================
 
