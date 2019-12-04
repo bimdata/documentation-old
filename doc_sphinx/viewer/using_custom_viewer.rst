@@ -196,7 +196,7 @@ In the `main.js` file:
 
 .. code-block:: javascript
    :linenos:
-   :caption: main.js
+   :caption: File ``main.js``
 
     import Vue from 'vue'
     import App from './App.vue'
