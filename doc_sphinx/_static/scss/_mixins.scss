@@ -1,0 +1,260 @@
+// mixin BTN
+@mixin btn($background-color, $color, $font){
+  padding: 0;
+  width: 100%;
+  height: 32px;
+  border: none;
+  border-radius: 3px;
+  background-color: $background-color;
+  color: $color;
+  font-family: $font;
+  font-size: 1rem;
+  line-height: 1rem;
+  &:active:focus{
+    box-shadow: none;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+@mixin bm-box-shadow(){
+  box-shadow: $bd-box-shadow;
+}
+
+// mixin CARD
+@mixin card($margin, $padding, $height, $max-width, $background-color, $border-radius, $box-shadow){
+  margin: $margin;
+  padding: $padding;
+  height: $height;
+  max-width: $max-width;
+  background-color: $background-color;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+// mixin CONTENEUR FLEXIBLE
+@mixin flexbox{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+// mixin FLEX DIRECTION
+@mixin flex-direction($value: row){
+  @if $value == row-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: horizontal;
+    -moz-box-direction: reverse;
+    -moz-box-orient: horizontal;
+  } @else if $value == column{
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+  } @else if $value == column-reverse{
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: vertical;
+    -moz-box-direction: reverse;
+    -moz-box-orient: vertical;
+  } @else{
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -moz-box-orient: horizontal;
+  }
+  -webkit-flex-direction: $value;
+  -ms-flex-direction: $value;
+}
+
+// mixin FLEX WRAP
+@mixin flex-wrap($value: nowrap){
+  -webkit-flex-wrap: $value;
+  @if $value == nowrap{
+    -ms-flex-wrap: none;
+  } @else{
+    -ms-flex-wrap: $value;
+  }
+  flex-wrap: $value;
+}
+
+// mixin FLEX FLOW
+@mixin flex-flow($values: (row nowrap)){
+  -webkit-flex-flow: $values;
+  -ms-flex-flow: $values;
+  flex-flow: $values;
+}
+
+// mixin ORDER
+@mixin order($int: 0) {
+  -webkit-box-ordinal-group: $int + 1;
+  -moz-box-ordinal-group: $int + 1;
+  -webkit-order: $int;
+  -ms-flex-order: $int;
+  order: $int;
+}
+// mixin FLEX GROW
+@mixin flex-grow($int: 1){
+  -webkit-box-flex: $int;
+  -moz-box-flex: $int;
+  -webkit-flex-grow: $int;
+  -ms-flex: $int;
+  flex-grow: $int;
+}
+// mixin FLEX SHRINK
+@mixin flex-shrink($int: 0){
+  -webkit-flex-shrink: $int;
+  -moz-flex-shrink: $int;
+  -ms-flex: $int;
+  flex-shrink: $int;
+}
+// mixin FLEX BASIS
+@mixin flex-basis($value: auto){
+  -webkit-flex-basis: $value;
+  flex-basis: $value;
+}
+
+// mixin JUSTIFY CONTENT
+@mixin justify-content($value: flex-start){
+  @if $value == flex-start{
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -ms-flex-pack: start;
+  } @else if $value == flex-end{
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+  } @else if $value == space-between{
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+  } @else if $value == space-around{
+    -ms-flex-pack: distribute;
+  } @else{
+    -webkit-box-pack: $value;
+    -moz-box-pack: $value;
+    -ms-flex-pack: $value;
+  }
+  -webkit-justify-content: $value;
+  justify-content: $value;
+}
+
+// mixin ALIGN ITEMS
+@mixin align-items($value: stretch){
+  @if $value == flex-start {
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+  } @else if $value == flex-end{
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+  } @else{
+    -webkit-box-align: $value;
+    -moz-box-align: $value;
+    -ms-flex-align: $value;
+  }
+  -webkit-align-items: $value;
+  align-items: $value;
+}
+
+// mixin ALIGN SELF
+@mixin align-self($value: auto){
+  -webkit-align-self: $value;
+  @if $value == flex-start{
+    -ms-flex-item-align: start;
+  } @else if $value == flex-end{
+    -ms-flex-item-align: end;
+  } @else{
+    -ms-flex-item-align: $value;
+  }
+  align-self: $value;
+}
+// mixin ALIGN CONTENT
+@mixin align-content($value: stretch){
+  -webkit-align-content: $value;
+  @if $value == flex-start {
+    -ms-flex-line-pack: start;
+  } @else if $value == flex-end {
+    -ms-flex-line-pack: end;
+  } @else {
+    -ms-flex-line-pack: $value;
+  }
+  align-content: $value;
+}
+// mixin SET REM FONT SIZE
+@function calculateRem($size){
+  $remSize: $size / $font-size;
+  @return $remSize * 1rem;
+}
+@mixin font-size($size){
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// mixin KEYFRAMES & ANIMATION
+@mixin keyframes($animation-name){
+  @-webkit-keyframes #{$animation-name}{
+      @content;
+  }
+  @-moz-keyframes #{$animation-name}{
+      @content;
+  }
+  @-ms-keyframes #{$animation-name}{
+      @content;
+  }
+  @-o-keyframes #{$animation-name}{
+      @content;
+  }
+  @keyframes #{$animation-name}{
+      @content;
+  }
+}
+
+@mixin animation($str){
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+// mixin TRANSITION
+@mixin transition($args...){
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// mixin TRANSFORM
+@mixin transform($transforms){
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  transform: $transforms;
+}
+
+// mixin TRANSFORM ORIGIN
+@mixin transform-origin ($origin){
+  -webkit-transform-origin: $origin;
+  -moz-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+// mixin ROTATE
+@mixin rotate ($deg){
+  @include transform(rotate(#{$deg}deg));
+}
+// mixin SCALE
+@mixin scale($scale){
+  @include transform(scale($scale));
+}
+// mixin TRANSLATE
+@mixin translate ($x, $y){
+  @include transform(translate($x, $y));
+}

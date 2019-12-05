@@ -12,17 +12,16 @@
 {% endblock %}
 
   {%- block content %}
-  <div class="navbar fixed-top px-4 py-0">
-    {%- include "header.html" %}
-  </div>
-  <div class="container-fluid content">
+  {%- include "header.html" %}
+
+  <main>
     {% if pagename == 'index' %}
       {%- include "home.html" %}
     {% else %}
 
-    <div class="row">
+    <div>
       {% if pagename != 'api/index' %}
-      <div class="content_summary col-2 pt-4">
+      <div class="content_summary">
         {%- block sidebar1 %}
         {%- for sidebartemplate in sidebars %}
         {%- include sidebartemplate %}
@@ -32,16 +31,16 @@
       {% endif %}
 
       {% if pagename == 'api/index' %}
-      <div class="content_layout doc-api col-12 pt-4 px-0 ml-sm-auto">
+      <div class="content_layout doc-api">
       {% else %}
-      <div class="content_layout col-10 pt-4 px-5 ml-sm-auto">
+      <div class="content_layout">
       {% endif %}
         {% include "breadcrumbs.html" %}
         {%- block document %}
         <div class="body" role="main">
           {% if "api_playground/" not in pagename or pagename == 'api_playground/index' %}
             {% block body %}{% endblock %}
-          {% else %}     
+          {% else %}
             {%- include "openapi_endpoint.html" %}
           {% endif %}
         </div>
