@@ -1,0 +1,74 @@
+/* custom DOCUMENTATION HEADER
+---------------------------------------- */
+.bimdata-documentation__header{
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__logo{
+    svg{
+      width: 100px;
+    }
+  }
+  &__version{
+    span{
+      width: 24px;
+      display: block;
+      @include font-size(10px);
+      text-align: center;
+    }
+  }
+  &__dark-mode{
+
+  }
+  &__search{
+    #rtd-search-form{
+      position: relative;
+      input{
+        margin: 0;
+        padding: 0 2rem;
+        width: 100%;
+        position: relative;
+        border: none;
+        box-shadow: none;
+
+        &:-webkit-autofill{
+          -webkit-box-shadow: 0 0 0 1000px #fff inset;
+        }
+      }
+      &::before{
+        content: "";
+        position: absolute;
+        background-image: url("../_images/bimdata_loupe.svg");
+        height: 14px;
+        width: 14px;
+        background-size: cover;
+        background-position: center;
+        z-index: 10;
+        top: 6px;
+      }
+    }
+  }
+  &__menu{
+    ul{
+      display: flex;
+      li{
+        a{
+          padding: 18px;
+          font-family: $font-primary;
+          @include font-size(14px);
+        }
+      }
+    }
+  }
+  &__btn{
+    display: flex;
+    .btn-primary{
+      @include transition(all ease .3s);
+      &:hover{
+        background-color: $color-primary-d20;
+        @include transition(all ease .3s);
+      }
+    }
+  }
+}
