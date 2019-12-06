@@ -35,6 +35,9 @@ Overview of the steps:
  #. Customize App.vue
  #. Create a Vue.js Component
 
+.. contents:: Table of Contents
+   :depth: 2
+
 Prepare your environment
 =========================
 
@@ -60,21 +63,32 @@ Create a Vue.js project
 
 With the command ``npm run serve``, you view your Vue.js app with the Viewer in your browser, by default at: http://localhost:8080/ 
 
+In the directory `components/` create a file named `MyComponent.vue`: this file hosts the code of your plug-in.
+
 Customize the App.vue file
 ============================
 
 Open the default created `App.vue` file in your code editor.
 Remove entirely the ``<style>`` element, we do not use it in this tutorial.
 
-
 .. code-block:: xml
-   :caption: App.vue
+   :caption: App.vue file, template part
 
     <template>
     <div id="app">
-        <BIMDataViewer accessToken="DEMO_TOKEN" :cfg='cfg' style="height:100vh;"/>
+        <BIMDataViewer
+        ref="viewer"
+        accessToken="DEMO_TOKEN"
+        :cfg="cfg"
+        style="height:100vh;"
+        />
     </div>
     </template>
+
+The :cfg is about the configuration of the Viewer.
+The ref allows us to use the viewer as the parent of the plug-in element, using the $refs var.
+
+See the Vue.js documentation about $ref: https://vuejs.org/v2/api/#ref
 
 .. tip:: 
     
@@ -87,10 +101,12 @@ Remove entirely the ``<style>`` element, we do not use it in this tutorial.
 Instead of the Helloworld, import the Viewer, like so:
 
 .. code-block:: javascript
-   :caption: App.vue
+   :caption: App.vue file, imports
 
     <script>
-        import BIMDataViewer from '@bimdata/viewer'
+        import BIMDataViewer from "@bimdata/viewer";
+        import MyComponent from "./components/MyComponent";
+
 
 Set the template for your BIMDataViewer Vue.js Component.
 
@@ -103,10 +119,9 @@ In the ``<script>`` element, define the cfg object that defines the settings for
 We chose to remove BCF plugin, and the logo for our Viewer.
 
 .. code-block:: javascript
-   :caption: App.vue
+   :caption: App.vue file
+   :lineno-start: 42
 
-        export default {
-        name: 'app',
         data() {
             return {
             cfg: {
@@ -121,11 +136,44 @@ We chose to remove BCF plugin, and the logo for our Viewer.
         }
     }
 
+Add the mounted() part:
+
+.. code-block:: javascript
+   :caption: App.vue file
+   :lineno-start: 18
+
+    mounted() {
+        this.$refs.viewer.registerPlugins([
+        {
+            name: "myCustomPlugin",
+            component: MyComponent,
+            position: "left-menu",
+            display: "menu",
+            keepActive: true,
+            tooltip: "myCustomPlugin.tooltip",
+            i18n: {
+            en: {
+                myCustomPlugin: {
+                tooltip: "English Tooltip",
+                }
+            },
+            fr: {
+                myCustomPlugin: {
+                tooltip: "French Tooltip",
+                }
+            }
+            }
+        }
+        ]);
+    },
+
+
+
 Configure the BIMDataViewer Component.
 
 .. code-block:: javascript
-   :caption: App.vue
-
+   :caption: File `App.vue`
+   :lineno-start: 65
 
     components: {
         BIMDataViewer
@@ -136,21 +184,51 @@ The complete ``App.vue`` file
 
 Below this is a complete version of the ``App.vue`` file, with all the Viewer options set to ``false``.
 
-.. code-block:: javascript
-   :caption: App.vue (complete file)
-
+.. code-block::
+   :caption: File `App.vue` (complete file)
+   :linenos:
 
     <template>
     <div id="app">
-        <BIMDataViewer accessToken="DEMO_TOKEN" :cfg='cfg' style="height:100vh;"/>
+        <BIMDataViewer
+        ref="viewer"
+        accessToken="DEMO_TOKEN"
+        :cfg="cfg"
+        style="height:100vh;"
+        />
     </div>
     </template>
 
     <script>
-    import BIMDataViewer from '@bimdata/viewer'
+    import BIMDataViewer from "@bimdata/viewer";
+    import MyComponent from "./components/MyComponent";
 
     export default {
-    name: 'app',
+    name: "app",
+    mounted() {
+        this.$refs.viewer.registerPlugins([
+        {
+            name: "myCustomPlugin",
+            component: MyComponent,
+            position: "left-menu",
+            display: "menu",
+            keepActive: true,
+            tooltip: "myCustomPlugin.tooltip",
+            i18n: {
+            en: {
+                myCustomPlugin: {
+                tooltip: "English Tooltip",
+                }
+            },
+            fr: {
+                myCustomPlugin: {
+                tooltip: "French Tooltip",
+                }
+            }
+            }
+        }
+        ]);
+    },
     data() {
         return {
         cfg: {
@@ -159,25 +237,28 @@ Below this is a complete version of the ``App.vue`` file, with all the Viewer op
             ifcIds: [175],
             apiUrl: "https://api-beta.bimdata.io",
             reload: false,
+            alerts: false,
             model: false,
             help: false,
             fullscreen: false,
             section: false,
             projection: false,
-            selectOptions:false,
+            selectOptions: false,
             structureAndProperties: false,
-            bcf: false,
+            // bcf: false,
             logo: false,
             rightClickMenu: false,
-            viewer3DNavCube: false,
+            viewer3DNavCube: false
         }
-        }
+        };
     },
     components: {
         BIMDataViewer
     }
-    }
+    };
     </script>
+
+
 
 
 Create a Vue.js Component
