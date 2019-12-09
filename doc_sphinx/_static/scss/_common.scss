@@ -255,6 +255,10 @@ code {
   @include font-size(10px);
 }
 
+svg{
+  width: 100%;
+}
+
 .section {
   > :target::before {
     padding-top: 60px;
