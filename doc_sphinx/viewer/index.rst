@@ -27,6 +27,7 @@ BIMData provides a 3D Viewer with which you can interact with Javascript.
 The Viewer is built with VueJS framework, the architecture of the Viewer is using components, and built-on XeoKit.
 
  * :doc:`How-to customize the Viewer to your design </viewer/using_custom_viewer>`
+ * :doc:`How-to embed the Viewer using Vue.js</viewer/using_vue_component>`
  * :doc:`How-to create a Viewer plug-in </viewer/create_viewer_plugin>`
 
 Example of code
