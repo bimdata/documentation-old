@@ -5,13 +5,13 @@
 Viewer Documentation
 =======================
 
-BIMData provides a 3D Viewer with which you can interact with Javascript.
-The Viewer is built with VueJS framework, the architecture of the Viewer is using components, and built-on XeoKit.
-
-Usage of the Viewer is either simply embedded in your web application, or with a custom to your needs plug-in changing the behavior of the Viewer. 
+BIMData Viewewr is a 3D Viewer built with Web technologies, you can use it on your website. 
+On top of that our Viewer is customizable through plug-ins.
 
 Guide
 ======
+
+Usage of the Viewer is either simply embedded in your web application, or with a custom to your needs plug-in changing the behavior of the Viewer. 
 
 * :doc:`Getting Started with the Viewer </viewer/getting_started>`
 
@@ -22,6 +22,9 @@ Reference
 
 Tutorials
 ==========
+
+BIMData provides a 3D Viewer with which you can interact with Javascript.
+The Viewer is built with VueJS framework, the architecture of the Viewer is using components, and built-on XeoKit.
 
  * :doc:`How-to customize the Viewer to your design </viewer/using_custom_viewer>`
  * :doc:`How-to create a Viewer plug-in </viewer/create_viewer_plugin>`
