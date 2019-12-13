@@ -2,16 +2,19 @@
 Getting started with the Viewer
 ================================
 
+.. contents:: Table of Contents
+   :depth: 2
 
 Using the Viewer Embedded
 ==========================
+
 
 Embed with Vue.js
 ------------------
 
 You can embed the Viewer in your web application using Vue.js like a Vue Component.
 
-➤ :doc:`See how-to customize the Viewer display <using_custom_viewer>`.
+➤ :doc:`See how-to embed the Viewer using Vue.js <using_vue_component>`.
 
 
 Embed Viewer without Vue.js
@@ -49,7 +52,6 @@ See below how-to embed the Viewer in your HTML:
         const {viewer, store, eventHub, setAccessToken} = initBIMDataViewer('app', accessToken, cfg);
         </script>
     </body>
-
 
 
 .. warning::
