@@ -6,21 +6,26 @@ Getting started with the Viewer
 Using the Viewer Embedded
 ==========================
 
-Embed with VueJS
-----------------
+Embed with Vue.js
+------------------
 
-You can embed the Viewer in your web application using VueJS like a Vue Component.
+You can embed the Viewer in your web application using Vue.js like a Vue Component.
 
 ➤ :doc:`See how-to customize the Viewer display <using_custom_viewer>`.
 
 
-Embed Viewer without VueJS
+Embed Viewer without Vue.js
 ----------------------------
+
+If you are not using Vue.js, you can embed the Viewer with a ``<script>`` tag.
+
+
+See below how-to embed the Viewer in your HTML:
 
 
 .. code-block:: html
    :linenos:
-   :caption: main.js
+   :caption: Complete content of the ``index.html`` file
 
     <!DOCTYPE html>
     <html lang="en" dir="ltr">
@@ -47,7 +52,7 @@ Embed Viewer without VueJS
 
 
 
-.. tip::
+.. warning::
 
     Define in your CSS the minimal size of the Viewer container. The Viewer cannot fill its parent element.
 
