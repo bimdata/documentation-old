@@ -35,10 +35,10 @@ See below how-to embed the Viewer in your HTML:
     <head>
         <meta charset="utf-8">
         <title>BIMData - CJS Example</title>
-        <script src="https://unpkg.com/@bimdata/viewer@0.3.2/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+        <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
     </head>
     <body>
-        <div style="height: 95vh">
+        <div style="height: 100vh">
         <div id="app"></div>
         </div>
         <script>
@@ -52,24 +52,22 @@ See below how-to embed the Viewer in your HTML:
         const {viewer, store, eventHub, setAccessToken} = initBIMDataViewer('app', accessToken, cfg);
         </script>
     </body>
+    </html>
 
 
 .. warning::
 
-    Define in your CSS the minimal size of the Viewer container. The Viewer cannot fill its parent element.
+    Define in your CSS the size of the Viewer container. The Viewer cannot automatically fill its parent element.
 
 
 Using a Custom Viewer
 =======================
 
-When you need to implement a custom behavior for the Viewer, you create a plug-in.
+When you need to implement custom behavior for the Viewer, you create a plug-in.
 
 ➤ :doc:`See how-to customize the Viewer's behavior to your needs <create_viewer_plugin>`.
 
-Examples 
-------------
-
-* Connect the Viewer with your system to link the 2D map user's actions on the 3D Viewer rendering
+By example, you could connect the Viewer with your system to link the 2D map user's actions on the 3D Viewer rendering.
 
 
 

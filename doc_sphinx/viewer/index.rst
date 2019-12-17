@@ -35,22 +35,30 @@ Example of code
 
 .. code-block:: html
 
-    <div style="height: 95vh">
-      <div id="app"></div>
-    </div>
-    <script>
-      const cfg = {
-        cloudId: 88,
-        projectId: 100,
-        ifcIds: [175],
-        bcf:false
-      }
-      const accessToken = 'DEMO_TOKEN';
-      const {viewer, store, eventHub, setAccessToken} = initBIMDataViewer('app', accessToken, cfg);
-    </script>
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>BIMData - CJS Example</title>
+        <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+    </head>
 
-
-
+    <body>
+        <div style="height: 100vh">
+            <div id="app"></div>
+        </div>
+        <script>
+            const cfg = {
+                cloudId: 88,
+                projectId: 100,
+                ifcIds: [175],
+                bcf: false
+            }
+            const accessToken = 'DEMO_TOKEN';
+            const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer('app', accessToken, cfg);
+        </script>
+    </body>
+    </html>
 
 .. raw:: html
    :file: ../_static/viewer.html
