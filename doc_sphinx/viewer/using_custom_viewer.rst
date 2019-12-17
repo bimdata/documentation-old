@@ -15,61 +15,17 @@ To load the Viewer in your web application, use the ``<script>`` tag with the pa
     <script src="https://unpkg.com/@bimdata/viewer@0.3.3/dist/bimdata-viewer.min.js" charset="utf-8"></script>
 
 In your JavaScript:
-* set the data about which IFC model you load
-* then set the options you want
 
-Load your model
-====================
-
-.. substitution-code-block:: javascript
-   :linenos:
-
-        export default {
-            name: 'app',
-            data() {
-                return {
-                    cfg: {
-                        cloudId: 88,
-                        projectId: 100,
-                        ifcIds: [175],
-                        apiUrl: "https://api-beta.bimdata.io",
-                    }
-                }
-            },
-            components: {
-                BIMDataViewer
-            }
-        }
-
-
-Enable or disable functionalities
-==================================
-
-You can disable many functionalities that are enabled by default.
-In the cfg object (see ::doc:`/viewer/getting_started` ), you can add parameters to disable some plugins:
-
-.. substitution-code-block:: javascript
-   :linenos:
-
-    cfg: {
-    /* Data about Cloud, IFC, token */
-    reload: false,
-    model: false,
-    help: false,
-    fullscreen: false,
-    section: false,
-    projection: false,
-    selectOptions:false,
-    structureAndProperties: false,
-    bcf: false,
-    logo: false,
-    rightClickMenu: false,
-    viewer3DNavCube: false,
-    }
+ * set the data about which IFC model you load
+ * then set the options you want
 
 
 Viewer functionalities
 ========================
+
+The Viewer is provided with many functionalities by default. Each one can be disabled independantly.
+In the cfg Object (see ::doc:`/viewer/getting_started` ), you can disable any plugin by setting it to ``false``:
+
 
 Each functionality has a default value and could be disabled.
 
@@ -126,39 +82,53 @@ Each functionality has a default value and could be disabled.
      - Boolean: true/false
      - true 
      - Alert messages, on the bottom
+   * - viewer3DNavCube
+     - Boolean: true/false
+     - true 
+     - XeoKit 3D cube to navigate 
 
 Example with all functionalities disabled
---------------------------------------------
+===========================================
 
-.. substitution-code-block::
+
+.. substitution-code-block:: html
    :linenos:
 
-    <script>
-        import BIMDataViewer from '@bimdata/viewer'
+      <!DOCTYPE html>
+      <html lang="en" dir="ltr">
 
-        export default {
-        name: 'app',
-        data() {
-            return {
-            cfg: {
-                /* Data about Cloud, IFC, token */
-                reload: false,
-                model: false,
-                help: false,
-                fullscreen: false,
-                section: false,
-                projection: false,
-                selectOptions:false,
-                structureAndProperties: false,
-                bcf: false,
-                logo: false,
-                rightClickMenu: false,
-                viewer3DNavCube: false,
-            }
-            }
-        },
-        components: {
-            BIMDataViewer
-        }
-        }
-        </script>
+      <head>
+          <meta charset="utf-8">
+          <title>BIMData - CJS Example</title>
+          <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+      </head>
+
+      <body>
+          <div style="height: 100vh">
+              <div id="app"></div>
+          </div>
+          <script>
+              const cfg = {
+                  cloudId: 88,
+                  projectId: 100,
+                  ifcIds: [175],
+                  bcf: false,
+                  reload: false,
+                  model: false,
+                  help: false,
+                  fullscreen: false,
+                  section: false,
+                  projection: false,
+                  selectOptions: false,
+                  structureAndProperties: false,
+                  bcf: false,
+                  logo: false,
+                  rightClickMenu: false,
+                  viewer3DNavCube: false,
+              }
+              const accessToken = 'DEMO_TOKEN';
+              const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer('app', accessToken, cfg);
+          </script>
+      </body>
+
+      </html>
