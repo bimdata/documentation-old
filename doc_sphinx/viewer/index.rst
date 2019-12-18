@@ -11,7 +11,7 @@ On top of that our Viewer is customizable through plug-ins.
 Guide
 ======
 
-Usage of the Viewer is either simply embedded in your web application, or with a custom to your needs plug-in changing the behavior of the Viewer. 
+Usage of the Viewer is either simply embedded in your web application, or with a custom to your needs plugin changing the behavior of the Viewer. 
 
 * :doc:`Getting Started with the Viewer </viewer/getting_started>`
 
@@ -28,7 +28,7 @@ The Viewer is built with VueJS framework, the architecture of the Viewer is usin
 
  * :doc:`How-to customize the Viewer to your design </viewer/using_custom_viewer>`
  * :doc:`How-to embed the Viewer using Vue.js</viewer/using_vue_component>`
- * :doc:`How-to create a Viewer plug-in </viewer/create_viewer_plugin>`
+ * :doc:`How-to create a Viewer plugin </viewer/create_viewer_plugin>`
 
 Example of code
 =================
@@ -90,6 +90,7 @@ In addition to that, we recommend:
     getting_started
     create_viewer_plugin
     using_custom_viewer
+    using_vue_component
     listeners
 
 .. _Test the WebGL support: https://get.webgl.org

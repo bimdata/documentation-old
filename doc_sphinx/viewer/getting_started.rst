@@ -63,7 +63,7 @@ See below how-to embed the Viewer in your HTML:
 Using a Custom Viewer
 =======================
 
-When you need to implement custom behavior for the Viewer, you create a plug-in.
+When you need to implement custom behavior for the Viewer, you create a plugin.
 
 ➤ :doc:`See how-to customize the Viewer's behavior to your needs <create_viewer_plugin>`.
 
