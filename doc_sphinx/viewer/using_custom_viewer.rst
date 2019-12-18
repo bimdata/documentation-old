@@ -32,60 +32,47 @@ Each functionality has a default value and could be disabled.
 
 .. list-table:: Viewer functionalities
    :header-rows: 1
-   :widths: 10 20 20 40
+   :widths: 10 40 40
 
    * - Name
-     - Values 
-     - Default value
      - Description
+     - When set to false...
    * - reload
-     - Boolean: true/false
-     - true
-     - ...
+     - Button in the UI. Click on it reload the checked models.
+     - Remove the button.
    * - model
-     - Boolean: true/false
-     - true
-     - list of the Models loaded
+     - Display a list of the Project's Models.
+     - The list is not displayed.
    * - help
-     - Boolean: true/false
-     - true 
-     - Help icon, linked to the [?] keyboard shortcut
+     - Help icon, linked to the [?] keyboard shortcut. When the icon or the key is hit, the help modal is displayed.
+     - The help icon and the shortcut are not provided. 
    * - section
-     - Boolean: true/false
-     - true 
-     - Section icon
+     - Section tool plugin: the Model is sectionable on 3 plans (x, Y and Z).
+     - The plugin is disabled.
    * - projection
-     - Boolean: true/false
-     - true 
-     - Projection selection icon
+     - Projection selection plugin: perspective, first person or orthogonal.
+     - The plugin is disabled and the projection is perspective.
    * - selectOptions
-     - Boolean: true/false
-     - true 
-     - ...
+     - Choice of the selection mode: section by object or selection by type.
+     - The plugin is disabled, the selection is by object.
    * - structureAndProperties
-     - Boolean: true/false
-     - true 
      - List structure and properties, in window manager based panels.
+     - Disabled the structure and properties plugin. 
    * - bcf
-     - Boolean: true/false
-     - true 
-     - BCF plugin
+     - BCF plugin is available.
+     - The BCF plugin is disabled
    * - logo
-     - Boolean: true/false
-     - true 
      - BIMData's Logo diplayed
+     - No logo is diplayed. 
    * - rightClickMenu
-     - Boolean: true/false
-     - true 
-     - More options in the right-click
+     - The right-click shows a custom menu, keyboard shortcuts are attached to these functionalities.
+     - The default browser's menu only is available.
    * - alerts
-     - Boolean: true/false
-     - true 
-     - Alert messages, on the bottom
+     - The Alert plugin captures and displays the messages, at the bottom of the Viewer.
+     - The plugin is disabled. Messages are not diplayed.
    * - viewer3DNavCube
-     - Boolean: true/false
-     - true 
      - XeoKit 3D cube to navigate 
+     - The navigation 3D cube is not diplayed. 
 
 Example with all functionalities disabled
 ===========================================
