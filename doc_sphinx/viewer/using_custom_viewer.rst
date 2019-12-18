@@ -23,8 +23,8 @@ In your JavaScript:
 Viewer functionalities
 ========================
 
-The Viewer is provided with many functionalities by default. Each one can be disabled independantly.
-In the cfg Object (see ::doc:`/viewer/getting_started` ), you can disable any plugin by setting it to ``false``:
+The Viewer is provided with many functionalities by default. Each one can be disabled independently.
+In the ``cfg`` Object (see ::doc:`/viewer/getting_started` ), you can disable any plugin by setting it to ``false``:
 
 
 Each functionality has a default value and could be disabled.

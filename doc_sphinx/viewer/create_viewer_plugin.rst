@@ -100,7 +100,7 @@ See the Vue.js documentation about $ref: https://vuejs.org/v2/api/#ref
 
 Instead of the Helloworld, import the Viewer, like so:
 
-.. code-block:: javascript
+.. substitution-code-block:: javascript
    :caption: App.vue file, imports
 
     <script>
@@ -110,7 +110,7 @@ Instead of the Helloworld, import the Viewer, like so:
 
 Set the template for your BIMDataViewer Vue.js Component.
 
-.. tip::
+.. warning::
 
     Define in your CSS the minimal size of the Viewer container using the style attribute in this tutorial. 
     The Viewer cannot fill its parent element.
@@ -118,7 +118,7 @@ Set the template for your BIMDataViewer Vue.js Component.
 In the ``<script>`` element, define the cfg object that defines the settings for the Viewer.
 We chose to remove BCF plugin, and the logo for our Viewer.
 
-.. code-block:: javascript
+.. substitution-code-block:: javascript
    :caption: App.vue file
    :lineno-start: 42
 
@@ -138,7 +138,7 @@ We chose to remove BCF plugin, and the logo for our Viewer.
 
 Add the mounted() part:
 
-.. code-block:: javascript
+.. substitution-code-block:: javascript
    :caption: App.vue file
    :lineno-start: 18
 
@@ -171,7 +171,7 @@ Add the mounted() part:
 
 Configure the BIMDataViewer Component.
 
-.. code-block:: javascript
+.. substitution-code-block:: javascript
    :caption: File `App.vue`
    :lineno-start: 65
 
@@ -184,7 +184,7 @@ The complete ``App.vue`` file
 
 Below this is a complete version of the ``App.vue`` file, with all the Viewer options set to ``false``.
 
-.. code-block::
+.. substitution-code-block::
    :caption: File `App.vue` (complete file)
    :linenos:
 
