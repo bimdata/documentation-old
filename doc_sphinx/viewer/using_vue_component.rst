@@ -2,6 +2,9 @@
 How-to embed the Viewer using Vue.js
 ===========================================
 
+.. contents:: Table of Contents
+   :depth: 2
+
 Pre-Requisites
 ===============
 
@@ -40,9 +43,10 @@ The `app.vue` file
 ====================
 
 In your `app.vue` file
-* load the Viewer package
-* set the data about which IFC model you load
-* then add the options you want
+
+ * load the Viewer package
+ * set the data about which IFC model you load
+ * then add the options you want
 
 The script part
 ----------------
@@ -82,9 +86,9 @@ In the `app.vue` file:
    :linenos:
 
     <template>
-    <div id="app">
-        <BIMDataViewer accessToken="DEMO_TOKEN" :cfg='cfg' style="height:100vh;"/>
-    </div>
+        <div id="app">
+            <BIMDataViewer accessToken="DEMO_TOKEN" :cfg='cfg' style="height:100vh;"/>
+        </div>
     </template>
 
 
@@ -92,9 +96,11 @@ The `main.js` file
 ===================
 
 In the `main.js` file:
-* import all dependencies: vue, i18n, vuex
-* set i18n object: specify the locale and fallback
-* set store object: using i18n, to store all data about your model
+
+
+ * import all dependencies: vue, i18n, vuex
+ * set i18n object: specify the locale and fallback
+ * set store object: using i18n, to store all data about your model
 
 .. note::
 
@@ -115,18 +121,18 @@ In the `main.js` file:
     Vue.use(Vuex);
 
     const i18n = new VueI18n({
-      locale: 'fr',
-      fallbackLocale: 'en', // set fallback locale
-      messages: {
+    locale: 'fr',
+    fallbackLocale: 'en', // set fallback locale
+    messages: {
         en: null,
         fr: null
-      }
+    }
     })
 
     new Vue({
-      store: new Vuex.Store(),
-      i18n,
-      render: function (h) { return h(App) }
+    store: new Vuex.Store(),
+    i18n,
+    render: function (h) { return h(App) }
     }).$mount('#app')
 
 
@@ -141,15 +147,15 @@ All the Viewer's plug-ins are disabled.
 
     <template>
     <div id="app">
-        <BIMDataViewer accessToken="DEMO_TOKEN" :cfg='cfg' style="height:100vh;"/>
+        <BIMDataViewer accessToken="DEMO_TOKEN" :cfg="cfg" style="height:100vh;" />
     </div>
     </template>
 
     <script>
-    import BIMDataViewer from '@bimdata/viewer'
+    import BIMDataViewer from "@bimdata/viewer";
 
     export default {
-    name: 'app',
+    name: "app",
     data() {
         return {
         cfg: {
@@ -163,18 +169,18 @@ All the Viewer's plug-ins are disabled.
             fullscreen: false,
             section: false,
             projection: false,
-            selectOptions:false,
+            selectOptions: false,
             structureAndProperties: false,
             bcf: false,
             logo: false,
             rightClickMenu: false,
-            viewer3DNavCube: false,
+            viewer3DNavCube: false
         }
-        }
+        };
     },
     components: {
         BIMDataViewer
     }
-    }
+    };
     </script>
 
