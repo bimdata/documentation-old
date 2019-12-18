@@ -54,31 +54,29 @@ The script part
 .. code-block:: javascript
    :linenos:
 
-    <script>
-        import BIMDataViewer from '@bimdata/viewer'
+    import BIMDataViewer from '@bimdata/viewer'
 
-        export default {
-            name: 'app',
-            data() {
-                return {
-                    cfg: {
-                        cloudId: 88,
-                        projectId: 100,
-                        ifcIds: [175],
-                        apiUrl: "https://api-beta.bimdata.io",
-                    }
+    export default {
+        name: 'app',
+        data() {
+            return {
+                cfg: {
+                    cloudId: 88,
+                    projectId: 100,
+                    ifcIds: [175],
+                    apiUrl: "https://api-beta.bimdata.io",
                 }
-            },
-            components: {
-                BIMDataViewer
             }
+        },
+        components: {
+            BIMDataViewer
         }
-    </script>
+    }
 
 Template
 ------------
 
-In the template part, you need to set the height of its container at 100%.
+In the template part, you need to set the height of its container.
 
 In the `app.vue` file:
 
@@ -143,44 +141,44 @@ All the Viewer's plug-ins are disabled.
 
 .. code-block::
    :linenos:
-   :caption: app.vue
+   :caption: File `app.vue`
 
     <template>
-    <div id="app">
-        <BIMDataViewer accessToken="DEMO_TOKEN" :cfg="cfg" style="height:100vh;" />
-    </div>
+        <div id="app">
+            <BIMDataViewer accessToken="DEMO_TOKEN" :cfg="cfg" style="height:100vh;" />
+        </div>
     </template>
 
     <script>
-    import BIMDataViewer from "@bimdata/viewer";
+        import BIMDataViewer from "@bimdata/viewer";
 
-    export default {
-    name: "app",
-    data() {
-        return {
-        cfg: {
-            cloudId: 88,
-            projectId: 100,
-            ifcIds: [175],
-            apiUrl: "https://api-beta.bimdata.io",
-            reload: false,
-            model: false,
-            help: false,
-            fullscreen: false,
-            section: false,
-            projection: false,
-            selectOptions: false,
-            structureAndProperties: false,
-            bcf: false,
-            logo: false,
-            rightClickMenu: false,
-            viewer3DNavCube: false
+        export default {
+        name: "app",
+        data() {
+                return {
+                        cfg: {
+                            cloudId: 88,
+                            projectId: 100,
+                            ifcIds: [175],
+                            apiUrl: "https://api-beta.bimdata.io",
+                            reload: false,
+                            model: false,
+                            help: false,
+                            fullscreen: false,
+                            section: false,
+                            projection: false,
+                            selectOptions: false,
+                            structureAndProperties: false,
+                            bcf: false,
+                            logo: false,
+                            rightClickMenu: false,
+                            viewer3DNavCube: false
+                        }
+                };
+        },
+        components: {
+            BIMDataViewer
         }
         };
-    },
-    components: {
-        BIMDataViewer
-    }
-    };
     </script>
 
