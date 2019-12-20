@@ -47,7 +47,5 @@ Your new Project is ready.
         :align: left
         :alt: Project's card
 
-
-
- Click the Project card and begin with :doc:`uploading your Model <add_content>`,
-or :doc:`creating the Project structure <manage_project_structure>`. 
+Click the Project card and begin with :doc:`uploading your Model <add_content>`,
+or :doc:`creating the Project structure <manage_project>`. 
