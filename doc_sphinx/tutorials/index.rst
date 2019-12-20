@@ -10,10 +10,9 @@ Tutorials
 
 .. topic:: `Viewer`_
 
-    .. include:: ../viewer/getting_started.rst
+    .. include:: ../viewer/create_viewer_plugin.rst
        :start-after: excerpt
        :end-before: endexcerpt
-
 
 .. topic:: `API`_
 
@@ -33,7 +32,7 @@ Tutorials
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. _Viewer: ../viewer/getting_started.html
+.. _Viewer: ../viewer/create_viewer_plugin.html
 .. _API: retrieve-elements.html
 .. _BCF: export_excel.html
 .. _Getting Started: getting_started.html
@@ -44,6 +43,6 @@ Tutorials
     :maxdepth: 1
 
     Guided Tour <guided_tour>   
-    Getting Started with the Viewer <../viewer/getting_started>
+    Tutorial: Create a plug-in for the Viewer  <../viewer/create_viewer_plugin>
     Tutorial: Retrieve elements of your model <retrieve-elements>
     Tutorial: Process BCF data for Excel export <export_excel>
