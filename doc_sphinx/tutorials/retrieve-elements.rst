@@ -7,9 +7,15 @@ Retrieve elements of your model
         How-to retrieve elements of your model through the API
     endexcerpt
 
-.. topic:: This tutorial is about
+.. note:: 
 
-    How-to retrieve elements of your model through the API
+    This tutorial is about how-to retrieve elements of your model through the API
+
+
+    * Topics: application, API, routes, elements
+    * Pre-requisites: BIMData Connect account, REST API knowledge, IFC file ready to upload
+    * Goal of this tutorial: learn about the common API usage
+    * 4 steps
 
 .. highlight:: python
    :linenothreshold: 5

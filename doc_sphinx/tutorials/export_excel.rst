@@ -7,6 +7,15 @@ Process BCF data for Excel export
         You want statistics about which Elements are the most commented with BCF.
     endexcerpt
 
+.. note:: 
+
+    This tutorial is about how-to generate an Excel file from your Model through the API
+
+
+    * Topics: BCF, elements, API, routes, elements
+    * Pre-requisites: BIMData Connect account, REST API knowledge, IFC file ready to upload
+    * Goal of this tutorial: learn about the BCF export through API usage
+    * 3 steps
 
 You want statistics about which Elements are the most commented with BCF.
 You have to export data about the commented elements, you want to produce Excel files to import to a stats software.
