@@ -17,14 +17,7 @@ $(function() {
       $(this).addClass("active");
     });
 
-    $("section").click(function() {
-      if ($("section").hasClass("expand")) {
-        $("section").removeClass("expand");
-      } else {
-        $(this).addClass("expand");
-      }
-    });
-    $("section li a").click(function(e) {
+    $("#nav section li a").click(function(e) {
       $(this)
         .parent()
         .parent()
@@ -33,3 +26,10 @@ $(function() {
     });
   });
 });
+
+const elements = document.querySelectorAll('#nav section');
+for(let element of elements){
+  element.addEventListener('click', () => {
+    element.classList.toggle('expand');
+  });
+}
