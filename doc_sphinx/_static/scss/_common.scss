@@ -189,7 +189,7 @@ ol {
 
 .bimdata-btn{
   height: 32px;
-  min-width: 150px;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,14 +199,14 @@ ol {
     &--primary{
       background-color: $color-primary;
       color: $color-white;
-      &:visited{
+      &:visited, &:hover{
         color: $color-white;
       }
     }
     &--secondary{
       background-color: $color-secondary;
       color: $color-primary;
-      &:visited{
+      &:visited, &:hover{
         color: $color-primary;
       }
     }
