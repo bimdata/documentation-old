@@ -1,7 +1,29 @@
-.doc-api {
+.bimdata-documentation__layout.doc-api {
+  padding-top: 1.5rem;
+  max-width: inherit;
+  flex-direction: column;
+  .bimdata-documentation__layout__content__breadcrumb{
+    width: calc(100% - 304px);
+    margin-right: 1rem;
+    margin-left: auto;
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      li {
+        a{
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .section{
+    display: flex;
+    flex-direction: column;
+  }
   & > .row,
   #api-reference > h1 {
-    width: calc(100vw - 362px);
+    width: calc(100% - 292px);
     margin-right: 0;
     margin-left: auto;
     padding-right: 40px;
@@ -10,27 +32,62 @@
     padding-left: 3rem;
   }
   #spectacle {
-    // custom SIDEBAR API DOC
-    #sidebar {
-      padding: 0;
-      width: 319px;
-      height: calc(100vh - 60px);
-      position: fixed;
-      top: 60px;
-      .close-button {
-        display: none;
-      }
-      #nav {
-        h5 {
-          margin: 1.5rem 0 0.65rem;
+    width: 100%;
+    display: flex;
+    #page{
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      #sidebar{
+        position: initial;
+        display: inline-flex;
+        flex-direction: column;
+        background-color: white;
+        border: none;
+        overflow: auto;
+        height: calc(100% - 60px);
+        width: 250px;
+        position: fixed;
+        overflow: auto;
+        top: 60px;
+        flex: 1;
+        padding: 0;
+        #nav{
+          padding-top: 1.5rem;
+          .toctree-expand{
+            width: 34px;
+            height: 34px;
+            background-size: 50%;
+
+          }
+          section{
+            &.expand{
+              background-color: $color-secondary;
+            }
+            ul{
+              margin: 0;
+              background-color: $color-white;
+            }
+            &:hover{
+              background-color: $color-secondary;
+            }
+          }
+        }
+        .close-button {
+          display: none;
+        }
+        h5{
+          margin-top: .5rem;
           padding-left: 15px;
           color: $color-primary;
           text-transform: uppercase;
           @include font-size(13px);
         }
-        a {
+        a{
           margin: 0;
-          padding-left: 33px;
+          padding-left: 2rem;
           height: 34px;
           color: $color-primary;
           font-family: $font-primary;
@@ -40,80 +97,38 @@
             color: $color-primary;
             background-color: $color-secondary;
           }
-          &:hover {
+          &:hover{
             background-color: $color-secondary;
           }
         }
-        section {
-          a {
-            position: relative;
-          }
-          ul {
-            li {
-              a {
-                margin: 0.4rem 0;
-                height: 20px;
-                line-height: 20px;
-                cursor: pointer;
-                &::before {
-                  content: "";
-                  background-image: none;
-                  position: absolute;
-                  left: 20px;
-                  top: 0;
-                  width: 2px;
-                  height: 100%;
-                  background-color: $color-secondary;
-                  opacity: 0;
-                }
-                &:hover,
-                &.active {
-                  background-color: transparent;
-                  &::before {
-                    opacity: 1;
-                    background-image: none;
-                  }
-                }
-              }
-            }
-          }
-          &.expand {
-            a::before {
-              background-image: url("../_images/bimdata_carret-down.svg");
-            }
-            & > ul {
-              margin: 0 0.75rem 0.75rem;
-            }
-          }
+      }
+      #docs{
+        margin-right: 0;
+        display: block;
+        box-shadow: none;
+        width: calc(100vw - 300px);
+        margin-left: auto;
+        flex: 3;
+        .floating-menu-icon {
+          display: none;
         }
       }
-    }
-
-    // custom CONTENT API DOC
-    #docs {
-      margin-right: 0;
-      display: block;
-      box-shadow: none;
-      width: calc(100vw - 325px);
-      margin-left: auto;
-      .floating-menu-icon {
-        display: none;
-      }
-      article {
+      article{
+        width: 100%;
         // custom LEFT BLOCK
         h1,
         h2 {
           color: $color-primary;
         }
         h1.doc-title {
-          padding-left: 3rem;
+          padding-left: 0;
         }
         p {
           padding: 0;
         }
         #introduction {
           .doc-copy {
-            padding-left: 3rem !important;
+            padding-left: 0 !important;
           }
         }
         .operation-tags {
@@ -123,10 +138,7 @@
           width: 50%;
           position: relative;
           .operation-id {
-            position: absolute;
-            right: 1%;
-            top: 43px;
-            font-size: 14px;
+            padding-left: 2.25rem;
           }
         }
         .label {
