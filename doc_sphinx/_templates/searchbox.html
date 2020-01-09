@@ -1,0 +1,10 @@
+{%- if builder != 'singlehtml' %}
+<div role="search">
+  <form action="{{ pathto('search') }}" method="get">
+    <object type="image/svg+xml" data="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMTUuODggMTYuMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTUuODggMTYuMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTEuMiwxMC4wMWgtMC42OGwtMC4yNC0wLjIzYzAuODUtMC45OSwxLjM2LTIuMjcsMS4zNi0zLjY3YzAtMy4xMS0yLjUyLTUuNjQtNS42NC01LjY0UzAuMzYsMi45OSwwLjM2LDYuMTEKCXMyLjUyLDUuNjQsNS42NCw1LjY0YzEuNCwwLDIuNjgtMC41MSwzLjY3LTEuMzZsMC4yMywwLjI0djAuNjhsNC4zMyw0LjMzbDEuMjktMS4yOUwxMS4yLDEwLjAxeiBNNS45OSwxMC4wMQoJYy0yLjE2LDAtMy45LTEuNzQtMy45LTMuOXMxLjc0LTMuOSwzLjktMy45czMuOSwxLjc0LDMuOSwzLjlTOC4xNSwxMC4wMSw1Ljk5LDEwLjAxeiIgZmlsbD0iIzJmMzc0YSIvPgo8L3N2Zz4K"></object>
+    <input type="text" name="q" placeholder="{{ _('Search docs') }}" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+{%- endif %}
