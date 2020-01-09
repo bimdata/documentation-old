@@ -15,9 +15,15 @@
 
 @import "common";
 @import "home";
+@import "breadcrumb";
 @import "layout";
 @import "aside";
 @import "header";
+
+@import "table";
+
+/* custom COMPONENTS */
+@import "cards";
 
 /* custom THEME DARK ------------------------- */
 @import "theme/doc-theme";
