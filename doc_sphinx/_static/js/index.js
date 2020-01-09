@@ -36,29 +36,29 @@ for(let element of elements){
 }
 
 // theme switch
-const toggleSwitch = document.querySelector('#themeSwitch');
-const currentTheme = localStorage.getItem('theme');
+// const toggleSwitch = document.querySelector('#themeSwitch');
+// const currentTheme = localStorage.getItem('theme');
 
-if (currentTheme) {
-  document.documentElement.classList.add(currentTheme);
+// if (currentTheme) {
+//   document.documentElement.classList.add(currentTheme);
 
-  if (currentTheme === 'theme-dark') {
-    toggleSwitch.checked = true;
-  }
-}
+//   if (currentTheme === 'theme-dark') {
+//     toggleSwitch.checked = true;
+//   }
+// }
 
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.classList.add('theme-dark');
-    document.documentElement.classList.remove('theme-light');
+// function switchTheme(e) {
+//   if (e.target.checked) {
+//     document.documentElement.classList.add('theme-dark');
+//     document.documentElement.classList.remove('theme-light');
 
-    localStorage.setItem('theme', 'theme-dark');
-  } else {
-    document.documentElement.classList.add('theme-light');
-    document.documentElement.classList.remove('theme-dark');
+//     localStorage.setItem('theme', 'theme-dark');
+//   } else {
+//     document.documentElement.classList.add('theme-light');
+//     document.documentElement.classList.remove('theme-dark');
 
-    localStorage.setItem('theme', 'theme-light');
-  }
-}
+//     localStorage.setItem('theme', 'theme-light');
+//   }
+// }
 
-toggleSwitch.addEventListener('change', switchTheme, false);
+// toggleSwitch.addEventListener('change', switchTheme, false);
