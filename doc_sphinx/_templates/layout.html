@@ -12,45 +12,45 @@
 {% endblock %}
 
   {%- block content %}
-  {%- include "header.html" %}
+    {%- include "header.html" %}
 
-  <main>
     {% if pagename == 'index' %}
       {%- include "home.html" %}
+
     {% else %}
 
-    <div>
-      {% if pagename != 'api/index' %}
-      <div class="content_summary">
-        {%- block sidebar1 %}
-        {%- for sidebartemplate in sidebars %}
-        {%- include sidebartemplate %}
-        {%- endfor %}
-        {% endblock %}
-      </div>
-      {% endif %}
-
       {% if pagename == 'api/index' %}
-      <div class="content_layout doc-api">
+      <main class="bimdata-documentation__layout doc-api">
       {% else %}
-      <div class="content_layout">
-      {% endif %}
-        {% include "breadcrumbs.html" %}
-        {%- block document %}
-        <div class="body" role="main">
-          {% if "api_playground/" not in pagename or pagename == 'api_playground/index' %}
-            {% block body %}{% endblock %}
-          {% else %}
-            {%- include "openapi_endpoint.html" %}
-          {% endif %}
+      <main class="bimdata-documentation__layout">
+
+        {% if pagename != 'api/index' %}
+          <div class="bimdata-documentation__layout__summary">
+            {%- block sidebar1 %}
+              {%- for sidebartemplate in sidebars %}
+                {%- include sidebartemplate %}
+              {%- endfor %}
+            {% endblock %}
+          </div>
+        {% endif %}
+
+        <div class="bimdata-documentation__layout__content">
+        {% endif %}
+          {% include "breadcrumbs.html" %}
+          {%- block document %}
+          <div class="body" role="main">
+            {% if "api_playground/" not in pagename or pagename == 'api_playground/index' %}
+              {% block body %}{% endblock %}
+            {% else %}
+              {%- include "openapi_endpoint.html" %}
+            {% endif %}
+          </div>
+          {%- endblock %}
         </div>
-        {%- endblock %}
-      </div>
 
-    </div>
+      </main>
+      </main>
     {% endif %}
-
-  </div>
   {%- endblock %}
 
-  {%- block custom_footer %}{%- endblock %}
+{%- block custom_footer %}{%- endblock %}
