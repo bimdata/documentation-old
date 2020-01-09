@@ -32,34 +32,6 @@
     &__dark-mode{
 
     }
-    &__search{
-      margin-left: calc(#{$spacing-unit} * 3);
-      #rtd-search-form{
-        position: relative;
-        input{
-          margin: 0;
-          padding: 0 2rem;
-          width: 100%;
-          position: relative;
-          border: none;
-          box-shadow: none;
-          &:-webkit-autofill{
-            -webkit-box-shadow: 0 0 0 1000px #fff inset;
-          }
-        }
-        &::before{
-          content: "";
-          position: absolute;
-          background-image: url("../_images/bimdata_loupe.svg");
-          height: 14px;
-          width: 14px;
-          background-size: cover;
-          background-position: center;
-          z-index: 10;
-          top: 6px;
-        }
-      }
-    }
   }
   &__menu{
     display: flex;
@@ -105,27 +77,8 @@
     justify-content: flex-end;
     flex: 1;
     .bimdata-btn{
-      padding: 0;
-      display: flex;
-      align-items: center;
-      background-color: transparent;
-      border: none;
-      color: $color-primary;
-      cursor: pointer;
-      @include font-size(12px);
-      @include transition(all ease .1s);
-      &__fill {
-        justify-content: center;
-        /* style BIMDATA BTN PRIMARY FILL ---------- */
-        &--primary {
-          background-color: $color-primary;
-          color: $color-white;
-        }
-      }
       &__ghost {
-        &--primary{
-          color: $color-primary;
-        }
+        justify-content: center;
       }
     }
   }
