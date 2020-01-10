@@ -1,4 +1,8 @@
 .theme-dark{
+  background-color: $color-primary-d10;
+  body{
+    background-color: $color-primary-d10;
+  }
   p, ul, ol{
     a.reference.external{
       &::after{
@@ -8,6 +12,26 @@
   }
   ol, li{
     color: $color-white;
+  }
+  .admonition {
+    &.caution,
+    &.tip {
+      .admonition-title {
+        background-color: #2d303a;
+        color: $color-white;
+      }
+    }
+    &.seealso {
+      .admonition-title {
+        background-color: $color-primary-d15;
+        border-bottom: 0.5px solid $color-primary-d5;
+        color: white;
+        &::before {
+          background-color: $color-background;
+          color: $color-primary-d5;
+        }
+      }
+    }
   }
 
   .highlight{
@@ -52,7 +76,6 @@
         .toctree-l1{
           &.current, &.show{
             ul{
-              background-color: $color-primary-d15;
               .toctree-l2{
                 a{
                   background-color: $color-primary-d15;
@@ -109,7 +132,7 @@
   .navbar{
     header{
       .navbar-search{
-        #rtd-search-form{
+        form{
           input{
             color: $color-white;
             -webkit-box-shadow: 0 0 0 1000px #1e212c inset;

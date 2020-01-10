@@ -1,0 +1,84 @@
+table {
+  width: 100%;
+  border: none;
+  thead {
+    border-bottom: 8px solid $color-white;
+    .row-odd {
+      th {
+        padding: 0 $spacing-unit;
+        height: calc(#{$spacing-unit} * 5);
+        vertical-align: middle;
+        text-align: left;
+        border: none;
+        color: $color-white;
+        font-weight: 400;
+        @include font-size(12px);
+        &:nth-child(odd){
+          background-color: $color-primary;
+        }
+        &:nth-child(even){
+          background-color: #434e69;
+        }
+      }
+    }
+  }
+  tbody{
+    tr {
+      border-bottom: 5px solid $color-white;
+      td{
+        padding: .5rem $spacing-unit;
+        min-height: calc(#{$spacing-unit} * 4);
+        vertical-align: middle;
+        
+        border: none;
+        @include font-size(12px);
+        p{
+          color: $color-text;
+        }
+        &:nth-child(odd){
+          background-color: $color-background;
+        }
+        &:nth-child(even){
+          background-color: #ebebeb;
+        }
+      }
+    }
+  }
+  caption {
+    padding: .75rem 0;
+    color: $color-text;
+    caption-side: bottom;
+    letter-spacing: .05rem;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    @include font-size(10px);
+  }
+
+}
+// custom CODE TABLE
+.highlight-html{
+  overflow: auto;
+  .highlighttable{
+    width: 100%;
+    display: flex;
+    tbody{
+      width: 100%;
+      tr{
+        width: 100%;
+        display: flex;
+        .linenos{
+          width: 100%;
+          display: flex;
+        }
+        .code{
+          width: calc(100% - 81px);
+          display: flex;
+          .highlight{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

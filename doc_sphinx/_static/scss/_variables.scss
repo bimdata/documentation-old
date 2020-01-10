@@ -1,0 +1,84 @@
+/* variables FONTS ------------------------------------- */
+$font-primary: 'robotoregular', sans-serif;
+$font-primary_medium: 'robotomedium', sans-serif;
+$font-primary_bold: 'robotobold', sans-serif;
+$font-size: 14px;
+
+/* variables COLORS ------------------------------------ */
+$color-primary: rgba(47,55,74,1);
+$color-secondary: rgba(249,199,44,1);
+$color-white: rgba(255,255,255,1);
+$color-black: rgba(0,0,0,1);
+$color-background: rgba(247,247,247,1);
+$color-text: rgba(97,96,96,1);
+
+$color-primary-d5: darken($color-primary, 5%);
+$color-primary-d10: darken($color-primary, 10%);
+$color-primary-d15: darken($color-primary, 15%);
+$color-primary-d20: darken($color-primary, 20%);
+$color-primary-l10: lighten($color-primary, 10%);
+$color-secondary-d10: darken($color-secondary, 10%);
+$color-background-d10: darken($color-background, 10%);
+$color-text-l10: lighten($color-text, 10%);
+$color-text-l20: lighten($color-text, 20%);
+$color-text-l30: lighten($color-text, 30%);
+
+
+
+@font-face {
+  font-family: 'robotobold';
+  src: url('../fonts/roboto-bold-webfont.woff') format('woff2'),
+       url('../fonts/roboto-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoitalic';
+  src: url('../fonts/roboto-italic-webfont.woff2') format('woff2'),
+       url('../fonts/roboto-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
+       url('../fonts/roboto-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+       url('../fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// TODO : to delete
+/* base COLORS --------------------------------------------- */
+$color-primary: rgba(47, 55, 74, 1);
+$color-secondary: rgba(249, 199, 44, 1);
+$color-white: rgba(255, 255, 255, 1);
+$color-black: rgba(0, 0, 0, 1);
+$color-background: rgba(248, 248, 248, 1);
+$color-border: rgba(216, 216, 216, 1);
+$color-text: rgba(97, 96, 96, 1);
+
+$color-background-d20: rgba(196, 196, 196, 1);
+
+$color-blue: rgba(32, 93, 189, 1);
+$color-green: rgba(0, 175, 80, 1);
+$color-grey: rgba(123, 123, 123, 1);
+$color-orange: rgba(255, 145, 0, 1);
+$color-red: rgba(255, 61, 30, 1);
+
+/* base FONT SIZE ----------------------------------------- */
+$font-size: 14px;
+
+/* base SPACING UNIT -------------------------------------- */
+$spacing-unit: 12px;
+$size-btn-options: 45px;

@@ -14,7 +14,7 @@ Just looking for the API Reference?
 
 .. raw:: html
 
-   <a href="../api/index.html" class="btn btn-primary">Go to API Reference</a>
+   <a href="../api/index.html" class="bimdata-btn bimdata-btn__fill bimdata-btn__fill--primary bimdata-btn__radius">Go to API Reference</a>
 
 
 Introduction

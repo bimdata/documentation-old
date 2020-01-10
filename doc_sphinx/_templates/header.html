@@ -1,33 +1,31 @@
-<header class="row">
+<header class="bimdata-documentation__header">
   {% block sidebartitle %}
 
-  <div class="navbar-logo col-1">
-    {% if logo and theme_logo_only %}
-      <a href="{{ pathto(master_doc) }}">
-    {% else %}
-      <a href="{{ pathto(master_doc) }}">
-    {% endif %}
-    {% if logo %}
-      {# Not strictly valid HTML, but it's the only way to display/scale it properly, without weird scripting or heaps of work #}
-      <!-- <img src="{{ pathto('_static/_images/' + logo, 1) }}" class="logo" alt="Logo"/> -->
-      <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 276.04 90.5" xml:space="preserve"><style>.st0{fill:#30374b}.st1{fill:#f9c72c}</style><path class="st0" d="M65.68 57.23v-30.6h10.49c3.46 0 6.09.69 7.9 2.08 1.81 1.39 2.71 3.45 2.71 6.2 0 1.4-.38 2.66-1.13 3.78s-1.86 1.99-3.32 2.61c1.65.45 2.93 1.29 3.84 2.53.9 1.24 1.36 2.73 1.36 4.47 0 2.87-.92 5.08-2.76 6.62-1.84 1.54-4.48 2.31-7.91 2.31H65.68zM71 39.52h5.21c1.65 0 2.95-.37 3.88-1.12.93-.75 1.4-1.81 1.4-3.18 0-1.51-.43-2.61-1.29-3.28-.86-.67-2.2-1.01-4.02-1.01H71v8.59zm0 3.9v9.56h5.91c1.67 0 2.97-.41 3.91-1.24.94-.83 1.41-1.98 1.41-3.45 0-3.18-1.63-4.81-4.88-4.88H71zM98.45 57.23h-5.3v-30.6h5.3v30.6zM111.87 26.63l8.83 23.45 8.81-23.45h6.87v30.6h-5.3V47.14l.53-13.49-9.04 23.58h-3.8l-9.02-23.56.53 13.47v10.09h-5.3v-30.6h6.89zM142.66 57.23v-30.6h9.04c2.7 0 5.1.6 7.2 1.81 2.09 1.2 3.72 2.91 4.87 5.13 1.15 2.21 1.72 4.75 1.72 7.61v1.53c0 2.9-.58 5.45-1.73 7.65-1.16 2.2-2.8 3.89-4.94 5.09s-4.58 1.79-7.34 1.79h-8.82zm5.32-26.31v22.07h3.47c2.79 0 4.93-.87 6.42-2.62s2.25-4.25 2.28-7.51v-1.7c0-3.32-.72-5.86-2.16-7.61s-3.54-2.63-6.28-2.63h-3.73zM183.87 57.23c-.22-.43-.42-1.14-.59-2.12-1.63 1.7-3.61 2.54-5.97 2.54-2.28 0-4.15-.65-5.59-1.95-1.44-1.3-2.16-2.91-2.16-4.83 0-2.42.9-4.28 2.7-5.58 1.8-1.3 4.37-1.94 7.72-1.94h3.13v-1.49c0-1.18-.33-2.12-.99-2.83-.66-.71-1.66-1.06-3.01-1.06-1.16 0-2.12.29-2.86.87-.74.58-1.11 1.32-1.11 2.22h-5.11c0-1.25.41-2.41 1.24-3.5.83-1.09 1.95-1.94 3.37-2.55s3.01-.92 4.76-.92c2.66 0 4.78.67 6.37 2.01 1.58 1.34 2.4 3.22 2.44 5.64V52c0 2.05.29 3.68.86 4.9v.36h-5.2zm-5.61-3.68c1.01 0 1.96-.25 2.85-.74.89-.49 1.56-1.15 2.01-1.98v-4.29h-2.75c-1.89 0-3.31.33-4.27.99s-1.43 1.59-1.43 2.8c0 .98.33 1.76.98 2.34.65.59 1.52.88 2.61.88zM199.97 28.97v5.53h4.01v3.78h-4.01v12.69c0 .87.17 1.5.51 1.88.34.39.96.58 1.84.58.59 0 1.18-.07 1.79-.21v3.95c-1.16.32-2.28.48-3.36.48-3.92 0-5.88-2.16-5.88-6.49V38.28h-3.74V34.5h3.74v-5.53h5.1zM221.47 57.23c-.22-.43-.42-1.14-.59-2.12-1.63 1.7-3.61 2.54-5.97 2.54-2.28 0-4.15-.65-5.59-1.95-1.44-1.3-2.16-2.91-2.16-4.83 0-2.42.9-4.28 2.7-5.58 1.8-1.3 4.37-1.94 7.72-1.94h3.13v-1.49c0-1.18-.33-2.12-.99-2.83-.66-.71-1.66-1.06-3.01-1.06-1.16 0-2.12.29-2.86.87-.74.58-1.11 1.32-1.11 2.22h-5.11c0-1.25.41-2.41 1.24-3.5.83-1.09 1.95-1.94 3.37-2.55s3.01-.92 4.76-.92c2.66 0 4.78.67 6.37 2.01 1.58 1.34 2.4 3.22 2.44 5.64V52c0 2.05.29 3.68.86 4.9v.36h-5.2zm-5.61-3.68c1.01 0 1.96-.25 2.85-.74.89-.49 1.56-1.15 2.01-1.98v-4.29h-2.75c-1.89 0-3.31.33-4.27.99s-1.43 1.59-1.43 2.8c0 .98.33 1.76.98 2.34.64.59 1.52.88 2.61.88zM234.35 51.85c.95 0 1.69.27 2.21.81s.78 1.22.78 2.03c0 .8-.26 1.46-.78 1.99s-1.25.79-2.21.79c-.91 0-1.63-.26-2.16-.78s-.8-1.18-.8-2 .26-1.49.78-2.03c.51-.54 1.24-.81 2.18-.81zM243.2 28.59c0-.78.25-1.44.75-1.95.5-.52 1.21-.78 2.13-.78.92 0 1.64.26 2.14.78.5.52.76 1.17.76 1.95 0 .77-.25 1.41-.76 1.92-.5.51-1.22.77-2.14.77-.92 0-1.64-.26-2.13-.77-.5-.51-.75-1.15-.75-1.92zm5.42 28.64h-5.11V34.49h5.11v22.74zM253.22 45.65c0-2.23.44-4.23 1.32-6.02s2.12-3.16 3.72-4.12 3.43-1.44 5.51-1.44c3.07 0 5.56.99 7.47 2.96 1.91 1.98 2.95 4.6 3.1 7.86l.02 1.2c0 2.24-.43 4.25-1.29 6.01-.86 1.77-2.09 3.13-3.7 4.1-1.6.97-3.46 1.45-5.56 1.45-3.21 0-5.78-1.07-7.7-3.2-1.93-2.14-2.89-4.98-2.89-8.54v-.26zm5.11.44c0 2.34.48 4.17 1.45 5.5.97 1.32 2.31 1.99 4.03 1.99s3.06-.67 4.02-2.02c.96-1.34 1.44-3.31 1.44-5.91 0-2.3-.49-4.12-1.48-5.46s-2.33-2.02-4.02-2.02c-1.67 0-2.99.66-3.97 1.99-.98 1.32-1.47 3.3-1.47 5.93z"/><g><path class="st1" d="M31.31 18.19v3.7l11.89-7.58v64.92H19.3v-5.35h-3.12v8.47h30.14V8.62z"/><path class="st1" d="M6.76 16.82v17.03l3.12-1.99V18.53L28.19 6.85V20.18l3.12-1.99V1.16z"/><path class="st0" d="M1.68 37.09v36.78h29.64V18.19L1.68 37.09zm26.51 33.67H4.79V38.81l23.4-14.93v46.88z"/></g><g><path class="st1" d="M216.26 65.39c1.98-.32 4.57-.5 7.3-.5 4.54 0 7.48.82 9.78 2.55 2.48 1.84 4.04 4.78 4.04 9 0 4.57-1.67 7.73-3.97 9.68-2.52 2.09-6.35 3.08-11.02 3.08-2.8 0-4.78-.18-6.13-.35V65.39zm5.42 19.49c.46.11 1.2.11 1.88.11 4.89.04 8.08-2.66 8.08-8.36.03-4.96-2.87-7.58-7.51-7.58-1.21 0-1.99.11-2.44.21v15.62zM257.87 80.1c0 6.34-4.5 9.25-9.14 9.25-5.07 0-8.97-3.33-8.97-8.93s3.69-9.18 9.25-9.18c5.32 0 8.86 3.65 8.86 8.86zm-12.54.17c0 2.98 1.24 5.21 3.55 5.21 2.09 0 3.44-2.09 3.44-5.21 0-2.59-.99-5.21-3.44-5.21-2.6 0-3.55 2.66-3.55 5.21zM274.33 88.53c-.96.43-2.76.78-4.82.78-5.6 0-9.18-3.4-9.18-8.86 0-5.07 3.47-9.21 9.92-9.21 1.42 0 2.98.25 4.11.67l-.85 4.01c-.64-.28-1.6-.53-3.01-.53-2.83 0-4.68 2.02-4.64 4.86 0 3.19 2.13 4.86 4.75 4.86 1.28 0 2.27-.21 3.08-.53l.64 3.95z"/></g></svg>
-    {% endif %}
+  <div class="bimdata-documentation__header__left">
+    <div class="bimdata-documentation__header__left__logo">
+        <a href="{{ pathto(master_doc) }}">
+        {% if logo %}
+          {# Not strictly valid HTML, but it's the only way to display/scale it properly, without weird scripting or heaps of work #}
+          <img src="{{ pathto('_static/_images/' + logo, 1) }}" class="logo" alt="Logo"/>
+          <!--<object type="image/svg+xml" data="{{ pathto('_static/_images/' + logo, 1) }}">
+          </object>-->
+        {% endif %}
       </a>
+    </div>
 
-    {% if theme_display_version %}
-      {%- set nav_version = version %}
-      {% if READTHEDOCS and current_version %}
-        {%- set nav_version = current_version %}
-      {% endif %}
-      {% if nav_version %}
-        <div class="version">
+    <div class="bimdata-documentation__header__left__version">
+      {% if theme_display_version %}
+        {%- set nav_version = version %}
+        {% if READTHEDOCS and current_version %}
+          {%- set nav_version = current_version %}
+        {% endif %}
+        {% if nav_version %}
           <span>{{ nav_version }}</span>
-        </div>
+        {% endif %}
       {% endif %}
-    {% endif %}
-  </div>
-
-  <div class="col-1">
+    </div>
+    <!--
+    <div class="bimdata-documentation__header__left__dark-mode">
     {% if pagename != 'api/index' and pagename != 'api_playground/application_endpoint' and pagename != 'api_playground/bcf_endpoint' and pagename != 'api_playground/checkplan_endpoint' and pagename != 'api_playground/cloud_endpoint' and pagename != 'api_playground/ifc_endpoint' and pagename != 'api_playground/project_endpoint' and pagename != 'api_playground/user_endpoint'%}
     <div class="switch-component dark-mode">
       <label class="switch" for="themeSwitch" id="theme-dark">
@@ -38,33 +36,33 @@
       </label>
     </div>
     {% endif %}
+    -->
   </div>
 
-  <div class="navbar-search col-2">
+  <div class="bimdata-documentation__search">
     {% include "searchbox.html" %}
   </div>
+  </div>
 
-  <div class="navbar-menu col-4 px-5">
+  <div class="bimdata-documentation__header__menu">
     <ul>
-      <li><a {%if title == 'Concepts' or parents and parents[0]["title"] == 'Concepts' %} class="active" {% endif %} title="{{ _('concepts') }}" href="{{ pathto('concepts/index') }}">Concepts</a></li>
+      <li><a {%if title == 'Concepts' or parents and parents[0]["title"] == 'Concepts' %} class="active" {% endif %} aria-label="{{ _('concepts') }}" href="{{ pathto('concepts/index') }}">Concepts</a></li>
       <li>
-        <a {%if title == 'Guide' or parents and parents[0]["title"] == 'Guide' %} class="active" {% endif %} title="{{ _('topics') }}" href="{{ pathto('guide/index') }}">Guide</a>
+        <a {%if title == 'Guide' or parents and parents[0]["title"] == 'Guide' %} class="active" {% endif %} aria-label="{{ _('topics') }}" href="{{ pathto('guide/index') }}">Guide</a>
       </li>
-      <li><a {%if title == 'Tutorials' or parents and parents[0]["title"] == 'Tutorials' %} class="active" {% endif %} title="{{ _('tutorials') }}" href="{{ pathto('tutorials/index') }}">Tutorials</a></li>
-      <li><a {%if title == 'Cookbook' or parents and parents[0]["title"] == 'Cookbook' %} class="active" {% endif %} title="{{ _('reference') }}" href="{{ pathto('cookbook/index') }}">Cookbook</a></li>
-      <li><a {%if title == 'Use Cases' or parents and parents[0]["title"] == 'Use Cases' %} class="active" {% endif %} title="{{ _('use-cases') }}" href="{{ pathto('use_cases/index') }}">Use&nbsp;Cases</a></li>
-      <li><a {%if title == 'API Reference' or parents and parents[0]["title"] == 'API Reference' %} class="active" {% endif %} title="{{ _('reference') }}" href="{{ pathto('api/index') }}">API&nbsp;Reference</a></li>
+      <li><a {%if title == 'Tutorials' or parents and parents[0]["title"] == 'Tutorials' %} class="active" {% endif %} aria-label="{{ _('tutorials') }}" href="{{ pathto('tutorials/index') }}">Tutorials</a></li>
+      <li><a {%if title == 'Cookbook' or parents and parents[0]["title"] == 'Cookbook' %} class="active" {% endif %} aria-label="{{ _('reference') }}" href="{{ pathto('cookbook/index') }}">Cookbook</a></li>
+      <li><a {%if title == 'Use Cases' or parents and parents[0]["title"] == 'Use Cases' %} class="active" {% endif %} aria-label="{{ _('use-cases') }}" href="{{ pathto('use_cases/index') }}">Use&nbsp;Cases</a></li>
+      <li><a {%if title == 'API Reference' or parents and parents[0]["title"] == 'API Reference' %} class="active" {% endif %} aria-label="{{ _('reference') }}" href="{{ pathto('api/index') }}">API&nbsp;Reference</a></li>
     </ul>
   </div>
 
-  <div class="navbar-btn col-3 offset-1">
-    <div class="row">
-      <div class="col-5">
-        <a href="https://connect-next.bimdata.io/signup/" target="_blank" class="btn btn-primary">create account</a>
-      </div>
-      <div class="col-4">
-        <a href="https://connect-next.bimdata.io/accounts/login/?next=" target="_blank" class="btn btn-shadow">sign in</a>
-      </div>
+  <div class="bimdata-documentation__header__btns">
+    <div class>
+      <a href="https://connect-next.bimdata.io/signup/" target="_blank" class="bimdata-btn bimdata-btn__fill bimdata-btn__fill--primary bimdata-btn__radius">create account</a>
+    </div>
+    <div>
+      <a href="https://connect-next.bimdata.io/accounts/login/?next=" target="_blank" class="bimdata-btn bimdata-btn__ghost bimdata-btn__ghost--primary">sign in</a>
     </div>
   </div>
 

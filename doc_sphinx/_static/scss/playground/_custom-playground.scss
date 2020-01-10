@@ -287,3 +287,47 @@
     }
   }
 }
+
+.swagger-ui{
+  .opblock{
+    .opblock-summary{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      .opblock-summary-method{
+        width: 90px;
+        font-family: "robotoregular";
+        font-weight: 400;
+        font-size: 13px;
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .opblock-summary-path, .opblock-summary-path__deprecated{
+        padding: 0;
+        grid-column: 2 / 6;
+        grid-row: 1;
+        font-size: 14px;
+        font-family: "robotomedium";
+        word-break: break-all;
+      }
+      .opblock-summary-description{
+        grid-column: 2 / 6;
+        grid-row: 2;
+        font-size: 12px;
+        font-family: "robotoregular";
+      }
+      .opblock-summary-operation-id{
+        grid-column: 2 / 6;
+        grid-row: 3;
+        font-size: 12px;
+        font-family: "robotoregular";
+      }
+      .authorization__btn{
+        grid-column: 6;
+        grid-row: 1;
+        svg{
+          width: 14px;
+        }
+      }
+    }
+  }
+}
