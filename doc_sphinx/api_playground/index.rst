@@ -6,14 +6,7 @@ Welcome
   :maxdepth: 1
   :titlesonly:
 
-  application_endpoint
-  bcf_endpoint
-  checkplan_endpoint
-  cloud_endpoint
-  ifc_endpoint
-  project_endpoint
-  user_endpoint
-
+  apis
 
 The Bimdata API is organized around `REST`_. Our API has predictable, resource-oriented URLs, and uses HTTP response codes to indicate API errors.
 We use built-in HTTP features, like HTTP authentication and HTTP verbs, which are understood by off-the-shelf HTTP clients.
@@ -21,18 +14,18 @@ We support `cross-origin resource sharing`_, allowing you to interact securely w
 JSON is returned by all API responses, including errors, although our API libraries convert responses to appropriate language-specific objects.
 
 Content-Type
-=============
+============
 
 Endpoints usually only accept ``application/json`` content type.
 Endpoints used for files upload use ``application/x-www-form-urlencoded`` (aka form-data) content type.
 
 OpenAPI
-========
+=======
 
 Our files are auto-generated from `our OpenAPI file`_ with `openapi-generator`_.
 
 Postman
-========
+=======
 
 You could also run our Postman collection:
 
@@ -43,10 +36,10 @@ You could also run our Postman collection:
 :doc:`Check our guide to get started with our Postman collection </cookbook/postman_getting_started>`.
 
 Getting Help
-=============
+============
 
 Do you need help?
-------------------
+-----------------
 
 You can reach us by e-mail: support@bimdata.io
 
