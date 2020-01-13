@@ -39,9 +39,9 @@
         {% include "breadcrumbs.html" %}
         {%- block document %}
         <div class="body" role="main">
-          {% if "api_playground/" not in pagename or pagename == 'api_playground/index' %}
+          {% if "api_playground/" not in pagename or pagename == 'api_playground/index' or pagename == 'api_playground/apis' %}
             {% block body %}{% endblock %}
-          {% else %}     
+          {% else %}
             {%- include "openapi_endpoint.html" %}
           {% endif %}
         </div>
