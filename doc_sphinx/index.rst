@@ -26,7 +26,7 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     Platform User Guide <platform/index>
     Viewer Doc <viewer/index>
 
-    Playground API <api_playground/index>
+    API Playground <api_playground/index>
 
     Get Help <get_help>
     Contributing <contributing>
@@ -41,7 +41,7 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     Guided Tour <tutorials/guided_tour>
 
     Platform User Guide <platform/index>
-    Playground API <api_playground/index>
+    API Playground <api_playground/index>
 
 
     BIMData.io website <https://bimdata.io/>
