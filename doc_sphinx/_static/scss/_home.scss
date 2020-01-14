@@ -1,80 +1,88 @@
 // custom HOME
-.content_home{
+.bimdata-documentation__home{
+  margin-top: 60px;
+  width: 100%;
+  &__gradient{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &::before{
+      content: "";
+      background: linear-gradient(162.76deg, #D1E6FF -9.05%, rgba(248, 248, 249, 0) 108.11%);
+      height: 565px;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+    }
+  }
   // bloc DOCUMENTATION
-  .content_documentation{
-    margin-top: 60px;
-    height: 532px;
-    background-color: $color-background;
-    .documentation{
-      &_title{
-        h1{
-          margin: 62px 0 45px;
-          @include font-size(27px);
-        }
+  &__documentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    &__title{
+      h1{
+        margin: calc( #{$spacing-unit} * 4) 0 calc( #{$spacing-unit} * 2);
+        color: $color-primary;
+        font-family: $font-primary_bold;
+        @include font-size(25px);
       }
-      .flex-container_equal{
-        .clef{
-          .card-vertical_content{
-            img{
-              padding: .8rem;
-            }
-          }
-        }
-        .box-round{
-          @include flexbox;
-          @include align-items(center);
-          span{
-            display: block;
-            background-color: $color-background-d10;
-            border-radius: 50%;
-            &:first-child{
-              width: 4.5px;
-              height: 4.5px;
-            }
-            &:nth-child(2){
-              margin: 0 .25rem;
-              width: 6px;
-              height: 6px;
-            }
-            &:last-child{
-              width: 4.5px;
-              height: 4.5px;
-            }
-          }
-        }
-      }
+    }
+    &__illu{
+      position: absolute;
+      top: 16rem;
+      z-index: -1;
     }
   }
 
-  // bloc HOW CAN WE CAN HELP ?
-  .help{
-    margin-top: 47px;
-    &_title{
+  &__plugin, &__help, &__questions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &__title{
+      text-align: center;
       h2{
+        margin-top: 0;
+        color: $color-primary;
         @include font-size(25px);
       }
       p{
-        color: $color-primary;
         @include font-size(16px);
       }
     }
-    .flex-container{
-      margin-top: 44px;
-      @include justify-content(center);
+  }
+  &__plugin{
+    margin-top: 64px;
+    p{
+      margin-bottom: 26px;
+      width: 718px;
+      text-align: center;
     }
   }
-
-  // bloc DO YOU HAVE A QUESTIONS ?
-  .questions{
-    margin: 80px 0 119px;
-    h2{
-      margin-bottom: 24px;
-      @include font-size(25px);
+  &__help{
+    margin-top: 58px;
+    padding: 50px 0;
+    background-color: $color-background;
+    &__title{
+      margin-bottom: calc(#{$spacing-unit} * 3);
+      p{
+        color: $color-primary;
+      }
     }
-    p{
-      margin: 0;
-      @include font-size(16px);
-      line-height: 1.7rem;
+    .cards-vertical{
+      .card-vertical{
+        margin: 0 17.5px;
+      }
+    }
+  }
+  &__questions{
+    height: 250px;
+    &__title{
+      p{
+        color: $color-text;
+      }
     }
   }
 }

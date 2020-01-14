@@ -1,46 +1,21 @@
-// custom CONTENT
-.content{
-  // custom CONTENT
-  &_layout{
+.bimdata-documentation__layout{
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  &__summary, &__content{
     margin-top: 60px;
+  }
+  &__summary{
+    flex-basis: 200px;
+  }
+  &__content{
+    width: 80%;
     padding: 0 27px 4rem;
-    .breadcrumb{
-      margin: 0;
-      li{
-        margin: 0 7px;
-        padding: 7px 9px;
-        position: relative;
-        background-color: $color-background;
-        border-radius: 10px;
-        @include font-size(13px);
-        a{
-          padding: 0;
-          color: $color-primary;
-          text-decoration: none;
-        }
-        &:first-child{
-          margin-left: 0;
-          a{
-            i{
-              margin: 0 .125rem .1rem 0;
-              @include font-size(16px);
-              vertical-align: middle;
-
-            }
-          }
-        }
-        &:last-child{
-          &::after{
-            content: "";
-          }
-        }
-        &::after{
-          content: " / ";
-          position: absolute;
-          top: 6px;
-          right: -9px;
-        }
-      }
+    flex: 3;
+    .github{
+      display: inline-flex;
     }
 
     ul.simple{
@@ -81,6 +56,7 @@
 // page CONCEPTS & GUIDE
 #concepts, #guide, #cookbook, #tutorials, #use-cases{
   h1{
+    color: $color-primary;
     @include font-size(27px);
     text-align: center;
     text-transform: uppercase;
@@ -132,14 +108,11 @@
 
 // page API INTRODUCTION
 #api-reference{
-  .btn-primary{
-    margin: .5rem 0 0 2rem;
-    padding: 0 1.5rem;
-    width: auto;
+  .bimdata-btn{
+    margin: $spacing-unit 0 0;
     display: inline-flex;
-    align-items: center;
-    font-size: 12px;
     box-shadow: none;
+    @include font-size(12px);
     &:hover{
       background-color: $color-primary-d20;
     }

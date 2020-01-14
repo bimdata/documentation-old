@@ -1,21 +1,31 @@
-/* custom DOC API ----------------------------*/
+/* custom DOC API ---------------------------- */
 @import 'api/monokai';
 @import 'api/spectacle';
 
-/* custom PLAYGROUND API ----------------------------*/
+/* custom PLAYGROUND API --------------------- */
 @import './playground/theme-feeling-blue';
 
-/* import LIB UTILS --------------------------*/
-@import "../../node_modules/@bimdata/utils/src/scss/main";
+/* import LIB UTILS -------------------------- */
+@import "./variables";
+@import "./mixins";
 
+/* import STYLE DOCUMENTATION ---------------- */
 @import './playground/custom-playground';
 @import "doc-api";
 
 @import "common";
 @import "home";
+@import "breadcrumb";
 @import "layout";
 @import "aside";
-@import "navbar";
+@import "header";
 
-/* custom THEME DARK -----------------------*/
+@import "table";
+@import "search";
+
+
+/* custom COMPONENTS */
+@import "cards";
+
+/* custom THEME DARK ------------------------- */
 @import "theme/doc-theme";

@@ -1,0 +1,43 @@
+.bimdata-documentation__layout__content__breadcrumb{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .breadcrumb{
+    display: inline-flex;
+    li{
+      margin: 0 7px;
+      padding: 7px 9px;
+      position: relative;
+      background-color: $color-background;
+      border-radius: 10px;
+      @include font-size(13px);
+      a{
+        padding: 0;
+        color: $color-primary;
+        text-decoration: none;
+      }
+      &:first-child{
+        margin-left: 0;
+        a{
+          i{
+            margin: 0 .125rem .1rem 0;
+            @include font-size(16px);
+            vertical-align: middle;
+  
+          }
+        }
+      }
+      &:last-child{
+        &::after{
+          content: "";
+        }
+      }
+      &::after{
+        content: " / ";
+        position: absolute;
+        top: 6px;
+        right: -9px;
+      }
+    }
+  }
+}

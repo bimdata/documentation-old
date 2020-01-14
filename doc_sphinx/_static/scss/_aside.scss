@@ -1,12 +1,26 @@
 // custom SUMMARY
-.content{
-  &_summary{
+.bimdata-documentation__layout{
+  &__summary{
+    // flex: 1;
+    flex-basis: 240px;
     overflow: auto;
     .wy-menu-vertical{
-      width: 100%;
+      height: calc(100% - (60px * 3));
+      width: 200px;
+      border-right: 1px solid $color-border;
+      position: fixed;
+      overflow: auto;
+      .caption{
+        padding: 0;
+        color: $color-primary;
+      }
       // custom LINK SUMMARY
       .toctree-l1{
+        width: 100%;
+        display: inline-flex;
         position: relative;
+        flex-wrap: wrap;
+        flex-direction: row;
 
         &:hover{
           background-color: $color-secondary;
@@ -19,7 +33,14 @@
         }
 
         a{
+          padding-left: 1.2rem;
+          height: 28px;
+          display: inline-flex;
+          flex: 1;
+          align-items: center;
+          color: $color-primary;
           &.external{
+            padding: 0 1rem;
             &::after{
               content: none;
             }
@@ -30,21 +51,35 @@
         }
 
         ul{
-          background-color: $color-background;
+          background-color: $color-white;
           .toctree-l2{
             a{
               margin: .4rem 0;
-              padding: 0 3.5rem;
+              padding: 0 0 0 1.5rem;
+              &::before{
+                width: 2px;
+                height: 100%;
+                content: "";
+                position: absolute;
+                left: 12px;
+                top: 0;
+                background-color: $color-secondary;
+                opacity: 0;
+              }
             }
             .toctree-l3{
               a{
                 margin: .5rem 0;
-                padding: 0 4.25rem;
+                padding: 0 2rem;
+                &::before{
+                  left: 22px;
+                }
               }
             }
             .toctree-l4{
               a{
-                margin: .5rem .8rem;
+                margin: .5rem 0;
+                padding: 0 2.5rem;
               }
             }
           }
@@ -52,9 +87,9 @@
 
         // custom SUBMENU ACTIVE OR VISIBLE
         &.current, &.show{
+          background-color: $color-secondary;
           a{
-            padding: .5rem 2.5rem;
-            background-color: $color-secondary;
+            background: transparent;
             border: none;
             font-weight: inherit;
           }
@@ -71,18 +106,8 @@
                 display: block;
               }
               a{
+                width: 100%;
                 position: relative;
-                background-color: $color-background;
-                &::before{
-                  width: 2px;
-                  height: 100%;
-                  content: "";
-                  position: absolute;
-                  left: 39px;
-                  top: 0;
-                  background-color: $color-secondary;
-                  opacity: 0;
-                }
                 &:hover{
                   &::before{
                     opacity: 1;
@@ -94,30 +119,21 @@
                   }
                 }
               }
-              .toctree-l3{
-                a{
-                  &::before{
-                    left: 55px;
-                  }
-                }
-              }
             }
           }
         }
 
         // custom for SUBMENU & CARET DOWN
         &.show{
-          a{
-            color: $color-primary;
-          }
           ul{
+            width: 100%;
             display: grid;
           }
         }
       }
     }
     li.current{
-      background: $color-background;
+      background: $color-white;
       ul{
         display: none;
       }
