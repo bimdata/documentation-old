@@ -73,43 +73,30 @@ They use the $store and the hub to emit events to the Viewer.
     
     Find :doc:`the list of all the events </viewer/listeners>` in the dedicated page
 
-Position, display and tooltip
+Display and tooltip
 -------------------------------
 
 The ``tooltip`` is a great hint for your users.
-The settings of ``display`` as menu and ``position`` are detaile below in the Layout section.
+The settings of ``display`` is detailed below in the Layout section.
 
 Layout
 =======
 
-Each plugin is associated with a control in the UI: button or keyboard key or shortcut.
-The display of your plugin is available in 3 styles:
-* Free
-* Menu mode
-* Window mode
+By default, the plugin will be added to the viewer without any style.
+However, you can choose to display you plugin in the left or right menu, with a corrresponding button to activate it. When activated, the plugin can be styled in three different ways: "free", "simple" or "windowed".
 
-Free
-------
+* free - the plugin will be rendered next to the button without style.
+* simple - the plugin will be rendered next to the button in a sized window.
+* windowed - the plugin will be rendered next to the button in a movable and resizeable window.
 
-Trigger the rendering of your plugin to the entire screen on the position top:0;
-
-Menu mode
------------
-
-Trigger the rendering of your plugin with an icon to the menus.
-
-Available options:
-
- * left-menu
- * right-menu
- * center 
-
-Window mode
--------------
-
-Trigger the rendering of your plugin to a modal panel movable and resizeable.
-
-
+Exemple :
+ .. code-block:: javascript
+{
+   display: {
+       iconPosition: 'left', // or 'righ'
+       content: 'free' // or 'simple', 'windowed'
+   }
+}
 
 The process
 ============
