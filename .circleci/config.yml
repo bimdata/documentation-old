@@ -68,11 +68,11 @@ jobs:
 
             SLUG_BRANCH="$(echo "$CIRCLE_BRANCH" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
 
-            docker exec -it deployment ansible-playbook build.yml -i inventories/dev --tags=documentation --extra-vars="{\"context_dir\":\"/var/repo\",\"ansible_ssh_private_key_file\":\"./files/deploy_rsa\",\"tag_to_deploy\":\"${SLUG_BRANCH}\"}" --user=deploy
+            docker exec -e ANSIBLE_VAULT_PASSWD -it deployment ansible-playbook build.yml -i inventories/dev --tags=documentation --extra-vars="{\"context_dir\":\"/var/repo\",\"ansible_ssh_private_key_file\":\"./files/deploy_rsa\",\"tag_to_deploy\":\"${SLUG_BRANCH}\"}" --user=deploy
 
             docker push bimdata/documentation:${SLUG_BRANCH}
 
-            docker run -it bimdata/deployment:latest ansible-playbook -i inventories/dev deploy.yml --tags=documentation --extra-vars="{\"ansible_ssh_private_key_file\":\"./files/deploy_rsa\",\"tag_to_deploy\":\"${SLUG_BRANCH}\"}" --user=deploy
+            docker run -e ANSIBLE_VAULT_PASSWD -it bimdata/deployment:latest ansible-playbook -i inventories/dev deploy.yml --tags=documentation --extra-vars="{\"ansible_ssh_private_key_file\":\"./files/deploy_rsa\",\"tag_to_deploy\":\"${SLUG_BRANCH}\"}" --user=deploy
       - run:
           name: url of the build
           command: |
@@ -94,16 +94,16 @@ jobs:
             docker cp ~/repo deployment:/var/repo
             docker start deployment
 
-            docker exec -it deployment ansible-playbook build.yml -i inventories/staging --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa"}' --user=deploy
+            docker exec -e ANSIBLE_VAULT_PASSWD -it deployment ansible-playbook build.yml -i inventories/staging --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa"}' --user=deploy
             docker push bimdata/documentation:latest
 
-            docker exec -it deployment ansible-playbook build.yml -i inventories/next --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa"}' --user=deploy
+            docker exec -e ANSIBLE_VAULT_PASSWD -it deployment ansible-playbook build.yml -i inventories/next --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa"}' --user=deploy
             docker push bimdata/documentation:staging
 
-            docker exec -it deployment ansible-playbook build.yml -i inventories/prod --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa"}' --user=deploy
+            docker exec -e ANSIBLE_VAULT_PASSWD -it deployment ansible-playbook build.yml -i inventories/prod --tags=documentation --extra-vars='{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa"}' --user=deploy
             docker push bimdata/documentation:next
 
-            docker run -it bimdata/deployment:latest ansible-playbook -i inventories/staging deploy.yml --tags=documentation --extra-vars "ansible_ssh_private_key_file=./files/deploy_rsa" --user=deploy
+            docker run -e ANSIBLE_VAULT_PASSWD -it bimdata/deployment:latest ansible-playbook -i inventories/staging deploy.yml --tags=documentation --extra-vars "ansible_ssh_private_key_file=./files/deploy_rsa" --user=deploy
 
 workflows:
   version: 2
