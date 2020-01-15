@@ -9,7 +9,7 @@ Tutorial: How-to create a plugin for the Viewer
         Create your first Viewer plugin
     endexcerpt
 
-A Viewer's plugin is a Vue.js Component. The plugin adds one or more features to the Viewer.
+A Viewer's plugin is a Vue.js Component. The plugin adds one, or more, features to the Viewer.
 
 Enrich your Model with external data, trigger events during navigation in the 3D model, and provide to your users an unforgettable experience.
 
@@ -66,53 +66,42 @@ The template is plain HTML: 2 buttons, launching the methods on the click event.
 Methods
 ------------
 
-The 2 methods are the simpliest possible.
-They use the $store and the hub to emit events to the Viewer.
+The 2 methods are the simplest possible.
+They use the ``$store`` and the hub to emit events to the Viewer.
 
 .. note::
     
     Find :doc:`the list of all the events </viewer/listeners>` in the dedicated page
 
-Position, display and tooltip
+Display and tooltip
 -------------------------------
 
 The ``tooltip`` is a great hint for your users.
-The settings of ``display`` as menu and ``position`` are detaile below in the Layout section.
+The settings of ``display`` is detailed below in the Layout section.
 
 Layout
 =======
 
-Each plugin is associated with a control in the UI: button or keyboard key or shortcut.
-The display of your plugin is available in 3 styles:
-* Free
-* Menu mode
-* Window mode
 
-Free
-------
+By default, the plugin is added to the Viewer without any style.
+However, you can choose to display your plugin in the left or right menu, connected to a corresponding button activating the plugin. 
+When activated, the plugin can be styled in three different ways: "free", "simple" or "windowed".
 
-Trigger the rendering of your plugin to the entire screen on the position top:0;
+* **free** - the plugin is rendered next to the button without style.
+* **simple** - the plugin is rendered next to the button in a sized window.
+* **windowed** - the plugin is rendered next to the button in a movable and resizable window.
 
-Menu mode
------------
+Exemple :
 
-Trigger the rendering of your plugin with an icon to the menus.
+.. code-block:: javascript
 
-Available options:
+    {
+        display: {
+            iconPosition: 'left', // other value: 'right'
+            content: 'free' // others values: 'simple', 'windowed'
+        }
+    }
 
- * left-menu
- * right-menu
- * center 
-
-Window mode
--------------
-
-Trigger the rendering of your plugin to a modal panel movable and resizeable.
-
-
-
-The process
-============
 
 #. Use the <script> tag to embed the Viewer CJS
 #. Create a tag in the <body> that will host the Viewer.
