@@ -162,7 +162,7 @@ html_context = {
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 #
-html_logo = "static/_images/bimdata_logo-doc.svg"
+html_logo = "_static/_images/bimdata_logo-doc.svg"
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
