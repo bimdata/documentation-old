@@ -57,9 +57,10 @@ table {
 
 }
 // custom CODE TABLE
-.highlight-html{
+.highlight-html, .highlight-javascript{
   overflow: auto;
   .highlighttable{
+    margin-top: 1rem;
     width: 100%;
     display: flex;
     tbody{
@@ -68,14 +69,26 @@ table {
         width: 100%;
         display: flex;
         .linenos{
-          width: 100%;
-          display: flex;
+          background: none;
+          padding: 0 .4rem;
+          background-color: #272822;
+          color: rgba(255,255,255,.6);
+          pre{
+            margin: 0;
+            color: rgba($color-white, .6);
+          }
         }
         .code{
-          width: calc(100% - 81px);
-          display: flex;
+          width: calc(100% - 61px);
+
+          background: none;
+          padding: 0;
+          background-color: #272822;
           .highlight{
             width: 100%;
+            pre{
+              margin: 0;
+            }
           }
         }
       }

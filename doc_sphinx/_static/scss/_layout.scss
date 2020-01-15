@@ -1,5 +1,5 @@
 .bimdata-documentation__layout{
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
   margin-top: 60px;
   display: flex;
@@ -11,9 +11,8 @@
     flex-basis: 200px;
   }
   &__content{
-    width: 80%;
+    width: calc(100% - 240px);
     padding: 0 27px 4rem;
-    flex: 3;
     .github{
       display: inline-flex;
     }

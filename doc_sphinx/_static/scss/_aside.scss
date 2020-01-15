@@ -1,7 +1,7 @@
 // custom SUMMARY
 .bimdata-documentation__layout{
   &__summary{
-    // flex: 1;
+    width: 240px;
     flex-basis: 240px;
     overflow: auto;
     .wy-menu-vertical{
@@ -71,8 +71,17 @@
               a{
                 margin: .5rem 0;
                 padding: 0 2rem;
+                display: flex;
+                background: $color-white;
                 &::before{
                   left: 22px;
+                }
+              }
+              &.current{
+                a.current{
+                  &::before{
+                    opacity: 1;
+                  }
                 }
               }
             }
@@ -96,7 +105,7 @@
           ul{
             .toctree-l2{
               &.current{
-                a{
+                & > a{
                   &::before{
                     opacity: 1;
                   }
