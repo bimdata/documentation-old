@@ -9,7 +9,7 @@ Tutorial: How-to create a plugin for the Viewer
         Create your first Viewer plugin
     endexcerpt
 
-A Viewer's plugin is a Vue.js Component. The plugin adds one or more features to the Viewer.
+A Viewer's plugin is a Vue.js Component. The plugin adds one, or more, features to the Viewer.
 
 Enrich your Model with external data, trigger events during navigation in the 3D model, and provide to your users an unforgettable experience.
 
@@ -66,8 +66,8 @@ The template is plain HTML: 2 buttons, launching the methods on the click event.
 Methods
 ------------
 
-The 2 methods are the simpliest possible.
-They use the $store and the hub to emit events to the Viewer.
+The 2 methods are the simplest possible.
+They use the ``$store`` and the hub to emit events to the Viewer.
 
 .. note::
     
@@ -82,21 +82,24 @@ The settings of ``display`` is detailed below in the Layout section.
 Layout
 =======
 
-By default, the plugin will be added to the viewer without any style.
-However, you can choose to display you plugin in the left or right menu, with a corrresponding button to activate it. When activated, the plugin can be styled in three different ways: "free", "simple" or "windowed".
+By default, the plugin is added to the Viewer without any style.
+However, you can choose to display your plugin in the left or right menu, connected to a corresponding button activating the plugin. 
+When activated, the plugin can be styled in three different ways: "free", "simple" or "windowed".
 
-* free - the plugin will be rendered next to the button without style.
-* simple - the plugin will be rendered next to the button in a sized window.
-* windowed - the plugin will be rendered next to the button in a movable and resizeable window.
+* **free** - the plugin is rendered next to the button without style.
+* **simple** - the plugin is rendered next to the button in a sized window.
+* **windowed** - the plugin is rendered next to the button in a movable and resizable window.
 
 Exemple :
- .. code-block:: javascript
-{
-   display: {
-       iconPosition: 'left', // or 'righ'
-       content: 'free' // or 'simple', 'windowed'
-   }
-}
+
+.. code-block:: javascript
+
+    {
+        display: {
+            iconPosition: 'left', // other value: 'right'
+            content: 'free' // others values: 'simple', 'windowed'
+        }
+    }
 
 The process
 ============
