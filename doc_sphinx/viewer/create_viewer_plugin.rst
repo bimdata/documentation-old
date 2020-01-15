@@ -82,6 +82,7 @@ The settings of ``display`` is detailed below in the Layout section.
 Layout
 =======
 
+
 By default, the plugin is added to the Viewer without any style.
 However, you can choose to display your plugin in the left or right menu, connected to a corresponding button activating the plugin. 
 When activated, the plugin can be styled in three different ways: "free", "simple" or "windowed".
@@ -101,8 +102,6 @@ Exemple :
         }
     }
 
-The process
-============
 
 #. Use the <script> tag to embed the Viewer CJS
 #. Create a tag in the <body> that will host the Viewer.
