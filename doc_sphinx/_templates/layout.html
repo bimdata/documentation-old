@@ -12,46 +12,45 @@
 {% endblock %}
 
   {%- block content %}
-  <div class="navbar fixed-top px-4 py-0">
     {%- include "header.html" %}
-  </div>
-  <div class="container-fluid content">
+
     {% if pagename == 'index' %}
       {%- include "home.html" %}
+
     {% else %}
 
-    <div class="row">
-      {% if pagename != 'api/index' %}
-      <div class="content_summary col-2 pt-4">
-        {%- block sidebar1 %}
-        {%- for sidebartemplate in sidebars %}
-        {%- include sidebartemplate %}
-        {%- endfor %}
-        {% endblock %}
-      </div>
-      {% endif %}
-
       {% if pagename == 'api/index' %}
-      <div class="content_layout doc-api col-12 pt-4 px-0 ml-sm-auto">
+      <main class="bimdata-documentation__layout doc-api">
       {% else %}
-      <div class="content_layout col-10 pt-4 px-5 ml-sm-auto">
-      {% endif %}
-        {% include "breadcrumbs.html" %}
-        {%- block document %}
-        <div class="body" role="main">
-          {% if "api_playground/" not in pagename or pagename == 'api_playground/index' or pagename == 'api_playground/apis' %}
-            {% block body %}{% endblock %}
-          {% else %}
-            {%- include "openapi_endpoint.html" %}
-          {% endif %}
+      <main class="bimdata-documentation__layout">
+
+        {% if pagename != 'api/index' %}
+          <div class="bimdata-documentation__layout__summary">
+            {%- block sidebar1 %}
+              {%- for sidebartemplate in sidebars %}
+                {%- include sidebartemplate %}
+              {%- endfor %}
+            {% endblock %}
+          </div>
+        {% endif %}
+
+        <div class="bimdata-documentation__layout__content">
+        {% endif %}
+          {% include "breadcrumbs.html" %}
+          {%- block document %}
+          <div class="body" role="main">
+            {% if "api_playground/" not in pagename or pagename == 'api_playground/index' or pagename == 'api_playground/apis' %}
+              {% block body %}{% endblock %}
+            {% else %}
+              {%- include "openapi_endpoint.html" %}
+            {% endif %}
+          </div>
+          {%- endblock %}
         </div>
-        {%- endblock %}
-      </div>
 
-    </div>
+      </main>
+      </main>
     {% endif %}
-
-  </div>
   {%- endblock %}
 
-  {%- block custom_footer %}{%- endblock %}
+{%- block custom_footer %}{%- endblock %}
