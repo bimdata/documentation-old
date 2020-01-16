@@ -4,8 +4,6 @@
 Payload Details
 =======================
 
-When an object is described with an UpperCamelCase name, it refers to the model of the same name in https://api-next.bimdata.io/doc
-
 BCF Payload Details
 ====================
 
@@ -20,6 +18,8 @@ bcf.topic.creation
         "topic": Topic
     }
 
+Topic is https://developers-staging.bimdata.io/api/index.html#definition-Topic
+
 bcf.topic.update
 ------------------------------------------
 
@@ -29,6 +29,9 @@ bcf.topic.update
         "project_id": project_id,
         "topic": Topic
     }
+    
+Topic is https://developers-staging.bimdata.io/api/index.html#definition-Topic
+
 
 bcf.comment.creation
 ------------------------------------------
@@ -41,6 +44,9 @@ bcf.comment.creation
         "comment": Comment
     }
 
+Comment is https://developers-staging.bimdata.io/api/index.html#definition-Comment
+
+
 bcf.comment.update
 ------------------------------------------
 
@@ -52,6 +58,8 @@ bcf.comment.update
         "comment": Comment
     }
 
+Comment is https://developers-staging.bimdata.io/api/index.html#definition-Comment
+
 bcf.topic.full.creation
 ------------------------------------------
 
@@ -61,6 +69,9 @@ bcf.topic.full.creation
         "project_id": project_id,
         "topic": FullTopic
     }
+
+
+FullTopic is https://developers-staging.bimdata.io/api/index.html#definition-FullTopic
 
 bcf.topic.full.update
 ------------------------------------------
@@ -72,6 +83,7 @@ bcf.topic.full.update
         "topic": FullTopic
     }
 
+FullTopic is https://developers-staging.bimdata.io/api/index.html#definition-FullTopic
 
 IFC Payload Details
 ====================
@@ -85,6 +97,7 @@ ifc.process_update
         Ifc
     }
 
+Ifc is https://developers-staging.bimdata.io/api/index.html#definition-Ifc
 
 Project Payload Details
 =========================
@@ -97,6 +110,8 @@ project.creation
     {
         Project
     }
+    
+Project is https://developers-staging.bimdata.io/api/index.html#definition-Project
 
 project.update
 ------------------------------------------
@@ -107,6 +122,7 @@ project.update
         Project
     }
 
+Project is https://developers-staging.bimdata.io/api/index.html#definition-Project
 
 Document Payload Details
 ==========================
@@ -121,6 +137,9 @@ document.creation
         "project": Project,
     }
 
+Document is https://developers-staging.bimdata.io/api/index.html#definition-Document
+Project is https://developers-staging.bimdata.io/api/index.html#definition-Project
+
 document.update
 ------------------------------------------
 
@@ -130,4 +149,5 @@ document.update
         "document": Document,
         "project": Project,
     }
-
+Document is https://developers-staging.bimdata.io/api/index.html#definition-Document
+Project is https://developers-staging.bimdata.io/api/index.html#definition-Project
