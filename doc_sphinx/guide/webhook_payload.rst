@@ -4,9 +4,17 @@
 Payload Details
 =======================
 
-BCF Payload Details
-====================
+.. note::
 
+    ← Go back to :doc:`the Webhook guide <../guide/webhooks>`.
+
+.. contents:: On this page:
+   :local:
+   :depth: 1
+
+
+BCF Payload Details
+===================
 
 bcf.topic.creation
 ------------------------------------------
@@ -18,7 +26,8 @@ bcf.topic.creation
         "topic": Topic
     }
 
-Topic is https://developers-staging.bimdata.io/api/index.html#definition-Topic
+See `the Topic object definition <../api/index.html#definition-Topic>`_. 
+
 
 bcf.topic.update
 ------------------------------------------
@@ -30,7 +39,7 @@ bcf.topic.update
         "topic": Topic
     }
     
-Topic is https://developers-staging.bimdata.io/api/index.html#definition-Topic
+See `the Topic object definition <../api/index.html#definition-Topic>`_. 
 
 
 bcf.comment.creation
@@ -44,7 +53,7 @@ bcf.comment.creation
         "comment": Comment
     }
 
-Comment is https://developers-staging.bimdata.io/api/index.html#definition-Comment
+See `the Comment object definition <../api/index.html#definition-Comment>`_. 
 
 
 bcf.comment.update
@@ -58,7 +67,8 @@ bcf.comment.update
         "comment": Comment
     }
 
-Comment is https://developers-staging.bimdata.io/api/index.html#definition-Comment
+See `the Comment object definition <../api/index.html#definition-Comment>`_. 
+
 
 bcf.topic.full.creation
 ------------------------------------------
@@ -70,8 +80,8 @@ bcf.topic.full.creation
         "topic": FullTopic
     }
 
+See `the FullTopic object definition <../api/index.html#definition-FullTopic>`_. 
 
-FullTopic is https://developers-staging.bimdata.io/api/index.html#definition-FullTopic
 
 bcf.topic.full.update
 ------------------------------------------
@@ -83,7 +93,8 @@ bcf.topic.full.update
         "topic": FullTopic
     }
 
-FullTopic is https://developers-staging.bimdata.io/api/index.html#definition-FullTopic
+See `the FullTopic object definition <../api/index.html#definition-FullTopic>`_. 
+
 
 IFC Payload Details
 ====================
@@ -97,10 +108,12 @@ ifc.process_update
         Ifc
     }
 
-Ifc is https://developers-staging.bimdata.io/api/index.html#definition-Ifc
+See `the Ifc object definition <../api/index.html#definition-Ifc>`_. 
+
 
 Project Payload Details
 =========================
+
 
 project.creation
 ------------------------------------------
@@ -110,8 +123,9 @@ project.creation
     {
         Project
     }
-    
-Project is https://developers-staging.bimdata.io/api/index.html#definition-Project
+
+See `the Project object definition <../api/index.html#definition-Project>`_. 
+
 
 project.update
 ------------------------------------------
@@ -122,10 +136,12 @@ project.update
         Project
     }
 
-Project is https://developers-staging.bimdata.io/api/index.html#definition-Project
+See `the Project object definition <../api/index.html#definition-Project>`_. 
+
 
 Document Payload Details
 ==========================
+
 
 document.creation
 ------------------------------------------
@@ -137,8 +153,9 @@ document.creation
         "project": Project,
     }
 
-Document is https://developers-staging.bimdata.io/api/index.html#definition-Document
-Project is https://developers-staging.bimdata.io/api/index.html#definition-Project
+* See `the Project object definition <../api/index.html#definition-Project>`_. 
+* See `the Document object definition <../api/index.html#definition-Document>`_. 
+
 
 document.update
 ------------------------------------------
@@ -149,5 +166,11 @@ document.update
         "document": Document,
         "project": Project,
     }
-Document is https://developers-staging.bimdata.io/api/index.html#definition-Document
-Project is https://developers-staging.bimdata.io/api/index.html#definition-Project
+
+* See `the Project object definition <../api/index.html#definition-Project>`_. 
+* See `the Document object definition <../api/index.html#definition-Document>`_. 
+
+
+.. seealso::
+
+    See :doc:`the Webhook guide <../guide/webhooks>`.
