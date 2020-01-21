@@ -29,3 +29,7 @@ Here is a python example to check the signature:
         ).hexdigest()
 
         return hmac.compare_digest(req_signature, body_signature)
+
+.. seealso::
+
+    View :doc:`the Webhook guide <../guide/webhooks>`.
