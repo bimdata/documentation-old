@@ -4,7 +4,7 @@ Guide
 
 .. topic:: `API Introduction`_
 
-    .. include:: ../api/introduction.rst
+    .. include:: ../api/docs/introduction.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
@@ -66,7 +66,7 @@ Guide
 .. toctree::
     :hidden:
     
-    API Introduction </api/introduction>
+    API Introduction </api/docs/introduction>
     Authentication <authentication_bimdata_connect>
     Authentication migration <authentication_migration>
     Errors <errors>
@@ -76,7 +76,7 @@ Guide
     Identity Providers <identity_providers>
     Invitation process <invitations>
 
-.. _API Introduction: ../api/introduction.html
+.. _API Introduction: ../api/docs/introduction.html
 .. _Authentication: authentication_bimdata_connect.html
 .. _Authentication migration: authentication_migration.html
 .. _Errors: errors.html

@@ -2,7 +2,7 @@
 Getting started with Postman
 =============================
 
-..
+.. 
     excerpt
         BIMData released a Postman Collection for you to enjoy and try our API in your usual software.
     endexcerpt
