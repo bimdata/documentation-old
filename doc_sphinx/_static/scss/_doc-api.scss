@@ -113,6 +113,26 @@
           display: none;
         }
       }
+      .json-schema-ref{
+        &::after {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background-color: $color-primary;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          @include transform(scaleX(1));
+          @include transform-origin(left);
+          @include transition(transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1));
+        }
+        &:hover {
+          &::after {
+            @include transform(scaleX(0));
+            @include transform-origin(right);
+          }
+        }
+      }
       article{
         width: 100%;
         // custom LEFT BLOCK
