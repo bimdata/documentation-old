@@ -12,12 +12,13 @@ API Reference
 
 .. toctree::
    :hidden:
+   :depth: 2
 
-   guide/introduction
-   guide/getting_started
-   guide/going_further
-   guide/sso_api
-   guide/bcf_api
-   guide/collaboration_api
-   tutorials/getting_started
-   tutorials/going_further
+   docs/introduction
+   docs/getting_started
+   docs/going_further
+   docs/sso_api
+   docs/bcf_api
+   docs/collaboration_api
+   docs/getting_started
+   docs/going_further

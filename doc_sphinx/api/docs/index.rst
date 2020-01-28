@@ -1,6 +1,6 @@
-====================
+=========
 API Guide
-====================
+=========
 ..
     excerpt
         Discover BIMData's API documentation
@@ -8,7 +8,7 @@ API Guide
 
 .. contents::
    :local:
-   :depth: 1
+   :maxdepth: 1
 
 Reference
 ==============
@@ -37,7 +37,6 @@ Discover the parts of the API:
 * BCF API
 * SSO API
 * Webhook API
-* Checker API
 
 
 Endpoints
