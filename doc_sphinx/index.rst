@@ -18,18 +18,12 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     :maxdepth: 1
 
     Getting Started <tutorials/getting_started>
-    Concepts <concepts/index>
     Guide by topics <guide/index>
     Tutorials <tutorials/index>
-    Cookbook <cookbook/index>
     Use Cases <use_cases/index>
-    Platform User Guide <platform/index>
-    Viewer Doc <viewer/index>
-
-    API Playground <api_playground/index>
+    APIs References <api/index>
 
     Get Help <get_help>
-    Contributing <contributing>
     BIMData.io website <https://bimdata.io/>
 
 .. toctree::
@@ -37,11 +31,11 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     :name: sidebar
     :maxdepth: 1
 
+    Authentication <auth/index>
     Viewer Doc <viewer/index>
-    Guided Tour <tutorials/guided_tour>
-
     Platform User Guide <platform/index>
     API Playground <api_playground/index>
+
 
 
     BIMData.io website <https://bimdata.io/>
