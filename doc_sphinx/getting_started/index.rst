@@ -4,30 +4,30 @@ Getting Started
 
 .. topic:: API Introduction
 
-    .. include:: ../tutorials/api_getting_started.rst
+    .. include:: api_getting_started.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: Development with BIMData.io softwares
+.. topic:: Guided Tour
 
-    .. include:: tutorials/dev_getting_started.rst
+    .. include:: dev_getting_started.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. topic:: Postman
 
-    .. include:: /tutorials/postman_getting_started.rst
+    .. include:: postman_getting_started.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. topic:: Viewer
 
-    .. include:: /viewer/docs/index.rst
+    .. include:: viewer/docs/index.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. toctree::
     
-    API <tutorials/api_getting_started>
-    Developping <tutorials/dev_getting_started>
-    Postman <tutorials/postman_getting_started>
+    API <api_getting_started>
+    Developping <dev_getting_started>
+    Postman <postman_getting_started>

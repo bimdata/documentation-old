@@ -46,13 +46,12 @@
 
   <div class="bimdata-documentation__header__menu">
     <ul>
-      <li><a {%if title == 'Concepts' or parents and parents[0]["title"] == 'Concepts' %} class="active" {% endif %} aria-label="{{ _('concepts') }}" href="{{ pathto('concepts/index') }}">Concepts</a></li>
+      <li><a {%if title == 'Getting Started' or parents and parents[0]["title"] == 'Getting Started' %} class="active" {% endif %} aria-label="{{ _('concepts') }}" href="{{ pathto('getting_started/index') }}">Getting Started</a></li>
       <li>
         <a {%if title == 'Guide' or parents and parents[0]["title"] == 'Guide' %} class="active" {% endif %} aria-label="{{ _('topics') }}" href="{{ pathto('guide/index') }}">Guide</a>
       </li>
       <li><a {%if title == 'Tutorials' or parents and parents[0]["title"] == 'Tutorials' %} class="active" {% endif %} aria-label="{{ _('tutorials') }}" href="{{ pathto('tutorials/index') }}">Tutorials</a></li>
-      <li><a {%if title == 'Cookbook' or parents and parents[0]["title"] == 'Cookbook' %} class="active" {% endif %} aria-label="{{ _('reference') }}" href="{{ pathto('cookbook/index') }}">Cookbook</a></li>
-      <li><a {%if title == 'Use Cases' or parents and parents[0]["title"] == 'Use Cases' %} class="active" {% endif %} aria-label="{{ _('use-cases') }}" href="{{ pathto('use_cases/index') }}">Use&nbsp;Cases</a></li>
+      <li><a {%if title == 'Use Cases' or parents and parents[0]["title"] == 'Use Cases' %} class="active" {% endif %} aria-label="{{ _('use-cases') }}" href="{{ pathto('guide/use_cases/index') }}">Use&nbsp;Cases</a></li>
       <li><a {%if title == 'API Reference' or parents and parents[0]["title"] == 'API Reference' %} class="active" {% endif %} aria-label="{{ _('reference') }}" href="{{ pathto('api/index') }}">API&nbsp;Reference</a></li>
     </ul>
   </div>
