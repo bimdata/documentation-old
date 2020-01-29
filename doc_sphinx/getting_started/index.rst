@@ -20,9 +20,9 @@ Getting Started
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`Viewer <../viewer/index>`
+.. topic:: :doc:`Viewer <viewer_getting_started>`
 
-    .. include:: ../viewer/index.rst
+    .. include:: viewer_getting_started.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
