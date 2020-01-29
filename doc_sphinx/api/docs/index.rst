@@ -3,18 +3,35 @@ API Documentation
 =================
 
 
-.. topic:: Getting Started
+.. topic:: :doc:`Getting Started </getting_started/api_getting_started>`
 
-    Getting started with the API
+    Get started with the BIMData.io's API
 
-.. topic:: Tutorials
+.. topic:: :doc:`Tutorials </tutorials/api_retrieve-elements>`
 
-    Learn the API by doing
+    Learn by doing how-to retrieve elements
 
-.. topic:: Guide
+.. topic:: :doc:`Webhooks guide </guide/api_webhooks>`
 
-    Concept, Use-cases and API guidance
+    Explore the Webhooks
 
-.. topic:: Reference
+.. topic:: :doc:`API Filters </guide/api_filters>`
 
-    API ref
+    Learn about filters
+
+.. topic:: :doc:`Reference </api/index>`
+
+    BIMData.io's API Reference
+
+.. toctree::
+   :hidden:
+    
+    ../guide/api_filters
+    ../guide/api_introduction
+    ../guide/api_webhooks
+    ../guide/api_webhooks_payload
+    ../guide/api_webhooks_signature
+    ../getting_started/api_external_clients_getting_started
+    ../getting_started/api_getting_started
+    ../getting_started/postman_getting_started
+    ../tutorials/api_retrieve-elements
