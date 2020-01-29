@@ -1,6 +1,6 @@
 :orphan:
 =================
-Ifc Access Token
+IFC Access Token
 =================
 
 When using an application without Users (through `client_credentials` auth), you want to use BIMData Viewer without exposing your application Access Token.
