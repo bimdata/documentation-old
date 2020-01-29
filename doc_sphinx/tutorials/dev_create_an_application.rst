@@ -1,3 +1,5 @@
+:produit: dev
+
 =========================
 Create your application
 =========================
