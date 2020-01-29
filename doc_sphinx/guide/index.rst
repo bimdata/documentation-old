@@ -1,6 +1,6 @@
 ======
 Guide
-=====
+======
 
 .. topic:: API Introduction
 
