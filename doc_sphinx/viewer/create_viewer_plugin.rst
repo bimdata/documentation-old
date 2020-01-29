@@ -71,7 +71,8 @@ They use the ``$store`` and the hub to emit events to the Viewer.
 
 .. note::
     
-    Find `the list of all the events <https://github.com/bimdata/documentation-viewer-examples/blob/master/Events.md>`_ in the dedicated page
+    Find `the list of all the events <https://github.com/bimdata/documentation-viewer-examples/blob/master/Events.md    Fix links for the index page Guide
+>`_ in the dedicated page
 
 Display and tooltip
 -------------------------------

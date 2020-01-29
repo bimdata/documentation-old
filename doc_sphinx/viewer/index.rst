@@ -13,7 +13,7 @@ Guide
 
 Usage of the Viewer is either simply embedded in your web application, or with a custom to your needs plugin changing the behavior of the Viewer. 
 
-* :doc:`Getting Started with the Viewer </viewer/getting_started>`
+* :doc:`Getting Started with the Viewer </getting_started/viewer_getting_started>`
 
 Reference
 ===========

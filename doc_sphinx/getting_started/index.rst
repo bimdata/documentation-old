@@ -2,27 +2,33 @@
 Getting Started
 ===============
 
-.. topic:: API Introduction
+.. topic:: :doc:`API Introduction <api_getting_started>`
 
     .. include:: api_getting_started.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: Guided Tour
+.. topic:: :doc:`Guided Tour <developer_guided_tour>`
 
-    .. include:: dev_getting_started.rst
+    .. include:: developer_guided_tour.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: Postman
+.. topic:: :doc:`Postman <postman_getting_started>`
 
     .. include:: postman_getting_started.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: Viewer
+.. topic:: :doc:`Viewer <../viewer/index>`
 
-    .. include:: viewer/docs/index.rst
+    .. include:: ../viewer/index.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+.. topic:: :doc:`Use External Libraries <api_external_clients_getting_started>`
+
+    .. include:: api_external_clients_getting_started.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
@@ -31,3 +37,4 @@ Getting Started
     API <api_getting_started>
     Developping <dev_getting_started>
     Postman <postman_getting_started>
+    Use External Libraries <api_external_clients_getting_started>
