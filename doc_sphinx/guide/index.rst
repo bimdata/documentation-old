@@ -1,90 +1,42 @@
-===========
+======
 Guide
-===========
+=====
 
-.. topic:: `API Introduction`_
+.. topic:: API Introduction
 
     .. include:: ../api/introduction.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-
-.. topic:: `Authentication`_
+.. topic:: Authentication
 
     .. include:: authentication_bimdata_connect.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
+.. topic:: Platform
 
-.. topic:: `Authentication migration`_
-
-    .. include:: authentication_migration.rst
+    .. include:: /platform/docs/index.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
+.. topic:: Viewer
 
-.. topic:: `Errors`_
-
-    .. include:: errors.rst
+    .. include:: /viewer/docs/index.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-
-.. topic:: `Filters`_
-
-    .. include:: filters.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-.. topic:: `Webhooks`_
-
-    .. include:: webhooks.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-
-.. topic:: `Security`_
+.. topic:: Security
 
     .. include:: security.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: `Identity Providers`_
-
-    .. include:: identity_providers.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-.. topic:: `Invitations`_
-
-    .. include:: invitations.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-
-
 .. toctree::
     :hidden:
+    :glob:
     
-    API Introduction </api/introduction>
-    Authentication <authentication_bimdata_connect>
-    Authentication migration <authentication_migration>
-    Errors <errors>
-    Filters <filters>
-    Webhooks <webhooks>
-    Security Concerns<security>
-    Identity Providers <identity_providers>
-    Invitation process <invitations>
-
-.. _API Introduction: ../api/introduction.html
-.. _Authentication: authentication_bimdata_connect.html
-.. _Authentication migration: authentication_migration.html
-.. _Errors: errors.html
-.. _Filters: filters.html
-.. _Webhooks: webhooks.html
-.. _Security: security.html
-.. _Identity Providers: identity_providers.html
-.. _Invitations: invitations.html
+    *
 
 
 
