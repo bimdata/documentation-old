@@ -1,0 +1,56 @@
+.page-404{
+  max-width: 100%;
+  min-height: calc(100vh - 60px);
+  position: relative;
+  &::before, &::after{
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  &::before{
+    background-image: url("../_images/bg_404-top.svg");
+    top: 0;
+    right: 0;
+    background-size: contain;
+    width: 360px;
+    height: 444px;
+  }
+  &::after{
+    background-image: url("../_images/bg_404-bottom.svg");
+    left: 0;
+    bottom: 0;
+    background-size: contain;
+    width: 802px;
+    height: 488px;
+  }
+  .body{
+    z-index: 1;
+  }
+  &-content{
+    width: 1000px;
+    &__header{
+      display: flex;
+      align-items: center;
+      &__left{
+        flex: 2;
+        h1{
+          @include font-size(44px);
+        }
+        p{
+          width: 90%;
+          margin-bottom: 2rem;
+          line-height: 1.5;
+          @include font-size(16px);
+        }
+      }
+      &__right{
+        flex: 3;
+      }
+    }
+    &__footer{
+      margin-top: 6rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
