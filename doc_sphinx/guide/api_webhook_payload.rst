@@ -6,7 +6,7 @@ Payload Details
 
 .. note::
 
-    ← Go back to :doc:`the Webhook guide <../guide/webhooks>`.
+    ← Go back to :doc:`the Webhook guide <../guide/api_webhooks>`.
 
 .. contents:: On this page:
    :local:
@@ -173,4 +173,4 @@ document.update
 
 .. seealso::
 
-    See :doc:`the Webhook guide <../guide/webhooks>`.
+    See :doc:`the Webhook guide <../guide/api_webhooks>`.

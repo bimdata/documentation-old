@@ -48,6 +48,6 @@ This process of recording BCF comment in a blockchain is incorporated into BIMDa
 
 .. tip::
 
-    See more about :doc:`Webhooks <../guide/webhooks>`
+    See more about :doc:`Webhooks </guide/api_webhooks>`
 
 

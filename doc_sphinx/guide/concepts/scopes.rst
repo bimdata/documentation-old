@@ -100,4 +100,4 @@ The scopes available
 
 .. seealso::
 
-    See also :doc:`security guide </guide/security>`.
+    See also :doc:`security guide </guide/dev_security>`.

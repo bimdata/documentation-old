@@ -37,7 +37,7 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     :maxdepth: 1
 
     Viewer Doc <viewer/index>
-    API Documentation <api/docs/index>
+    API Guide <api/docs/index>
     API Playground <api_playground/index>
     Platform User Guide <platform/index>
 

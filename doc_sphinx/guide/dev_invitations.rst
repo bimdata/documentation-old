@@ -122,7 +122,7 @@ and can't be accepted or denied anymore.
 
 .. seealso::
 
-    See :doc:`the webhook signature documentation <webhook_signature>`
+    See :doc:`the webhook signature documentation <api_webhook_signature>`
 
 
 

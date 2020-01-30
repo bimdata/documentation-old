@@ -35,7 +35,7 @@ These applications:
   - must use **BIMData Connect users** credentials system.
   - are usually mobile apps or small Javascript apps.
 
-➤ :doc:`Create a backend-less app <../cookbook/create_an_application>`
+➤ :doc:`Create a backend-less app <../tutorials/dev_create_an_application>`
 
 Application with a backend
 --------------------------
@@ -52,20 +52,20 @@ These applications:
 .. note
     Our own BIMData Platform application uses BIMData Connect users (backend-app with users).
 
-➤ :doc:`Create an application <../cookbook/create_an_application>`
+➤ :doc:`Create an application <../tutorials/dev_create_an_application>`
 
 Without Users
 ~~~~~~~~~~~~~
 
 Chose this way if you don't want to use BIMData Connect users.
-See :doc:`how-to create an IFC Access Token <../cookbook/ifc_access_token>`
+See :doc:`how-to create an IFC Access Token <../tutorials/dev_ifc_access_token>`
 
 These applications:
   - have to manage their own users and authorizations
   - can't share data with other BIMData applications
   - have an easier setup
 
-➤ :doc:`Create a backend app <../cookbook/create_an_application>`
+➤ :doc:`Create a backend app <../tutorials/dev_create_an_application>`
 
 
 
@@ -86,11 +86,11 @@ Retrieve an app Access Token
 ----------------------------
 
 An application Access Token represents the app itself and is not linked to any user. 
-It is used when you don't use **BIMData Connect** users or if you want to use :doc:`webhooks <../guide/webhooks>`  or if you're doing some automated tasks.
+It is used when you don't use **BIMData Connect** users or if you want to use :doc:`webhooks <../guide/api_webhooks>`  or if you're doing some automated tasks.
 
 .. note::
 
-    See :doc:`Get Access Token documentation <../cookbook/get_access_token>` for more information.
+    See :doc:`Get Access Token documentation <../tutorials/dev_get_access_token>` for more information.
 
 
 Retrieve a user Access Token
@@ -145,7 +145,7 @@ Filters
     :end-before: endexcerpt
 
 .. note::
-    To learn :doc:`more about the filters, see the concept page <../guide/filters>`.
+    To learn :doc:`more about the filters, see the concept page <../guide/api_filters>`.
 
 
 4 - Include the Viewer

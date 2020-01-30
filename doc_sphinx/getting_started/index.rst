@@ -2,9 +2,9 @@
 Getting Started
 ===============
 
-.. topic:: :doc:`API Introduction <api_getting_started>`
+.. topic:: :doc:`API Introduction <api>`
 
-    .. include:: api_getting_started.rst
+    .. include:: api.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
@@ -14,27 +14,27 @@ Getting Started
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`Postman <postman_getting_started>`
+.. topic:: :doc:`Postman <postman>`
 
-    .. include:: postman_getting_started.rst
+    .. include:: postman.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`Viewer <viewer_getting_started>`
+.. topic:: :doc:`Viewer <viewer>`
 
-    .. include:: viewer_getting_started.rst
+    .. include:: viewer.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`Use External Libraries <api_external_clients_getting_started>`
+.. topic:: :doc:`Use External Libraries <api_external_clients>`
 
-    .. include:: api_external_clients_getting_started.rst
+    .. include:: api_external_clients.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. toctree::
     
-    API <api_getting_started>
-    Developping <dev_getting_started>
-    Postman <postman_getting_started>
-    Use External Libraries <api_external_clients_getting_started>
+    API <api>
+    Developping <developer_guided_tour>
+    Postman <postman>
+    Use External Libraries <api_external_clients>

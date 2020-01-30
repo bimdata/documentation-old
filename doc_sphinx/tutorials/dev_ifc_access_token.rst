@@ -17,7 +17,7 @@ To use them, your application needs the scope `ifc:token_manage`
 
 .. seealso::
 
-    See also :doc:`Create an application </cookbook/create_an_application>`
+    See also :doc:`Create an application </tutorials/dev_create_an_application>`
 
 .. _with the createAccessToken endpoint: ../api/index.html#createAccessToken
 .. _with the deleteAccessToken endpoint: ../api/index.html#deleteAccessToken

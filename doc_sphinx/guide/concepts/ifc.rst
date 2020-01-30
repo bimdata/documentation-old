@@ -70,7 +70,7 @@ E                  Error               The process has failed.
 
 .. seealso::
 
-    See also :doc:`webhooks content </guide/webhooks>`
+    See also :doc:`webhooks content </guide/api_webhooks>`
     
     .. include:: ../guide/webhooks.rst
        :start-after: excerpt

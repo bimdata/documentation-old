@@ -9,10 +9,10 @@ Tutorials
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`Viewer: create a plugin </viewer/create_viewer_plugin>`
+.. topic:: :doc:`Viewer: create a plugin <viewer_create_plugin>`
    :class: viewer
 
-    .. include:: ../viewer/create_viewer_plugin.rst
+    .. include:: viewer_create_plugin.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
@@ -23,10 +23,10 @@ Tutorials
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`API: Use external libraries <../getting_started/api_external_clients_getting_started>`
+.. topic:: :doc:`API: Use external libraries <../getting_started/api_external_clients>`
    :class: api
 
-    .. include:: ../getting_started/api_external_clients_getting_started.rst
+    .. include:: ../getting_started/api_external_clients.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
@@ -38,19 +38,38 @@ Tutorials
        :end-before: endexcerpt
 
 
-.. topic:: :doc:`Use our Postman collection <../getting_started/postman_getting_started>`
+.. topic:: :doc:`Use our Postman collection <../getting_started/postman>`
    :class: api
 
-    .. include::  ../getting_started/postman_getting_started.rst
+    .. include::  ../getting_started/postman.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+
+.. topic:: :doc:`Viewer: using a custom Viewer <using_custom_viewer>`
+   :class: viewer
+
+    .. include:: using_custom_viewer.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+
+.. topic:: :doc:`Viewer: using a Vue component <viewer_using_vue_component>`
+   :class: viewer
+
+    .. include:: viewer_using_vue_component.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. toctree::
     :maxdepth: 1
 
-    ../getting_started/api_external_clients_getting_started
-    ../getting_started/postman_getting_started
+    ../getting_started/api_external_clients
+    ../getting_started/postman
     api_retrieve-elements
     dev_create_an_application
     dev_get_access_token
     dev_ifc_access_token
+    viewer_create_plugin
+    viewer_using_vue_component
+    using_custom_viewer

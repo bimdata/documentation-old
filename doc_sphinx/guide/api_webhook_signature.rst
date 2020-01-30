@@ -32,4 +32,4 @@ Here is a python example to check the signature:
 
 .. seealso::
 
-    View :doc:`the Webhook guide <../guide/webhooks>`.
+    View :doc:`the Webhook guide <../guide/api_webhooks>`.

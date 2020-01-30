@@ -48,7 +48,6 @@ Guide
     *
     use_cases/*
     concepts/*
-    /viewer/index
     /platform/index
 
 
