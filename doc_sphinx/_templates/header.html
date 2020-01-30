@@ -50,7 +50,7 @@
       <li>
         <a {%if title == 'Guide' or parents and parents[0]["title"] == 'Guide' %} class="active" {% endif %} aria-label="{{ _('topics') }}" href="{{ pathto('guide/index') }}">Guide</a>
       </li>
-      <li><a {%if title == 'Tutorials' or parents and parents[0]["title"] == 'Tutorials' %} class="active" {% endif %} aria-label="{{ _('tutorials') }}" href="{{ pathto('tutorials/index') }}">Tutorials</a></li>
+      <li><a {%if title == 'Tutorials' or parents and parents[0]["title"] == 'Tutorials' %} class="active" {% endif %} aria-label="{{ _('tutorials') }}" href="{{ pathto('tutorials/index') }}">Learn</a></li>
       <li><a {%if title == 'Use Cases' or parents and parents[0]["title"] == 'Use Cases' %} class="active" {% endif %} aria-label="{{ _('use-cases') }}" href="{{ pathto('guide/use_cases/index') }}">Use&nbsp;Cases</a></li>
       <li><a {%if title == 'API Reference' or parents and parents[0]["title"] == 'API Reference' %} class="active" {% endif %} aria-label="{{ _('reference') }}" href="{{ pathto('api/index') }}">API&nbsp;Reference</a></li>
     </ul>
