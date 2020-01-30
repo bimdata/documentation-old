@@ -16,7 +16,7 @@ Examples
 
 Let use the resource IFC: ``/cloud/{cloud_pk}/project/{project_pk}/ifc``
 
-The response list will only include completed IFCs (see :doc:`IFC </concepts/ifc>`).
+The response list will only include completed IFCs (see :doc:`IFC </guide/concepts/ifc>`).
 You can combine several filters. Elements matching all combined filters will be returned.
 
 

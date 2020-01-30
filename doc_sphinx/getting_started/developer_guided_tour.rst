@@ -134,7 +134,7 @@ Cloud
     :end-before: endexcerpt
 
 .. note::
-    To learn :doc:`more about the cloud, see the concept page <../concepts/cloud>`.
+    To learn :doc:`more about the cloud, see the concept page <../guide/concepts/cloud>`.
 
 
 Filters

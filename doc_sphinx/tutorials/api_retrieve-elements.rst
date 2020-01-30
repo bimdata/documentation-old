@@ -177,7 +177,7 @@ With the filters, every IFC element can be retrieved. You can retrieve any eleme
 
 .. seealso::
 
-    See also :doc:`the API completedocumentation </api/introduction>`
+    See also :doc:`the API completedocumentation </getting_started/api>`
 
 .. _create an application: ../tutorials/dev_create_an_application.html
 .. _the procedure described on the dedicated page to get your Access Token: ../tutorials/dev_get_access_token.html

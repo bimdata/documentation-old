@@ -30,7 +30,7 @@ We support the following implementations:
 
 .. tip::
 
-    For more details, see: :doc:`the IFC Guide <../concepts/ifc>`
+    For more details, see: :doc:`the IFC Guide <../guide/concepts/ifc>`
 
 The BCF API
 -----------
