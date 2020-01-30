@@ -21,10 +21,12 @@
 
       {% if pagename == 'api/index' %}
       <main class="bimdata-documentation__layout doc-api">
+      {% elif pagename == '404' %}
+      <main class="bimdata-documentation__layout page-404">
       {% else %}
       <main class="bimdata-documentation__layout">
 
-        {% if pagename != 'api/index' %}
+        {% if pagename != 'api/index' and pagename != '404' %}
           <div class="bimdata-documentation__layout__summary">
             {%- block sidebar1 %}
               {%- for sidebartemplate in sidebars %}
@@ -48,6 +50,7 @@
           {%- endblock %}
         </div>
 
+      </main>
       </main>
       </main>
     {% endif %}
