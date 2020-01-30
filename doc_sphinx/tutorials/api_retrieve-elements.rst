@@ -72,7 +72,7 @@ Use the API to upload
 -------------------------
 
 Use the ``/cloud/{cloud_pk}/project/{project_pk}/document`` route to upload your file.
-The `documentation for this route`_ is available on our API Reference page.
+The `documentation for createDocument()`_ is available on our API Reference page.
 
 .. substitution-code-block:: python
 
@@ -140,7 +140,7 @@ Retrieve elements
 
 The route is: `/cloud/{cloud_pk}/project/{project_pk}/ifc/{ifc_pk}/element`
 
-As listed `on the documentation page for this route`_:
+As listed `on the documentation page for getElements()`_:
 the mandatory parameters are:
 
  * *cloud_pk* string
@@ -179,11 +179,11 @@ With the filters, every IFC element can be retrieved. You can retrieve any eleme
 
     See also :doc:`the API completedocumentation </api/introduction>`
 
-.. _create an application: ../cookbook/create_an_application.html
-.. _the procedure described on the dedicated page to get your Access Token: ../cookbook/get_access_token.html
-.. _What's a cloud?: ../concepts/cloud.html
-.. _What's a project?: ../concepts/projects.html
+.. _create an application: ../tutorials/dev_create_an_application.html
+.. _the procedure described on the dedicated page to get your Access Token: ../tutorials/dev_get_access_token.html
+.. _What's a cloud?: ../guide/concepts/cloud.html
+.. _What's a project?: ../guide/concepts/projects.html
 .. _Download Cassiopea IFC: https://drive.google.com/file/d/1njhweVCFvDNl8Gy3B1HxAolcfExt0Tg-/view?usp=sharing
-.. _documentation for this route: ../api/index.html#operation--cloud--cloud_pk--project--project_pk--document-post
-.. _the IFC documentation page: ../concepts/ifc.html
-.. _on the documentation page for this route: ../api/index.html#operation--cloud--cloud_pk--project--project_pk--ifc--ifc_pk--element-get
+.. _documentation for createDocument(): ../api/index.html#createDocument
+.. _the IFC documentation page: ../guide/concepts/ifc.html
+.. _on the documentation page for getElements(): ../api/index.html#getElements
