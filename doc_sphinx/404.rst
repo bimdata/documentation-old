@@ -1,7 +1,8 @@
 :orphan:
 
-===
+====
 404
-===
+====
 
-Error, the content is not here.
+.. raw:: html
+   :file: ./_static/404.html
