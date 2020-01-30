@@ -46,20 +46,15 @@ API Enpoint
 
 
 
-Our Tutorials
+Our Tutorial
 ==============
 
-Read our tutorials to begin using the API with a real-life sized purpose
+Read our tutorial to begin using the API with a real-life sized purpose
 
-* `Get data from model into an Excel file`_
-
-.. include:: ../tutorials/export_excel.rst
-    :start-after: excerpt
-    :end-before: endexcerpt
 
 * `Retrieve elements following a constraint`_
 
-.. include:: ../tutorials/retrieve-elements.rst
+.. include:: ../tutorials/api_retrieve-elements.rst
     :start-after: excerpt
     :end-before: endexcerpt
 
@@ -86,8 +81,7 @@ They are auto-generated from `our OpenAPI file`_ with `openapi-generator`_.
 .. _openapi-generator: https://github.com/OpenAPITools/openapi-generator
 
 .. _Go to API Reference: ../api/index.html
-.. _Get data from model into an Excel file: ../tutorials/export_excel.html
-.. _Retrieve elements following a constraint: ../tutorials/retrieve-elements.html
+.. _Retrieve elements following a constraint: ../tutorials/api_retrieve-elements.html
 .. _playground: ../api_playground/index.html
 .. _check it out:  ../api_playground/index.html
 
