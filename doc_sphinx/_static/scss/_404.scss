@@ -2,6 +2,9 @@
   max-width: 100%;
   min-height: calc(100vh - 60px);
   position: relative;
+  h1{
+    display: none;
+  }
   &::before, &::after{
     content: "";
     position: absolute;
@@ -27,13 +30,14 @@
     z-index: 1;
   }
   &-content{
+    margin-top: 32px;
     width: 1000px;
     &__header{
       display: flex;
       align-items: center;
       &__left{
         flex: 2;
-        h1{
+        h2{
           @include font-size(44px);
         }
         p{
