@@ -19,4 +19,4 @@ Users Management
 
 
 
-.. _the Guided Tour about Roles chapter: ../tutorials/guided_tour.html#roles
+.. _the Guided Tour about Roles chapter: ../getting_started/developer_guided_tour.html#roles

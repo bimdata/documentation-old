@@ -34,7 +34,7 @@ project.creation         a project is created
 
 .. seealso::
     
-    Read :doc:`the webhooks payload description <webhook_payload>`
+    Read :doc:`the webhooks payload description <api_webhook_payload>`
 
 Payload
 =======
@@ -58,7 +58,7 @@ You can try if a webhook is well configured with https://api-next.bimdata.io/doc
 Signature
 =========
  
-See :doc:`the signature documentation <webhook_signature>`
+See :doc:`the signature documentation <api_webhook_signature>`
 
 Authorizations
 ==============
@@ -70,4 +70,4 @@ on the Cloud and can't behave as a User.
 
 .. seealso::
     
-    See also :doc:`about IFC </concepts/ifc>`
+    See also :doc:`about IFC </guide/concepts/ifc>`

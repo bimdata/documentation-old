@@ -155,7 +155,11 @@
   }
 
   // custom PAGES CONTENT
-  #concepts, #guide, #getting-started, #cookbook, #tutorials, #use-cases, #api-documentation, #authentication, #viewer, #platform{
+<<<<<<< HEAD
+  #concepts, #guide, #getting-started, #cookbook, #tutorials, #use-cases, #api-documentation, #authentication{
+=======
+  #concepts, #guide, #cookbook, #tutorials, #use-cases{
+>>>>>>> parent of aca01d3... Fix the main menu, in the website header
     .topic{
       background-color: $color-primary-d15;
       p.topic-title{

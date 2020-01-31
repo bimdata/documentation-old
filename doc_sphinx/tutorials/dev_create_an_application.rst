@@ -1,3 +1,5 @@
+:produit: dev
+
 =========================
 Create your application
 =========================
@@ -57,7 +59,7 @@ Fields description
      - You can choose whatever you want. The name is displayed to users when requesting permissions and in their application list.
    * - Scopes
      - Select scopes your app needs 
-       `See the Scopes documentation content <../concepts/scopes.html>`_ to learn more.
+       `See the Scopes documentation content <../guide/concepts/scopes.html>`_ to learn more.
    * - Redirect URIs
      - List of authorized redirect URIs
        After allowing your app to access their data, users will be redirected to your app on one of these URIs.
@@ -68,4 +70,4 @@ Fields description
 
 .. seealso::
 
-    See also :doc:`about Security </guide/security>`
+    See also :doc:`about Security </guide/dev_security>`

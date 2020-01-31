@@ -11,7 +11,7 @@ BIMData supports many Identity Providers (BIMData Connect is an Identity provide
 
 If you own your user management system (Active Directory, LDAP, SAMLv2 or OpenId Connect), you don't want to use BIMData Connect.
 Services developed around BIMData (forked platform or any other app) can replace default BIMData Connect login with their own.
-Doing so, you can also manage the :doc:`invitation process <../guide/invitations>` yourself, ie. to send custom invitation e-mails or to validate an invitation automatically without user consent. 
+Doing so, you can also manage the :doc:`invitation process <../guide/dev_invitations>` yourself, ie. to send custom invitation e-mails or to validate an invitation automatically without user consent. 
 
 .. note::
     
@@ -19,6 +19,6 @@ Doing so, you can also manage the :doc:`invitation process <../guide/invitations
 
 .. seealso:: 
 
-     See :doc:`the Invitation process documentation <../guide/invitations>`.
+     See :doc:`the Invitation process documentation <../guide/dev_invitations>`.
 
 .. _Keycloak: https://www.keycloak.org

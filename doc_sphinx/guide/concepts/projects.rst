@@ -43,8 +43,8 @@ References
 
 .. seealso::
 
-    See also :doc:`Getting Started </tutorials/getting_started>` to learn how-to setup your project.
+    See also :doc:`Getting Started </getting_started/developer_guided_tour>` to learn how-to setup your project.
     
-    .. include:: ../tutorials/getting_started.rst
+    .. include:: /getting_started/developer_guided_tour.rst
        :start-after: excerpt
        :end-before: endexcerpt

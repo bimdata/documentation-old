@@ -71,7 +71,8 @@ They use the ``$store`` and the hub to emit events to the Viewer.
 
 .. note::
     
-    Find `the list of all the events <https://github.com/bimdata/documentation-viewer-examples/blob/master/Events.md>`_ in the dedicated page
+    Find `the list of all the events <https://github.com/bimdata/documentation-viewer-examples/blob/master/Events.md    Fix links for the index page Guide
+>`_ in the dedicated page
 
 Display and tooltip
 -------------------------------
@@ -163,7 +164,7 @@ Step 3: fill the ``cfg`` object
 You want a simple and clear Viewer to put your plugin in highlight.
 Using Javascript, fill the ``cfg`` configuration object, setting all the functionalities to false.
 
-The :doc:`details of every functionality disabled </viewer/using_custom_viewer>` are available in the Customize your Viewer content.
+The :doc:`details of every functionality disabled <using_custom_viewer>` are available in the Customize your Viewer content.
 
 .. substitution-code-block:: html
    :linenos:
@@ -206,7 +207,7 @@ The :doc:`details of every functionality disabled </viewer/using_custom_viewer>`
 Step 4: add your Acces Token
 =============================
 
-We provide you a demo token, usable for this tutorial. Create your own on BIMData Connect (see :doc:`/cookbook/ifc_access_token`). 
+We provide you a demo token, usable for this tutorial. Create your own on BIMData Connect (see :doc:`dev_ifc_access_token`). 
 
 
 .. substitution-code-block:: html

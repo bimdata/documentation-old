@@ -2,6 +2,11 @@
 Getting started with the Viewer
 ================================
 
+..
+    excerpt
+        The Viewer is a WebGL-based Viewer that you can include in your web apps.
+    endexcerpt
+
 .. contents:: Table of Contents
    :depth: 2
 
@@ -14,7 +19,7 @@ Embed with Vue.js
 
 You can embed the Viewer in your web application using Vue.js like a Vue Component.
 
-➤ :doc:`See how-to embed the Viewer using Vue.js <using_vue_component>`.
+➤ :doc:`See how-to embed the Viewer using Vue.js </tutorials/viewer_using_vue_component>`.
 
 
 Embed Viewer without Vue.js
@@ -65,7 +70,7 @@ Using a Custom Viewer
 
 When you need to implement custom behavior for the Viewer, you create a plugin.
 
-➤ :doc:`See how-to customize the Viewer's behavior to your needs <create_viewer_plugin>`.
+➤ :doc:`See how-to customize the Viewer's behavior to your needs </tutorials/viewer_create_plugin>`.
 
 By example, you could connect the Viewer with your system to link the 2D map user's actions on the 3D Viewer rendering.
 

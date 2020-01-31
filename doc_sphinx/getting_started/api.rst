@@ -1,14 +1,16 @@
-===============
-Getting Started
-===============
+=============================
+Getting Started with the API
+=============================
+
+..
+    excerpt
+        What is the BIMData API? Learn about it.
+    endexcerpt
 
 What is the BIMData API?
 ========================
 
 BIMData API is composed of several APIs: an IFC API, a BCF API, a Collaboration API, a Checker API and a SSO API.
-
-.. contents:: Our API
-   :depth: 3
 
 The IFC API
 -----------
@@ -28,7 +30,7 @@ We support the following implementations:
 
 .. tip::
 
-    For more details, see: :doc:`the IFC Guide </concepts/ifc>`
+    For more details, see: :doc:`the IFC Guide <../guide/concepts/ifc>`
 
 The BCF API
 -----------
@@ -69,9 +71,9 @@ BIMData API uses the OpenID Connect protocol (technically very similar to the OA
 Any OpenID library you may find online to help you implement the protocol will work with BIMData API
 
 To make API calls, you must retrieve an Access Token. There are many ways to get one depending on the context or your application.
-We'll use the simplest one for this 'Getting Started' and you can find :doc:`the details of all methods here </cookbook/get_access_token>`.
+We'll use the simplest one for this 'Getting Started' and you can find :doc:`the details of all methods here <../tutorials/dev_get_access_token>`.
 
-The first step is to create your application: as described in the :doc:`create your application documentation </cookbook/create_an_application>`
+The first step is to create your application: as described in the :doc:`create your application documentation <../tutorials/dev_create_an_application>`
 For the Getting Started, you want a confidential app.
 That means the app will be able to keep a secret (a JavaScript app or a mobile app can't because the code, and therefore the secret, will be visible by the user)
 
@@ -88,7 +90,7 @@ You can exchange them for an access token through an HTTP call.
 
 .. seealso::
  
-    See :doc:`Get Access Token documentation for further information </cookbook/get_access_token>`
+    See :doc:`Get Access Token documentation for further information <../tutorials/dev_get_access_token>`
 
 Once you have the access_token, you can start doing API calls!
 
@@ -97,7 +99,7 @@ All projects in this Cloud will share the Cloud's configuration.
 
 .. seealso::
 
-    `See Create Cloud endpoint in the API Ref </api/index.html#createCloud>`_
+    `See Create Cloud endpoint in the API Ref <../api/index.html#createCloud>`_
 
 A Cloud just needs a name:
 
@@ -154,11 +156,11 @@ Hourra: you get all the properties of all the doors of the Model!
 .. tip::
 
     * See :doc:`the list of all endpoints on the API </api/index>`
-    * If you want to :doc:`try the API calls directly from the web, you can use our API playground <api/playground>`.
+    * If you want to :doc:`try the API calls directly from the web, you can use our API playground <../api_playground/index>`.
 
 .. seealso::
 
-    The :doc:`Going further documentation <api/going_further>` in which you find the answers to the questions: 
+    The :doc:`Going further documentation <../guide/api_introduction>` in which you find the answers to the questions: 
 
       * How can I share data between my app and BIMData Platform?
       * How can I use BIMData Viewer with my uploaded models?
