@@ -60,4 +60,54 @@
       align-items: center;
     }
   }
+
+  // media queries - TABLET
+  @media (min-width:481px) and (max-width:980px){
+    &-content{
+      margin: 32px auto;
+      width: 80%;
+      &__header{
+        &__left{
+          h2{
+            @include font-size(36px);
+          }
+        }
+      }
+      .cards-vertical{
+        .card-vertical{
+          &:first-child, &:last-child{
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  // media queries - PHONE
+  @media only screen and (max-device-width:480px){
+    &-content{
+      width: 80%;
+      margin: 32px auto;
+      &__header{
+        flex-direction: column;
+        &__left{
+          flex: 1;
+        }
+        &__right{
+          flex: 1;
+    margin-top: 3rem;
+        }
+      }
+    }
+    .cards-vertical{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .card-vertical{
+        &:first-child, &:last-child{
+          margin: 0;
+        }
+      }
+    }
+  }
 }
