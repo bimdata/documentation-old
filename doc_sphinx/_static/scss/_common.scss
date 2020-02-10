@@ -198,6 +198,7 @@ ol {
   align-items: center;
   justify-content: center;
   font-family: $font-primary, sans-serif;
+  border: none;
   @include font-size(12px);
   &__fill{
     &--primary{
