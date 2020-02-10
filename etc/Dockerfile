@@ -39,5 +39,6 @@ RUN sphinx-build doc_sphinx html_doc
 RUN cd doc_sphinx && npm run build
 
 FROM nginx:stable-alpine
+RUN rm /etc/nginx/conf.d/default.conf
+COPY etc/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=0 /opt/html_doc/ /usr/share/nginx/html/
-
