@@ -2,6 +2,11 @@
 Concepts
 ========
 
+.. 
+    excerpt
+        Read about the Concepts in BIMData softwares
+    endexcerpt
+
 .. topic:: :doc:`Cloud <cloud>`
 
     .. include:: cloud.rst

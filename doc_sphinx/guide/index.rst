@@ -9,9 +9,9 @@ Guide
        :end-before: endexcerpt
 
 
-.. topic:: :doc:`API Introduction </api/introduction>`
+.. topic:: :doc:`API Guide </guide/api_guide>`
 
-    .. include:: ../api/introduction.rst
+    .. include:: api_guide.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
@@ -29,11 +29,6 @@ Guide
 
     Learn how-to use the Viewer
 
-.. topic:: :doc:`Use Cases <use_cases/index>`
-
-    .. include:: use_cases/inddex.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
 
 .. topic:: :doc:`Security <dev_security>`
 
