@@ -24,6 +24,7 @@
 {% set display_gitlab = True %}
 {% endif %}
 
+{% if pagename != '404' %}
 <div role="navigation" class="bimdata-documentation__layout__content__breadcrumb" aria-label="breadcrumbs navigation">
 
   <ul class="breadcrumb">
@@ -76,3 +77,4 @@
     </div>
   {% endblock %}
 </div>
+{% endif %}
