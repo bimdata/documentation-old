@@ -56,7 +56,7 @@ Let's take a look at the code for the `myCustomPlugin` plugin.
     },
     display: {
       iconPosition: 'left',
-      content: 'menu'
+      content: 'simple'
     },
     tooltip: "myCustomPlugin.tooltip"
 
@@ -297,7 +297,7 @@ You have made your first plugin.
                       },
                       display: {
                         iconPosition: 'left',
-                        content: 'menu'
+                        content: 'simple'
                       },
                       tooltip: "myCustomPlugin.tooltip"
                     }
@@ -365,7 +365,7 @@ If you copy-paste this code, you have a simple Viewer with the first plugin.s
                       },
                       display: {
                         iconPosition: 'left',
-                        content: 'menu'
+                        content: 'simple'
                       },
                       tooltip: "myCustomPlugin.tooltip"
                       }
