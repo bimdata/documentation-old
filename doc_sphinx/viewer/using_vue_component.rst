@@ -64,7 +64,7 @@ The script part
               cloudId: 88,
               projectId: 100,
               ifcIds: [175],
-              apiUrl: "https://api-beta.bimdata.io",
+              apiUrl: "https://api.bimdata.io",
             }
           }
         },
@@ -160,24 +160,15 @@ All the Viewer's plug-ins are disabled.
               cloudId: 88,
               projectId: 100,
               ifcIds: [175],
-              apiUrl: "https://api-beta.bimdata.io",
-              reload: false,
-              model: false,
-              help: false,
-              fullscreen: false,
-              section: false,
-              projection: false,
-              selectOptions: false,
-              structureAndProperties: false,
-              bcf: false,
-              logo: false,
-              rightClickMenu: false,
-              viewer3DNavCube: false
+              apiUrl: "https://api.bimdata.io",
+              bimdataPlugins: {
+                default: false
+              }
             }
-          };
+          }
         },
         components: {
           BIMDataViewer
         }
-        };
+      };
     </script>

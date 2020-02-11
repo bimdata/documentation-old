@@ -20,7 +20,7 @@ The viewer default plugins are using existing events that you can emit or listen
 
     /**
      * Set the projection type
-     * @param {string} projection - the projection type "perspective" or "ortho".
+     * @param {string} projection - possible values: perspective | ortho
      */
     $hub.emit("set-projection-type", { projection });
 
@@ -28,7 +28,7 @@ The viewer default plugins are using existing events that you can emit or listen
 
     /**
      * Set section mode.
-     * @param {boolean} active - true if section mode is active.
+     * @param {boolean} active - true when section mode is active.
      */
     $hub.emit("set-section-mode", { active });
 
@@ -37,7 +37,7 @@ The viewer default plugins are using existing events that you can emit or listen
     /**
      * Create a section plane.
      * options can be either axis or direction AND position.
-     * @param {string} options.axis - an axis on wich to create section plane. Accepted values: "x", "y" or "z".
+     * @param {string} options.axis - an axis on wich to create section plane. Possible values: "x" | "y" | "z".
      * @param {Float32Array(3)} options.direction
      * @param {Float32Array(3)} options.position
      */
@@ -151,7 +151,7 @@ The viewer default plugins are using existing events that you can emit or listen
      * Create annotations.
      * @param {Array|Set<string>} ids - the ids of objects on wich to create annotation.
      * @param {number|string} index - the index that will be displayed on annotations.
-     * @param {string} priority - the priority that will change the annotation aspect. Values accepted: "low", "medium", or "hight"
+     * @param {string} priority - the priority that will change the annotation aspect. Possible Values: "low" | "medium" | "hight"
      */
     $hub.emit("create-annotations", { ids, index, priority });
 

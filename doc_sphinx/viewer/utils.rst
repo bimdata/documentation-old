@@ -8,7 +8,7 @@ Getters allow to quickly get information about objects of the scene. They are re
 
     this.$utils.getterIWantToAccess(someParameter);
 
-Here is a list of all the getters :
+Here is a list of all the getters:
 
 .. code-block:: javascript
 
@@ -29,9 +29,9 @@ Here is a list of all the getters :
 .. code-block:: javascript
 
     /**
-     * Get all scene object of specific type.
+     * Get all scene objects of a specific type.
      * @param {string} type - a specific type.
-     * @return {Array<object>} all scene object of specific type.
+     * @return {Array<object>} all scene objects of specific type.
      */
     getAllObjectsOfType(type);
 
@@ -47,9 +47,9 @@ Here is a list of all the getters :
 .. code-block:: javascript
 
     /**
-     * Get all objects ids that share types with passed object ids.
-     * @param {Array|Set<string>} ids - object ids inspected for their types.
-     * @return {Array<string>} object ids with the same types as objects of ids passed in parameter.
+     * Get all objects ids that share the same IfcType than an object received in parameter.
+     * @param {Array|Set<string>} ids - object ids inspected for their IfcTypes.
+     * @return {Array<string>} object ids with the same IfcTypes as objects of ids received in parameter.
      */
     getIdsByTypeOf(ids);
 
@@ -74,9 +74,9 @@ Here is a list of all the getters :
 .. code-block:: javascript
 
     /**
-     * Get object name.
+     * Get object's name.
      * @param {string} id - an object id.
-     * @return {string} the object name.
+     * @return {string} the object's name.
      */
     getObjectName(id);
 
@@ -136,28 +136,30 @@ Here is a list of all the getters :
 .. code-block:: javascript
 
     /**
-     * Get the first ancestor of an object with a specific type.
+     * Get the first ancestor of an object with a specific IfcType.
      * @param {string} id - an object id.
-     * @param {string} type - an object type.
-     * @return {object} the first ancestor of the object with a specific type.
+     * @param {string} type - an IfcType.
+     * @return {object} the first ancestor of the object with a specific IfcType.
      */
     getObjectAncestorByType(id, type);
 
 .. code-block:: javascript
 
     /**
-     * Get the first ancestor of an object with the type "storey".
+     * Get the first ancestor of an object with the IfcType "storey".
+     * It is aquivalent to getObjectAncestorByType(id, "storey");
      * @param {string} id - an object id.
-     * @return {object} the first ancestor of the object with the type "storey".
+     * @return {object} the first ancestor of the object with the IfcType "storey".
      */
     getObjectStorey(id);
 
 .. code-block:: javascript
 
     /**
-     * Get the first ancestor of an object with the type "space".
+     * Get the first ancestor of an object with the IfcType "space".
+     * It is aquivalent to getObjectAncestorByType(id, "space");
      * @param {string} id - an object id.
-     * @return {object} the first ancestor of the object with the type "space".
+     * @return {object} the first ancestor of the object with the IfcType "space".
      */
     getObjectSpace(id);
 
@@ -165,7 +167,7 @@ Here is a list of all the getters :
 Example
 =======
 
-Clicking the plugin icon will activate the 'select by storey' mode. You can now click on an object and all objects in the same storey will be selected. The hover is storey dependent.
+Clicking the plugin icon will activate the 'select by storey' mode. When you click on an object, all objects in the same storey are selected. The hover is storey dependent.
 
 .. code-block:: html
 
@@ -189,20 +191,12 @@ Clicking the plugin icon will activate the 'select by storey' mode. You can now 
             cloudId: 88,
             projectId: 100,
             ifcIds: [175],
-            bcf: false,
-            reload: false,
-            model: false,
-            help: false,
-            fullscreen: false,
-            section: false,
-            projection: false,
-            selectOptions: false,
-            structureAndProperties: false,
-            bcf: false,
-            rightClickMenu: true,
-            viewer3DNavCube: false,
-            alerts: true,
-            logo: true
+            logo: true,
+            bimdataPlugins: {
+              default: false
+              rightClickMenu: true,
+              alerts: true,
+            }
           };
           const accessToken = "DEMO_TOKEN";
           const { viewer } = initBIMDataViewer(

@@ -5,13 +5,13 @@
 Viewer Documentation
 =======================
 
-BIMData Viewewr is a 3D Viewer built with Web technologies, you can use it on your website.
+BIMData Viewewr is a 3D Viewer built with Web technologies, you can use is in all your web apps.
 On top of that our Viewer is customizable through plug-ins.
 
 Guide
 ======
 
-Usage of the Viewer is either simply embedded in your web application, or with a custom to your needs plugin changing the behavior of the Viewer.
+Usage of the Viewer is either simply embedded in your web application, or with a custom-tailored plugin adapting to your needs the behavior of the Viewer.
 
 * :doc:`Getting Started with the Viewer </viewer/getting_started>`
 

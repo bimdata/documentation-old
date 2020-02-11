@@ -186,19 +186,9 @@ The :doc:`details of every functionality disabled </viewer/using_custom_viewer>`
                       cloudId: 88,
                       projectId: 100,
                       ifcIds: [175],
-                      bcf: false,
-                      reload: false,
-                      model: false,
-                      help: false,
-                      fullscreen: false,
-                      section: false,
-                      projection: false,
-                      selectOptions: false,
-                      structureAndProperties: false,
-                      bcf: false,
-                      logo: false,
-                      rightClickMenu: false,
-                      viewer3DNavCube: false
+                      bimdataPlugins: {
+                        default: false
+                      }
                     };
             </script>
             </body>
@@ -230,19 +220,9 @@ We provide you a demo token, usable for this tutorial. Create your own on BIMDat
                       cloudId: 88,
                       projectId: 100,
                       ifcIds: [175],
-                      bcf: false,
-                      reload: false,
-                      model: false,
-                      help: false,
-                      fullscreen: false,
-                      section: false,
-                      projection: false,
-                      selectOptions: false,
-                      structureAndProperties: false,
-                      bcf: false,
-                      logo: false,
-                      rightClickMenu: false,
-                      viewer3DNavCube: false
+                      bimdataPlugins: {
+                        default: false
+                      }
                     };
                     const accessToken = "DEMO_TOKEN";
                     const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer(
@@ -285,19 +265,9 @@ You have made your first plugin.
                       cloudId: 88,
                       projectId: 100,
                       ifcIds: [175],
-                      bcf: false,
-                      reload: false,
-                      model: false,
-                      help: false,
-                      fullscreen: false,
-                      section: false,
-                      projection: false,
-                      selectOptions: false,
-                      structureAndProperties: false,
-                      bcf: false,
-                      logo: false,
-                      rightClickMenu: false,
-                      viewer3DNavCube: false
+                      bimdataPlugins: {
+                        default: false
+                      }
                     };
                     const accessToken = "DEMO_TOKEN";
                     const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer(
@@ -363,19 +333,9 @@ If you copy-paste this code, you have a simple Viewer with the first plugin.s
                       cloudId: 88,
                       projectId: 100,
                       ifcIds: [175],
-                      bcf: false,
-                      reload: false,
-                      model: false,
-                      help: false,
-                      fullscreen: false,
-                      section: false,
-                      projection: false,
-                      selectOptions: false,
-                      structureAndProperties: false,
-                      bcf: false,
-                      logo: false,
-                      rightClickMenu: false,
-                      viewer3DNavCube: false
+                      bimdataPlugins: {
+                        default: false
+                      }
                     };
                     const accessToken = "DEMO_TOKEN";
                     const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer(
