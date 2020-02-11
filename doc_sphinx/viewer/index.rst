@@ -53,7 +53,9 @@ Example of code
             cloudId: 88,
             projectId: 100,
             ifcIds: [175],
-            bcf: false
+            bimdataPlugins: {
+              bcf: false
+            }
           }
           const accessToken = 'DEMO_TOKEN';
           const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer('app', accessToken, cfg);

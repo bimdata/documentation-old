@@ -68,9 +68,6 @@ Each functionality has a default value and could be disabled.
    * - alerts
      - The Alert plugin captures and displays the messages, at the bottom of the Viewer.
      - The plugin is disabled. Messages are not diplayed.
-   * - viewer3DNavCube
-     - XeoKit 3D cube to navigate
-     - The navigation 3D cube is not diplayed.
 
 Example with all functionalities disabled
 ===========================================
