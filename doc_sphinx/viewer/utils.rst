@@ -147,7 +147,7 @@ Here is a list of all the getters:
 
     /**
      * Get the first ancestor of an object with the IfcType "storey".
-     * It is aquivalent to getObjectAncestorByType(id, "storey");
+     * It is equivalent to getObjectAncestorByType(id, "storey");
      * @param {string} id - an object id.
      * @return {object} the first ancestor of the object with the IfcType "storey".
      */
@@ -157,7 +157,7 @@ Here is a list of all the getters:
 
     /**
      * Get the first ancestor of an object with the IfcType "space".
-     * It is aquivalent to getObjectAncestorByType(id, "space");
+     * It is equivalent to getObjectAncestorByType(id, "space");
      * @param {string} id - an object id.
      * @return {object} the first ancestor of the object with the IfcType "space".
      */
@@ -167,7 +167,7 @@ Here is a list of all the getters:
 Example
 =======
 
-Clicking the plugin icon will activate the 'select by storey' mode. When you click on an object, all objects in the same storey are selected. The hover is storey dependent.
+Clicking the plugin icon will activate the 'select by storey' mode. When you click an object, all objects in the same storey are selected. The hover is storey dependent.
 
 .. code-block:: html
 

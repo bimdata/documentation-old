@@ -14,7 +14,7 @@ You can listen to events the same way:
 
     this.$hub.on("my-event", callback);
 
-The viewer default plugins are using existing events that you can emit or listen:
+Default plugins are using events that you can also emit or listen. Use them to interact with default plugins or the 3D engine.
 
 .. code-block:: javascript
 
