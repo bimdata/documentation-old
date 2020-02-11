@@ -5,6 +5,11 @@ How-to embed the Viewer using Vue.js
 .. contents:: Table of Contents
    :depth: 2
 
+.. 
+    excerpt
+        Learn how-to embed the Viewer with VueJS
+    endexcerpt
+
 Pre-Requisites
 ===============
 

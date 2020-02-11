@@ -2,12 +2,14 @@
 Tutorial: How-to create a plugin for the Viewer
 =================================================
 
-.. contents:: Table of Contents
-   :depth: 2
-..
+.. 
     excerpt
         Create your first Viewer plugin
     endexcerpt
+
+
+.. contents:: Table of Contents
+   :depth: 2
 
 A Viewer's plugin is a Vue.js Component. The plugin adds one, or more, features to the Viewer.
 

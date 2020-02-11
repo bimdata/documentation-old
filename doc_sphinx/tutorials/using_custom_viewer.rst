@@ -2,6 +2,12 @@
 Customize the Viewer
 =====================
 
+.. 
+    excerpt
+        Make the Viewer best suited to your needs.
+    endexcerpt
+
+
 The BIMData's Viewer is highly customizable to your needs.
 
 
