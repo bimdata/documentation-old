@@ -5,25 +5,25 @@
 Use Cases
 ===============
 
-.. topic:: :doc:`Enrich BIM Viewer with IoT data <use_case_iot>`
+.. topic:: :doc:`Viewer and IoT data <use_case_iot>`
 
     .. include:: use_case_iot.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`AR with BCF comments <use_case_augmented_reality_bcf>`
+.. topic:: :doc:`On-site BCF usage <use_case_augmented_reality_bcf>`
 
     .. include:: use_case_augmented_reality_bcf.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`BCF in a blockchain <use_case_bcf_blockchain>`
+.. topic:: :doc:`BCF and webhooks <use_case_bcf_blockchain>`
 
     .. include:: use_case_bcf_blockchain.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`Documentation linked in the Viewer<use_case_reference_in_the_viewer>`
+.. topic:: :doc:`Enrich the Viewer with documentation<use_case_reference_in_the_viewer>`
 
     .. include:: use_case_reference_in_the_viewer.rst
        :start-after: excerpt
