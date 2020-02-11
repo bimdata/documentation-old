@@ -22,7 +22,7 @@ Pre-requisites
 The example plugin
 ================================
 
-.. note:: 
+.. note::
 
     This a Vue.js component, so `check the Vue.js documentation <https://vuejs.org/v2/guide/components.html>`_  to learn more about it.
 
@@ -38,24 +38,26 @@ Let's take a look at the code for the `myCustomPlugin` plugin.
 
     name: "myCustomPlugin",
     component: {
-    template: `
-            <div>
-            <button @click="onIsolateClick">Isolate selected element</button>
-            <button @click="onUnisolateClick">Unisolate all</button>
-            </div>`,
-    methods: {
+      template: `
+        <div>
+          <button @click="onIsolateClick">Isolate selected element</button>
+          <button @click="onUnisolateClick">Unisolate all</button>
+        </div>`,
+      methods: {
         onIsolateClick() {
-        this.$store.state.viewer.hub.$emit("isolate-objects", {
-            ids: this.$store.state.viewer.selectedObjectIds
-        });
+          this.$hub.emit("isolate-objects", {
+            ids: this.$utils.getSelectedObjectIds()
+          });
         },
         onUnisolateClick() {
-        this.$store.state.viewer.hub.$emit("unisolate-all-objects");
+          this.$hub.emit("unisolate-all-objects");
         }
-    }
+      }
     },
-    position: "left-menu",
-    display: "menu",
+    display: {
+      iconPosition: 'left',
+      content: 'simple'
+    },
     tooltip: "myCustomPlugin.tooltip"
 
 Template
@@ -70,7 +72,7 @@ The 2 methods are the simplest possible.
 They use the ``$store`` and the hub to emit events to the Viewer.
 
 .. note::
-    
+
     Find `the list of all the events <https://github.com/bimdata/documentation-viewer-examples/blob/master/Events.md>`_ in the dedicated page
 
 Display and tooltip
@@ -84,7 +86,7 @@ Layout
 
 
 By default, the plugin is added to the Viewer without any style.
-However, you can choose to display your plugin in the left or right menu, connected to a corresponding button activating the plugin. 
+However, you can choose to display your plugin in the left or right menu, connected to a corresponding button activating the plugin.
 When activated, the plugin can be styled in three different ways: "free", "simple" or "windowed".
 
 * **free** - the plugin is rendered next to the button without style.
@@ -96,10 +98,10 @@ Exemple :
 .. code-block:: javascript
 
     {
-        display: {
-            iconPosition: 'left', // other value: 'right'
-            content: 'free' // others values: 'simple', 'windowed'
-        }
+      display: {
+        iconPosition: 'left', // other value: 'right'
+        content: 'free' // others values: 'simple', 'windowed'
+      }
     }
 
 
@@ -109,7 +111,7 @@ Exemple :
 #. Set your accessToken
 #. Register your plugin. The plugin is a Vue.js element
 
-.. note:: 
+.. note::
 
     The complete code of this plugin is at the end of this tutorial. Jump to the end if you want to copy-paste the complete version.
 
@@ -136,7 +138,7 @@ Use the ``<script>`` tag to embed the Viewer, from the package.
 Step 2: Create the <div> for the Viewer
 =========================================
 
-The ``<div>`` defined by the "app" id will support the Viewer. 
+The ``<div>`` defined by the "app" id will support the Viewer.
 The parent ``<div>`` has its height defined in CSS, to have a big viewer taking the whole web page.
 
 .. substitution-code-block:: html
@@ -181,22 +183,12 @@ The :doc:`details of every functionality disabled </viewer/using_custom_viewer>`
                 </div>
                 <script>
                     const cfg = {
-                    cloudId: 88,
-                    projectId: 100,
-                    ifcIds: [175],
-                    bcf: false,
-                    reload: false,
-                    model: false,
-                    help: false,
-                    fullscreen: false,
-                    section: false,
-                    projection: false,
-                    selectOptions: false,
-                    structureAndProperties: false,
-                    bcf: false,
-                    logo: false,
-                    rightClickMenu: false,
-                    viewer3DNavCube: false
+                      cloudId: 88,
+                      projectId: 100,
+                      ifcIds: [175],
+                      bimdataPlugins: {
+                        default: false
+                      }
                     };
             </script>
             </body>
@@ -206,7 +198,7 @@ The :doc:`details of every functionality disabled </viewer/using_custom_viewer>`
 Step 4: add your Acces Token
 =============================
 
-We provide you a demo token, usable for this tutorial. Create your own on BIMData Connect (see :doc:`/cookbook/ifc_access_token`). 
+We provide you a demo token, usable for this tutorial. Create your own on BIMData Connect (see :doc:`/cookbook/ifc_access_token`).
 
 
 .. substitution-code-block:: html
@@ -225,28 +217,18 @@ We provide you a demo token, usable for this tutorial. Create your own on BIMDat
                 </div>
                 <script>
                     const cfg = {
-                    cloudId: 88,
-                    projectId: 100,
-                    ifcIds: [175],
-                    bcf: false,
-                    reload: false,
-                    model: false,
-                    help: false,
-                    fullscreen: false,
-                    section: false,
-                    projection: false,
-                    selectOptions: false,
-                    structureAndProperties: false,
-                    bcf: false,
-                    logo: false,
-                    rightClickMenu: false,
-                    viewer3DNavCube: false
+                      cloudId: 88,
+                      projectId: 100,
+                      ifcIds: [175],
+                      bimdataPlugins: {
+                        default: false
+                      }
                     };
                     const accessToken = "DEMO_TOKEN";
                     const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer(
-                    "app",
-                    accessToken,
-                    cfg
+                      "app",
+                      accessToken,
+                      cfg
                     );
             </script>
             </body>
@@ -257,7 +239,7 @@ Step 5: register your plugin
 =============================
 
 After initializing the BIMDataViewer with the proper settings, you register the plugin on the JS ``viewer`` object.
-The plugin is a Vue.js element, you define a template and the methods. Put the JavaScript code of your Vue.js Component as the plugin code. 
+The plugin is a Vue.js element, you define a template and the methods. Put the JavaScript code of your Vue.js Component as the plugin code.
 
 In addition to that, you set the ``display`` mode of your plugin to let your user access the features.
 You can also define the ``tooltip`` content.
@@ -280,54 +262,46 @@ You have made your first plugin.
                 </div>
                 <script>
                     const cfg = {
-                    cloudId: 88,
-                    projectId: 100,
-                    ifcIds: [175],
-                    bcf: false,
-                    reload: false,
-                    model: false,
-                    help: false,
-                    fullscreen: false,
-                    section: false,
-                    projection: false,
-                    selectOptions: false,
-                    structureAndProperties: false,
-                    bcf: false,
-                    logo: false,
-                    rightClickMenu: false,
-                    viewer3DNavCube: false
+                      cloudId: 88,
+                      projectId: 100,
+                      ifcIds: [175],
+                      bimdataPlugins: {
+                        default: false
+                      }
                     };
                     const accessToken = "DEMO_TOKEN";
                     const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer(
-                    "app",
-                    accessToken,
-                    cfg
+                        "app",
+                        accessToken,
+                        cfg
                     );
                     viewer.registerPlugins([
                     {
-                        name: "myCustomPlugin",
-                        component: {
+                      name: "myCustomPlugin",
+                      component: {
                         template: `
-                                <div>
-                                <button @click="onIsolateClick">Isolate selected element</button>
-                                <button @click="onUnisolateClick">Unisolate all</button>
-                                </div>`,
+                          <div>
+                            <button @click="onIsolateClick">Isolate selected element</button>
+                            <button @click="onUnisolateClick">Unisolate all</button>
+                          </div>`,
                         methods: {
-                            onIsolateClick() {
-                            this.$store.state.viewer.hub.$emit("isolate-objects", {
-                                ids: this.$store.state.viewer.selectedObjectIds
+                          onIsolateClick() {
+                            this.$hub.emit("isolate-objects", {
+                              ids: this.$utils.getSelectedObjectIds()
                             });
-                            },
-                            onUnisolateClick() {
-                            this.$store.state.viewer.hub.$emit("unisolate-all-objects");
-                            }
+                          },
+                          onUnisolateClick() {
+                            this.$hub.emit("unisolate-all-objects");
+                          }
                         }
-                        },
-                        position: "left-menu",
-                        display: "menu",
-                        tooltip: "myCustomPlugin.tooltip"
+                      },
+                      display: {
+                        iconPosition: 'left',
+                        content: 'simple'
+                      },
+                      tooltip: "myCustomPlugin.tooltip"
                     }
-                    ]);
+                  ]);
             </script>
             </body>
 
@@ -335,7 +309,7 @@ You have made your first plugin.
 
 
 
-The complete code 
+The complete code
 ===================
 
 If you copy-paste this code, you have a simple Viewer with the first plugin.s
@@ -356,53 +330,45 @@ If you copy-paste this code, you have a simple Viewer with the first plugin.s
                 </div>
                 <script>
                     const cfg = {
-                    cloudId: 88,
-                    projectId: 100,
-                    ifcIds: [175],
-                    bcf: false,
-                    reload: false,
-                    model: false,
-                    help: false,
-                    fullscreen: false,
-                    section: false,
-                    projection: false,
-                    selectOptions: false,
-                    structureAndProperties: false,
-                    bcf: false,
-                    logo: false,
-                    rightClickMenu: false,
-                    viewer3DNavCube: false
+                      cloudId: 88,
+                      projectId: 100,
+                      ifcIds: [175],
+                      bimdataPlugins: {
+                        default: false
+                      }
                     };
                     const accessToken = "DEMO_TOKEN";
                     const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer(
-                    "app",
-                    accessToken,
-                    cfg
+                        "app",
+                        accessToken,
+                        cfg
                     );
                     viewer.registerPlugins([
                     {
-                        name: "myCustomPlugin",
-                        component: {
+                      name: "myCustomPlugin",
+                      component: {
                         template: `
-                                <div>
-                                <button @click="onIsolateClick">Isolate selected element</button>
-                                <button @click="onUnisolateClick">Unisolate all</button>
-                                </div>`,
+                          <div>
+                            <button @click="onIsolateClick">Isolate selected element</button>
+                            <button @click="onUnisolateClick">Unisolate all</button>
+                          </div>`,
                         methods: {
-                            onIsolateClick() {
-                            this.$store.state.viewer.hub.$emit("isolate-objects", {
-                                ids: this.$store.state.viewer.selectedObjectIds
+                          onIsolateClick() {
+                            this.$hub.emit("isolate-objects", {
+                              ids: this.$utils.getSelectedObjectIds()
                             });
-                            },
-                            onUnisolateClick() {
-                            this.$store.state.viewer.hub.$emit("unisolate-all-objects");
-                            }
+                          },
+                          onUnisolateClick() {
+                            this.$hub.emit("unisolate-all-objects");
+                          }
                         }
-                        },
-                        position: "left-menu",
-                        display: "menu",
-                        tooltip: "myCustomPlugin.tooltip"
-                    }
+                      },
+                      display: {
+                        iconPosition: 'left',
+                        content: 'simple'
+                      },
+                      tooltip: "myCustomPlugin.tooltip"
+                      }
                     ]);
             </script>
             </body>
