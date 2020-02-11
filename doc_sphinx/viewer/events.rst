@@ -2,19 +2,19 @@
 Events
 ============================
 
-You can emit custom events using the hub :
+You can emit custom events using the hub:
 
 .. code-block:: javascript
 
     this.$hub.emit("my-event", payload);
 
-You can listen to events the same way :
+You can listen to events the same way:
 
 .. code-block:: javascript
 
     this.$hub.on("my-event", callback);
 
-The viewer default plugins are using existing events that you can emit or listen :
+The viewer default plugins are using existing events that you can emit or listen:
 
 .. code-block:: javascript
 
@@ -37,7 +37,7 @@ The viewer default plugins are using existing events that you can emit or listen
     /**
      * Create a section plane.
      * options can be either axis or direction AND position.
-     * @param {string} options.axis - an axis on wich to create section plane. Accepted values : "x", "y" or "z".
+     * @param {string} options.axis - an axis on wich to create section plane. Accepted values: "x", "y" or "z".
      * @param {Float32Array(3)} options.direction
      * @param {Float32Array(3)} options.position
      */
@@ -151,7 +151,7 @@ The viewer default plugins are using existing events that you can emit or listen
      * Create annotations.
      * @param {Array|Set<string>} ids - the ids of objects on wich to create annotation.
      * @param {number|string} index - the index that will be displayed on annotations.
-     * @param {string} priority - the priority that will change the annotation aspect. Values accepted : "low", "medium", or "hight"
+     * @param {string} priority - the priority that will change the annotation aspect. Values accepted: "low", "medium", or "hight"
      */
     $hub.emit("create-annotations", { ids, index, priority });
 

@@ -2,7 +2,7 @@
 Utils
 ============================
 
-Getters allow to quickly get information about objects of the scene. They are reachable using this syntax :
+Getters allow to quickly get information about objects of the scene. They are reachable using this syntax:
 
 .. code-block:: javascript
 
