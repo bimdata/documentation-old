@@ -64,17 +64,17 @@ The script part
     export default {
         name: 'app',
         data() {
-            return {
-                cfg: {
-                    cloudId: 88,
-                    projectId: 100,
-                    ifcIds: [175],
-                    apiUrl: "https://api-beta.bimdata.io",
-                }
+          return {
+            cfg: {
+              cloudId: 88,
+              projectId: 100,
+              ifcIds: [175],
+              apiUrl: "https://api-beta.bimdata.io",
             }
+          }
         },
         components: {
-            BIMDataViewer
+          BIMDataViewer
         }
     }
 
@@ -124,22 +124,22 @@ In the `main.js` file:
     Vue.use(Vuex);
 
     const i18n = new VueI18n({
-    locale: 'fr',
-    fallbackLocale: 'en', // set fallback locale
-    messages: {
+      locale: 'fr',
+      fallbackLocale: 'en', // set fallback locale
+      messages: {
         en: null,
         fr: null
-    }
+      }
     })
 
     new Vue({
-    store: new Vuex.Store(),
-    i18n,
-    render: function (h) { return h(App) }
+      store: new Vuex.Store(),
+      i18n,
+      render: function (h) { return h(App) }
     }).$mount('#app')
 
 
-Complete example 
+Complete example
 =================
 
 All the Viewer's plug-ins are disabled.
@@ -160,30 +160,29 @@ All the Viewer's plug-ins are disabled.
         export default {
         name: "app",
         data() {
-                return {
-                        cfg: {
-                            cloudId: 88,
-                            projectId: 100,
-                            ifcIds: [175],
-                            apiUrl: "https://api-beta.bimdata.io",
-                            reload: false,
-                            model: false,
-                            help: false,
-                            fullscreen: false,
-                            section: false,
-                            projection: false,
-                            selectOptions: false,
-                            structureAndProperties: false,
-                            bcf: false,
-                            logo: false,
-                            rightClickMenu: false,
-                            viewer3DNavCube: false
-                        }
-                };
+          return {
+            cfg: {
+              cloudId: 88,
+              projectId: 100,
+              ifcIds: [175],
+              apiUrl: "https://api-beta.bimdata.io",
+              reload: false,
+              model: false,
+              help: false,
+              fullscreen: false,
+              section: false,
+              projection: false,
+              selectOptions: false,
+              structureAndProperties: false,
+              bcf: false,
+              logo: false,
+              rightClickMenu: false,
+              viewer3DNavCube: false
+            }
+          };
         },
         components: {
-            BIMDataViewer
+          BIMDataViewer
         }
         };
     </script>
-

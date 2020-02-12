@@ -44,17 +44,17 @@ See below how-to embed the Viewer in your HTML:
     </head>
     <body>
         <div style="height: 100vh">
-        <div id="app"></div>
+            <div id="app"></div>
         </div>
         <script>
-        const cfg = {
+          const cfg = {
             cloudId: 88,
             projectId: 100,
             ifcIds: [175],
             bcf:false
-        }
-        const accessToken = 'DEMO_TOKEN';
-        const {viewer, store, eventHub, setAccessToken} = initBIMDataViewer('app', accessToken, cfg);
+          }
+          const accessToken = 'DEMO_TOKEN';
+          const {viewer, store, eventHub, setAccessToken} = initBIMDataViewer('app', accessToken, cfg);
         </script>
     </body>
     </html>

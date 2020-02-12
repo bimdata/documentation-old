@@ -5,20 +5,21 @@
 Viewer Documentation
 =======================
 
-BIMData Viewewr is a 3D Viewer built with Web technologies, you can use it on your website. 
+BIMData Viewewr is a 3D Viewer built with Web technologies, you can use it on your website.
 On top of that our Viewer is customizable through plug-ins.
 
 Guide
 ======
 
-Usage of the Viewer is either simply embedded in your web application, or with a custom to your needs plugin changing the behavior of the Viewer. 
+Usage of the Viewer is either simply embedded in your web application, or with a custom to your needs plugin changing the behavior of the Viewer.
 
-* :doc:`Getting Started with the Viewer </getting_started/viewer>`
+* :doc:`Getting Started with the Viewer </viewer/getting_started>`
 
 Reference
 ===========
 
-* :doc:`Events and listeners </reference/viewer_listeners>`
+* :doc:`Events </viewer/events>`
+* :doc:`Utils and helper methods </viewer/utils>`
 
 Tutorials
 ==========
@@ -26,9 +27,9 @@ Tutorials
 BIMData provides a 3D Viewer with which you can interact with Javascript.
 The Viewer is built with VueJS framework, the architecture of the Viewer is using components, and built-on XeoKit.
 
- * :doc:`How-to customize the Viewer to your design </tutorials/using_custom_viewer>`
- * :doc:`How-to embed the Viewer using Vue.js</tutorials/viewer_using_vue_component>`
- * :doc:`How-to create a Viewer plugin </tutorials/viewer_create_plugin>`
+ * :doc:`How-to customize the Viewer to your design </viewer/using_custom_viewer>`
+ * :doc:`How-to embed the Viewer using Vue.js</viewer/using_vue_component>`
+ * :doc:`How-to create a Viewer plugin </viewer/create_viewer_plugin>`
 
 Example of code
 =================
@@ -48,14 +49,14 @@ Example of code
             <div id="app"></div>
         </div>
         <script>
-            const cfg = {
-                cloudId: 88,
-                projectId: 100,
-                ifcIds: [175],
-                bcf: false
-            }
-            const accessToken = 'DEMO_TOKEN';
-            const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer('app', accessToken, cfg);
+          const cfg = {
+            cloudId: 88,
+            projectId: 100,
+            ifcIds: [175],
+            bcf: false
+          }
+          const accessToken = 'DEMO_TOKEN';
+          const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer('app', accessToken, cfg);
         </script>
     </body>
     </html>
@@ -87,11 +88,12 @@ In addition to that, we recommend:
 .. toctree::
     :hidden:
 
-    /getting_started/viewer
-    /tutorials/viewer_create_plugin
-    /tutorials/using_custom_viewer
-    /tutorials/viewer_using_vue_component
-    /reference/viewer_listeners
+    getting_started
+    create_viewer_plugin
+    using_custom_viewer
+    using_vue_component
+    events
+    utils
 
 .. _Test the WebGL support: https://get.webgl.org
 .. _WebGL-enabled browsers: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
