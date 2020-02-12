@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>BIMData - CJS Example</title>
+        <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div style="height: 50vh; width:70wh">
+            <div id="app"></div>
+        </div>
+        <script>
+            const cfg = {
+              cloudId: 88,
+              projectId: 100,
+              ifcIds: [175],
+              bimdataPlugins: {
+                default: false
+              }
+            };
+            const accessToken = "DEMO_TOKEN";
+            const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer(
+                "app",
+                accessToken,
+                cfg
+            );
+            viewer.registerPlugins([
+              {
+                name: "myCustomPlugin",
+                component: {
+                  template: `
+                    <div>
+                      <button @click="onIsolateClick">Isolate selected element</button>
+                      <button @click="onUnisolateClick">Unisolate all</button>
+                    </div>`,
+                  methods: {
+                    onIsolateClick() {
+                      this.$hub.emit("isolate-objects", {
+                        ids: this.$utils.getSelectedObjectIds()
+                      });
+                    },
+                    onUnisolateClick() {
+                      this.$hub.emit("unisolate-all-objects");
+                    }
+                  }
+                },
+                display: {
+                  iconPosition: 'left',
+                  content: 'simple'
+                },
+                tooltip: "myCustomPlugin.tooltip",
+                i18n: {
+                  en: {
+                    myCustomPlugin: {
+                      tooltip: "My Plugin!",
+                    }
+                  },
+                  fr: {
+                    myCustomPlugin: {
+                      tooltip: "Mon Greffon !",
+                    }
+                  }
+                }
+              }
+            ]);
+        </script>
+    </body>
+</html>

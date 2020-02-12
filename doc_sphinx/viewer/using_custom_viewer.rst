@@ -4,27 +4,23 @@ Customize the Viewer
 
 The BIMData's Viewer is highly customizable to your needs.
 
-
-Load the Viewer
-================
-
-To load the Viewer in your web application, use the ``<script>`` tag with the packaged version:
-
-.. substitution-code-block:: javascript
-
-    <script src="https://unpkg.com/@bimdata/viewer@0.3.3/dist/bimdata-viewer.min.js" charset="utf-8"></script>
-
-In your JavaScript:
-
- * set the data about which IFC model you load
- * then set the options you want
-
-
 Viewer functionalities
 ========================
 
 The Viewer is provided with many functionalities by default. Each one can be disabled independently.
-In the ``cfg`` Object (see ::doc:`/viewer/getting_started` ), you can disable any plugin by setting it to ``false``:
+In the ``cfg.bimdataPlugins`` Object (see ::doc:`/viewer/getting_started` ), you can disable any plugin by setting it to ``false``, or disabling all bimdata plugin by setting ``default: false``:
+
+.. substitution-code-block:: javascript
+
+    const cfg = {
+      cloudId: 88,
+      projectId: 100,
+      ifcIds: [175],
+      bimdataPlugins: {
+        default: false,
+        bcf: true
+      }
+    };
 
 Each functionality has a default value and could be disabled.
 
