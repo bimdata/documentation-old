@@ -24,12 +24,16 @@ The example plugin
 
 .. note::
 
-    This a Vue.js component, so `check the Vue.js documentation <https://vuejs.org/v2/guide/components.html>`_  to learn more about it.
+    A plugin is based on a Vue.js component, so `check the Vue.js documentation <https://vuejs.org/v2/guide/components.html>`_  to learn more about it.
 
 The plugin is enabled as a menu icon. This plugin contains 2 features:
 
  * Isolate the selected element of the Model
  * Reset by un-isolating everything
+
+
+.. raw:: html
+   :file: ../_static/viewer_plugin_example.html
 
 Let's take a look at the code for the `myCustomPlugin` plugin.
 
@@ -58,7 +62,19 @@ Let's take a look at the code for the `myCustomPlugin` plugin.
       iconPosition: 'left',
       content: 'simple'
     },
-    tooltip: "myCustomPlugin.tooltip"
+    tooltip: "myCustomPlugin.tooltip",
+    i18n: {
+      en: {
+        myCustomPlugin: {
+          tooltip: "My Plugin!",
+        }
+      },
+      fr: {
+        myCustomPlugin: {
+          tooltip: "Mon Greffon !",
+        }
+      }
+    }
 
 Template
 ------------
@@ -132,7 +148,6 @@ Use the ``<script>`` tag to embed the Viewer, from the package.
             </head>
             <body>
             </body>
-
         </html>
 
 Step 2: Create the <div> for the Viewer
@@ -144,20 +159,11 @@ The parent ``<div>`` has its height defined in CSS, to have a big viewer taking 
 .. substitution-code-block:: html
    :linenos:
 
-        <!DOCTYPE html>
-        <html lang="en" dir="ltr">
-            <head>
-                <meta charset="utf-8">
-                <title>BIMData - CJS Example</title>
-                <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
-            </head>
             <body>
                 <div style="height: 100vh">
                     <div id="app"></div>
                 </div>
             </body>
-
-        </html>
 
 Step 3: fill the ``cfg`` object
 ================================
@@ -167,73 +173,25 @@ Using Javascript, fill the ``cfg`` configuration object, setting all the functio
 
 The :doc:`details of every functionality disabled </viewer/using_custom_viewer>` are available in the Customize your Viewer content.
 
-.. substitution-code-block:: html
-   :linenos:
-
-        <!DOCTYPE html>
-        <html lang="en" dir="ltr">
-            <head>
-                <meta charset="utf-8">
-                <title>BIMData - CJS Example</title>
-                <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
-            </head>
-            <body>
-                <div style="height: 100vh">
-                    <div id="app"></div>
-                </div>
-                <script>
-                    const cfg = {
-                      cloudId: 88,
-                      projectId: 100,
-                      ifcIds: [175],
-                      bimdataPlugins: {
-                        default: false
-                      }
-                    };
-            </script>
-            </body>
-
-        </html>
-
-Step 4: add your Acces Token
-=============================
-
 We provide you a demo token, usable for this tutorial. Create your own on BIMData Connect (see :doc:`/cookbook/ifc_access_token`).
 
-
-.. substitution-code-block:: html
+.. substitution-code-block:: javascript
    :linenos:
 
-        <!DOCTYPE html>
-        <html lang="en" dir="ltr">
-            <head>
-                <meta charset="utf-8">
-                <title>BIMData - CJS Example</title>
-                <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
-            </head>
-            <body>
-                <div style="height: 100vh">
-                    <div id="app"></div>
-                </div>
-                <script>
-                    const cfg = {
-                      cloudId: 88,
-                      projectId: 100,
-                      ifcIds: [175],
-                      bimdataPlugins: {
-                        default: false
-                      }
-                    };
-                    const accessToken = "DEMO_TOKEN";
-                    const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer(
-                      "app",
-                      accessToken,
-                      cfg
-                    );
-            </script>
-            </body>
-
-        </html>
+    const cfg = {
+      cloudId: 88,
+      projectId: 100,
+      ifcIds: [175],
+      bimdataPlugins: {
+        default: false
+      }
+    };
+    const accessToken = "DEMO_TOKEN";
+    const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer(
+      "app",
+      accessToken,
+      cfg
+    );
 
 Step 5: register your plugin
 =============================
@@ -246,66 +204,49 @@ You can also define the ``tooltip`` content.
 
 You have made your first plugin.
 
-.. substitution-code-block:: html
+.. substitution-code-block:: javascript
    :linenos:
 
-        <!DOCTYPE html>
-        <html lang="en" dir="ltr">
-            <head>
-                <meta charset="utf-8">
-                <title>BIMData - CJS Example</title>
-                <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
-            </head>
-            <body>
-                <div style="height: 100vh">
-                    <div id="app"></div>
-                </div>
-                <script>
-                    const cfg = {
-                      cloudId: 88,
-                      projectId: 100,
-                      ifcIds: [175],
-                      bimdataPlugins: {
-                        default: false
-                      }
-                    };
-                    const accessToken = "DEMO_TOKEN";
-                    const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer(
-                        "app",
-                        accessToken,
-                        cfg
-                    );
-                    viewer.registerPlugins([
-                    {
-                      name: "myCustomPlugin",
-                      component: {
-                        template: `
-                          <div>
-                            <button @click="onIsolateClick">Isolate selected element</button>
-                            <button @click="onUnisolateClick">Unisolate all</button>
-                          </div>`,
-                        methods: {
-                          onIsolateClick() {
-                            this.$hub.emit("isolate-objects", {
-                              ids: this.$utils.getSelectedObjectIds()
-                            });
-                          },
-                          onUnisolateClick() {
-                            this.$hub.emit("unisolate-all-objects");
-                          }
-                        }
-                      },
-                      display: {
-                        iconPosition: 'left',
-                        content: 'simple'
-                      },
-                      tooltip: "myCustomPlugin.tooltip"
-                    }
-                  ]);
-            </script>
-            </body>
+      viewer.registerPlugins([
+        {
+          name: "myCustomPlugin",
+          component: {
+            template: `
+              <div>
+                <button @click="onIsolateClick">Isolate selected element</button>
+                <button @click="onUnisolateClick">Unisolate all</button>
+              </div>`,
+            methods: {
+              onIsolateClick() {
+                this.$hub.emit("isolate-objects", {
+                  ids: this.$utils.getSelectedObjectIds()
+                });
+              },
+              onUnisolateClick() {
+                this.$hub.emit("unisolate-all-objects");
+              }
+            }
+          },
+          display: {
+            iconPosition: 'left',
+            content: 'simple'
+          },
+          tooltip: "myCustomPlugin.tooltip",
+          i18n: {
+            en: {
+              myCustomPlugin: {
+                tooltip: "My Plugin!",
+              }
+            },
+            fr: {
+              myCustomPlugin: {
+                tooltip: "Mon Greffon !",
+              }
+            }
+          }
+        }
+      ]);
 
-        </html>
 
 
 
@@ -325,7 +266,7 @@ If you copy-paste this code, you have a simple Viewer with the first plugin.s
                 <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
             </head>
             <body>
-                <div style="height: 100vh">
+                <div style="height: 50vh; width:70wh">
                     <div id="app"></div>
                 </div>
                 <script>
@@ -344,33 +285,44 @@ If you copy-paste this code, you have a simple Viewer with the first plugin.s
                         cfg
                     );
                     viewer.registerPlugins([
-                    {
-                      name: "myCustomPlugin",
-                      component: {
-                        template: `
-                          <div>
-                            <button @click="onIsolateClick">Isolate selected element</button>
-                            <button @click="onUnisolateClick">Unisolate all</button>
-                          </div>`,
-                        methods: {
-                          onIsolateClick() {
-                            this.$hub.emit("isolate-objects", {
-                              ids: this.$utils.getSelectedObjectIds()
-                            });
+                      {
+                        name: "myCustomPlugin",
+                        component: {
+                          template: `
+                            <div>
+                              <button @click="onIsolateClick">Isolate selected element</button>
+                              <button @click="onUnisolateClick">Unisolate all</button>
+                            </div>`,
+                          methods: {
+                            onIsolateClick() {
+                              this.$hub.emit("isolate-objects", {
+                                ids: this.$utils.getSelectedObjectIds()
+                              });
+                            },
+                            onUnisolateClick() {
+                              this.$hub.emit("unisolate-all-objects");
+                            }
+                          }
+                        },
+                        display: {
+                          iconPosition: 'left',
+                          content: 'simple'
+                        },
+                        tooltip: "myCustomPlugin.tooltip",
+                        i18n: {
+                          en: {
+                            myCustomPlugin: {
+                              tooltip: "My Plugin!",
+                            }
                           },
-                          onUnisolateClick() {
-                            this.$hub.emit("unisolate-all-objects");
+                          fr: {
+                            myCustomPlugin: {
+                              tooltip: "Mon Greffon !",
+                            }
                           }
                         }
-                      },
-                      display: {
-                        iconPosition: 'left',
-                        content: 'simple'
-                      },
-                      tooltip: "myCustomPlugin.tooltip"
                       }
                     ]);
-            </script>
+                </script>
             </body>
-
         </html>
