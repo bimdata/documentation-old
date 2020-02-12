@@ -177,7 +177,7 @@ Clicking the plugin icon will activate the 'select by storey' mode. When you cli
         <meta charset="utf-8" />
         <title>BIMData - Getters - Storey</title>
         <script
-          src="https://unpkg.com/@bimdata/viewer@0.6.3/dist/bimdata-viewer.min.js"
+          src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js"
           charset="utf-8"
         ></script>
       </head>
