@@ -33,7 +33,7 @@ You could also run our Postman collection:
    :alt: Run in Postman!
    :target: https://app.getpostman.com/run-collection/3d3c0b2a685505934729
 
-:doc:`Check our guide to get started with our Postman collection </cookbook/postman_getting_started>`.
+:doc:`Check our guide to get started with our Postman collection </getting_started/postman>`.
 
 Getting Help
 ============

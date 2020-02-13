@@ -1,90 +1,49 @@
-===========
+======
 Guide
-===========
+======
 
-.. topic:: `API Introduction`_
+.. topic:: :doc:`Concepts <concepts/index>`
 
-    .. include:: ../api/introduction.rst
+    .. include:: concepts/index.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 
-.. topic:: `Authentication`_
+.. topic:: :doc:`API Guide </guide/api_guide>`
+
+    .. include:: api_guide.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+.. topic:: :doc:`Authentication <authentication_bimdata_connect>`
 
     .. include:: authentication_bimdata_connect.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
+.. topic:: :doc:`Platform </platform/index>`
 
-.. topic:: `Authentication migration`_
+    Learn how-to use the Platform
 
-    .. include:: authentication_migration.rst
+.. topic:: :doc:`Viewer </viewer/index>`
+
+    Learn how-to use the Viewer
+
+
+.. topic:: :doc:`Security <dev_security>`
+
+    .. include:: dev_security.rst
        :start-after: excerpt
        :end-before: endexcerpt
-
-
-.. topic:: `Errors`_
-
-    .. include:: errors.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-
-.. topic:: `Filters`_
-
-    .. include:: filters.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-.. topic:: `Webhooks`_
-
-    .. include:: webhooks.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-
-.. topic:: `Security`_
-
-    .. include:: security.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-.. topic:: `Identity Providers`_
-
-    .. include:: identity_providers.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-.. topic:: `Invitations`_
-
-    .. include:: invitations.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-
 
 .. toctree::
     :hidden:
+    :glob:
     
-    API Introduction </api/introduction>
-    Authentication <authentication_bimdata_connect>
-    Authentication migration <authentication_migration>
-    Errors <errors>
-    Filters <filters>
-    Webhooks <webhooks>
-    Security Concerns<security>
-    Identity Providers <identity_providers>
-    Invitation process <invitations>
-
-.. _API Introduction: ../api/introduction.html
-.. _Authentication: authentication_bimdata_connect.html
-.. _Authentication migration: authentication_migration.html
-.. _Errors: errors.html
-.. _Filters: filters.html
-.. _Webhooks: webhooks.html
-.. _Security: security.html
-.. _Identity Providers: identity_providers.html
-.. _Invitations: invitations.html
+    *
+    use_cases/*
+    concepts/*
+    /platform/index
 
 
 

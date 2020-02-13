@@ -14,5 +14,5 @@ API Reference
    :hidden:
 
    introduction
-   getting_started
-   going_further
+   ../getting_started/api
+   ../getting_started/api_external_clients

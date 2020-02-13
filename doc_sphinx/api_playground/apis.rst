@@ -2,13 +2,21 @@
 ============
 APIs
 ============
+
 .. toctree::
-  :maxdepth: 1
   :titlesonly:
 
+  sso_endpoint
   collaboration_endpoint
   ifc_endpoint
   bcf_endpoint
-  sso_endpoint
   checker_endpoint
   webhook_endpoint
+
+* :doc:`Authentication <sso_endpoint>`
+* :doc:`Collaboration API <collaboration_endpoint>`
+* :doc:`IFC API <ifc_endpoint>`
+* :doc:`BCF API <bcf_endpoint>`
+* :doc:`Webhooks API <webhook_endpoint>`
+
+

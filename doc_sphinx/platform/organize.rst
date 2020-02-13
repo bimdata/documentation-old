@@ -95,6 +95,6 @@ IFC files and documents can be uploaded and organized, checkplans are defined.
 
 
 
-.. _projects: ../concepts/projects.html
+.. _projects: ../guide/concepts/projects.html
 .. _Collaborate chapter: collaborate.html
 .. _Add Content: add_content.html
