@@ -2,47 +2,74 @@
 Tutorials
 =========
 
-.. topic:: `Getting Started`_
+.. topic:: :doc:`Platform: create your application <dev_create_an_application>`
+   :class: platform
 
-    .. include:: getting_started.rst
+    .. include:: dev_create_an_application.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: `Viewer`_
+.. topic:: :doc:`Viewer: create a plugin <viewer_create_plugin>`
+   :class: viewer
 
-    .. include:: ../viewer/create_viewer_plugin.rst
+    .. include:: viewer_create_plugin.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: `API`_
+.. topic:: :doc:`API: retrieve elements <api_retrieve-elements>`
+   :class: api
 
-    .. include:: retrieve-elements.rst
+    .. include:: api_retrieve-elements.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: `BCF`_
+.. topic:: :doc:`API: Use external libraries <../getting_started/api_external_clients>`
+   :class: api
 
-    .. include:: export_excel.rst
+    .. include:: ../getting_started/api_external_clients.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: `Guided Tour`_
+.. topic:: :doc:`Get Access Token <dev_get_access_token>`
+   :class: platform
 
-    .. include:: guided_tour.rst
+    .. include:: dev_get_access_token.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. _Viewer: ../viewer/create_viewer_plugin.html
-.. _API: retrieve-elements.html
-.. _BCF: export_excel.html
-.. _Getting Started: getting_started.html
-.. _Guided Tour: guided_tour.html
+
+.. topic:: :doc:`Use our Postman collection <../getting_started/postman>`
+   :class: api
+
+    .. include::  ../getting_started/postman.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+
+.. topic:: :doc:`Viewer: using a custom Viewer <using_custom_viewer>`
+   :class: viewer
+
+    .. include:: using_custom_viewer.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+
+.. topic:: :doc:`Viewer: using a Vue component <viewer_using_vue_component>`
+   :class: viewer
+
+    .. include:: viewer_using_vue_component.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
 
 .. toctree::
-    :hidden:
     :maxdepth: 1
 
-    Guided Tour <guided_tour>   
-    Tutorial: Create a plug-in for the Viewer  <../viewer/create_viewer_plugin>
-    Tutorial: Retrieve elements of your model <retrieve-elements>
-    Tutorial: Process BCF data for Excel export <export_excel>
+    ../getting_started/api_external_clients
+    ../getting_started/postman
+    api_retrieve-elements
+    dev_create_an_application
+    dev_get_access_token
+    dev_ifc_access_token
+    viewer_create_plugin
+    viewer_using_vue_component
+    using_custom_viewer

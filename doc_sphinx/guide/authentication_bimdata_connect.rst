@@ -115,7 +115,6 @@ The two types are two different mechanisms to aks for user's permissions.
 
 .. seealso::
     
-    See also the tutorial :doc:`"Retrieve elements following a constraint" </tutorials/retrieve-elements>`
-    and :doc:`all the recipes from our Cookbook </cookbook/index>`
+    See also the tutorial :doc:`"Retrieve elements following a constraint" </tutorials/api_retrieve-elements>`
 
-.. _Create an application process: ../tutorials/guided_tour.html#which-app-will-you-create
+.. _Create an application process: ../tutorials/dev_create_an_application.html
