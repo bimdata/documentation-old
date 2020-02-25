@@ -23,6 +23,20 @@ Tutorials
        :start-after: excerpt
        :end-before: endexcerpt
 
+.. topic:: :doc:`API: share data <api_share_data_app_platform>`
+   :class: api
+
+    .. include:: api_share_data_app_platform.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+.. topic:: :doc:`API: using the Viewer <api_use_viewer>`
+   :class: api
+
+    .. include:: api_use_viewer.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
 .. topic:: :doc:`API: Use external libraries <../getting_started/api_external_clients>`
    :class: api
 
@@ -67,6 +81,8 @@ Tutorials
     ../getting_started/api_external_clients
     ../getting_started/postman
     api_retrieve-elements
+    api_share_data_app_platform
+    api_use_viewer
     dev_create_an_application
     dev_get_access_token
     dev_ifc_access_token
