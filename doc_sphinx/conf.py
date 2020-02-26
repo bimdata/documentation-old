@@ -26,7 +26,7 @@ extensions = [
     "sphinx_substitution_extensions",
     "sphinx_copybutton",
     "sphinxcontrib.contentui",
-    'notfound.extension',
+    "notfound.extension",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
