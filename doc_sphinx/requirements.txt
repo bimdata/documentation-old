@@ -6,3 +6,4 @@ Sphinx-Substitution-Extensions==2019.12.28.0
 sphinx-copybutton==0.2.8
 sphinxcontrib-contentui==0.2.4
 scrapy==1.8.0
+sphinx-notfound-page==0.4
