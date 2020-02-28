@@ -5,4 +5,5 @@
 ====
 
 .. raw:: html
-   :file: _static/404.html
+   :file: /_static/404.html
+
