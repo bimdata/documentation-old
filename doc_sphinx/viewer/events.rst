@@ -2,6 +2,13 @@
 Events
 ============================
 
+.. contents::
+   :depth: 2
+
+
+Emit and listen
+================
+
 You can emit custom events using the hub:
 
 .. code-block:: javascript
@@ -14,7 +21,11 @@ You can listen to events the same way:
 
     this.$hub.on("my-event", callback);
 
-Default plugins are using events that you can also emit or listen. Use them to interact with default plugins or the 3D engine.
+
+Plugins events
+===============
+
+Default plugins are using events that you can also emit or listen to. Use them to interact with default plugins or the 3D engine.
 
 .. code-block:: javascript
 
@@ -37,6 +48,17 @@ Default plugins are using events that you can also emit or listen. Use them to i
 
     });
 
+Settings
+========
+
+Projection type
+-----------------
+
+Values: 
+
+* perspective
+* ortho
+
 .. code-block:: javascript
 
     /**
@@ -45,6 +67,11 @@ Default plugins are using events that you can also emit or listen. Use them to i
      */
     $hub.emit("set-projection-type", { projection });
 
+Section mode
+-------------
+
+Boolean
+
 .. code-block:: javascript
 
     /**
@@ -52,6 +79,15 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * @param {boolean} active - true when section mode is active.
      */
     $hub.emit("set-section-mode", { active });
+
+
+Section plane
+-------------------------
+
+Create a section plane
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Options: can be either axis or direction AND position.
 
 .. code-block:: javascript
 
@@ -64,6 +100,9 @@ Default plugins are using events that you can also emit or listen. Use them to i
      */
     $hub.emit("create-section-plane", options);
 
+Delete a section plane
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. code-block:: javascript
 
     /**
@@ -71,12 +110,23 @@ Default plugins are using events that you can also emit or listen. Use them to i
      */
     $hub.emit("delete-section-plane");
 
+Delete all section planes
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. code-block:: javascript
 
     /**
      * Delete all section planes.
      */
     $hub.emit("delete-all-section-planes");
+
+Selection
+----------
+
+Select objects by IDs
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Param: an array of strings
 
 .. code-block:: javascript
 
@@ -86,6 +136,9 @@ Default plugins are using events that you can also emit or listen. Use them to i
      */
     $hub.emit("select-objects", { ids });
 
+De-select selected objects
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. code-block:: javascript
 
     /**
@@ -93,6 +146,13 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * @param {Array|Set<string>} ids - the ids of objects to deselect.
      */
     $hub.emit("deselect-objects", { ids });
+
+
+Visibility
+------------
+
+Show objects
+^^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
@@ -102,6 +162,9 @@ Default plugins are using events that you can also emit or listen. Use them to i
      */
     $hub.emit("show-objects", { ids });
 
+
+Hide objects 
+^^^^^^^^^^^^^^^
 .. code-block:: javascript
 
     /**
@@ -109,6 +172,9 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * @param {Array|Set<string>} ids - the ids of objects to hide.
      */
     $hub.emit("hide-objects", { ids });
+
+Highlight objects
+^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
@@ -118,6 +184,9 @@ Default plugins are using events that you can also emit or listen. Use them to i
      */
     $hub.emit("highlight-objects", { ids });
 
+Un-highlight objects
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. code-block:: javascript
 
     /**
@@ -125,6 +194,9 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * @param {Array|Set<string>} ids - the ids of objects to unhighlight.
      */
     $hub.emit("unhighlight-objects", { ids });
+
+Colorize
+^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
@@ -135,6 +207,9 @@ Default plugins are using events that you can also emit or listen. Use them to i
      */
     $hub.emit("colorize-objects", { ids, color });
 
+Viewpoint
+^^^^^^^^^^^^^^
+
 .. code-block:: javascript
 
     /**
@@ -142,6 +217,9 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * @param {object} viewpoint - the viewpoint to set (https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/BCFViewpointsPlugin/BCFViewpointsPlugin.js~BCFViewpointsPlugin.html)
      */
     $hub.emit("set-viewpoint", viewpoint);
+
+Fit view on objects
+^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
@@ -151,6 +229,9 @@ Default plugins are using events that you can also emit or listen. Use them to i
      */
     $hub.emit("fit-view-objects", { ids });
 
+Isolate objects
+^^^^^^^^^^^^^^^^^
+
 .. code-block:: javascript
 
     /**
@@ -159,12 +240,18 @@ Default plugins are using events that you can also emit or listen. Use them to i
      */
     $hub.emit("isolate-objects", { ids });
 
+Un-isolate objects
+^^^^^^^^^^^^^^^^^^^
+
 .. code-block:: javascript
 
     /**
      * Unisolate all objects.
      */
     $hub.emit("unisolate-all-objects");
+
+Annotations
+^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
