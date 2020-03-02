@@ -19,6 +19,27 @@ Default plugins are using events that you can also emit or listen. Use them to i
 .. code-block:: javascript
 
     /**
+     * Know when a model is loaded. There is no reason to emit this event.
+     * @param {object} ifc
+     * @param {object} model - the model object (from xeokit)
+     */
+    $hub.on("3d-model-loaded", ({ ifc, model }) => {
+
+    });
+
+.. code-block:: javascript
+
+    /**
+     * Know when a model is unloaded. There is no reason to emit this event.
+     * @param {object} ifc
+     */
+    $hub.on("3d-model-unloaded", ({ ifc }) => {
+
+    });
+
+.. code-block:: javascript
+
+    /**
      * Set the projection type
      * @param {string} projection - possible values: perspective | ortho
      */
