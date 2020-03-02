@@ -59,6 +59,13 @@ Tutorials
        :start-after: excerpt
        :end-before: endexcerpt
 
+.. topic:: :doc:`Postman environment <postman_create_your_environment>`
+   :class: api
+
+    .. include:: postman_create_your_environment.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
 
 .. topic:: :doc:`Viewer: using a custom Viewer <using_custom_viewer>`
    :class: viewer
