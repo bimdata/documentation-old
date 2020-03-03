@@ -171,9 +171,9 @@ Step 3: fill the ``cfg`` object
 You want a simple and clear Viewer to put your plugin in highlight.
 Using Javascript, fill the ``cfg`` configuration object, setting all the functionalities to false.
 
-The :doc:`details of every functionality disabled </viewer/using_custom_viewer>` are available in the Customize your Viewer content.
+The :doc:`details of every functionality disabled </tutorials/using_custom_viewer>` are available in the Customize your Viewer content.
 
-We provide you a demo token, usable for this tutorial. Create your own on BIMData Connect (see :doc:`/cookbook/ifc_access_token`).
+We provide you a demo token, usable for this tutorial. Create your own on BIMData Connect (see :doc:`/tutorials/dev_ifc_access_token`).
 
 .. substitution-code-block:: javascript
    :linenos:
