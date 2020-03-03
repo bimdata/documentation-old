@@ -18,8 +18,8 @@ Usage of the Viewer is either simply embedded in your web application, or with a
 Reference
 ===========
 
-* :doc:`Events </viewer/events>`
-* :doc:`Utils and helper methods </viewer/utils>`
+* Learn about the :doc:`Viewer's events </viewer/events>`
+* Learn all the :doc:`utils and helper methods </viewer/utils>`
 
 Tutorials
 ==========
