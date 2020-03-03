@@ -34,7 +34,7 @@ Default plugins are using events that you can also emit or listen to. Use them t
      * @param {object} ifc
      * @param {object} model - the model object (from xeokit)
      */
-    $hub.on("3d-model-loaded", ({ ifc, model }) => {
+    this.$hub.on("3d-model-loaded", ({ ifc, model }) => {
 
     });
 
@@ -44,7 +44,7 @@ Default plugins are using events that you can also emit or listen to. Use them t
      * Know when a model is unloaded. There is no reason to emit this event.
      * @param {object} ifc
      */
-    $hub.on("3d-model-unloaded", ({ ifc }) => {
+    this.$hub.on("3d-model-unloaded", ({ ifc }) => {
 
     });
 
@@ -65,7 +65,7 @@ Values:
      * Set the projection type
      * @param {string} projection - possible values: perspective | ortho
      */
-    $hub.emit("set-projection-type", { projection });
+    this.$hub.emit("set-projection-type", { projection });
 
 Section mode
 -------------
@@ -78,7 +78,7 @@ Boolean
      * Set section mode.
      * @param {boolean} active - true when section mode is active.
      */
-    $hub.emit("set-section-mode", { active });
+    this.$hub.emit("set-section-mode", { active });
 
 
 Section plane
@@ -98,7 +98,7 @@ Options: can be either axis or direction AND position.
      * @param {Float32Array(3)} options.direction
      * @param {Float32Array(3)} options.position
      */
-    $hub.emit("create-section-plane", options);
+    this.$hub.emit("create-section-plane", options);
 
 Delete a section plane
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -108,7 +108,7 @@ Delete a section plane
     /**
      * Delete the active section plane.
      */
-    $hub.emit("delete-section-plane");
+    this.$hub.emit("delete-section-plane");
 
 Delete all section planes
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -118,7 +118,7 @@ Delete all section planes
     /**
      * Delete all section planes.
      */
-    $hub.emit("delete-all-section-planes");
+    this.$hub.emit("delete-all-section-planes");
 
 Selection
 ----------
@@ -134,7 +134,7 @@ Select objects by IDs
      * Select object ids.
      * @param {Array|Set<string>} ids - the ids of objects to select.
      */
-    $hub.emit("select-objects", { ids });
+    this.$hub.emit("select-objects", { ids });
 
 De-select selected objects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -145,7 +145,7 @@ De-select selected objects
      * Deselect object ids.
      * @param {Array|Set<string>} ids - the ids of objects to deselect.
      */
-    $hub.emit("deselect-objects", { ids });
+    this.$hub.emit("deselect-objects", { ids });
 
 
 Visibility
@@ -160,7 +160,7 @@ Show objects
      * Show objects.
      * @param {Array|Set<string>} ids - the ids of objects to show.
      */
-    $hub.emit("show-objects", { ids });
+    this.$hub.emit("show-objects", { ids });
 
 
 Hide objects 
@@ -171,7 +171,7 @@ Hide objects
      * Hide objects.
      * @param {Array|Set<string>} ids - the ids of objects to hide.
      */
-    $hub.emit("hide-objects", { ids });
+    this.$hub.emit("hide-objects", { ids });
 
 Highlight objects
 ^^^^^^^^^^^^^^^^^^^^
@@ -182,7 +182,7 @@ Highlight objects
      * Highlight objects.
      * @param {Array|Set<string>} ids - the ids of objects to highlight.
      */
-    $hub.emit("highlight-objects", { ids });
+    this.$hub.emit("highlight-objects", { ids });
 
 Un-highlight objects
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -193,7 +193,7 @@ Un-highlight objects
      * Unhighlight objects.
      * @param {Array|Set<string>} ids - the ids of objects to unhighlight.
      */
-    $hub.emit("unhighlight-objects", { ids });
+    this.$hub.emit("unhighlight-objects", { ids });
 
 Colorize
 ^^^^^^^^^^^^^^
@@ -205,7 +205,7 @@ Colorize
      * @param {Array|Set<string>} ids - the ids of objects to colorize.
      * @param {Array(3)} color - the color to apply on objects.
      */
-    $hub.emit("colorize-objects", { ids, color });
+    this.$hub.emit("colorize-objects", { ids, color });
 
 Viewpoint
 ^^^^^^^^^^^^^^
@@ -216,7 +216,7 @@ Viewpoint
      * Set viewpoint.
      * @param {object} viewpoint - the viewpoint to set (https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/BCFViewpointsPlugin/BCFViewpointsPlugin.js~BCFViewpointsPlugin.html)
      */
-    $hub.emit("set-viewpoint", viewpoint);
+    this.$hub.emit("set-viewpoint", viewpoint);
 
 Fit view on objects
 ^^^^^^^^^^^^^^^^^^^^^
@@ -227,7 +227,7 @@ Fit view on objects
      * Fit view on objects.
      * @param {Array|Set<string>} ids - the ids of objects to fit the view.
      */
-    $hub.emit("fit-view-objects", { ids });
+    this.$hub.emit("fit-view-objects", { ids });
 
 Isolate objects
 ^^^^^^^^^^^^^^^^^
@@ -238,7 +238,7 @@ Isolate objects
      * Isolate objects.
      * @param {Array|Set<string>} ids - the ids of objects to isolate.
      */
-    $hub.emit("isolate-objects", { ids });
+    this.$hub.emit("isolate-objects", { ids });
 
 Un-isolate objects
 ^^^^^^^^^^^^^^^^^^^
@@ -248,10 +248,13 @@ Un-isolate objects
     /**
      * Unisolate all objects.
      */
-    $hub.emit("unisolate-all-objects");
+    this.$hub.emit("unisolate-all-objects");
 
 Annotations
 ^^^^^^^^^^^^^^
+
+Create annotations and set the priority.
+
 
 .. code-block:: javascript
 
@@ -261,11 +264,14 @@ Annotations
      * @param {number|string} index - the index that will be displayed on annotations.
      * @param {string} priority - the priority that will change the annotation aspect. Possible Values: "low" | "medium" | "hight"
      */
-    $hub.emit("create-annotations", { ids, index, priority });
+    this.$hub.emit("create-annotations", { ids, index, priority });
+
+
+Clear annotations
 
 .. code-block:: javascript
 
     /**
      * Delete all annotations.
      */
-    $hub.emit("clear-annotations");
+    this.$hub.emit("clear-annotations");
