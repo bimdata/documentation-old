@@ -1,6 +1,12 @@
 ============================
-Utils
+Getters and utils methods
 ============================
+
+.. contents::
+   :depth: 3
+
+Syntax
+=============
 
 Getters allow to quickly get information about objects of the scene. They are reachable using this syntax:
 
@@ -8,7 +14,13 @@ Getters allow to quickly get information about objects of the scene. They are re
 
     this.$utils.getterIWantToAccess(someParameter);
 
+Getters
+===========
+
 Here is a list of all the getters:
+
+Get scene objects
+-----------------------
 
 .. code-block:: javascript
 
@@ -18,6 +30,9 @@ Here is a list of all the getters:
      */
     getAllObjects();
 
+Get objects IDs
+--------------------
+
 .. code-block:: javascript
 
     /**
@@ -25,6 +40,11 @@ Here is a list of all the getters:
      * @return {Array<string>} all scene object ids.
      */
     getAllIds();
+
+Get objects by type
+---------------------
+
+Get all scene objects of a specific type.
 
 .. code-block:: javascript
 
@@ -35,6 +55,9 @@ Here is a list of all the getters:
      */
     getAllObjectsOfType(type);
 
+Get types by IDs
+-----------------
+
 .. code-block:: javascript
 
     /**
@@ -43,6 +66,11 @@ Here is a list of all the getters:
      * @return {Array<string>} Types of ids.
      */
     getTypesOf(ids);
+
+Get IDs by type
+-----------------
+
+Get all objects ids that share the same IfcType than an object received in parameter.
 
 .. code-block:: javascript
 
@@ -53,6 +81,11 @@ Here is a list of all the getters:
      */
     getIdsByTypeOf(ids);
 
+Get icfId
+--------------
+
+Get the icfId the object id belongs to.
+
 .. code-block:: javascript
 
     /**
@@ -61,6 +94,11 @@ Here is a list of all the getters:
      * @return {number} the icfId the object id belongs to.
      */
     getIfcIdOf(id);
+
+Get object by id
+-----------------
+
+Get an object from its ID.
 
 .. code-block:: javascript
 
@@ -71,6 +109,9 @@ Here is a list of all the getters:
      */
     getObject(id);
 
+Get the object's name
+----------------------
+
 .. code-block:: javascript
 
     /**
@@ -80,13 +121,26 @@ Here is a list of all the getters:
      */
     getObjectName(id);
 
+
+Get selected IDs
+------------------
+
+Get all selected Ids. (the same property is present on the store state but it is a Set instead of an Array).
+
 .. code-block:: javascript
 
     /**
-     * Get all selected Ids. (the same property is present on the store state but it is a Set instead of an Array).
+     * Get all selected Ids.
      * @return {Array<string>} selected object ids.
      */
     getSelectedObjectIds();
+
+
+Structure
+===========
+
+Get structure
+----------------
 
 .. code-block:: javascript
 
@@ -97,6 +151,9 @@ Here is a list of all the getters:
      */
     getStructureOf(id);
 
+Get the parent
+--------------------
+
 .. code-block:: javascript
 
     /**
@@ -105,6 +162,9 @@ Here is a list of all the getters:
      * @return {object} the parent of the object.
      */
     getObjectParent(id);
+
+Get the children
+------------------
 
 .. code-block:: javascript
 
@@ -115,6 +175,9 @@ Here is a list of all the getters:
      */
     getObjectChildren();
 
+Get the descendants
+---------------------
+
 .. code-block:: javascript
 
     /**
@@ -124,6 +187,9 @@ Here is a list of all the getters:
      */
     getObjectDescendants();
 
+Get the ancestors
+-------------------
+
 .. code-block:: javascript
 
     /**
@@ -132,6 +198,11 @@ Here is a list of all the getters:
      * @return {object[]} the descendants of the object.
      */
     getObjectAncestors();
+
+Get an ancestor by type
+--------------------------
+
+Get the first ancestor of an object with a specific IfcType.
 
 .. code-block:: javascript
 
@@ -143,6 +214,12 @@ Here is a list of all the getters:
      */
     getObjectAncestorByType(id, type);
 
+Get the storey
+----------------
+
+Get the first ancestor of an object with the IfcType "storey".
+It is a shortcut, equivalent to getObjectAncestorByType(id, "storey");
+
 .. code-block:: javascript
 
     /**
@@ -152,6 +229,12 @@ Here is a list of all the getters:
      * @return {object} the first ancestor of the object with the IfcType "storey".
      */
     getObjectStorey(id);
+
+Get the space
+---------------
+
+Get the first ancestor of an object with the IfcType "space".
+It is a shortcut, equivalent to getObjectAncestorByType(id, "space");
 
 .. code-block:: javascript
 
@@ -167,7 +250,7 @@ Here is a list of all the getters:
 Example
 =======
 
-Clicking the plugin icon will activate the 'select by storey' mode. When you click an object, all objects in the same storey are selected. The hover is storey dependent.
+Clicking the plugin icon will activate the _'select by storey'_ mode. When you click an object, all objects in the same ``storey`` are selected. The hover is ``storey`` dependent.
 
 .. code-block:: html
 

@@ -2,6 +2,13 @@
 Events
 ============================
 
+.. contents::
+   :depth: 2
+
+
+Emit and listen
+================
+
 You can emit custom events using the hub:
 
 .. code-block:: javascript
@@ -14,7 +21,11 @@ You can listen to events the same way:
 
     this.$hub.on("my-event", callback);
 
-Default plugins are using events that you can also emit or listen. Use them to interact with default plugins or the 3D engine.
+
+Plugins events
+===============
+
+Default plugins are using events that you can also emit or listen to. Use them to interact with default plugins or the 3D engine.
 
 .. code-block:: javascript
 
@@ -23,7 +34,7 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * @param {object} ifc
      * @param {object} model - the model object (from xeokit)
      */
-    $hub.on("3d-model-loaded", ({ ifc, model }) => {
+    this.$hub.on("3d-model-loaded", ({ ifc, model }) => {
 
     });
 
@@ -33,9 +44,20 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * Know when a model is unloaded. There is no reason to emit this event.
      * @param {object} ifc
      */
-    $hub.on("3d-model-unloaded", ({ ifc }) => {
+    this.$hub.on("3d-model-unloaded", ({ ifc }) => {
 
     });
+
+Settings
+========
+
+Projection type
+-----------------
+
+Values: 
+
+* perspective
+* ortho
 
 .. code-block:: javascript
 
@@ -43,7 +65,12 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * Set the projection type
      * @param {string} projection - possible values: perspective | ortho
      */
-    $hub.emit("set-projection-type", { projection });
+    this.$hub.emit("set-projection-type", { projection });
+
+Section mode
+-------------
+
+Boolean
 
 .. code-block:: javascript
 
@@ -51,7 +78,16 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * Set section mode.
      * @param {boolean} active - true when section mode is active.
      */
-    $hub.emit("set-section-mode", { active });
+    this.$hub.emit("set-section-mode", { active });
+
+
+Section plane
+-------------------------
+
+Create a section plane
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Options: can be either axis or direction AND position.
 
 .. code-block:: javascript
 
@@ -62,21 +98,35 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * @param {Float32Array(3)} options.direction
      * @param {Float32Array(3)} options.position
      */
-    $hub.emit("create-section-plane", options);
+    this.$hub.emit("create-section-plane", options);
+
+Delete a section plane
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
     /**
      * Delete the active section plane.
      */
-    $hub.emit("delete-section-plane");
+    this.$hub.emit("delete-section-plane");
+
+Delete all section planes
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
     /**
      * Delete all section planes.
      */
-    $hub.emit("delete-all-section-planes");
+    this.$hub.emit("delete-all-section-planes");
+
+Selection
+----------
+
+Select objects by IDs
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Param: an array of strings
 
 .. code-block:: javascript
 
@@ -84,7 +134,10 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * Select object ids.
      * @param {Array|Set<string>} ids - the ids of objects to select.
      */
-    $hub.emit("select-objects", { ids });
+    this.$hub.emit("select-objects", { ids });
+
+De-select selected objects
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
@@ -92,7 +145,14 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * Deselect object ids.
      * @param {Array|Set<string>} ids - the ids of objects to deselect.
      */
-    $hub.emit("deselect-objects", { ids });
+    this.$hub.emit("deselect-objects", { ids });
+
+
+Visibility
+------------
+
+Show objects
+^^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
@@ -100,15 +160,21 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * Show objects.
      * @param {Array|Set<string>} ids - the ids of objects to show.
      */
-    $hub.emit("show-objects", { ids });
+    this.$hub.emit("show-objects", { ids });
 
+
+Hide objects 
+^^^^^^^^^^^^^^^
 .. code-block:: javascript
 
     /**
      * Hide objects.
      * @param {Array|Set<string>} ids - the ids of objects to hide.
      */
-    $hub.emit("hide-objects", { ids });
+    this.$hub.emit("hide-objects", { ids });
+
+Highlight objects
+^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
@@ -116,7 +182,10 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * Highlight objects.
      * @param {Array|Set<string>} ids - the ids of objects to highlight.
      */
-    $hub.emit("highlight-objects", { ids });
+    this.$hub.emit("highlight-objects", { ids });
+
+Un-highlight objects
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
@@ -124,7 +193,10 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * Unhighlight objects.
      * @param {Array|Set<string>} ids - the ids of objects to unhighlight.
      */
-    $hub.emit("unhighlight-objects", { ids });
+    this.$hub.emit("unhighlight-objects", { ids });
+
+Colorize
+^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
@@ -133,7 +205,10 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * @param {Array|Set<string>} ids - the ids of objects to colorize.
      * @param {Array(3)} color - the color to apply on objects.
      */
-    $hub.emit("colorize-objects", { ids, color });
+    this.$hub.emit("colorize-objects", { ids, color });
+
+Viewpoint
+^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
@@ -141,7 +216,10 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * Set viewpoint.
      * @param {object} viewpoint - the viewpoint to set (https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/BCFViewpointsPlugin/BCFViewpointsPlugin.js~BCFViewpointsPlugin.html)
      */
-    $hub.emit("set-viewpoint", viewpoint);
+    this.$hub.emit("set-viewpoint", viewpoint);
+
+Fit view on objects
+^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
@@ -149,7 +227,10 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * Fit view on objects.
      * @param {Array|Set<string>} ids - the ids of objects to fit the view.
      */
-    $hub.emit("fit-view-objects", { ids });
+    this.$hub.emit("fit-view-objects", { ids });
+
+Isolate objects
+^^^^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
@@ -157,14 +238,23 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * Isolate objects.
      * @param {Array|Set<string>} ids - the ids of objects to isolate.
      */
-    $hub.emit("isolate-objects", { ids });
+    this.$hub.emit("isolate-objects", { ids });
+
+Un-isolate objects
+^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: javascript
 
     /**
      * Unisolate all objects.
      */
-    $hub.emit("unisolate-all-objects");
+    this.$hub.emit("unisolate-all-objects");
+
+Annotations
+^^^^^^^^^^^^^^
+
+Create annotations and set the priority.
+
 
 .. code-block:: javascript
 
@@ -174,11 +264,14 @@ Default plugins are using events that you can also emit or listen. Use them to i
      * @param {number|string} index - the index that will be displayed on annotations.
      * @param {string} priority - the priority that will change the annotation aspect. Possible Values: "low" | "medium" | "hight"
      */
-    $hub.emit("create-annotations", { ids, index, priority });
+    this.$hub.emit("create-annotations", { ids, index, priority });
+
+
+Clear annotations
 
 .. code-block:: javascript
 
     /**
      * Delete all annotations.
      */
-    $hub.emit("clear-annotations");
+    this.$hub.emit("clear-annotations");
