@@ -83,7 +83,9 @@ That means the app will be able to keep a secret (a JavaScript app or a mobile a
 
 .. tip:: 
 
-    You can also do this tutorial with our Postman collection!
+    You can also do this tutorial with our Postman collections!
+        * The full API collection: https://documenter.getpostman.com/view/7460463/SzKTvyVR
+        * The BIMData's Examples collection: https://documenter.getpostman.com/view/7460463/SzKbLFKH
 
 Once you have created your app, you have a *client_id* and a *client_secret*.
 You can exchange them for an access token through an HTTP call. 
