@@ -40,5 +40,5 @@ If you want to be able to update the model information, set ``read_only`` to fal
 
 Then follow :doc:`the Viewer tutorial with your access token </tutorials/using_custom_viewer>` and your IDs to instanciate a viewer,
 
-.. _See the API call to create an Access Token: api/index.html#createAccessToken
+.. _See the API call to create an Access Token: /api/index.html#createAccessToken
 .. _iso-8601 format: https://www.iso.org/iso-8601-date-and-time-format.html
