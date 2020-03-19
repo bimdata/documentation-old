@@ -8,7 +8,7 @@ How can I share data between my app and BIMData Platform ?
     endexcerpt
 
 
-You can invite your user in the cloud you created with your app: https://developers-staging.bimdata.io/api/index.html#inviteCloudUser
+You can invite your user in the cloud you created with your app: /api/index.html#inviteCloudUser
 
 .. code-block:: bash
 
