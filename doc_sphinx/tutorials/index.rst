@@ -30,10 +30,10 @@ Tutorials
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`API: using the Viewer <api_use_viewer>`
+.. topic:: :doc:`API: Viewer with my Models <api_use_viewer_with_uploaded_models>`
    :class: api
 
-    .. include:: api_use_viewer.rst
+    .. include:: api_use_viewer_with_uploaded_models.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
