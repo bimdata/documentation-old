@@ -1,21 +1,25 @@
 ==========================================================
-How can I share data between my app and BIMData Platform ?
+How can I share data between my app and BIMData Platform?
 ==========================================================
 
 ..
     excerpt
-        How can I share data between my app and BIMData Platform ?
+        How can I share data between my app and BIMData Platform?
     endexcerpt
 
 
-You can invite your user in the Cloud you created with your app: /api/index.html#inviteCloudUser
+You can invite your user in the Cloud you created with your app: `/api/index.html#inviteCloudUser </api/index.html#inviteCloudUser>`_
 
-.. code-block:: bash
+.. substitution-code-block:: bash
 
-    curl --request POST 'https://api-staging.bimdata.io/cloud/YOUR_CLOUD_ID/invitation' \
+    curl --request POST '|API_URL|/cloud/YOUR_CLOUD_ID/invitation' \
       --header 'Content-Type: application/json' \
       --header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-      --data '{"email": "YOUR_EMAIL_ADDRESS", "redirect_uri": "https://platform-staging.bimdata.io/cloud/YOUR_CLOUD_ID"}'
+      --data '{"email": "YOUR_EMAIL_ADDRESS", "redirect_uri": "https://platform.bimdata.io/cloud/YOUR_CLOUD_ID"}'
 
-You we'll receive an email asking you to accept the invitation.
-Once accepted, you can open the platform an you'll see the cloud created by the application.
+.. tip::
+
+    Check if the Platform URL is the correct one for your Platform access.
+
+You receive an email asking you to accept the invitation.
+Once accepted, you can open the Platform and see the Cloud created by the application.
