@@ -27,6 +27,7 @@ Tutorials
 BIMData provides a 3D Viewer with which you can interact with Javascript.
 The Viewer is built with VueJS framework, the architecture of the Viewer is using components, and built-on XeoKit.
 
+ * :doc:`How-to use the SDK to create a plugin </tutorials/viewer_sdk>`
  * :doc:`How-to customize the Viewer to your design </tutorials/using_custom_viewer>`
  * :doc:`How-to embed the Viewer using Vue.js</tutorials/viewer_using_vue_component>`
  * :doc:`How-to create a Viewer plugin </tutorials/viewer_create_plugin>`
@@ -91,9 +92,10 @@ In addition to that, we recommend:
     :hidden:
 
     getting_started
-    create_viewer_plugin
-    using_custom_viewer
-    using_vue_component
+    /tutorial/create_viewer_plugin
+    /tutorial/using_custom_viewer
+    /tutorial/using_vue_component
+    /tutorials/viewer_sdk
     events
     utils
 
