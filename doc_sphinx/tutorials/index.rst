@@ -67,6 +67,14 @@ Tutorials
        :end-before: endexcerpt
 
 
+.. topic:: :doc:`Viewer: SDK for creating plugins <viewer_sdk>`
+   :class: viewer
+
+    .. include:: viewer_sdk.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+
 .. topic:: :doc:`Viewer: using a custom Viewer <using_custom_viewer>`
    :class: viewer
 

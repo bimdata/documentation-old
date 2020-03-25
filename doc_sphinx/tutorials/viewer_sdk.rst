@@ -7,6 +7,11 @@ The SDK is a development tool helping you to create faster a Viewer plugin.
 It is a Github repository, containing a pre-configured environment to develop BIMData Viewer plugins.
 You can develop, test, build, package and share your plugin easily.
 
+.. seealso::
+    
+    The repository is https://github.com/bimdata/bimdata-viewer-sdk
+
+
 .. contents::
 
 Setup
