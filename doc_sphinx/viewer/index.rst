@@ -21,6 +21,15 @@ Reference
 * Learn about the :doc:`Viewer's events </viewer/events>`
 * Learn all the :doc:`utils and helper methods </viewer/utils>`
 
+.. tip::
+
+    BIMData Viewer SDK
+    -------------------
+
+    Looking for the SDK?
+    https://github.com/bimdata/bimdata-viewer-sdk
+
+
 Tutorials
 ==========
 

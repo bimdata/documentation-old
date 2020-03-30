@@ -2,14 +2,21 @@
 SDK Viewer
 ==================
 
-The SDK is a development tool helping you to create faster a Viewer plugin. 
+
+.. tip::
+
+    Looking for the SDK?
+    https://github.com/bimdata/bimdata-viewer-sdk
+
+.. 
+    excerpt
+        The SDK is a development tool helping you to create faster a Viewer plugin. 
+    endexcerpt
 
 It is a Github repository, containing a pre-configured environment to develop BIMData Viewer plugins.
 You can develop, test, build, package and share your plugin easily.
 
-.. seealso::
-    
-    The repository is https://github.com/bimdata/bimdata-viewer-sdk
+The repository is https://github.com/bimdata/bimdata-viewer-sdk
 
 
 .. contents::
@@ -17,7 +24,7 @@ You can develop, test, build, package and share your plugin easily.
 Setup
 ==========
 
-First, you must create a BIMData Application (see :doc:` the Tutorial </tutorials/dev_create_an_application>`).
+First, you must create a BIMData Application (see :doc:`the Tutorial </tutorials/dev_create_an_application>`).
 
 The SDK needs at least ``cloud:read`` and ``ifc:read`` scopes.
 
