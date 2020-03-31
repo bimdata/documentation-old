@@ -1,46 +1,37 @@
 table {
   width: 100%;
   border: none;
-  thead {
-    border-bottom: 8px solid $color-white;
-    .row-odd {
-      th {
-        padding: 0 $spacing-unit;
-        height: calc(#{$spacing-unit} * 5);
-        vertical-align: middle;
-        text-align: left;
-        border: none;
-        color: $color-white;
-        font-weight: 400;
-        @include font-size(12px);
-        &:nth-child(odd){
-          background-color: $color-primary;
-        }
-        &:nth-child(even){
-          background-color: #434e69;
-        }
+  tr{
+    display: flex;
+    th, td{
+      padding: calc(#{$spacing-unit} / 2) $spacing-unit;
+      min-height: calc(#{$spacing-unit} * 4);
+      align-items: center;
+      position: relative;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      border: none;
+      @include font-size(12px);
+    }
+  }
+  thead{
+    border: none;
+    tr{
+      td{
+        height: calc(#{$spacing-unit} * 3);
+        background-color: transparent;
+        color: $color-black;
       }
     }
   }
   tbody{
-    tr {
-      border-bottom: 5px solid $color-white;
+    tr{
       td{
-        padding: .5rem $spacing-unit;
-        min-height: calc(#{$spacing-unit} * 4);
-        vertical-align: middle;
-        
-        border: none;
-        @include font-size(12px);
-        p{
-          color: $color-text;
-        }
-        &:nth-child(odd){
-          background-color: $color-background;
-        }
-        &:nth-child(even){
-          background-color: #ebebeb;
-        }
+        color: $color-text;
+      }
+      &:nth-child(odd){
+        background-color: $color-background;
       }
     }
   }
