@@ -249,7 +249,7 @@ pre {
   @include font-size(12px);
 }
 code {
-  margin: 0 0.5rem 0 0;
+  margin: 0 0.1rem 0 0;
   padding: 5px;
   background-color: $color-background;
   border: none;
@@ -347,6 +347,14 @@ svg{
       background-color: #ffeceb;
       &::before {
         background-color: #da0704;
+      }
+    }
+  }
+  &.important {
+    .admonition-title {
+      background-color: #fff4e5;
+      &::before {
+        background-color: #ff9100;
       }
     }
   }

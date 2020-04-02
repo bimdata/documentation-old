@@ -57,8 +57,7 @@ table {
 
 }
 // custom CODE TABLE
-.highlight-html, .highlight-javascript{
-  overflow: auto;
+.highlight-html, .highlight-javascript, .highlight-python{
   .highlighttable{
     margin-top: 1rem;
     width: 100%;
@@ -80,7 +79,6 @@ table {
         }
         .code{
           width: calc(100% - 61px);
-
           background: none;
           padding: 0;
           background-color: #272822;
