@@ -52,7 +52,7 @@ The fields you need to create are:
 
 .. image:: ../_images/tutorials/postman/step02-fill-variables.png
     :align: left
-    :alt: Screenshot of Postman UI with a button circled in yellow
+    :alt: Screenshot of Postman UI with fields to fill in yellow
 
 
 Fill the values
