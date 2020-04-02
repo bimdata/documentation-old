@@ -33,7 +33,7 @@ Step 1: Create an environment in Postman
 
 Click the gear button to open the Manage Environments dialog. And click *Add* to create a new environment. 
 
-.. image:: ../_images/tutorials/postman/manage-environments.png
+.. image:: ../_images/tutorials/postman/step01-add-env.png
     :align: left
     :alt: Screenshot of Postman UI with a button circled in yellow
 
