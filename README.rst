@@ -48,7 +48,7 @@ Our API Reference is served by `Spectacle <https://github.com/sourcey/spectacle/
 
 The API Documentation build command is:
 
-`~:  cd doc_sphinx && npm run build:apiref``
+``~:  cd doc_sphinx && npm run build:apiref``
 
 
 Tests:
