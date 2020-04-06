@@ -6,7 +6,7 @@ Welcome to the BIMData's documentation git repository.
 
 After cloning this git repository, build your own local version:
 
-``$> cd doc_sphinx && sphinx-build -b html . ../html_doc``
+``~: cd doc_sphinx && sphinx-build -b html . ../html_doc``
 
 
 .. image:: doc_sphinx/_images/bimdata_homepage_small.png
@@ -32,7 +32,7 @@ Note: we are using Python3. To be able to use Python3 and the context of working
 The ``requirements.txt`` file lists all the extensions used for this Sphinx documentation.
 To install all the dependencies, use:
 
-``$> pip install -r doc_sphinx/requirements.txt``
+``~:  pip install -r doc_sphinx/requirements.txt``
 
 
 Customization
@@ -48,7 +48,7 @@ Our API Reference is served by `Spectacle <https://github.com/sourcey/spectacle/
 
 The API Documentation build command is:
 
-``$> cd doc_sphinx && npm run build:apiref``
+`~:  cd doc_sphinx && npm run build:apiref``
 
 
 Tests:
@@ -56,7 +56,7 @@ Tests:
 
 Launch the test suite:
 
-``$> cd doc_sphinx && npm test``
+``~: cd doc_sphinx && npm test``
 
 
 Licence:
