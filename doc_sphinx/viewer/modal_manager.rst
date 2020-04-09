@@ -62,6 +62,9 @@ Example
 The added plugin will push two modals.
 Clicking on the displayed button will close the current modal.
 
+.. raw:: html
+   :file: ../_static/modal_manager_example.html
+
 .. code-block:: html
 
     <!DOCTYPE html>

@@ -20,6 +20,7 @@ Reference
 
 * Learn about the :doc:`Viewer's events </viewer/events>`
 * Learn all the :doc:`utils and helper methods </viewer/utils>`
+* Learn about the :doc:`modal manager </viewer/modal_manager>`
 
 .. tip::
 
