@@ -37,12 +37,11 @@ table {
   }
   caption {
     padding: .75rem 0;
-    color: $color-text;
+    color: $color-primary;
     caption-side: bottom;
     letter-spacing: .05rem;
     font-weight: 700;
-    text-align: left;
-    text-transform: uppercase;
+    text-align: right;
     @include font-size(10px);
   }
 
