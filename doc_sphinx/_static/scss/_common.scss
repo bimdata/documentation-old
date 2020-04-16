@@ -292,10 +292,11 @@ svg{
   margin: 24px 0;
   padding: 12px;
   box-shadow: 0 2px 10px 0 rgba(0,0,0,.1);
+  border-left: 5px solid $color-primary;
   .admonition-title {
     margin: -12px -12px 12px;
     padding: 6px 12px;
-    color: #2f374a;
+    color: $color-primary;
     display: block;
     @include font-size(13px);
     &::before{
@@ -312,15 +313,14 @@ svg{
   }
   &.note{
     .admonition-title {
-      background-color: #eff7ff;
       &::before {
         background-color: $color-primary;
       }
     }
   }
   &.warning {
+    border-color: $color-secondary;
     .admonition-title {
-      background-color: #fff9e7;
       &::before {
         display: inline-flex;
         height: 0;
@@ -335,24 +335,24 @@ svg{
     }
   }
   &.tip {
+    border-color: #b34dbd;
     .admonition-title {
-      background-color: #fdedff;
       &::before {
         background-color: #b34dbd;
       }
     }
   }
   &.caution {
+    border-color: #da0704;
     .admonition-title {
-      background-color: #ffeceb;
       &::before {
         background-color: #da0704;
       }
     }
   }
   &.important {
+    border-color: #ff9100;
     .admonition-title {
-      background-color: #fff4e5;
       &::before {
         background-color: #ff9100;
       }
@@ -360,7 +360,6 @@ svg{
   }
   &.seealso {
     .admonition-title {
-      background-color: $color-background;
       &::before {
         color: $color-background;
         background-color: $color-primary-d5;
