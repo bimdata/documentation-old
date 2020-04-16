@@ -44,6 +44,9 @@ Guide
     use_cases/*
     concepts/*
     /platform/index
+    /viewer/async_plugin
+    /viewer/custom_plugin_icon
+    /viewer/modal_manager
 
 
 

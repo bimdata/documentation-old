@@ -21,6 +21,8 @@ Reference
 * Learn about the :doc:`Viewer's events </viewer/events>`
 * Learn all the :doc:`utils and helper methods </viewer/utils>`
 * Learn about the :doc:`modal manager </viewer/modal_manager>`
+* Learn how-to :doc:`make a custom icon for your plugin </viewer/custom_plugin_icon>`
+* Learn about :doc:`async plugins </viewer/async_plugins>`
 
 .. tip::
 
@@ -103,6 +105,9 @@ In addition to that, we recommend:
 
     getting_started
     /tutorial/create_viewer_plugin
+    async_plugin
+    custom_plugin_icon
+    modal_manager
     /tutorial/using_custom_viewer
     /tutorial/using_vue_component
     /tutorials/viewer_sdk
