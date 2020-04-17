@@ -12,7 +12,7 @@ table {
       flex: 1;
       align-items: center;
       border: none;
-      @include font-size(12px);
+      font-size: calculateEm(12px);
     }
   }
   thead{
@@ -42,7 +42,7 @@ table {
     letter-spacing: .05rem;
     font-weight: 700;
     text-align: right;
-    @include font-size(10px);
+    font-size: calculateEm(10px);
   }
 
 }

@@ -2,7 +2,7 @@
 .swagger-ui {
   .model-title{
     font-family: $font-primary;
-    @include font-size(12px);
+    font-size: calculateEm(12px);
   }
 
   // add margin around table
@@ -58,17 +58,17 @@
         font-family: $font-primary;
         .parameter__name {
           font-family: $font-primary;
-          @include font-size(12px);
+          font-size: calculateEm(12px);
           &.required {
             font-weight: normal;
             span {
               position: relative;
               bottom: 1px;
-              @include font-size(9px);
+              font-size: calculateEm(9px);
               vertical-align: super;
             }
             &::after{
-              @include font-size(9px);
+              font-size: calculateEm(9px);
               letter-spacing: .5px;
             }
           }
@@ -110,7 +110,7 @@
         box-shadow: none;
         color: $color-primary;
         font-weight: normal;
-        @include font-size(12px);
+        font-size: calculateEm(12px);
         &:hover {
           background-color: $color-secondary-d10;
           box-shadow: none;
@@ -140,7 +140,7 @@
             span {
               position: relative;
               bottom: 1px;
-              @include font-size(9px);
+              font-size: calculateEm(9px);
               vertical-align: super;
             }
           }
@@ -228,7 +228,7 @@
         background-color: $color-background;
         border: none;
         box-shadow: none;
-        @include font-size(12px);
+        font-size: calculateEm(12px);
       }
     }
   }

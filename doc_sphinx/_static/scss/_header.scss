@@ -1,7 +1,7 @@
 /* custom DOCUMENTATION HEADER
 ---------------------------------------- */
 .bimdata-documentation__header{
-  padding: 0 25px;
+  padding: 0 12px;
   width: 100%;
   height: 60px;
   position: fixed;
@@ -13,7 +13,6 @@
   &__left{
     width: 135px;
     display: flex;
-    // flex: 1;
     align-items: center;
     justify-content: space-between;
     &__logo{
@@ -25,7 +24,7 @@
       span{
         width: 24px;
         display: block;
-        @include font-size(10px);
+        font-size: calculateEm(10px);
         text-align: center;
       }
     }
@@ -33,18 +32,21 @@
 
     }
   }
+  &__search{
+    flex: 1;
+  }
   &__menu{
     display: flex;
     justify-content: center;
-    flex: 2;
+    flex: 4;
     ul{
       display: flex;
       li{
         a{
-          padding: 18px;
+          padding: 19px 12px;
           font-family: $font-primary;
           position: relative;
-          @include font-size(14px);
+          font-size: calculateEm(12px);
           &.active{
             &::after{
               opacity: 1;
@@ -79,6 +81,88 @@
     .bimdata-btn{
       &__ghost {
         justify-content: center;
+      }
+    }
+  }
+  &__mobile-menu{
+    display: block;
+    width: 54px;
+    height: 54px;
+    .hamburger-menu-wrapper{
+      width: 54px;
+      height: 100%;
+      margin-left: 0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $color-white;
+      cursor: pointer;
+      z-index: 1;
+      .hamburger-menu-line-1, .hamburger-menu-line-2, .hamburger-menu-line-3 {
+        width: 18px;
+        height: 2px;
+        background-color: $color-primary;
+        position: absolute;
+        transition: all .25s;
+      }
+      .hamburger-menu-line-1{
+        transform: translate3d(0px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+        transform-style: preserve-3d;
+      }
+      .hamburger-menu-line-2{
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+        transform-style: preserve-3d;
+      }
+      .hamburger-menu-line-3{
+        transform: translate3d(0px, 6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+        transform-style: preserve-3d;
+      }
+    }
+    .mobile-drawer-wrapper{
+      display: none;
+    }
+    &.menu-expanded{
+      .hamburger-menu-wrapper{
+        .hamburger-menu-line-1{
+          transform: rotate(45deg);
+          transition: all .25s;
+        }
+        .hamburger-menu-line-2{
+          display: none;
+        }
+        .hamburger-menu-line-3{
+          transform: rotate(-45deg);
+          transition: all .25s;
+        }
+      }
+      .mobile-drawer-wrapper{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba($color-primary,.99);
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all .25s;
+        ul{
+          text-align: center;
+          li{
+            padding: 16px 0;
+            a{
+              color: $color-white;
+            }
+          }
+        }
+        div{
+          margin: 12px;
+          .bimdata-btn__ghost{
+            color: $color-white;
+          }
+        }
       }
     }
   }

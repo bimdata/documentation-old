@@ -1,8 +1,6 @@
 .cards-vertical{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   .card-vertical{
+    margin: 1vw 3vw;
     padding: 24px;
     max-height: 317px;
     max-width: 330px;
@@ -48,14 +46,13 @@
         display: flex;
         align-items: center;
         p{
-          @include font-size(12px);
+          font-size: calculateEm(12px);
           line-height: 20px;
           text-align: center;
         }
       }
     }
     &:first-child{
-      margin-right: 50px;
       .card-vertical__content__img{
         img{
           animation-duration: 0.7s;
@@ -64,7 +61,6 @@
       }
     }
     &:nth-child(2){
-      margin: 0 50px;
       .card-vertical__content__img{
         img{
           animation-duration: 0.7s;
@@ -74,7 +70,6 @@
       }
     }
     &:nth-child(3){
-      margin-left: 50px;
       .card-vertical__content__img{
         img{
           animation-duration: 0.7s;

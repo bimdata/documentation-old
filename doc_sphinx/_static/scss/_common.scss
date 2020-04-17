@@ -6,7 +6,7 @@ body {
   color: $color-text;
   font-family: $font-primary;
   scroll-behavior: auto;
-  @include font-size(14px);
+  font-size: calculateEm(14px);
 }
 
 .section {
@@ -130,12 +130,12 @@ td {
 }
 p {
   margin: 0;
-  @include font-size(12px);
+  font-size: calculateEm(12px);
 }
 ul,
 ol {
   li {
-    @include font-size(12px);
+    font-size: calculateEm(14px);
   }
 }
 ul {
@@ -153,7 +153,7 @@ ol {
   li {
     color: $color-primary;
     counter-increment: my-counter;
-    @include flexbox;
+    display: flex;
     &::before {
       width: 1%;
       content: counter(my-counter) ". ";
@@ -199,7 +199,7 @@ ol {
   justify-content: center;
   font-family: $font-primary, sans-serif;
   border: none;
-  @include font-size(12px);
+  font-size: calculateEm(12px);
   &__fill{
     &--primary{
       background-color: $color-primary;
@@ -224,7 +224,7 @@ ol {
 // custom DEFINITION LIST
 dl {
   margin-top: 29px;
-  @include font-size(12px);
+  font-size: calculateEm(12px);
   dt {
     margin-bottom: 13px;
   }
@@ -246,7 +246,7 @@ pre {
   margin-top: 1rem;
   padding: 1rem;
   color: $color-white;
-  @include font-size(12px);
+  font-size: calculateEm(12px);
 }
 code {
   margin: 0 0.1rem 0 0;
@@ -257,7 +257,7 @@ code {
   color: $color-primary;
   line-height: 2;
   font-family: "mononokibold";
-  @include font-size(10px);
+  font-size: calculateEm(10px);
 }
 
 svg{
@@ -298,7 +298,7 @@ svg{
     padding: 6px 12px;
     color: $color-primary;
     display: block;
-    @include font-size(13px);
+    font-size: calculateEm(13px);
     &::before{
       content: "!";
       height: 23px;
@@ -409,7 +409,7 @@ ul.contenttab-selector {
     background-color: $color-white !important;
     color: $color-primary !important;
     border-radius: 0 !important;
-    @include font-size(16px);
+    font-size: calculateEm(16px);
     &.selected {
       border-bottom: 2px solid $color-secondary;
     }

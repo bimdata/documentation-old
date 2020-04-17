@@ -83,7 +83,7 @@
           padding-left: 15px;
           color: $color-primary;
           text-transform: uppercase;
-          @include font-size(13px);
+          font-size: calculateEm(13px);
         }
         a{
           margin: 0;
@@ -188,14 +188,14 @@
         .swagger-request-body,
         .json-schema-properties,
         .json-schema-array-items {
-          @include font-size(12px);
+          font-size: calculateEm(12px);
           &::before {
             margin-bottom: 0.25rem;
             color: $color-primary;
-            @include font-size(16px);
+            font-size: calculateEm(16px);
           }
           span {
-            @include font-size(12px);
+            font-size: calculateEm(12px);
           }
         }
         .prop-row {
@@ -209,7 +209,7 @@
           h5 {
             color: #fefefe;
             opacity: 0.8;
-            @include font-size(13px);
+            font-size: calculateEm(13px);
             a {
               color: $color-secondary;
               font-family: $font-primary;
