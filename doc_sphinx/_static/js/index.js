@@ -27,6 +27,10 @@ $(function() {
   });
 });
 
+$(".bimdata-documentation__header__mobile-menu").click(function() {
+  $(this).toggleClass("menu-expanded");
+});
+
 // fix expand nav spectacle
 const elements = document.querySelectorAll('#nav section');
 for(let element of elements){
