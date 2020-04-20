@@ -88,7 +88,7 @@
     display: block;
     width: 54px;
     height: 54px;
-    .hamburger-menu-wrapper{
+    .hamburger-menu{
       width: 54px;
       height: 100%;
       margin-left: 0;
@@ -99,44 +99,44 @@
       background-color: $color-white;
       cursor: pointer;
       z-index: 1;
-      .hamburger-menu-line-1, .hamburger-menu-line-2, .hamburger-menu-line-3 {
+      &-line-1, &-line-2, &-line-3 {
         width: 18px;
         height: 2px;
         background-color: $color-primary;
         position: absolute;
         transition: all .25s;
       }
-      .hamburger-menu-line-1{
+      &-line-1{
         transform: translate3d(0px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
         transform-style: preserve-3d;
       }
-      .hamburger-menu-line-2{
+      &-line-2{
         transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
         transform-style: preserve-3d;
       }
-      .hamburger-menu-line-3{
+      &-line-3{
         transform: translate3d(0px, 6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
         transform-style: preserve-3d;
       }
     }
-    .mobile-drawer-wrapper{
+    .mobile-menu__expanded__wrapper{
       display: none;
     }
-    &.menu-expanded{
-      .hamburger-menu-wrapper{
-        .hamburger-menu-line-1{
+    &.mobile-menu__expanded{
+      .hamburger-menu{
+        &-line-1{
           transform: rotate(45deg);
           transition: all .25s;
         }
-        .hamburger-menu-line-2{
+        &-line-2{
           display: none;
         }
-        .hamburger-menu-line-3{
+        &-line-3{
           transform: rotate(-45deg);
           transition: all .25s;
         }
       }
-      .mobile-drawer-wrapper{
+      .mobile-menu__expanded__wrapper{
         position: absolute;
         left: 0;
         top: 0;
@@ -159,8 +159,12 @@
         }
         div{
           margin: 12px;
+          .bimdata-btn__fill--secondary{
+            background-color: $color-secondary;
+          }
           .bimdata-btn__ghost{
             color: $color-white;
+            justify-content: center;
           }
         }
       }
