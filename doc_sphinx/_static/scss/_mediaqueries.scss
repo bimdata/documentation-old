@@ -7,7 +7,7 @@
   .bimdata-documentation__header__left{
     flex: 1;
   }
-  .cards-vertical{
+  .bimdata-cards{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +26,7 @@
   .bimdata-documentation__header__left{
     flex: 1;
   }
-  .cards-vertical{
+  .bimdata-cards{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,21 +42,41 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .bimdata-documentation__layout__summary {
+    width: 200px;
+    flex-basis: 200px;
+  }
+  .bimdata-documentation__layout__content {
+    width: calc(100% - 200px);
+  }
   .bimdata-documentation__header__menu,
   .bimdata-documentation__header__btns{
     display: none;
   }
-  .cards-vertical{
-    .card-vertical{
-      margin: 3vw;
-    }
-  }
   .bimdata-documentation__home__help{
-    .cards-vertical{
+    .bimdata-cards{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
+    }
+  }
+  .bimdata-documentation__home__gradient{
+    .bimdata-card{
+      max-width: initial;
+    }
+  }
+  .bimdata-documentation__home__help{
+    .bimdata-card{
+      min-height: 220px;
+    }
+  }
+  .bimdata-card{
+    &__content{
+      padding: 0;
+      &__text{
+        min-height: initial;
+      }
     }
   }
 }
@@ -66,9 +86,34 @@
   ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .bimdata-documentation__layout__summary {
+    width: 200px;
+    flex-basis: 200px;
+  }
+  .bimdata-documentation__layout__content {
+    width: calc(100% - 200px);
+  }
   .bimdata-documentation__header__menu,
   .bimdata-documentation__header__btns{
     display: none;
+  }
+  .bimdata-documentation__home__gradient{
+    .bimdata-card{
+      max-width: initial;
+    }
+  }
+  .bimdata-documentation__home__help{
+    .bimdata-card{
+      min-height: 220px;
+    }
+  }
+  .bimdata-card{
+    &__content{
+      padding: 0;
+      &__text{
+        min-height: initial;
+      }
+    }
   }
 }
 
@@ -78,6 +123,13 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+  .bimdata-documentation__layout__summary {
+    width: 180px;
+    flex-basis: 180px;
+  }
+  .bimdata-documentation__layout__content {
+    width: calc(100% - 180px);
+  }
   .bimdata-documentation__header__menu,
   .bimdata-documentation__header__btns{
     display: none;
@@ -90,6 +142,13 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .bimdata-documentation__layout__summary {
+    width: 180px;
+    flex-basis: 180px;
+  }
+  .bimdata-documentation__layout__content {
+    width: calc(100% - 180px);
+  }
   .bimdata-documentation__header__menu,
   .bimdata-documentation__header__btns{
     display: none;
