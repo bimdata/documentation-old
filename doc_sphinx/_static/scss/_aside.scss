@@ -5,19 +5,21 @@
     flex-basis: 240px;
     overflow: auto;
     .wy-menu-vertical{
-      height: calc(100% - (60px * 3));
+      height: calc(100% - (60px * 2));
       width: 200px;
+      font-size: 14px;
       border-right: 1px solid $color-border;
       position: fixed;
       overflow: auto;
       .caption{
-        padding: 0;
+        padding: 0 1em;
         color: $color-primary;
       }
       // custom LINK SUMMARY
       .toctree-l1{
         width: 100%;
         display: inline-flex;
+        font-size: .929em;
         position: relative;
         flex-wrap: wrap;
         flex-direction: row;
@@ -33,7 +35,7 @@
         }
 
         a{
-          padding-left: 1.2rem;
+          padding-left: 2.2em;
           height: 28px;
           display: inline-flex;
           flex: 1;
