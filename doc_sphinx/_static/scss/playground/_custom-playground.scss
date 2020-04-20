@@ -21,19 +21,19 @@
           display: flex;
           align-items: center;
           border: none;
-          background-color: $color-primary;
-          color: $color-white;
+          background-color: var(--color-primary);
+          color: var(--color-white);
           span {
             margin-right: 0.5rem;
             padding: 0;
           }
           svg {
             width: 12%;
-            fill: $color-white;
+            fill: var(--color-white);
           }
           &:hover {
             box-shadow: none;
-            background-color: $color-primary-d10;
+            background-color: var(--color-primary);
           }
         }
       }
@@ -46,7 +46,7 @@
 
     .opblock-tag {
       margin-bottom: 1rem;
-      border-bottom: 0.5px solid lightgray;
+      border-bottom: 0.5px solid var(--color-tertiary-lightest);
     }
 
     // custom TABLE
@@ -106,13 +106,13 @@
       margin-left: 1rem;
       .btn {
         border: none;
-        background-color: $color-secondary;
+        background-color: var(--color-secondary);
         box-shadow: none;
-        color: $color-primary;
+        color: var(--color-primary);
         font-weight: normal;
         font-size: calculateEm(12px);
         &:hover {
-          background-color: $color-secondary-d10;
+          background-color: var(--color-secondary);
           box-shadow: none;
         }
       }
@@ -131,10 +131,6 @@
           padding: 10px;
           &:nth-child(odd){
             padding-right: 0.2em;
-            background:  $color-text-l20;
-          }
-          &:nth-child(even){
-            background: rgba( $color-text-l10,.4);
           }
           &:first-child{
             span {
@@ -172,14 +168,14 @@
         .authorization__btn {
           svg {
             width: 70%;
-            fill: $color-primary;
+            fill: var(--color-primary);
           }
         }
       }
       .opblock-section-header{
         padding: 0 30px;
         height: 50px;
-        background-color: $color-background;
+        background-color: var(--color-tertiary-lightest);
         box-shadow: none;
         justify-content: space-between;
       }
@@ -195,9 +191,7 @@
           padding: 15px 10px;
           height: 52px;
           border: none;
-          color: $color-white;
-          &.parameters-col_name, &.response-col_status{
-            background-color: $color-primary;
+          color: var(--color-primary);
           }
           &.parameters-col_description, &.response-col_description{
             background-color: $color-primary-l10;
@@ -217,7 +211,7 @@
       // override SELECT
       .body-param-content-type{
         .content-type{
-          background-color: $color-text-l30;
+          background-color: var(--color-tertiary-darkest);
         }
       }
       .content-type{
@@ -225,7 +219,7 @@
         height: 25px;
         min-width: auto;
         background: none;
-        background-color: $color-background;
+        background-color: var(--color-tertiary-lightest);
         border: none;
         box-shadow: none;
         font-size: calculateEm(12px);
@@ -244,7 +238,7 @@
     .close-modal {
       svg {
         width: 100%;
-        fill: $color-primary;
+        fill: var(--color-primary);
       }
     }
     .btn {
@@ -257,9 +251,9 @@
     }
     .btn-done {
       border: none;
-      color: $color-primary;
+      color: var(--color-primary);
       &:hover {
-        background-color: rgba($color-text-l30, 0.4);
+        background-color: rgba(96, 96, 96, 0.4);
       }
     }
   }
@@ -268,20 +262,20 @@
   .errors-wrapper {
     border-width: 0.5px;
     .errors__clear-btn {
-      background-color: $color-primary;
+      background-color: var(--color-primary);
       border: none;
       box-shadow: none;
-      color: $color-white;
+      color: var(--color-white);
       font-weight: normal;
       font-size: 12px;
       &:hover {
-        background-color: $color-primary-d10;
+        background-color: var(--color-primary);
       }
     }
     .errors {
       .error-wrapper {
         span {
-          color: $color-text;
+          color: var(--color-tertiary-darkest);
         }
       }
     }

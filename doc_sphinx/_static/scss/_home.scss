@@ -24,7 +24,7 @@
     &__title{
       h1{
         margin: calc( #{$spacing-unit} * 4) 0 calc( #{$spacing-unit} * 2);
-        color: $color-primary;
+        color: var(--color-primary);
         font-family: $font-primary_bold;
         font-size: calculateEm(25px);
       }
@@ -45,7 +45,7 @@
       text-align: center;
       h2{
         margin-top: 0;
-        color: $color-primary;
+        color: var(--color-primary);
         font-size: calculateEm(25px);
       }
       p{
@@ -64,16 +64,16 @@
   &__help{
     margin-top: 58px;
     padding: 50px 0;
-    background-color: $color-background;
+    background-color: var(--color-tertiary-lightest);
     &__title{
       width: 80%;
       margin-bottom: calc(#{$spacing-unit} * 3);
       p{
-        color: $color-primary;
+        color: var(--color-primary);
       }
     }
-    .cards-vertical{
-      .card-vertical{
+    .bimdata-cards{
+      .bimdata-card{
         margin: 1vw;
       }
     }
@@ -82,7 +82,7 @@
     height: 250px;
     &__title{
       p{
-        color: $color-text;
+        color: var(--color-tertiary-darkest);
       }
     }
   }

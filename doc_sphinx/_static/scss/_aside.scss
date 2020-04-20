@@ -8,12 +8,12 @@
       height: calc(100% - (60px * 2));
       width: 200px;
       font-size: 14px;
-      border-right: 1px solid $color-border;
+      border-right: 1px solid var(--color-tertiary);
       position: fixed;
       overflow: auto;
       .caption{
         padding: 0 1em;
-        color: $color-primary;
+        color: var(--color-primary);
       }
       // custom LINK SUMMARY
       .toctree-l1{
@@ -25,7 +25,7 @@
         flex-direction: row;
 
         &:hover{
-          background-color: $color-secondary;
+          background-color: var(--color-secondary);
         }
 
         &.show{
@@ -40,7 +40,7 @@
           display: inline-flex;
           flex: 1;
           align-items: center;
-          color: $color-primary;
+          color: var(--color-primary);
           &.external{
             padding: 0 1rem;
             &::after{
@@ -53,7 +53,7 @@
         }
 
         ul{
-          background-color: $color-white;
+          background-color: var(--color-white);
           .toctree-l2{
             a{
               margin: .4rem 0;
@@ -65,7 +65,7 @@
                 position: absolute;
                 left: 12px;
                 top: 0;
-                background-color: $color-secondary;
+                background-color: var(--color-secondary);
                 opacity: 0;
               }
             }
@@ -74,7 +74,7 @@
                 margin: .5rem 0;
                 padding: 0 2rem;
                 display: flex;
-                background: $color-white;
+                background: var(--color-white);
                 &::before{
                   left: 22px;
                 }
@@ -98,7 +98,7 @@
 
         // custom SUBMENU ACTIVE OR VISIBLE
         &.current, &.show{
-          background-color: $color-secondary;
+          background-color: var(--color-secondary);
           a{
             background: transparent;
             border: none;
@@ -144,7 +144,7 @@
       }
     }
     li.current{
-      background: $color-white;
+      background: var(--color-white);
       ul{
         display: none;
       }

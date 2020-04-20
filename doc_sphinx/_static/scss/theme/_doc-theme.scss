@@ -1,34 +1,34 @@
 .theme-dark{
-  background-color: $color-primary-d10;
+  background-color: var(--color-primary);
   body{
-    background-color: $color-primary-d10;
+    background-color: var(--color-primary);
   }
   p, ul, ol{
     a.reference.external{
       &::after{
-        background-color: $color-white;
+        background-color: var(--color-white);
       }
     }
   }
   ol, li{
-    color: $color-white;
+    color: var(--color-white);
   }
   .admonition {
     &.caution,
     &.tip {
       .admonition-title {
         background-color: #2d303a;
-        color: $color-white;
+        color: var(--color-white);
       }
     }
     &.seealso {
       .admonition-title {
-        background-color: $color-primary-d15;
-        border-bottom: 0.5px solid $color-primary-d5;
+        background-color: var(--color-primary);
+        border-bottom: 0.5px solid var(--color-primary);
         color: white;
         &::before {
-          background-color: $color-background;
-          color: $color-primary-d5;
+          background-color: var(--color-tertiary-lightest);
+          color: var(--color-primary);
         }
       }
     }
@@ -46,12 +46,12 @@
   .content{
     // custom page HOME
     &_documentation{
-      background-color: $color-primary-d5;
+      background-color: var(--color-primary);
     }
     &_home{
       .help_title{
         p{
-          color: $color-white;
+          color: var(--color-white);
         }
       }
     }
@@ -59,16 +59,16 @@
     // custom SIDEBAR
     &_summary{
       .toctree-l1{
-        background-color: $color-primary-d15;
+        background-color: var(--color-primary);
         a{
-          color: $color-white;
+          color: var(--color-white);
           &:hover{
-            color: $color-primary;
+            color: var(--color-primary);
           }
         }
         &.current{
           a{
-            color: $color-primary;
+            color: var(--color-primary);
           }
         }
       }
@@ -78,8 +78,8 @@
             ul{
               .toctree-l2{
                 a{
-                  background-color: $color-primary-d15;
-                  color: $color-white;
+                  background-color: var(--color-primary);
+                  color: var(--color-white);
                 }
               }
             }
@@ -94,7 +94,7 @@
           }
           &:hover{
             a{
-              color: $color-primary;
+              color: var(--color-primary);
             }
             .toctree-expand{
               background-image: url("../_images/bimdata_carret-right.svg");
@@ -107,9 +107,9 @@
     &_layout{
       .breadcrumb{
         li{
-          background-color: $color-primary-d15;
+          background-color: var(--color-primary);
           a{
-            color: $color-white;
+            color: var(--color-white);
           }
         }
       }
@@ -118,13 +118,13 @@
     // custom CONTENT
     &_content{
       .wy-breadcrumbs li{
-        background-color: $color-primary-d5;
+        background-color: var(--color-primary);
       }
     }
 
     ul.contenttab-selector li{
-      background-color: $color-primary-d5!important;
-      color: $color-white!important;
+      background-color: var(--color-primary)!important;
+      color: var(--color-white)!important;
     }
   }
 
@@ -134,15 +134,15 @@
       .navbar-search{
         form{
           input{
-            color: $color-white;
-            -webkit-box-shadow: 0 0 0 1000px #1e212c inset;
+            color: var(--color-white);
+            box-shadow: 0 0 0 1000px #1e212c inset;
           }
         }
       }
       .navbar-btn{
         .btn.btn-shadow{
           &:hover{
-            background-color: rgba($color-text-l30, .2);
+            background-color: rgba(96, 96, 96, .2);
           }
         }
       }
@@ -157,7 +157,7 @@
   // custom PAGES CONTENT
   #concepts, #guide, #getting-started, #cookbook, #tutorials, #use-cases, #api-documentation, #authentication, #viewer, #platform{
     .topic{
-      background-color: $color-primary-d15;
+      background-color: var(--color-primary);
       p.topic-title{
         &::after{
           opacity: .1;
@@ -169,7 +169,7 @@
   // custom CODE NUMBER LINES
   .linenos{
     pre{
-      color: $color-white;
+      color: var(--color-white);
     }
   }
 }

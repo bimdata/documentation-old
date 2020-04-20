@@ -21,23 +21,23 @@ table {
       td{
         height: calc(#{$spacing-unit} * 3);
         background-color: transparent;
-        color: $color-black;
+        color: var(--color-black);
       }
     }
   }
   tbody{
     tr{
       td{
-        color: $color-text;
+        color: var(--color-tertiary-darkest);
       }
       &:nth-child(odd){
-        background-color: $color-background;
+        background-color: var(--color-tertiary-lightest);
       }
     }
   }
   caption {
     padding: .75rem 0;
-    color: $color-primary;
+    color: var(--color-primary);
     caption-side: bottom;
     letter-spacing: .05rem;
     font-weight: 700;
@@ -64,7 +64,7 @@ table {
           color: rgba(255,255,255,.6);
           pre{
             margin: 0;
-            color: rgba($color-white, .6);
+            color: rgba(255,255,255, .6);
           }
         }
         .code{
