@@ -5,10 +5,7 @@
   display: flex;
   justify-content: center;
   &__summary, &__content{
-    margin-top: 60px;
-  }
-  &__summary{
-    flex-basis: 200px;
+    margin-top: 40px;
   }
   &__content{
     width: calc(100% - 240px);
@@ -63,7 +60,7 @@
   .topic{
     margin: 37px auto;
     padding: 0 30px;
-    width: 960px;
+    max-width: 960px;
     height: 106px;
     background-color: $color-white;
     box-shadow: 0 2px 7px 0 rgba($color-black, .1);
