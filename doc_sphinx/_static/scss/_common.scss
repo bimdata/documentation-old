@@ -181,10 +181,6 @@ ol {
   }
 }
 
-// a.bimdata-btn{
-//   color: $color-white;
-// }
-
 .highlight{
   pre{
     overflow: auto;
@@ -421,9 +417,9 @@ ul.contenttab-selector {
 .wy-menu-vertical li span.toctree-expand {
   background-image: url("../_images/bimdata_carret-right.svg");
   margin-left: 0;
-  width: 18px;
+  width: 28px;
   height: 28px;
-  background-size: 80%;
+  background-size: 60%;
   z-index: 2;
   background-repeat: no-repeat;
   background-position: center;
