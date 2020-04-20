@@ -28,7 +28,7 @@ $(function() {
 });
 
 $(".bimdata-documentation__header__mobile-menu").click(function() {
-  $(this).toggleClass("menu-expanded");
+  $(this).toggleClass("mobile-menu__expanded");
 });
 
 // fix expand nav spectacle
