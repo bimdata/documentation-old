@@ -103,7 +103,6 @@ In addition to that, we recommend:
 .. toctree::
     :hidden:
 
-    getting_started
     /tutorial/create_viewer_plugin
     async_plugin
     custom_plugin_icon

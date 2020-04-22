@@ -165,4 +165,4 @@ Hourra: you get all the properties of all the doors of the Model!
     The tutorials in which you find the answers to the questions: 
 
     * :doc:`How can I share data between my app and BIMData Platform? </tutorials/api_share_data_app_platform>`
-    * :doc:`How can I use BIMData Viewer with my uploaded models? </tutorials/api_use_viewer>`
+    * :doc:`How can I use BIMData Viewer with my uploaded models? </tutorials/api_use_viewer_with_uploaded_models>`

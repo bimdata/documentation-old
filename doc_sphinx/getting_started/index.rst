@@ -38,3 +38,4 @@ Getting Started
     Developping <developer_guided_tour>
     Postman <postman>
     Use External Libraries <api_external_clients>
+    Getting Started with the Viewer <viewer>
