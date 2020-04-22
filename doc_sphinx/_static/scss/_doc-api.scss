@@ -188,13 +188,18 @@
         .swagger-request-body,
         .json-schema-properties,
         .json-schema-array-items {
-          font-size: calculateEm(12px);
+          font-size: calculateEm(14px);
           &::before {
             margin-bottom: 0.25rem;
             color: var(--color-primary);
             font-size: calculateEm(16px);
           }
           span {
+            font-size: calculateEm(14px);
+          }
+        }
+        .json-property-required, .json-property-read-only{
+          &::before{
             font-size: calculateEm(12px);
           }
         }
