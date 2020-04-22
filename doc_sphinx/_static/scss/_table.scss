@@ -12,7 +12,7 @@ table {
       flex: 1;
       align-items: center;
       border: none;
-      font-size: calculateEm(12px);
+      font-size: calculateEm(14px);
     }
   }
   thead{
@@ -32,6 +32,9 @@ table {
       }
       &:nth-child(odd){
         background-color: var(--color-tertiary-lightest);
+      }
+      &:nth-child(even){
+        background-color: var(--color-white);
       }
     }
   }
