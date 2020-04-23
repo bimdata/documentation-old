@@ -1,14 +1,7 @@
 
 .swagger-ui {
-  .model-title{
-    font-family: $font-primary;
-    @include font-size(12px);
-  }
-
-  // add margin around table
+  // custom SCHEME CONTAINER
   .scheme-container {
-    margin-top: 2rem;
-    padding: 30px;
     box-shadow: none;
     .schemes {
       & > label {
@@ -16,152 +9,36 @@
       }
       .auth-wrapper {
         .btn.authorize {
-          padding: 0 1rem;
           height: 32px;
           display: flex;
           align-items: center;
           border: none;
-          background-color: $color-primary;
-          color: $color-white;
+          background-color: var(--color-primary);
+          color: var(--color-white);
           span {
             margin-right: 0.5rem;
             padding: 0;
           }
           svg {
             width: 12%;
-            fill: $color-white;
+            fill: var(--color-white);
           }
           &:hover {
             box-shadow: none;
-            background-color: $color-primary-d10;
           }
         }
       }
     }
   }
+  // custom WRAPPER
   .wrapper {
     padding: 0;
     margin: 0;
     max-width: 100%;
-
     .opblock-tag {
       margin-bottom: 1rem;
-      border-bottom: 0.5px solid lightgray;
+      border-bottom: 0.5px solid var(--color-tertiary-lightest);
     }
-
-    // custom TABLE
-    .col {
-      width: inherit;
-      &.parameters-col_name,
-      &.response-col_status {
-        width: 12%;
-        font-family: $font-primary;
-        .parameter__name {
-          font-family: $font-primary;
-          @include font-size(12px);
-          &.required {
-            font-weight: normal;
-            span {
-              position: relative;
-              bottom: 1px;
-              @include font-size(9px);
-              vertical-align: super;
-            }
-            &::after{
-              @include font-size(9px);
-              letter-spacing: .5px;
-            }
-          }
-        }
-        .parameter__in{
-          font-family: $font-primary;
-          font-style: normal;
-          font-size: 10px;
-          letter-spacing: .5px;
-        }
-      }
-      &.parameters-col_description, .response-col_description__inner {
-        width: 88%;
-        .markdown{
-          padding: 10px;
-        }
-      }
-    }
-    .model-box {
-      background: none;
-    }
-    table tbody tr {
-      background-color: $color-background;
-      &:last-child {
-        border: none;
-      }
-      td:nth-child(even) {
-        padding: 0;
-        background: $color-text-l30;
-      }
-    }
-
-    // add margin for try it out btn
-    .try-out {
-      margin-left: 1rem;
-      .btn {
-        border: none;
-        background-color: $color-secondary;
-        box-shadow: none;
-        color: $color-primary;
-        font-weight: normal;
-        @include font-size(12px);
-        &:hover {
-          background-color: $color-secondary-d10;
-          box-shadow: none;
-        }
-      }
-    }
-
-    // add padding inside table
-    table {
-      tbody tr td:first-of-type,
-      .parameters-col_description {
-        padding: 10px;
-      }
-      &.model {
-        margin-top: 10px;
-        font-family: "mononokibold";
-        tbody tr td {
-          padding: 10px;
-          &:nth-child(odd){
-            padding-right: 0.2em;
-            background:  $color-text-l20;
-          }
-          &:nth-child(even){
-            background: rgba( $color-text-l10,.4);
-          }
-          &:first-child{
-            span {
-              position: relative;
-              bottom: 1px;
-              @include font-size(9px);
-              vertical-align: super;
-            }
-          }
-        }
-      }
-    }
-    .tab,
-    .body-param-options {
-      padding: 0 10px;
-    }
-    .tab {
-      li {
-        padding-right: 0.5rem;
-        min-width: auto;
-        &:first-of-type:after {
-          right: 4px;
-        }
-      }
-    }
-
-    // delete border-radius to background color pre
     .opblock {
       &.opblock-get,
       &.opblock-post,
@@ -169,66 +46,215 @@
       &.opblock-patch,
       &.opblock-delete {
         border: none;
-        .authorization__btn {
-          svg {
-            width: 70%;
-            fill: $color-primary;
+      }
+      .opblock-summary{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        &-method{
+          width: 90px;
+          font-family: "robotoregular";
+          font-weight: 400;
+          font-size: 13px;
+          grid-column: 1;
+          grid-row: 1;
+        }
+        &-path, &-path__deprecated{
+          padding: 0;
+          grid-column: 2 / 6;
+          grid-row: 1;
+          font-size: 14px;
+          font-family: "robotomedium";
+          word-break: break-all;
+        }
+        &-description{
+          grid-column: 2 / 6;
+          grid-row: 2;
+          font-size: 12px;
+          font-family: "robotoregular";
+        }
+        &-operation-id{
+          grid-column: 2 / 6;
+          grid-row: 3;
+          font-size: 12px;
+          font-family: "robotoregular";
+        }
+        .authorization__btn{
+          grid-column: 6;
+          grid-row: 1;
+          svg{
+            width: 14px;
           }
         }
       }
-      .opblock-section-header{
-        padding: 0 30px;
-        height: 50px;
-        background-color: $color-background;
-        box-shadow: none;
-        justify-content: space-between;
-      }
-    }
-    .opblock-body {
-      .table-container{
-        margin-top: 10px;
-        padding: 0 20px;
-      }
-      thead{
-        border: none;
-        .col{
-          padding: 15px 10px;
-          height: 52px;
-          border: none;
-          color: $color-white;
-          &.parameters-col_name, &.response-col_status{
-            background-color: $color-primary;
+      .opblock-body {
+        .opblock-section-header{
+          padding: 0 30px;
+          height: 50px;
+          background-color: var(--color-tertiary-lightest);
+          box-shadow: none;
+          justify-content: space-between;
+           // custom TRY OUT BTN
+          .try-out {
+            margin-left: 1rem;
+            .btn {
+              border: none;
+              background-color: var(--color-secondary);
+              box-shadow: none;
+              color: var(--color-primary);
+              font-weight: normal;
+              font-size: calculateEm(12px);
+              &:hover {
+                background-color: var(--color-secondary);
+                box-shadow: none;
+              }
+            }
           }
-          &.parameters-col_description, &.response-col_description{
-            background-color: $color-primary-l10;
+          // custom SELECT
+          .content-type{
+            padding: 0;
+            min-width: auto;
+            background: none;
+            border: none;
+            box-shadow: none;
+            font-size: calculateEm(12px);
           }
         }
-      }
-      pre {
-        border-radius: 0;
-        font-family: "mononokibold";
-      }
-      .markdown{
-        code{
-          background: #41444e;
+        // custom TABLES WRAPPER
+        table{
+          tr{
+            td{
+              div, p {
+                font-size: 13px;
+              }
+            }
+          }
+          thead{
+            .col{
+              padding: 15px 10px;
+              // height: 52px;
+              width: inherit;
+              border: none;
+              color: var(--color-primary);
+              font-size: calculateEm(14px);
+              &.response-col_status, &.parameters-col_name{
+                flex: 1;
+                font-family: $font-primary;
+                align-items: flex-start;
+              }
+              &.response-col_description, &.parameters-col_description{
+                flex: 6;
+              }
+              &.parameters-col_description, .response-col_description__inner {
+                .markdown{
+                  padding: 10px;
+                  font-size: 0.85714em;
+                }
+              }
+            }
+          }
+          tbody{
+            tr {
+              td{
+                padding: 10px;
+                word-break: break-all;
+                &.parameters-col_name, &.response-col_status{
+                  flex: 1;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: center;
+                  .parameter__name {
+                    font-family: $font-primary;
+                    font-size: calculateEm(12px);
+                    &.required {
+                      font-weight: normal;
+                      span {
+                        position: relative;
+                        bottom: 1px;
+                        font-size: calculateEm(9px);
+                        vertical-align: super;
+                      }
+                      &::after{
+                        font-size: calculateEm(9px);
+                        letter-spacing: .5px;
+                      }
+                    }
+                  }
+                  .parameter__in{
+                    font-family: $font-primary;
+                    font-style: normal;
+                    font-size: 10px;
+                    letter-spacing: .5px;
+                  }
+                }
+                &.parameters-col_description, &.response-col_description{
+                  flex: 6;
+                }
+                &.response-col_description{
+                  .response-content-type ~ div{
+                    width: 100%;
+                    .tab,
+                    .body-param-options {
+                      padding: 0 10px;
+                    }
+                    .tab {
+                      li {
+                        &:first-of-type:after {
+                          right: 5px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            // custom MODEL ITEM
+            .model-box {
+              background: none;
+              .model-title{
+                font-family: $font-primary;
+                font-size: calculateEm(12px);
+              }
+            }
+          }
+          // custom MODEL TABLE
+          &.model {
+            margin-top: 10px;
+            font-family: "mononokibold";
+            tbody tr td {
+              &:nth-child(even){
+                flex: 6;
+              }
+              &:first-child{
+                span {
+                  position: relative;
+                  bottom: 4px;
+                  font-size: calculateEm(9px);
+                  vertical-align: super;
+                }
+              }
+            }
+          }
+          pre {
+            border-radius: 0;
+            font-family: "mononokibold";
+          }
         }
-      }
-
-      // override SELECT
-      .body-param-content-type{
-        .content-type{
-          background-color: $color-text-l30;
+        .table-container, .responses-inner{
+          padding: 0 20px;
         }
-      }
-      .content-type{
-        padding: 0;
-        height: 25px;
-        min-width: auto;
-        background: none;
-        background-color: $color-background;
-        border: none;
-        box-shadow: none;
-        @include font-size(12px);
+        // custom RESPONSES WRAPPER
+        .responses-wrapper{
+          table{
+            thead{
+              tr{
+                td{
+                  border: none;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -239,27 +265,26 @@
     }
   }
 
-  // custom MODAL
+  // custom AUTHORIZE MODAL
   .modal-ux {
     .close-modal {
       svg {
-        width: 100%;
-        fill: $color-primary;
+        fill: var(--color-primary);
       }
     }
     .btn {
       font-weight: normal;
       font-size: 12px;
       box-shadow: none;
-    }
-    .authorize.button {
-      margin-right: 1em;
-    }
-    .btn-done {
-      border: none;
-      color: $color-primary;
-      &:hover {
-        background-color: rgba($color-text-l30, 0.4);
+      &.authorize.button {
+        margin-right: 1em;
+      }
+      &.btn-done {
+        border: none;
+        color: var(--color-primary);
+        &:hover {
+          background-color: var(--color-tertiary-lightest);
+        }
       }
     }
   }
@@ -268,64 +293,20 @@
   .errors-wrapper {
     border-width: 0.5px;
     .errors__clear-btn {
-      background-color: $color-primary;
+      background-color: var(--color-primary);
       border: none;
       box-shadow: none;
-      color: $color-white;
+      color: var(--color-white);
       font-weight: normal;
       font-size: 12px;
       &:hover {
-        background-color: $color-primary-d10;
+        background-color: var(--color-primary);
       }
     }
     .errors {
       .error-wrapper {
         span {
-          color: $color-text;
-        }
-      }
-    }
-  }
-}
-
-.swagger-ui{
-  .opblock{
-    .opblock-summary{
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      .opblock-summary-method{
-        width: 90px;
-        font-family: "robotoregular";
-        font-weight: 400;
-        font-size: 13px;
-        grid-column: 1;
-        grid-row: 1;
-      }
-      .opblock-summary-path, .opblock-summary-path__deprecated{
-        padding: 0;
-        grid-column: 2 / 6;
-        grid-row: 1;
-        font-size: 14px;
-        font-family: "robotomedium";
-        word-break: break-all;
-      }
-      .opblock-summary-description{
-        grid-column: 2 / 6;
-        grid-row: 2;
-        font-size: 12px;
-        font-family: "robotoregular";
-      }
-      .opblock-summary-operation-id{
-        grid-column: 2 / 6;
-        grid-row: 3;
-        font-size: 12px;
-        font-family: "robotoregular";
-      }
-      .authorization__btn{
-        grid-column: 6;
-        grid-row: 1;
-        svg{
-          width: 14px;
+          color: var(--color-tertiary-darkest);
         }
       }
     }

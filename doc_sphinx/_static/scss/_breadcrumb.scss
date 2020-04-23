@@ -8,12 +8,12 @@
       margin: 0 7px;
       padding: 7px 9px;
       position: relative;
-      background-color: $color-background;
+      background-color: var(--color-tertiary-lightest);
       border-radius: 10px;
-      @include font-size(13px);
+      font-size: calculateEm(13px);
       a{
         padding: 0;
-        color: $color-primary;
+        color: var(--color-primary);
         text-decoration: none;
       }
       &:first-child{
@@ -21,9 +21,8 @@
         a{
           i{
             margin: 0 .125rem .1rem 0;
-            @include font-size(16px);
+            font-size: calculateEm(16px);
             vertical-align: middle;
-  
           }
         }
       }

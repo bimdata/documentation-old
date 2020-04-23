@@ -39,7 +39,7 @@
     -->
   </div>
 
-  <div class="bimdata-documentation__search">
+  <div class="bimdata-documentation__header__search bimdata-documentation__search ">
     {% include "searchbox.html" %}
   </div>
   </div>
@@ -57,11 +57,36 @@
   </div>
 
   <div class="bimdata-documentation__header__btns">
-    <div class>
+    <div>
       <a href="https://connect-next.bimdata.io/signup/" target="_blank" class="bimdata-btn bimdata-btn__fill bimdata-btn__fill--primary bimdata-btn__radius">create account</a>
     </div>
     <div>
       <a href="https://connect-next.bimdata.io/accounts/login/?next=" target="_blank" class="bimdata-btn bimdata-btn__ghost bimdata-btn__ghost--primary">sign in</a>
+    </div>
+  </div>
+
+  <div class="bimdata-documentation__header__mobile-menu">
+    <div class="hamburger-menu">
+      <div class="hamburger-menu-line-1"></div>
+      <div class="hamburger-menu-line-2"></div>
+      <div class="hamburger-menu-line-3"></div>
+    </div>
+    <div class="mobile-menu__expanded__wrapper">
+      <ul>
+        <li><a {%if title == 'Getting Started' or parents and parents[0]["title"] == 'Getting Started' %} class="active" {% endif %} aria-label="{{ _('concepts') }}" href="{{ pathto('getting_started/index') }}">Getting Started</a></li>
+        <li>
+          <a {%if title == 'Guide' or parents and parents[0]["title"] == 'Guide' %} class="active" {% endif %} aria-label="{{ _('topics') }}" href="{{ pathto('guide/index') }}">Guide</a>
+        </li>
+        <li><a {%if title == 'Tutorials' or parents and parents[0]["title"] == 'Tutorials' %} class="active" {% endif %} aria-label="{{ _('tutorials') }}" href="{{ pathto('tutorials/index') }}">Learn</a></li>
+        <li><a {%if title == 'Use Cases' or parents and parents[0]["title"] == 'Use Cases' %} class="active" {% endif %} aria-label="{{ _('use-cases') }}" href="{{ pathto('guide/use_cases/index') }}">Use&nbsp;Cases</a></li>
+        <li><a {%if title == 'API Reference' or parents and parents[0]["title"] == 'API Reference' %} class="active" {% endif %} aria-label="{{ _('reference') }}" href="{{ pathto('api/index') }}">API&nbsp;Reference</a></li>
+      </ul>
+      <div>
+        <a href="https://connect-next.bimdata.io/signup/" target="_blank" class="bimdata-btn bimdata-btn__fill bimdata-btn__fill--secondary bimdata-btn__radius">create account</a>
+      </div>
+      <div>
+        <a href="https://connect-next.bimdata.io/accounts/login/?next=" target="_blank" class="bimdata-btn bimdata-btn__ghost bimdata-btn__ghost--secondary bimdata-btn__radius">sign in</a>
+      </div>
     </div>
   </div>
 

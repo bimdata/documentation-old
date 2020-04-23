@@ -38,13 +38,13 @@
       &__left{
         flex: 2;
         h2{
-          @include font-size(44px);
+          font-size: calculateEm(44px);
         }
         p{
           width: 90%;
           margin-bottom: 2rem;
           line-height: 1.5;
-          @include font-size(16px);
+          font-size: calculateEm(16px);
         }
         .bimdata-btn{
           width: 200px;
@@ -69,7 +69,7 @@
       &__header{
         &__left{
           h2{
-            @include font-size(36px);
+            font-size: calculateEm(36px);
           }
         }
       }

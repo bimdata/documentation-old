@@ -25,8 +25,7 @@ extensions = [
     "sphinxprettysearchresults",
     "sphinx_substitution_extensions",
     "sphinx_copybutton",
-    "sphinxcontrib.contentui",
-    'notfound.extension',
+    "sphinxcontrib.contentui"
 ]
 
 

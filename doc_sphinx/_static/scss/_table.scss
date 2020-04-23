@@ -12,7 +12,7 @@ table {
       flex: 1;
       align-items: center;
       border: none;
-      @include font-size(12px);
+      font-size: calculateEm(14px);
     }
   }
   thead{
@@ -21,28 +21,31 @@ table {
       td{
         height: calc(#{$spacing-unit} * 3);
         background-color: transparent;
-        color: $color-black;
+        color: var(--color-black);
       }
     }
   }
   tbody{
     tr{
       td{
-        color: $color-text;
+        color: var(--color-tertiary-darkest);
       }
       &:nth-child(odd){
-        background-color: $color-background;
+        background-color: var(--color-tertiary-lightest);
+      }
+      &:nth-child(even){
+        background-color: var(--color-white);
       }
     }
   }
   caption {
     padding: .75rem 0;
-    color: $color-primary;
+    color: var(--color-primary);
     caption-side: bottom;
     letter-spacing: .05rem;
     font-weight: 700;
     text-align: right;
-    @include font-size(10px);
+    font-size: calculateEm(10px);
   }
 
 }
@@ -64,7 +67,7 @@ table {
           color: rgba(255,255,255,.6);
           pre{
             margin: 0;
-            color: rgba($color-white, .6);
+            color: rgba(255,255,255, .6);
           }
         }
         .code{

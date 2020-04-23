@@ -5,10 +5,7 @@
   display: flex;
   justify-content: center;
   &__summary, &__content{
-    margin-top: 60px;
-  }
-  &__summary{
-    flex-basis: 200px;
+    margin-top: 40px;
   }
   &__content{
     width: calc(100% - 240px);
@@ -25,7 +22,7 @@
         &::before{
           content: " ";
           position: absolute;
-          background-color: $color-secondary;
+          background-color: var(--color-secondary);
           left: 0;
           width: 4px;
           height: 4px;
@@ -55,20 +52,20 @@
 // page CONCEPTS & GUIDE
 #concepts, #guide, #getting-started, #cookbook, #tutorials, #use-cases, #api-documentation, #authentication, #viewer, #platform{
   h1{
-    color: $color-primary;
-    @include font-size(27px);
+    color: var(--color-primary);
+    font-size: calculateEm(27px);
     text-align: center;
     text-transform: uppercase;
   }
   .topic{
     margin: 37px auto;
     padding: 0 30px;
-    width: 960px;
+    max-width: 960px;
     height: 106px;
-    background-color: $color-white;
-    box-shadow: 0 2px 7px 0 rgba($color-black, .1);
-    @include flexbox;
-    @include align-items(center);
+    background-color: var(--color-white);
+    box-shadow: 0 2px 7px 0 rgba(0,0,0, .1);
+    display: flex;
+    align-items: center;
     p{
       margin: 0;
       a{
@@ -80,9 +77,9 @@
         width: 300px;
         height: 100%;
         position: relative;
-        @include flexbox;
-        @include align-items(center);
-        @include font-size(20px);
+        display: flex;
+        align-items: center;
+        font-size: calculateEm(20px);
         line-height: 24px;
         &::after{
           content: "";
@@ -91,7 +88,7 @@
           height: 100%;
           top: 0;
           right: 0;
-          background-color: $color-background;
+          background-color: var(--color-tertiary-lightest);
         }
       }
     }
@@ -100,7 +97,7 @@
       padding-left: 32px;
       width: 555px;
       line-height: 22px;
-      @include font-size(16px);
+      font-size: calculateEm(16px);
     }
   }
 }
@@ -111,10 +108,13 @@
     margin: $spacing-unit 0 0;
     display: inline-flex;
     box-shadow: none;
-    @include font-size(12px);
+    font-size: calculateEm(12px);
     &:hover{
-      background-color: $color-primary-d20;
+      background-color: var(--color-primary);
     }
+  }
+  pre{
+    padding: 0;
   }
 }
 
@@ -124,8 +124,8 @@
   .context{
     .highlighted{
       padding: .1rem .2rem;
-      background-color: $color-secondary;
-      color: $color-primary;
+      background-color: var(--color-secondary);
+      color: var(--color-primary);
       border-radius: 3px;
       font-weight: bold;
       letter-spacing: .02rem;
@@ -156,7 +156,7 @@ table.field-list{
     tr{
       td{
         padding: 0 1rem;
-        background-color: $color-white;
+        background-color: var(--color-white);
       }
     }
   }
