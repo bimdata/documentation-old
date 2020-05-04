@@ -103,19 +103,20 @@ Example with all functionalities disabled
               cloudId: 88,
               projectId: 100,
               ifcIds: [175],
-              bcf: false,
-              reload: false,
-              model: false,
-              help: false,
-              fullscreen: false,
-              section: false,
-              projection: false,
-              selectOptions: false,
-              structureAndProperties: false,
-              bcf: false,
-              logo: false,
-              rightClickMenu: false,
-              viewer3DNavCube: false,
+              bimdataPlugins: {
+                bcf: false,
+                reload: false,
+                model: false,
+                help: false,
+                fullscreen: false,
+                section: false,
+                projection: false,
+                selectOptions: false,
+                structureAndProperties: false,
+                logo: false,
+                rightClickMenu: false,
+                viewer3DNavCube: false,
+              }
             }
             const accessToken = 'DEMO_TOKEN';
             const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer('app', accessToken, cfg);
