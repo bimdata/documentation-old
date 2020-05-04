@@ -25,9 +25,9 @@ extensions = [
     "sphinxprettysearchresults",
     "sphinx_substitution_extensions",
     "sphinx_copybutton",
-    "sphinxcontrib.contentui"
+    "sphinxcontrib.contentui",
+    "notfound.extension",
 ]
-
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -430,3 +430,6 @@ swagger2sphinx_swagger_location = "api/swagger.json"
 
 # Autosummary issue resolver
 numpydoc_show_class_members = False
+
+# -- Options for notfound extension ---------------------------------------
+notfound_no_urls_prefix = True
