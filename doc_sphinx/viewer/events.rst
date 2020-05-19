@@ -275,3 +275,13 @@ Clear annotations
      * Delete all annotations.
      */
     this.$hub.emit("clear-annotations");
+
+
+Delete annotations
+
+.. code-block:: javascript
+
+    /**
+     * Delete some annotations.
+     */
+    this.$hub.emit("delete-annotations", {ids: []});
