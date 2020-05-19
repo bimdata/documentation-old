@@ -44,8 +44,12 @@ Concepts
        :start-after: excerpt
        :end-before: endexcerpt
 
+
+
 .. toctree::
-    :hidden:
+    :caption: BIMData Doc
+    :name: sidebar
+    :maxdepth: 1
     
     Cloud <cloud>
     Folders and documents <folders_and_documents>

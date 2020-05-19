@@ -1,7 +1,10 @@
 =============
 Contributing
 =============
-
+..
+    excerpt
+        Discover how-to contribute to this documentation
+    endexcerpt
 
 This documentation is open-source and `available on GitHub`_. Your contributions are welcome.
 You can either:

@@ -36,9 +36,17 @@ Guide
        :start-after: excerpt
        :end-before: endexcerpt
 
+.. topic:: :doc:`Contributing <contributing>`
+
+    .. include:: contributing.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
 .. toctree::
-    :hidden:
     :glob:
+    :caption: Guide
+    :name: sidebar
+    :maxdepth: 1
     
     authentication_bimdata_connect
     api_filters
@@ -56,7 +64,8 @@ Guide
     /platform/index
     /viewer/async_plugin
     /viewer/custom_plugin_icon
-    /viewer/modal_manager
+    Viewer: Modal Manager </viewer/modal_manager>
+    Contributing <contributing>
 
 
 

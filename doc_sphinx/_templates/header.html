@@ -51,7 +51,7 @@
         <a {%if title == 'Viewer Documentation' or parents and parents[0]["title"] == 'Viewer Documentation' %} class="active" {% endif %} aria-label="{{ _('3D Viewer') }}" href="{{ pathto('viewer/index') }}">3D Viewer</a>
       </li>
       <li><a {%if title == 'Platform User Guide' or parents and parents[0]["title"] == 'Platform User Guide' %} class="active" {% endif %} aria-label="{{ _('platform') }}" href="{{ pathto('platform/index') }}">Platform</a></li>
-      <li><a {%if title == 'API Reference' or parents and parents[0]["title"] == 'API Reference' %} class="active" {% endif %} aria-label="{{ _('reference') }}" href="{{ pathto('api/index') }}">API&nbsp;Reference</a></li>
+      <li><a {%if title == "BIMData\’s API" or parents and parents[0]["title"] == "API" %} class="active" {% endif %} aria-label="{{ _('reference') }}" href="{{ pathto('guide/api_guide') }}">API&nbsp;Documentation</a></li>
     </ul>
   </div>
 
@@ -77,7 +77,7 @@
           <a {%if title == 'Viewer Documentation' or parents and parents[0]["title"] == 'Viewer Documentation' %} class="active" {% endif %} aria-label="{{ _('3D Viewer') }}" href="{{ pathto('viewer/index') }}">3D Viewer</a>
         </li>
         <li><a {%if title == 'Platform User Guide' or parents and parents[0]["title"] == 'Platform User Guide' %} class="active" {% endif %} aria-label="{{ _('platform') }}" href="{{ pathto('platform/index') }}">Platform</a></li>
-        <li><a {%if title == 'API Reference' or parents and parents[0]["title"] == 'API Reference' %} class="active" {% endif %} aria-label="{{ _('reference') }}" href="{{ pathto('api/index') }}">API&nbsp;Reference</a></li>
+        <li><a {%if title == "BIMData\’s API" or parents and parents[0]["title"] == "BIMData\’s API" %} class="active" {% endif %} aria-label="{{ _('reference') }}" href="{{ pathto('guide/api_guide') }}">API&nbsp;Documentation</a></li>
       </ul>
       <div>
         <a href="https://connect-next.bimdata.io/signup/" target="_blank" class="bimdata-btn bimdata-btn__fill bimdata-btn__fill--secondary bimdata-btn__radius">create account</a>

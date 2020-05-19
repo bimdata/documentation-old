@@ -17,15 +17,13 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     :hidden:
     :maxdepth: 1
 
-    Getting Started <getting_started/index>
     Concepts <guide/concepts/index>
     Guide by topics <guide/index>
     Tutorials <tutorials/index>
     Use Cases <use_cases/index>
-    Platform User Guide <platform/index>
-    Viewer Doc <viewer/index>
-
     API Playground <api_playground/index>
+
+    Get Help <get_help>
 
     Get Help <get_help>
     Contributing <contributing>
@@ -36,10 +34,12 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     :name: sidebar
     :maxdepth: 1
 
-    Viewer Doc <viewer/index>
-    API Guide <guide/api_guide>
+    Concepts <guide/concepts/index>
+    Guide by Topics <guide/index>
+    Tutorials <tutorials/index>
+    Use Cases <use_cases/index>
     API Playground <api_playground/index>
-    Platform User Guide <platform/index>
 
+    Get Help <get_help>
 
     BIMData.io website <https://bimdata.io/>
