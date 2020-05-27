@@ -9,35 +9,43 @@ Create your application
         How-To create your application on BIMData Connect
     endexcerpt
 
+How-To create your application on BIMData Connect
+====================================================
+
+* Create an account on the |bimdata_connect| website. 
+* After the login step, go to "Manage your application" screen and fill the form to Create an Application.
+* You will choose a *Name* for your application, let's type **"Wonderful app"** in the field *Name*.
+All the fields may be edited later.
+
+These settings allow your app to communicate using a unique Token Access.
+Other choices are useful to manage the access rights for every API call.
+
+
+.. tip::
+
+   Your user has no access to what your application created. To grant access to your user see :doc:`how-to share data with your app <api_share_data_app_platform>`
+
+
 .. image:: /_images/cookbook/BIMdata_create_application.png
    :scale: 70 %
    :alt: Create your application
    :align: right
 
-
-How-To create your application on BIMData Connect
-====================================================
-
-Create an account on the |bimdata_connect| website. 
-After the login step, go to "Manage your application" screen and fill the form to Create an Application.
-
-You will choose a *Name* for your application, let's type **"Wonderful app"** in the field *Name*.
-
-.. Note::
-    All the fields may be edited later.
-
-These settings allow your app to communicate using a unique Token Access.
-Other choices are useful to manage the access rights for every API call.
-
 You created your first application.
 
-You will see 2 new pieces of information: the Client ID and the Client Secret.
-This Client ID and Client Secret are mandatory to build your application.
+You will see 2 new pieces of information:
 
+* the Client ID 
+* the Client Secret
+
+
+This Client ID and Client Secret are mandatory to build your application.
 
 .. seealso::
 
     See also :doc:`Authentication documentation </guide/authentication_bimdata_connect>`
+
+
 
 Response Type
 ==============
@@ -51,7 +59,6 @@ Fields description
 
 .. list-table:: Description of every field in the Create Application form
    :header-rows: 1
-   :widths: 10 90
 
    * - Field name
      - Description
