@@ -20,6 +20,8 @@ Get your access token
 
 The Client ID and the Client Secret are the 2 elements that you need to get the Access Token of your application from the Authentication Server. You will need this Access Token for every call of the bimdata's API.
 
+
+
 Python
 ^^^^^^^^
 
@@ -53,4 +55,9 @@ Curl
 
 .. seealso::
 
-    See also :doc:`the API documentation </api/introduction>`
+    See also :doc:`the API documentation </api/docs/index>`
+
+
+.. tip::
+
+    Your user has no access to what your application created. To grant access to your user see :doc:`how-to share data with your app <api_share_data_app_platform>`
