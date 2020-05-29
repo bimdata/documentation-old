@@ -19,7 +19,7 @@ What was done ?
 
 This usage of AR (Augmented Reality) to create and edit a BCF comment is possible with a primary load of the Model on a mobile device such as a tablet.
 
-.. image:: ../_images/use_cases/augmented_reality.png
+.. image:: /_images/use_cases/augmented_reality.png
     :align: center
     :scale: 70%
     :alt: Screenshot of the Projects screen of the BIMData's Platform

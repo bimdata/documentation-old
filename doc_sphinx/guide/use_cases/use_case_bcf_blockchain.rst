@@ -42,7 +42,7 @@ This process of recording BCF comment in a blockchain is incorporated into BIMDa
 
 
 
-.. image:: ../_images/use_cases/bcf_in_blockchain.png
+.. image:: /_images/use_cases/bcf_in_blockchain.png
     :align: center
     :alt: Schematic process of BCF in the blockchain
 
