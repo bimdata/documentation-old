@@ -23,7 +23,7 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx.ext.githubpages",
     "sphinxprettysearchresults",
-    'sphinx-prompt',
+    "sphinx-prompt",
     "sphinx_substitution_extensions",
     "sphinx_copybutton",
     "sphinxcontrib.contentui",
