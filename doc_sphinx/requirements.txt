@@ -1,10 +1,10 @@
-Sphinx==2.3.1
+Sphinx==3.0.3
 sphinx-rtd-theme==0.4.3
-Pygments==2.5.2
+Pygments==2.6.1
 sphinxprettysearchresults==0.3.5
 sphinx-prompt===1.1.0
-Sphinx-Substitution-Extensions==2019.12.28.0 
-sphinx-copybutton==0.2.8
-sphinxcontrib-contentui==0.2.4
+Sphinx-Substitution-Extensions==2020.05.30.0 
+sphinx-copybutton==0.2.11
+sphinxcontrib-contentui==0.2.5
 scrapy==1.8.0
 sphinx-notfound-page==0.4
