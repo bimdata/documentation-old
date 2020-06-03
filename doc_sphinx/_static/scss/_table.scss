@@ -50,7 +50,7 @@ table {
 
 }
 // custom CODE TABLE
-.highlight-html, .highlight-javascript, .highlight-python{
+.highlight-html, .highlight-javascript, .highlight-python, .highlight-default{
   .highlighttable{
     margin-top: 1rem;
     width: 100%;
@@ -75,6 +75,7 @@ table {
           background: none;
           padding: 0;
           background-color: #272822;
+          flex: auto;
           .highlight{
             width: 100%;
             pre{
