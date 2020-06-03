@@ -4,6 +4,7 @@
   min-height: 265px;
   max-height: 317px;
   max-width: 330px;
+  background-color: var(--color-white);
   box-shadow: 0 2px 10px 0 rgba(0,0,0,.1);
   display: flex;
   align-items: center;
@@ -77,8 +78,6 @@
     }
   }
 }
-
-
 
 @keyframes bounceIn {
   from,

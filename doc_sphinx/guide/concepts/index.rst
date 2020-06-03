@@ -8,30 +8,35 @@ Concepts
     endexcerpt
 
 .. topic:: :doc:`Cloud <cloud>`
+    :class: bimdata-card
 
     .. include:: cloud.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. topic:: :doc:`Folders and documents <folders_and_documents>`
+    :class: bimdata-card
 
     .. include:: folders_and_documents.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. topic:: :doc:`IFC <ifc>`
+    :class: bimdata-card
 
     .. include:: ifc.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. topic:: :doc:`Projects <projects>`
+    :class: bimdata-card
 
     .. include:: projects.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. topic:: :doc:`Users management <users>`
+    :class: bimdata-card
 
     .. include:: users.rst
        :start-after: excerpt
@@ -39,6 +44,7 @@ Concepts
 
 
 .. topic:: :doc:`Scopes <scopes>`
+    :class: bimdata-card
 
     .. include:: scopes.rst
        :start-after: excerpt

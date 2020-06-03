@@ -17,19 +17,17 @@ The features you can use could be limited by your Role on the Project.
 
         Download the Guide in PDF: :download:`Platform User Guide <../_static/BIMData_documentation.pdf>` 
 
-Getting Started 
+Getting Started
 ===================
 
-.. only:: html 
+.. only:: html
 
     .. image:: ../_images/user_guide/platform/sign-in.svg
-        :align: left
         :alt: Screenshot of Log In screen
 
 .. only:: latex
 
     .. image:: ../_images/user_guide/platform/sign-in.png
-        :align: left
         :alt: Screenshot of Log In screen
 
 Quickstart
@@ -45,18 +43,21 @@ Learn how-to...
 ================
 
 .. topic:: :doc:`Create a Project <create_project>`
+    :class: bimdata-card
 
     .. include:: create_project.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. topic:: :doc:`Manage your Project <manage_project>`
+    :class: bimdata-card
 
     .. include:: add_content.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. topic:: :doc:`Manage Documents <manage_documents>`
+    :class: bimdata-card
 
     .. include:: manage_documents.rst
        :start-after: excerpt
@@ -67,24 +68,28 @@ Explore the capacities of the Platform
 =======================================
 
 .. topic:: :doc:`Add Content <add_content>`
+    :class: bimdata-card
 
     .. include:: add_content.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. topic:: :doc:`Collaborate <collaborate>`
+    :class: bimdata-card
 
     .. include:: collaborate.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. topic:: :doc:`Organize <organize>`
+    :class: bimdata-card
 
     .. include:: organize.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. topic:: :doc:`Support <../get_help>`
+    :class: bimdata-card
 
     .. include:: ../get_help.rst
        :start-after: excerpt
