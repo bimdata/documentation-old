@@ -2,7 +2,6 @@ const webpack = require("webpack");
 const path = require("path");
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -20,11 +19,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "css/style.css",
       chunkFilename: "[id].css"
-    }),
-    new CopyPlugin([
-      { from: './node_modules/@bimdata/utils/dist/fonts', to: '../dist/fonts/' },
-      { from: './node_modules/@bimdata/utils/dist/js/main.js', to: '../_static/js/' }
-    ])
+    })
   ],
   module: {
     rules: [

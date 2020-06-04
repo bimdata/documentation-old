@@ -48,56 +48,92 @@
   }
 }
 
-
 // page CONCEPTS & GUIDE
-#concepts, #guide, #getting-started, #cookbook, #tutorials, #use-cases, #api-documentation, #authentication, #viewer, #platform{
+#concepts, #guide, #getting-started, #cookbook, #tutorials, #use-cases, #api-documentation, #authentication, #viewer, #platform, #learn-how-to, #explore-the-capacities-of-the-platform{
+  display: flex;
+  flex-wrap: wrap;
   h1{
+    width: 100%;
     color: var(--color-primary);
     font-size: calculateEm(27px);
     text-align: center;
     text-transform: uppercase;
   }
-  .topic{
-    margin: 37px auto;
-    padding: 0 30px;
-    max-width: 960px;
-    height: 106px;
-    background-color: var(--color-white);
-    box-shadow: 0 2px 7px 0 rgba(0,0,0, .1);
-    display: flex;
-    align-items: center;
-    p{
-      margin: 0;
+  h2{
+    width: 100%;
+  }
+  .topic.bimdata-card{
+    margin: 6px;
+    height: 265px;
+    min-width: 260px;
+    max-width: 265px;
+    position: relative;
+    flex: 1;
+    flex-basis: 23%;
+    flex-direction: column;
+    .topic-title{
+      height: 64px;
+      margin-bottom: 11px;
+      font-size: 21px;
+      font-family: $font-primary_bold;
+      text-align: center;
+      position: relative;
       a{
-        &::after{
-          content: none;
-        }
+        height: 48px;
+        margin-bottom: 16px;
+        display: block;
       }
-      &.topic-title{
-        width: 300px;
-        height: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        font-size: calculateEm(20px);
-        line-height: 24px;
-        &::after{
-          content: "";
-          position: absolute;
-          width: 2px;
-          height: 100%;
-          top: 0;
-          right: 0;
-          background-color: var(--color-tertiary-lightest);
-        }
+      &::after{
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 27px;
+        background-color: $color-secondary;
+        bottom: 0;
+        left: calc(50% - (27px / 2));
       }
     }
-    blockquote{
-      margin: 0;
-      padding-left: 32px;
-      width: 555px;
-      line-height: 22px;
-      font-size: calculateEm(16px);
+      p:not(.topic-title){
+        height: 72px;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+      }
+    &.platform, &.viewer, &.api{
+      &::before{
+        width: 66px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        border-radius: 3px;
+        font-family: "robotobold", sans-serif;
+        font-size: 12px;
+      }
+    }
+    &.platform{
+      &::before{
+        content: "Platform";
+        background-color: $color-neutral;
+        color: $color-white;
+      }
+    }
+    &.viewer{
+      &::before{
+        content: "Viewer";
+        background-color: $color-secondary;
+        color: $color-primary;
+      }
+    }
+    &.api{
+      &::before{
+        content: "API";
+        background-color: $color-success;
+        color: $color-white;
+      }
     }
   }
 }

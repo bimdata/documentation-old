@@ -1,4 +1,5 @@
-@import "~@bimdata/design-system/dist/styles/component.css";
+@import "~@bimdata/design-system/dist/css/design-system.css";
+
 /* custom DOC API ---------------------------- */
 @import 'api/monokai';
 @import 'api/spectacle';
@@ -28,6 +29,9 @@
 
 /* custom COMPONENTS */
 @import "cards";
+
+/* import BIMDATA COMPONENT STYLE */
+@import "./BIMData/BIMDataButton.scss";
 
 /* custom THEME DARK ------------------------- */
 @import "theme/doc-theme";

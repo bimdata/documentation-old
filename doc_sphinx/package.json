@@ -14,7 +14,7 @@
   "author": "",
   "license": "CC-BY-4.0",
   "dependencies": {
-    "@bimdata/design-system": "0.0.7",
+    "@bimdata/design-system": "0.0.9-beta.2",
     "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^3.0.0",
     "file-loader": "^4.0.0",

@@ -33,9 +33,6 @@ body {
   & > .section {
     margin: 0;
   }
-  img {
-    margin: 1rem 0 0.5rem;
-  }
 }
 
 .btn:focus {
@@ -155,9 +152,10 @@ ol {
     counter-increment: my-counter;
     display: flex;
     &::before {
-      width: 1%;
+      width: 2%;
       content: counter(my-counter) ". ";
       font-weight: bold;
+      line-height: 1.8;
     }
     a {
       &:hover {
@@ -290,7 +288,7 @@ svg{
       display: inline-block;
       border-radius: 50%;
       color: var(--color-white);
-      line-height: 1.5;
+      line-height: 1.8;
       margin-right: 10px;
       text-align: center;
     }
@@ -315,6 +313,7 @@ svg{
         border-radius: 0;
         background-color: transparent;
         justify-content: center;
+        line-height: 1.9;
       }
     }
   }
