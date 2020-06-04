@@ -48,6 +48,7 @@
         }
         .bimdata-btn{
           width: 200px;
+          justify-content: center;
         }
       }
       &__right{
@@ -58,6 +59,17 @@
       margin-top: 6rem;
       display: flex;
       align-items: center;
+      .bimdata-card{
+        &:first-child{
+          margin: 1vw 1vw 1vw 0;
+        }
+        &:nth-child(2){
+          margin: 1vw;
+        }
+        &:last-child{
+          margin: 1vw 0 1vw 1vw;
+        }
+      }
     }
   }
 
@@ -74,7 +86,7 @@
         }
       }
       .cards-vertical{
-        .card-vertical{
+        .bimdata-card{
           &:first-child, &:last-child{
             margin: 0;
           }
