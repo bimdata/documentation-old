@@ -2,7 +2,7 @@
 Customize the Viewer
 =====================
 
-.. 
+..
     excerpt
         Make the Viewer best suited to your needs.
     endexcerpt
@@ -77,6 +77,19 @@ Each functionality has a default value and could be disabled.
    * - viewer3DNavCube
      - XeoKit 3D cube to navigate
      - The navigation 3D cube is not diplayed.
+   * - split
+     - The split plugin to extract some parts of the model
+     - The plugin is disabled, user can't ask for a split
+   * - merge
+     - The merge plugin to merge many models in one
+     - The plugin is disabled, user can't ask for a merge
+   * - allowExport
+     - The export plugin to export updated IFCs
+     - The plugin is disabled, user can't ask for an export
+   * - editProperties
+     - The user can edit properties through the properties panel
+     - The properties panel can't perform updates
+
 
 Example with all functionalities disabled
 ===========================================
