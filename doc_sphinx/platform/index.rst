@@ -105,5 +105,3 @@ Explore the capacities of the Platform
     Create a Project <create_project>
     Manage Project <manage_project>
     Manage Documents <manage_documents>
-
-    Support <../get_help>
