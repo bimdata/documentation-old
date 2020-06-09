@@ -50,8 +50,8 @@
 
 // page CONCEPTS & GUIDE
 #concepts, #guide, #getting-started, #cookbook, #tutorials, #use-cases, #api-documentation, #authentication, #viewer, #platform, #learn-how-to, #explore-the-capacities-of-the-platform{
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
   h1{
     width: 100%;
     color: var(--color-primary);
@@ -66,11 +66,12 @@
     margin: 6px;
     height: 265px;
     min-width: 260px;
-    max-width: 265px;
+    max-width: 260px;
     position: relative;
     flex: 1;
     flex-basis: 23%;
     flex-direction: column;
+    display: inline-flex;
     .topic-title{
       height: 64px;
       margin-bottom: 11px;
