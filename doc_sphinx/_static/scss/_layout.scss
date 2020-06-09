@@ -77,15 +77,24 @@
       font-size: 21px;
       font-family: $font-primary_bold;
       text-align: center;
-      position: relative;
       a{
         height: 48px;
         margin-bottom: 16px;
         display: block;
+        position: inherit;
+        &::after{
+          position: absolute;
+          content: "";
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
       }
       &::after{
         content: "";
-        position: absolute;
+        position: relative;
+        display: block;
         height: 4px;
         width: 27px;
         background-color: $color-secondary;
