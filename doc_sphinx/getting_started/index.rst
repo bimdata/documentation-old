@@ -2,6 +2,13 @@
 Getting Started
 ===============
 
+.. topic:: :doc:`Authentication <auth>`
+    :class: bimdata-card
+
+    .. include:: auth.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
 .. topic:: :doc:`API Introduction <api>`
     :class: bimdata-card
 
@@ -39,6 +46,7 @@ Getting Started
 
 .. toctree::
     
+    Auth <auth>
     API <api>
     Developping <developer_guided_tour>
     Postman <postman>
