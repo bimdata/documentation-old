@@ -107,7 +107,7 @@ jobs:
               ansible-playbook \
               --inventory-file inventories/$ENV \
               --tags documentation \
-              --extra-vars '{"context_dir":"/var/repo","ansible_ssh_private_key_file":"./files/deploy_rsa","ops_env":$ENV}' \
+              --extra-vars "{\"context_dir\":\"/var/repo\",\"ansible_ssh_private_key_file\":\"./files/deploy_rsa\",\"ops_env\":\"$ENV\"}" \
               --user deploy \
               build.yml
       - run:
@@ -135,7 +135,7 @@ jobs:
               ansible-playbook \
               --inventory-file inventories/$ENV \
               --tags documentation \
-              --extra-vars '{"ansible_ssh_private_key_file:./files/deploy_rsa","ops_env":$ENV}' \
+              --extra-vars "{\"ansible_ssh_private_key_file\":\"./files/deploy_rsa\",\"ops_env\":\"$ENV\"}" \
               --user deploy  \
               deploy.yml
 
