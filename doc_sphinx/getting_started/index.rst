@@ -16,13 +16,6 @@ Getting Started
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`Guided Tour <developer_guided_tour>`
-    :class: bimdata-card
-
-    .. include:: developer_guided_tour.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
 .. topic:: :doc:`Postman <postman>`
     :class: bimdata-card
 
@@ -45,10 +38,11 @@ Getting Started
        :end-before: endexcerpt
 
 .. toctree::
+   :global:
+   :hidden:
     
-    Auth <auth>
+    Authentication <auth>
     API <api>
-    Developping <developer_guided_tour>
     Postman <postman>
     Use External Libraries <api_external_clients>
     Getting Started with the Viewer <viewer>
