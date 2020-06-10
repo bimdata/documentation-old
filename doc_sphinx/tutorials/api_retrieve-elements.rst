@@ -34,7 +34,7 @@ You are now ready to use the API.
 Step 2. Set up your project
 ===============================
 
-Once your app exists and you have your Access Token, you are able to use the API.
+Once your app exists and you have your Access Token, you can use the API.
 Begin with the creation of a Cloud (`What's a cloud?`_), in which you create a Project (`What's a project?`_).
 In the script below, there is an example of the creation of a project in your Cloud through API, so you can have a ``projectId``.
 First, define a name to create your first Cloud. Post this ``name`` on |api_url|/cloud using your Access Token. 
@@ -66,7 +66,7 @@ Let's upload your IFC model!
 Step 3. Upload your IFC
 ============================
 
-The API let you upload your IFC file. In this tutorial, you can use this IFC file: `Download Cassiopea IFC`_
+The API let you upload your IFC file. In this tutorial, you can use this IFC file: `Download the Cassiopea IFC file`_
 
 Use the API to upload
 -------------------------
@@ -177,7 +177,7 @@ With the filters, every IFC element can be retrieved. You can retrieve any eleme
 
 .. seealso::
 
-    See also :doc:`the API completedocumentation </getting_started/api>`
+    For more see :doc:`the API documentation</getting_started/api>`
 
 .. _create an application: ../tutorials/dev_create_an_application.html
 .. _the procedure described on the dedicated page to get your Access Token: ../tutorials/dev_get_access_token.html
