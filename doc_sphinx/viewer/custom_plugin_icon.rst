@@ -2,13 +2,15 @@
 Custom Plugin Icon
 ======================
 
-Description
-================
+When a plugin is displayed on the left or right Viewer menu, the icon can be customized.
+It is possible to use a SVG path or an image URI
 
-When a plugin is displayed on the left or right viewer menu, the icon can be customized. It is possible to use svg path or image uri (should be a valid uri that will be put in src attributs of an [img element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img), with svg format, base64 ...).
+.. note::
 
-Direct SVG path:
------------------
+    The image URI should be a valid URI that will be put in src attributes of an `<img> element <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img>`_, with SVG format, base64...).
+
+Using a direct SVG path
+========================
 
 .. block-code:: javascript
 
@@ -25,26 +27,32 @@ Direct SVG path:
     },
     ...
 
-The path have to be put in the path property, and options can have width, height, x and y properties. (x and y are the last components of the svg viewbox attributs).
+The path has to be put in the ``path`` property, and options can have ``width``, ``height``, ``x`` and ``y`` properties. 
 
-Image URI
-----------
+
+.. note:: 
+
+    ``x`` and ``y`` are the last components of the SVG viewbox attributes.
+
+Using image URI
+===============
 
 .. block-code:: javascript
 
     // plugin code
     ...
     icon: {
-      imgUri: "a valid image uri"
+      imgUri: "a valid image URI"
     }
     ...
 
 
-Finally, plugin will have two states in menus. Activated or not. Another icon could be displayed when activated if specified in the iconActive property (the options are the same as on icon property).
+At the end, the plugin has two states in menus: activated or not. 
+Another icon could be displayed when activated if specified in the ``iconActive`` property (the options are the same as on icon property).
 
 
 Example
-========
+=======
 
 .. raw:: html
    :file: ../_static/viewer_custom_plugin_example.html
