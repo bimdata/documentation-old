@@ -67,7 +67,9 @@ Example of code
             projectId: 100,
             ifcIds: [175],
             bimdataPlugins: {
-              bcf: false
+              bcf: false,
+              merge: false,
+              allowExport: false
             }
           }
           const accessToken = 'DEMO_TOKEN';
