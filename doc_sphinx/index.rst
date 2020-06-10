@@ -1,6 +1,3 @@
-.. meta::
-    :github_url: https://github.com/bimdata/documentation/blob/master/doc_sphinx/index.rst
-
 ================================================
 Welcome to BIMData documentation!
 ================================================
@@ -15,19 +12,13 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
 
 .. toctree::
     :hidden:
-    :maxdepth: 1
+    :maxdepth: 2
+    
+    Getting Started <getting_started/index>
+    Viewer <viewer/index>
+    Platform <platform/index>
 
-    Concepts <guide/concepts/index>
-    Guide by topics <guide/index>
-    Tutorials <tutorials/index>
-    Use Cases <use_cases/index>
-    API Playground <api_playground/index>
-
-    Get Help <get_help>
-
-    Get Help <get_help>
-    Contributing <contributing>
-    BIMData.io website <https://bimdata.io/>
+    Contributing <guide/contributing>
 
 .. toctree::
     :caption: BIMData Doc
@@ -37,7 +28,7 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     Concepts <guide/concepts/index>
     Guide by Topics <guide/index>
     Tutorials <tutorials/index>
-    Use Cases <use_cases/index>
+    Use Cases <guide/use_cases/index>
     API Playground <api_playground/index>
 
     Get Help <get_help>

@@ -1,5 +1,5 @@
 =============================
-Getting Started with the API
+BIMData's API
 =============================
 
 ..

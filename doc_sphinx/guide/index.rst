@@ -63,15 +63,17 @@ Guide
     auth_connect
     auth_identity_providers
     authentication_flows
+    dev_invitations
     authentication_migration
-    /concepts/index
-    /concepts/cloud
-    /concepts/folders_and_documents
-    /concepts/ifc
-    /platform/index
-    /viewer/async_plugin
-    /viewer/custom_plugin_icon
+    ../concepts/index
+    ../concepts/cloud
+    ../concepts/folders_and_documents
+    ../concepts/ifc
+    ../platform/index
+    ../viewer/async_plugin
+    ../viewer/custom_plugin_icon
     Viewer: Modal Manager </viewer/modal_manager>
+    dev_errors
     Contributing <contributing>
 
 
