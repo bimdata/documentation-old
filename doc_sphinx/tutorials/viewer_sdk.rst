@@ -2,7 +2,6 @@
 SDK Viewer
 ==================
 
-
 .. tip::
 
     Looking for the SDK?
@@ -10,11 +9,11 @@ SDK Viewer
 
 .. 
     excerpt
-        The SDK is a development tool helping you to create faster a Viewer plugin. 
+        The SDK is a development tool helping you to create faster a Viewer plugin.
     endexcerpt
 
 It is a Github repository, containing a pre-configured environment to develop BIMData Viewer plugins.
-You can develop, test, build, package and share your plugin easily.
+You can develop, test, build, package, and share your plugin easily.
 
 The repository is https://github.com/bimdata/bimdata-viewer-sdk
 
@@ -96,7 +95,8 @@ To load your plugin in a real environment, you want to package and publish your 
 
 The plugin template is pre-configured with a rollup config that let you do this easily:
 
-.. substitution-code-block :: bash
+.. prompt:: bash
+   :substitutions:
 
     cd src/plugins/{your_plugin}
     npm install
@@ -121,20 +121,20 @@ To publish it, update the ``package.json`` file with the proper information. The
 More info about how it works
 =============================
 
-The SDK itself uses **Webpack** to build. The packaging uses **Rollup**. 
+The SDK itself uses **Webpack** to build. The packaging uses **Rollup**.
 If you need a complex JS flow, it may lead to some issues.
-
 
 To see these issues before deploying, load the packaged version in the SDK:
 
-.. substitution-code-block :: bash
+.. prompt:: bash
+   :substitutions:
 
     cd src/plugins/{your_plugin}
     npm run watch
 
 And load the *dist* version of the plugin:
 
-.. substitution-code-block :: javascript
+.. code-block:: javascript
 
     import SplitPlugin from "@/plugins/split/dist/split.plugin.js";
 
@@ -145,6 +145,5 @@ And load the *dist* version of the plugin:
     ]);
     }
     ...
-
 
 You can also edit the Webpack and Rollup config as you want.
