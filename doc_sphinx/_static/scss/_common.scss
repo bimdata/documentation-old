@@ -242,10 +242,6 @@ code {
   font-size: calculateEm(10px);
 }
 
-svg{
-  width: 100%;
-}
-
 .section {
   > :target::before {
     padding-top: 60px;
