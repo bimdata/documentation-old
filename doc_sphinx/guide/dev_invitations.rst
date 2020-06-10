@@ -33,7 +33,7 @@ Example Request
 -----------------
 
 
-.. substitution-code-block:: javascript
+.. code-block:: javascript
    :linenos:
 
     curl -H "Content-Type: application/json" -X POST INVITATION_URL -d '{

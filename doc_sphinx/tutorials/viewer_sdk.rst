@@ -37,7 +37,7 @@ By default, the redirect URI is:  ``http://localhost:8080/oidc-callback``
 
 Then you can copy the ``.env.example`` file and add in it your ``client_id``:
 
-.. substitution-code-block:: bash
+.. code-block:: bash
     
     npm install
     cp .env.example .env
@@ -48,7 +48,7 @@ Edit ``.env`` file with your data (your ``client_id``).
 Compiles and hot-reloads for development
 ------------------------------------------
 
-.. substitution-code-block:: bash
+.. code-block:: bash
 
     npm run serve
 
@@ -63,7 +63,7 @@ You can directly open a Project or a Model by opening an URL using specific IDs:
 Create your first plugin
 -----------------------------
 
-.. substitution-code-block:: bash
+.. code-block:: bash
 
     npm run init-plugin
 
@@ -74,7 +74,7 @@ Files are created in the directory ``src/plugins/{{name of your plugin}}``.
 
 Then import your newly created plugin ``src/viewer/viewer.vue`` and add it to the ``registerPlugin`` array.
 
-.. substitution-code-block:: javascript
+.. code-block:: javascript
 
     import SnowflakesPlugin from "@/plugins/snowflakes/src/snowflakes.plugin.js";
     import SplitPlugin from "@/plugins/split/src/split.plugin.js";

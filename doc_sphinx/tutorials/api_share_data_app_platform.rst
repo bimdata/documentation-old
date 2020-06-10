@@ -10,7 +10,7 @@ How can I share data between my app and BIMData Platform?
 
 You can invite your user in the Cloud you created with your app: `/api/index.html#inviteCloudUser </api/index.html#inviteCloudUser>`_
 
-.. substitution-code-block:: bash
+.. code-block:: bash
 
     curl --request POST '|api_url|/cloud/YOUR_CLOUD_ID/invitation' \
       --header 'Content-Type: application/json' \

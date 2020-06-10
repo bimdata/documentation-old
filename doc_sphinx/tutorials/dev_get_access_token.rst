@@ -25,7 +25,7 @@ The Client ID and the Client Secret are the 2 elements that you need to get the 
 Python
 ^^^^^^^^
 
-.. substitution-code-block:: python
+.. code-block:: python
 
     import requests
 
@@ -42,7 +42,7 @@ Python
 Curl
 ^^^^^^^^
 
-.. substitution-code-block:: bash
+.. code-block:: bash
 
     curl --request POST "|iam_url|/auth/realms/bimdata/protocol/openid-connect/token" \
       --header "Content-Type: application/x-www-form-urlencoded" \

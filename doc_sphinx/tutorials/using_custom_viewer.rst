@@ -16,7 +16,7 @@ Load the Viewer
 
 To load the Viewer in your web application, use the ``<script>`` tag with the packaged version:
 
-.. substitution-code-block:: javascript
+.. code-block:: javascript
 
     <script src="https://unpkg.com/@bimdata/viewer@0.3.3/dist/bimdata-viewer.min.js" charset="utf-8"></script>
 
@@ -121,7 +121,7 @@ Example with all functionalities disabled
 ===========================================
 
 
-.. substitution-code-block:: html
+.. code-block:: html
    :linenos:
 
       <!DOCTYPE html>
