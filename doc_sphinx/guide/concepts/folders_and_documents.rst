@@ -35,15 +35,9 @@ JSON
     }
 
 
-* If a folder is created without parent_id, it will be placed under the root folder.
-* You can't create a loop with folders (a parent being itself or a loop including multiple folders).
+* If a folder is created without ``parent_id``, it will be placed under the root folder.
+* You can't create a loop with folders (a parent being itself, or a loop including multiple folders).
 
-References
-------------
-
-* GET ``/cloud/{cloud_pk}/project/{project_pk}/folder``
-* POST ``/cloud/{cloud_pk}/project/{project_pk}/folder``
-* GET ``/cloud/{cloud_pk}/project/{id}/tree``
 
 Documents
 ===========
@@ -194,14 +188,7 @@ You can download files using the URL returned by the API. The URL is valid for 1
 
             print(response.text)
 
-References
---------------
-
-* GET ``/cloud/{cloud_pk}/project/{project_pk}/document``
-* POST ``/cloud/{cloud_pk}/project/{project_pk}/document``
-
-
 
 .. seealso::
 
-    See also  :ref:`the Guided Tour <api_onboarding_gt>`
+    See also  :doc:`the chapter Manage your Documents </platform/manage_documents>` in the Platform User Guide.
