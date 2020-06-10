@@ -173,11 +173,12 @@ You get a list of windows, all the windows of your model.
     all_windows = response.json()
     #all_windows are available in this var for your next scripts
 
-With the filters, every IFC element can be retrieved. You can retrieve any element in the collection provided in the API.
+With the filters, every IFC element can be retrieved. 
+You can retrieve any element in the collection provided in the API.
 
 .. seealso::
 
-    For more see :doc:`the API documentation</getting_started/api>`
+    For more see :doc:`the API documentation </getting_started/api>`
 
 .. _create an application: ../tutorials/dev_create_an_application.html
 .. _the procedure described on the dedicated page to get your Access Token: ../tutorials/dev_get_access_token.html
