@@ -16,6 +16,7 @@ A scope is a limitation to the data on a given resource. A scope is described by
 Access Token is validated by the BIMData Connect authentication service and the scopes are attached to an Access Token.
 
 .. note:: About scopes and oAuth 2.0
+
     OAuth 2.0 scopes provide a way to limit the amount of access that is granted to an access token.
     For example, an access token issued to a client app may be granted READ and WRITE access to protected resources, or just READ access. You can implement your APIs to enforce any scope or combination of scopes you wish. So, if a client receives a token that has READ scope, and it tries to call an API endpoint that requires WRITE access, the call will fail.
 

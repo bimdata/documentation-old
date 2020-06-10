@@ -8,12 +8,12 @@ IFC
 
 .. 
     excerpt
-        After being uploaded, the IFC will be processed on our servers.
+        After being uploaded, the IFC is processed on our servers.
     endexcerpt
 
 BIMData API exposes a lot of tools for extract, update and manipulate information from `IFC files`_.
 
-The tools are compatible IFC2x3TC1 and IFC4 Add2.
+The tools are compatible with IFC2x3TC1 and IFC4 Add2.
 
 
 Depending on the options you chose, you can:
@@ -21,7 +21,7 @@ Depending on the options you chose, you can:
 * Retrieve the model as a 3D GLTF file
 * Retrieve elements and properties
 * Retrieve the spatial structure
-* Retrieve classifications, systemes and zones
+* Retrieve classifications, systems and zones
 * Retrieve 2D plans in SVG format
 
 Upload an IFC
@@ -35,9 +35,12 @@ IFC files are tied to a ``document`` which represents the actual uploaded file.
 We use HTTP Compression to speed up the file transfer. HTTP Compression will start as soon as you upload a file.
 Files are decompressed at the output of the API.
 
+There is no size limit to the IFC upload.
+
 .. note::
 
     The displayed filesize is the compressed size and not the actual size of the initial file.
+
 
 Workflow
 =========
