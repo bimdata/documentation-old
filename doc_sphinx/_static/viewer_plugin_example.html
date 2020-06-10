@@ -15,9 +15,11 @@
               projectId: 100,
               ifcIds: [175],
               bimdataPlugins: {
-                default: false
+                bcf: false,
+                merge: false,
+                allowExport: false
               }
-            };
+            }
             const accessToken = "DEMO_TOKEN";
             const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer(
                 "app",
