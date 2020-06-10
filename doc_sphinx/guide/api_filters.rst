@@ -16,11 +16,12 @@ Examples
 
 Let use the resource IFC: ``/cloud/{cloud_pk}/project/{project_pk}/ifc``
 
-The response list will only include completed IFCs (see :doc:`IFC </guide/concepts/ifc>`).
+The response list will only include completed IFCs (see :doc:`the IFC guide in our documentation </guide/concepts/ifc>`).
 You can combine several filters. Elements matching all combined filters will be returned.
 
 
 .. IMPORTANT::
+
     Filtering is an AND operation.
 
 
