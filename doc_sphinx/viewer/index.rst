@@ -89,9 +89,9 @@ Only `WebGL-enabled browsers`_ are supported:
 * Firefox
 * Chrome
 
-.. note::
+.. tip::
 
-    `Test the WebGL support`_ of your browser.
+    On this website, you can `check the WebGL support`_ of your browser.
 
 Recommended
 ------------
