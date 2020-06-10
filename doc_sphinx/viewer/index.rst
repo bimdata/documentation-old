@@ -115,6 +115,6 @@ In addition to that, we recommend:
     events
     utils
 
-.. _Test the WebGL support: https://get.webgl.org
+.. _check the WebGL support: https://get.webgl.org
 .. _WebGL-enabled browsers: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
 .. _ECMAScript 2015 support: https://kangax.github.io/compat-table/es6
