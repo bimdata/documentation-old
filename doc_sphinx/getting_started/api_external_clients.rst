@@ -20,8 +20,9 @@ Instead of this code:
 ------------------------
 
 .. code-block:: python
+   :substitutions:
 
-    response = requests.get('https://api.bimdata.io/cloud/12/project/58/ifc/985')
+    response = requests.get('|api_url|/cloud/12/project/58/ifc/985')
     ifc_list = response.json()
 
 
@@ -39,7 +40,8 @@ Python Client Lib
 * URL: https://pypi.org/project/bimdata-api-client/
 * Repository: https://github.com/bimdata/python-api-client
 
-.. note:: info
+.. important::
+
     Requirements: Python 2.7 and 3.4+
 
 
