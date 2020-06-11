@@ -1,6 +1,6 @@
-=======================
-Viewer Documentation
-=======================
+========================
+3D Viewer Documentation
+========================
 
 BIMData Viewer is a 3D Viewer built with Web technologies, you can use is in all your web apps.
 On top of that our Viewer is customizable through plug-ins.
