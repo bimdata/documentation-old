@@ -34,7 +34,7 @@ You can also use the direct sharing link to the BIMData's Examples collection: h
 
 .. note::
     
-    If it's not installed on your computer, the software guides you with installation, according to your configuration.
+    If it's not installed on your computer, the Postman's software guides you with installation, according to your configuration.
 
 
 2 - Set up an Environment
@@ -45,8 +45,8 @@ Create a new Environment by clicking the wheel icon [Manage environments]
 
 Then fill the following 3 variables with your data from BIMData Connect:
  
-.. list-table:: Set up your environment
-   :widths: 20 60
+.. list-table::
+   :widths: 50 50
    :header-rows: 1
 
    * - Variable name
@@ -63,7 +63,7 @@ Then fill the following 3 variables with your data from BIMData Connect:
 
 .. tip::
 
-    `Discover what is a Postman Environment <https://learning.getpostman.com/docs/postman/environments-and-globals/intro-to-environments-and-globals/>`_
+    Read Postman documentation to `discover what is a Postman Environment <https://learning.getpostman.com/docs/postman/environments-and-globals/intro-to-environments-and-globals/>`_
 
 
 3 - Get your credentials

@@ -12,6 +12,7 @@ What is the BIMData API?
 
 BIMData API is composed of several APIs: an IFC API, a BCF API, a Collaboration API, a Checker API and a SSO API.
 
+
 The IFC API
 -----------
 
@@ -101,16 +102,17 @@ All projects in this Cloud will share the Cloud's configuration.
 
 .. seealso::
 
-    `See Create Cloud endpoint in the API Ref <../api/index.html#createCloud>`_
+    `See the **Create Cloud** endpoint in the API Reference <../api/index.html#createCloud>`_
 
 A Cloud just needs a name:
 
-.. code-block:: bash
+.. prompt:: bash
+   :substitutions:
 
- curl --request POST 'https://api-staging.bimdata.io/cloud' \
- --header 'Content-Type: application/json' \
- --header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
- --data '{"name": "My First Cloud"}'
+    curl --request POST '|api_url|/cloud' \
+    --header 'Content-Type: application/json' \
+    --header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+    --data '{"name": "My First Cloud"}'
 
 You get a Cloud ID in the response. We need it for the next call.
 
@@ -118,9 +120,10 @@ Once you have your first Cloud, you may want to create your first Project and up
 For this tutorial, use a special route that creates a demo Project with our demo Model: `createDemo </api/index.html#createDemo>`_.
 
 
-.. code-block:: bash
+.. prompt:: bash
+   :substitutions:
 
-    curl --request POST 'https://api-staging.bimdata.io/cloud/YOUR_CLOUD_ID/create-demo' \
+    curl --request POST '|api_url|/cloud/YOUR_CLOUD_ID/create-demo' \
     --header 'Content-Type: application/json' \
     --header 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 
@@ -134,9 +137,10 @@ You receive back the created Project (its ID).
 Let's retrieve the Model in the demo using `the getIfcs endpoint <https://developers-staging.bimdata.io/api/index.html#getIfcs>`_.
 
 
-.. code-block:: bash
+.. prompt:: bash
+   :substitutions:
 
-    curl --request GET 'https://api-staging.bimdata.io/cloud/YOUR_CLOUD_ID/project/YOUR_PROJECT_ID/ifc' \
+    curl --request GET '|api_url|/cloud/YOUR_CLOUD_ID/project/YOUR_PROJECT_ID/ifc' \
     --header 'Content-Type: application/json' \
     --header 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 
@@ -146,9 +150,10 @@ Keep the IFC ID, you need it in the next, and it will be the last, call.
 
 Let's get the properties of all the doors of the Model with `the getSimpleElements endpoint <https://developers-staging.bimdata.io/api/index.html#getSimpleElements>`_.
 
-.. code-block:: bash
+.. prompt:: bash
+   :substitutions:
 
-    curl --request GET 'https://api-staging.bimdata.io/cloud/YOUR_CLOUD_ID/project/YOUR_PROJECT_ID/ifc/YOUR_IFC_ID/element/simple?type=IfcDoor' \
+    curl --request GET '|api_url|/cloud/YOUR_CLOUD_ID/project/YOUR_PROJECT_ID/ifc/YOUR_IFC_ID/element/simple?type=IfcDoor' \
     --header 'Content-Type: application/json' \
     --header 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 
@@ -157,8 +162,8 @@ Hourra: you get all the properties of all the doors of the Model!
 
 .. tip::
 
-    * See :doc:`the list of all endpoints on the API </api/index>`
-    * If you want to :doc:`try the API calls directly from the web, you can use our API playground <../api_playground/index>`.
+    * Explore :doc:`the list of all endpoints on the API Reference </api/index>`
+    * If you want to :doc:`try the API calls directly from the web, use our API playground </api_playground/index>`.
 
 .. seealso::
 

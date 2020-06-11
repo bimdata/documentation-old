@@ -99,9 +99,9 @@ Only `WebGL-enabled browsers`_ are supported:
 * Firefox
 * Chrome
 
-.. note::
+.. tip::
 
-    `Test the WebGL support`_ of your browser.
+    On this website, you can `check the WebGL support`_ of your browser.
 
 Recommended
 ------------
@@ -112,7 +112,20 @@ In addition to that, we recommend:
 * 4 GB RAM (1GB for the system, 1GB for the browser and 2GB for the Viewer)
 * Javascript and built-in hardware acceleration enabled
 
-.. _Test the WebGL support: https://get.webgl.org
+.. toctree::
+    :hidden:
+
+    /tutorial/create_viewer_plugin
+    async_plugin
+    custom_plugin_icon
+    modal_manager
+    /tutorial/using_custom_viewer
+    /tutorial/using_vue_component
+    /tutorials/viewer_sdk
+    events
+    utils
+
+.. _check the WebGL support: https://get.webgl.org
 .. _WebGL-enabled browsers: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
 .. _ECMAScript 2015 support: https://kangax.github.io/compat-table/es6
 
