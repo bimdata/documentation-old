@@ -1,3 +1,5 @@
+:active_page: viewer
+
 ================
 Async plugins
 ================
@@ -7,7 +9,7 @@ Description
 
 If your plugin is on the right or left Viewer Menu, you can declare it as ``async``:
 
-.. block-code:: javascript
+.. code-block:: javascript
 
     // plugin code
     {

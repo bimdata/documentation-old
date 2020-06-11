@@ -12,7 +12,7 @@ It is possible to use a SVG path or an image URI
 Using a direct SVG path
 ========================
 
-.. block-code:: javascript
+.. code-block:: javascript
 
     // plugin code
     ...
@@ -37,7 +37,7 @@ The path has to be put in the ``path`` property, and options can have ``width``,
 Using image URI
 ===============
 
-.. block-code:: javascript
+.. code-block:: javascript
 
     // plugin code
     ...
