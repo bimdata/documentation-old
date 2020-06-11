@@ -65,7 +65,7 @@ Example
     <head>
       <meta charset="utf-8" />
       <title>BIMData - Custom Icon</title>
-      <script src="https://unpkg.com/@bimdata/viewer@0.8.2/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+      <script src="https://unpkg.com/@bimdata/viewer@0.8.4/dist/bimdata-viewer.min.js" charset="utf-8"></script>
     </head>
 
     <body>

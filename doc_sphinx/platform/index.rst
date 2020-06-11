@@ -91,9 +91,7 @@ Explore the capacities of the Platform
 .. topic:: :doc:`Support <../get_help>`
     :class: bimdata-card
 
-    .. include:: ../get_help.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
+    Do you need some help?
     
 .. toctree::
     :hidden:

@@ -1,12 +1,23 @@
-.. meta::
-   :github: https://github.com/bimdata/documentation/blob/dev/doc_sphinx/viewer/index.rst
-
 =======================
-Viewer Documentation
+3D Viewer Documentation
 =======================
 
-BIMData Viewewr is a 3D Viewer built with Web technologies, you can use is in all your web apps.
+BIMData Viewer is a 3D Viewer built with Web technologies, you can use is in all your web apps.
 On top of that our Viewer is customizable through plug-ins.
+
+.. toctree::
+    :hidden:
+    :maxdepth: 2
+
+    async_plugins
+    modal_manager
+    custom_plugin_icon
+    events
+    utils
+    ../tutorials/viewer_create_plugin
+    ../tutorials/viewer_using_vue_component
+    ../tutorials/using_custom_viewer
+    ../tutorials/viewer_sdk
 
 Guide
 ======
@@ -16,18 +27,17 @@ Usage of the Viewer is either simply embedded in your web application, or with a
 * :doc:`Getting Started with the Viewer </getting_started/viewer>`
 
 Reference
-===========
+==========
 
-* Learn about the :doc:`Viewer's events </viewer/events>`
-* Learn all the :doc:`utils and helper methods </viewer/utils>`
-* Learn about the :doc:`modal manager </viewer/modal_manager>`
-* Learn how-to :doc:`make a custom icon for your plugin </viewer/custom_plugin_icon>`
-* Learn about :doc:`async plugins </viewer/async_plugins>`
+* Learn about the :doc:`Viewer's events <events>`
+* Learn all the :doc:`utils and helper methods <utils>`
+* Learn about the :doc:`modal manager <modal_manager>`
+* Learn how-to :doc:`make a custom icon for your plugin <custom_plugin_icon>`
+* Learn about :doc:`async plugins <async_plugins>`
 
 .. tip::
 
     BIMData Viewer SDK
-    -------------------
 
     Looking for the SDK?
     https://github.com/bimdata/bimdata-viewer-sdk
@@ -118,3 +128,4 @@ In addition to that, we recommend:
 .. _check the WebGL support: https://get.webgl.org
 .. _WebGL-enabled browsers: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
 .. _ECMAScript 2015 support: https://kangax.github.io/compat-table/es6
+

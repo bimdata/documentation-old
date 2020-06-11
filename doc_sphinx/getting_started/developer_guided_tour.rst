@@ -1,5 +1,3 @@
-:produit: dev
-
 ===========
 Guided Tour
 ===========
@@ -70,7 +68,7 @@ These applications:
 
 .. note::
 
-    Your user has no access to what your application created. To grant access to your user see :doc:`how-to share data with your app <api_share_data_app_platform>`
+    Your user has no access to what your application created. To grant access to your user see :doc:`how-to share data with your app <../tutorials/api_share_data_app_platform>`
 
 
 ➤ :doc:`Create a backend app <../tutorials/dev_create_an_application>`
