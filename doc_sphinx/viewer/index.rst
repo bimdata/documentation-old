@@ -1,5 +1,5 @@
 .. meta::
-   :github: https://github.com/bimdata/documentation/blob/dev/doc_sphinx/viewer/index.rst
+   :github: https://github.com/bimdata/documentation/blob/develop/doc_sphinx/viewer/index.rst
 
 =======================
 Viewer Documentation
@@ -9,6 +9,10 @@ BIMData Viewewr is a 3D Viewer built with Web technologies, you can use is in al
 On top of that our Viewer is customizable through plug-ins.
 
 Usage of the Viewer is either simply embedded in your web application, or with a custom-tailored plugin adapting to your needs the behavior of the Viewer.
+
+.. raw:: html
+   :file: ../_static/viewer.html
+
 
 Display my Models in the Viewer
 ================================
