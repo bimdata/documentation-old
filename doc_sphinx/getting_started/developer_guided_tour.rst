@@ -13,10 +13,13 @@ Guided Tour
    
     About the Guided Tour:
 
-    * Topics: application, 
+    * Topics: application, authentication, users management
     * Pre-requisites: REST API knowledge
-    * Goal of this tutorial: give your an overall view on our software
-    * 5 steps
+    * Goal of this tutorial: give you an overall view of our software
+    * 5 steps to follow
+
+.. contents::
+    :depth: 2
 
 
 1 - Which app will you create?
@@ -73,8 +76,6 @@ These applications:
 ➤ :doc:`Create a backend app <../tutorials/dev_create_an_application>`
 
 
-
-
 2 - Authentication
 ==================
 
@@ -95,7 +96,7 @@ It is used when you don't use **BIMData Connect** users or if you want to use :d
 
 .. note::
 
-    See :doc:`Get Access Token documentation <../tutorials/dev_get_access_token>` for more information.
+    See our :doc:`Get Access Token documentation <../tutorials/dev_get_access_token>` for more information.
 
 
 Retrieve a user Access Token
@@ -109,7 +110,7 @@ There are multiple ways to ask them their consent, you can see them LINK TO Open
 
 .. note::
 
-    See :doc:`Authentication Flow documentation <../guide/authentication_flows>`
+    See our :doc:`Authentication Flow documentation <../guide/authentication_flows>`
 
 
 
@@ -139,6 +140,7 @@ Cloud
     :end-before: endexcerpt
 
 .. note::
+
     To learn :doc:`more about the cloud, see the concept page <../guide/concepts/cloud>`.
 
 
@@ -150,6 +152,7 @@ Filters
     :end-before: endexcerpt
 
 .. note::
+
     To learn :doc:`more about the filters, see the concept page <../guide/api_filters>`.
 
 
@@ -162,8 +165,8 @@ See the dedicated page :doc:`Getting Started with the Viewer <../viewer/index>`
 5 - Users Management
 ====================
 
-There are currently 3 roles defined for Users.
 Each User has a Role, and each User belongs to a Project.
+There are currently 3 roles defined for Users.
 
 Roles
 -----
@@ -177,9 +180,9 @@ Users can have these Roles:
 Constant values in API
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Using the API, there are constant values associated with roles.
+Using the API, there are constant values associated with Roles.
 
-See `the User endpoint <../api/index.html#operation--user-get>`_ to learn about the usage.
+See `the User endpoint in the API Reference <../api/index.html#operation--user-get>`_ to learn about the usage.
 
 .. note::
 
@@ -241,12 +244,9 @@ The Project admin manages the Roles of the Users: the admin car add, edit or del
 Member
 ~~~~~~
 
-Can read and write DMS, model, and BCF.
+A member can read and write DMS, model, and BCF.
 
 Guest
 ~~~~~
 
-Can read-only: DMS, models, BCF and write BCF content.
-
-.. toctree::
-    :maxdepth: 1
+A guest can read-only: DMS, models, BCF and write BCF content.

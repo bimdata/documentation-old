@@ -13,7 +13,7 @@ You can access the global modal manager using the ``$plugins`` helper :
     this.$plugins.modalManager
 
 
-The modal manager let you push modal to display on the Viewer:
+The modal manager let you push a modal to display on the Viewer:
 
 .. code-block:: javascript
 
@@ -26,14 +26,14 @@ The modal manager let you push modal to display on the Viewer:
 On modals
 =========
 
-You can push as many modals as you want. 
-They will be displayed in the order they have been pushed, as soon as the curent modal is closed.
+You can push as many modals as you want.
+They will be displayed in the order they have been pushed, as soon as the current modal is closed.
 
 
 Close a modal
 ---------------
 
-You can close the current modal from itself or from the global context.
+You can close the current modal from itself or the global context.
 
 From anywhere
 ^^^^^^^^^^^^^^^
@@ -48,7 +48,7 @@ You can close the current modal from anywhere using ``.clearModal()``:
 From itself
 ^^^^^^^^^^^^^^^
 
-You can also from the curent modal itself by emiting the ``close`` Event:
+You can also from the current modal itself by emitting the ``close`` Event:
 
 .. code-block:: javascript
 
