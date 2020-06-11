@@ -29,8 +29,16 @@ In your JavaScript:
 Viewer appearance
 ==================
 
-You can change the background color of your Viewer using `backgroudColor: 'rgb(210, 210, 250)'`
+You can change the background color of your Viewer using the ``backgroundColor`` property.
 
+
+.. code-block:: javascript
+
+    backgroundColor: 'rgb(210, 210, 250)'
+
+
+Complete code
+--------------
 
 .. code-block:: html
 
@@ -50,7 +58,7 @@ You can change the background color of your Viewer using `backgroudColor: 'rgb(2
             cloudId: 88,
             projectId: 100,
             ifcIds: [175],
-            backgroudColor: 'rgb(210, 210, 250)',
+            backgroundColor: 'rgb(210, 210, 250)',
             bimdataPlugins: {
               bcf: false,
               merge: false,
