@@ -14,6 +14,10 @@ On top of that our Viewer is customizable through plug-ins.
     custom_plugin_icon
     events
     utils
+    ../tutorials/viewer_create_plugin
+    ../tutorials/viewer_using_vue_component
+    ../tutorials/using_custom_viewer
+    ../tutorials/viewer_sdk
 
 Guide
 ======
