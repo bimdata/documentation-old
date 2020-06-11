@@ -1,5 +1,5 @@
 ===============
-BIMData's API
+BIMData API
 ===============
 
 ..
