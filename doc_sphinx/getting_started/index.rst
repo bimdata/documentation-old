@@ -38,6 +38,7 @@ Getting Started
        :end-before: endexcerpt
 
 .. toctree::
+   :name: sidebar
     
     API <api>
     Developping <developer_guided_tour>
