@@ -57,19 +57,24 @@ In the field *Redirect URIs*, set at least the value ``http://localhost``: for n
 Fields description
 ====================
 
-.. list-table:: Description of every field in the Create Application form
-   :header-rows: 1
+Name
+------
 
-   * - Field name
-     - Description
-   * - Name
-     - You can choose whatever you want. The name is displayed to users when requesting permissions and in their application list.
-   * - Scopes
-     - Select scopes your app needs 
-       `See the Scopes documentation content <../guide/concepts/scopes.html>`_ to learn more.
-   * - Redirect URIs
-     - List of authorized redirect URIs
-       After allowing your app to access their data, users will be redirected to your app on one of these URIs.
+* You can choose whatever you want. 
+* The name is displayed to users when requesting permissions and in their application list.
+
+Scopes
+--------
+
+* Select scopes your app needs
+* `See the Scopes documentation content <../guide/concepts/scopes.html>`_ to learn more.
+
+Redirect URIs
+--------------
+
+* List of authorized redirect URIs.
+* After allowing your app to access their data, users will be redirected to your app on one of these URIs.
+* By default, the redirect URI is: ``http://localhost:8080/oidc-callback``
 
 .. warning::
 
@@ -77,4 +82,4 @@ Fields description
 
 .. seealso::
 
-    See also :doc:`about Security </guide/dev_security>`
+    See also our documentation :doc:`about Security </guide/dev_security>`
