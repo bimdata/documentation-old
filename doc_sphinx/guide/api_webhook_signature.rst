@@ -14,7 +14,7 @@ This signature is sent over the ``x-bimdata-signature`` HTTP Header.
 
 Here is a python example to check the signature:
 
-.. substitution-code-block:: python
+.. code-block:: python
 
     import hmac
     import hashlib

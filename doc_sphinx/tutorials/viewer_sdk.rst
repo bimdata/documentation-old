@@ -2,7 +2,6 @@
 SDK Viewer
 ==================
 
-
 .. tip::
 
     Looking for the SDK?
@@ -10,11 +9,11 @@ SDK Viewer
 
 .. 
     excerpt
-        The SDK is a development tool helping you to create faster a Viewer plugin. 
+        The SDK is a development tool helping you to create faster a Viewer plugin.
     endexcerpt
 
 It is a Github repository, containing a pre-configured environment to develop BIMData Viewer plugins.
-You can develop, test, build, package and share your plugin easily.
+You can develop, test, build, package, and share your plugin easily.
 
 The repository is https://github.com/bimdata/bimdata-viewer-sdk
 
@@ -37,7 +36,7 @@ By default, the redirect URI is:  ``http://localhost:8080/oidc-callback``
 
 Then you can copy the ``.env.example`` file and add in it your ``client_id``:
 
-.. substitution-code-block:: bash
+.. code-block:: bash
     
     npm install
     cp .env.example .env
@@ -48,7 +47,7 @@ Edit ``.env`` file with your data (your ``client_id``).
 Compiles and hot-reloads for development
 ------------------------------------------
 
-.. substitution-code-block:: bash
+.. code-block:: bash
 
     npm run serve
 
@@ -63,7 +62,7 @@ You can directly open a Project or a Model by opening an URL using specific IDs:
 Create your first plugin
 -----------------------------
 
-.. substitution-code-block:: bash
+.. code-block:: bash
 
     npm run init-plugin
 
@@ -74,7 +73,7 @@ Files are created in the directory ``src/plugins/{{name of your plugin}}``.
 
 Then import your newly created plugin ``src/viewer/viewer.vue`` and add it to the ``registerPlugin`` array.
 
-.. substitution-code-block:: javascript
+.. code-block:: javascript
 
     import SnowflakesPlugin from "@/plugins/snowflakes/src/snowflakes.plugin.js";
     import SplitPlugin from "@/plugins/split/src/split.plugin.js";
@@ -96,7 +95,8 @@ To load your plugin in a real environment, you want to package and publish your 
 
 The plugin template is pre-configured with a rollup config that let you do this easily:
 
-.. substitution-code-block :: bash
+.. prompt:: bash
+   :substitutions:
 
     cd src/plugins/{your_plugin}
     npm install
@@ -121,20 +121,20 @@ To publish it, update the ``package.json`` file with the proper information. The
 More info about how it works
 =============================
 
-The SDK itself uses **Webpack** to build. The packaging uses **Rollup**. 
+The SDK itself uses **Webpack** to build. The packaging uses **Rollup**.
 If you need a complex JS flow, it may lead to some issues.
-
 
 To see these issues before deploying, load the packaged version in the SDK:
 
-.. substitution-code-block :: bash
+.. prompt:: bash
+   :substitutions:
 
     cd src/plugins/{your_plugin}
     npm run watch
 
 And load the *dist* version of the plugin:
 
-.. substitution-code-block :: javascript
+.. code-block:: javascript
 
     import SplitPlugin from "@/plugins/split/dist/split.plugin.js";
 
@@ -145,6 +145,5 @@ And load the *dist* version of the plugin:
     ]);
     }
     ...
-
 
 You can also edit the Webpack and Rollup config as you want.

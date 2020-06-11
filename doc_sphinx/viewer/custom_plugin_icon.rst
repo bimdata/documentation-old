@@ -10,7 +10,7 @@ When a plugin is displayed on the left or right viewer menu, the icon can be cus
 Direct SVG path:
 -----------------
 
-.. block-code:: javascript
+.. code-block:: javascript
 
     // plugin code
     ...
@@ -30,7 +30,7 @@ The path have to be put in the path property, and options can have width, height
 Image URI
 ----------
 
-.. block-code:: javascript
+.. code-block:: javascript
 
     // plugin code
     ...
@@ -57,7 +57,7 @@ Example
     <head>
       <meta charset="utf-8" />
       <title>BIMData - Custom Icon</title>
-      <script src="https://unpkg.com/@bimdata/viewer@0.7.17/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+      <script src="https://unpkg.com/@bimdata/viewer@0.8.2/dist/bimdata-viewer.min.js" charset="utf-8"></script>
     </head>
 
     <body>

@@ -73,7 +73,7 @@ Clicking on the displayed button will close the current modal.
     <head>
     <meta charset="utf-8" />
     <title>BIMData - Modal Manager</title>
-    <script src="https://unpkg.com/@bimdata/viewer@0.7.17/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/@bimdata/viewer@0.8.2/dist/bimdata-viewer.min.js" charset="utf-8"></script>
     </head>
 
     <body>

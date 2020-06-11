@@ -40,7 +40,7 @@ Old Authentication Request
 
 The old request was a string payload with username and password in it.
 
-.. substitution-code-block:: python
+.. code-block:: python
 
     import requests
     url = "|api_url|/oauth/v2/token/"
@@ -53,7 +53,7 @@ New Authentication Request
 
 The new request takes a JSON payload.
 
-.. substitution-code-block:: python
+.. code-block:: python
 
     import requests
     url = "|iam_url|/auth/realms/bimdata/protocol/openid-connect/token"

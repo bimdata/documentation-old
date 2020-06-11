@@ -8,25 +8,27 @@ Filters
     endexcerpt
 
 
-Many API end-points allow filtering.
-See available filters in the `Swagger doc`_.
+Many API endpoints allow filtering.
+
+See all the available filters by exploring the :doc:`Playground </api_playground/index>`.
 
 Examples
 =========
 
-Let use the resource IFC: ``/cloud/{cloud_pk}/project/{project_pk}/ifc``
+Let's use the resource IFC and the endpoint: ``/cloud/{cloud_pk}/project/{project_pk}/ifc``.
 
-The response list will only include completed IFCs (see :doc:`IFC </guide/concepts/ifc>`).
-You can combine several filters. Elements matching all combined filters will be returned.
+The response list only includes _completed_ IFCs (see :doc:`the IFC guide in our documentation </guide/concepts/ifc>` to learn about ``status``).
+You can combine several filters. Elements matching **all combined filters** are returned.
 
 
 .. IMPORTANT::
-    Filtering is an AND operation.
+
+    Filtering is an **AND** operation.
 
 
 .. note::
 
-    No OR operation is supported in this version.
+    No **OR** operation is supported in this version.
 
 
 .. content-tabs::
@@ -34,7 +36,7 @@ You can combine several filters. Elements matching all combined filters will be 
    .. tab-container:: cURL
         :title: cURL
 
-         .. substitution-code-block:: bash
+         .. code-block:: bash
 
             curl -X GET \
             '|api_url|/cloud/1/project/1/ifc?status=C' \
@@ -44,7 +46,7 @@ You can combine several filters. Elements matching all combined filters will be 
    .. tab-container:: py
         :title: Python
 
-         .. substitution-code-block:: python
+         .. code-block:: python
 
             import requests
 
@@ -64,7 +66,7 @@ You can combine several filters. Elements matching all combined filters will be 
    .. tab-container:: javascript
         :title: JavaScript
 
-         .. substitution-code-block:: javascript
+         .. code-block:: javascript
 
             var request = require("request");
 
@@ -85,6 +87,5 @@ You can combine several filters. Elements matching all combined filters will be 
 
 .. seealso::
 
-    See also :doc:`the API documentation </api/introduction>`
+    Try other request and learn about the API on :doc:`the API documentation </guide/api_guide>`
 
-.. _Swagger doc: https://api.bimdata.io/doc

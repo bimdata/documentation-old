@@ -35,15 +35,9 @@ JSON
     }
 
 
-* If a folder is created without parent_id, it will be placed under the root folder.
-* You can't create a loop with folders (a parent being itself or a loop including multiple folders).
+* If a folder is created without ``parent_id``, it will be placed under the root folder.
+* You can't create a loop with folders (a parent being itself, or a loop including multiple folders).
 
-References
-------------
-
-* GET ``/cloud/{cloud_pk}/project/{project_pk}/folder``
-* POST ``/cloud/{cloud_pk}/project/{project_pk}/folder``
-* GET ``/cloud/{cloud_pk}/project/{id}/tree``
 
 Documents
 ===========
@@ -67,7 +61,7 @@ The name of the file field must be "``file``", this means that you have to fire 
    .. tab-container:: cURL
         :title: cURL
 
-         .. substitution-code-block:: bash
+         .. code-block:: bash
 
             curl -X POST \
             '|api_url|/cloud/1/project/1/document' \
@@ -79,7 +73,7 @@ The name of the file field must be "``file``", this means that you have to fire 
    .. tab-container:: py
         :title: Python
 
-         .. substitution-code-block:: python
+         .. code-block:: python
 
             import requests
 
@@ -102,7 +96,7 @@ The name of the file field must be "``file``", this means that you have to fire 
    .. tab-container:: javascript
         :title: JavaScript
 
-         .. substitution-code-block:: javascript
+         .. code-block:: javascript
 
             var fs = require("fs");
             var request = require("request");
@@ -156,7 +150,7 @@ You can download files using the URL returned by the API. The URL is valid for 1
    .. tab-container:: cURL
         :title: cURL
 
-         .. substitution-code-block:: bash
+         .. code-block:: bash
 
             curl -X GET \
             'https://storage.gra3.cloud.ovh.net/v1/AUTH_b6a1c0b6b7c041d3a71d56f84ce25102/bimdata-staging-dev/cloud_1/project_1/XXX.pdf?temp_url_sig=311d34059bbebc87cd7f37de244bb6b62d114679&temp_url_expires=1527771256'
@@ -164,7 +158,7 @@ You can download files using the URL returned by the API. The URL is valid for 1
    .. tab-container:: py
         :title: Python
 
-         .. substitution-code-block:: python
+         .. code-block:: python
 
             import requests
 
@@ -184,7 +178,7 @@ You can download files using the URL returned by the API. The URL is valid for 1
    .. tab-container:: javascript
         :title: JavaScript
 
-         .. substitution-code-block:: javascript
+         .. code-block:: javascript
 
             import requests
 
@@ -194,14 +188,7 @@ You can download files using the URL returned by the API. The URL is valid for 1
 
             print(response.text)
 
-References
---------------
-
-* GET ``/cloud/{cloud_pk}/project/{project_pk}/document``
-* POST ``/cloud/{cloud_pk}/project/{project_pk}/document``
-
-
 
 .. seealso::
 
-    See also  :ref:`the Guided Tour <api_onboarding_gt>`
+    See also  :doc:`the chapter Manage your Documents </platform/manage_documents>` in the Platform User Guide.
