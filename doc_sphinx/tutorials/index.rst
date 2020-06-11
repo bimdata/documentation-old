@@ -93,14 +93,9 @@ Tutorials
 .. toctree::
    :maxdepth: 1
 
-   ../getting_started/api_external_clients
-   ../getting_started/postman
    api_retrieve-elements
    api_share_data_app_platform
    api_use_viewer_with_uploaded_models
    dev_create_an_application
    dev_get_access_token
    dev_ifc_access_token
-   viewer_create_plugin
-   viewer_using_vue_component
-   using_custom_viewer

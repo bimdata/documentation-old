@@ -16,3 +16,4 @@ API Reference
    introduction
    ../getting_started/api
    ../getting_started/api_external_clients
+   ../guide/api_webhooks
