@@ -52,7 +52,9 @@ See below how-to embed the Viewer in your HTML:
             projectId: 100,
             ifcIds: [175],
             bimdataPlugins: {
-              bcf:false
+              bcf: false,
+              merge: false,
+              allowExport: false
             }
           }
           const accessToken = 'DEMO_TOKEN';
