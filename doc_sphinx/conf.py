@@ -153,7 +153,7 @@ html_context = {
     "display_github": True,
     "conf_py_path": "doc_sphinx/",
     "source_suffix": ".rst",
-    "github_version": "dev/",
+    "github_version": "develop/",
     "api_url": API_URL,
     "cdn_url": CDN_URL,
     "connect_url": CONNECT_URL,
