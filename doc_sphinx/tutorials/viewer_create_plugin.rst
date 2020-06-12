@@ -37,7 +37,7 @@ The plugin is enabled as a menu icon. This plugin contains 2 features:
 
 Let's take a look at the code for the `myCustomPlugin` plugin.
 
-.. substitution-code-block:: javascript
+.. code-block:: javascript
    :linenos:
 
     name: "myCustomPlugin",
@@ -136,7 +136,7 @@ Step 1: Embed the Viewer
 
 Use the ``<script>`` tag to embed the Viewer, from the package.
 
-.. substitution-code-block:: html
+.. code-block:: html
    :linenos:
 
         <!DOCTYPE html>
@@ -156,7 +156,7 @@ Step 2: Create the <div> for the Viewer
 The ``<div>`` defined by the "app" id will support the Viewer.
 The parent ``<div>`` has its height defined in CSS, to have a big viewer taking the whole web page.
 
-.. substitution-code-block:: html
+.. code-block:: html
    :linenos:
 
             <body>
@@ -175,7 +175,7 @@ The :doc:`details of every functionality disabled </tutorials/using_custom_viewe
 
 We provide you a demo token, usable for this tutorial. Create your own on BIMData Connect (see :doc:`/tutorials/dev_ifc_access_token`).
 
-.. substitution-code-block:: javascript
+.. code-block:: javascript
    :linenos:
 
     const cfg = {
@@ -204,7 +204,7 @@ You can also define the ``tooltip`` content.
 
 You have made your first plugin.
 
-.. substitution-code-block:: javascript
+.. code-block:: javascript
    :linenos:
 
       viewer.registerPlugins([
@@ -255,7 +255,7 @@ The complete code
 
 If you copy-paste this code, you have a simple Viewer with the first plugin.s
 
-.. substitution-code-block:: html
+.. code-block:: html
    :linenos:
 
         <!DOCTYPE html>

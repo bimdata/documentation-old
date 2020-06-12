@@ -44,4 +44,4 @@ Status Code	 Description
 
 .. seealso::
     
-    See also :doc:`the API documentation </api/introduction>`
+    See also :doc:`the API documentation </guide/api_guide>`

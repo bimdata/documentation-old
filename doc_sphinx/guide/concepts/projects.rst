@@ -22,22 +22,16 @@ A project is a place where IFC files and documents are stored. IFC files and doc
 A project is attached to a cloud and a cloud can host an infinite number of projects.
 
 A project contains:
+
  * your models
  * your Document Management System
- * and BCFs.
+ * and BCFs
 
 .. note:: 
 
-   A BCF is linked to a project, not a model.
+   A BCF is linked to a Project, not a Model.
 
-A project member can see all other members, and admin member can add a user to the project.
-
-References
-================
-
-* GET ``/user/projects``
-* GET ``/cloud/{cloud_pk}/project``
-* POST ``/cloud/{cloud_pk}/project``
+A project member can see all other members, and an admin member can add a user to the project.
 
 
 

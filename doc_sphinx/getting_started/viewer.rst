@@ -1,5 +1,5 @@
 ================================
-Getting started with the Viewer
+Viewer
 ================================
 
 ..
@@ -52,7 +52,9 @@ See below how-to embed the Viewer in your HTML:
             projectId: 100,
             ifcIds: [175],
             bimdataPlugins: {
-              bcf:false
+              bcf: false,
+              merge: false,
+              allowExport: false
             }
           }
           const accessToken = 'DEMO_TOKEN';
@@ -75,6 +77,3 @@ When you need to implement custom behavior for the Viewer, you create a plugin.
 ➤ :doc:`See how-to customize the Viewer's behavior to your needs </tutorials/viewer_create_plugin>`.
 
 By example, you could connect the Viewer with your system to link the 2D map user's actions on the 3D Viewer rendering.
-
-
-

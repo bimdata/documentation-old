@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8" />
 <title>BIMData - Modal Manager</title>
-<script src="https://unpkg.com/@bimdata/viewer@0.7.17/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+<script src="https://unpkg.com/@bimdata/viewer@0.8.4/dist/bimdata-viewer.min.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -12,13 +12,16 @@
     <div id="app"></div>
 </div>
 <script>
-    const cfg = {
-    cloudId: 88,
-    projectId: 100,
-    bimdataPlugins: {
-        default: false
-    }
-    };
+      const cfg = {
+        cloudId: 88,
+        projectId: 100,
+        ifcIds: [175],
+        bimdataPlugins: {
+          bcf: false,
+          merge: false,
+          allowExport: false
+        }
+      }
     const accessToken = "DEMO_TOKEN";
     const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer(
     "app",

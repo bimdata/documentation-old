@@ -34,13 +34,13 @@ You are now ready to use the API.
 Step 2. Set up your project
 ===============================
 
-Once your app exists and you have your Access Token, you are able to use the API.
+Once your app exists and you have your Access Token, you can use the API.
 Begin with the creation of a Cloud (`What's a cloud?`_), in which you create a Project (`What's a project?`_).
 In the script below, there is an example of the creation of a project in your Cloud through API, so you can have a ``projectId``.
 First, define a name to create your first Cloud. Post this ``name`` on |api_url|/cloud using your Access Token. 
 Then use the ``cloudId`` to create your first Project.
 
-.. substitution-code-block:: python
+.. code-block:: python
 
     import requests
 
@@ -66,7 +66,7 @@ Let's upload your IFC model!
 Step 3. Upload your IFC
 ============================
 
-The API let you upload your IFC file. In this tutorial, you can use this IFC file: `Download Cassiopea IFC`_
+The API let you upload your IFC file. In this tutorial, you can use this IFC file: `Download the Cassiopea IFC file`_
 
 Use the API to upload
 -------------------------
@@ -74,7 +74,7 @@ Use the API to upload
 Use the ``/cloud/{cloud_pk}/project/{project_pk}/document`` route to upload your file.
 The `documentation for createDocument()`_ is available on our API Reference page.
 
-.. substitution-code-block:: python
+.. code-block:: python
 
     import requests
 
@@ -105,7 +105,7 @@ The server detects IFC format and you can get information about your file using 
     The IFC document provided in this tutorial takes approximatively 10 seconds to be processed.\nUsually, the processing time could be very different depending on the IFC file.
 
 
-.. substitution-code-block:: python
+.. code-block:: python
 
     import time
     import requests
@@ -158,7 +158,7 @@ In addition, you can filter by:
 To retrieve only windows, the accurate filter is *type*: **IfcWindow**.
 You get a list of windows, all the windows of your model.
 
-.. substitution-code-block:: python
+.. code-block:: python
 
     import requests
     # This script requires an IFC document uploaded
@@ -173,11 +173,12 @@ You get a list of windows, all the windows of your model.
     all_windows = response.json()
     #all_windows are available in this var for your next scripts
 
-With the filters, every IFC element can be retrieved. You can retrieve any element in the collection provided in the API.
+With the filters, every IFC element can be retrieved. 
+You can retrieve any element in the collection provided in the API.
 
 .. seealso::
 
-    See also :doc:`the API completedocumentation </getting_started/api>`
+    For more see :doc:`the API documentation </getting_started/api>`
 
 .. _create an application: ../tutorials/dev_create_an_application.html
 .. _the procedure described on the dedicated page to get your Access Token: ../tutorials/dev_get_access_token.html

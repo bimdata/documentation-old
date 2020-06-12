@@ -16,7 +16,7 @@ Load the Viewer
 
 To load the Viewer in your web application, use the ``<script>`` tag with the packaged version:
 
-.. substitution-code-block:: javascript
+.. code-block:: javascript
 
     <script src="https://unpkg.com/@bimdata/viewer@0.3.3/dist/bimdata-viewer.min.js" charset="utf-8"></script>
 
@@ -25,6 +25,55 @@ In your JavaScript:
  * set the data about which IFC model you load
  * then set the options you want
 
+
+Viewer appearance
+==================
+
+You can change the background color of your Viewer using the ``backgroundColor`` property.
+
+
+.. code-block:: javascript
+
+    backgroundColor: 'rgb(210, 210, 250)'
+
+
+Complete code
+--------------
+
+.. code-block:: html
+
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+        <title>BIMDataViewer - Background color example</title>
+        <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+      </head>
+      <body>
+        <div style="height: 100vh">
+          <div id="app"></div>
+        </div>
+        <script>
+          const cfg = {
+            cloudId: 88,
+            projectId: 100,
+            ifcIds: [175],
+            backgroundColor: 'rgb(210, 210, 250)',
+            bimdataPlugins: {
+              bcf: false,
+              merge: false,
+              allowExport: false
+            }
+          }
+          const accessToken = 'DEMO_TOKEN';
+          const {viewer, store, eventHub, setAccessToken} = initBIMDataViewer('app', accessToken, cfg);
+          window.viewer = viewer;
+          window.store = store;
+          window.eventHub = eventHub;
+          window.setAccessToken = setAccessToken;
+        </script>
+      </body>
+    </html>
 
 Viewer functionalities
 ========================
@@ -121,7 +170,7 @@ Example with all functionalities disabled
 ===========================================
 
 
-.. substitution-code-block:: html
+.. code-block:: html
    :linenos:
 
       <!DOCTYPE html>

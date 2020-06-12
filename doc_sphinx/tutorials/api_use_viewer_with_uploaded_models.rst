@@ -31,7 +31,7 @@ If you want to be able to update the model information, set ``read_only`` to fal
 
     If you want a longer or shorter token, you can specify an expiration date in the ``field expires_at`` with the `iso-8601 format`_
 
-.. substitution-code-block:: bash
+.. code-block:: bash
 
     curl --request POST 'https://api-staging.bimdata.io/cloud/YOUR_CLOUD_ID/project/YOUR_PROJECT_ID/ifc/YOUR_IFC_ID/access_token' \
       --header 'Content-Type: application/json' \
