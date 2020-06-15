@@ -34,7 +34,6 @@ From the BIMData Connect homepage, you create your application.
 
 The Secret ID is yours and should never be shared.
 
-
 Useful tools
 =============
 
@@ -50,6 +49,41 @@ Useful tools
 
 *  Generate your API clients from our OpenAPI specification.
 
+Authenticate
+=============
+
+Depending on the type of app you have, you may use different ways to authenticate your app or your users.
+
+Your goal is to retrieve an **Access Token**.
+
+An **Access Token** is needed for every call to the BIMData's API. 
+It represents your app, or a user using your app.
+
+Retrieve an app Access Token
+----------------------------
+
+An application Access Token represents the app itself and is not linked to any user. 
+It is used when you don't use **BIMData Connect** users or if you want to use :doc:`webhooks </guide/api_webhooks>`  or if you're doing some automated tasks.
+
+.. note::
+
+    See our :doc:`Get Access Token documentation </tutorials/dev_get_access_token>` for more information.
+
+
+Retrieve a user Access Token
+----------------------------
+
+A user Access Token represents a user using your app. 
+It means when you're calling the API with this token, you will get the data (clouds, projects, models, etc.) the user has access to.
+
+Before you can retrieve a user Access Token, the user must explicitly allow your application to behave as the user.
+There are multiple ways to ask them their consent, see them in the `OpenID Connect Authorization flows documentation <https://oa.dnc.global/web/-Discover-.html#openidconnectsummaryofallauthorizationflows>`_
+
+.. note::
+
+    See our :doc:`Authentication Flow documentation </guide/authentication_flows>`
+
+
 
 oAuth usage
 ============
@@ -59,9 +93,6 @@ oAuth usage
 * oAuth is the protocol we use to authenticate your credentials.
 * OpenID Connect is an identity layer on top of the OAuth 2.0 protocol.
 * OpenID Connect provides different authentication flows. You have to choose the one which fits your needs the best.
-* BIMData Connect implements two OpenID flows:
-   + Authorization code flow
-   + Implicit flow
 
 :doc:`Scopes </guide/concepts/scopes>`
 
