@@ -38,57 +38,45 @@ The Secret ID is yours and should never be shared.
 Useful tools
 =============
 
-To try to authenticate with your credentials, you can:
+:doc:`The API Playground </api_playground/index>`
 
-* Try it on the :doc:`API Playground </api_playground/index>`
-* Use :doc:`our Postman collection <postman>`
-* Use the API with :doc:`external tools <api_external_clients>`
+*  The Playground is based on Swagger UI. After authentication with your credentials, you can try the endpoints with parameters.
+
+:doc:`Our Postman collection <postman>`
+
+*  BIMData maintains a Postman collection usable in your environment Postman to make your requests.
+
+:doc:`Use external libraries <api_external_clients>`
+
+*  Generate your API clients from our OpenAPI specification.
+
 
 oAuth usage
 ============
 
-oAuth is the protocol we use to authenticate your credentials.
+:doc:`OpenID Flows </guide/authentication_flows>`
 
-OpenID Flows
--------------
+* oAuth is the protocol we use to authenticate your credentials.
+* OpenID Connect is an identity layer on top of the OAuth 2.0 protocol.
+ OpenID Connect provides different authentication flows. You have to choose the one which fits your needs the best.
+* BIMData Connect implements two OpenID flows:
+   * Authorization code flow
+   * Implicit flow
 
-OpenID Connect is an identity layer on top of the OAuth 2.0 protocol.
-OpenID Connect provides different authentication flows. You have to choose the one which fits your needs the best.
+:doc:`Scopes <../guide/concepts/scopes>`
 
-BIMData Connect implements two OpenID flows:
+* Scopes are a way to let your application access to the data. A scope is a limitation to the data on a given resource.
 
-* Authorization code flow
-* Implicit flow
+:doc:`My user or my app? </tutorials/api_share_data_app_platform>`
 
-See :doc:`the Authorization Flows content </guide/authentication_flows>` to learn more.
+* When you try to access Models, is it the App or the User credentials used? If you want your user to access Models, you have to invite the User to the Cloud where your Models are, otherwise, no Model will be readable for the User.
 
-My user or my app?
-^^^^^^^^^^^^^^^^^^
+:doc:`Connect your identity provider </guide/auth_identity_providers>`
 
-When you try to access Models, is it the App or the User credentials used?
-If you want your user to access Models, you have to invite the User to the Cloud where your Models are, otherwise, no Model will be readable for the User.
-
-See :doc:`the tutorial about sharing data with your application </tutorials/api_share_data_app_platform>`
-
-
-
-.. seealso::
-
-    See the :doc:`how to log in BIMData with your own Active Directory, LDAP or OpenID Connect service <../guide/auth_identity_providers>`
-
-
-Scopes
--------
-
-Scopes are a way to let your application access to the data. 
-A scope is a limitation to the data on a given resource.
-
-Read :doc:`our documentation about Scopes <../guide/concepts/scopes>`.
-
+* Want to log in BIMData with your own Active Directory, LDAP or OpenID Connect service? It's possible.
 
 .. seealso::
 
     * Tutorial: :doc:`Retrieve your Models </tutorials/api_retrieve-elements.rst>`
     * :doc:`How-to display your Models in the 3D Viewer </tutorials/using_custom_viewer.rst>`
     * Tutorial: :doc:`Create your first plugin for the 3D Viewer </tutorials/viewer_create_plugin.rst>`
-

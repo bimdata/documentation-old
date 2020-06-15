@@ -1,5 +1,5 @@
 ===================================
-Authentication with BIMData Connect
+Authentication details
 ===================================
 
 ..
