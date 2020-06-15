@@ -19,7 +19,7 @@ Before you start coding, you must create an account and set up an application to
 Create your BIMData Connect account
 ----------------------------------------
 
-Go `to BIMData Connect <https://connect.bimdata.io/>`_, fill the registration form. 
+➤ Go `to BIMData Connect <https://connect.bimdata.io/>`_, fill the registration form. 
 
 You join to the BIMData Connect homepage immediately.
 Create your first cloud and your first project.
@@ -30,7 +30,7 @@ Create your app
 
 From the BIMData Connect homepage, you create your application.
 
-Follow :doc:`the create your application Tutorial <tutorials/dev_create_an_application>`.
+➤ Follow :doc:`the create your application Tutorial </tutorials/dev_create_an_application>`.
 
 The Secret ID is yours and should never be shared.
 
@@ -58,12 +58,12 @@ oAuth usage
 
 * oAuth is the protocol we use to authenticate your credentials.
 * OpenID Connect is an identity layer on top of the OAuth 2.0 protocol.
- OpenID Connect provides different authentication flows. You have to choose the one which fits your needs the best.
+* OpenID Connect provides different authentication flows. You have to choose the one which fits your needs the best.
 * BIMData Connect implements two OpenID flows:
-   * Authorization code flow
-   * Implicit flow
+   + Authorization code flow
+   + Implicit flow
 
-:doc:`Scopes <../guide/concepts/scopes>`
+:doc:`Scopes </guide/concepts/scopes>`
 
 * Scopes are a way to let your application access to the data. A scope is a limitation to the data on a given resource.
 
@@ -76,7 +76,5 @@ oAuth usage
 * Want to log in BIMData with your own Active Directory, LDAP or OpenID Connect service? It's possible.
 
 .. seealso::
-
-    * Tutorial: :doc:`Retrieve your Models </tutorials/api_retrieve-elements.rst>`
-    * :doc:`How-to display your Models in the 3D Viewer </tutorials/using_custom_viewer.rst>`
-    * Tutorial: :doc:`Create your first plugin for the 3D Viewer </tutorials/viewer_create_plugin.rst>`
+    
+    ➤ Continue with the :doc:`authentication detailed </guide/authentication_bimdata_connect>`
