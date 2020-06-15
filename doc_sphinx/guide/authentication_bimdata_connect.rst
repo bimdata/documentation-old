@@ -57,13 +57,15 @@ When use an app auth?
 The benefits
 ------------
 
-* **Simple to use**
-- No user means no credentials to manage nor complex workflow, it's simpler to access via the application.
+**Simple to use**
 
-* **Pluggable**
-- You can subscribe to events and use webhooks. It's the easiest way to provide automation.
+No user means no credentials to manage nor complex workflow, it's simpler to access via the application.
 
-* Use it when you need to have a scheduled response to an event and launch a script depending on this response.
+**Pluggable**
+
+You can subscribe to events and use webhooks. It's the easiest way to provide automation.
+
+Use it when you need to have a scheduled response to an event and launch a script depending on this response.
 
 .. IMPORTANT:: 
 
@@ -102,10 +104,8 @@ This option is compliant with the user's credentials.
 
 Use it when you need to access the user's log, such as the user's history, and report actions.
 
-:doc:`Type of user auth detailed <authentication_flows>`
-
-* There are two types of user auth: Authorization code flow and Implicit flow
 
 .. seealso::
     
-    See also the tutorial :doc:`"Retrieve elements following a constraint" </tutorials/api_retrieve-elements>`
+    There are two types of auth: Authorization code flow and Implicit flow.
+    Read the :doc:`types of auth flows detailed <authentication_flows>`
