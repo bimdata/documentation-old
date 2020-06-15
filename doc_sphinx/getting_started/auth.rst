@@ -7,7 +7,8 @@ Authentication
     endexcerpt
 
 
-.. contents::
+.. contents:: In this page
+   :depth: 2
 
 Before you start coding
 =======================
@@ -48,22 +49,8 @@ oAuth usage
 
 oAuth is the protocol we use to authenticate your credentials.
 
-.. seealso::
-
-    See the :doc:`how to log in BIMData with your own Active Directory, LDAP or OpenID Connect service <../guide/auth_identity_providers>`
-
-
-Scopes
-======
-
-Scopes are a way to let your application access to the data. 
-A scope is a limitation to the data on a given resource.
-
-Read :doc:`our documentation about Scopes <../guide/concepts/scopes>`.
-
-
 OpenID Flows
-=============
+-------------
 
 OpenID Connect is an identity layer on top of the OAuth 2.0 protocol.
 OpenID Connect provides different authentication flows. You have to choose the one which fits your needs the best.
@@ -76,12 +63,28 @@ BIMData Connect implements two OpenID flows:
 See :doc:`the Authorization Flows content </guide/authentication_flows>` to learn more.
 
 My user or my app?
--------------------
+^^^^^^^^^^^^^^^^^^
 
 When you try to access Models, is it the App or the User credentials used?
 If you want your user to access Models, you have to invite the User to the Cloud where your Models are, otherwise, no Model will be readable for the User.
 
 See :doc:`the tutorial about sharing data with your application </tutorials/api_share_data_app_platform>`
+
+
+
+.. seealso::
+
+    See the :doc:`how to log in BIMData with your own Active Directory, LDAP or OpenID Connect service <../guide/auth_identity_providers>`
+
+
+Scopes
+-------
+
+Scopes are a way to let your application access to the data. 
+A scope is a limitation to the data on a given resource.
+
+Read :doc:`our documentation about Scopes <../guide/concepts/scopes>`.
+
 
 .. seealso::
 
