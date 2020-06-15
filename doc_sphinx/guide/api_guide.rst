@@ -1,14 +1,63 @@
-===============
-BIMData API
-===============
-
+==================
+BIMData API Guide
+==================
 ..
     excerpt
         Discover BIMData's API documentation
     endexcerpt
 
+
+.. contents:: In this Guide
+   :depth: 2
+   :backlinks: top
+
+Introduction
+============
+
+BIMData.io let you access to your clouds, projects and all the data in your IFC files through the API.
+One your account on BIMData Connect is created, you can:
+
+* Create and manage clouds
+* Create and manage projects
+* Upload IFC files
+* Request data from clouds, projects, and models
+
+
+API Basics
+================
+
+The API URL is: |api_url|
+
+.. parsed-literal::
+    |api_url|
+
+All API requests must be made over HTTPS.
+
+.. warning::
+    
+    Calls made over plain HTTP will respond a 302, redirecting to the same URL over HTTPS.
+
+Tools
+=======
+
+API Playground
+---------------
+
+You would like to try our API? Gladly, we provide you some `playground`_, based on OpenAPI files : `check it out`_!
+
+
+Postman collections
+---------------------
+
+:doc:`Postman collections<postman>`
+
+    .. include:: postman.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+
 API Reference
-==============
+---------------
 
 Just looking for the API Reference?
 
@@ -17,55 +66,8 @@ Just looking for the API Reference?
    <a href="../api/index.html" class="bimdata-btn bimdata-btn__fill bimdata-btn__fill--primary bimdata-btn__radius">Go to API Reference</a>
 
 
-Introduction
-================
-
-BIMData.io let you access to your clouds, projects and all the data in your IFC files through the API.
-One your account on BIMData Connect is created, you can:
-
-* Create and manage clouds
-* Create and manage projects
-* upload IFC file
-* request data from clouds, projects, and models
-
-
-URL
-================
-
-The API URL is |api_url|
-
-All API requests must be made over HTTPS.
-
-.. NOTE::
-    Calls made over plain HTTP will respond a 302, redirecting to the same URL over HTTPS.
-
-API Enpoint
-------------
-.. parsed-literal::
-    |api_url|
-
-
-
-Our Tutorial
-==============
-
-Read our tutorial to begin using the API with a real-life sized purpose
-
-
-* `Retrieve elements following a constraint`_
-
-.. include:: ../tutorials/api_retrieve-elements.rst
-    :start-after: excerpt
-    :end-before: endexcerpt
-
-Playground
-===========
-
-You would like to try our API? Gladly, we provide you some `playground`_, based on OpenAPI files : `check it out`_!
-
-
-Libraries
-================
+External libraries
+----------------------
 
 We're currently maintaining two external libraries:
 
@@ -73,6 +75,29 @@ We're currently maintaining two external libraries:
  * Our `external lib in Python`_.
 
 They are auto-generated from `our OpenAPI file`_ with `openapi-generator`_.
+
+Tutorial
+=========
+
+Read our tutorial to begin using the API with a real-life sized purpose.
+
+* `Retrieve elements following a constraint`_
+
+.. include:: ../tutorials/api_retrieve-elements.rst
+    :start-after: excerpt
+    :end-before: endexcerpt
+
+Filtering
+============
+
+You can filter the responses of most endpoints using the filters.
+
+Learn how-to filter data. 
+
+.. include:: ../guide/api_filters.rst
+    :start-after: excerpt
+    :end-before: endexcerpt
+
 
 
 .. _external lib in JavaScript: https://www.npmjs.com/package/@bimdata/bimdata-api-client

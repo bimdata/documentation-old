@@ -1,5 +1,5 @@
 =============================
-BIMData's API
+BIMData's API Introduction
 =============================
 
 ..
@@ -10,11 +10,11 @@ BIMData's API
 What is the BIMData API?
 ========================
 
-BIMData API is composed of several APIs: an IFC API, a BCF API, a Collaboration API, a Checker API and a SSO API.
+BIMData API is composed of five other APIs: an IFC API, a BCF API, a Collaboration API, a Checker API and a SSO API.
 
 
 The IFC API
------------
+===========
 
  * Upload Models
  * Retrieve and update Model's data in real time
@@ -34,7 +34,7 @@ We support the following implementations:
     For more details, see: :doc:`the IFC Guide <../guide/concepts/ifc>`
 
 The BCF API
------------
+============
 
  * Create BCF
  * Share BCFs with other services
@@ -43,7 +43,7 @@ The BCF API
 
 
 The Collaboration API
----------------------
+======================
 
  * Create projects
  * Invite users
@@ -52,13 +52,13 @@ The Collaboration API
 
 
 The Checker API
----------------
+================
 
  * Validate your Models
 
 
 The Single Sign-On (SSO)
-------------------------
+==========================
 
  * Log in on desktop, tablet, mobile
  * Log in all your BIM Services through BIMData Connect
