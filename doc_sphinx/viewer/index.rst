@@ -34,10 +34,11 @@ Extend the 3D Viewer
  * :doc:`How-to create a Viewer plugin </tutorials/viewer_create_plugin>`
 
 * Learn about the :doc:`Viewer's events <events>`
-* Learn all the :doc:`utils and helper methods <utils>`
+* See all the :doc:`utils and helper methods <utils>`
 * Learn about the :doc:`modal manager <modal_manager>`
 * Learn how-to :doc:`make a custom icon for your plugin <custom_plugin_icon>`
 * Learn about :doc:`async plugins <async_plugins>`
+* See useful :doc:`programming Shortcuts with $ <programming_shortcuts>`
 
 .. tip::
 
@@ -46,7 +47,7 @@ Extend the 3D Viewer
 
  * :doc:`How-to use the SDK to create a plugin </tutorials/viewer_sdk>`
 
-* :doc:`Programming Shortcuts with $ <programming_shortcuts>`
+
 
 
 Requirements
@@ -82,6 +83,11 @@ In addition to that, we recommend:
     ../tutorials/viewer_sdk
     events
     utils
+    programming_shortcuts
+    add_annotations
+    create_section_planes
+    customize_context_commands
+    customize_right_click
 
 .. _check the WebGL support: https://get.webgl.org
 .. _WebGL-enabled browsers: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API

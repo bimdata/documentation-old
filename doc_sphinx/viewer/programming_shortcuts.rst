@@ -14,7 +14,8 @@ The event hub
 
 .. seealso::
     
-    Learn about `all events` you can listen to.
+    Learn about :doc:`all events <events>` you can listen to.
+
 
 Plugins
 ========
@@ -59,7 +60,7 @@ The keyboard shortcut manager, useful to register shortcuts.
 
 .. seealso::
     
-    Read also about:doc:`how-to customize keyboards shortcuts <customize_right_click>`
+    Read also about :doc:`how-to customize keyboards shortcuts <customize_right_click>`
 
 
 Modal manager
@@ -68,8 +69,12 @@ Modal manager
 The modal manager to display global modals.
 
 .. code-block:: javascript
-
+   
    this.$plugins.modalManager;
+
+.. seealso::
+    
+    Read more :doc:`about async plugins <async_plugins>`.
 
 
 Selection
