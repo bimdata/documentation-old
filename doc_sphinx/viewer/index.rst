@@ -15,6 +15,10 @@ Display my Models in the Viewer
 
 :doc:`Getting Started with the 3D Viewer </getting_started/viewer>`
 
+Embed the 3D Viewer in my application
+======================================
+
+ * :doc:`How-to embed the Viewer using Vue.js </tutorials/viewer_using_vue_component>`
 
 Customize the 3D Viewer
 =======================
@@ -34,13 +38,6 @@ Extend the 3D Viewer
 * Learn about the :doc:`modal manager <modal_manager>`
 * Learn how-to :doc:`make a custom icon for your plugin <custom_plugin_icon>`
 * Learn about :doc:`async plugins <async_plugins>`
-
-
-
-Embed the 3D Viewer in my application
-======================================
-
- * :doc:`How-to embed the Viewer using Vue.js </tutorials/viewer_using_vue_component>`
 
 .. tip::
 
