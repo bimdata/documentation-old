@@ -63,6 +63,7 @@ Guide
     auth_connect
     auth_identity_providers
     authentication_flows
+    dev_users_management
     dev_invitations
     authentication_migration
     ../concepts/index

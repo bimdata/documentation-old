@@ -2,17 +2,17 @@
 Getting Started
 ===============
 
+.. topic:: :doc:`Authentication <auth>`
+    :class: bimdata-card
+
+    .. include:: auth.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
 .. topic:: :doc:`API Introduction <api>`
     :class: bimdata-card
 
     .. include:: api.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
-.. topic:: :doc:`Guided Tour <developer_guided_tour>`
-    :class: bimdata-card
-
-    .. include:: developer_guided_tour.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
@@ -45,12 +45,12 @@ Getting Started
        :end-before: endexcerpt
 
 .. toctree::
-   :name: sidebar
+   :global:
+   :hidden:
     
+    Authentication <auth>
     API <api>
-    Developping <developer_guided_tour>
     Applications <which_app>
     Postman <postman>
     Use External Libraries <api_external_clients>
     Getting Started with the Viewer <viewer>
-    

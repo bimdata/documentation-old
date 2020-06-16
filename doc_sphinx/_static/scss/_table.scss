@@ -2,17 +2,12 @@ table {
   width: 100%;
   border: none;
   tr{
-    display: flex;
     th, td{
-      padding: calc(#{$spacing-unit} / 2) $spacing-unit;
-      min-height: calc(#{$spacing-unit} * 4);
-      align-items: center;
+      padding: $spacing-unit;
       position: relative;
-      display: flex;
-      flex: 1;
-      align-items: center;
       border: none;
       font-size: calculateEm(14px);
+      text-align: left;
     }
   }
   thead{
