@@ -6,10 +6,6 @@ BIMData API Guide
         Discover BIMData's API documentation
     endexcerpt
 
-.. contents:: In this Guide
-   :depth: 2
-   :backlinks: entry
-
 Overview
 ==========
 
@@ -44,6 +40,7 @@ API Reference
 --------------
 
 Just looking for the API Reference?
+Our API Reference presents Paramaters for the Requests, includes examples of Responses and Fields details for every objects.
 
 .. raw:: html
 
@@ -63,35 +60,12 @@ Gladly, we provide you an interactive playground, based on OpenAPI files.
 Try now your request on the :doc:`playground <../api_playground/apis>`!
 
 
-.. raw:: html
-
-    <a href="../api_playground/apis.html" class="bimdata-btn bimdata-btn__fill bimdata-btn__fill--primary bimdata-btn__radius">Try out the Playground</a>
-
-
 Postman collections
 ---------------------
 
 BIMData released a Postman Collection for you to enjoy and try our API in your usual software.
 
 More about our :doc:`Postman collections <../getting_started/postman>`
-
-
-.. raw:: html
-
-    <a href="../getting_started/postman.html" class="bimdata-btn bimdata-btn__fill bimdata-btn__fill--primary bimdata-btn__radius">Postman collections</a>
-
-
-
-
-API Reference
----------------
-
-Our API Reference presents Paramaters for the Requests, includes examples of Responses and Fields details for every objects.
-
-.. raw:: html
-
-    <a href="../api/index.html" class="bimdata-btn bimdata-btn__fill bimdata-btn__fill--primary bimdata-btn__radius">Go to API Reference</a>
-
 
 
 External libraries
@@ -114,11 +88,6 @@ Filtering
 You can filter the responses of most endpoints using the filters.
 
 Read the :doc:`Filter Guide <../guide/api_filters>`.
-
-
-.. raw:: html
-
-    <a href="../guide/api_filters.html" class="bimdata-btn bimdata-btn__fill bimdata-btn__fill--primary bimdata-btn__radius">Read the Filter Guide</a>
 
 
 Tutorials
