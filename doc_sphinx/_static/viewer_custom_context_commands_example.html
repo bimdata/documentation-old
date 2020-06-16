@@ -1,0 +1,84 @@
+
+   <!DOCTYPE html>
+   <html lang="en" dir="ltr">
+     <head>
+       <meta charset="utf-8" />
+       <title>BIMData - Context Menu</title>
+       <script
+         src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js"
+         charset="utf-8"
+       ></script>
+     </head>
+
+     <body>
+       <div style="height: 100vh">
+         <div id="app"></div>
+       </div>
+       <script>
+         const cfg = {
+           cloudId: 88,
+           projectId: 100,
+           ifcIds: [],
+           bimdataPlugins: {
+             default: false,
+             rightClickMenu: true, // Right click menu should be activated
+           }
+
+         };
+         const accessToken = "DEMO_TOKEN";
+         const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer(
+           "app",
+           accessToken,
+           cfg
+         );
+         viewer.registerPlugins([
+           {
+             name: "myCustomPlugin",
+             component: {
+               template: `
+          <div class="context">
+            <div @click.right="onRightClick()">
+              <input
+                ref="input"
+                v-if="editMode"
+                v-model="data"
+                @keyup.enter="validate()"
+              />
+              <span v-else>{{ data || 'no data provided' }}</span>
+            </div>
+          </div>
+          `,
+               data() {
+                 return {
+                   editMode: false,
+                   data: "Data"
+                 };
+               },
+               methods: {
+                 validate(number) {
+                   this.editMode = false;
+                 },
+                 onRightClick(number) {
+                   const rightClickMenu = this.$plugins.rightClickMenu;
+                   if (rightClickMenu) {
+                     rightClickMenu.registerContextCommand({
+                       label: "Edit",
+                       execute: () => {
+                         this.editMode = true;
+                       }
+                     });
+                   }
+                 }
+               }
+             },
+             keepActive: true,
+             display: {
+               iconPosition: 'left',
+               content: 'simple'
+             },
+             tooltip: "myCustomPlugin"
+           }
+         ]);
+       </script>
+     </body>
+   </html>
