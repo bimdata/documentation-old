@@ -32,7 +32,7 @@ From the BIMData Connect homepage, you create your application.
 
 ➤ Follow :doc:`the create your application Tutorial </tutorials/dev_create_an_application>`.
 
-The Secret ID is yours and should never be shared.
+The Client SECRET is yours and should never be shared.
 
 Useful tools
 =============
