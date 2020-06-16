@@ -139,6 +139,11 @@ jobs:
               --extra-vars "{\"ansible_ssh_private_key_file\":\"./files/deploy_rsa\",\"ops_env\":\"$TAG\"}" \
               --user deploy  \
               deploy.yml
+      - run:
+          name: display url
+          command: |
+            echo "The new build is available on :"
+            if [ "$ENV" = "prod" ]; then echo "https://developers.bimdata.io"; else echo "https://developers-$TAG.bimdata.io"; fi
 
 workflows:
   test_and_deploy:
