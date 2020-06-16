@@ -173,3 +173,7 @@ workflows:
           name: build_and_push_docker_dev
           requires:
             - deploy_docker_dev
+      - deploy:
+          name: deploy_dev
+          requires:
+            - build_and_push_docker_dev
