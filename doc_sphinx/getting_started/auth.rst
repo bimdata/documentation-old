@@ -63,7 +63,7 @@ Retrieve an app Access Token
 ----------------------------
 
 An application Access Token represents the app itself and is not linked to any user. 
-It is used when you don't use **BIMData Connect** users or if you want to use :doc:`webhooks </guide/api_webhooks>`  or if you're doing some automated tasks.
+It is used when you don't use **BIMData Connect** users or if you want to use :doc:`webhooks </guide/api_webhooks>` or if you're doing some automated tasks.
 
 .. note::
 
