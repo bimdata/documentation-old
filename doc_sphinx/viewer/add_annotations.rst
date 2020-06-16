@@ -9,8 +9,9 @@ To add annotations on objects, simply emit the ``create-annotations``
 event to the Event Hub. 
 
 You must provide:
+
 * object IDs
-* a priority (``low``,``medium`` or ``high``)
+* a priority (``low``, ``medium`` or ``high``)
 * an index that is displayed on the annotation
 
 .. code-block:: javascript
@@ -25,7 +26,7 @@ You must provide:
 Deleting annotations
 ======================
 
-To delete all annotations, emit ``clear-annotations`` event to the Event
+To delete all annotations, emit a ``clear-annotations`` event to the Event
 Hub.
 
 .. code-block:: javascript
