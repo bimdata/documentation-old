@@ -26,7 +26,11 @@ Customize the 3D Viewer
 BIMData provides a 3D Viewer with which you can interact with Javascript.
 The Viewer is built with VueJS framework, the architecture of the Viewer is using components, and built-on XeoKit.
 
- * :doc:`How-to customize the Viewer to your design </tutorials/using_custom_viewer>`
+ * How-to :doc:`customize the Viewer to your design </tutorials/using_custom_viewer>`
+ * How-to :doc:`work with annotations <add_annotations>`
+ * How-to :doc:`create and delete Sections planes <create_section_planes>`
+ * How-to :doc:`add context commands to the Right-click Menu. <customize_context_commands>`
+ * How-to :doc:`customize keyboard shortuts <customize_keyboard_shortcuts>`
 
 Extend the 3D Viewer
 ====================
