@@ -87,7 +87,7 @@ In addition to that, we recommend:
     add_annotations
     create_section_planes
     customize_context_commands
-    customize_right_click
+    customize_keyboard_shortcuts
 
 .. _check the WebGL support: https://get.webgl.org
 .. _WebGL-enabled browsers: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
