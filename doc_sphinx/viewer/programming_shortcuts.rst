@@ -5,7 +5,7 @@ Programming shortcuts
 Here are some useful feature using the `$` (dollar sign) syntax.
 
 
-The event hub
+The Events Hub
 ===============
 
 .. code-block:: javascript

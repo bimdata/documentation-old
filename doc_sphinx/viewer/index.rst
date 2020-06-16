@@ -35,23 +35,21 @@ The Viewer is built with VueJS framework, the architecture of the Viewer is usin
 Extend the 3D Viewer
 ====================
 
- * :doc:`How-to create a Viewer plugin </tutorials/viewer_create_plugin>`
+* Learn how-to :doc:`create a Viewer plugin using VueJS </tutorials/viewer_create_plugin>`
+* How-to use :doc:`the SDK to create a plugin </tutorials/viewer_sdk>`
 
-* Learn about the :doc:`Viewer's events <events>`
-* See all the :doc:`utils and helper methods <utils>`
-* Learn about the :doc:`modal manager <modal_manager>`
+* Learn about the :doc:`Modal Manager <modal_manager>` to display data in modals
 * Learn how-to :doc:`make a custom icon for your plugin <custom_plugin_icon>`
-* Learn about :doc:`async plugins <async_plugins>`
+* Learn about making your :doc:`plugins asynchronous <async_plugins>`
+
 * See useful :doc:`programming Shortcuts with $ <programming_shortcuts>`
+* Read the :doc:`Viewer's events reference <events>` 
+* See :doc:`all the helpers<utils>` in the reference
 
 .. tip::
 
     Looking for the BIMData Viewer SDK?
     https://github.com/bimdata/bimdata-viewer-sdk
-
- * :doc:`How-to use the SDK to create a plugin </tutorials/viewer_sdk>`
-
-
 
 
 Requirements
