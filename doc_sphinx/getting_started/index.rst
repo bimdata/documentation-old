@@ -16,17 +16,24 @@ Getting Started
        :start-after: excerpt
        :end-before: endexcerpt
 
-.. topic:: :doc:`Postman <postman>`
-    :class: bimdata-card
-
-    .. include:: postman.rst
-       :start-after: excerpt
-       :end-before: endexcerpt
-
 .. topic:: :doc:`Viewer <viewer>`
     :class: bimdata-card
 
     .. include:: viewer.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+.. topic:: :doc:`Applications <which_app>`
+    :class: bimdata-card
+
+    .. include:: which_app.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+.. topic:: :doc:`Postman <postman>`
+    :class: bimdata-card
+
+    .. include:: postman.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
@@ -43,6 +50,7 @@ Getting Started
     
     Authentication <auth>
     API <api>
+    Applications <which_app>
     Postman <postman>
     Use External Libraries <api_external_clients>
     Getting Started with the Viewer <viewer>
