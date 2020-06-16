@@ -1,49 +1,4 @@
-=================
-Keyboard Shortcut
-=================
-
-
-Register a new shortcut
-=======================
-
-To register a keyboard shortcut, get the **keyboardShortcutsManager** object and then
-register a new shortcut.
-
-.. warning::
-
-    Only one shortcut must be added to a key.
-    An error is raised on the console if the key is already assigned.
-
-.. code-block:: javascript
-
-   this.$plugins.keyboardShortcutsManager.registerKeyboardShortcut(
-     "K",                            // The key you want to assign
-     () => console.log("K pressed")  // The function that is executed when the assigned key is pressed
-   );
-
-Parameters
-------------
-
-================  ===================  ====================================================================
-parameter         type                  Description
-================  ===================  ====================================================================
-key               character            The key you want to assign
-function          function()           The function that is executed when the assigned key is pressed
-================  ===================  ====================================================================
-
-
-Example
-===========
-
-The plugin we add here is not displayed to the end user. 
-It just add a command to the right click menu and a keyboard shortcut.
-The command and the shortcut hide objects of type “space”. 
-The newly added right click menu command has the label “Hide spaces” (with picto K) and is only displayed when at least one “space” is visible. The shortcut is added on
-the key K.
-
-.. code-block:: html
-
-   <!DOCTYPE html>
+<!DOCTYPE html>
    <html lang="en" dir="ltr">
 
    <head>
@@ -122,6 +77,3 @@ the key K.
    </body>
 
    </html>
-
-.. raw:: html
-   :file: ../_static/viewer_custom_kb_shortcuts_example.html
