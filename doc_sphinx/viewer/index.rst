@@ -46,7 +46,7 @@ Extend the 3D Viewer
 
  * :doc:`How-to use the SDK to create a plugin </tutorials/viewer_sdk>`
 
-
+* :doc:`Programming Shortcuts with $ <programming_shortcuts>`
 
 
 Requirements
