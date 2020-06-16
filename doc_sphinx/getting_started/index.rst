@@ -49,6 +49,8 @@ Getting Started
     
     API <api>
     Developping <developer_guided_tour>
+    Applications <which_app>
     Postman <postman>
     Use External Libraries <api_external_clients>
     Getting Started with the Viewer <viewer>
+    
