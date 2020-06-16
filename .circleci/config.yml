@@ -16,7 +16,7 @@ mapping-var-env: &mapping-var-env
         ;;
       "develop") ENV=staging; TAG=staging
         ;;
-      *) ENV=staging; TAG=dev_$(echo "$CIRCLE_BRANCH" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)
+      *) ENV=dev; TAG=dev_$(echo "$CIRCLE_BRANCH" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)
         ;;
     esac
     echo 'export ENV='$ENV >> $BASH_ENV
