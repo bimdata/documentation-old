@@ -14,10 +14,10 @@ BIMData API is composed of five other APIs: an IFC API, a BCF API, a Collaborati
 
 
 The IFC API
-===========
+------------
 
  * Upload Models
- * Retrieve and update Model's data in real time
+ * Retrieve and update Model's data in real-time
 
 We support the following implementations:
 
@@ -31,10 +31,11 @@ We support the following implementations:
 
 .. tip::
 
-    For more details, see: :doc:`the IFC Guide <../guide/concepts/ifc>`
+    For more details, see: :doc:`our IFC Guide <../guide/concepts/ifc>`
+
 
 The BCF API
-============
+------------
 
  * Create BCF
  * Share BCFs with other services
@@ -43,7 +44,7 @@ The BCF API
 
 
 The Collaboration API
-======================
+------------------------
 
  * Create projects
  * Invite users
@@ -52,35 +53,48 @@ The Collaboration API
 
 
 The Checker API
-================
+----------------
 
  * Validate your Models
 
 
-The Single Sign-On (SSO)
-==========================
+The Single Sign-On (SSO) API
+-----------------------------
 
  * Log in on desktop, tablet, mobile
- * Log in all your BIM Services through BIMData Connect
+ * Log in all your BIM Services through `BIMData Connect <|bimdata_connect|>`_
  * Log in through your own SSO (OpenID Connect or SAMLv2)
 
 
 First steps with the API
 ========================
 
+OpenID
+---------
+
 BIMData API uses the OpenID Connect protocol (technically very similar to the OAuth2 protocol). 
-Any OpenID library you may find online to help you implement the protocol will work with BIMData API
+Any OpenID library you may find online to help you implement the protocol also works with BIMData API
+
+
+Make API calls
+---------------
 
 To make API calls, you must retrieve an Access Token. There are many ways to get one depending on the context or your application.
-We'll use the simplest one for this 'Getting Started' and you can find :doc:`the details of all methods here <../tutorials/dev_get_access_token>`.
+We'll use the simplest one for this 'Getting Started' and you can find :doc:`the details of all methods in the tutorial dedicated to the Access Token <../tutorials/dev_get_access_token>`.
 
-The first step is to create your application: as described in the :doc:`create your application documentation <../tutorials/dev_create_an_application>`
+
+Create your application 
+---------------------------
+
+The first step is to create your application: as described in the :doc:`create your application documentation <../tutorials/dev_create_an_application>`.
 For the Getting Started, you want a confidential app.
-That means the app will be able to keep a secret (a JavaScript app or a mobile app can't because the code, and therefore the secret, will be visible by the user)
+That means the app is able to keep a secret (a JavaScript app or a mobile app can't because the code, and therefore the secret, is visible by the user)
 
 .. note:: 
 
- By default, an app has only access to its data. It can't see data from another app or another user. For example, your app won't be able to see the data you have put on the BIMData Platform.
+    By default, an app has only access to its data. It can't see data from another app or another user. 
+    
+    For example, your app won't be able to see the data you have put on the BIMData Platform.
 
 .. tip:: 
 
@@ -88,8 +102,12 @@ That means the app will be able to keep a secret (a JavaScript app or a mobile a
         * The full API collection: https://documenter.getpostman.com/view/7460463/SzKTvyVR
         * The BIMData's Examples collection: https://documenter.getpostman.com/view/7460463/SzKbLFKH
 
+
+Get your Access Token
+----------------------
+
 Once you have created your app, you have a *client_id* and a *client_secret*.
-You can exchange them for an access token through an HTTP call. 
+You can exchange them for an Access Token through an HTTP call. 
 
 .. seealso::
  
@@ -97,8 +115,12 @@ You can exchange them for an access token through an HTTP call.
 
 Once you have the access_token, you can start doing API calls!
 
-The first thing to do is to create a *Cloud*. A Cloud is a configurable space where projects will be created. 
-All projects in this Cloud will share the Cloud's configuration.
+
+Create your Cloud
+-------------------
+
+The first thing to do is to create a *Cloud*. A Cloud is a configurable space where projects are created. 
+All projects in this Cloud share the Cloud's configuration.
 
 .. seealso::
 
@@ -114,10 +136,14 @@ A Cloud just needs a name:
     --header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
     --data '{"name": "My First Cloud"}'
 
-You get a Cloud ID in the response. We need it for the next call.
+You get a Cloud ID in the response. We need it for our next API call.
+
+
+Upload your first Model
+-------------------------
 
 Once you have your first Cloud, you may want to create your first Project and upload your first Model.
-For this tutorial, use a special route that creates a demo Project with our demo Model: `createDemo </api/index.html#createDemo>`_.
+For this tutorial, use a special endpoint that creates a demo Project with our demo Model: `createDemo </api/index.html#createDemo>`_.
 
 
 .. prompt:: bash
@@ -131,10 +157,15 @@ You receive back the created Project (its ID).
 
 .. note::
  
-    You can also do it with the endpoints: `createProject <https://developers-staging.bimdata.io/api/index.html#createProject>`_ and `createDocument <https://developers-staging.bimdata.io/api/index.html#createDocument>`_
+    You can also do it with the combination of the endpoints:
+       * `createProject <https://developers-staging.bimdata.io/api/index.html#createProject>`_ 
+       * and then `createDocument <https://developers-staging.bimdata.io/api/index.html#createDocument>`_
 
 
-Let's retrieve the Model in the demo using `the getIfcs endpoint <https://developers-staging.bimdata.io/api/index.html#getIfcs>`_.
+Retrieve our Model
+--------------------
+
+Let's retrieve the Model in the demo using `the getIfcs endpoint <https://developers-staging.bimdata.io/api/index.html#getIfcs>`_!
 
 
 .. prompt:: bash
@@ -148,6 +179,10 @@ Let's retrieve the Model in the demo using `the getIfcs endpoint <https://develo
 You get an array of the Models in the Project.
 Keep the IFC ID, you need it in the next, and it will be the last, call.
 
+
+Get properties
+---------------
+
 Let's get the properties of all the doors of the Model with `the getSimpleElements endpoint <https://developers-staging.bimdata.io/api/index.html#getSimpleElements>`_.
 
 .. prompt:: bash
@@ -158,9 +193,15 @@ Let's get the properties of all the doors of the Model with `the getSimpleElemen
     --header 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 
 
+And it's done!
+-------------------
+
 Hourra: you get all the properties of all the doors of the Model!
 
+
 .. tip::
+
+    You know the basics our the BIMData API. Go further with the following suggestions:
 
     * Explore :doc:`the list of all endpoints on the API Reference </api/index>`
     * If you want to :doc:`try the API calls directly from the web, use our API playground </api_playground/index>`.
