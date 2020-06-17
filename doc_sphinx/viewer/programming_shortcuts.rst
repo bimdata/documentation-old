@@ -60,7 +60,7 @@ The keyboard shortcut manager, useful to register shortcuts.
 
 .. seealso::
     
-    Read also about :doc:`how-to customize keyboards shortcuts <customize_right_click>`
+    Read also about :doc:`how-to customize keyboards shortcuts <customize_keyboard_shortcuts>`
 
 
 Modal manager
