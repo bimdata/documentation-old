@@ -62,7 +62,7 @@ The Single Sign-On (SSO) API
 -----------------------------
 
  * Log in on desktop, tablet, mobile
- * Log in all your BIM Services through `BIMData Connect <|bimdata_connect|>`_
+ * Log in all your BIM Services through BIMData Connect: |bimdata_connect|
  * Log in through your own SSO (OpenID Connect or SAMLv2)
 
 
