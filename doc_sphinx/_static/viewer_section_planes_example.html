@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+   <html lang="en" dir="ltr">
+
+   <head>
+     <meta charset="utf-8" />
+     <title>BIMData - Section on surface</title>
+     <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+   </head>
+
+   <body>
+     <div style="height: 100vh">
+       <div id="app"></div>
+     </div>
+     <script>
+       const cfg = {
+         cloudId: 88,
+         projectId: 100,
+         ifcIds: [175],
+         bimdataPlugins: {
+           default: false,
+           bcf: false,
+           merge: false,
+           allowExport: false
+         }
+       };
+       const accessToken = "DEMO_TOKEN";
+       const { viewer, store, eventHub, setAccessToken } = initBIMDataViewer(
+         "app",
+         accessToken,
+         cfg
+       );
+
+       viewer.registerPlugins([
+         {
+           name: "SectionOnSurfacePlugin",
+           component: {
+             render() {
+               return null;
+             },
+             data() {
+               return {
+                 pickSurfaceSubscription: null
+               };
+             },
+             props: ["active"],
+             watch: {
+               active: {
+                 handler(active) {
+                   const viewer3D = this.$plugins.viewer3D;
+                   this.$hub.emit("set-section-mode", { active });
+                   viewer3D.selectOnClick = !active;
+                   // viewer3D.highlightOnHover = !active; // To remove the highlight on hover
+                   if (active) {
+                     document.body.style.setProperty(
+                       "cursor",
+                       "crosshair",
+                       "important"
+                     );
+                     this.pickSurfaceSubscription = viewer3D.xeokit.cameraControl.on(
+                       "pickedSurface",
+                       pickResult => {
+                         if (!pickResult) return;
+                         this.$hub.emit(
+                           "create-section-plane",
+                           {
+                             position: new Float32Array(pickResult.worldPos),
+                             direction: new Float32Array(pickResult.worldNormal)
+                           }
+                         );
+                       }
+                     );
+                   } else {
+                     document.body.style.removeProperty("cursor");
+                     viewer3D.xeokit.cameraControl.off(
+                       this.pickSurfaceSubscription
+                     );
+                     this.$hub.emit(
+                       "delete-all-section-planes"
+                     );
+                     // this.$hub.emit("delete-section-plane"); // To delete the active section plane
+                   }
+                 }
+               }
+             }
+           },
+           display: {
+             iconPosition: "left"
+           },
+           keepActive: true
+         }
+       ]);
+     </script>
+   </body>
+
+   </html>
