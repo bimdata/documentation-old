@@ -34,6 +34,12 @@ Guide
 
     Learn how-to use the Viewer
 
+.. topic:: :doc:`Users Management <dev_users_management>`
+    :class: bimdata-card
+
+    .. include:: dev_users_management.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
 
 .. topic:: :doc:`Security <dev_security>`
     :class: bimdata-card
@@ -70,10 +76,6 @@ Guide
     ../concepts/cloud
     ../concepts/folders_and_documents
     ../concepts/ifc
-    ../platform/index
-    ../viewer/async_plugin
-    ../viewer/custom_plugin_icon
-    Viewer: Modal Manager </viewer/modal_manager>
     dev_errors
     Contributing <contributing>
 
