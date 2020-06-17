@@ -13,21 +13,21 @@ Use Cases
        :end-before: endexcerpt
 
 .. topic:: :doc:`On-site BCF usage <use_case_augmented_reality_bcf>`
-    :class: bimdata-card
+    :class: bimdata-card api
 
     .. include:: use_case_augmented_reality_bcf.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. topic:: :doc:`BCF and webhooks <use_case_bcf_blockchain>`
-    :class: bimdata-card
+    :class: bimdata-card api
 
     .. include:: use_case_bcf_blockchain.rst
        :start-after: excerpt
        :end-before: endexcerpt
 
 .. topic:: :doc:`Enrich the Viewer with documentation<use_case_reference_in_the_viewer>`
-    :class: bimdata-card 
+    :class: bimdata-card viewer 
 
     .. include:: use_case_reference_in_the_viewer.rst
        :start-after: excerpt
