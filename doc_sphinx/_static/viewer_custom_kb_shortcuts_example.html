@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+   <html lang="en" dir="ltr">
+
+   <head>
+     <meta charset="utf-8" />
+     <title>BIMData - Keyboard Shortcut Example</title>
+     <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+   </head>
+
+   <body>
+     <div style="height: 100vh">
+       <div id="app"></div>
+     </div>
+     <script>
+       const cfg = {
+         cloudId: 88,
+         projectId: 100,
+         ifcIds: [175],
+         bimdataPlugins: {
+           default: false,
+           rightClickMenu: true, // Right-click menu should be activated
+           bcf: false,
+           merge: false,
+           allowExport: false
+         }
+       };
+       const accessToken = "DEMO_TOKEN";
+       const { viewer } = initBIMDataViewer(
+         "app",
+         accessToken,
+         cfg
+       );
+
+       viewer.registerPlugins([
+         {
+           name: "HideSpacePlugin",
+           component: {
+             render() {
+               return null;
+             },
+             created() {
+               // Add right click command
+               const rightClickMenu = this.$plugins.rightClickMenu;
+               const getSpaceIds = () =>
+                 this.$utils.getAllObjectsOfType("space").map(
+                   object => object.uuid
+                 );
+               const hideSpaces = () => {
+                 this.$hub.emit("hide-objects", {
+                   ids: getSpaceIds()
+                 });
+               };
+               const isSpaceVisible = () => {
+                 const allObjects = Object.values(
+                   this.$plugins.viewer3D.xeokit.scene.objects
+                 );
+                 const spaceUUIDs = getSpaceIds();
+                 const spaceObjects = allObjects.filter(object =>
+                   spaceUUIDs.includes(object.id)
+                 );
+                 return spaceObjects.some(spaceObject => spaceObject.visible);
+               };
+               rightClickMenu.registerCommand({
+                 label: "Hide spaces",
+                 picto: "K",
+                 execute: hideSpaces,
+                 predicate: isSpaceVisible
+               });
+
+               // Register keyboard shortcut
+               this.$plugins.keyboardShortcutsManager.registerKeyboardShortcut(
+                 "K",
+                 hideSpaces
+               );
+             }
+           },
+         }
+       ]);
+     </script>
+   </body>
+
+   </html>

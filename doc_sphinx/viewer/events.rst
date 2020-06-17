@@ -1,5 +1,5 @@
 ============================
-Events
+Events Reference
 ============================
 
 .. contents::
@@ -9,13 +9,13 @@ Events
 Emit and listen
 ================
 
-You can emit custom events using the hub:
+You can emit custom events using the events hub with the emit() method.
 
 .. code-block:: javascript
 
     this.$hub.emit("my-event", payload);
 
-You can listen to events the same way:
+You can listen to events using the same events hub with the on() method.
 
 .. code-block:: javascript
 
@@ -25,12 +25,13 @@ You can listen to events the same way:
 Plugins events
 ===============
 
-Default plugins are using events that you can also emit or listen to. Use them to interact with default plugins or the 3D engine.
+Default plugins are using events that you can also emit or listen to. 
+Use them to interact with default plugins or the 3D engine.
 
 .. code-block:: javascript
 
     /**
-     * Know when a model is loaded. There is no reason to emit this event.
+     * Know when a model is loaded. There is no real-life reason to emit this event.
      * @param {object} ifc
      * @param {object} model - the model object (from xeokit)
      */
@@ -41,7 +42,7 @@ Default plugins are using events that you can also emit or listen to. Use them t
 .. code-block:: javascript
 
     /**
-     * Know when a model is unloaded. There is no reason to emit this event.
+     * Know when a model is unloaded. There is no real-life reason to emit this event.
      * @param {object} ifc
      */
     this.$hub.on("3d-model-unloaded", ({ ifc }) => {
@@ -50,6 +51,9 @@ Default plugins are using events that you can also emit or listen to. Use them t
 
 Settings
 ========
+
+You can adjust settings using the Events Hub.
+
 
 Projection type
 -----------------
