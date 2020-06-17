@@ -7,8 +7,11 @@ On top of that our Viewer is customizable through plug-ins.
 
 Usage of the Viewer is either simply embedded in your web application, or with a custom-tailored plugin adapting to your needs the behavior of the Viewer.
 
-.. raw:: html
-   :file: ../_static/viewer.html
+.. image:: /_images/viewer/viewer_zoom.gif
+    :align: center
+    :scale: 100%
+    :alt: Screenshot of the main view of the BIMData's Viewer
+
 
 Display my Models in the Viewer
 ================================
@@ -31,6 +34,9 @@ The Viewer is built with VueJS framework, the architecture of the Viewer is usin
  * How-to :doc:`create and delete Sections planes <create_section_planes>`
  * How-to :doc:`add context commands to the Right-click Menu. <customize_context_commands>`
  * How-to :doc:`customize keyboard shortuts <customize_keyboard_shortcuts>`
+
+.. raw:: html
+   :file: ../_static/viewer.html
 
 Extend the 3D Viewer
 ====================
