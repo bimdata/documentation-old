@@ -3,7 +3,7 @@
 
    <head>
      <meta charset="utf-8" />
-     <title>BIMData - Right Click Command and Keyboard Shortcut</title>
+     <title>BIMData - Keyboard Shortcut Example</title>
      <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
    </head>
 
@@ -18,7 +18,10 @@
          ifcIds: [175],
          bimdataPlugins: {
            default: false,
-           rightClickMenu: true, // Right click menu should be activated
+           rightClickMenu: true, // Right-click menu should be activated
+           bcf: false,
+           merge: false,
+           allowExport: false
          }
        };
        const accessToken = "DEMO_TOKEN";
