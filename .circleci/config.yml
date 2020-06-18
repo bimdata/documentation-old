@@ -10,16 +10,17 @@ mapping-var-env: &mapping-var-env
   name: define var with branch
   command: |
     case "$CIRCLE_BRANCH" in
-      "master") ENV=prod
+      "master") ENV=prod; TAG=prod
         ;;
-      "release") ENV=next
+      "release") ENV=next; TAG=next
         ;;
-      "develop") ENV=staging
+      "develop") ENV=staging; TAG=staging
         ;;
-      *) ENV=dev_$(echo "$CIRCLE_BRANCH" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)
+      *) ENV=dev; TAG=dev_$(echo "$CIRCLE_BRANCH" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)
         ;;
     esac
     echo 'export ENV='$ENV >> $BASH_ENV
+    echo 'export TAG='$TAG >> $BASH_ENV
 
 version: 2.1
 
@@ -84,10 +85,10 @@ jobs:
       - run:
           name: backup previous image
           command: |
-            if export DOCKER_CLI_EXPERIMENTAL=enabled && docker manifest inspect "docker-registry.bimdata.io/bimdata/documentation:prev-$ENV" > /dev/null; then
-              docker pull "docker-registry.bimdata.io/bimdata/documentation:$ENV"
-              docker image tag "docker-registry.bimdata.io/bimdata/documentation:$ENV" "docker-registry.bimdata.io/bimdata/documentation:prev-$ENV"
-              docker push "docker-registry.bimdata.io/bimdata/documentation:prev-$ENV"
+            if export DOCKER_CLI_EXPERIMENTAL=enabled && docker manifest inspect "docker-registry.bimdata.io/bimdata/documentation:prev-$TAG" > /dev/null; then
+              docker pull "docker-registry.bimdata.io/bimdata/documentation:$TAG"
+              docker image tag "docker-registry.bimdata.io/bimdata/documentation:$TAG" "docker-registry.bimdata.io/bimdata/documentation:prev-$TAG"
+              docker push "docker-registry.bimdata.io/bimdata/documentation:prev-$TAG"
             fi
       - run:
           name: prepare build
@@ -107,17 +108,17 @@ jobs:
               ansible-playbook \
               --inventory-file inventories/$ENV \
               --tags documentation \
-              --extra-vars "{\"context_dir\":\"/var/repo\",\"ansible_ssh_private_key_file\":\"./files/deploy_rsa\",\"ops_env\":\"$ENV\"}" \
+              --extra-vars "{\"context_dir\":\"/var/repo\",\"ansible_ssh_private_key_file\":\"./files/deploy_rsa\",\"ops_env\":\"$TAG\"}" \
               --user deploy \
               build.yml
       - run:
           name: push new image
-          command: docker push "docker-registry.bimdata.io/bimdata/documentation:$ENV"
+          command: docker push "docker-registry.bimdata.io/bimdata/documentation:$TAG"
       - run:
           name: push latest tag image
           command: |
             if [[ "$CIRCLE_BRANCH" == "develop" ]]; then
-              docker tag "docker-registry.bimdata.io/bimdata/documentation:$ENV" docker-registry.bimdata.io/bimdata/documentation:latest
+              docker tag "docker-registry.bimdata.io/bimdata/documentation:$TAG" docker-registry.bimdata.io/bimdata/documentation:latest
               docker push docker-registry.bimdata.io/bimdata/documentation:latest
             fi
 
@@ -135,9 +136,14 @@ jobs:
               ansible-playbook \
               --inventory-file inventories/$ENV \
               --tags documentation \
-              --extra-vars "{\"ansible_ssh_private_key_file\":\"./files/deploy_rsa\",\"ops_env\":\"$ENV\"}" \
+              --extra-vars "{\"ansible_ssh_private_key_file\":\"./files/deploy_rsa\",\"ops_env\":\"$TAG\"}" \
               --user deploy  \
               deploy.yml
+      - run:
+          name: display url
+          command: |
+            echo "The new build is available on :"
+            if [ "$ENV" = "prod" ]; then echo "https://developers.bimdata.io"; else echo "http://developers-$TAG.bimdata.io"; fi
 
 workflows:
   test_and_deploy:
@@ -167,3 +173,7 @@ workflows:
           name: build_and_push_docker_dev
           requires:
             - deploy_docker_dev
+      - deploy:
+          name: deploy_dev
+          requires:
+            - build_and_push_docker_dev
