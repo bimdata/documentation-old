@@ -19,6 +19,8 @@ One your account on BIMData Connect is created, you can:
 
 
 .. image:: /_images/guide/api_features.png
+    :align: center
+    :alt: Map of main features of the API
 
 
 API Basics
