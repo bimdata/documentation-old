@@ -143,7 +143,7 @@ jobs:
           name: display url
           command: |
             echo "The new build is available on :"
-            if [ "$ENV" = "prod" ]; then echo "https://developers.bimdata.io"; else echo "https://developers-$TAG.bimdata.io"; fi
+            if [ "$ENV" = "prod" ]; then echo "https://developers.bimdata.io"; else echo "http://developers-$TAG.bimdata.io"; fi
 
 workflows:
   test_and_deploy:
