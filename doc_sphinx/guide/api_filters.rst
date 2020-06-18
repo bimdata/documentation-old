@@ -37,6 +37,7 @@ You can combine several filters. Elements matching **all combined filters** are 
         :title: cURL
 
          .. code-block:: bash
+            :substitutions:
 
             curl -X GET \
             '|api_url|/cloud/1/project/1/ifc?status=C' \
@@ -47,6 +48,7 @@ You can combine several filters. Elements matching **all combined filters** are 
         :title: Python
 
          .. code-block:: python
+           :substitutions:
 
             import requests
 
@@ -67,6 +69,7 @@ You can combine several filters. Elements matching **all combined filters** are 
         :title: JavaScript
 
          .. code-block:: javascript
+            :substitutions:
 
             var request = require("request");
 
