@@ -1,7 +1,33 @@
 :path_to_openapi: .json
 ============
-APIs
+Playground
 ============
+
+.. topic:: :doc:`Authentication <sso_endpoint>`
+    :class: bimdata-card api
+
+    Enter the Playground
+
+.. topic:: :doc:`Collaboration API <collaboration_endpoint>`
+    :class: bimdata-card api
+
+    Enter the Playground
+
+.. topic:: :doc:`IFC API <ifc_endpoint>`
+    :class: bimdata-card api
+
+    Enter the Playground
+
+.. topic:: :doc:`BCF API <bcf_endpoint>`
+    :class: bimdata-card api
+
+    Enter the Playground
+
+.. topic:: :doc:`Webhooks API <webhook_endpoint>`
+    :class: bimdata-card api
+
+    Enter the Playground
+
 
 .. toctree::
   :titlesonly:
@@ -12,11 +38,3 @@ APIs
   bcf_endpoint
   checker_endpoint
   webhook_endpoint
-
-* :doc:`Authentication <sso_endpoint>`
-* :doc:`Collaboration API <collaboration_endpoint>`
-* :doc:`IFC API <ifc_endpoint>`
-* :doc:`BCF API <bcf_endpoint>`
-* :doc:`Webhooks API <webhook_endpoint>`
-
-
