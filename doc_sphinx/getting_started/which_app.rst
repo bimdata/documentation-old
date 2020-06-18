@@ -10,6 +10,10 @@ Which app will you create?
 The implementation of your app depends on your needs.
 You can create several types of applications.
 
+.. image:: /_images/guide/api_applications.png
+    :align: center
+    :alt: Where are the applications in the BIMData's ecosystem
+
 Backend-less application
 ------------------------
 
