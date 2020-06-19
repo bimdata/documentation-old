@@ -17,6 +17,10 @@ Cloud administrators are also Projects admin by default, they can see every user
 
 Cloud users can't see cloud collaborators. This means that a contractor on a project can't see every collaborator of the company.
 
+.. image:: /_images/guide/concepts_cloud.png
+    :scale: 70%
+    :alt: Schema of the Cloud (yellow part) containing Projects
+
 
 .. seealso:: 
 

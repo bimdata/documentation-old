@@ -15,6 +15,9 @@ BIMData API exposes a lot of tools for extract, update and manipulate informatio
 
 The tools are compatible with IFC2x3TC1 and IFC4 Add2.
 
+.. image:: /_images/guide/concepts_ifc.png
+    :scale: 70%
+    :alt: Schema of a Cloud containing Projects with IFC files in it (in yellow)
 
 Depending on the options you chose, you can:
 
