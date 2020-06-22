@@ -14,6 +14,11 @@ Folders
 
 Every project is created with a root folder. It is the starting point to create a new folder or upload documents.
 
+
+.. image:: /_images/guide/concepts_folders_and_documents.png
+    :scale: 70%
+    :alt: Schema of the Cloud containing Projects and Projects containing Folders and Documents (yellow part)
+
 Code example
 --------------
 

@@ -27,6 +27,10 @@ A project contains:
  * your Document Management System
  * and BCFs
 
+.. image:: /_images/guide/concepts_projects.png
+    :scale: 70%
+    :alt: Schema of the Cloud containing Projects (yellow part)
+
 .. note:: 
 
    A BCF is linked to a Project, not a Model.
