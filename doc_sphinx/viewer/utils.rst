@@ -247,6 +247,32 @@ It is a shortcut, equivalent to getObjectAncestorByType(id, "space");
     getObjectSpace(id);
 
 
+Model loading
+===========
+
+Load models
+----------------
+
+.. code-block:: javascript
+
+    /**
+     * Get the structure of an object id.
+     * @param {Array} ifcs - an array of IFCs as returned by the API.
+     */
+    loadIfcs(ifcs);
+
+
+Unload models
+----------------
+
+.. code-block:: javascript
+
+    /**
+     * Get the structure of an object id.
+     * @param {string} ifcs - an array of IFCs as returned by the API.
+     */
+    unloadIfc(ifcs);
+
 Example
 =======
 
