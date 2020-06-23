@@ -11,15 +11,15 @@ After cloning this git repository, build your own local version:
 
 .. image:: doc_sphinx/_images/bimdata_homepage_small.png
 
+![GitHub pull requests](https://img.shields.io/github/issues-pr/bimdata/documentation?color=%23f9c72c)
+
 Branches
 =========
 
-We work with 3 branches, currently named *master*, *dev* and *tech-writing*:
+We work with 2 main branches, currently named *master* and *develop*:
 
 * *master*: latest and stable version of the documentation
-* *dev*: testing before putting the new content in ``master`` and tests for new features of the documentation
-* *tech-writing*: content under edition. This branch is hosting Work In Progress and is not fully polished.
-
+* *develop*: base branch for branches with content under edition. This branch is hosting upcoming documentation.
 
 Sphinx:
 =======
@@ -51,6 +51,12 @@ The API Documentation build command is:
 ``~:  cd doc_sphinx && npm run build:apiref``
 
 
+Contribute to this project:
+===========================
+
+Create a branch based on ``develop`` and push it as a Pull Request in the repository.
+
+
 Tests:
 ======
 
@@ -61,5 +67,7 @@ Launch the test suite:
 
 Licence:
 ========
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 This documentation is under Creative Commons: `Attribution 4.0 International (CC BY 4.0) <http://creativecommons.org/licenses/by/4.0/>`_  
