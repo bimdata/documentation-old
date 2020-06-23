@@ -188,7 +188,7 @@ You can retrieve any element in the collection provided in the API.
 .. _the procedure described on the dedicated page to get your Access Token: ../tutorials/dev_get_access_token.html
 .. _What's a cloud?: ../guide/concepts/cloud.html
 .. _What's a project?: ../guide/concepts/projects.html
-.. _Download Cassiopea IFC: https://drive.google.com/file/d/1njhweVCFvDNl8Gy3B1HxAolcfExt0Tg-/view?usp=sharing
+.. _Download the Cassiopea IFC file: https://drive.google.com/file/d/1njhweVCFvDNl8Gy3B1HxAolcfExt0Tg-/view?usp=sharing
 .. _documentation for createDocument(): ../api/index.html#createDocument
 .. _the IFC documentation page: ../guide/concepts/ifc.html
 .. _on the documentation page for getElements(): ../api/index.html#getElements

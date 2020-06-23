@@ -1,7 +1,3 @@
-.. index::
-   single: execution; ifc
-   module: core
-
 ===
 IFC
 ===
@@ -75,6 +71,6 @@ E                  Error               The process has failed.
 
     See also :doc:`webhooks content </guide/api_webhooks>`
     
-    .. include:: ../guide/webhooks.rst
+    .. include:: ../webhooks.rst
        :start-after: excerpt
        :end-before: endexcerpt

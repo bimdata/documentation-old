@@ -20,4 +20,4 @@ Cloud users can't see cloud collaborators. This means that a contractor on a pro
 
 .. seealso:: 
 
-    See also :ref:`Projects <projects>`
+    See also :doc:`Projects <projects>`

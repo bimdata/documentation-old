@@ -37,8 +37,8 @@ A project member can see all other members, and an admin member can add a user t
 
 .. seealso::
 
-    See also :doc:`the Platform User Guide <../platform/create_project>` to learn how-to setup your project.
+    See also :doc:`the Platform User Guide </platform/create_project>` to learn how-to setup your project.
     
-    .. include:: ../platform/create_project.rst
+    .. include:: /platform/create_project.rst
        :start-after: excerpt
        :end-before: endexcerpt

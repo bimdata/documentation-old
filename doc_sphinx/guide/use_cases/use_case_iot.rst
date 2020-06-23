@@ -27,13 +27,13 @@ The idea
 The result
 ===========
 
-Get it :download:`Download the HTML file <../_static/usecase_iot_example.html>`
+Get it :download:`Download the HTML file <../../_static/usecase_iot_example.html>`
 
 See it in action
 ------------------
 
 .. raw:: html
-   :file: /_static/usecase_iot_example.html
+   :file: ../../_static/usecase_iot_example.html
 
 Step-by-Step
 ==============
