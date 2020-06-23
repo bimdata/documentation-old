@@ -10,6 +10,7 @@ Which app will you create?
 The implementation of your app depends on your needs.
 You can create several types of applications.
 
+
 Backend-less application
 ------------------------
 
