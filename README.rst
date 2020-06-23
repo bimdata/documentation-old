@@ -11,7 +11,8 @@ After cloning this git repository, build your own local version:
 
 .. image:: doc_sphinx/_images/bimdata_homepage_small.png
 
-![GitHub pull requests](https://img.shields.io/github/issues-pr/bimdata/documentation?color=%23f9c72c)
+.. image:: https://img.shields.io/github/issues-pr/bimdata/documentation?color=%23f9c72c
+    :alt: GitHub pull requests
 
 Branches
 =========
@@ -68,6 +69,7 @@ Launch the test suite:
 Licence:
 ========
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+.. image:: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+
 
 This documentation is under Creative Commons: `Attribution 4.0 International (CC BY 4.0) <http://creativecommons.org/licenses/by/4.0/>`_  
