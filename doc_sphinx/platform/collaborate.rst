@@ -44,7 +44,7 @@ The invitation is sent.
 
 .. note:: Users access levels
 
-    For more information about different access rights, see `the Guided Tour about Roles chapter`_.
+    For more information about different access rights, see :doc:`the Guide about Roles <../guide/dev_users_management>`.
 
 .. warning::
 
@@ -81,11 +81,6 @@ Can read-only: DMS, models, BCF and write BCF content.
 Details about invitations
 ----------------------------
 
-.. note:: Invite
-    
-    See `the Collaborate section about Invitation`_, to learn about Invitation basics.
-
-
 Until your recipient accepts it, the invitation appears incomplete.
 The e-mail contains a link to accept directly the invitation.
 
@@ -110,6 +105,3 @@ Revoke members
     Ban a User exclude the User from all Projects of the Cloud.
 
 To revoke a member, click [Delete User] and confirm your action. The User has no longer access to your Project.
-
-.. _the Guided Tour about Roles chapter: ../getting_started/developer_guided_tour.html#roles
-.. _the Collaborate section about Invitation: ../platform/collaborate.html

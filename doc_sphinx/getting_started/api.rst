@@ -69,6 +69,10 @@ The Single Sign-On (SSO) API
  * Log in all your BIM Services through BIMData Connect: |bimdata_connect|
  * Log in through your own SSO (OpenID Connect or SAMLv2)
 
+.. seealso::
+    
+    Read about :doc:`the Users Management in API <../guide/dev_users_management>`
+
 
 First steps with the API
 ========================
