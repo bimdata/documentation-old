@@ -44,8 +44,16 @@ Getting Started
        :start-after: excerpt
        :end-before: endexcerpt
 
+
+.. topic:: :doc:`Concepts <../guide/concepts/index>`
+    :class: bimdata-card
+
+    .. include:: ../guide/concepts/index.rst
+       :start-after: excerpt
+       :end-before: endexcerpt
+
+
 .. toctree::
-   :global:
    :hidden:
     
     Authentication <auth>
@@ -54,3 +62,4 @@ Getting Started
     Postman <postman>
     Use External Libraries <api_external_clients>
     Getting Started with the Viewer <viewer>
+    Concepts <../guide/concepts/index>
