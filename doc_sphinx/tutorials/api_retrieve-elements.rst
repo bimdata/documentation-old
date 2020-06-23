@@ -41,6 +41,7 @@ First, define a name to create your first Cloud. Post this ``name`` on |api_url|
 Then use the ``cloudId`` to create your first Project.
 
 .. code-block:: python
+   :substitutions:
 
     import requests
 
@@ -75,6 +76,7 @@ Use the ``/cloud/{cloud_pk}/project/{project_pk}/document`` route to upload your
 The `documentation for createDocument()`_ is available on our API Reference page.
 
 .. code-block:: python
+   :substitutions:
 
     import requests
 
@@ -106,6 +108,7 @@ The server detects IFC format and you can get information about your file using 
 
 
 .. code-block:: python
+   :substitutions:
 
     import time
     import requests
@@ -159,6 +162,7 @@ To retrieve only windows, the accurate filter is *type*: **IfcWindow**.
 You get a list of windows, all the windows of your model.
 
 .. code-block:: python
+   :substitutions:
 
     import requests
     # This script requires an IFC document uploaded

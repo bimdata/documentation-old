@@ -18,6 +18,11 @@ One your account on BIMData Connect is created, you can:
 * Request data from clouds, projects, and models
 
 
+.. image:: /_images/guide/api_features.png
+    :scale: 60 %
+    :alt: Map of main features of the API
+
+
 API Basics
 ================
 

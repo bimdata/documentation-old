@@ -20,7 +20,7 @@ Code example
 JSON
 ^^^^^
 
-|api_url|/cloud/1/project/1
+:substitution-code:`|api_url|/cloud/1/project/1`
 
 .. code-block:: javascript
 
@@ -62,6 +62,7 @@ The name of the file field must be "``file``", this means that you have to fire 
         :title: cURL
 
          .. code-block:: bash
+            :substitutions:
 
             curl -X POST \
             '|api_url|/cloud/1/project/1/document' \
@@ -74,6 +75,7 @@ The name of the file field must be "``file``", this means that you have to fire 
         :title: Python
 
          .. code-block:: python
+            :substitutions:
 
             import requests
 
@@ -97,6 +99,7 @@ The name of the file field must be "``file``", this means that you have to fire 
         :title: JavaScript
 
          .. code-block:: javascript
+            :substitutions:
 
             var fs = require("fs");
             var request = require("request");
@@ -151,6 +154,7 @@ You can download files using the URL returned by the API. The URL is valid for 1
         :title: cURL
 
          .. code-block:: bash
+            :substitutions:
 
             curl -X GET \
             'https://storage.gra3.cloud.ovh.net/v1/AUTH_b6a1c0b6b7c041d3a71d56f84ce25102/bimdata-staging-dev/cloud_1/project_1/XXX.pdf?temp_url_sig=311d34059bbebc87cd7f37de244bb6b62d114679&temp_url_expires=1527771256'
@@ -159,6 +163,7 @@ You can download files using the URL returned by the API. The URL is valid for 1
         :title: Python
 
          .. code-block:: python
+            :substitutions:
 
             import requests
 
@@ -179,6 +184,7 @@ You can download files using the URL returned by the API. The URL is valid for 1
         :title: JavaScript
 
          .. code-block:: javascript
+            :substitutions:
 
             import requests
 

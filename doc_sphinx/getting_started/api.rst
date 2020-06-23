@@ -12,6 +12,10 @@ What is the BIMData API?
 
 BIMData API is composed of five other APIs: an IFC API, a BCF API, a Collaboration API, a Checker API and a SSO API.
 
+.. image:: /_images/guide/api_applications.png
+    :align: right
+    :scale: 50 %
+    :alt: Where are the applications in the BIMData's ecosystem
 
 The IFC API
 ------------
