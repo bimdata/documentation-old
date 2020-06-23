@@ -14,12 +14,6 @@ After cloning this git repository, build your own local version:
 .. image:: https://img.shields.io/github/issues-pr/bimdata/documentation?color=%23f9c72c
     :alt: GitHub pull requests
 
-.. image:: https://img.shields.io/badge/sphinx--doc-3.0.3-%2300af50
-    :alt: Sphinx version: 3.0.3
-
-.. image:: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
-
-
 Branches
 =========
 
@@ -30,6 +24,9 @@ We work with 2 main branches, currently named ``master`` and ``develop``:
 
 Sphinx:
 =======
+
+.. image:: https://img.shields.io/badge/sphinx--doc-3.0.3-%2300af50
+    :alt: Sphinx version: 3.0.3
 
 We are using Sphinx to generate our documentation.
 The configuration file ``conf.py`` contains the settings for the build of our Sphinx edition.
@@ -74,5 +71,7 @@ Launch the test suite:
 
 Licence:
 ========
+
+.. image:: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
 This documentation is under Creative Commons: `Attribution 4.0 International (CC BY 4.0) <http://creativecommons.org/licenses/by/4.0/>`_  
