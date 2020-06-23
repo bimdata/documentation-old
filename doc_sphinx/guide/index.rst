@@ -71,7 +71,6 @@ Guide
     authentication_flows
     dev_users_management
     dev_invitations
-    authentication_migration
     concepts/index
     concepts/cloud
     concepts/folders_and_documents

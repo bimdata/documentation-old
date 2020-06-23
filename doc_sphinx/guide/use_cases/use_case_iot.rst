@@ -33,7 +33,7 @@ See it in action
 ------------------
 
 .. raw:: html
-   :file: /_static/usecase_iot_example.html
+   :file: ../../_static/usecase_iot_example.html
 
 Step-by-Step
 ==============
