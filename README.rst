@@ -17,10 +17,10 @@ After cloning this git repository, build your own local version:
 Branches
 =========
 
-We work with 2 main branches, currently named *master* and *develop*:
+We work with 2 main branches, currently named ``master`` and ``develop``:
 
-* *master*: latest and stable version of the documentation
-* *develop*: base branch for branches with content under edition. This branch is hosting upcoming documentation.
+* ``master``: latest and stable version of the documentation
+* ``develop``: base branch for branches with content under edition. This branch is hosting upcoming documentation.
 
 Sphinx:
 =======
