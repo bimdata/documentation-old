@@ -15,6 +15,7 @@ How-To create your application on BIMData Connect
 * Create an account on the |bimdata_connect| website. 
 * After the login step, go to "Manage your application" screen and fill the form to Create an Application.
 * Choose a *Name* for your application. let's type **"Wonderful app"** in the field *Name*.
+
 All the fields may be edited later.
 
 These settings allow your app to communicate using a unique Token Access.

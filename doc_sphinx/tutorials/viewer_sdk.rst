@@ -88,7 +88,7 @@ Then import your newly created plugin ``src/viewer/viewer.vue`` and add it to th
     ...
 
 
- Package your plugin
+Package your plugin
 ==============================
 
 To load your plugin in a real environment, you want to package and publish your plugin.
@@ -97,7 +97,7 @@ The plugin template is pre-configured with a rollup config that let you do this 
 
 .. prompt:: bash
    :substitutions:
-
+    
     cd src/plugins/{your_plugin}
     npm install
     npm run build
@@ -108,7 +108,7 @@ This minified file includes the CSS and the assets (encoded in base64).
 
 .. note::
    
-    It's not the most performant way, but it's the simplest and the Viewer loads many mega-bytes models anyway.
+    It's not the most performant way, but it's the simplest, and the Viewer loads many mega-bytes models anyway.
 
 You can either copy-paste this file in your environment and load it at your convenience, or you can publish it on NPM.
 To publish it, update the ``package.json`` file with the proper information. Then run the **npm publish** command.
@@ -128,16 +128,16 @@ To see these issues before deploying, load the packaged version in the SDK:
 
 .. prompt:: bash
    :substitutions:
-
+    
     cd src/plugins/{your_plugin}
     npm run watch
 
 And load the *dist* version of the plugin:
 
 .. code-block:: javascript
-
+    
     import SplitPlugin from "@/plugins/split/dist/split.plugin.js";
-
+    
     ...
     mounted() {
     this.$refs.bimdataViewerInstance.registerPlugins([

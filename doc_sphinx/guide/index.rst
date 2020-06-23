@@ -58,7 +58,7 @@ Guide
 .. toctree::
     :glob:
     :caption: Guide
-    :name: sidebar
+    :name: sidebar_guide
     :maxdepth: 1
     
     authentication_bimdata_connect
@@ -72,10 +72,10 @@ Guide
     dev_users_management
     dev_invitations
     authentication_migration
-    ../concepts/index
-    ../concepts/cloud
-    ../concepts/folders_and_documents
-    ../concepts/ifc
+    concepts/index
+    concepts/cloud
+    concepts/folders_and_documents
+    concepts/ifc
     dev_errors
     Contributing <contributing>
 

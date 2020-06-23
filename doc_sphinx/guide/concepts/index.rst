@@ -54,7 +54,7 @@ Concepts
 
 .. toctree::
     :caption: BIMData Doc
-    :name: sidebar
+    :name: sidebar_concepts
     :maxdepth: 1
     
     Cloud <cloud>
