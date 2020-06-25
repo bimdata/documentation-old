@@ -7,13 +7,19 @@ IFC
         After being uploaded, the IFC is processed on our servers.
     endexcerpt
 
-BIMData API exposes a lot of tools for extract, update and manipulate information from `IFC files`_.
+.. container:: columns
 
-The tools are compatible with IFC2x3TC1 and IFC4 Add2.
+    .. container:: content-left
 
-.. image:: /_images/guide/concepts_ifc.png
-    :scale: 70%
-    :alt: Schema of a Cloud containing Projects with IFC files in it (in yellow)
+        BIMData API exposes a lot of tools for extract, update and manipulate information from `IFC files`_.
+
+        The tools are compatible with IFC2x3TC1 and IFC4 Add2.
+
+    .. container:: content-right
+
+        .. figure:: /_images/guide/concepts_ifc.png
+            :scale: 70%
+            :alt: Schema of a Cloud containing Projects with IFC files in it (in yellow)
 
 Depending on the options you chose, you can:
 
