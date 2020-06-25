@@ -58,7 +58,7 @@ The fields you need to create are:
 Fill the values
 -----------------
 
-Put the value |connect_url| in the ``baseUrl`` variable.
+Put the value |bimdata_connect| in the ``baseUrl`` variable.
 
 Then fill ``client_id`` and ``client_secret`` according to your data.
 

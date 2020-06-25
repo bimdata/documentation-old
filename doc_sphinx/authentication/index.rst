@@ -1,22 +1,20 @@
-:produit: api
+:orphan:
 
 ==============
 Authentication
 ==============
 
-.. topic:: BIMData Connect
+.. topic:: :doc:`BIMData Connect </guide/authentication_bimdata_connect>`
+    :class: bimdata-card api
 
     BIMData Connect information
 
-.. topic:: Flows
+.. topic:: :doc:`Flows </guide/authentication_flows>`
+    :class: bimdata-card api
 
     Learn about authentication flow.
 
-.. topic:: Migration
-
-    Learn about migration
-
 .. toctree::
 
-    guide/authentication_bimdata_connect
-    guide/authentication_flows
+    /guide/authentication_bimdata_connect
+    /guide/authentication_flows

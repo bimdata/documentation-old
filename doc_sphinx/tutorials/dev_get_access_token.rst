@@ -55,7 +55,7 @@ Curl
 
 .. seealso::
 
-    See also :doc:`the API documentation </api/docs/index>`
+    See also :doc:`the API documentation </guide/api_guide>`
 
 
 .. tip::

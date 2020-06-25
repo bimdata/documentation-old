@@ -121,5 +121,5 @@ Read our tutorials to begin using the API with a real-life sized purpose.
 
 .. _external lib in JavaScript: https://www.npmjs.com/package/@bimdata/bimdata-api-client
 .. _external lib in Python: https://pypi.org/project/bimdata-api-client/
-.. _our OpenAPI file: https://api.bimdata.io/doc#/
+.. _our OpenAPI specification file: https://api.bimdata.io/doc#/
 .. _openapi-generator: https://github.com/OpenAPITools/openapi-generator
