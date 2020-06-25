@@ -15,36 +15,36 @@ IFC
 
         The tools are compatible with IFC2x3TC1 and IFC4 Add2.
 
+
+        Depending on the options you chose, you can:
+
+        * Retrieve the model as a 3D GLTF file
+        * Retrieve elements and properties
+        * Retrieve the spatial structure
+        * Retrieve classifications, systems and zones
+        * Retrieve 2D plans in SVG format
+
+        Upload an IFC
+        =============
+
+        To upload an IFC file, you have to upload a ``document``. 
+        When the BIMData API detects an IFC format (based on the file name ending with ``.ifc`` or ``.ifczip``), it will trigger the IFC process.
+
+        IFC files are tied to a ``document`` which represents the actual uploaded file.
+
+        We use HTTP Compression to speed up the file transfer. HTTP Compression will start as soon as you upload a file.
+        Files are decompressed at the output of the API.
+
+        There is no size limit to the IFC upload.
+
+        .. note::
+
+            The displayed filesize is the compressed size and not the actual size of the initial file.
+
     .. container:: content-right
 
         .. figure:: /_images/guide/concepts_ifc.png
-            :scale: 70%
             :alt: Schema of a Cloud containing Projects with IFC files in it (in yellow)
-
-Depending on the options you chose, you can:
-
-* Retrieve the model as a 3D GLTF file
-* Retrieve elements and properties
-* Retrieve the spatial structure
-* Retrieve classifications, systems and zones
-* Retrieve 2D plans in SVG format
-
-Upload an IFC
-=============
-
-To upload an IFC file, you have to upload a ``document``. 
-When the BIMData API detects an IFC format (based on the file name ending with ``.ifc`` or ``.ifczip``), it will trigger the IFC process.
-
-IFC files are tied to a ``document`` which represents the actual uploaded file.
-
-We use HTTP Compression to speed up the file transfer. HTTP Compression will start as soon as you upload a file.
-Files are decompressed at the output of the API.
-
-There is no size limit to the IFC upload.
-
-.. note::
-
-    The displayed filesize is the compressed size and not the actual size of the initial file.
 
 
 Workflow
@@ -56,6 +56,7 @@ After being uploaded, the IFC will be processed on our servers.
     The process takes from few minutes to an hour depending on the size of the file and the options activated.
 
 You can follow the progress on the ``status`` field:
+
 
 
 ================  ===================  ===================================================================
