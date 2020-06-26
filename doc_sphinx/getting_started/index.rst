@@ -54,6 +54,7 @@ Getting Started
 
 
 .. toctree::
+   :name: getting_started_menu
    :hidden:
     
     Authentication <auth>

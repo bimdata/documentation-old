@@ -81,21 +81,24 @@ In addition to that, we recommend:
 
 .. toctree::
     :hidden:
+    :name: viewer_menu
 
-    ../tutorials/viewer_create_plugin
-    async_plugins
-    custom_plugin_icon
-    modal_manager
-    ../tutorials/using_custom_viewer
-    ../tutorials/viewer_using_vue_component
-    ../tutorials/viewer_sdk
-    events
-    utils
-    programming_shortcuts
-    add_annotations
-    create_section_planes
-    customize_context_commands
-    customize_keyboard_shortcuts
+    Getting Started <../getting_started/viewer>
+    Embed the Viewer <../tutorials/viewer_using_vue_component>
+    Customize<../tutorials/using_custom_viewer>
+    Annotations <add_annotations>
+    Sections planes <create_section_planes>
+    The Right-click <customize_context_commands>
+    Keyboard shortuts <customize_keyboard_shortcuts>
+    Create your plugin <../tutorials/viewer_create_plugin>
+    The SDK to create a plugin <../tutorials/viewer_sdk>
+    Modal Manager <modal_manager>
+    Make a custom icon for your plugin <custom_plugin_icon>
+    Asynchronous plugins <async_plugins>
+    Programming Shortcuts with $ <programming_shortcuts>
+    Events Reference <events>
+    Helpers Reference <utils>
+
 
 .. _check the WebGL support: https://get.webgl.org
 .. _WebGL-enabled browsers: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
