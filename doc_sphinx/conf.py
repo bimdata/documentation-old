@@ -191,7 +191,7 @@ html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
 
-html_sidebars = {"**": ["rubric_sidebar.html", "globaltoc.html" ]}
+html_sidebars = {"**": ["globaltoc.html" ]}
 
 html_domain_indices = True
 html_use_index = True
