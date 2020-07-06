@@ -202,12 +202,13 @@ Un-highlight objects
 Colorize
 ^^^^^^^^^^^^^^
 
+
 .. code-block:: javascript
 
     /**
      * Colorize objects.
      * @param {Array|Set<string>} ids - the ids of objects to colorize.
-     * @param {Array(3)} color - the color to apply on objects.
+     * @param {Array(3)} RBG color - the color to apply on objects, ie rgb(1,0,0) for red
      */
     this.$hub.emit("colorize-objects", { ids, color });
 
