@@ -173,4 +173,4 @@ Example
    </html>
 
 .. raw:: html
-   :file: ../_static/viewer_section_planes_example.html
+   :file: ../_static/viewer_examples/viewer_section_planes_example.html

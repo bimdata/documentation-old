@@ -33,7 +33,7 @@ The plugin is enabled as a menu icon. This plugin contains 2 features:
 
 
 .. raw:: html
-   :file: ../_static/viewer_plugin_example.html
+   :file: ../_static/viewer_examples/viewer_plugin_example.html
 
 Let's take a look at the code for the `myCustomPlugin` plugin.
 

@@ -55,7 +55,7 @@ Example
 =======
 
 .. raw:: html
-   :file: ../_static/viewer_custom_plugin_example.html
+   :file: ../_static/viewer_examples/viewer_custom_plugin_example.html
 
 .. code-block:: html
 

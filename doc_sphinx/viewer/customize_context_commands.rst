@@ -183,4 +183,4 @@ Example
    </html>
 
 .. raw:: html
-   :file: ../_static/viewer_custom_context_commands_example.html
+   :file: ../_static/viewer_examples/viewer_custom_context_commands_example.html

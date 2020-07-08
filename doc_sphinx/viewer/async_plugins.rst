@@ -38,7 +38,7 @@ A simple async plugin that takes time to load/unload.
 While loading/unloading, clicking on the plugin button has no effect.
 
 .. raw:: html
-   :file: ../_static/viewer_async_plugin_example.html
+   :file: ../_static/viewer_examples/viewer_async_plugin_example.html
 
 .. code-block:: html
 

@@ -124,4 +124,4 @@ the key K.
    </html>
 
 .. raw:: html
-   :file: ../_static/viewer_custom_kb_shortcuts_example.html
+   :file: ../_static/viewer_examples/viewer_custom_kb_shortcuts_example.html
