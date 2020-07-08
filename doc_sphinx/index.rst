@@ -14,7 +14,6 @@ After reading about the concepts in our Concepts Tour, take a look at our Guide 
     :name: sidebar
     :maxdepth: 2
     
-    Getting Started <getting_started/index>
     3D Viewer <viewer/index>
     Platform <platform/index>
     API Documentation <guide/api_guide>

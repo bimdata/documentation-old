@@ -82,6 +82,8 @@ In addition to that, we recommend:
 .. toctree::
     :hidden:
     :name: viewer_menu
+    :maxdepth: 2
+
 
     Getting Started <../getting_started/viewer>
     Embed the Viewer <../tutorials/viewer_using_vue_component>
