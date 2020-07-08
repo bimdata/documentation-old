@@ -136,4 +136,4 @@ Code Example
    </html>
 
 .. raw:: html
-   :file: ../_static/viewer_add_annotations_example.html
+   :file: ../_static/viewer_examples/viewer_add_annotations_example.html

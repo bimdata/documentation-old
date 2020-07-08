@@ -63,7 +63,7 @@ The added plugin will push two modals.
 Clicking on the displayed button will close the current modal.
 
 .. raw:: html
-   :file: ../_static/viewer_modal_manager_example.html
+   :file: ../_static/viewer_examples/viewer_modal_manager_example.html
 
 .. code-block:: html
 
