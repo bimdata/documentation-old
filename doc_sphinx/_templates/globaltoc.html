@@ -8,19 +8,16 @@
     :license: BSD, see LICENSE for details.
 #}
 
-<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="navigation">
   {% block menu %}
   {# The singlehtml builder doesn't handle this toctree call when the toctree is empty. Skip building this for now.
     #}
   {% if 'singlehtml' not in builder %}
-  {% set global_toc = toctree(maxdepth=theme_navigation_depth|int, collapse=theme_collapse_navigation, includehidden=theme_includehidden, titles_only=theme_titles_only) %}
+  {% set rubric_toc = toctree(maxdepth=2|int, collapse=false, includehidden=true, titles_only=true) %}
   {% endif %}
-  {% if global_toc %}
-  {{ global_toc }}
-  {% else %}
-  <!-- Local TOC -->
-  <div class="local-toc">{{ toc }}</div>
-  {% endif %}
+  {% if rubric_toc %}
+    {% set global_toc = false %}
+  <div class="local-toc">{{ rubric_toc }}</div>
 </div>
 
 <script>
@@ -46,4 +43,5 @@
   });
 
 </script>
+{% endif %}
 {% endblock %}

@@ -1,0 +1,47 @@
+{#
+    bimdata/rubric_sidebar.html
+    ~~~~~~~~~~~~~~~~~~~~
+
+    Sphinx sidebar template: rubric table of contents.
+
+
+#}
+
+<div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="navigation">
+    {% block menu %}
+    {# The singlehtml builder doesn't handle this toctree call when the toctree is empty. Skip building this for now.
+      #}
+    {% if 'singlehtml' not in builder %}
+    {% set rubric_toc = toctree(maxdepth=2|int, collapse=false, includehidden=true, titles_only=true) %}
+    {% endif %}
+    {% if rubric_toc %}
+      {% set global_toc = false %}
+    <div class="local-toc">{{ rubric_toc }}</div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+      $(".toctree-l2 a").click(function () {
+        $(".toctree-l2 a.active").removeClass("active");
+        $(this).addClass("active");
+      });
+  
+      $(".toctree-l1 > .internal").before("<span class='toctree-expand'></span>");
+  
+      // open MENU && keep it open when reload or change page
+      $('.toctree-expand').on('click', function () {
+        localStorage.setItem('menu-open', $('.toctree-l1').hasClass('show'));
+        $(this).closest('.toctree-l1').toggleClass('show');
+      });
+      var state = localStorage.getItem('menu-open');
+      if (state === false) {
+        $('.toctree-l1.current').removeClass('show');
+      } else {
+          $('.toctree-l1.current').addClass('show');
+      }
+    });
+  
+  </script>
+{% endif %}
+{% endblock %}

@@ -62,10 +62,6 @@ Guide
     :maxdepth: 1
     
     authentication_bimdata_connect
-    api_filters
-    api_guide
-    api_webhook_payload
-    api_webhook_signature
     auth_connect
     auth_identity_providers
     authentication_flows
