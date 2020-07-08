@@ -54,7 +54,7 @@ Getting Started
 
 
 .. toctree::
-   :name: getting_started_menu
+    :maxdepth: 2
    :hidden:
     
     Authentication <auth>
