@@ -164,6 +164,10 @@ Each functionality has a default value and could be disabled.
      - Add a button to switch between 3D and 2D viewer
      - The user can't change the viewer
      - false
+   * - fullscreen
+     - Add a button to maximize the viewer
+     - The user can't maximize the viewer
+     - true
 
 
 Example with all functionalities disabled
