@@ -26,6 +26,7 @@ Python
 ^^^^^^^^
 
 .. code-block:: python
+    :substitutions:
 
     import requests
 
@@ -43,6 +44,7 @@ Curl
 ^^^^^^^^
 
 .. code-block:: bash
+    :substitutions:
 
     curl --request POST "|iam_url|/auth/realms/bimdata/protocol/openid-connect/token" \
       --header "Content-Type: application/x-www-form-urlencoded" \
