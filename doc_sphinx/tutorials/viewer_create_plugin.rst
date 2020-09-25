@@ -144,7 +144,7 @@ Use the ``<script>`` tag to embed the Viewer, from the package.
             <head>
                 <meta charset="utf-8">
                 <title>BIMData - CJS Example</title>
-                <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+                <script src="https://unpkg.com/@bimdata/viewer@^0.8.22/dist/bimdata-viewer.min.js" charset="utf-8"></script>
             </head>
             <body>
             </body>
@@ -263,7 +263,7 @@ If you copy-paste this code, you have a simple Viewer with the first plugin.s
             <head>
                 <meta charset="utf-8">
                 <title>BIMData - CJS Example</title>
-                <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+                <script src="https://unpkg.com/@bimdata/viewer@^0.8.22/dist/bimdata-viewer.min.js" charset="utf-8"></script>
             </head>
             <body>
                 <div style="height: 50vh; width:70wh">

@@ -3,18 +3,18 @@ Adding Context Commands
 =================================
 
 
-You can add context commands to the Right-click Menu. 
+You can add context commands to the Right-click Menu.
 Context commands are specific to the location the user right-clicked.
 
 Right-Click Menu Command
 =========================
 
-To add command to the right-click menu, get the right-click menu plugin and register a command 
+To add command to the right-click menu, get the right-click menu plugin and register a command
 in created or mounted `component lifecyle
 method <https://vuejs.org/v2/guide/instance.html#Instance-Lifecycle-Hooks>`__.
 
 .. warning::
-    
+
     The ``rightClickMenu`` is *Undefined* if you deactivate it on the Viewer ``cfg``.
 
 .. code-block:: javascript
@@ -60,7 +60,7 @@ Then, you need to get the Right-click Menu plugin and register the context comma
 
 
 .. note::
-    
+
     The ``rightClickMenu`` is *Undefined* if you deactivate it on the Viewer ``cfg``.
 
 
@@ -91,9 +91,9 @@ The command is an object with two properties :
 Example
 =========
 
-* Open the plugin and right-click on the ‘Data’ area. 
-* Edit command is added to the right-click context menu. 
-* Click on Edit to turn the ‘Data’ area into edit mode where you can change the text. 
+* Open the plugin and right-click on the ‘Data’ area.
+* Edit command is added to the right-click context menu.
+* Click on Edit to turn the ‘Data’ area into edit mode where you can change the text.
 * Press enter to validate the new text.
 
 .. code-block:: html
@@ -104,7 +104,7 @@ Example
        <meta charset="utf-8" />
        <title>BIMData - Context Menu</title>
        <script
-         src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js"
+         src="https://unpkg.com/@bimdata/viewer@^0.8.22/dist/bimdata-viewer.min.js"
          charset="utf-8"
        ></script>
      </head>

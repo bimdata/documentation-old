@@ -13,7 +13,7 @@ To add a section, you must first enter in **Section mode**.
     this.$hub.emit("set-section-mode", { active: true });
 
 .. note::
-    
+
     Remember to quit Section mode when you are done, by setting **active** to *false*.
 
 Now you can create Section planes!
@@ -38,7 +38,7 @@ You can specify the axis and the section is made on this axis, at the center of 
 By position and direction
 -----------------------------
 
-You can specify a position and a direction. 
+You can specify a position and a direction.
 Position and direction both are Arrays of length 3.
 
 .. code-block:: javascript
@@ -53,7 +53,7 @@ Position and direction both are Arrays of length 3.
 
 
 
-Deleting Section Planes 
+Deleting Section Planes
 =========================
 
 To delete the displayed section plane:
@@ -73,8 +73,8 @@ To **delete all** section planes:
 Example
 ============
 
-* Clicking the plugin icon will activate the ``cutting`` mode. 
-* You can now click an object and a section plane is added to its surface. You can add multiple section planes. 
+* Clicking the plugin icon will activate the ``cutting`` mode.
+* You can now click an object and a section plane is added to its surface. You can add multiple section planes.
 * To delete section planes, close the plugin.
 
 .. code-block:: html
@@ -85,7 +85,7 @@ Example
    <head>
      <meta charset="utf-8" />
      <title>BIMData - Section on surface</title>
-     <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+     <script src="https://unpkg.com/@bimdata/viewer@^0.8.22/dist/bimdata-viewer.min.js" charset="utf-8"></script>
    </head>
 
    <body>

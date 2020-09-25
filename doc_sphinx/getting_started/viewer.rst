@@ -40,7 +40,7 @@ See below how-to embed the Viewer in your HTML:
     <head>
         <meta charset="utf-8">
         <title>BIMData - CJS Example</title>
-        <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+        <script src="https://unpkg.com/@bimdata/viewer@^0.8.22/dist/bimdata-viewer.min.js" charset="utf-8"></script>
     </head>
     <body>
         <div style="height: 100vh">

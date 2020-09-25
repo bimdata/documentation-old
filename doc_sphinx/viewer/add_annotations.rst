@@ -6,7 +6,7 @@ Adding annotations
 ===================
 
 To add annotations on objects, simply emit the ``create-annotations``
-event to the Event Hub. 
+event to the Event Hub.
 
 You must provide:
 
@@ -50,7 +50,7 @@ Code Example
    <head>
      <meta charset="utf-8">
      <title>BIMData - Annotations</title>
-     <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+     <script src="https://unpkg.com/@bimdata/viewer@^0.8.22/dist/bimdata-viewer.min.js" charset="utf-8"></script>
    </head>
 
    <body>

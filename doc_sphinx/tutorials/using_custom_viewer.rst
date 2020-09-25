@@ -18,7 +18,7 @@ To load the Viewer in your web application, use the ``<script>`` tag with the pa
 
 .. code-block:: javascript
 
-    <script src="https://unpkg.com/@bimdata/viewer@0.3.3/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/@bimdata/viewer@^0.8.22/dist/bimdata-viewer.min.js" charset="utf-8"></script>
 
 In your JavaScript:
 
@@ -47,7 +47,7 @@ Complete code
       <head>
         <meta charset="utf-8">
         <title>BIMDataViewer - Background color example</title>
-        <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+        <script src="https://unpkg.com/@bimdata/viewer@^0.8.22/dist/bimdata-viewer.min.js" charset="utf-8"></script>
       </head>
       <body>
         <div style="height: 100vh">
@@ -183,7 +183,7 @@ Example with all functionalities disabled
       <head>
           <meta charset="utf-8">
           <title>BIMData - CJS Example</title>
-          <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+          <script src="https://unpkg.com/@bimdata/viewer@^0.8.22/dist/bimdata-viewer.min.js" charset="utf-8"></script>
       </head>
 
       <body>

@@ -35,9 +35,9 @@ function          function()           The function that is executed when the as
 Example
 ===========
 
-The plugin we add here is not displayed to the end user. 
+The plugin we add here is not displayed to the end user.
 It just add a command to the right click menu and a keyboard shortcut.
-The command and the shortcut hide objects of type “space”. 
+The command and the shortcut hide objects of type “space”.
 The newly added right click menu command has the label “Hide spaces” (with picto K) and is only displayed when at least one “space” is visible. The shortcut is added on
 the key K.
 
@@ -49,7 +49,7 @@ the key K.
    <head>
      <meta charset="utf-8" />
      <title>BIMData - Right Click Command and Keyboard Shortcut</title>
-     <script src="https://unpkg.com/@bimdata/viewer/dist/bimdata-viewer.min.js" charset="utf-8"></script>
+     <script src="https://unpkg.com/@bimdata/viewer@^0.8.22/dist/bimdata-viewer.min.js" charset="utf-8"></script>
    </head>
 
    <body>
