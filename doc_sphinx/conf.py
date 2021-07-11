@@ -28,6 +28,7 @@ extensions = [
     "sphinx_copybutton",
     "sphinxcontrib.contentui",
     "notfound.extension",
+    "sphinx_sitemap",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -433,3 +434,6 @@ numpydoc_show_class_members = False
 
 # -- Options for notfound extension ---------------------------------------
 notfound_no_urls_prefix = True
+
+# -- For sitemap
+html_baseurl = 'https://developers-staging.bimdata.io/'
